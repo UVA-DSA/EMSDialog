@@ -346,6 +346,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: nowrap;
+  margin-top: 36px;   /* 拉开和 Table 3 的距离 */
 }
 
 .result-left,
@@ -362,15 +363,25 @@ body {
   margin: 0 auto;
 }
 
+/* 让 Table 4 整体往下移一点 */
+.result-right {
+  margin-top: 18px;
+}
+
 @media (max-width: 768px) {
   .result-item-side-by-side {
     flex-wrap: wrap;
+    margin-top: 24px;
   }
 
   .result-left,
   .result-right {
     max-width: 100%;
     flex: 0 0 100%;
+  }
+
+  .result-right {
+    margin-top: 0;
   }
 }
 
