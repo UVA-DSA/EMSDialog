@@ -338,18 +338,37 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3">Overview</h2>
 
-    <figure class="image">
-      <img
-        src="static/images/EMSDiag_intro.drawio.png"
-        alt="Illustration of conversational diagnosis prediction in emergency medical settings"
-        loading="lazy"
-        class="teaser-img"
-      />
-      <figcaption class="has-text-grey is-size-6 has-text-justified mt-3">
-        <b>Figure 1.</b>
-        Conversational diagnosis prediction aims to infer a patient’s likely condition during clinical conversations and produce early yet reliable diagnostic decisions that can support time-critical actions, such as airway management, glucose checks, or stroke alerts. This capability is essential for conversational diagnostic agents that either conduct diagnostic interviews with patients or assist clinicians by providing real-time diagnostic suggestions and next-step recommendations. Unlike traditional Electronic Health Record (EHR)-based diagnosis prediction, where the full patient record is typically available, conversational diagnosis prediction must reason over incomplete and continuously evolving information, update predictions turn by turn, and determine when to commit to a diagnosis versus defer until sufficient evidence is available. However, off-the-shelf zero-shot LLMs, while promising candidates for such agents, often struggle in dynamic conversational settings. In particular, they may make premature and overconfident predictions when evidence is still limited, and their outputs can be unstable, frequently changing as new conversational evidence arrives instead of converging to a consistent diagnosis.
-      </figcaption>
-    </figure>
+    <div class="columns is-vcentered is-variable is-4">
+      <div class="column is-7">
+        <figure class="image">
+          <img
+            src="static/images/EMSDiag_intro.drawio.png"
+            alt="Illustration of conversational diagnosis prediction in emergency medical settings"
+            loading="lazy"
+            class="teaser-img"
+          />
+          <figcaption class="has-text-grey is-size-6 has-text-justified mt-3">
+            <b>Figure 1.</b>
+            Conversational diagnosis prediction aims to infer a patient’s likely condition during clinical conversations and produce early yet reliable diagnostic decisions that can support time-critical actions, such as airway management, glucose checks, or stroke alerts. This capability is essential for conversational diagnostic agents that either conduct diagnostic interviews with patients or assist clinicians by providing real-time diagnostic suggestions and next-step recommendations. Unlike traditional Electronic Health Record (EHR)-based diagnosis prediction, where the full patient record is typically available, conversational diagnosis prediction must reason over incomplete and continuously evolving information, update predictions turn by turn, and determine when to commit to a diagnosis versus defer until sufficient evidence is available. However, off-the-shelf zero-shot LLMs, while promising candidates for such agents, often struggle in dynamic conversational settings. In particular, they may make premature and overconfident predictions when evidence is still limited, and their outputs can be unstable, frequently changing as new conversational evidence arrives instead of converging to a consistent diagnosis.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="column is-5">
+        <figure class="image">
+          <img
+            src="static/images/table1.png"
+            alt="Comparison of EMSDialog with existing medical dialogue datasets"
+            loading="lazy"
+            class="table-img"
+          />
+          <figcaption class="has-text-grey is-size-6 has-text-justified mt-3">
+            <b>Table 1.</b>
+            Comparison of EMSDialog with existing medical dialogue datasets.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
   </div>
 </section>
 
