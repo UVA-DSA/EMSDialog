@@ -384,7 +384,7 @@
   </div>
 </section>
 
-<!-- Dataset Comparison -->
+<!-- Dataset Comparison
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Dataset Comparison</h2>
@@ -408,102 +408,10 @@
       </figcaption>
     </figure>
   </div>
-</section>
-
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Conversational diagnosis prediction requires models to track evolving evidence in streaming clinical conversations and decide when to commit to a diagnosis. Existing medical dialogue corpora are largely dyadic or lack the multi-party workflow and annotations needed for this setting. We introduce an ePCR-grounded, topic-flow-based multi-agent generation pipeline that iteratively plans, generates, and self-refines dialogues with rule-based factual and topic flow checks. The pipeline yields <em>EMSDialog</em>, a dataset of 4,414 synthetic multi-speaker EMS conversations based on a real-world ePCR dataset, annotated with 43 diagnoses, speaker roles, and turn-level topics. Human and LLM evaluations confirm high quality and realism of <em>EMSDialog</em> using both utterance- and conversation-level metrics. Results show that \emph{EMSDialog}-augmented training improves accuracy, timeliness, and stability of EMS conversational diagnosis prediction.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+</section> -->
 
 
 
-<!-- Dataset Statistics (polished) -->
-<section id="dataset-stats" class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">EMS-MCQA Dataset Statistics</h2>
-    <p class="has-text-grey has-text-centered mb-5">
-      A high-level snapshot of EMS-MCQA by subject area, certification level, and question attributes.
-    </p>
-
-    <div class="columns is-variable is-6 is-multiline is-vcentered">
-      <!-- Figure 2a -->
-      <div class="column is-12-tablet is-6-desktop">
-        <figure class="stat-card">
-          <div class="stat-media">
-            <!-- keep your path -->
-            <img src="static/images/EMSQA_statistics.png"
-                 alt="EMS-MCQA split statistics table" loading="lazy">
-          </div>
-          <figcaption class="stat-caption">
-            <b>Figure 2a.</b> EMS-MCQA statistics by split (train/val/test, public vs. private).
-          </figcaption>
-        </figure>
-      </div>
-
-      <!-- Figure 2b -->
-      <div class="column is-12-tablet is-6-desktop">
-        <figure class="stat-card">
-          <div class="stat-media">
-            <img src="static/images/statistics.png"
-                 alt="Distribution by certification level and subject area" loading="lazy">
-          </div>
-          <figcaption class="stat-caption">
-            <b>Figure 2b.</b> Question distribution by <em>certification level</em> and <em>subject area</em>.
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-  /* unified cards */
-  .stat-card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 14px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.03), 0 6px 18px rgba(0,0,0,.06);
-    border: 1px solid rgba(0,0,0,.06);
-  }
-  /* same visual area for both figures */
-  .stat-media {
-    width: 100%;
-    aspect-ratio: 16 / 9;           /* keeps both boxes equal height */
-    overflow: hidden;
-    background: #fafafa;
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .stat-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;            /* no cropping; fits neatly */
-  }
-  .stat-caption {
-    margin-top: .6rem;
-    color: #6b7280;                 /* tailwind gray-500ish */
-    font-size: .95rem;
-    line-height: 1.35;
-  }
-  /* tighter mobile spacing */
-  @media (max-width: 768px) {
-    #dataset-stats .columns { row-gap: 1rem; }
-  }
-</style>
 
 
 
@@ -513,37 +421,27 @@
     <h2 class="title is-3 has-text-centered">Approach</h2>
 
     <figure class="image">
-      <!-- Teaser image -->
       <img
-        src="static/images/ExpertRAG.drawio.png"
-        alt="High-level overview of Expert-CoT and ExpertRAG for EMS QA"
+        src="static/images/EMSDiag_Pipeline.png"
+        alt="Synthetic EMS dialogue generation pipeline from ePCRs"
         loading="lazy"
         class="approach-img"
       />
 
       <figcaption class="has-text-grey is-size-6 has-text-justified mt-3">
         <strong>Figure 3.</strong>
-        <strong>How to inject domain expertise into LLMs for EMS QA?</strong>
-        (1) <strong>Expertise-guided prompting (Expert-CoT):</strong>
-        Standard CoT encourages step-by-step reasoning but does not specify where to begin.
-        Expert-CoT anchors the model’s first steps by explicitly providing the
-        <em>subject area</em> and <em>certification level</em>.
-        (2) <strong>Expertise-guided RAG (ExpertRAG):</strong>
-        A lightweight filter predicts the question’s subject area and steers the retriever
-        toward matching knowledge-base entries and patient records; the LLM then conditions on
-        the predicted expertise plus the retrieved evidence to produce the answer.
-        We study three retriever strategies:
-        <strong>Global</strong> – retrieve the top M KB and N PR documents from the entire corpora
-        (baseline, no subject filtering);
-        <strong>Filter → Retrieve (FTR)</strong> – first filter KB/PR to the predicted subject area
-        ŝ<sub>i</sub>, then retrieve the top M and N;
-        <strong>Retrieve → Filter (RTF)</strong> – first retrieve a larger pool from full KB/PR
-        (e.g., 10×M and 10×N), then drop items whose subject area ≠ ŝ<sub>i</sub>, keeping the
-        best M and N.
+        <strong>EMSDialog synthetic dialogue generation pipeline.</strong>
+        Starting from an input ePCR, our pipeline first extracts key medical concepts and structured clinical features. 
+        The core of the framework is a set of independent <strong>checkers</strong> that explicitly verify 
+        <strong>concept coverage</strong>, <strong>topic-flow validity</strong>, and <strong>dialogue style</strong>. 
+        These checkers provide structured feedback to three LLM agents: a <strong>Planner</strong>, which proposes a topic-guided dialogue plan grounded in ePCR evidence; a <strong>Generator</strong>, which produces an initial multi-party dialogue draft; and a <strong>Refiner</strong>, which improves coherence, realism, and natural phrasing while preserving factual grounding. 
+        The Planner and Generator are repeatedly revised until all hard constraints from the concept and topic-flow checkers are satisfied, while the Refiner further improves stylistic quality based on checker feedback. 
+        In this way, the checkers serve as the main mechanism for enforcing realism, logical structure, and factual consistency throughout the pipeline.
       </figcaption>
     </figure>
   </div>
 </section>
+
 
 <!-- Optional: a tiny style to keep the image nicely sized -->
 <style>
