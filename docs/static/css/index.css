@@ -340,6 +340,27 @@ body {
   line-height: 1.4;
 }
 
+
+.result-item-side-by-side {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.result-half {
+  flex: 1 1 48%;
+  max-width: 48%;
+}
+
+@media (max-width: 768px) {
+  .result-half {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
