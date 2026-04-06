@@ -1,0 +1,456 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003438",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 12 for a female with breathing problems and fever at an apartment in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Sarah, an EMT from Riverside Ambulance. What made you call 911 tonight?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Oh, I can't breathe, and I have a really high fever. It just started being a problem again a few hours ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "I see. Can you tell me your name and the date?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "My name is Michelle. I'm not sure about the date-it's either the 10th or the 11th, maybe?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Can you tell me which city you're in right now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "I'm in [CITY]. I, uh, I'm in [CITY]."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "We're going to do a quick assessment. Do you mind if we check your airway?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_respiration",
+      "role": "Partner",
+      "utterance": "Ma'am, your breaths seem to come in fast and deep. May we listen to your lungs?"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Let me take your pulse. It feels fast. Are you experiencing any shaking or tremors?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "Great. You're aware of who you are and where you are, the time, and the events that have just transpired."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway_clearance",
+      "role": "EMT",
+      "utterance": "Your airway is clear and you can speak clearly, so it seems patent and maintainable."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_patent_maintainable",
+      "role": "EMT",
+      "utterance": "There are no obstructions or sounds from your airway indicating difficulty breathing."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breath_rate",
+      "role": "Partner",
+      "utterance": "Your breathing rate is 22. Is it consistently this fast?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breath_work",
+      "role": "Partner",
+      "utterance": "Your breathing appears labored-your nostrils are flaring and you're breathing deeply."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "bilateral_breath_sounds",
+      "role": "Partner",
+      "utterance": "I hear wheezing, especially on the lower part of your lung area."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_skin_color",
+      "role": "Partner",
+      "utterance": "Your skin appears warm and dry, with no signs of cyanosis yet."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Your heart rate is high-about 111 beats per minute. Your skin feels normal."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation_skin_T",
+      "role": "EMT",
+      "utterance": "Skin is warm, not cold or clammy. No signs of poor circulation at this time."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_present_illness",
+      "role": "EMT",
+      "utterance": "Can you tell me a bit more about how you're feeling overall?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_present_illness",
+      "role": "Patient",
+      "utterance": "I started feeling sick yesterday afternoon-chills, vomiting, and a very bad fever. I thought I was getting better after a nap, then this morning I woke up with an asthma attack."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_medical_history",
+      "role": "EMT",
+      "utterance": "You mentioned asthma. Is there anything else we should know about your medical history?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_medical_history",
+      "role": "Patient",
+      "utterance": "Yeah, I have chronic migraines and kidney disease. It's stage 1-they told me it was not too bad."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_medical_history",
+      "role": "EMT",
+      "utterance": "Are you currently taking any medications on a regular basis?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_medical_history",
+      "role": "Patient",
+      "utterance": "Yes-almotriptan for migraines, loratadine, Singulair, fenofibrate (Tricor), and topiramate (Topamax)."
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst",
+      "role": "EMT",
+      "utterance": "On a scale from 0 to 10, how would you rate the difficulty you're having breathing?"
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst",
+      "role": "Patient",
+      "utterance": "It's not pain but more of an 8-really hard to catch a full breath."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "e_mot",
+      "role": "EMT",
+      "utterance": "I notice you're diaphoretic. Do you have any unusual pain, swelling, or redness in your mouth or throat?"
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "e_mot",
+      "role": "Patient",
+      "utterance": "Not right now-except, maybe I feel nauseated, but I haven't vomited since EMS arrived."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio",
+      "role": "Partner",
+      "utterance": "Your lower lungs are wheezy, but after a few Neb treatments, they've improved. Have you experienced any other breathing-related discomfort?"
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "diaphoresis",
+      "role": "Patient",
+      "utterance": "I feel like my body is on high alert, and my head still aches from the migraine."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is 111-faster than normal. That's common when people are short of breath."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing is 22 breaths per minute. Any history of asthma exacerbations?"
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 119 over 72-looks stable."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is at 94%-a little low but within acceptable range."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Your heart rhythm is sinus tachycardia now. We'll continue monitoring and keep the four-lead ECG on you."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Your blood sugar is 136-normal and stable. We'll keep checking it."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "procedures",
+      "role": "Paramedic",
+      "utterance": "I'm going to give you a DuoNeb treatment-combination of albuterol and Atrovent. This should help open your airways."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "medications",
+      "role": "Paramedic",
+      "utterance": "The nebulizer is going to deliver 5 milligrams of albuterol and 0.5 milligrams ipratropium. Breathe deeply through the mask when it's ready."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "medications",
+      "role": "Partner",
+      "utterance": "We also have you on 8 liters per minute oxygen. You should notice some improvement in a few minutes."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "procedures",
+      "role": "Paramedic",
+      "utterance": "I'll also put you on a four-lead cardiac monitor just to make sure everything's stable and safe. Do you feel up for the monitor?"
+    },
+    {
+      "turn": 42,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We are initiating protocol for asthma exacerbation and respiratory distress per standing order."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 115 now-still up, but not dramatically. Is your breathing stable or getting better?"
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 20 per minute now-still a bit high, but better. Any improvement in your breathing sensation?"
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 114/88-good. Have you had any reactions to any medications lately, maybe from something you took or ate?"
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your blood oxygen has improved to 99%, which is great."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "No change in rhythm-still showing sinus tachycardia."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Taking a quick glucose test now. You might feel a quick pinch on your finger."
+    },
+    {
+      "turn": 49,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_present_illness",
+      "role": "EMT",
+      "utterance": "Earlier you mentioned migraines. Has the migraine improved or still active?"
+    },
+    {
+      "turn": 50,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_present_illness",
+      "role": "Patient",
+      "utterance": "It's improving slowly. It was so severe all day. The migraine has been a constant thing for me for years now."
+    },
+    {
+      "turn": 51,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "You are still A&O to person, place, time, and events."
+    },
+    {
+      "turn": 52,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "What about allergies? Do you have any that affect the medications you usually take?"
+    },
+    {
+      "turn": 53,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I'm allergic to doxycycline, Fioricet, and Percocet."
+    },
+    {
+      "turn": 54,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_lead_to_call",
+      "role": "EMT",
+      "utterance": "During the vomiting episode you mentioned, did you lose any fluids or pass anything out before we arrived?"
+    },
+    {
+      "turn": 55,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_lead_to_call",
+      "role": "Patient",
+      "utterance": "I vomited once, but not enough to feel dehydrated. I also had a slight cold sweat, maybe from fever."
+    },
+    {
+      "turn": 56,
+      "topic": "Primary Assessment",
+      "micro_intent": "gcs",
+      "role": "EMT",
+      "utterance": "Your GCS is 15, which means you are fully awake and oriented with a good neurological response."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Paramedic",
+      "utterance": "I attempted to start an IV in your arm for fluids and access-it will use a small 18-gauge needle. Unfortunately, it did not go in successfully, but we'll maintain a saline lock for future use."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "You're going to be taken to [COMPANY_NAME]. There's a lot of experience there for asthma and migraines. Is that okay with you?"
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll now lower you from your bed to the stair chair and gently transport you to the back of the ambulance in Fowler's position."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "peripheral_pulses",
+      "role": "Partner",
+      "utterance": "Your peripheral pulses are equal, regular, and strong."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "reassessments",
+      "role": "Partner",
+      "utterance": "Things are stable, and all monitoring shows improvement. Your blood glucose is 136-normal."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "tremulous_state",
+      "role": "Partner",
+      "utterance": "You appear to be slightly tremulous and hyperventilating, but not in acute distress."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "",
+      "role": "Partner",
+      "utterance": "You are not in pain at this time-pain level 0."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "",
+      "role": "Partner",
+      "utterance": "The care of the patient has been transferred to the receiving facility staff."
+    }
+  ]
+}

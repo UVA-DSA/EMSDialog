@@ -1,0 +1,778 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000719",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for an unconscious female found on the ground at a residence in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Sam with the rescue squad. I see you called 911 for a medical emergency. What happened to her?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She was found on the ground unresponsive. I don't know what happened, but she's not responding and is breathing very shallowly."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "She is unresponsive to voice or pain."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Partner",
+      "utterance": "No eye opening. She is likely E1 on GCS."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Partner",
+      "utterance": "No verbal response. Likely V1 on GCS."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "No motor movement with straining or sternum rub. Likely M1 on GCS."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Jaw position could use adjustment. Airway appears patent."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Respiratory rate is very slow and shallow-around 6 per minute. Needs assisted breathing."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_skin_color",
+      "role": "Partner",
+      "utterance": "Skin is normal in color, no cyanosis or pallor."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 102, strong and regular."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 102-tachycardic."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 6 and shallow-need for assisted breaths."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 188/99-elevated systolic."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 97%-low enough given the breathing."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose initially unobtainable-no glucometer reading available."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "temperature",
+      "role": "EMT",
+      "utterance": "Tympanic temperature recorded at 99.2°F."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Putting on non-rebreather mask at 15 LPM to enhance oxygenation."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Starting IV in left forearm. First stick successful."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Attaching ECG to 4 lead monitor now for cardiac vitals."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Administered 0.25 mg Narcan IV-opioid overdose is suspected based on clinical response."
+    },
+    {
+      "turn": 22,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Second dose of Narcan given-response is mild but apparent."
+    },
+    {
+      "turn": 23,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "She's now breathing more effectively, though shallow."
+    },
+    {
+      "turn": 24,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Respiratory rate increased to 30 per minute."
+    },
+    {
+      "turn": 25,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is 157/101-still elevated but manageable."
+    },
+    {
+      "turn": 26,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is now 110. SpO₂ remains at 97."
+    },
+    {
+      "turn": 27,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "EtCO₂ first recorded at 120 then dropped to 42 with assisted ventilation."
+    },
+    {
+      "turn": 28,
+      "topic": "Reassessments",
+      "micro_intent": "change_in_mental_status",
+      "role": "Partner",
+      "utterance": "She is opening her eyes-response to sound."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "She attempted to move her arm upon command-Updating GCS to 6."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "She's becoming more lucid. Can you tell us your name?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "Clarice."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Partner",
+      "utterance": "Where are we?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "In a house in the city."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Partner",
+      "utterance": "What happened to you today?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "I was upset and took something."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Any known allergies?"
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "I don't remember any."
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Partner",
+      "utterance": "Do you take any medications regularly?"
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "I don't know."
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "How long ago did the upset occur and the drug use?"
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "It happened before this-just don't remember exactly when."
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "When was the last time you ate or drank?"
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Partner",
+      "utterance": "She doesn't recall the exact time."
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Is there a history of medical problems or surgeries?"
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "I don't know."
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_info",
+      "role": "EMT",
+      "utterance": "Established identity as Clarice, 35, female."
+    },
+    {
+      "turn": 47,
+      "topic": "Pain Assessment",
+      "micro_intent": "pain_level",
+      "role": "Partner",
+      "utterance": "Feeling any pain right now?"
+    },
+    {
+      "turn": 48,
+      "topic": "Pain Assessment",
+      "micro_intent": "pain_level",
+      "role": "Patient",
+      "utterance": "No pain. Just numb."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils 2-3 mm, equal, reactive. No head trauma noted."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "No signs of neck pain or rigidity. Veins in the neck not distended."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth",
+      "role": "EMT",
+      "utterance": "Oral airway is clear. No bite marks or rashes noted."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio",
+      "role": "Partner",
+      "utterance": "Chest movement is equal and symmetrical with assisted breathing."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "No abdominal rigidity, tenderness, or guarding. Seems flat and soft."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "No pelvic tenderness or vaginal bleeding reported or observed."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "IV secure in the left forearm. Beginning movement in left arm with command."
+    },
+    {
+      "turn": 56,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Protocol initiated based on clinical signs for opioid overdose: GCS 3 improving."
+    },
+    {
+      "turn": 57,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Second Narcan dose aligns with protocol-opioid toxicity and AMS."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Calling ahead to [COMPANY_NAME]-opioid overdose and response to Narcan."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Assisted with positive identification. Pt secured to stretcher."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "NRB and O2 in place. Two doses of Narcan administered."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Respiratory status improved with BVM. IV placed and running."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "SpO₂ improved to 100% with assisted breathing."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "EtCO₂ 120 initially and now 42 with assisted breathing."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "GCS improved from 3 to 6. No neurological decline in transport."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Blood glucose was 220 and temperature at 99.2°F."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No respiratory distress or chest pain. All signs stable in past ten minutes."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Opioid intestinal status resolved partially with Narcan use."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Naloxone administered per protocol. No further drug boxes."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Transport and interventions remain stable. No complications noted during transport."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Responsiveness increased. GCS remains at 6. No prolonged confusion."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Oxygen administered throughout and patient remains stable."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No signs of distress. GCS 6. No neurological decline."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "EtCO₂ baseline of 42. No signs of respiratory failure."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Treatment efficacious. Opioid-related alterations resolved with care."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Full communication to the ED on patient's condition. All care documented."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No post-intervention complications. All vital signs improving."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No additional interventions required as of last check."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "All information provided to ED without gaps in documentation."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Interventions completed per standing orders."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Stable for transport. No transport-specific issues."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Vitals, interventions, and overall responsiveness communicated clearly."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No dialysis or prior pregnancies noted."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No incompatibility noted with medications."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Verbal clarity improved. Patient knows personal name."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Normal overall findings in the limb."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No speech evaluation performed-no spontaneous speech noted in documentation."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "All breath sounds are stable but not strenuously assessed. No adventitious sounds reported."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No perfusion assessment performed."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No AVPU scale available, initial impression relied on GCS."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "GCS assessment was not fully verbal-based on response to command and eye opening."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No formal perfusion noted-pulse and strength are reliable."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Recognize resulting power from Narcan dosing."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No potential pregnancy identified in situation or records."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No complications regarding the patient's communication or breathing process."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Patient showed no direct sign of incontinence or confusion."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "All care and communication finalized with ED staff."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No therapy for pain or preg tested at that time."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No additional trials required for the patient condition on scene."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Final conclusion includes prompt medication and favorable trends."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "No further action needed at transfer to ED."
+    },
+    {
+      "turn": 101,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "All patient history and actions made known."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Despatch of the patient is ready at ED with all data shared."
+    },
+    {
+      "turn": 103,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Maintained assistance and support during transfer and arrival."
+    },
+    {
+      "turn": 104,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Information transfer seamless, no missing steps documented."
+    },
+    {
+      "turn": 105,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No signs of qualitative loss-responds well through it."
+    },
+    {
+      "turn": 106,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Disease control initiated and monitoring continues."
+    },
+    {
+      "turn": 107,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No update on progress after full treatment applied."
+    },
+    {
+      "turn": 108,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "Minimal requirement for continued care after ED arrival."
+    },
+    {
+      "turn": 109,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "EMT",
+      "utterance": "No post-handoff actions required regarding patient status."
+    },
+    {
+      "turn": 110,
+      "topic": "Handoff",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Full clearance for hospital assuming care."
+    }
+  ]
+}

@@ -1,0 +1,694 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000614",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for chest pain."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "Our father has chest pain and is short of breath. It started about two days ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "He's alert and oriented, acting at his baseline per the family. Eyes are open, and he responds to pre-set commands."
+    },
+    {
+      "turn": 5,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is patent with no signs of obstruction. No need for intervention at this time."
+    },
+    {
+      "turn": 6,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Patient is tachypneic at 28 breaths per minute. No signs of labored breathing or retractions."
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Radial pulses are strong, equal, and regular. Skin is warm, dry, and not pale. Cap refill is less than 2 seconds."
+    },
+    {
+      "turn": 8,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 92 beats per minute, regular and strong."
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respiratory rate is 28 with no use of accessory muscles observed."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "Eyes are open spontaneously, with pupils equal and reactive at 3 mm each."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Patient is completely deaf, so no verbal response is expected."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "Responds to commands through head and arm gestures. Demonstrates full motor function per family."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Blood pressure is 178/80 mmHg initially."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is measured at 96% with no supplemental oxygen used."
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_events_leading_up",
+      "role": "Bystander",
+      "utterance": "The hospice nurse we reached out to over the phone recommended he go to the hospital."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "He's had a heart attack in 2017 and has an abdominal aortic aneurysm as per records."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "A 12-lead EKG shows atrial fibrillation with old inferior infarct patterns noted in aVF leads."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mp",
+      "role": "Paramedic",
+      "utterance": "Alert per family report, oriented to person, place, time, and events, per daughter."
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Skin is warm, dry, and no rashes or discoloration noted. Pallor is absent."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent_exam",
+      "role": "EMT",
+      "utterance": "Normocephalic head, eyes are PERRL and track well. No secretions or drainage observed."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "torso_exam",
+      "role": "EMT",
+      "utterance": "Chest rise and fall are normal, breath sounds equal bilaterally. No chest wall tenderness."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Abdomen is distended with a visible, noted umbilical hernia covered in old surgical scars. No tenderness reported."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "EMT",
+      "utterance": "Upper and lower extremities show no swelling, deformity, or discoloration. Motion is reciprocal via non-verbal cues."
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_severity",
+      "role": "EMT",
+      "utterance": "Pain is estimated to be 5 out of 10 based on medical documentation."
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_radiation",
+      "role": "EMT",
+      "utterance": "The pain is centralized and has not spread per family perception."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_symptoms",
+      "role": "Bystander",
+      "utterance": "No new abdominal pain, dizziness, fever, or change in mental status has been observed in the last two days."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Initial glucose read is zero-possibly device error or low reading."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure drops to 161/87 on repeat measurement."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Paramedic",
+      "utterance": "Oxygen saturation improved to 95%."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "EKG remains in atrial fibrillation, no acute changes or new ischemia."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is now 161/90 with regular heart sounds."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "No new ST elevation or changes observed since the first EKG."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "A 4-lead cardiac monitor has been placed to track for arrhythmias."
+    },
+    {
+      "turn": 34,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We will follow the medical chest pain protocol with immediate hospital transport."
+    },
+    {
+      "turn": 35,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Paramedic",
+      "utterance": "Rechecking all vitals prior to transport."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is now 98%."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Sugar still reads as zero-at facility for definitive checks."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Pain remains at 5/10 without change or escalation signs."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "redo_signs_symptoms",
+      "role": "Bystander",
+      "utterance": "Symptoms have not worsened noted by family per scene observations."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "No medications administered. ASA withheld due to AAA history."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Patient is being directed to memorial for appropriate diagnosis and care."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Stretcher is secured with shoulder and lap belts for transfer."
+    },
+    {
+      "turn": 43,
+      "topic": "Handoff",
+      "micro_intent": "provide_handoff",
+      "role": "Paramedic",
+      "utterance": "Hospital alerted of condition and EKG findings as reported."
+    },
+    {
+      "turn": 44,
+      "topic": "Handoff",
+      "micro_intent": "provide_handoff",
+      "role": "EMT",
+      "utterance": "IV status, EKG results, and last documented vitals confirmed for ED."
+    },
+    {
+      "turn": 45,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Bystander",
+      "utterance": "Daughter remains with patient to provide further detail to ED as needed."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mp",
+      "role": "EMT",
+      "utterance": "Orientation still consistent with non-verbal commands alone."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Reinspect of hernia-still size consistent, no new complaints."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "hemodynamic_stable",
+      "role": "Paramedic",
+      "utterance": "No recent changes in circulation or vital signs-with family monitoring."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "BP remains stable at 161/90 with no fluctuation."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "EKG still mirrors original findings with no new rhythm deviations."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Skin still consistent with no new rashes or color changes."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Paramedic",
+      "utterance": "Bilateral movement still noted via gesture commands."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "IV infusing normally, monitor remains stable."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is now 84, no irregular rhythm."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Breathing stable at 30-no significant work of breathing noted."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "EKG repeat shows the same atrial fib pattern as initial-no changes."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Pain still measurable as 5 within family-assisted monitoring."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "redo_signs_symptoms",
+      "role": "Bystander",
+      "utterance": "Per family again, no new complaints or signs of worsening."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Zero reading again-note passed to hospital for correction."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "IV continues normally, no new interventions necessary."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Final safety checks complete prior to transport to facility."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "provide_handoff",
+      "role": "EMT",
+      "utterance": "ED aware of patient's prearrival and will be met as listed in report."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "provide_handoff",
+      "role": "Paramedic",
+      "utterance": "Drug list and medical history cycled to hospital for expedited treatment."
+    },
+    {
+      "turn": 64,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Communication remains via head and arm signals."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mp",
+      "role": "EMT",
+      "utterance": "Mentation with active gesture communication."
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Hernia still consistent with physical and family input."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation at 98%."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic",
+      "utterance": "Still reads zero-device mention to ED staff."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Final EKG reading still mirrors atrial fib-no changes to log."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient transferred and secured for deviations."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "provide_handoff",
+      "role": "EMT",
+      "utterance": "Final report upheld to facility-patient en route."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Daughter remains, has prepared full history and notes for ED."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mp",
+      "role": "Paramedic",
+      "utterance": "Orientation maintained with guidance by family member."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "EMT",
+      "utterance": "Still consistent movement via gestures."
+    },
+    {
+      "turn": 75,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Reading is 161/90 same as recent prior."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "EKG readings unchanged from prior checks."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Pain level same-5/10, no new distress."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "redo_signs_symptoms",
+      "role": "Bystander",
+      "utterance": "Continues with stable signs today."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "All systems up and working-no new action required."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient secured, transport prepped-safe for final trip."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "provide_handoff",
+      "role": "EMT",
+      "utterance": "Final handoff notes to ED are given via radio."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Hospital is aware of patient and pending arrival time."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mp",
+      "role": "Partner",
+      "utterance": "Cognition still stable via non-verbal commands."
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Partner",
+      "utterance": "No change in extremities-tested and consistent."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure at 161/90-unchanged again."
+    },
+    {
+      "turn": 86,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "EKG results as previously reported-no changes en route."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Pain unchanged, ends on topic of condition."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "redo_signs_symptoms",
+      "role": "Bystander",
+      "utterance": "Further reports reassured by family only."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "IV still infusing and in place without compromise."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Set for facility arrival."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "provide_handoff",
+      "role": "EMT",
+      "utterance": "Final maintenance of conditions at full handover."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Daughter to input verbally once at destination."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mp",
+      "role": "Partner",
+      "utterance": "Cognition maintained through non-communication."
+    },
+    {
+      "turn": 94,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "EMT",
+      "utterance": "Still functioning by command via gesture."
+    },
+    {
+      "turn": 95,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Final EKG unchanged by prior reading."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Secure for final rest set."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "provide_handoff",
+      "role": "EMT",
+      "utterance": "Final status updated to facility."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Staying until ED acceptance full."
+    }
+  ]
+}

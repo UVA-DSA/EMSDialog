@@ -1,0 +1,834 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001465",
+  "protocol": [
+    "general - cardiac arrest (protocol 2 - 7)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 74, dispatch to a call at [CITY], Apt #H for unconscious/fainting/near-fainting. Priority one, hot transport intended."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Bystander",
+      "utterance": "We found her on the couch unresponsive. She had something in her heart and brain placed recently. She was last okay 20 minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Med Partner",
+      "utterance": "Did anyone give her any medication or attempt CPR before we arrived?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "No. She took her regular pills and then collapsed. I tried shaking her, but she didn't respond."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Partner",
+      "utterance": "Let's check responsiveness. Can you tell me your name or the date?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "No eye opening, verbal response, or motor movement. Patient is unresponsive to all stimuli."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Partner",
+      "utterance": "No eye opening to loud voice or pain. Agonal breathing noted."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Pupils are 2 mm and equally reactive to light."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Partner",
+      "utterance": "No vocalization or response to verbal prompts. Unresponsive to all stimuli."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "She doesn't moan or speak. No verbal response at all."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "Apply pain to shoulder. Any movement? None observed."
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "No motor movement. She remains completely unresponsive."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Agonal breathing present. No visible airway obstructions."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Airway cleared. NPA being placed for securing airway."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "NPA is in place. High flow oxygen using BVM being administered now."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Breathing is agonal, approximately 5 breaths per minute."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Breathing effort minimal. Assisted ventilation strategies will be initiated."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "No palpable central pulse. Blood pressure undetectable."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Skin is pink, warm, and dry. No cyanosis noted."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Confirming respiratory rate. Agonal breathing at 5 breaths per minute."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Still no palpable pulse. Prepare to begin compressions."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is undetectable. Patient remains pulseless."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Connecting 4-lead monitor. Rhythm documentation ongoing."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Current EKG displaying sinus bradycardia, early signs of PEA."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse oximeter nonfunctional; oxygenation maintained with high flow BVM."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Blood glucose reading is 598. Recording in field notes and updating en route."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "assess_continuous_monitoring",
+      "role": "EMT",
+      "utterance": "Continuous monitoring activated. Detects and reports any rhythm changes."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "assess_continuous_monitoring",
+      "role": "Partner",
+      "utterance": "Continuous observation confirms PEA and no ROSC."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Initiating assisted ventilations with King airway. ETCO₂ monitoring now displaying."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "ej_iv",
+      "role": "Partner",
+      "utterance": "Left External Jugular IV placed and now functioning."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_maintain_flush",
+      "role": "EMT",
+      "utterance": "IV flushed and patent. Ready for drug administration."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Administering 1 mg of epinephrine 1:10,000 via IV."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_maintain_flush",
+      "role": "Partner",
+      "utterance": "IV flows freely. Ensuring patency between counts."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Narcan available. Will give 2 mg if ROSC isn't observed."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_info",
+      "role": "EMT",
+      "utterance": "Any medication or allergy history provided by family?"
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_info",
+      "role": "Bystander",
+      "utterance": "She had a device placed in heart and head recently. No known allergies or medications."
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Partner",
+      "utterance": "Any known drug use or changes before collapse?"
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "None. We followed normal medication routine."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Continuous pulseless state. No improvement with current interventions."
+    },
+    {
+      "turn": 41,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Activating Protocol 2-7: General Cardiac Arrest."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bgl",
+      "role": "Partner",
+      "utterance": "Blood glucose remains 598. No impact on current interventions."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Monitor confirms ongoing PEA rhythm. No ROSC detected."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration at 12 per minute. Improved with King airway in place."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Systemic blood pressure remains undetectable. Pulseless condition ongoing."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Still nonfunctional. Oxygen administered at full 15 LPM."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Narcan ready for use. No changes observed post-EPI."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "No recovery. Narcan administered following ROSC check."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "iv_maintain_flush",
+      "role": "EMT",
+      "utterance": "IV still patent and functioning. Medications delivered recently."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "repeat_history",
+      "role": "Partner",
+      "utterance": "No further information available. Family provided updates only."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transport destination is [COMPANY_NAME] EDTA, nearest ALS facility."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient has been placed on the Reeves cot and strapped with safety restraints."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Cot secured to ambulance stretcher with all standard safety measures."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Calling for IV bag and medication logs per provider transfer instructions."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Full care summation and history updating before log transfer to ED staff."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "hot_to",
+      "role": "Partner",
+      "utterance": "Hot transport initiated. Compressions and oxygen ongoing without pause."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Patient handed off to [COMPANY_NAME] staff. Protocols reviewed prior to hand off."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Mechanical ventilations at 4 seconds per breath. Still no spontaneous breathing."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Monitor showing continued PEA. No spontaneous rhythm returned."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "exit",
+      "role": "EMT",
+      "utterance": "All resuscitative efforts ongoing at [COMPANY_NAME]. Patient remains pulseless and apneic."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "special_site",
+      "role": "Partner",
+      "utterance": "All transport equipment and medications reviewed and accounted for."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Interventions",
+      "micro_intent": "assess_continuous_monitoring",
+      "role": "Partner",
+      "utterance": "Continuous monitoring confirmed active through transport."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "special_site",
+      "role": "EMT",
+      "utterance": "Full hand-off at [COMPANY_NAME]. No interruptions to vital signs or resuscitation efforts."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Patient remains in PEA throughout transport. No return to sinus."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "end",
+      "role": "EMT",
+      "utterance": "ROSC not observed. Full handoff complete with documentation to ED staff."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "end",
+      "role": "Partner",
+      "utterance": "All care and documentation aboard. Transport concluded safely."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "end",
+      "role": "EMT",
+      "utterance": "No clinical changes during transport. Arriving at ER for further care."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "end",
+      "role": "Partner",
+      "utterance": "All resuscitative measures ongoing. Patient in stable condition en route."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respiratory rate still at 12. Normal for King airway security."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "skin",
+      "role": "EMT",
+      "utterance": "Skin condition remains pink, warm, and dry."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Autopulse ready for continued compressions. In line with protocol."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Rechecking glucose levels. Still reported at 598 mg/dL."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Interventions",
+      "micro_intent": "assess_continuous_monitoring",
+      "role": "Partner",
+      "utterance": "Monitoring continued and noted PEA rhythm throughout."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Initial respiratory rate was 5 per minute, agonal. Now at 12 per minute with assistance."
+    },
+    {
+      "turn": 75,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "SpO₂ unreadable; oxygen delivery is full 15 LPM via BVM at this time."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure remains undetectable. Still 0/0."
+    },
+    {
+      "turn": 77,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Skin has no change in color, no signs of pale pallor."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pain",
+      "role": "Partner",
+      "utterance": "Pain assessment not applicable. Patient is unresponsive."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bgl",
+      "role": "EMT",
+      "utterance": "Rechecking blood glucose in the field. Still recording at 598 mg/dL."
+    },
+    {
+      "turn": 80,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG confirms no change to PEA. No ROSC recorded."
+    },
+    {
+      "turn": 81,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Narcan administered at 20:10. No improvement noted."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Cot and patient are secured. No movement concerns during transit."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "hot_to",
+      "role": "EMT",
+      "utterance": "Resuscitation ongoing with compressions and ventilations en route."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "PEA rhythm continues on monitor. No sinus return."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "respiratory",
+      "role": "EMT",
+      "utterance": "Respiratory remains at 12 per minute with assisted King airway."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose confirmed at 598. No change in trend."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "oxygen",
+      "role": "EMT",
+      "utterance": "High-flow oxygen at 15 LPM via BVM throughout transport."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "iv",
+      "role": "Partner",
+      "utterance": "IV maintained, clergy of line activity confirmed and patent."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Patient remains comatose. Unresponsive and apneic."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "skin",
+      "role": "Partner",
+      "utterance": "No signs of pallor or coldness in extremities or trunk."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "transport_type",
+      "role": "EMT",
+      "utterance": "Hot transport for ongoing ROSC efforts in progress."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Preparing full patient report with ePCR and drug logs at transfer."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Transfer to ED care is now complete with all resuscitation equipment."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "observation",
+      "role": "Partner",
+      "utterance": "No spontaneous breathing, no pulse noted throughout."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "vital_ongoing",
+      "role": "EMT",
+      "utterance": "Continuously monitoring for rhythm or pulse change en route."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "status",
+      "role": "Partner",
+      "utterance": "Patient remains stable with no major changes during transport."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "interventions",
+      "role": "EMT",
+      "utterance": "All current interventions unchanged from initial field setup."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "progress",
+      "role": "Partner",
+      "utterance": "No improvement seen after Narcan and Epi during transit."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "outcome",
+      "role": "EMT",
+      "utterance": "Patient in continued PEA. No return of spontaneous circulation."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "documentation",
+      "role": "Partner",
+      "utterance": "Full report and ECG saved for ED medical team."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "vitals_post",
+      "role": "EMT",
+      "utterance": "Final vitals collected at 20:05: SpO₂ 0, BP 0/0, R 12, Pulse 0, PEA rhythm."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "transition",
+      "role": "Partner",
+      "utterance": "ED staff assumed control at the cot. Handoff complete."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "transport_time",
+      "role": "EMT",
+      "utterance": "Transport concluded at receiving hospital as planned."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "care_handover",
+      "role": "Partner",
+      "utterance": "All care documented and transferred."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "site_clear",
+      "role": "EMT",
+      "utterance": "No delays or special incidents during transport."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "transport_complete",
+      "role": "Partner",
+      "utterance": "Patient and equipment back aboard in transport mode."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "ending",
+      "role": "EMT",
+      "utterance": "Transport complete. All resuscitation efforts followed protocol."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "service_complete",
+      "role": "Partner",
+      "utterance": "All EMS services complete. No remaining calls."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "close",
+      "role": "EMT",
+      "utterance": "Field notes compiled. Return to base ongoing."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "end",
+      "role": "Partner",
+      "utterance": "All data submitted. Sign out to dispatch."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "safety",
+      "role": "EMT",
+      "utterance": "No injuries to crew during incident or recovery."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "incident",
+      "role": "Partner",
+      "utterance": "Patient EKG, vitals, and treatment all well-documented."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "documentation",
+      "role": "EMT",
+      "utterance": "ePCR submitted and saved with full vitals and drug logs."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "quality_check",
+      "role": "Partner",
+      "utterance": "All field protocols performed without deviation."
+    },
+    {
+      "turn": 115,
+      "topic": "Transport",
+      "micro_intent": "feedback",
+      "role": "EMT",
+      "utterance": "No complications during resuscitation or transit."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "review",
+      "role": "Partner",
+      "utterance": "Transport and interventions considered timely and appropriate."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "report",
+      "role": "EMT",
+      "utterance": "All ePCR sent to dispatch for HQ review."
+    },
+    {
+      "turn": 118,
+      "topic": "Transport",
+      "micro_intent": "logoff",
+      "role": "Partner",
+      "utterance": "Unit 74 signed off from incident and returned to service."
+    }
+  ]
+}

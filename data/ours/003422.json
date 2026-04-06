@@ -1,0 +1,582 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003422",
+  "protocol": [
+    "medical - diabetic - hypoglycemia (protocol 3 - 8)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3 for a cardiac arrest at 7845 Ashford, [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Jordan with the rescue squad. What happened today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "We called because he's on the floor not moving. Wife thought he passed out."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "call_type",
+      "role": "Bystander",
+      "utterance": "It was reported as cardiac arrest, but he's still breathing."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Pt has altered mental status with a Glasgow Coma Scale of 8-eye 2, verbal 2, motor 4."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Eyes are closed and don't respond to verbal cues."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "No verbal response-doesn't speak or follow commands."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Minimal response to painful stimulus."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "pupillary_reflex",
+      "role": "Partner",
+      "utterance": "Pupils are equal and reactive per documentation."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Pt's airway is patent, and he is breathing spontaneously."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Resp rate is 14, SpO₂ is 99%."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "HR is 66, BP is 151/89; skin is clammy, diaphoretic."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin_appearance",
+      "role": "Partner",
+      "utterance": "Diaphoresis and clamminess, no edema noted."
+    },
+    {
+      "turn": 14,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Can you tell me any known medical history regarding him?"
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "He's diabetic and has high blood pressure."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "Did he eat dinner around when he went to bed?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Bystander",
+      "utterance": "I'm not sure-he said he was going to eat but was tired. I left for less than an hour."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_of_medication",
+      "role": "EMT",
+      "utterance": "What medications do you know he takes?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_of_medication",
+      "role": "Bystander",
+      "utterance": "He definitely takes insulin."
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "Does he have any pain or discomfort currently?"
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Bystander",
+      "utterance": "No, he's not reporting any."
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "EMT",
+      "utterance": "Has he had episodes like this before?"
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Bystander",
+      "utterance": "No-this is the first time he's been like this."
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "EMT",
+      "utterance": "Did he do anything unusual before this?"
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "Bystander",
+      "utterance": "Not that I know of-he was resting."
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "If he had pain, what sort of sensation-sharp, dull?"
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Bystander",
+      "utterance": "He hasn't mentioned any, so I don't know."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does any pain spread to arms, chest, legs?"
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Bystander",
+      "utterance": "Again, no known pain."
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "EMT",
+      "utterance": "When did you notice these symptoms?"
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Bystander",
+      "utterance": "I came home at 11 p.m. and found him this way."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 66."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breaths are 14, even and unlabored."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "O2 is 99% on room air."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is 44-very low."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is 151 over 89."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG baseline indicating sinus rhythm."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent",
+      "role": "EMT",
+      "utterance": "Head is atraumatic, facial features are symmetrical, and no trauma noted."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "gcs",
+      "role": "EMT",
+      "utterance": "GCS is 8-eye: 2, verbal: 2, motor: 4."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Setting up cardiac monitoring for ongoing assessment."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Partner, prepare D10-Pt is hypoglycemic."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Need to do a glucose check per standing order before administering dextrose."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent",
+      "role": "EMT",
+      "utterance": "Eyes are PEARL, no drainage from ears or nose. Mucous membranes are moist and pink. Speech is clear."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is warm and clammy, no rash or rash-like areas."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Neck is supple, no lymphadenopathy or distention."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth",
+      "role": "EMT",
+      "utterance": "No drainage from ears or nose, mouth appears normal."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs",
+      "role": "EMT",
+      "utterance": "Symmetrical chest expansion observed."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs",
+      "role": "Partner",
+      "utterance": "Lung sounds clear bilaterally, no wheezes or stridor."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Abdomen is soft and non-tender."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back",
+      "role": "Partner",
+      "utterance": "All extremities show good pulse, sensation, and movement; no deformity noted."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "4-lead monitoring is active and showing sinus rhythm."
+    },
+    {
+      "turn": 52,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Following protocol for diabetic hypoglycemia."
+    },
+    {
+      "turn": 53,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Initiate protocol 3-8 for hypoglycemia-confirmed by documentation."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse rises to 86."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Breathing remains at 14 per minute."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "O2 saturation still 99%."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is elevated to 227 post D10."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "BP is now 177/114."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Partner",
+      "utterance": "EKG displaying sinus arrhythmia with artifact."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Glucose check prior to glucose administration completed."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV access established in right AC per documentation."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "IV established in right AC with 250cc D10 infusing."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "Pt continues to deny any pain."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "redo_historical_info_last_intake",
+      "role": "EMT",
+      "utterance": "Has his insulin or diet changed recently?"
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "redo_historical_info_last_intake",
+      "role": "Bystander",
+      "utterance": "No-same routine."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "redo_historical_info_medication",
+      "role": "EMT",
+      "utterance": "Does he take insulin Glargine (Lantus)?"
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "redo_historical_info_medication",
+      "role": "Bystander",
+      "utterance": "That's all he takes."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "provide_report_to_ed",
+      "role": "Partner",
+      "utterance": "RN at ED entrance for report and handover."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transport to [COMPANY_NAME] per protocol."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Pt is secured on stretcher with five-point straps."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse now at 71."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Resp rate still 14."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "Oxygen now 97%."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_glucose",
+      "role": "Partner",
+      "utterance": "Glucose at 160."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "BP is 176/96."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus rhythm with some artifact."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Administered 350cc normal saline as per protocol."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Ondansetron 4mg IV per protocol with improved response."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Secured for transport with straps and securing device."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "En route to [COMPANY_NAME] for care."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "provide_report_to_ed",
+      "role": "EMT",
+      "utterance": "Report and care transfer complete."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "Pt remains pain-free per documentation."
+    }
+  ]
+}

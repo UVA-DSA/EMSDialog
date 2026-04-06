@@ -1,0 +1,778 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001618",
+  "protocol": [
+    "injury - general trauma management (protocol 4 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a 50-year-old male with chest discomfort from a motor vehicle collision."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What happened that made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I hit the steering wheel in a wreck. My chest is in a lot of pain and my wrists hurt too."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Mr. Smith, can you tell me your name and the current date?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "John Smith, and today is October 12th."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Do you know where you are?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I'm on the side of the road off I-295. I collided with a truck."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "And what happened to you just before this call came in?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I came around the curve and saw a truck in my lane going the wrong direction."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway appears open. Can you speak clearly?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Yes, I can talk."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Let's check your breathing pattern and effort."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Even respirations, no signs of distress. Let's check for cyanosis."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "No cyanosis. I'll now measure oxygen saturation."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is elevated at 104 and regular. Blood pressure is 165 over 101."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "No visible peripheral edema or cyanosis. Skin appears normal."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 20 per minute. Let me repeat after reassessment."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 95%, which is within normal limits."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Mr. Smith, do you have any significant health conditions?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I have hypertension, obesity, and hyperlipidemia."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Are you currently on medications for these conditions?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I should be, but I can't recall what or when I took the last dose."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "What was the last time you had food or fluids?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I had some bourbon around 12:00 AM."
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "EMT",
+      "utterance": "How would you rate your chest pain on a 0 to 10 scale?"
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "It's an 8. Sharp, in the middle of my chest."
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "EMT",
+      "utterance": "Does the pain radiate or stay in one place?"
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "It stays in my chest. My wrists are 4 each."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "May I check for any visible signs of trauma on your chest?"
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Some tenderness but no deformity or ecchymosis. Skin is intact."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Any redness or swelling on the chest or wrists?"
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No erythema noted. Skin over wrists is normal."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "I'm going to place a 4-lead EKG to monitor your heart activity now."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Once it's on, we'll assess for any cardiac changes."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Can I perform a finger stick for blood glucose now?"
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Completed 12-lead EKG-no acute changes, sinus tachycardia observed."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse at 102, respirations at 22. Blood pressure 156 over 93."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Glucose at 143 mg/dL. Oxygen saturation at 94%-stable."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "No changes in vitals since last evaluation."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We'll insert an 18-gauge IV in your right arm for possible medications during transport."
+    },
+    {
+      "turn": 41,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_emergency_protocol",
+      "role": "Paramedic Partner",
+      "utterance": "Based on vitals and EKG, we are going to follow protocol 4-1 for general trauma management."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic Partner",
+      "utterance": "[COMPANY_NAME] is our destination for trauma evaluation."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Please stay still while we move you onto the cot."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Cot positioned. We will now carefully secure you for transport."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Securing all straps to ensure safe ambulation to the ambulance."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Cot is fully secured and ready. Let's begin our transfer."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transitioning patient into the ambulance. Please stay still."
+    },
+    {
+      "turn": 48,
+      "topic": "Handoff",
+      "micro_intent": "final_report_from_scene_to_receiving_facility",
+      "role": "Paramedic Partner",
+      "utterance": "50-year-old male with motor vehicle collision complaints of 8/10 chest pain and 4/10 bilateral wrist pain. Alert and oriented times 4 (A&O×4)."
+    },
+    {
+      "turn": 49,
+      "topic": "Handoff",
+      "micro_intent": "final_report_from_scene_to_receiving_facility",
+      "role": "Paramedic Partner",
+      "utterance": "Vital signs stable. No signs of airway compromise. Reports of dyspnea denied but pain worsens with breathing."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient vitals at departure are stable-12-lead shows sinus tachycardia."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All equipment functioning; patient is secured and ready for transport."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Departing the scene now. En route to [COMPANY_NAME]."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Continue monitoring vitals en route. All findings unchanged."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "SpO2 stable at 94%. No significant changes reported."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Respiratory rate still 22. No new signs of respiratory distress."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Vitals remain stable. Patient is alert and in no acute distress."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "EMT",
+      "utterance": "How does your chest pain present now?"
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "Patient",
+      "utterance": "Still 8/10-getting worse with deep breaths."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "EMT",
+      "utterance": "Indicates no relief at rest-any activity that worsens it?"
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "Patient",
+      "utterance": "Yes, when I move or take deep breaths."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "EMT",
+      "utterance": "When did the pain begin?"
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "Patient",
+      "utterance": "Immediately after the crash. When I hit the steering wheel and airbag deployed."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "EMT",
+      "utterance": "Have you had any chest pain recently or in the past?"
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "Patient",
+      "utterance": "No. This is the first time."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_cervical",
+      "role": "Partner",
+      "utterance": "Any pain in the neck or back?"
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_cervical",
+      "role": "Patient",
+      "utterance": "No, nothing in the neck or back."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_cervical",
+      "role": "Partner",
+      "utterance": "Any numbness or tingling in the arms or legs?"
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_cervical",
+      "role": "Patient",
+      "utterance": "No feeling issues or weakness reported."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_back",
+      "role": "Partner",
+      "utterance": "Quick back examination-no signs of trauma."
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_back",
+      "role": "Partner",
+      "utterance": "Vertebral column and flank are free from bony deformity or crepitus."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Partner",
+      "utterance": "Any other health conditions or prior injuries worth mentioning?"
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Patient",
+      "utterance": "Only hypertension and hyperlipidemia."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Partner",
+      "utterance": "How long have you been diagnosed with those?"
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Patient",
+      "utterance": "For several years-my main conditions."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "examine_eyes",
+      "role": "Partner",
+      "utterance": "Any eye or visual discomfort?"
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "examine_eyes",
+      "role": "Patient",
+      "utterance": "Vision is clear, no issues."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "examine_nose",
+      "role": "Partner",
+      "utterance": "Quick nose check for swelling or drainage."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "examine_nose",
+      "role": "Partner",
+      "utterance": "No injuries or drainage observed."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "examine_head",
+      "role": "Partner",
+      "utterance": "Checking head for bumps, bruises, or lacerations."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "examine_head",
+      "role": "Partner",
+      "utterance": "No signs of head trauma or visible deformity."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Partner",
+      "utterance": "Any recent medication changes or missed doses?"
+    },
+    {
+      "turn": 82,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Patient",
+      "utterance": "Not sure. Can't recall now. Need help from a nurse later."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_abdomen",
+      "role": "Partner",
+      "utterance": "Checking for any signs of abdominal tenderness or distention."
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_abdomen",
+      "role": "Partner",
+      "utterance": "No discomfort or bloating reported."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Partner",
+      "utterance": "Weather conditions at the time of impact?"
+    },
+    {
+      "turn": 86,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Patient",
+      "utterance": "Some mist and drizzle in the air."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Partner",
+      "utterance": "Any extra details you can provide about the incident?"
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Patient",
+      "utterance": "Seatbelt was unlocked but airbag deployed. No neck pain."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_genitourinary",
+      "role": "Partner",
+      "utterance": "Any pain, urgency, or changes in urination or bowel movements?"
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_genitourinary",
+      "role": "Patient",
+      "utterance": "No-everything seems normal."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Partner",
+      "utterance": "Any known allergies?"
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_update",
+      "role": "Patient",
+      "utterance": "No allergies of note."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_extremities",
+      "role": "Partner",
+      "utterance": "Checking motor and sensory function in all limbs."
+    },
+    {
+      "turn": 94,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_extremities",
+      "role": "Partner",
+      "utterance": "Gross motor and sensory function intact. No deficits."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "EMT",
+      "utterance": "Your current pain levels for record?"
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_pain_assessment",
+      "role": "Patient",
+      "utterance": "Chest is still 8/10, wrists are 4 each. Worse with breathing."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Arrived safely at [COMPANY_NAME]. Initiating final report now."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "bed_trama_report",
+      "role": "Paramedic Partner",
+      "utterance": "Bedside trauma report: 50-year-old male with thoracic and bilateral wrist injuries post MVC. All vitals within stable range."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "bed_trama_report",
+      "role": "Paramedic Partner",
+      "utterance": "Alert and oriented times 4. No signs of neck or back injury. IV placed for later medication administration if needed."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "bed_trama_report",
+      "role": "Paramedic Partner",
+      "utterance": "Blood glucose consistent. Significant findings-seatbelt unlocked, chest wall tenderness without ecchymosis or crepitus. No peripheral pulse issues noted (pms intact)."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient vitals and clinical impression unchanged during transport."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No new signs of shock, airway compromise, or acute pain."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Equipment and medication supply ready in the treatment bay."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Room cleaned-patient has been safely transferred."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Bacot available. Returning to station for next call."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Venues, equipment, and documentation are updated for the next dispatch."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient transferred to [COMPANY_NAME] Hot Trauma Module."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Field impression remains unchanged based on assessment and transportation data."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No additional findings noted post-ambulation."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Ambulance is cleared and returning to base."
+    }
+  ]
+}

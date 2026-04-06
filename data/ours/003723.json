@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003723",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a 24-year-old unresponsive male found in a stairway in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Alex. What caused you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He was found lying unresponsive on the top of the entry stairway in his home. I tried waking him, but he wouldn't respond."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "He's unresponsive. Record his GCS now."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Partner",
+      "utterance": "GCS is 5. Eyes open to pain but not to sound or touch."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Partner",
+      "utterance": "No verbal response. Doesn't follow commands at all."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "EMT",
+      "utterance": "No purposeful movement. Motor score is 3."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "EMT",
+      "utterance": "Airway secure with NPA and manual support. Clear and patent."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "Breathing is shallow and snoring with rhonchi. BVM ventilations in progress."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "EMT",
+      "utterance": "Radial pulse present, strong 2+, regular. Blood pressure is 160/90."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 160 over 90 mmHg."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration rate is 16 per minute, shallow."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 99, regular and strong."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 172 mg/dL."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 93% on room air."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus rhythm initially."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "EMT",
+      "utterance": "Your son known to have any medical conditions or prior hospitalizations?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "Bystander",
+      "utterance": "He has epilepsy and was hospitalized three weeks ago at [COMPANY_NAME]."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "EMT",
+      "utterance": "Any known drug or food allergies?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "Bystander",
+      "utterance": "No known allergies reported."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - current medications",
+      "role": "EMT",
+      "utterance": "Any medications he's taking now?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - current medications",
+      "role": "Bystander",
+      "utterance": "We're not sure, he wasn't able to confirm."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "HEENT exam",
+      "role": "EMT",
+      "utterance": "Any head injury or facial signs of trauma?"
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "HEENT exam",
+      "role": "Partner",
+      "utterance": "No head trauma. Eyes appear bilaterally bulging."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears",
+      "role": "nose, mouth and throat exam; EMT",
+      "utterance": "Nasopharyngeal airway patent. Any nasal discharge or obstruction?"
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears",
+      "role": "nose, mouth and throat exam; Partner",
+      "utterance": "No nasal discharge or obstruction noted."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest exam",
+      "role": "EMT",
+      "utterance": "Any chest deformity or asymmetry?"
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest exam",
+      "role": "Partner",
+      "utterance": "No asymmetry. Bilateral rhonchi heard in bases."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen exam",
+      "role": "Partner",
+      "utterance": "Abdomen is soft, non-tender, no palpable masses."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "EMT",
+      "utterance": "Any deformities or swelling in limbs? Skin condition notable?"
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "Partner",
+      "utterance": "Strong pulses in radial and dorsalis pedis. No edema or injury."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "EMT",
+      "utterance": "Any rashes, lesions, discoloration or jaundice on the skin?"
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "Partner",
+      "utterance": "Pale but no rashes, petechiae, purpura, or scars observed."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary exam",
+      "role": "EMT",
+      "utterance": "Any rectal bleeding or urogenital issues reported?"
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary exam",
+      "role": "Bystander",
+      "utterance": "No rectal bleeding or stool mass found."
+    },
+    {
+      "turn": 36,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide ems protocol",
+      "role": "Paramedic",
+      "utterance": "He's probably opioid-involved. We'll follow the Opioid Overdose protocol."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "EMT",
+      "utterance": "Need IV access. Partner, start at the left hand."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "give medications",
+      "role": "Partner",
+      "utterance": "Access secured with 18-gauge. First dose of 0.5mg Narcan administered IVP."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "Saline flush confirmed IV patency without infiltrate."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - pulse",
+      "role": "Partner",
+      "utterance": "Pulse increased to 108 with no irregularity."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - resp",
+      "role": "Partner",
+      "utterance": "Respirations still 16, shallow but trending slightly deeper."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - bp",
+      "role": "Partner",
+      "utterance": "Blood pressure dropped slightly to 155/92."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar reads 0, but pending further confirmation."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is up to 99% with assisted ventilations."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - ekg",
+      "role": "Partner",
+      "utterance": "EKG now shows sinus tachycardia with nonspecific ST-T changes in V1/V5."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "take procedures - 4 lead monitoring",
+      "role": "Partner",
+      "utterance": "4-lead ECG running and stable."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "take procedures - 12 lead obtained",
+      "role": "Paramedic",
+      "utterance": "12-lead ECG findings show LVH with ST-T changes."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "take procedures - retake interventions - give medications",
+      "role": "Paramedic",
+      "utterance": "Administering second dose of 0.5mg Narcan now."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - pulse",
+      "role": "Partner",
+      "utterance": "Pulse increased to 112, still regular."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - resp",
+      "role": "Partner",
+      "utterance": "Breathing rate remains 16, no change observed."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - bp",
+      "role": "Partner",
+      "utterance": "Blood pressure unchanged at 155/91."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - spo2",
+      "role": "Partner",
+      "utterance": "SpO2 dipped back to 93% post-Narcan. Full supplemental oxygen initiated."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - ekg",
+      "role": "Partner",
+      "utterance": "EKG now reads as nonspecific ST-T changes with mild LVH."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "EMT",
+      "utterance": "[COMPANY_NAME] is the transport destination as that's where he was hospitalized three weeks ago."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Partner",
+      "utterance": "Patient secured in a Reeves sleeve and on the stretcher."
+    },
+    {
+      "turn": 56,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Paramedic",
+      "utterance": "Transporting a 24-year-old male with a seizure history and suspected opioid overdose."
+    },
+    {
+      "turn": 57,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Partner",
+      "utterance": "Vitals: HR 112, BP 155/91, SpO2 93, sinus tach with ST-T changes."
+    },
+    {
+      "turn": 58,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "Patient has a known history of seizures. Admitted to [COMPANY_NAME] previously."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Partner",
+      "utterance": "Maintaining BVM ventilations and high-flow oxygen."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Paramedic",
+      "utterance": "Two Narcan doses administered with slight improvement."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "Eyes open slightly but not reactive to light."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Partner",
+      "utterance": "Skin is pale, no active circulation concerns."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "12-lead EKG shows LVH and moderate ST-T abnormalities."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Partner",
+      "utterance": "IV established in left hand at 05:51, confirmed patency with 18-gauge."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "No new abdominal or rectal findings reported by family."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake history of present illness - signs and symptoms",
+      "role": "EMT",
+      "utterance": "Any changes in behavior or symptoms before this call?"
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake history of present illness - signs and symptoms",
+      "role": "Bystander",
+      "utterance": "He seemed fine the night before. No unusual signs or activity."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake history of present illness - events leading up to event",
+      "role": "Paramedic",
+      "utterance": "Last known time he was alert when?"
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake history of present illness - events leading up to event",
+      "role": "Bystander",
+      "utterance": "The night before, just prior to going to bed."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions - give medications",
+      "role": "EMT",
+      "utterance": "No further meds planned unless ordered by hospital staff."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions - take procedures",
+      "role": "Partner",
+      "utterance": "BVM and high-flow oxygen still used during transport."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Transport to [COMPANY_NAME] initiated."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Partner",
+      "utterance": "Patient and EMS gear secured on gurney."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Partner",
+      "utterance": "Facility staff alerted of Narcan use, BVM ventilations, and EKG findings."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "No active bleeding or abdominal findings reported."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions - give medications",
+      "role": "Partner",
+      "utterance": "No plan for additional meds unless required."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Wheels down and equipment locked for transport."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Paramedic",
+      "utterance": "Confirmed transport to [COMPANY_NAME] without complications."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "redo pain assessment - severity",
+      "role": "Partner",
+      "utterance": "No pain subjectively reported-assessment not possible."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "redo pain assessment - time",
+      "role": "EMT",
+      "utterance": "Last known alert time was the night before this event."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "redo pain assessment - quality",
+      "role": "EMT",
+      "utterance": "Unable to assess quality of pain-no response from the patient."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions - give medications",
+      "role": "EMT",
+      "utterance": "No further Narcan planned unless facility dictates it."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Partner",
+      "utterance": "Transport straps secure, no further requests at this time."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "Full pre-hospital care completed. Patient en route and stable."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Partner",
+      "utterance": "Trauma Bay at [COMPANY_NAME] alerted; arrival is about five minutes away."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Paramedic",
+      "utterance": "Transport ready and under way."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions - take procedures",
+      "role": "EMT",
+      "utterance": "No new ECG or IV interventions planned."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - glucose",
+      "role": "Partner",
+      "utterance": "Glucose still 0, noted as non-specific for now."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "redo history of present illness - events leading up to event",
+      "role": "EMT",
+      "utterance": "Any changes before the event?"
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "redo history of present illness - events leading up to event",
+      "role": "Bystander",
+      "utterance": "No known changes. He was fine before going to bed."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions - take procedures",
+      "role": "EMT",
+      "utterance": "No new actions required. All care addressed."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Partner",
+      "utterance": "Vitals and Narcan effects updated for hospital crew."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "No reports of obstruction, bleeding, or active abdominal issues."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "On the way to [COMPANY_NAME] with five-minute ETA."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "Family locally aware and not joining transport."
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions - give medications",
+      "role": "Paramedic",
+      "utterance": "No additional drug orders at this time."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "handover",
+      "role": "Partner",
+      "utterance": "Pre-hospital care documentation completed and ready for transfer."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "No incidents or movement issues on transport."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs - glucose",
+      "role": "Partner",
+      "utterance": "Glucose continues at 0. Monitored as non-specific."
+    },
+    {
+      "turn": 100,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions - give medications",
+      "role": "Partner",
+      "utterance": "No medications pending at this time."
+    }
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004141",
+  "protocol": [
+    "medical - diabetic - hypoglycemia (protocol 3 - 8)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for Diabetic Problems. Response to 64-year-old female with unconscious seizure in [CITY] Apt B626."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Ma'am, I'm Alex with the rescue squad. We're here to help. What happened with the patient?"
+    },
+    {
+      "turn": 3,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "I'm Sam, the paramedic. Can you describe the symptoms you saw in her before we arrived?"
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient's Daughter",
+      "utterance": "She had a full-body seizure, then vomited. We don't know what caused it."
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Friend",
+      "utterance": "We tried giving her some juice, but she couldn't keep it down. That's why we called 911."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Is she responding at all when you speak or touch her?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Daughter",
+      "utterance": "She moans, but I can't understand her. She doesn't seem to be fully aware."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Are her eyes open at any point?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Daughter",
+      "utterance": "No, they don't open, not even slightly."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "Any words or coherent sounds coming from her?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Daughter",
+      "utterance": "Gurgling noises mostly. Nothing you could really understand."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Friend",
+      "utterance": "She didn't move from time to time at all. The seizure just finished."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "I'm going to check her airway. Please hold her head steady."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Her airway is patent but she's making gurgling sounds. I'll suction that out now."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Let me check her breathing. Right now it's 27 breaths per minute."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Her oxygen saturation is 92 percent. That's on room air."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Her airway is cleared. She is breathing, and the rate seems relatively stable."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Her heart rate is 116 right now, so it's elevated."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Her blood pressure is 155 over 89."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "I'm checking her glucose. It reads 48 mg/dL. That's critically low."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "She has a strong pulse and peripheral pulses are present."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Her skin is diaphoretic."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "She still doesn't respond to eye-opening. Let's check the GCS."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Paramedic",
+      "utterance": "Eye, verbal, and motor responses all at 1. GCS of 3 - unconscious."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Can you describe the last 30 minutes of her condition in detail?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "add_relevant_signs_symptoms",
+      "role": "Daughter",
+      "utterance": "She had a full-body convulsion about ten minutes ago. This is similar to a past hypoglycemic event but not the same one."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Does she have a history of any medical conditions?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. pertinent_past_medical_history",
+      "role": "Daughter",
+      "utterance": "She has type one diabetes. She injects insulin regularly."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Is she in her 60s? Do you know what medications she takes?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Friend",
+      "utterance": "Yes, she's 64. I don't know the name of her medications, but she uses insulin."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. last_oral_intake",
+      "role": "EMT",
+      "utterance": "When was the last time she had something to eat or drink?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. last_oral_intake",
+      "role": "Daughter",
+      "utterance": "She drinks alcohol every day. I don't know when she had her last meal."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. allergies",
+      "role": "EMT",
+      "utterance": "Do you know if she has any known allergies?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. allergies",
+      "role": "Daughter",
+      "utterance": "I don't think she has any allergies."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Her breathing rate is slightly slower now - about 24 per minute."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "The O2 is now reading 90 percent. I'll adjust the cannula to improve flow."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate remains high and rhythm is a bit irregular now."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Her blood pressure is 159 over 107. That's the second measurement."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG picked up on sinus tachycardia. That's noted now."
+    },
+    {
+      "turn": 40,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Since she's presenting with confirmed hypoglycemia and neurological issues, we'll follow protocol 3 - medical-diabetic-hypoglycemia."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "administer_oxygen",
+      "role": "EMT",
+      "utterance": "We're going to up her oxygen through the nasal cannula at 3 LPM."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Let me connect her to the cardiac monitor now."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "The 4-lead ECG is connected and shows a tachycardic rhythm."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Paramedic",
+      "utterance": "I'm going to administer 150cc of 10% dextrose intravenously to bring up her blood sugar."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "I'm using a 22G catheter in the left arm with a saline lock using aseptic techniques. Dextrose is on board and infusing now."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Heart rate remained 116 but it seems more regular after infusing the dextrose."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration's more steady, around 20 per minute."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation improved to 97% with nasal cannula. Small but positive."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Her blood glucose is now 137. The dextrose infusion is clearly effective."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG rhythm has normalized - back to regular heartbeats."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pain_assessment",
+      "role": "EMT",
+      "utterance": "Does she report any pain in the head, neck, chest, or abdomen?"
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pain_assessment",
+      "role": "Daughter",
+      "utterance": "No pain reported. She was checked and responded well."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Her next reading is unrecordable - 0/0, which is concerning."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse raised to 122, again."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Her breathing is at a stable 20 per minute."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spO2",
+      "role": "Partner",
+      "utterance": "SpO2 stayed at 97. We can consider O2 good enough here."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_glucose",
+      "role": "Partner",
+      "utterance": "Glucose returned to zero before EMS took over."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Partner",
+      "utterance": "EKG looks normal again, rhythm steady."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "behavioral_reassessment",
+      "role": "EMT",
+      "utterance": "She started to blink - eyes opening. Looks like she's regaining awareness."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "behavioral_reassessment",
+      "role": "EMT",
+      "utterance": "She became agitated and combative, trying to pull out the IV and telemetry."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose reads zero for a second time as her blood started to drop after initial improvement."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Her pulse decreased to 102 over an hour and is steady now."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Her latest EKG shows saturation of oxygen at 96."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "bp_update",
+      "role": "Partner",
+      "utterance": "Her blood pressure stabilized at 166 over 79 now."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Paramedic",
+      "utterance": "Let me check her orientation again - can you tell me who I am?"
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "It's 2019. I am 64. Where are we now? In [CITY]."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Paramedic",
+      "utterance": "We are in apartment 626 in [CITY]. How are you feeling now?"
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "I feel scared and cold. I don't remember the seizure."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Interventions",
+      "micro_intent": "mental_status_update",
+      "role": "Paramedic",
+      "utterance": "That's normal after hypoglycemia. Please, don't pull out the IV, you need it."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Interventions",
+      "micro_intent": "mental_status_update",
+      "role": "Partner",
+      "utterance": "Let's secure her on the stretcher in semi-Fowlers position and start capnography."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Interventions",
+      "micro_intent": "mental_status_update",
+      "role": "EMT",
+      "utterance": "Remember, we're here to help you fully recover. Don't pull at the lines."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Is there a specific hospital she prefers?"
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Daughter",
+      "utterance": "She wants to go to [COMPANY_NAME] in [CITY], if that's okay."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We'll transport as a \"hot\" load to ensure rapid transfer for specialized treatment."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She's now strapped in. All straps and restraints are secure, vehicle ready."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Daughter",
+      "utterance": "Can I ride with her or wait here?"
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Please stay here, so her insurance and DOB make it to the hospital, then you can follow."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "summarize_case",
+      "role": "Paramedic",
+      "utterance": "Transporting to [COMPANY_NAME], 64-year-old female with hypoglycemia and seizure. History of insulin-dependent diabetes."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "summarize_case",
+      "role": "Paramedic",
+      "utterance": "Initial GCS 3 now A&O to self, time, and place but not event. D10 administered en route in semi-Fowler's."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "We re-assessed her skin and found it less diaphoretic with some initial drying of perspiration."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "She's more alert and responsive, but still needs careful monitoring for orientation."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Retesting her breathing - now at 20 breaths per minute. A more stable rhythm."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose drop once again to zero; we should reassess site or procedure need."
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "Paramedic",
+      "utterance": "She had a period of focal neurological deficits post-seizure. Documentation updates as such."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_assessment_update",
+      "role": "EMT",
+      "utterance": "Collections of notes are clear. No reported pain - consistent with ground-truth chart."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "emergency_department_reference",
+      "role": "Paramedic",
+      "utterance": "Destination is [COMPANY_NAME] Emergency Department for neurological and endocrine clearance."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse has remained steady at 102 since last check. No new findings."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spO2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains at 96 - no supplemental needed for now."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "Blood pressure stable at 166/79 - documented for hospital."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Partner",
+      "utterance": "EKG rhythm remains stable and clear now, indication of return to baseline."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Transport secured using full-transit restraints, including lap, shoulder, and foot restraints."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Prep hospital has been informed - ETA under 15 minutes, theme shift direct team anticipation."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_nurse",
+      "role": "Paramedic",
+      "utterance": "Patient received dextrose x1, with full neurologic awareness achievement shortly post-administration."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "hospital_handoff",
+      "role": "EMT",
+      "utterance": "Ground-truth pain signature zero, confirmed by target second reassessment. Ongoing hypoglycemic concern ongoing."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "pain_reassessment",
+      "role": "Paramedic",
+      "utterance": "Pain pain-0 - she states no pain currently and behavioral reassessment supports A&O, not agitated regarding injury."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "transport_protocol_notes",
+      "role": "Paramedic",
+      "utterance": "Departure time noted, transport classified as heat-stable alert under current consciousness for BC."
+    }
+  ]
+}

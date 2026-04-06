@@ -1,0 +1,925 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001175",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding to a reported unconscious patient at a convenience store in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What was the reason for the 911 call today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hi, I'm Mark, a paramedic with the rescue squad. Can I get your name to start?"
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "My name is Sam. I found him slumped outside the store. He wasn't responding."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "No response to loud voice commands. Let me check for eye movement."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "EMT",
+      "utterance": "No eye movement noted. No verbal response observed."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "EMT",
+      "utterance": "Let's assess motor response. No motor response observed."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Let me tilt his head to ensure a clear airway. We need to keep it open."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Partner, let's count respirations."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations: 8 per minute."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "Let's check the blood pressure, pulse, and glucose."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 123."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 148 over 85."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 218."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "His oxygen saturation is 50. Partner, place him on 15L of O2 through NRB."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "15L NRB O2 just placed."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "SpO₂ is currently at 50."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Pupils are pinpoint. This could indicate opioid intoxication."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "We need IV access for naloxone. Partner, can you start an IV now?"
+    },
+    {
+      "turn": 20,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV access at the arm is established."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "ECG shows sinus tachycardia at 123 bpm."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "He's starting to open his eyes and respond slowly."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "Currently A&Ox3/4."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "I don't remember much. I had four 16 oz beers, that's it."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "What about heroin or other drugs? Did you take anything else today?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I don't remember snorting anything, but I've snorted before in the past few weeks."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "You said you had beers. Any chest pain?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "No, I haven't had any chest pain."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Do you have any known medical conditions?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I was diagnosed with high blood pressure a while back."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Paramedic",
+      "utterance": "What medications do you take?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I take Toprol daily."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "Last thing you ate or drank?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had four 16 oz beers. No recent food."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Paramedic",
+      "utterance": "What happened before you collapsed or became unresponsive?"
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Patient",
+      "utterance": "I don't remember being helped up or anything like that."
+    },
+    {
+      "turn": 37,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "EMT",
+      "utterance": "On a scale from 0 to 10, with 10 being the worst, how would you describe your current level of pain?"
+    },
+    {
+      "turn": 38,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "Zero. I don't have any pain."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "refusals_or_hesitations_for_help",
+      "role": "EMT",
+      "utterance": "You refused help from [COMPANY_NAME] and rehab services?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "refusals_or_hesitations_for_help",
+      "role": "Patient",
+      "utterance": "I don't use opioids that often. I think I'm okay."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ekg_procedure",
+      "role": "Paramedic",
+      "utterance": "I'm going to perform a 4-lead ECG monitoring test for further assessment."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ekg_procedure",
+      "role": "Partner",
+      "utterance": "4-lead ECG monitoring is in place."
+    },
+    {
+      "turn": 43,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Based on low O₂, pinpoint pupils, and history of opioid use, we're following the overdose/poisoning - opioid protocol."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We'll transport you to [COMPANY_NAME] for observation. Should we take you to a different one?"
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "No, that's fine."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "IV is patent and stable."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "SpO₂ is now 100%. Pulse is 100, down from 123."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiration is 18 per minute. Blood pressure is 138 over 91."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Lungs are clear in all fields."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "We're securing you on a loading board now."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Loading board is ready."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're moving safely towards the ambulance."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Any questions before we go?"
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "No, I think I'm fine."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Thank you for your cooperation. We'll make sure you're taken care of during transport."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Are you experiencing any shortness of breath or difficulty breathing?"
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "No. I feel okay right now."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You started as A&Ox3/4. Any changes in awareness?"
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I still know the time and place, but my memory is fuzzy."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Any recent exposure to someone with symptoms of COVID-19?"
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "No, I don't think so."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Loading board is locked in. We're heading out now."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're without any complaints, so you'll be comfortable and safe on the way to the hospital."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Any questions before we go?"
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "No, I think I'm fine."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Thank you for your cooperation. We'll make sure you're taken care of during transport."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_skin",
+      "role": "EMT",
+      "utterance": "I don't see any visible signs of bites, marks, or rashes."
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mentation",
+      "role": "EMT",
+      "utterance": "Are you currently aware of who you are and where you are now?"
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mentation",
+      "role": "Patient",
+      "utterance": "I know who I am and where we are, but forgetting things in between."
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_exam",
+      "role": "Paramedic",
+      "utterance": "Let me check your head for swelling, cuts, or bruising."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_exam",
+      "role": "EMT",
+      "utterance": "No visible head trauma or injuries noted."
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "eyes",
+      "role": "Paramedic",
+      "utterance": "Your eyes appear clear and the pupils are still pinpoint."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "EMT",
+      "utterance": "Let me check your chest movements. They seem equal on both sides."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Let's test your memory a bit. What is today's date and day of the week?"
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Paramedic",
+      "utterance": "And your location?"
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "It's July, maybe the 20th, and we're in [CITY]."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Paramedic",
+      "utterance": "Good. Based on the history, you appear A&Ox3/4."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "I'm going to double-check your IV and oxygen setup."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "All equipment is running and stable now."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I don't see any areas of skin discoloration or swelling."
+    },
+    {
+      "turn": 81,
+      "topic": "History of Present Illness",
+      "micro_intent": "opioid_history",
+      "role": "EMT",
+      "utterance": "How often have you used opioids lately?"
+    },
+    {
+      "turn": 82,
+      "topic": "History of Present Illness",
+      "micro_intent": "opioid_history",
+      "role": "Patient",
+      "utterance": "Not often at all. I haven't in the past few weeks besides snorting once."
+    },
+    {
+      "turn": 83,
+      "topic": "History of Present Illness",
+      "micro_intent": "drug_use",
+      "role": "Paramedic",
+      "utterance": "What about illicit drugs besides heroin?"
+    },
+    {
+      "turn": 84,
+      "topic": "History of Present Illness",
+      "micro_intent": "drug_use",
+      "role": "Patient",
+      "utterance": "No other drugs. I don't use often enough to track all that stuff."
+    },
+    {
+      "turn": 85,
+      "topic": "History of Present Illness",
+      "micro_intent": "drug_use",
+      "role": "EMT",
+      "utterance": "Is there anything you're using regularly or even occasionally besides what we just discussed?"
+    },
+    {
+      "turn": 86,
+      "topic": "History of Present Illness",
+      "micro_intent": "drug_use",
+      "role": "Patient",
+      "utterance": "Nope, not that I can recall."
+    },
+    {
+      "turn": 87,
+      "topic": "History of Present Illness",
+      "micro_intent": "drug_use",
+      "role": "Paramedic",
+      "utterance": "What about prescription medications or supplements besides Toprol?"
+    },
+    {
+      "turn": 88,
+      "topic": "History of Present Illness",
+      "micro_intent": "drug_use",
+      "role": "Patient",
+      "utterance": "No, only Toprol."
+    },
+    {
+      "turn": 89,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Paramedic",
+      "utterance": "Any allergies to medications or foods?"
+    },
+    {
+      "turn": 90,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "No known allergies."
+    },
+    {
+      "turn": 91,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Let me run another EKG just as a confirmation."
+    },
+    {
+      "turn": 92,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus rhythm now without tachycardia."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "I'm going to check the IV line and ensure it's flowing freely."
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Fluids are flowing fine. No kinks in the tubing."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Hospital is still the correct place, and we need to document everything now."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All your data and equipment are locked in."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Road is clear, and we're going now."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You can rest now. The hospital is ready."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Please relax, your vitals are good. You'll be fine."
+    },
+    {
+      "turn": 100,
+      "topic": "History of Present Illness",
+      "micro_intent": "abdominal_symptoms",
+      "role": "Paramedic",
+      "utterance": "Any pain in your stomach or bowels before this?"
+    },
+    {
+      "turn": 101,
+      "topic": "History of Present Illness",
+      "micro_intent": "abdominal_symptoms",
+      "role": "Patient",
+      "utterance": "No, haven't had anything like that."
+    },
+    {
+      "turn": 102,
+      "topic": "History of Present Illness",
+      "micro_intent": "neurological_symptoms",
+      "role": "EMT",
+      "utterance": "Dizziness or any loss of balance in the past 24 hours?"
+    },
+    {
+      "turn": 103,
+      "topic": "History of Present Illness",
+      "micro_intent": "neurological_symptoms",
+      "role": "Patient",
+      "utterance": "Yeah, a little lightheaded earlier but nothing bad."
+    },
+    {
+      "turn": 104,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Any pain now since we gave you the Narcan?"
+    },
+    {
+      "turn": 105,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Patient",
+      "utterance": "No, still no real complaints."
+    },
+    {
+      "turn": 106,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "So no chest pain, no head pain, nothing that we need to monitor further."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We are exiting the scene now."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Move as carefully as possible."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Secure the top board."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Board locked and ready for transport."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We are on your way out."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All data records now go to hospital."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All procedures documented to transfer smoothly."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is in a pain-free state, no signs of worse condition."
+    },
+    {
+      "turn": 115,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport is smooth and all vitals are noted."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are now in safe hands."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Time of arrival at hospital will be reported directly to their system."
+    },
+    {
+      "turn": 118,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Final confirmation of vitals and notes complete."
+    },
+    {
+      "turn": 119,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is set for hospital entry."
+    },
+    {
+      "turn": 120,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No further procedures will be taken."
+    },
+    {
+      "turn": 121,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We are now transporting under monitor guidance."
+    },
+    {
+      "turn": 122,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Arrival at hospital is expected in 10 minutes."
+    },
+    {
+      "turn": 123,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You will be given further health exams once you reach."
+    },
+    {
+      "turn": 124,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No additional pain or unknown conditions."
+    },
+    {
+      "turn": 125,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Hope you feel well once you reach safely."
+    },
+    {
+      "turn": 126,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Additional help will be provided at the hospital."
+    },
+    {
+      "turn": 127,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Nurse will see you there."
+    },
+    {
+      "turn": 128,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Final destination is established."
+    },
+    {
+      "turn": 129,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Hospital comms are calling now."
+    },
+    {
+      "turn": 130,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No further action needed at this time."
+    },
+    {
+      "turn": 131,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport protocol is closed."
+    }
+  ]
+}

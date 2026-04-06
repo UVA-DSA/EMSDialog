@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004007",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 2,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I have chest pain. It woke me up this morning."
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "clarify_complaint",
+      "role": "EMT",
+      "utterance": "Was the pain sharp, dull, or pressure-like, and did it radiate anywhere?"
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "patient_specific",
+      "role": "Patient",
+      "utterance": "It's a dull feeling in my chest and radiates to my left arm."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox",
+      "role": "EMT",
+      "utterance": "You are alert and oriented to person, place, and time. Can you move your fingers and toes for us?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "ro_agnosia",
+      "role": "Patient",
+      "utterance": "I can move them all."
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Airway is patent."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Breathing rate is 16, regular rate and rhythm. Breath sounds are equal and clear (BBS clear bilaterally)."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Radial pulse is strong, equal, and regular. Skin is warm, dry, and has normal color. No bleeding noted."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Initial pulse is 62 per minute."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Initial blood pressure is 202 over 90."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration is 16 per minute, even and normal."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 95%."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 147 mg/dL."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is showing a paced rhythm due to a cardiac pacemaker in the left upper chest."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "eliciting_onset",
+      "role": "EMT",
+      "utterance": "Has anything made the pain better or worse?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "relative_signs",
+      "role": "Patient",
+      "utterance": "It's been around all morning. I've felt this way before, but I can't remember exactly when."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "progression",
+      "role": "EMT",
+      "utterance": "In addition to the chest pain, have you experienced any nausea, vomiting, or other unusual symptoms?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "progression",
+      "role": "Patient",
+      "utterance": "No, just the chest discomfort."
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "On a scale of 1 to 10, with 10 being the worst pain you've ever had, how would you rate the pain now?"
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "assessment",
+      "role": "Patient",
+      "utterance": "It's about a 5."
+    },
+    {
+      "turn": 22,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "You are alert and oriented to time, place, person, and situation (AOx4). GCS is 15. You seem calm and cooperative."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "eliciting_medical_history",
+      "role": "EMT",
+      "utterance": "You have a history of coronary artery disease and hypertension, as well as a cardiac pacemaker."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "current_medications",
+      "role": "EMT",
+      "utterance": "You're currently taking clopidogrel for your medical conditions."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "You have no reported drug allergies."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "physical_exam",
+      "role": "Partner",
+      "utterance": "Physical exam shows normal chest rise and fall; no chest wall tenderness or discoloration noted. No DCAP-BTLS seen."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "use_ecg_12_lead",
+      "role": "Partner",
+      "utterance": "We've obtained a 12-lead ECG showing ST and T wave abnormality consistent with anterolateral and inferior ischemia, as well as left ventricular hypertrophy."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_4_lead",
+      "role": "Partner",
+      "utterance": "A 4-lead cardiac monitor is in place, as per protocol."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "iv_access",
+      "role": "Partner",
+      "utterance": "We've started an 18-gauge IV in the left antecubital for medication administration."
+    },
+    {
+      "turn": 30,
+      "topic": "Transport",
+      "micro_intent": "prearrival_report",
+      "role": "EMT",
+      "utterance": "Calling hospital now with a pre-arrival report: 89-year-old female with chest pain, history of CAD, hypertension, and a pacemaker; IV in left arm, 12-lead showing STT abnormalities, being transported in semi-Fowler's."
+    },
+    {
+      "turn": 31,
+      "topic": "Transport",
+      "micro_intent": "position",
+      "role": "EMT",
+      "utterance": "We are positioning you in a semi-Fowler's position for transport."
+    },
+    {
+      "turn": 32,
+      "topic": "Transport",
+      "micro_intent": "transport_position",
+      "role": "EMT",
+      "utterance": "We will keep you in this position for the remainder of the ride."
+    },
+    {
+      "turn": 33,
+      "topic": "Reassessments",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 81 beats per minute now."
+    },
+    {
+      "turn": 34,
+      "topic": "Reassessments",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 167 over 89."
+    },
+    {
+      "turn": 35,
+      "topic": "Reassessments",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration is still 16, even and normal."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains at 98%."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Tried again, but still could not obtain glucose reading."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG remains in paced rhythm."
+    },
+    {
+      "turn": 39,
+      "topic": "Transport",
+      "micro_intent": "secure_transport",
+      "role": "EMT",
+      "utterance": "We are securing the patient onto the stretcher in semi-Fowler's position with shoulder and lap belts for transport."
+    },
+    {
+      "turn": 40,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "EMT",
+      "utterance": "We are transporting to [COMPANY_NAME] as the resuscitation bay is prepared."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "The patient remains alert and oriented with intact memory for time and location."
+    },
+    {
+      "turn": 42,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "assess_memory_long_term",
+      "role": "EMT",
+      "utterance": "Do you know the year and location?"
+    },
+    {
+      "turn": 43,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "ro_long_term",
+      "role": "Patient",
+      "utterance": "2019, somewhere near [CITY]."
+    },
+    {
+      "turn": 44,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "ro_short_term",
+      "role": "EMT",
+      "utterance": "What did you do before we arrived?"
+    },
+    {
+      "turn": 45,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "ro_short_term",
+      "role": "Patient",
+      "utterance": "I was sitting here on the couch."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_heent",
+      "role": "Partner",
+      "utterance": "Normocephalic skull, no visible facial deformity or injury."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_ears",
+      "role": "Partner",
+      "utterance": "No signs of fluid draining from ears or nasal cavity noted."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_mouth",
+      "role": "Partner",
+      "utterance": "Oral mucosa is dry as per patient's report; unable to confirm hydration status fully."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_neck",
+      "role": "Partner",
+      "utterance": "No jugular venous distension; neck movements are within normal limits."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_cardio",
+      "role": "Partner",
+      "utterance": "No murmurs, rubs, or gallops heard during auscultation."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_abdomen",
+      "role": "Partner",
+      "utterance": "Abdomen is soft, nontender with bowel sounds not fully evaluated due to time constraints."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_extremities",
+      "role": "Partner",
+      "utterance": "Bilateral peripheral pulses are strong and equal. No cyanosis or swelling observed."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_skin",
+      "role": "Partner",
+      "utterance": "Skin is warm and dry with no visible pallor observed."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "cap_refill",
+      "role": "Partner",
+      "utterance": "Capillary refill is less than 2 seconds."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "temperature",
+      "role": "Partner",
+      "utterance": "Skin does not suggest signs of infection at this time."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "transport_position",
+      "role": "EMT",
+      "utterance": "We are maintaining the semi-Fowler's position for transport."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Interventions",
+      "micro_intent": "intervention_ecg",
+      "role": "Partner",
+      "utterance": "ECG changes continue to suggest ischemia; further evaluation at the hospital is necessary."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Interventions",
+      "micro_intent": "intervention_iv",
+      "role": "Partner",
+      "utterance": "IV access remains patent and ready for use if necessary."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "prepare_for_transport",
+      "role": "Partner",
+      "utterance": "Readied stretcher and secured patient in semi-Fowler's with all monitoring in place."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "departure_record",
+      "role": "EMT",
+      "utterance": "Transport is now in progress to [COMPANY_NAME]."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "time_of_arrival",
+      "role": "Partner",
+      "utterance": "Arrival time logged and transfer of care awaits completion."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "patient_condition",
+      "role": "EMT",
+      "utterance": "Final condition reported as stable with normal vitals at transition time."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "facility_contact",
+      "role": "EMT",
+      "utterance": "Confirmed facility contacts and pre-arrival communication was followed correctly."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "verbal_reporting",
+      "role": "EMT",
+      "utterance": "Summary of care and transport delivered verbally on arrival."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "protocol_follow",
+      "role": "EMT",
+      "utterance": "We are following protocol 2-1 for suspected cardiac chest pain and monitoring accordingly."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "crew_teamwork",
+      "role": "Partner",
+      "utterance": "Full team coordination ensured during the transport."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "checklist_final",
+      "role": "EMT",
+      "utterance": "Pre-transport checklist is complete."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "ambient_temperature",
+      "role": "Partner",
+      "utterance": "Ambient temperature in the transport environment is acceptable."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "transport_duration",
+      "role": "Partner",
+      "utterance": "Transport duration will be recorded for later review."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "incident_complete",
+      "role": "EMT",
+      "utterance": "All necessary documentation and data collected to close incident."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "sign_off",
+      "role": "EMT",
+      "utterance": "Final sign off was executed after equipment and policy compliance."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "closing_sum",
+      "role": "EMT",
+      "utterance": "Patient transport was handled safely, following all protocol steps."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment pupils",
+      "role": "Partner",
+      "utterance": "Pupils are equal, round, and reactive to light (PERRL), bilaterally 3mm."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "transfer_of_care",
+      "role": "EMT",
+      "utterance": "Patient care is now being transferred to the staff at the receiving facility."
+    },
+    {
+      "turn": 75,
+      "topic": "Take Interventions",
+      "micro_intent": "intervention_occlusion",
+      "role": "Partner",
+      "utterance": "Occlusion during EKG due to patient's pacemaker requires technician at hospital for full clarification."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "medical_release",
+      "role": "EMT",
+      "utterance": "Medical summary and notes were left with receiving personnel for continuity."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "notes_to_followup",
+      "role": "Partner",
+      "utterance": "Notes on clinical findings and transport conditions shared for follow-up care."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "final_handover",
+      "role": "EMT",
+      "utterance": "Handover completed and no outstanding procedures remain."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "patient_disposition",
+      "role": "EMT",
+      "utterance": "Patient is prepared for medical evaluation upon arrival."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "facility_communication",
+      "role": "EMT",
+      "utterance": "Hospital staff have been advised of the patient's clinical status."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_turgor",
+      "role": "Partner",
+      "utterance": "Skin turgor appears normal with no signs of dehydration observed."
+    },
+    {
+      "turn": 82,
+      "topic": "Primary Assessment",
+      "micro_intent": "eyes_opening",
+      "role": "Partner",
+      "utterance": "The patient opens her eyes spontaneously."
+    },
+    {
+      "turn": 83,
+      "topic": "Primary Assessment",
+      "micro_intent": "verbal_response",
+      "role": "Partner",
+      "utterance": "The patient responds clearly and appropriately to questions."
+    },
+    {
+      "turn": 84,
+      "topic": "Primary Assessment",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "The patient exhibits full motor response, following all commands."
+    },
+    {
+      "turn": 85,
+      "topic": "Primary Assessment",
+      "micro_intent": "eye_opening",
+      "role": "Partner",
+      "utterance": "Eyes remain open throughout the assessment."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "gcs_verification",
+      "role": "EMT",
+      "utterance": "Glasgow Coma Scale is 15; patient remains alert and oriented."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "ekg_monitor",
+      "role": "Partner",
+      "utterance": "Continuous EKG monitoring shows consistent paced rhythm for the duration."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "patient_position",
+      "role": "Partner",
+      "utterance": "Positioning is maintained as per semi-Fowler's throughout transport."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "initial_vitals_capture",
+      "role": "Partner",
+      "utterance": "All initial vitals have been documented and shared."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "mid_transport_vitals",
+      "role": "Partner",
+      "utterance": "Vital signs remain stable during transit."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "final_vitals",
+      "role": "Partner",
+      "utterance": "Vital signs recorded just prior to hospital arrival."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "mid_transport_glucose",
+      "role": "Partner",
+      "utterance": "Glucose attempts unsuccessful again, no immediate intervention indicated."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "ekg_update",
+      "role": "Partner",
+      "utterance": "No new EKG changes or rhythm alterations have been noted during transport."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "patient_comfort",
+      "role": "EMT",
+      "utterance": "Patient appears comfortable and no distress is currently observed."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "safety_measures",
+      "role": "Partner",
+      "utterance": "All straps and restraints in place for safe transport as per protocol."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "final_checklist",
+      "role": "Partner",
+      "utterance": "Final check of all equipment and medications before arrival."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "time_events",
+      "role": "EMT",
+      "utterance": "Time events have been accurately tracked for proper documentation."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "crew_observations",
+      "role": "Partner",
+      "utterance": "Observations from the crew confirm no incident or issue during transport."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "equipment_function",
+      "role": "Partner",
+      "utterance": "All medical devices functioned without interruption."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "patient_handover",
+      "role": "EMT",
+      "utterance": "Patient handover was completed with full staff awareness and no further delays."
+    }
+  ]
+}

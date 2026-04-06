@@ -1,0 +1,631 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001369",
+  "protocol": [
+    "medical - stroke/tia (protocol 3 - 5)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch 317 to Unit 3 for a stroke alert."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Taylor, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "Her arm suddenly went numb, and she couldn't move it at all."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ms. Louise, can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Louise."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Ms. Louise, where are we right now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "At home... in [CITY], I think."
+    },
+    {
+      "turn": 8,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (last_oral_intake)",
+      "role": "EMT",
+      "utterance": "When was the last time you had food or drinks?"
+    },
+    {
+      "turn": 9,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (events_leading_up_to_the_event)",
+      "role": "Bystander",
+      "utterance": "She had some tea around two, but hasn't eaten since then."
+    },
+    {
+      "turn": 10,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent_past_medical_history)",
+      "role": "EMT",
+      "utterance": "Have you had any strokes or heart issues in the past?"
+    },
+    {
+      "turn": 11,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent_past_medical_history)",
+      "role": "Bystander",
+      "utterance": "She had one stroke, on the left side, years ago."
+    },
+    {
+      "turn": 12,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (onset)",
+      "role": "Med",
+      "utterance": "When did the arm stop working for you, Ms. Louise?"
+    },
+    {
+      "turn": 13,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (quality)",
+      "role": "Patient",
+      "utterance": "Just all of a sudden, like, ten minutes ago. I was watching TV in the bedroom."
+    },
+    {
+      "turn": 14,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (radiation)",
+      "role": "Med",
+      "utterance": "Do you feel the weakness in your legs or anywhere else?"
+    },
+    {
+      "turn": 15,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (severity)",
+      "role": "Med",
+      "utterance": "On a scale from 0 to 10, how would you describe the weakness in your arm?"
+    },
+    {
+      "turn": 16,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (time)",
+      "role": "Med",
+      "utterance": "Has the weakness gotten any better or worse since it started?"
+    },
+    {
+      "turn": 17,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ms. Louise, can you follow my finger with your eyes? Move your right hand when I tell you to? Squeeze my hand when I tell you to? Okay, she's alert and oriented."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway (Airway_clearance)",
+      "role": "Partner",
+      "utterance": "Ms. Louise, are you having any trouble breathing right now?"
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing (Rate_and_depth_of_respirations)",
+      "role": "EMT",
+      "utterance": "Bystander, can you tell me when you noticed the breathing issues, if any?"
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations is 18, regular and non-labored. No signs of labored breathing."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing (Cyanosis",
+      "role": "O2_saturation); EMT",
+      "utterance": "Ma'am, we're going to place this device on your finger to check your blood oxygen levels now."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 59, which is lower than normal."
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing (Presence_of_bilateral_breath_sounds)",
+      "role": "EMT",
+      "utterance": "Sounds are clear bilaterally. You are breathing normally without any difficulty or wheezing."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation (Pulse_rate_and_quality)",
+      "role": "Partner",
+      "utterance": "Radial pulse is weak and irregular. You have a fast and inconsistent heartbeat rhythm."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is 41. That's bradycardic and can be dangerous, especially for your condition."
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation (Blood_Pressure)",
+      "role": "EMT",
+      "utterance": "Applying the cuff now for your blood pressure. How are you feeling right now? She's looking stable and speaking clearly."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 107/78 - within an acceptable range so far."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam (Color_Temperature)",
+      "role": "EMT",
+      "utterance": "Your skin seems normal to me."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam (Mental_status)",
+      "role": "EMT",
+      "utterance": "What year is it? What month? Your answers were correct - you are alert and oriented."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam (Pupillary_reflex)",
+      "role": "EMT",
+      "utterance": "We're going to shine a light in your eyes."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam (Hemorrhage)",
+      "role": "EMT",
+      "utterance": "I don't see any signs of nose or mouth hemorrhage or blockage."
+    },
+    {
+      "turn": 32,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing (no_chest_pain)",
+      "role": "EMT",
+      "utterance": "Ms. Louise explicitly denies chest pain - that's reassuring for rule out acute cardiac events."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam (Speech_abnormalities)",
+      "role": "EMT",
+      "utterance": "You are speaking clearly and without slurring. No speech abnormalities noted."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam (Visual_neglect)",
+      "role": "EMT",
+      "utterance": "Can you see both sides of my hand clearly? Yes. You have no visual neglect."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam (Breath_sounds)",
+      "role": "Partner",
+      "utterance": "Clear breath sounds in the lungs and no abnormalities in the heartbeat we can hear."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam (Gross_motor)",
+      "role": "EMT",
+      "utterance": "Can you raise both arms for me? You are unable to raise your left arm, and your left leg is weak."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam (Deformity)",
+      "role": "Partner",
+      "utterance": "Left arm doesn't move and shows left-sided weakness."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam (Left_leg)",
+      "role": "Partner",
+      "utterance": "Left leg has some weakness. Family said she usually walks with assistance of a walker."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_secondary_assessment (EKg_repeat)",
+      "role": "Partner",
+      "utterance": "Sinus rhythm with PVCs still present."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (Resp_rate)",
+      "role": "Partner",
+      "utterance": "Respirations are 34 now, increased. Still regular and non-labored."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (BP)",
+      "role": "Partner",
+      "utterance": "Blood pressure now is 127 over 86."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (SpO2)",
+      "role": "Partner",
+      "utterance": "SpO2 improved to 97 after. That's low, but better."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (Blood_sugar)",
+      "role": "EMT",
+      "utterance": "Blood sugar was 156 initially. Second reading is 0 - low. Likely need further labs upon arrival."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (HR)",
+      "role": "Partner",
+      "utterance": "Heart rate is 75 now - significantly faster than the initial 41 we recorded."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures (CV-ECG-4-Lead)",
+      "role": "Partner",
+      "utterance": "Performing 4-lead ECG monitoring per protocol."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures (IV_attemded)",
+      "role": "Partner",
+      "utterance": "We're going to insert an IV now."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures (IV_unsuccessful)",
+      "role": "Partner",
+      "utterance": "Wasn't able to insert one, so we'll continue with monitoring."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "destination_decision (Alternative_Destination)",
+      "role": "EMT",
+      "utterance": "Our first choice was [COMPANY_NAME], but they're on soft diversion. EMS2 recommended [COMPANY_NAME] or [COMPANY_NAME]."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Stair_chair)",
+      "role": "EMT",
+      "utterance": "We'll be using the stair chair to help transport you to the cot."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Patient_secured)",
+      "role": "Partner",
+      "utterance": "Patient secured with 5 straps and both side rails across the cot."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (All_set)",
+      "role": "EMT",
+      "utterance": "All set, ready to transport."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Onward_transport)",
+      "role": "EMT",
+      "utterance": "She's secured on a cot and ready for transport."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Destination)",
+      "role": "Partner",
+      "utterance": "Transport destination is set to [COMPANY_NAME]."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Materials_on_board)",
+      "role": "Partner",
+      "utterance": "All equipment and materials are on board and ready to go."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Departure)",
+      "role": "EMT",
+      "utterance": "We are now leaving and heading to the hospital."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (No_further_interventions)",
+      "role": "Partner",
+      "utterance": "Everything looks good, no further interventions are needed."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Special_Protocol)",
+      "role": "EMT",
+      "utterance": "She's being transported under stroke protocol, so we'll be following the most urgent transportation guidelines."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (4p_Sheet)",
+      "role": "EMT",
+      "utterance": "Upon arrival, we'll use a 4P sheet drag to transfer her to a stroke bed."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "give_report (PrimaryReport)",
+      "role": "EMT",
+      "utterance": "To the nurse, we have a 70-year-old female with left arm and leg weakness possibly indicating a new stroke."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "give_report (Vital_Statics)",
+      "role": "Partner",
+      "utterance": "BP is 127/86, HR is 75, SpO2 97, blood sugar reading was initially 156, then 0. EKG shows irregular sinus rhythm with PVCs."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "give_report (Medical_History)",
+      "role": "EMT",
+      "utterance": "She had prior CVA on the left side and is on medications for atrial fibrillation."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "give_report (Pain_Levels)",
+      "role": "Partner",
+      "utterance": "The patient reports no pain - pain level at 0 - and is alert and oriented."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "give_report (Special_Request)",
+      "role": "Partner",
+      "utterance": "No ID or insurance information was available at the time of transport."
+    },
+    {
+      "turn": 64,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (allergies)",
+      "role": "EMT",
+      "utterance": "She has no known drug allergies."
+    },
+    {
+      "turn": 65,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (medications)",
+      "role": "EMT",
+      "utterance": "She takes carvedilol (Coreg), amlodipine (Lotrel), and ezetimibe (Zetia)."
+    },
+    {
+      "turn": 66,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (ambulate)",
+      "role": "EMT",
+      "utterance": "Prior to this incident, she was able to ambulate with the help of a walker."
+    },
+    {
+      "turn": 67,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway (preference_posture)",
+      "role": "Partner",
+      "utterance": "She's in a seated position on the bed, and her breathing is stable. No effort to maintain airway is needed at this time."
+    },
+    {
+      "turn": 68,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing (no_work_of_breathing)",
+      "role": "EMT",
+      "utterance": "She's not using any accessory muscles for breathing."
+    },
+    {
+      "turn": 69,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing (asymmetry)",
+      "role": "EMT",
+      "utterance": "Chest movements appear symmetrical."
+    },
+    {
+      "turn": 70,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing (rate_regular)",
+      "role": "Partner",
+      "utterance": "Respiration rate initially was 18 and increased to 34 later. Still, her breathing is not labored at any time."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam (neck_veins)",
+      "role": "Partner",
+      "utterance": "No abnormal jugular venous distension or neck rigidity noted."
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam (Heart_Sounds)",
+      "role": "EMT",
+      "utterance": "No additional irregular heart sounds upon re-check."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam (Scars)",
+      "role": "Partner",
+      "utterance": "No neck masses or scars found during examination."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdominal_exam (Shape_Size)",
+      "role": "EMT",
+      "utterance": "Abdomen is without visible abnormalities at this time."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam (Wounds)",
+      "role": "Partner",
+      "utterance": "No wounds, rashes, or bruises observed except for general post-CVA scarring on left arm."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam (Urine_Color)",
+      "role": "EMT",
+      "utterance": "No active bleeding or abnormal urination reported or observed."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures (IV_start_extremity_vein)",
+      "role": "Partner",
+      "utterance": "We attempted to place an IV into her arm or leg, but were unsuccessful after one attempt."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Cot_stabilization)",
+      "role": "Partner",
+      "utterance": "Cot is perfectly balanced and secured between the ambulance vehicle and transport team."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Proceeding)",
+      "role": "EMT",
+      "utterance": "We are moving forward now. Time to hospital is about 20 minutes."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Departure_time)",
+      "role": "Partner",
+      "utterance": "We will be leaving within the next minute to ensure patient reaches target hospital."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Recheck)",
+      "role": "Partner",
+      "utterance": "Double-fastening of straps, rails, and cot placement verified."
+    },
+    {
+      "turn": 82,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (Spects)",
+      "role": "EMT",
+      "utterance": "Her last normal time appears to be around 1:00 PM. Family reports she was physically capable until 10:00 PM."
+    },
+    {
+      "turn": 83,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing (Adventitious)",
+      "role": "EMT",
+      "utterance": "No wheezes, crackles, or rales in breath sounds."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Timing)",
+      "role": "EMT",
+      "utterance": "We are departing now, twenty-nine minutes after initial arrival with patient."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured (Recorder)",
+      "role": "Partner",
+      "utterance": "We've logged and reviewed all vitals during this transport phase."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "give_report (Secondary)",
+      "role": "EMT",
+      "utterance": "ECG remains sinus rhythm with PVCs. Initial vitals were abnormal but stabilized."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "give_report (Transport)",
+      "role": "Partner",
+      "utterance": "We will place her onto a stroke bed using the 4P sheet method. Staff at [COMPANY_NAME] are alerted."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "give_report (Patient_ready)",
+      "role": "EMT",
+      "utterance": "All set for arrival and patient transfer."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "give_report (Repeat)",
+      "role": "Partner",
+      "utterance": "Including all past medical history including past CVA and medications in our report to ER."
+    }
+  ]
+}

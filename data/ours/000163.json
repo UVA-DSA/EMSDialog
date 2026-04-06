@@ -1,0 +1,771 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000163",
+  "protocol": [
+    "medical - diabetic - hyperglycemia (protocol 3 - 7)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a diabetic emergency at --Address Redacted--."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, my name is Rachel. I'm an EMT. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been having some right upper quadrant pain and I feel off today."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you tell me what year it is?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Your pupils are 4 mm and reactive to light."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Rachel… I'm Rachel. I think it's 2020."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Squeeze my finger as hard as you can."
+    },
+    {
+      "turn": 8,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Let's take your blood pressure. It's 159/91."
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 123, fast but regular."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing is 24 per minute and non-labored."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is clear and you're breathing without difficulty."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Can you take a deep breath for me?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Your radial pulse is strong and regular. Your skin is warm and dry."
+    },
+    {
+      "turn": 14,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Can you describe the pain? When did it start?"
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Do you have any medical conditions or a history of diabetes or high blood pressure?"
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "When did you take your last dose of medication?"
+    },
+    {
+      "turn": 17,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, how would you rate the pain right now?"
+    },
+    {
+      "turn": 18,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does the pain spread anywhere else?"
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Your blood sugar is very high-373 mg/dL."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 99% on room air."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Can I shine a light in your eyes to check your pupils?"
+    },
+    {
+      "turn": 22,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We are now placing you on a cardiac monitor."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG shows sinus tachycardia."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We're going to place an IV in your arm."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Are you allergic to any medications like Compazine?"
+    },
+    {
+      "turn": 26,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We're starting treatment under the hyperglycemia protocol."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "We're giving you 500 mL of normal saline in a few steps."
+    },
+    {
+      "turn": 28,
+      "topic": "Reassessments",
+      "micro_intent": "Take Vital Signs",
+      "role": "Partner",
+      "utterance": "Your blood pressure is now 178/93 and pulse is 118."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "Take Vital Signs",
+      "role": "Partner",
+      "utterance": "Your breathing is 22 and still non-labored."
+    },
+    {
+      "turn": 30,
+      "topic": "Reassessments",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "Let me check the pain again-how would you rate it now?"
+    },
+    {
+      "turn": 31,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Which hospital would you prefer for treatment?"
+    },
+    {
+      "turn": 32,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll position you more comfortably now."
+    },
+    {
+      "turn": 33,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You are secured with five-point restraints and covered with a blanket."
+    },
+    {
+      "turn": 34,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We will now load you onto the ambulance."
+    },
+    {
+      "turn": 35,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You are secure and ready for transport."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "Take Vital Signs",
+      "role": "EMT",
+      "utterance": "Another EKG reading shows the same sinus tach findings."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "Take Vital Signs",
+      "role": "Partner",
+      "utterance": "A second 12-lead EKG was just obtained for further evaluation."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "EMT",
+      "utterance": "The patient was placed on a cardiac monitor and began normal saline."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Hospital was notified en route with the full report."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient is stable and secured for transport."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient is ready for transport to [COMPANY_NAME]"
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient has altered mental status but is now fully alert and oriented."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "A GCS of 14 was noted-eye 4, verbal 4, motor 6."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient has right upper quadrant pain with associated mental status change."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "EMT",
+      "utterance": "Her skin remained normal in color and dry throughout assessment."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "A 12-lead showed left anterior fascicular block and ST depression."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "EKGs were consistent with pulmonary disease and right atrial enlargement."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient was transferred using the pull sheet method in the hospital bed."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient has a medical history of Hypothyroidism and Primary Hypertension."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "She reported no current medications for about a year."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The second 12-lead showed signs of anteroapical infarct with unspecified age."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "An IV was placed for potential fluid hydration and medication access."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient has a reported hyperglycemia and mental status change field impression."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Bed rails were raised at the hospital upon arrival."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "She has a reported weight of 102 kg which can affect transport."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "No allergies reported except for Compazine-documentation confirmed."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "She reported no trouble urinating but increased frequency of urination."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient had no signs of accessory muscle use."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "She appeared more tired than normal and had an increase in thirst."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Vital signs were taken at 18:57 and again at 19:26."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Initial GCS showed a moderately abnormal alert state."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Her 4-lead monitoring showed sinus rhythm only."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "All fluids were administered per DKA protocol with proper checks."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "No signs of bleeding or skin compromise were documented."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The IV line was used as a saline lock for possible interventions."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient denied N/V, dizziness, or visual or sensory changes."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "EKG monitoring was maintained throughout transport."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Labs confirmed Endocrine - Insulin Dependent Diabetes and Hypertension."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Normal saline appeared to lower her heart rate as observed."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The IV site remained in the right antecubital fossa with 20G needle."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "All responses were stable following fluid administration."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Patient was moving all extremities and had full PMS/ROM."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "We will keep you stable during transport and monitor for any arrhythmias."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "All care was turned over to the ER nurse with full documentation."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient was transported as requested and en route to the ER."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Her breathing and oxygen saturation remained within normal ranges."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "She was resecured for transport with attention to positioning."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "No issues with the IV line during transport were noted."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The ambulance is prepared and in transit to the destination."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "We will be in touch with the hospital during the remainder of transport."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Let's start going through your medical timeline for documentation."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Did you recently note any changes in your condition or new pain?"
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The RUQ pain has been ongoing for 2+ weeks."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The decreased medication intake likely contributed to the high glucose."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "She reported drinking a full gallon of water today."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "There were no signs of hypoglycemia or ketoacidosis on initial assessment."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Let me confirm that the crew followed all protocols correctly."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Yes, all interventions were properly performed and documented."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "All vitals were stable before exiting the field."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "We were ready when the engine started and documentation was done promptly."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "All patient identifiers were confirmed and written down."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Yes, all documentation supporting transported decisions is in the record."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient looked more comfortable before transport."
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Five-point restraints were used to keep her well secured."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient remained stable during positioning."
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Bed rails were raised to maintain a safe position."
+    },
+    {
+      "turn": 97,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient had no known issues with movement or sensation."
+    },
+    {
+      "turn": 98,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Final check done before departure and no discrepancy found."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient was handed off to the ER in optimal condition."
+    },
+    {
+      "turn": 100,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Everything was double-checked and medical team was contacted during transport."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient had been transferred using the RAA stretcher to the ambulance."
+    },
+    {
+      "turn": 102,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "Logistics and transportation options were well discussed before handoff."
+    },
+    {
+      "turn": 103,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient will be under close watch in the ER."
+    },
+    {
+      "turn": 104,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "All necessary documentation has been archived properly."
+    },
+    {
+      "turn": 105,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "All takeaways are accounted for and vehicle is clean after patient removal."
+    },
+    {
+      "turn": 106,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "I informed the nurse of the care placed and recent events."
+    },
+    {
+      "turn": 107,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "All patient information is up to date and there's no missing data."
+    },
+    {
+      "turn": 108,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient's pupils are PERRL with 4 mm size observed throughout."
+    },
+    {
+      "turn": 109,
+      "topic": "Reassessments",
+      "micro_intent": "Handoff",
+      "role": "Partner",
+      "utterance": "The patient was alert and oriented to time during the assessment."
+    }
+  ]
+}

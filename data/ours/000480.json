@@ -1,0 +1,568 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000480",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for potential overdose at 1415 Broad Street."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Emily, an EMT. We were called for an overdose. Can you tell me what's happening?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She's unconscious and not responding. I think she might have OD'd on Seroquel and Benadryl."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Understood. Any chance she might have used something else, like opioids or cocaine?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "One of us thinks she might've used something in the last day-maybe opioids or even coke."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Testing responsiveness... Unresponsive to voice and pain. She doesn't react at all."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Her pupils are pinpoint and not reactive to light. This is concerning for opioid or drug use."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Bystander",
+      "utterance": "No, she's never looked this bad. She has a history of cocaine use but is typically healthy."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "No movement with pain stimulation. She doesn't seem to feel anything."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is patent with head tilt-chin lift. Slight vomitus in left nostril-no obstruction."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Shallow breathing, irregular-about 8 to 12 a minute. Looks like decreased respiratory drive and possible hypoxia."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Confirmed: 8-12 breaths per minute, shallow. Needs assisted ventilation."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 68%. Low. She needs BVM support now for hypoxia."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "assisted_breathing",
+      "role": "EMT",
+      "utterance": "Initiate BVM without oxygen attached. Watch for oxygen saturation improvement."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Pulse is strong, elevated. Skin is cool, pale, diaphoretic. Could indicate shock or overdose."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 105, regular. Elevated heart rate, possible sinus tachycardia."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is 185/75. Elevated systolic, normal diastolic, but later it becomes hypotensive."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "start_iv",
+      "role": "EMT",
+      "utterance": "Need IV access for medication. Trying left arm first-extremity vein."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Partner",
+      "utterance": "20-gauge IV placed in left antecubital. Flushed with 10 ml saline with no issues."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "glucose_check",
+      "role": "EMT",
+      "utterance": "Checking her glucose before the Narcan for rule out of hypoglycemia."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 225. No hypoglycemia present, so we can continue to administer Narcan."
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "ekg_monitor",
+      "role": "EMT",
+      "utterance": "Let's get a 4-lead EKG. Anything abnormal like arrhythmias or signs of heart strain?"
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus tachycardia. No ST elevation or arrhythmia noted."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is pale, cool, diaphoretic. No rashes or bite marks. Any visible trauma elsewhere?"
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Bystander",
+      "utterance": "No, she had no marks or injuries before we found her unconscious."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils still pinpoint. Any stiffness or issues in the neck, like swollen glands or swelling?"
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Bystander",
+      "utterance": "No, no issues with the neck or abnormal movements noted before she passed out."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_throat_exam",
+      "role": "EMT",
+      "utterance": "Vomitus in left nostril, no obstruction. Airway still patent after BVM use."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_throat_exam",
+      "role": "Bystander",
+      "utterance": "She was fine before going alone into the room. Found her unconscious after 10-20 minutes."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "S.A.M.P.L.E. history-What medications is she currently on, or are there any known allergies?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Bystander",
+      "utterance": "She uses albuterol for her asthmatic condition-no other long-term meds or known allergies."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Last time she ate or drank?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Bystander",
+      "utterance": "Don't know exactly. She was alone for 10-20 minutes before we found her in this condition."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Any events before this that might've triggered it?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Bystander",
+      "utterance": "No obvious event-just a possible ingestion or overdose from multiple medications."
+    },
+    {
+      "turn": 36,
+      "topic": "Exit to Protocol",
+      "micro_intent": "use_protocol",
+      "role": "EMT",
+      "utterance": "Since she's unresponsive with pinpoint pupils, following protocol 7-1 for opioid overdose. Narcan is the next step."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "EMT",
+      "utterance": "Administering 0.5 mg Narcan via IV now."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "After Narcan, her pulse decreased from 105 to 99."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations increased to 24 per minute and started to stabilize with assisted breathing."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is now unobtainable, 0/0. Minimal circulation or hypotension in progress."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is up to 99%, and she is now sitting up and showing agitation."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "re_take_interventions",
+      "role": "EMT",
+      "utterance": "She is speaking. \"I don't wanna die,\" repeated. She rocks and thrashes but is coherent-still confused."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "pain_assessment",
+      "role": "EMT",
+      "utterance": "She's agitated and moving, but no signs of typical severe pain. Pain level remains 0."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "repeat_medication",
+      "role": "EMT",
+      "utterance": "She pulled out the IV-can't administer repeat dose unless we can re-stage the line or use an alternate access."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transporting to [COMPANY_NAME]. Calling hospital with initial vitals and documentation we have."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Manually lift her using limb lift from chair. Secure with 3 straps and raise two rails on cot."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She's secured on the cot with three straps. Still alert but agitated and trying to move."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Calling [COMPANY_NAME] now via my personal cell phone. Initial vitals and Narcan given. No ID from the patient yet."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She's trying to untie herself. Stay by her side and prevent her from removing the restraints."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "patient_handling",
+      "role": "Partner",
+      "utterance": "She keeps moving and asking for help but denies giving personal information or confirming conditions."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Initial report from my phone. Hospital is ready and informed we are en route."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "cv_ecg",
+      "role": "EMT",
+      "utterance": "12-lead EKG indicates sinus tach. No cardiac changes or acute MI signs."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "cv_ecg_12_lead",
+      "role": "Partner",
+      "utterance": "Sinus tach with occasional PVC noted. No acute myocardial changes."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "gravida_para",
+      "role": "EMT",
+      "utterance": "She didn't mention being pregnant. Inputting \"0\" in gravida/para for placeholder."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "handoff_confirmation",
+      "role": "Partner",
+      "utterance": "IV was dislodged. Cannot give second dose. Confirming Larx status and documented in EMR."
+    },
+    {
+      "turn": 56,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_conclusion",
+      "role": "EMT",
+      "utterance": "Opioid protocol is completed. Transport ongoing. EKG and vitals updated."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "No complications en route. Still heading to [COMPANY_NAME] as planned."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "Patient is ready for handoff. Trauma Bed 9 confirmed and prepared."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Neck veins are not distended. No lymphadenopathy or neck masses observed."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "cv_ecg_12_lead",
+      "role": "Partner",
+      "utterance": "No ST segment elevation or depression. Normal EKG for now."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "She kept trying to remove her restraints. Remaining stable en route."
+    },
+    {
+      "turn": 62,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "She has a history of severe asthma and cocaine use. Family confirmed that."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "No vagal responses or allergic reactions noted. She did respond to Narcan, confirming opioid involvement."
+    },
+    {
+      "turn": 64,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_conclusion",
+      "role": "EMT",
+      "utterance": "Ending opioid overdose protocol. Continue monitoring during en route to [COMPANY_NAME]."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "She has no visible injuries. Family was not cooperative in providing additional patient info or ID."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "She does not appear to be pregnant based on history, verbal, and physical cues."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "Partner",
+      "utterance": "She is not denying nor confirming pregnancy status. Documenting in the EMR accordingly."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "Patient self-transfers to Trauma Bed 9 with assistance. Remains agitated, s/p Narcan."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "A full patient report given to hospital staff once she moved into Trauma Bay 9."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "Partner",
+      "utterance": "Family did not provide any personal IDs or confirm patient info despite encouragement."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "Partner",
+      "utterance": "[COMPANY_NAME] was called and kept the family away from us during the transfer. They were uncooperative."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "Repeat dose of Narcan was attempted but no IV access due to dislodged line. Documented in EPC as 'no second dose administered'."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "Patient is uninterruptively agitated, not answering whether she is pregnant or giving Gravida/Para details."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "She continues to actively attempt to unsecure the restraints. Nothing stopped during transport."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "All vitals, medications, and care information have been uploaded to ImageTrend now."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "Verified all documentation and that there were no complications while transporting to the trauma bay."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "Partner",
+      "utterance": "Hospital confirmed they have everything and no further action needed from the EMS crew."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "Final notes for GCS on arrival were 6 (E1, V1, M4). She improved by handoff."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "Partner",
+      "utterance": "Handoff was complete. Patient is in Trauma Bay 9 at [COMPANY_NAME], now under hospital care."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "handoff_confirmation",
+      "role": "EMT",
+      "utterance": "Scene has been cleared, family kept at bay. We're on our way home without lights or sirens."
+    }
+  ]
+}

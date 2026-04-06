@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000018",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a reported overdose at --Address Redacted-- in the city of [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex with EMS. Can you tell me what happened to you today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I took five Hydrocodone pills. I feel sleepy and weak."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aloc",
+      "role": "EMT",
+      "utterance": "Let me check your alertness. Can you tell me your name and where we are?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "EMT",
+      "utterance": "You're alert, oriented to person, place, time, and situation. GCS is 15."
+    },
+    {
+      "turn": 6,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (last_oral_intake)",
+      "role": "EMT",
+      "utterance": "When did you take the pills and how many did you take?"
+    },
+    {
+      "turn": 7,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (last_oral_intake)",
+      "role": "Patient",
+      "utterance": "I took five Hydrocodone pills tonight to treat a tooth abscess. My wife called 911."
+    },
+    {
+      "turn": 8,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent_past_medical_history)",
+      "role": "EMT",
+      "utterance": "I see in your records you have a history of opioid abuse. Is that correct?"
+    },
+    {
+      "turn": 9,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent_past_medical_history)",
+      "role": "Patient",
+      "utterance": "Yes, I was prescribed Suboxone for heroin rehab, but I didn't take it today."
+    },
+    {
+      "turn": 10,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (allergies)",
+      "role": "EMT",
+      "utterance": "Do you have any drug or food allergies?"
+    },
+    {
+      "turn": 11,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (allergies)",
+      "role": "Patient",
+      "utterance": "No known drug or food allergies."
+    },
+    {
+      "turn": 12,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (current_medication)",
+      "role": "EMT",
+      "utterance": "Your medication record listed Suboxone. Still on it?"
+    },
+    {
+      "turn": 13,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (current_medication)",
+      "role": "Patient",
+      "utterance": "No. My wife says the medication was gone from where it was kept."
+    },
+    {
+      "turn": 14,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (event_leading_to_call)",
+      "role": "EMT",
+      "utterance": "Your wife called 911 after seeing the Suboxone was gone, right?"
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (event_leading_to_call)",
+      "role": "Patient",
+      "utterance": "Yes. I took the Hydrocodone for the mouth pain, but she was worried."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG showed sinus tachycardia initially."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is elevated at 131."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is at 12."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is 176 over 98."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 96% on room air."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is high at 174 mg/dL."
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is patent and maintainable."
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Breathing is present but closely monitored."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Rapid pulse noted, skin pink and warm."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_4_lead_monitoring",
+      "role": "Partner",
+      "utterance": "Applying 4-lead ECG monitoring as per protocol."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_access",
+      "role": "Partner",
+      "utterance": "Establishing IV access in the left arm with 18-gauge catheter."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (resp)",
+      "role": "Partner",
+      "utterance": "Respiratory rate decreased to 10."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (pulse)",
+      "role": "Partner",
+      "utterance": "Pulse declined to 124."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (bp)",
+      "role": "Partner",
+      "utterance": "Blood pressure remains at 176 over 103."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "capnography",
+      "role": "Partner",
+      "utterance": "Capnography is set for monitoring during the ride."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (spo2)",
+      "role": "Partner",
+      "utterance": "SpO2 is now at 99%."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (glucose)",
+      "role": "Partner",
+      "utterance": "Glucose level reads zero due to suspected opioid impact."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "medication_administration",
+      "role": "Partner",
+      "utterance": "Administering 0.5 mg of Naloxone IV per protocol."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (pulse)",
+      "role": "Partner",
+      "utterance": "Pulse has decreased slightly to 121."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (resp)",
+      "role": "Partner",
+      "utterance": "Respiratory rate improved to 17."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (bp)",
+      "role": "Partner",
+      "utterance": "Blood pressure elevated slightly to 182/118."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (spo2)",
+      "role": "Partner",
+      "utterance": "SpO2 stable at 100%."
+    },
+    {
+      "turn": 38,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transporting to [COMPANY_NAME] for ED evaluation."
+    },
+    {
+      "turn": 39,
+      "topic": "Transport",
+      "micro_intent": "cold_transport",
+      "role": "Partner",
+      "utterance": "Starting cold transport after first Naloxone dose."
+    },
+    {
+      "turn": 40,
+      "topic": "Transport",
+      "micro_intent": "semi_fowlers_position",
+      "role": "Partner",
+      "utterance": "Adjusting position to semi-Fowler's."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "on stretcher and secured for transport."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (pulse)",
+      "role": "Partner",
+      "utterance": "Now at 110."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (resp)",
+      "role": "Partner",
+      "utterance": "Breathing rate has improved to 16."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (bp)",
+      "role": "Partner",
+      "utterance": "BP is 171/104."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (spo2)",
+      "role": "Partner",
+      "utterance": "SpO2 is 99% and stable."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "bystander_interaction",
+      "role": "Bystander",
+      "utterance": "I'm his wife. I'm here and plan to join in the ER."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Transporting stable. BP is 171/104. SpO2 is 99%."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (pulse)",
+      "role": "Partner",
+      "utterance": "Pulse trending downward again, now at 110."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (resp)",
+      "role": "Partner",
+      "utterance": "Respiratory rate maintains at 16."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (bp)",
+      "role": "Partner",
+      "utterance": "BP is stable at 171/104."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (spo2)",
+      "role": "Partner",
+      "utterance": "SpO2 is 99%."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_4_lead_monitoring",
+      "role": "Partner",
+      "utterance": "EKG still stable on 4-lead."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No signs of rash, bruises, or scars observed."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils are pinpoint, consistent with opioid use."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "EMT",
+      "utterance": "No obstruction or drainage in the ENT structures."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Inspirations and expirations audible."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "No pain or rigidity noted on palpation."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "EMT",
+      "utterance": "No signs of trauma to extremities."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "No indication of pelvic tenderness or instability."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (pulse)",
+      "role": "Partner",
+      "utterance": "Pulse read at 110."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (resp)",
+      "role": "Partner",
+      "utterance": "Respiratory rate has improved and is at 16."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (bp)",
+      "role": "Partner",
+      "utterance": "BP remains 171/104."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (spo2)",
+      "role": "Partner",
+      "utterance": "SpO2 still at 99%."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (severity)",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, how would you rate the drowsiness or weakness now?"
+    },
+    {
+      "turn": 65,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (severity)",
+      "role": "Patient",
+      "utterance": "About a 4 or 5. I feel better now."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_history_of_present_illness (last_oral_intake)",
+      "role": "EMT",
+      "utterance": "Any new symptoms since the Naloxone?"
+    },
+    {
+      "turn": 67,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_history_of_present_illness (last_oral_intake)",
+      "role": "Patient",
+      "utterance": "No new symptoms or pain."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_history_of_present_illness (pertinent_past_medical_history)",
+      "role": "EMT",
+      "utterance": "Any history of reaction to Naloxone?"
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_history_of_present_illness (pertinent_past_medical_history)",
+      "role": "Patient",
+      "utterance": "No history of reaction."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_history_of_present_illness (allergies)",
+      "role": "EMT",
+      "utterance": "No new allergies to be concerned about."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_history_of_present_illness (current_medication)",
+      "role": "EMT",
+      "utterance": "Any new medications you're taking?"
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_history_of_present_illness (current_medication)",
+      "role": "Patient",
+      "utterance": "No new meds-just Hydrocodone."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Time to [COMPANY_NAME] is estimated in 10 minutes."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (onset)",
+      "role": "EMD",
+      "utterance": "When did the drowsiness begin?"
+    },
+    {
+      "turn": 75,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (onset)",
+      "role": "Patient",
+      "utterance": "About 30 minutes after the pills."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (provocation)",
+      "role": "EMD",
+      "utterance": "Did anything make it worse?"
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (provocation)",
+      "role": "Patient",
+      "utterance": "No, it just got worse slowly."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (quality)",
+      "role": "EMD",
+      "utterance": "How would you describe the drowsiness?"
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (quality)",
+      "role": "Patient",
+      "utterance": "Like a strong need to sleep very suddenly."
+    },
+    {
+      "turn": 80,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (radiation)",
+      "role": "EMD",
+      "utterance": "Did it affect one part of your body or all of it?"
+    },
+    {
+      "turn": 81,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (radiation)",
+      "role": "Patient",
+      "utterance": "All of me. I didn't feel any part more than others."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (time)",
+      "role": "EMD",
+      "utterance": "When did it get worse before EMS arrived?"
+    },
+    {
+      "turn": 83,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (time)",
+      "role": "Patient",
+      "utterance": "Around the time my wife got home and saw I was losing it."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Vital Signs",
+      "micro_intent": "event_leading_to_call",
+      "role": "EMD",
+      "utterance": "Your wife recommended calling 911, is that right?"
+    },
+    {
+      "turn": 85,
+      "topic": "Take Vital Signs",
+      "micro_intent": "event_leading_to_call",
+      "role": "Patient",
+      "utterance": "Yes. She was worried I was overdosing."
+    },
+    {
+      "turn": 86,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Following Protocol 7-1 for opioid overdose. Course of treatment completed."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "secure_transport",
+      "role": "Partner",
+      "utterance": "Patient remains A&Ox4 during transport."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "Partner",
+      "utterance": "Transport to final destination under monitoring."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "documentation_update",
+      "role": "Partner",
+      "utterance": "All time-sensitive assessments and interventions have been documented."
+    },
+    {
+      "turn": 90,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs (resp)",
+      "role": "Partner",
+      "utterance": "Respiratory rate remains normal at 16."
+    },
+    {
+      "turn": 91,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment (severity)",
+      "role": "EMT",
+      "utterance": "No pain reported. Patient remains fully conscious."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No signs of significant consciousness change."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "before_final_signing_off",
+      "role": "Partner",
+      "utterance": "Naloxone remains effective at present."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "final_vitals",
+      "role": "Partner",
+      "utterance": "Final vitals: 171/104, 99% SpO2, 110 pulse."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "patient_condition",
+      "role": "EMT",
+      "utterance": "No signs of re-drowsiness or loss of consciousness."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "medication_effect",
+      "role": "Partner",
+      "utterance": "Naloxone reversed symptoms with no visible complications."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "cold_transport",
+      "role": "Partner",
+      "utterance": "Patient remains in semi-Fowler's through ED arrival."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "prehospital_care",
+      "role": "EMT",
+      "utterance": "ECG and capnography readings showed stable waveforms."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "documentation_ready_for_handoff",
+      "role": "Partner",
+      "utterance": "Completion of documentation at handoff to ED staff."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "交接完成",
+      "role": "Partner",
+      "utterance": "EMS care has been transferred to hospital receiving with records documented."
+    }
+  ]
+}

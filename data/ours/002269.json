@@ -1,0 +1,827 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002269",
+  "protocol": [
+    "medical - allergic reaction/anaphylaxis (protocol 9 - 2)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond to 11-year-old female with allergic reaction at the disclosed address in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex with the EMS team. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Uh, I had a nut allergy reaction. It started about 30 minutes ago when I ate some fish, but I feel like my throat is closing up."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She was panicking, so we called 911 as instructed."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, can you tell me your name and where you are right now?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Yeah, it's Sydney, and we're outside my house."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "What day is it today?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Hmm, March the 22nd I think."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "What happened today?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I had an allergic reaction to peanuts I didn't mean to eat. I used my epipen."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Eyes open naturally-good eye response."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Sydney is clear and making complete thoughts. Judging by that, she's alert and oriented."
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you squeeze my fingers, Sydney? Perfect, your motor response is intact."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Sydney, do you feel like your throat is blocked or swollen?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "None that I can feel, just some tightness from anxiety maybe."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway appears clear. No signs of swelling or obstruction at this time."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "You don't seem to have trouble breathing, but we'll monitor just in case."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "I still feel a little short of breath, but not much."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Let's take some baseline vital signs. First, let me check your blood pressure."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 113 over 78."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is 117 right now. That's high, but not alarming."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing is 24 breaths per minute-faster than normal."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse ox is 99%, so we're good with oxygen saturation."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus tachycardia for now-heart in rhythm, just fast."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose isn't showing up as a factor on site per policy."
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "assess_anxiety",
+      "role": "EMT",
+      "utterance": "You seem pretty calm now for someone in this situation-how are you feeling overall?"
+    },
+    {
+      "turn": 27,
+      "topic": "Primary Assessment",
+      "micro_intent": "assess_anxiety",
+      "role": "Patient",
+      "utterance": "It's been stressful, but I'm definitely better off now."
+    },
+    {
+      "turn": 28,
+      "topic": "Primary Assessment",
+      "micro_intent": "tachypnea",
+      "role": "EMT",
+      "utterance": "Your breathing is a bit quick. Any tightness or chest discomfort with it?"
+    },
+    {
+      "turn": 29,
+      "topic": "Primary Assessment",
+      "micro_intent": "tachypnea",
+      "role": "Patient",
+      "utterance": "Just a little-nothing too bad."
+    },
+    {
+      "turn": 30,
+      "topic": "Primary Assessment",
+      "micro_intent": "tachypnea",
+      "role": "EMT",
+      "utterance": "Have you been breathing this fast for the whole time, or did it get better?"
+    },
+    {
+      "turn": 31,
+      "topic": "Primary Assessment",
+      "micro_intent": "tachypnea",
+      "role": "Patient",
+      "utterance": "It did get a bit slower after the epipen."
+    },
+    {
+      "turn": 32,
+      "topic": "Primary Assessment",
+      "micro_intent": "hypertension",
+      "role": "EMT",
+      "utterance": "You have elevated blood pressure right now. Would you say you feel dizzy or chest tightness with it?"
+    },
+    {
+      "turn": 33,
+      "topic": "Primary Assessment",
+      "micro_intent": "hypertension",
+      "role": "Patient",
+      "utterance": "I don't feel dizzy or like my chest hurts with the pressure."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Tell me more about today's symptoms, Sydney."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "After eating fish, maybe some peanut residue got mixed in. I immediately felt my throat tighten."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Then I used the epipen and it's been getting better."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - past_medical_history",
+      "role": "EMT",
+      "utterance": "Do you have any allergies, asthma, or other existing conditions?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - past_medical_history",
+      "role": "Patient",
+      "utterance": "I have mild asthma and a nut allergy."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - past_medical_history",
+      "role": "EMT",
+      "utterance": "I note in the medical history that you had bronchitis at some point. Have you been treated for that before?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - past_medical_history",
+      "role": "Patient",
+      "utterance": "Yes, I got over it last winter."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up",
+      "role": "Bystander",
+      "utterance": "Sydney had a bad peanut reaction two days ago and was just released."
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up",
+      "role": "Bystander",
+      "utterance": "At home she had fish, which she thought was safe, but it triggered the reaction again."
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up",
+      "role": "Bystander",
+      "utterance": "We didn't give her anything else-just the epipen."
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_oral_intake",
+      "role": "EMT",
+      "utterance": "When did she last eat or drink something?"
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_oral_intake",
+      "role": "Bystander",
+      "utterance": "An hour ago-just a fish and water."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I don't see any swelling or redness on your neck or face. Does your skin feel warm or flushed?"
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "It feels normal to me, but I can't really tell."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No signs of swelling in her neck or jaw. Does it hurt to swallow or breathe deeply?"
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "Just some tightness, but it's not painful."
+    },
+    {
+      "turn": 50,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "EMT",
+      "utterance": "On a scale from 0-10, how severe is your current discomfort if you don't feel pain exactly?"
+    },
+    {
+      "turn": 51,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "Patient",
+      "utterance": "It's a 0. I really don't have pain."
+    },
+    {
+      "turn": 52,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "You mentioned feeling better after the epipen-any pain or discomfort during the reaction?"
+    },
+    {
+      "turn": 53,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I didn't actually feel a lot of pain. Mostly just tightness and anxiety."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "L partner",
+      "utterance": "Great. She already used the epipen timely before our arrival. No further meds for now."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "L partner",
+      "utterance": "Installing a 4-lead ECG per protocol for monitoring."
+    },
+    {
+      "turn": 56,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We're following the allergic reaction protocol. No immediate emergency."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Performed ETCO2 capnography as well within standing orders."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Let's take your vitals again. Your heart rate?"
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "It's 97-much steadier now."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is 16 breaths a minute now-more normal."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "134 over 72-improved from before."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is now showing sinus rhythm-progressing well."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose results still unavailable. No issues to note."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing speed has gone up slightly again, 26 breaths per minute."
+    },
+    {
+      "turn": 65,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 114 over 68."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse ox is still at 100%-oxygen is not a problem."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG came back as sinus tachycardia again, nothing urgent."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Still feeling a 0 out of 10 on discomfort scale, right?"
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Exactly. It's gotten stable now, should be fine."
+    },
+    {
+      "turn": 70,
+      "topic": "Primary Assessment",
+      "micro_intent": "current_medications",
+      "role": "Bystander",
+      "utterance": "She uses albuterol for asthma occasionally."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is repeating as sinus tach, still stable."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing remains stable. No significant issues."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG remains normal except for the tachy rhythm."
+    },
+    {
+      "turn": 74,
+      "topic": "History of Present Illness",
+      "micro_intent": "have_previous",
+      "role": "Patient",
+      "utterance": "I had a similar episode two days ago. It was severe enough to require hospitalization."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Check your vitals one more time before facemask transport."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse stable at 117."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "26 respirations. Mild increase, but nothing to alarm over."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure stable and within normal limits - 114/68."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse ox still 100%-we're at an elevated altitude, but functionally fine."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transport destination-[COMPANY_NAME] PEDS ED bed 12 was provided. Good for us."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She'll be moved in a semi-Fowlers position for comfort and secured into the stretcher."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She walked into the ambulance and is already buckled up safely."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Patient is 11-year-old Sydney. Mom signed transport as she is a minor."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "We're heading to [COMPANY_NAME] Pediatric ED, bed 12. Standard allergic protocol."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Please note her nut allergy and prior epipen use with the [COMPANY_NAME] team."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "All procedures are complete. Prepare for transportation."
+    },
+    {
+      "turn": 87,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - time",
+      "role": "Patient",
+      "utterance": "How long do you think it lasted?"
+    },
+    {
+      "turn": 88,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - time",
+      "role": "EMT",
+      "utterance": "The entire episode, from the onset of tightness to using the epipen, took about 10 minutes maybe."
+    },
+    {
+      "turn": 89,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_temperature",
+      "role": "Partner",
+      "utterance": "Do you feel unusually warm or cold to the touch?"
+    },
+    {
+      "turn": 90,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_temperature",
+      "role": "EMT",
+      "utterance": "She doesn't seem feverish or overly chilled. We'll note the absence of temperature changes."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No petechiae or bite marks noted on her skin."
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Her pupils appear reactive and equal in size. No signs of nuchal rigidity."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "EMT",
+      "utterance": "No significant drainage or obstruction noted."
+    },
+    {
+      "turn": 94,
+      "topic": "History of Present Illness",
+      "micro_intent": "hypersensitivity_response",
+      "role": "Bystander",
+      "utterance": "She stopped breathing for a few seconds during her peak reaction, but recovered quickly."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "Partner",
+      "utterance": "肺 sounds are bilateral and clear, no adventitious sounds."
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "No evidence of palpable masses or abdominal tenderness."
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "No deformities or angulation noticed in the limbs."
+    },
+    {
+      "turn": 98,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "She's able to move her limbs freely with no signs of restriction."
+    },
+    {
+      "turn": 99,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "No indication of loss of bowel or bladder function observed."
+    },
+    {
+      "turn": 100,
+      "topic": "Take Interventions",
+      "micro_intent": "record_protocol",
+      "role": "Partner",
+      "utterance": "Just to clarify, no recorded meds taken post epipen - all normal."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "ready_for_transport",
+      "role": "EMT",
+      "utterance": "All set and ready to roll."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "destination_consent",
+      "role": "Bystander",
+      "utterance": "We're going with [COMPANY_NAME] as instructed by dispatch."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "precautions",
+      "role": "EMT",
+      "utterance": "Incident caused no long-term symptoms. Just continue monitoring per protocol."
+    },
+    {
+      "turn": 104,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Critical symptoms now seem resolved. Important to avoid nuts."
+    },
+    {
+      "turn": 105,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Highlight her recent hospital visit and albuterol use on intake notes."
+    },
+    {
+      "turn": 106,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "No signs of long-term complications from the event."
+    },
+    {
+      "turn": 107,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "All maneuvers and EKG seen as standard for pediatric roadmap."
+    },
+    {
+      "turn": 108,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_overview",
+      "role": "Partner",
+      "utterance": "We are about to exit our field protocol."
+    },
+    {
+      "turn": 109,
+      "topic": "Exit to Protocol",
+      "micro_intent": "outcome",
+      "role": "EMT",
+      "utterance": "Final destination and management strategy is set."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "leave_site",
+      "role": "EMT",
+      "utterance": "We're securing the patient and heading to the ED now."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "closure",
+      "role": "EMT",
+      "utterance": "Communications link is active and stable. All set."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "move_secure",
+      "role": "Partner",
+      "utterance": "Moving into position. Ready, settle up."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "positioned",
+      "role": "EMT",
+      "utterance": "All position statuses noted."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "readiness",
+      "role": "Partner",
+      "utterance": "All stations ready for clear passage. Moving ahead."
+    },
+    {
+      "turn": 115,
+      "topic": "Transport",
+      "micro_intent": "signal_departure",
+      "role": "EMT",
+      "utterance": "Departure signal received. Ready for transport."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "final_handoff_preparation",
+      "role": "Partner",
+      "utterance": "All documents and action logs noted by EMT team."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "initiate_departure",
+      "role": "EMT",
+      "utterance": "All stations green-ready to depart."
+    }
+  ]
+}

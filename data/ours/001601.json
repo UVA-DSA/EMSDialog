@@ -1,0 +1,834 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001601",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3 respond for possible cardiac event at --Address Redacted-- for chest pain."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Jordan, an EMT with the rescue squad. What made you call 911 tonight?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "patient",
+      "utterance": "I've had chest pain on the left upper side, non-radiating, and it's been constant for about 30 minutes."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you tell me your name and where you are right now?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Your eyes are open. What day is it today?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "And what brought you to this location tonight?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you reach and touch the wall over there for me?"
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is clear. You're not coughing or wheezing. I'd like to check your breathing now."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "You appear to be breathing normally. Let me listen to your lungs. Is there any discomfort when I do this?"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Your pulse feels strong. I need to get your blood pressure and heart rate now."
+    },
+    {
+      "turn": 11,
+      "topic": "History of Present Illness",
+      "micro_intent": "S_A_M_P_L_E_signs_symptoms",
+      "role": "EMT",
+      "utterance": "Along with the chest pain, is there anything else you're experiencing?"
+    },
+    {
+      "turn": 12,
+      "topic": "Pain Assessment",
+      "micro_intent": "O_P_Q_R_S_T_severity",
+      "role": "EMT",
+      "utterance": "On a scale from 0 to 10, with 10 being the worst, how would you rate your chest pain?"
+    },
+    {
+      "turn": 13,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "I'm going to check your eyes now. Can I shine a light in them for a quick exam?"
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "You seem alert to time, place, and person-oriented x4."
+    },
+    {
+      "turn": 15,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "You mentioned the pain is on the left upper side. Is it still there with no spreading after 30 minutes?"
+    },
+    {
+      "turn": 16,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Your abdomen looks soft. Any tenderness or pain in your belly?"
+    },
+    {
+      "turn": 17,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "EMT",
+      "utterance": "Do you feel any pain or discomfort in your pelvis or lower back?"
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "You're ambulatory now. Are you able to move your arms and legs without difficulty?"
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "partner",
+      "utterance": "Pulse is 94 beats per minute."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "partner",
+      "utterance": "Respirations are 18 breaths per minute."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "partner",
+      "utterance": "Blood pressure is 129 over 91."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "partner",
+      "utterance": "Oxygen saturation is 100%."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "partner",
+      "utterance": "We're beginning with a 4-lead ECG now. You may feel a slight pressure but that's normal."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "partner",
+      "utterance": "Here's some aspirin for you. It should help with the chest pain."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "partner",
+      "utterance": "Blood sugar is not detectable."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "This is a four-lead ECG. We're monitoring your heart rhythm now."
+    },
+    {
+      "turn": 27,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We're following the protocol for suspected cardiac chest pain based on your reported symptoms."
+    },
+    {
+      "turn": 28,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Pulse has dropped slightly to 89 beats per minute."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Respirations remain at 18."
+    },
+    {
+      "turn": 30,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Blood pressure is now 130 over 83."
+    },
+    {
+      "turn": 31,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Oxygen saturation is at 98%."
+    },
+    {
+      "turn": 32,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Still in sinus rhythm on the EKG."
+    },
+    {
+      "turn": 33,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "You rated the chest pain at 8 earlier. Has it remained consistent or changed?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "S_A_M_P_L_E_pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "You have a history of diabetes, asthma, bipolar disorder, gastritis, and past cocaine use. Is that correct?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "S_A_M_P_L_E_s_n_v_d",
+      "role": "EMT",
+      "utterance": "Are you having any nausea, vomiting, or diarrhea?"
+    },
+    {
+      "turn": 36,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "You've chosen Parham as the destination. Is that still correct?"
+    },
+    {
+      "turn": 37,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "You're secure. We're starting the transfer to Parham now."
+    },
+    {
+      "turn": 38,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "All secured and en route."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_symptoms",
+      "role": "EMT",
+      "utterance": "Is there anything new since we first started assessing?"
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "Your chest pain is still 8 of 10. How about the headache? Changes?"
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "No new symptoms noted and vitals remain stable during the move."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You appear stable throughout the transport, no increase in pain or distress."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "The chest and headache pain remain unchanged from the initial assessment."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We should arrive at Parham in a few minutes. ED has been updated."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Everything is steady and moving as expected."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You asked for a blanket. I can help with that. Do you want one?"
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "It's a two-minute trip. Just relax and let me get the blanket."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Here's the blanket for you."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "The patient quickly took the blanket and fell back while on the stretcher."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "This is consent to proceed to Parham and ED has been informed you'll arrive in Room 12."
+    },
+    {
+      "turn": 51,
+      "topic": "Handoff",
+      "micro_intent": "verbal_handoff",
+      "role": "EMT",
+      "utterance": "Here is the documentation. Please go through it and ask any questions."
+    },
+    {
+      "turn": 52,
+      "topic": "Handoff",
+      "micro_intent": "verbal_handoff",
+      "role": "EMT",
+      "utterance": "All care provided has been detailed during transfer."
+    },
+    {
+      "turn": 53,
+      "topic": "Handoff",
+      "micro_intent": "verbal_handoff",
+      "role": "nurse",
+      "utterance": "Thank you for the thorough actions, the information ready was clear and helpful."
+    },
+    {
+      "turn": 54,
+      "topic": "Handoff",
+      "micro_intent": "verbal_handoff",
+      "role": "EMT",
+      "utterance": "Gear and monitoring device will be replaced after transport, and the replacements are ready."
+    },
+    {
+      "turn": 55,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "The patient was alert and oriented throughout the entire assessment."
+    },
+    {
+      "turn": 56,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "You have normal circulation with no signs of major bleeding."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "You have peripheral pulses strong and present in all extremities."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No signs of trauma to the ears, nose, or throat."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent_exam",
+      "role": "EMT",
+      "utterance": "No signs of trauma or unusual drainage from the nose or ears."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils equal, round, and reactive at about 4mm each."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "EMT",
+      "utterance": "The pelvis exam showed no pain, swelling, or instability."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "You have good pulses and movement in all limbs without numbness or tingling."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is normal with no rashes, lesions, or noticeable dryness."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "You have clear breath sounds and no signs of breathing difficulty."
+    },
+    {
+      "turn": 65,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "12-lead EKG attempted, but V1 lead failed. It will be replaced now."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your skin is warm, dry, and shows no signs of trauma or injury."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Pulse and motor strength in all extremities remain unchanged and normal."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your chest rises and falls equally on both sides during breathing."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You said you haven't eaten or drunk anything in the last hour. Did you plan to stay at the wall?"
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You requested a blanket right after the transport began and started resting soon after."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No limitation in head or neck movement noted during assessment."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "We used the 4-lead monitoring as a stable backup for the heart rhythm."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "Checked your vitals and symptoms regularly during the ride."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "No new signs of pain, nausea, vomiting, or diarrhea were reported."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "No issues with vitals or additional symptoms while on the way."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "EMT",
+      "utterance": "Exam showed your pelvis is stable."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Lower body skin was also found to be normal and intact."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "There is a monitor failure issue but transport continues with 4-lead monitoring."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Patient denies any neck pain or stiffness."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Breathing and heart sounds remain unaltered and without difficulty."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent_exam",
+      "role": "EMT",
+      "utterance": "Eyes and ears appear unharmed and not inflamed."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "The 12-lead issue occurred at V1, but the rest of the monitoring continued fine."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No swelling or masses found on the neck during the check."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Patient has regular urination and bowel movement patterns as per history."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Patient exhibited strong mental awareness throughout all evaluations."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "No new symptoms from the patient who eventually drifted to sleep."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "EMT",
+      "utterance": "No indication of injury detected in the pelvic area."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin turgor and overall appearance remain normal with no concerns."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Replacing the monitor now after recording the failure in V1."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient remains calm and without significant symptoms during the transport so far."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Scans indicate no issues with the trachea or veins."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Another call backup unit is en route to supply a new cardiac monitor."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No unusual markings or foreign objects found on the body."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Patient napped after receiving the blanket - remained stable and unbothered."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No complaints of dizziness or lightheadedness observed."
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "No signs of disability, numbness, or swelling in limbs were noted."
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No suspicious discoloration or irregular patterns on the skin."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Nothing new during the remaining stages of transport toward the hospital."
+    },
+    {
+      "turn": 99,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No signs of neck trauma enduring the exam."
+    },
+    {
+      "turn": 100,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Free from issues like scars or signs of prior trauma."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "The patient was standing near the wall and didn't require any help to walk."
+    },
+    {
+      "turn": 102,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No nasal issues noticed during check up."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Patient refused IV access and had no fluids administered on this call."
+    },
+    {
+      "turn": 104,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "All pulses and sensory exams came back full and without limitations."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "No further medications were given after arrival on scene."
+    },
+    {
+      "turn": 106,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent_exam",
+      "role": "EMT",
+      "utterance": "Ears have been found to be free of debris and swelling."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "The transfer to the ambulance began quickly despite initial pause."
+    },
+    {
+      "turn": 108,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No eye issues or damage to the face were recorded."
+    },
+    {
+      "turn": 109,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Head and neck motions are free and not hampered in any way."
+    },
+    {
+      "turn": 110,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No signs of ripped or damaged skin seen during call."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "No rush is involved since patient is stable and fully ambulatory."
+    },
+    {
+      "turn": 112,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "EMT",
+      "utterance": "Pelvis showed no pain or imbalance during movement and checking."
+    },
+    {
+      "turn": 113,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin showed no signs of overexposure to the sun or rashes."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Working with another call crew who handed over the alternate monitor."
+    },
+    {
+      "turn": 115,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent_exam",
+      "role": "EMT",
+      "utterance": "No hearing or ear troubles identified."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "No signs of asthma flare-up observed during this trip."
+    },
+    {
+      "turn": 117,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No noticeable swelling in the ankles or extremities."
+    },
+    {
+      "turn": 118,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Patient continuously monitored by partner while moving along."
+    }
+  ]
+}

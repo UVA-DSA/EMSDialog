@@ -1,0 +1,848 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002372",
+  "protocol": [
+    "medical - seizure (protocol 3 - 12)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for an unconscious patient at Westover Dialysis, in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hello, I'm Ben, a paramedic with the rescue squad. We were called about an emergency here involving an unconscious patient. Can you confirm that?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "Yes. She had a seizure, and after that she just didn't wake up. She's completely unresponsive now."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Let me check her responsiveness. Is she opening her eyes or responding to loud noises or touch?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Bystander",
+      "utterance": "She won't open her eyes, and she's not responding at all-no movement, no signs of awareness."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Paramedic",
+      "utterance": "She's not giving any verbal responses, but we can still keep assessing her for motor reactions. Let me start by testing her pupils with the penlight if you don't mind, Partner."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "EMT",
+      "utterance": "Her pupils are reactive and following the light. That's still a sign of partial responsiveness."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Paramedic",
+      "utterance": "But overall, I'd rate her as altered mental status. She's not interactive at all aside from those eye movements."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "Paramedic",
+      "utterance": "Airway is clear, she appears in normal posture and has no signs of trauma or airway compromise."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "EMT",
+      "utterance": "She's been placed on a nasal cannula at 2 LPM and is maintaining that oxygen."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "EMT",
+      "utterance": "Her breathing is consistent with no signs of labored breathing or irregularity. She's taking normal breaths according to what the staff reported."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "EMT",
+      "utterance": "I'll check and confirm by taking her blood pressure and pulse first."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Blood pressure is 166 over 78. That's within acceptable limits for now."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Pulse is 87, regular for now."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respiratory rate is at 12 and normal in depth."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "Her oxygen saturation is at 99% on the nasal cannula. That seems stable."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "I'll take a quick blood sugar now. Let's see if hypoglycemia might be a factor."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Her blood sugar is at 111. Still in the normal range, so hypoglycemia can be ruled out."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Paramedic",
+      "utterance": "Now that her vitals are stable and within acceptable limits, we can proceed to do a 12-lead EKG."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Interpretation of the 12-lead EKG shows sinus rhythm with first-degree AV block. Also showing nonspecific T-wave abnormalities, but no signs of acute myocardial infarction."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "Would you be okay with the facility staff providing some medical background? We'll need it for proper documentation."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "Yes. She used to have a lot of health issues, including chronic seizures, hypertension, hyperlipidemia, and a history of stroke due to an infarction."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "She also has schizoaffective disorder and is on dialysis three times a week for her end-stage renal failure."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "Got it. So, she has a medical background we need to respect-especially her CV conditions like primary hypertension, hyperlipidemia, and a history of stroke due to infarction."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "When was her last meal or intake before this incident?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "She had breakfast a couple of hours ago. It was a small amount, but nothing out of the ordinary."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Are there any medications listed for her, or any known allergics we need to be careful about during this transport?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "She's on her dialysis meds, but nothing else as far as current medications. No listed drug allergies either."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "Has there been a change in her condition after the dialysis treatment? Any signs that she would not get better this time, like near-fainting or not coming out of the seizure?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "No. Her seizures usually pass and she wakes up, but this time she hasn't. They started a nasal cannula, and she remains postictal and unresponsive."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "How did this episode specifically present itself at dialysis?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "She started having a seizure during the session. That's when they placed her on O2 and called for help."
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "EMT",
+      "utterance": "I'm noting now that the patient has no objective pain rating. There's no movement or signs of discomfort during our check."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Paramedic",
+      "utterance": "We'll skip the full head and neck exam since she's unresponsive and we are under time pressure for transport."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "EMT",
+      "utterance": "Let me briefly check her skin for injuries or dialysis site signs."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "EMT",
+      "utterance": "No notable abrasions, rashes, or bite marks. She shows no signs of trauma. Dialysis site seems intact and not inflamed."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Her pulse shows a drop to 70 per minute. Still regular, but notable."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respiration rate remains at 12 per minute, shallow, but normal."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Blood pressure decreased slightly to 164/77. Still trending stable."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "SpO2 is at 100%, still fully saturated."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Her blood sugar still shows no reading. We should continue monitoring."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Let me repeat the EKG to confirm. We saw a first-degree AV block and nonspecific T-wave changes the last time."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "No new changes on the EKG. Still shows first-degree block. Same as previous interpretation."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Paramedic",
+      "utterance": "Based on seizure, altered mental status, and medical history, we're initiating the medical-seizure protocol, per Protocol 3-12."
+    },
+    {
+      "turn": 45,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide ems protocol",
+      "role": "Paramedic",
+      "utterance": "Our strategy is clear: Protocol 3-12. We're stabilizing for transport and monitoring closely."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "I'm double-checking. Her pulse now is 78, still regular and steady."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respiration is 11 per minute. Slightly lower, but still shallow."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Her blood pressure is now at 162/73. Mild fluctuation, but nothing unstable."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "SpO2 remains at 100%. She's doing well on oxygen."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Blood sugar still reads 0. We need to check again shortly."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Let me do a second 12-lead EKG as a precaution before we move."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Second EKG is consistent with previous findings. Still normal sinus rhythm and first-degree AV block. No blockages or infarctions."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Paramedic",
+      "utterance": "She's ready for transport. Let's get her secured onto the stretcher and into a semi-Fowler's in the ambulance."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "Short transport is ideal. I'll confirm [COMPANY_NAME] is available."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Stretcher is ready. She's now moved and secured in semi-Fowler's position with all seat belts in place."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "She's in the ambulance. Let me track her condition during transport."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "Let's do another check to confirm she's doing well en route."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "Her pulse is at 78 per minute, steady and regulated."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "Respiration is 11, shallow but stable."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "BP is at 162/73. It's still consistent with previous readings."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "SpO2 remains at 100%. Perfect oxygen saturation."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "Blood sugar still reads 0, no signs of hypoglycemia."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "Paramedic",
+      "utterance": "She's stable and ready for hospital care. Transportation can proceed safely."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "All signs point to a safe transport to [COMPANY_NAME]. Just keep monitoring en route."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "report to hospital",
+      "role": "Paramedic",
+      "utterance": "We are en route to [COMPANY_NAME] hospital's ED. Patient remains unresponsive, GCS 4, with stable vitals and ready for hospital assessment."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "report to hospital",
+      "role": "EMT",
+      "utterance": "We have her-vitals are maintained, and the situation is stable. We'll assist as needed upon arrival."
+    },
+    {
+      "turn": 67,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "She has a documented history of stroke or CVA due to an infarction which might have contributed or influenced her prolonged postictal state."
+    },
+    {
+      "turn": 68,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Paramedic",
+      "utterance": "Let me check if there's any increase in respiratory workload. She's shallow, unresponsive; so close monitoring is needed during transport."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "EMT",
+      "utterance": "Can't do a full breath or heart sound check, but I'll do a quick inspection of her chest and make sure it's moving evenly."
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "EMT",
+      "utterance": "No visible deformities, asymmetry, or signs of chest trauma. Her breathing appears consistent."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "EMT",
+      "utterance": "Let me briefly assess her arm and back for strength and sensation. Dialysis access in the other arm, so it's not possible to feel for pulses on this side."
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "EMT",
+      "utterance": "Her non-dialysis arm has strong peripheral pulses. No obvious deformities, wounds, or signs of trauma."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen exam",
+      "role": "EMT",
+      "utterance": "Quick check on abdomen: soft and non-tender, with normal bowel sounds. No signs of distention or guarding."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary exam",
+      "role": "EMT",
+      "utterance": "No issues reported related to the genitourinary system."
+    },
+    {
+      "turn": 75,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Double-check-respiration 11 per minute, shallow, and regular. Continue monitoring for any increase in work of breathing."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "Reaching out to dispatch for confirmation of hospital admission and ED bed availability for [COMPANY_NAME]."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "dispatcher",
+      "utterance": "Hospital confirmed. Patient will be taken to ED Bed 21. No delays expected upon arrival."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Paramedic",
+      "utterance": "All systems go. Prepare for loading into the ambulance now."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Patient is secured and ready for transport. Semi-Fowler's position is stable with oxygen and EKG running."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "EMT",
+      "utterance": "There are no plans to initiate new interventions. Maintain current stabilization and observation protocols."
+    },
+    {
+      "turn": 81,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "EMT",
+      "utterance": "Rechecking the caval pulses and skin temperature, seems normal. No signs of shock or circulatory compromise visible."
+    },
+    {
+      "turn": 82,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "EMT",
+      "utterance": "Her skin is warm, dry, and not cyanotic. Peripheral pulses are strong and regular bilaterally."
+    },
+    {
+      "turn": 83,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "EMT",
+      "utterance": "Let me watch her chest a bit more. No signs of flaring, use of accessory muscles, or increased effort."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Keep watching EKG closely. First-degree AV block is normal for her but no other changes. Confirmed stable response to initial transport."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Transporting during EKG link to monitor in real-time at the hospital if possible. Let the hospital know we are sending a preliminary interpretation."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "She's secured with blue straps. Retractable seat belts in place. All gear is stowed and ready for departure."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "Let's keep temperature on file. She's not showing signs of fever and her skin color and warmth is normal."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "EMT",
+      "utterance": "No underlying rashes, hives, burns, or other skin concerns observed. Dialysis site clean and dry still."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "EMT",
+      "utterance": "Quick visual check of the head and neck, no signs of deformity or swelling. Scalp intact."
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "EMT",
+      "utterance": "No obvious signs of nuchal rigidity or trauma, but unchanged from previous assessment."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Paramedic",
+      "utterance": "Double-check stretcher and patient location before pulling out. All right, we're clear."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Patient profile just updated in the system. All protocols in place for expedited ED care."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "Things are looking stable-no significant issues so far. Let's do another full vitals scan in 5 minutes."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "Route to [COMPANY_NAME] confirmed-traffic seems light, estimated time of arrival is 8 minutes."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "She's showing same vitals now-pulse 78, respiratory rate 11, blood pressure 162/73. Oxygen at 100%."
+    },
+    {
+      "turn": 96,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Paramedic",
+      "utterance": "No further interventions planned. She is stable enough for the short transport, with close patient observation."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "O2 mask secured with Velcro. EKG lead wires taped to prevent tangling. Redundant connections on the monitor."
+    },
+    {
+      "turn": 98,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears",
+      "role": "nose, mouth and throat exam; Paramedic",
+      "utterance": "No drainage or hemorrhage observed via the mouth and nasal areas. No signs of obstruction or foreign bodies."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Ambulance is equipped with a stretcher extender for height adjustments, should not be an issue for ED bed transfer."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Hospital is informed of this high-acuity situation and is in the final stages of bed prep for her."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "Paramedic",
+      "utterance": "She showed no signs of distress during the last check. Continue high acuity monitoring until arrival."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "We confirm location and speed limits. No speed limit overrides, so transporting at normal emergency service speed."
+    },
+    {
+      "turn": 103,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary exam",
+      "role": "EMT",
+      "utterance": "No signs of rectal bleeding or abnormal urinary output. No changes in frequency, urgency, or urine color observed."
+    },
+    {
+      "turn": 104,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary complaint",
+      "role": "EMT",
+      "utterance": "She is still completely unresponsive. No signs of pain or restlessness reported from her."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "She's en route. ED staff are aware and waiting. We'll communicate in detail upon arrival."
+    },
+    {
+      "turn": 106,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "Another round-vitals still trending stably. Check pulse, respiration, and SpO2 one more time before final handover."
+    },
+    {
+      "turn": 107,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "EMT",
+      "utterance": "Pulses still strong. SpO2 steady at 100%. Blood pressure at 162/73, regular."
+    },
+    {
+      "turn": 108,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "EMT",
+      "utterance": "We're not adding new meds or procedures. Continuing with basic support and full monitoring."
+    },
+    {
+      "turn": 109,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "EMT",
+      "utterance": "Quick note-no swelling or dislocation to the neck observed. Chin to chest, soft, no signs of trauma."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "We are entering the final block-ambulance camera is on. ED is in view now."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Final check of all monitors and accessories in the ambulance. No systems off or unconnected."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "She's still unresponsive upon arrival. All patient conditions stable per our last assessment."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "ED arrival confirmed. Let them know she is en route with no major complicating incidents so far."
+    },
+    {
+      "turn": 114,
+      "topic": "Handoff",
+      "micro_intent": "report to hospital",
+      "role": "EMT",
+      "utterance": "Bed 21 is her ED destination. We have all records and monitoring data ready for you."
+    },
+    {
+      "turn": 115,
+      "topic": "Handoff",
+      "micro_intent": "report to hospital",
+      "role": "Paramedic",
+      "utterance": "She was unresponsive with GCS of 4 and stable vitals en route. Mild fluctuations in heart rate but not concerning."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Moving her to a flat supine position to facilitate ED transfer and physician team takeover."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "She is moved to the hospital ED using the stretcher and EM assist from staff."
+    },
+    {
+      "turn": 118,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "She is now in the hospital. We will stay until ED received all documentation and the patient status transition is clear."
+    },
+    {
+      "turn": 119,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "All hands clear of the stretcher, and the patient transition is completed. She's in the hands of nursing staff."
+    },
+    {
+      "turn": 120,
+      "topic": "Handoff",
+      "micro_intent": "report to hospital",
+      "role": "Paramedic",
+      "utterance": "We've fulfilled field care duties and completed care upon arrival to [COMPANY_NAME]. We will convey full care plan and EKG details to the staff before leaving."
+    }
+  ]
+}

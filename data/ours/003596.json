@@ -1,0 +1,694 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003596",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for an unconscious patient at [COMPANY_NAME] Dorm with possible alcohol intoxication."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Jesse, an EMT with [COMPANY_NAME] Rescue. Can you tell me what happened to the patient?"
+    },
+    {
+      "turn": 3,
+      "topic": "Introduction",
+      "micro_intent": "intro_bystander",
+      "role": "EMT",
+      "utterance": "This is my partner Andrea, who'll assist in the care of the patient."
+    },
+    {
+      "turn": 4,
+      "topic": "Introduction",
+      "micro_intent": "intro_bystander",
+      "role": "Bystander",
+      "utterance": "We were in our dorm room. He said he felt weak, started vomiting, and then passed out."
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He fainted in the hallway and was unconscious when we found him."
+    },
+    {
+      "turn": 6,
+      "topic": "Chief Complaint",
+      "micro_intent": "describe_symptom",
+      "role": "Bystander",
+      "utterance": "He was breathing but didn't respond to any calls or touch."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Patient is unresponsive to all stimuli and shows no eye opening unless physically moved."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Eyes do not open spontaneously or to verbal or physical stimuli."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "No verbal response to shouting or direct contact."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "No motor response observed to external movement or stimulation."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMS Partner",
+      "utterance": "I will suction the airway to clear sputum."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_clearance",
+      "role": "EMS Partner",
+      "utterance": "Airway is now patent and free of obstruction after suctioning."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Let me assess his airway and breathing in more detail."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "rate_and_depth_resp",
+      "role": "EMS Partner",
+      "utterance": "Respirations are at 19, regular, and without signs of distress."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "oxygen_saturation",
+      "role": "EMS Partner",
+      "utterance": "SpO2 was 94 and dropped to 87 before NPA was placed."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Heart rate is 102 BPM, BP is 111/66. Glucose is 99 mg/dL."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "pulse_rate_quality",
+      "role": "EMS Partner",
+      "utterance": "Radial pulse is strong and regular."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "blood_pressure",
+      "role": "EMS Partner",
+      "utterance": "Blood pressure is within normal limits currently."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "How long has he been unresponsive?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up",
+      "role": "Bystander",
+      "utterance": "He started vomiting about 20 minutes ago and then passed out."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Bystander",
+      "utterance": "He might have consumed vodka, but we don't know the amount."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "relevant_past_history",
+      "role": "EMT",
+      "utterance": "Does anyone know his medical history or allergy information?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_info",
+      "role": "Bystander",
+      "utterance": "The patient is unconscious. No personal info is available."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "PMHx is not available at this time."
+    },
+    {
+      "turn": 25,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs_documentation",
+      "role": "EMT",
+      "utterance": "GCS is 3 from exam (Eye 1, Verbal 1, Motor 1)."
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMS Partner",
+      "utterance": "Patient is unresponsive. No pain signs or reports detected."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "EMT",
+      "utterance": "No head injury signs observed, neck is neutral."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is cool, diaphoretic, and no visual skin trauma noted."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Abdomen is soft, without distension or tenderness."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMS Partner",
+      "utterance": "Urine incontinence was noted during transport."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMS Partner",
+      "utterance": "Pulse has dropped from 102 to 90."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMS Partner",
+      "utterance": "Respiratory rate increased to 23."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMS Partner",
+      "utterance": "Blood pressure is now 122/71."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMS Partner",
+      "utterance": "SpO2 remains stable at 96."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMS Partner",
+      "utterance": "Unable to measure glucose after initial value of 99."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMS Partner",
+      "utterance": "EKG rhythm is sinus tachycardia."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "IV is placed in the left AC extremity vein with saline lock."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMS Partner",
+      "utterance": "NPA is in place to ensure airway patency."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMS Partner",
+      "utterance": "IV site is stable with no detected issues."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "4 lead ECG is monitoring the patient continuously."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMS Partner",
+      "utterance": "300cc of normal saline was administered."
+    },
+    {
+      "turn": 42,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Using protocol 7-1 for suspected alcohol intoxication."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Vitals remain consistent with no clinical deterioration."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMS Partner",
+      "utterance": "IV site and NPA are maintained and functional."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMS Partner",
+      "utterance": "IV and NPA are both in place and working."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Preparing to safely transfer the patient to the stretcher."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "[COMPANY_NAME] is the transport destination."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMS Partner",
+      "utterance": "Patient is placed in semi-Fowlers and secured for transport."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "Confirming ECG and IV stability as we move."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMS Partner",
+      "utterance": "NPA and IV are in proper position and secure."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "capnography",
+      "role": "EMS Partner",
+      "utterance": "Capnography remains within normal parameters during transport."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Handoff to ED staff is in progress."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMS Partner",
+      "utterance": "Patient is moving to Trauma Bay."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMS Partner",
+      "utterance": "Airway is stable with NPA in place."
+    },
+    {
+      "turn": 55,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "No allergy information is available from patient or witnesses."
+    },
+    {
+      "turn": 56,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "No medications are known or have been administered."
+    },
+    {
+      "turn": 57,
+      "topic": "Primary Assessment",
+      "micro_intent": "trachea_position",
+      "role": "EMS Partner",
+      "utterance": "Due to unresponsiveness, tracheal position could not be assessed."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abnormal_skin_findings",
+      "role": "EMS Partner",
+      "utterance": "Skin is clear of rashes, sores, or wounds."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "EMT",
+      "utterance": "No unusual findings in the ENT regions."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_cardio_exam",
+      "role": "EMS Partner",
+      "utterance": "Bilateral breath sounds are equal and unlabored."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "EMS Partner",
+      "utterance": "No distinguishing extremity issues or back trauma."
+    },
+    {
+      "turn": 62,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "pupils",
+      "role": "EMS Partner",
+      "utterance": "Pupillary response could not be obtained due to unresponsiveness."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMS Partner",
+      "utterance": "ECG is running with no reported issues."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMS Partner",
+      "utterance": "SpO2 remains consistent at 96."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Next checks in 10 minutes for IV, NPA, and vitals."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMS Partner",
+      "utterance": "Will continue to reassess airway equipment."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient remains stable for transport."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "reassess_interventions",
+      "role": "EMT",
+      "utterance": "All lines and equipment are working."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMS Partner",
+      "utterance": "FULL transfer of care to ED nursing."
+    },
+    {
+      "turn": 70,
+      "topic": "History of Present Illness",
+      "micro_intent": "symptoms_change",
+      "role": "EMT",
+      "utterance": "No new or worsening symptoms occurred during transport."
+    },
+    {
+      "turn": 71,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset_time",
+      "role": "EMS Partner",
+      "utterance": "Patient remains pain-free; no signs of discomfort seen."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "EKG rhythm is maintaining through transport."
+    },
+    {
+      "turn": 73,
+      "topic": "Primary Assessment",
+      "micro_intent": "cyanosis",
+      "role": "EMS Partner",
+      "utterance": "No cyanosis is seen on physical inspection."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neck_veins",
+      "role": "EMS Partner",
+      "utterance": "No abnormal distension is seen in neck veins."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_color",
+      "role": "EMT",
+      "utterance": "Skin is not showing signs of jaundice or other discoloration."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "transport_status",
+      "role": "EMS Partner",
+      "utterance": "Transport remains with priority as a hot case."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMS Partner",
+      "utterance": "EKG remains stable showing no new changes."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "SpO2 continues at 96 with assistance."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "destination_confirmation",
+      "role": "EMT",
+      "utterance": "Final destination confirmed as [COMPANY_NAME]."
+    },
+    {
+      "turn": 80,
+      "topic": "Exit to Protocol",
+      "micro_intent": "confirm_protocol_closure",
+      "role": "EMT",
+      "utterance": "Protocol procedures remain in place and have been followed."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "exit_to_facility",
+      "role": "EMT",
+      "utterance": "Patient is handed off without complication."
+    },
+    {
+      "turn": 82,
+      "topic": "Primary Assessment",
+      "micro_intent": "peripheral_pulses",
+      "role": "EMS Partner",
+      "utterance": "Radial pulses match findings from earlier assessment."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "swallowing_difficulties",
+      "role": "EMS Partner",
+      "utterance": "No signs of swallowing complications."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMS Partner",
+      "utterance": "No additional glucose measurements were obtained."
+    },
+    {
+      "turn": 85,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_hist",
+      "role": "EMS Partner",
+      "utterance": "No prior known medical history to report."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "final_handoff",
+      "role": "EMS Partner",
+      "utterance": "Documentation is complete and given to ED staff."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Patient is not responsive to any tests for mental status."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "nuchal_rigidity",
+      "role": "EMS Partner",
+      "utterance": "No neck stiffness or rigidity is observed."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "cold_to_hot",
+      "role": "EMT",
+      "utterance": "Emergency transport remains marked hot."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "exit_to_facility",
+      "role": "EMS Partner",
+      "utterance": "Complete care transfer at ED occurs now."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "hearing_exam",
+      "role": "EMT",
+      "utterance": "Auditory function is not assessable due to unresponsiveness."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "urine",
+      "role": "EMS Partner",
+      "utterance": "No gain reported from genitourinary assessment."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_temperature",
+      "role": "EMT",
+      "utterance": "Diaphoretic skin appears consistent."
+    },
+    {
+      "turn": 94,
+      "topic": "Secondary Assessment",
+      "micro_intent": "lymphadenopathy",
+      "role": "EMT",
+      "utterance": "No palpable masses or lymph nodes."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "scars",
+      "role": "EMS Partner",
+      "utterance": "No essentially notable scars seen."
+    },
+    {
+      "turn": 96,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin_condition",
+      "role": "EMS Partner",
+      "utterance": "Skin remains consistently diaphoretic and cool."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "cold_to_hot",
+      "role": "EMS Partner",
+      "utterance": "Transport marked hot to facilitate emergency care."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMS Partner",
+      "utterance": "Final administrative and medical documentation is submitted."
+    }
+  ]
+}

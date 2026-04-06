@@ -1,0 +1,666 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001919",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 2 for an unconscious call at [CITY], Apt #123."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello Sir, I'm Derek and this is my partner Laura. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I fainted around 3. I think it had to do with my oxygen."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Mr. Anderson, can you tell me your name and when you were born?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Henry Anderson. July 4th, 1952."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Good. Can you squeeze my finger?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Sure. There."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Mr. Anderson, are you in any distress right now?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, I'm just a little tired."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "I see your BiPAP at home. That's already on."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Are you experiencing any trouble breathing?"
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "No, I'm okay. Just a bit winded."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations are unlabored and regular. No signs of respiratory distress, tripoding, or accessory muscle use."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Mr. Anderson, were you able to speak in full sentences during your fainting episode?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Yes, I could speak fine."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is strong and regular. No signs of pallor or diaphoretic skin."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 79 and regular."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 18 and unlabored. No tachypnea noted."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 111 over 62."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 93%."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is zero and not available."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_4_lead_monitoring",
+      "role": "EMT",
+      "utterance": "Mr. Anderson, we'll place a 4-lead ECG on you for monitoring. Is that okay?"
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_4_lead_monitoring",
+      "role": "Patient",
+      "utterance": "Yes, go ahead."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_12_lead_obtained",
+      "role": "EMT",
+      "utterance": "We're now going to apply a 12-lead ECG. That's okay?"
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_12_lead_obtained",
+      "role": "Patient",
+      "utterance": "Absolutely, no problem."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_interpretation",
+      "role": "Partner",
+      "utterance": "ECG shows sinus rhythm. No ST elevation or ectopy observed."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Can you describe your current symptoms again, Mr. Anderson?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I experienced some chest pain and had a fainting episode."
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. severity",
+      "role": "EMT",
+      "utterance": "On a scale of 1 to 10, how severe is your chest pain right now?"
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. severity",
+      "role": "Patient",
+      "utterance": "Around a 3."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Where is the chest pain located?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Right in the center of my chest."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "Partner",
+      "utterance": "Thank you for pointing out."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE past_medical_history",
+      "role": "EMT",
+      "utterance": "You mentioned COPD, CHF, old MI, and GERD. Anything else in your medical history we need to know about?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE past_medical_history",
+      "role": "Patient",
+      "utterance": "No, that covers it."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Mr. Anderson, where are we right now?"
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "In my bedroom in [CITY]."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "What day is it today?"
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "December 13, 2020. Friday."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Did anyone else tell you the time?"
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "No, I figured it out by myself."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Partner",
+      "utterance": "You are alert and oriented to person, place, time, and situation-correct?"
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, I'm A&O×4."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_12_lead_obtained",
+      "role": "Partner",
+      "utterance": "Mr. Anderson, the 12 lead we obtained showed sinus rhythm with no changes."
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "Partner",
+      "utterance": "During your episode, did you have trouble speaking in full sentences?"
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No, I didn't. I was still able to speak clearly."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We'll re-perform the 12 lead for verification. Is that okay with you?"
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Patient",
+      "utterance": "Yes, proceed."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Done. Same result-sinus rhythm with no STE or ectopy."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Can we continue your home oxygen support given your COPD and BiPAP use?"
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Patient",
+      "utterance": "Yes, please. I do feel better with oxygen support."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "We'll continue with your home oxygen support."
+    },
+    {
+      "turn": 53,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_decision",
+      "role": "EMT",
+      "utterance": "Hotshot, transporting per chest pain and suspected cardiac concerns given medical history."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Mr. Anderson, you refused asprin. Is there a reason?"
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Patient",
+      "utterance": "I do not take asprin."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "vital",
+      "role": "Partner",
+      "utterance": "Mr. Anderson, we observed bilateral pedal edema. Is that something you've noticed lately?"
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "vital",
+      "role": "Patient",
+      "utterance": "Yes, it's been there for some time."
+    },
+    {
+      "turn": 58,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Did you feel any kind of weakness during your fainting episode?"
+    },
+    {
+      "turn": 59,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I did feel a little weak, but it subsided quickly."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Mr. Anderson, do you have any specific hospital preference?"
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "I wanted to go to [CITY]."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "[CITY] is currently full. We'll transport you to HDH Forest instead. Is that okay?"
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "That's fine."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll use a sheet lift to move you safely. Ready?"
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Secure with straps and rails-we're ready to transport."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Ready to go. Systems are secure."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "Continuous monitoring",
+      "role": "Partner",
+      "utterance": "Let me check your vitals again. Ready?"
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is now 78, stable."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is 94 over 58."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen saturation improved to 95%."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_ED",
+      "role": "EMT",
+      "utterance": "ED, we have Mr. Henry Anderson, 68YO. Fainted at 1500, chest pain."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_ED",
+      "role": "Partner",
+      "utterance": "Active at home using BiPAP, on home oxygen support now."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_ED",
+      "role": "Partner",
+      "utterance": "Patient has known COPD, CHF, old MI, and GERD. A&O×4, stable vitals."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_ED",
+      "role": "Partner",
+      "utterance": "12-lead normal, no STE or ectopy. IV access untreated, ASA rejected."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_ED",
+      "role": "Recipient",
+      "utterance": "Room 18, please. Move to room 18 now."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "GCS is 15-fully alert and oriented."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All vitals and interventions confirmed. Accepting full transfer to HDH Forest."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Bilateral pedal edema is noted."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Mr. Anderson did express weakness, though it was brief."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No IV access was established."
+    },
+    {
+      "turn": 81,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Patient refused administration of ASA."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Mr. Anderson was A&Ox4 and active at the time of our arrival."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "12-lead EKG is clear, sinus rhythm with no STE."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Prevented oxygenation issues using ongoing BiPAP and home O2 settings."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No confusion or altered level of consciousness observed."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transferring to HDH Forest due to [CITY] being on diversion."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient was not in pain, no significant distress or tachycardia during transport."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Aspirin refusal fully documented."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Final vitals rechecked en route. No significant changes observed."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All medical equipment and setting documented with patient."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No signs of respiratory compromise or abnormal chest wall movement."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No history of allergic reactions or drug incompatibilities noted in records."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport time estimated at 15 minutes."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All elements of protocol completed and reviewed on scene and en route."
+    }
+  ]
+}

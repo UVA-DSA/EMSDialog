@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001270",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Medic Unit 2 en route for a 60-year-old male with chest pain and dizziness at a pharmacy in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Good morning, my name's Taylor and I'm an EMT with the rescue team. What brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've had chest pain, like a pressure here, and it started hurting a lot-around 10 o'clock this morning."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Can you tell me where the pain is located and if it is spreading anywhere else?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "It's right here on my chest-like behind my ribs. It goes to my head sometimes and gets worse when I move."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Mr. Smith, can you open your eyes when I ask you to (eye opening)?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "Sure, I can do that. I see you just fine."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Mr. Smith, can you tell me what the day is today (verbal response)?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "I think it's Thursday."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Mr. Smith, if I point at your arm, can you point at mine (motor response)?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "Alright, I can do that."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "Mr. Smith, I'd like to test your orientation to place and time. What is your full name and age, please?"
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "Patient",
+      "utterance": "James Smith. I'm 60."
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "Mr. Smith, can you spell [CITY] backwards in the alphabet, please?"
+    },
+    {
+      "turn": 15,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "Patient",
+      "utterance": "R-I-C-H-M-O-N-D. Reverse order is D-N-O-M-H-C-I-R."
+    },
+    {
+      "turn": 16,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Mr. Smith, the time just passed me, but I gave you my question. You answered it just fine. You are alert and oriented x4."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is patent. Do you feel any blockage or discomfort?"
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, I don't feel anything. Breathing is mostly fine."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Mr. Smith, we're going to check your pulse now."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 67-steady."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "How would you describe your breathing right now?"
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "It's not too bad; I feel normal."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing is at 16 breaths per minute; rate and depth are good."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Mr. Smith, we're taking your blood pressure now."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 154 over 98."
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Your skin is warm and dry, and pulse is strong in both hands. Circulation checks out."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Mr. Smith, we are going to test your blood sugar now."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Your glucose level is 179-stable."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Mr. Smith, we're placing a little clip on your finger to measure your oxygen."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen is at 99%-normal."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Placing EKG pads now. It will be quick."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows a paced rhythm. We're running a 4-lead EKG now."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Mr. Smith, do you have any medical conditions or past surgeries?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "I had a heart bypass and a pacemaker in 2015."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Got it. What other symptoms have you noticed besides chest pain and dizziness?"
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "I felt a little sore and weak this morning-like I didn't feel right."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "You mentioned feeling off this morning. Did you feel a general sense of not being well, like fatigue or unwell (malaise)?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "Yeah, I felt off all morning-tired and not like myself."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Got it. What medications are you on regularly?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "Metoprolol and Nitroglycerin."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Were you taking them regularly before the symptoms started?"
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "Yes, I took them as scheduled. I had chest tightness and nausea this morning, and I felt a little off for a while before it got worse."
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Did you use Nitroglycerin?"
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "I left the Nitro at home. I went to the store to find something else."
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Did you have vomiting, diarrhea, or fever this morning?"
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "No. Just chest pain and dizziness."
+    },
+    {
+      "turn": 47,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst",
+      "role": "EMT",
+      "utterance": "On a scale from 0 to 10, how would you rate your chest pain now?"
+    },
+    {
+      "turn": 48,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst",
+      "role": "Patient",
+      "utterance": "It's a 10-very bad. Feels like pressure, worse with movement."
+    },
+    {
+      "turn": 49,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst",
+      "role": "EMT",
+      "utterance": "Does the pain spread anywhere else?"
+    },
+    {
+      "turn": 50,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst",
+      "role": "Patient",
+      "utterance": "Moves to my head, behind the eyes sometimes."
+    },
+    {
+      "turn": 51,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst",
+      "role": "EMT",
+      "utterance": "Anything help or make it worse?"
+    },
+    {
+      "turn": 52,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst",
+      "role": "Patient",
+      "utterance": "Better when I relax. Worse when I stand."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "EMT",
+      "utterance": "Can you look left and right for us? Let's check your head and neck."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "Partner",
+      "utterance": "Pupils are 3 mm, equal and reactive-PERRL."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "EMT",
+      "utterance": "Are there any lumps, cuts, or stiff neck?"
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "Partner",
+      "utterance": "No DCAP-BTLS noted. No JVD present."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "How is breathing right now? Any pain there?"
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "Breathing feels okay, no pain."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Breath sounds are clear and equal on both sides."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Normal chest movements and no tenderness noted."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "arms_exam",
+      "role": "EMT",
+      "utterance": "Can you squeeze each of my fingers?"
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "arms_exam",
+      "role": "Patient",
+      "utterance": "Okay-here."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "arms_exam",
+      "role": "Partner",
+      "utterance": "Motor strength equal bilaterally-PMS intact. No DCAP-BTLS noted."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "legs_exam",
+      "role": "EMT",
+      "utterance": "Can you move your legs for me?"
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "legs_exam",
+      "role": "Patient",
+      "utterance": "Okay."
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "legs_exam",
+      "role": "Partner",
+      "utterance": "No swelling or deformity-DCAP-BTLS absent."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "We're giving you aspirin-this helps protect your heart."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "ASA 324 mg given orally."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We need to place an IV in your arm for treatment."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV access established in the left arm."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We took a 12-lead EKG to monitor the heart."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse now 60-down slightly."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 168/89-still safe."
+    },
+    {
+      "turn": 74,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We are following the chest pain protocol today."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Reassessing oxygen saturation now."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "SpO2 remains at 99%."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "How's the chest pain now?"
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Down to a 5. Same type of pain."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Mr. Smith, where would you like to go?"
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "[COMPANY_NAME] is the best for your condition."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We'll call ahead and inform them."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We are placing you on the stretcher for transport in semi-fowler's position."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Shoulder and lap belts are on-ready for transport."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "Running 12-lead EKG again for monitoring."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "Findings repeat-still a paced rhythm with LVH."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Rechecking pulse and SpO2 again."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "SpO2 at 99%, heart rate at 80."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Blood pressure now is 170/102."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You will be taken directly to ED room 16 at [COMPANY_NAME]."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "Partner",
+      "utterance": "Hospital, we have a 60-year-old male with suspected cardiac chest pain en route."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "Partner",
+      "utterance": "Vitals: BP 170/102, pulse 80, SpO2 99%, ASA given, IV in place."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "EMT",
+      "utterance": "Pre-arrival report with [COMPANY_NAME]-protocol two-chest pain."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "EMT",
+      "utterance": "Mr. Smith is alert with a GCS of 15-responds to verbal and physical stimuli appropriately."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "Partner",
+      "utterance": "Breath sounds are clear bilateral (BBS) and equal at both lung fields."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "EMT",
+      "utterance": "No wounds, deformities, or abnormalities on head, torso, arms, or legs-no DCAP-BTLS."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "Partner",
+      "utterance": "Patient is stable-checking IV and EKG now."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "Partner",
+      "utterance": "IV site is secure, EKG rhythm remains stable."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_hospital",
+      "role": "EMT",
+      "utterance": "Transferring to ED room 16 at [COMPANY_NAME]."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Now checking SpO2 at 0%-saturating clear airway, no visible respiratory distress."
+    },
+    {
+      "turn": 100,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "EMT",
+      "utterance": "Repeat oxygen measure-still at 0%-monitoring closely, no apparent reaction."
+    }
+  ]
+}

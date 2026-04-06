@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003068",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 8 for psychiatric problem, reported suicide attempt at a residence in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Taylor, an EMT with the rescue squad. Can you tell me what brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "My girlfriend, she swallowed some Fioricet pills with alcohol to try to hurt herself. She was found unresponsive by her daughter."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, can you open your eyes for me? What is your name and where are we?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Hmm... My name's Ana. We're in [CITY]."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Do you know what month and date it is today?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "June 22nd. I'm tired, but... I think I can follow you with my eyes if needed."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Ma'am, can you take a breath in and out for me?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "I can, but I feel really drowsy."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "I'll place a pulse oximeter on your finger now to measure your oxygen level."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 99%. Good oxygen saturation."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 51 and regular on radial. No change noted."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration is 20 per minute, regular and smooth."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Let me take your blood pressure now."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 125 over 83. Normal according to the prior record."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is not registering on the monitor - showing zero."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is showing sinus bradycardia and sinus arrhythmia. I'll place the 4-lead monitor now."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Performing 4-lead ECG now to monitor heart rhythm."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Any chest pain, difficulty breathing, or other symptoms you're experiencing right now?"
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "Patient",
+      "utterance": "I'm very weak and emotional. A lot of crying, but no specific pain."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Are you having difficulty swallowing or any dizziness?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No swallowing issues. Just crying a lot and being very nervous."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "Bystander",
+      "utterance": "She is allergic to aspirin, but she hasn't taken any of it."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "Bystander",
+      "utterance": "She takes Vicodin, ProAir HFA, Flexeril, Lortab, and Motrin."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Bystander",
+      "utterance": "She was found on the couch with the Fioricet bottle open by her."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - past_medical_history",
+      "role": "Bystander",
+      "utterance": "She had a stroke several years ago, had a heart attack in the past, and has mild asthma."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "EMT",
+      "utterance": "How long was she like that before being found?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Bystander",
+      "utterance": "Around an hour. Her daughter couldn't wake her up and called me."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Paramedic",
+      "utterance": "I'll check your mouth and ears to ensure no obstruction or injury."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No rashes, sores, or visible injuries to the skin noted."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Starting capnography to continuously monitor respiratory status."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration remains stable at 20 breaths per minute."
+    },
+    {
+      "turn": 33,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Blood pressure is 139 over 90, and pulse is 71."
+    },
+    {
+      "turn": 34,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "SpO₂ is now 98% and stable."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "I'll obtain a 12-lead ECG now."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Results show sinus rhythm with moderate right axis deviation - borderline findings for her age."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Placed a 20G IV in the right arm with aseptic technique as a backup."
+    },
+    {
+      "turn": 38,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "We're following protocol 7-1 for opioid overdose. IV access and monitoring are in place."
+    },
+    {
+      "turn": 39,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transport destination is [COMPANY_NAME]. I'm confirming with dispatch now."
+    },
+    {
+      "turn": 40,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll help you up slowly and get you ready to move. You'll stay in semi-Fowler's position."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "semi_fowlers_position",
+      "role": "Paramedic",
+      "utterance": "She'll be placed in a semi-Fowler's position for transport to better support breathing."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is properly secured with all straps in place. Ready to move."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "semi_fowlers_position",
+      "role": "EMT",
+      "utterance": "Patient is now in semi-Fowler's."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "I'm going to check if there are any issues in your arms and legs."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Taking a deep breath now to check, everything sounds okay."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Exam shows no acute issues affecting the head or throat."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "I'm just assessing the patient's positioning before moving further."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "semi_fowlers_position",
+      "role": "EMT",
+      "utterance": "Position supports comfort and helps with respiration during transit."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Narcan remains ready for use; no administration needed at this moment."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose still reads at zero; repeat as needed en route."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Possibly initiating IV glucose if signs of instability occur during transport."
+    },
+    {
+      "turn": 52,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "EMT",
+      "utterance": "What do you think have been the hardest parts for you in this situation?"
+    },
+    {
+      "turn": 53,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Patient",
+      "utterance": "No motivation, numb to everything and mostly withdrawn from life now."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "No further investigation needed in this area for now."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "[CITY] remains the confirmed transport location. Let's finish setting things up."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Double-check the harness and positioning."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All restraints and harness connections are in place and secure."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "semi_fowlers_position",
+      "role": "EMT",
+      "utterance": "She is fully prepared for transport with full compliance in the semi-Fowler position."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Capnography remains active, monitoring CO₂ levels as baseline."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Narcan and other medications are accessible for immediate use if needed."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "EMT",
+      "utterance": "Patient currently denies any physical discomfort."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "I'm here if you need any more clarification or support."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Heart rate, respiratory rate, and blood pressure are all in normal range."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Review all current actions to ensure protocol has been followed."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "IV lock remains intact and scans OK."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All transport-related hardware confirmed as ready for transport."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Checked restraints and confirmed full patient stability pre-transport."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "semi_fowlers_position",
+      "role": "Paramedic",
+      "utterance": "Semi-Fowler's position is secured and ready for transport movement."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No signs of patient discomfort or movement are noted."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "The full team is aware and agreeing to patient positioning and setup."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Capnography keeps monitoring via CO₂ trends for informational guidance."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Narcan medication is accounted for with no use needed at this time."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "EMT",
+      "utterance": "Patient denies pain in all body regions and emotional status is stable."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "I can provide more details about her medical history as needed."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Vital readings remain regular and consistent with stable baseline."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Final read of medication available and standing concluded."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "All protocols are confirmed executed and equipment is prepped."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She moves smoothly onto stretcher, wheels set with no sign of resistance."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Compliant transport down steps into the ambulance without incident."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All straps and restraints properly fastened with no additional instructions needed."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "semi_fowlers_position",
+      "role": "Paramedic",
+      "utterance": "Semi-Fowler's position remains actively enforced for transport and monitoring."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "[CITY] is the final transport and discharge location."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "summary_of_findings",
+      "role": "Paramedic",
+      "utterance": "IV line active, ECG monitoring in place for standard protocol."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "summary_of_findings",
+      "role": "Paramedic",
+      "utterance": "Patient is en route for toxicology and supportive care at [CITY]."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "GPS successfully set for tracking en route."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Vitals show no alarming deterioration of clinical status."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Final evaluation indicated no signs of skin distress or injury."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No indicators of abnormal skin response or lesion detected."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Oxygen is in place and available for activation if needed."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Narcan management aligns with protocol for this condition."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Final secure check completed prior to en route activation."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Equipment and patient are in secured condition for driving."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "summary_of_findings",
+      "role": "Paramedic",
+      "utterance": "Patient en route. All prior monitored values stable for transport continuation."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "semi_fowlers_position",
+      "role": "EMT",
+      "utterance": "Position maintained for breathing ease and patient's comfort."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "No administration or additional steps required."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient remains stabilized and immobilized with all equipment."
+    },
+    {
+      "turn": 97,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Full monitoring systems continue to function as intended."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Sustained baseline noted with no notable changes in status."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Waiting on dispatch confirmation before enacting arrival notification."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is being transported cold in the semi-Fowler position following protocol."
+    }
+  ]
+}

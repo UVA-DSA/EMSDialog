@@ -1,0 +1,795 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002828",
+  "protocol": [
+    "medical - pulmonary edema/chf (protocol 2 - 3)",
+    "medical - supraventricular tachycardia (including atrial fibrillation) medical - tachycardia medical - ventricular tachycardia with a pulse (protocol 2 - 8)",
+    "medical - st elevation myocardial infarction (acs/ami) (protocol 2 - 2)",
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 1 responding for breathing problems at 78-year-old male in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I can't catch my breath. It just started happening all of a sudden."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "No chest pain now, but earlier he said he had some."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Mr. Charles, can you tell me your name?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is Charles."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Mr. Charles, can you tell me the city we're in?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I'm in [CITY], for sure."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "What day is it today?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Saturday, I think. Maybe Sunday. Not sure."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you explain why you called 911 today?"
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I couldn't breathe. I woke up and it felt like my chest and lungs weren't working."
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Open your eyes and follow my finger with your gaze if you can."
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "I can do that easily. It's clear too."
+    },
+    {
+      "turn": 15,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "What is your birthday?"
+    },
+    {
+      "turn": 16,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "April 3rd, 1941. Still got it in the head."
+    },
+    {
+      "turn": 17,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Squeeze my finger if you understand me, please."
+    },
+    {
+      "turn": 18,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "There you go. Solid grip and all."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "I'll look into your airway. Can you open wide with your tongue out?"
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Sure, take a good look if you will."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Airway is clear. You're breathing on your own. Anything in your throat recently?"
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No. Clean and clear, nothing sticking out or lodged in there."
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Take a deep breath now so I can listen to your lungs a bit."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Hmmm, okay here it goes."
+    },
+    {
+      "turn": 25,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "You're breathing fast and your chest sounds a bit wet. It's likely labored breathing."
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Counting respirations. It's 28 per minute right now."
+    },
+    {
+      "turn": 27,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Any chest discomfort while taking those breaths earlier today?"
+    },
+    {
+      "turn": 28,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "A little pain but mostly gone by now."
+    },
+    {
+      "turn": 29,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "That's a sign of distress. We'll give some more support for breathing shortly."
+    },
+    {
+      "turn": 30,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is 138 and strong. Measuring right now."
+    },
+    {
+      "turn": 31,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Blood pressure is 158 over 98. Too high for comfort, still working though."
+    },
+    {
+      "turn": 32,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "SpO2 is at 81 percent. Needs improvement for breathable air in the lungs at the moment."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Tell me more about your breathing. Did it come suddenly or slowly with time today? 34. History of Present Illness; S.A.M.P.L.E.:signs_and_symptoms; Patient: Suddenly. It just began and I felt like I was suffocating upon waking up."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Was it caused by something at the table or activity?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I was just sleeping. I hadn't eaten or moved actively, not even a sip since water."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Do you have any known allergies to food or drugs currently that I need to know about to proceed properly? 38. History of Present Illness; S.A.M.P.L.E.:allergies; Patient: No known drug or food allergies. No reactions that have ever been documented thus far in my life. 39. History of Present Illness; S.A.M.P.L.E.:medications; EMT: What medications are you currently taking for issues or blood pressure, for example? 40. History of Present Illness; S.A.M.P.L.E.:medications; Patient: Lasix, Plavix, Albuterol, Crestor, Cozaar, Cordarone, and Aldactazide. My team set the doses, and I'm staying on track."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Paramedic",
+      "utterance": "What is your medical history that helps us assess at this moment?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I had a heart attack before, and I manage hypertension, Asthma, Heart Failure, CVA, pulmonary hypertension, and fluid stuff here with my provider."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Paramedic",
+      "utterance": "Tell me more exactly when you first noticed these symptoms on occasion in time to your routine."
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Patient",
+      "utterance": "I was just in bed at 10 PM when I woke up gripping at my chest. It all happened in an instant."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Paramedic",
+      "utterance": "Was this your first time being like that in your health?"
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Patient",
+      "utterance": "No. I had a similar event a week ago that brought me to the hospital then. This one feels similar but different from that one."
+    },
+    {
+      "turn": 43,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Paramedic",
+      "utterance": "When did the chest sensation and breathing difficulty first begin?"
+    },
+    {
+      "turn": 44,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "At the start of my difficulty breathing, it came in like maybe three minutes prior to waking up at 10 PM."
+    },
+    {
+      "turn": 45,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "EMT",
+      "utterance": "Did anything make the sensation or breathing better or worse?"
+    },
+    {
+      "turn": 46,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "Patient",
+      "utterance": "I don't exactly know what did, but sitting upright felt better for the lungs in that case. 51. Pain Assessment; O.P.Q.R.S.T.:quality; Paramedic: How would you describe that chest sensation when it was still bothering you? 52. Pain Assessment; O.P.Q.R.S.T.:quality; Patient: Like heavy pressure. I felt like I had to struggle to get a deep breath."
+    },
+    {
+      "turn": 47,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does the discomfort move to other parts of the body like the neck or jaw? 54. Pain Assessment; O.P.Q.R.S.T.:radiation; Patient: No movement. It was in the middle of my sternum and didn't go anywhere else to feel the rest. 55. Pain Assessment; O.P.Q.R.S.T.:severity; Paramedic: On a scale from 1 to 10, how intense was the discomfort?"
+    },
+    {
+      "turn": 48,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "I'd put it at five. Not the worst but definitely uncomfortable, like a mirror of that recent episode."
+    },
+    {
+      "turn": 49,
+      "topic": "Pain Assessment",
+      "micro_intent": "Time",
+      "role": "EMT",
+      "utterance": "Did the discomfort go away after a while or subside long enough to be forgotten again? 58. Pain Assessment; O.P.Q.R.S.T.:time; Patient: It lasted about ten minutes and then stopped. I haven't had it since."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Checking your skin now. Any rashes, bumps, coldness, swelling, or discoloration?"
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "My skin still feels warm and dry to the touch so far as I feel it undisturbed."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "I'll use light to examine your eyes and pupils. Confirmed, please."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "Confirmed. Go ahead and check for anything we're unaware of here."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "Pupils are round and equal. Now closely follow the light while I move it left and right."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "Like this? Compensated ease for you, if it's not perfect, I know it is."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Paramedic",
+      "utterance": "Let me quickly check your throat and airway. Breathe normally."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Patient",
+      "utterance": "All clear in those areas. No abnormalities there that I can feel or observe."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "I'll listen to your lungs closely. Deep breaths like the first time, please."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Your breath sounds are wet in the back during inspiration."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "You have abnormal lung sounds. Can you lie back for more listening?"
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "Feel free to examine me like a textbook."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Now, I'll assess your neck and look at your airway anatomy."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Your neck veins appear flat, and you have no signs of trauma or stiffness."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Initial 4-lead ECG. This will start monitoring your heart rhythm."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Performing a 4-lead ECG to monitor for any arrhythmia."
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Performing 12-lead ECG to get a full assessment of your heart's function."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "12 Lead ECG complete. Findings include ST elevation in II, AVF, III, and anterior and posterior."
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "EKG findings also show right ventricular strain."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No lymph nodes or masses in your neck. No trauma to the area."
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "We also noted inferior ST-elevation and potential anterior ischemia."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Does your stomach hurt or feel hard?"
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Patient",
+      "utterance": "No, I'm fine with my food."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Your GCS is 15, and you respond to questions appropriately."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_assessment",
+      "role": "Paramedic",
+      "utterance": "There is no edema on initial impression on the extremities or other areas."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent_exam",
+      "role": "Paramedic",
+      "utterance": "HEENT is atraumatic. Facial features are symmetrical. No drainage or swelling."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Paramedic",
+      "utterance": "Move your legs up and down so I can check sensation and strength."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "They feel right as rain with no pain or swelling on either side."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now at 104 compared to when we started."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations have increased slightly to 29 as minutes go by."
+    },
+    {
+      "turn": 80,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure reading down to 132 over 89, still not low enough but more within acceptable bounds."
+    },
+    {
+      "turn": 81,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose was 110 earlier in the first measurement before clarification."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 has now climbed to 95 percent with support in place."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Ronan, this EKG shows sinus tach and ST elevation."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're applying a CPAP to assist your breathing right now."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "CPAP mask is on and running smoothly."
+    },
+    {
+      "turn": 86,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Administering high-flow oxygen continuously based on our protocol."
+    },
+    {
+      "turn": 87,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Starting an IV in the left hand via an extremity vein."
+    },
+    {
+      "turn": 88,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Given the CPAP, vital signs, EKG findings, and IV established, I'd say we're following STEMI, pulmonary distress, and tachycardia protocols."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "pulse; Partner",
+      "utterance": "Pulse drops to 104. Will reassess every 15 minutes as protocol goes."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "resp; Partner",
+      "utterance": "Respirations still at 29 expect them to be okay with active CPAP support."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "bp; Partner",
+      "utterance": "Blood pressure is at 132 over 89, still with the trend of downward movement."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "spo2; Partner",
+      "utterance": "SpO2 level holds at 95 with EKG and oxygen monitoring active."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Is the breathing still difficult after wearing the supportive mask over the time now?"
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "A bit, not like before in description details."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Take a deep breath again. Does the CPAP help your breathing capacity while we monitor changes?"
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Yes, the mask does help, reliably make more air in and out than before."
+    },
+    {
+      "turn": 97,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Any new changes like dizziness or chest heaviness show up in time between now and then?"
+    },
+    {
+      "turn": 98,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "No more change than the occasional tightness in the central area, otherwise just tired from breathing deeply more than usual."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Partner",
+      "utterance": "No current pain at this time based on patient report."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "Given your condition, we will transport you to [COMPANY_NAME] now."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We will follow protocol and transport to [COMPANY_NAME] as directed."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We are preparing for transport to [COMPANY_NAME] right now."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Placing you on a stretcher while supporting CPAP and oxygen during the travel."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Tell us when you are ready for that movement from wherever you are."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I'm ready. Let's do this now."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Securely onto the stretcher with a calm and easy placement."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "CPAP is in place and functioning well. We'll monitor distress for the duration of the trip."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We will take you promptly to the ED at [COMPANY_NAME] and ensure a complete handover with all items detailed for the medical team."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I feel a bit more at ease now."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Oxygen is on with continuous monitoring active."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We are on our way now. Safe hands at [COMPANY_NAME] for a full assessment at handover."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Dispatcher",
+      "utterance": "[COMPANY_NAME] acknowledged. Prepare for arrival and clear zones."
+    }
+  ]
+}

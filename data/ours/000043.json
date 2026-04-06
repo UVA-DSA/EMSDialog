@@ -1,0 +1,694 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000043",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3, respond for a report of chest pain and AICD concerns."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Alex, an EMT with the rescue squad. What brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I'm experiencing chest pressure tonight. It's been going on for a while and I'm also having some shortness of breath and nausea."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Anna, what's your full name for us here today?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "And where are we now, city-wise?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "We are in [CITY], [STATE]. My name is Anna Williams."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "So if I asked you to squeeze my hand, you'd be okay to do that, right?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "She gives a firm grasp. Fully alert and oriented with a GCS of 15-eyes 4, verbal 5, motor 6. No signs of confusion or restlessness observed."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Anna, are you able to talk or does your throat feel blocked in any way?"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "I feel fine. I can talk and breathe okay."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Anna, can you let me assess your breathing? Just take a normal breath for a moment."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Breaths are 16 per minute, steady and unlabored. No tachypnea noted. Any shortness of breath you're still experiencing?"
+    },
+    {
+      "turn": 13,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "A bit, but not in a severe way. I can still speak in full sentences."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Heart rate is 74, steady and regular with no pauses. Let's get the rest of the vitals now."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is currently 125 over 93. Skin is normal without cyanosis or diaphoresis noted."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse oximetry reads 100%. That's typical even on room air. Everything seems steady at the moment."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Her pulse is strong and peripheral; no coolness or pallor in her hands or feet observed so far."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I don't see any bruising, sores, or rashes on the body. You mentioned earlier being pale-is that normal for you or a new finding?"
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "Pale is normal for me. I've always been that way."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "When did the chest pressure start, and does it change when you move or rest, or stay the same no matter what you do?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It began tonight. Feels consistent, doesn't shift no matter what I do, right in the center of my chest and no change with movement or rest."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Have you encountered similar chest symptoms before like this? Was anyone else involved or did you seek care previously for it?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, about a week ago. I was taken to [COMPANY_NAME], and they found I had some coronary artery disease but nothing acute at the time."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "I see you mentioned being allergic to certain medications. Can you restate your full list of allergies for documentation purposes here?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "Yes-I react to penicillin, morphine, and Embeda (naltrexone). If I take any of those by accident, I can have a bad reaction."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "I know you had medication history in the past, but what are you currently taking for management of your condition or otherwise right now?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I'm not on top of all the details and cannot recall exactly."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Our records show you have cardiomyopathy. Has that ever led to symptoms like this before or is today's situation particularly new for you?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Diagnosed a while back, but I've never felt anything this noticeable before. This is the most uncomfortable I've felt from it."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Could you double-check and state the date of your birth and your full legal name for our records today?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Patient",
+      "utterance": "I'm Anna Williams, born in September of 1976."
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "EMT",
+      "utterance": "How intense is the chest discomfort right now on a scale from 0 to 10 with 10 being the worst you can imagine?"
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "Maybe a 3. Persistent, but not the worst, more uncomfortable than anything else."
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "What does it feel like? Sharp, heavy, or pressure?"
+    },
+    {
+      "turn": 35,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Patient",
+      "utterance": "Just pressure. It's deep, not surface-like or burning."
+    },
+    {
+      "turn": 36,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Has it moved to your arms, jaw, or neck-any movement of the sensation beyond the chest?"
+    },
+    {
+      "turn": 37,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "Not really. It just stays right in the middle of my body, no radiating."
+    },
+    {
+      "turn": 38,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "EMT",
+      "utterance": "Has the chest pressure gotten worse since the onset of symptoms, or has it been consistent?"
+    },
+    {
+      "turn": 39,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Patient",
+      "utterance": "It's remained consistent. No worsening."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "EMT",
+      "utterance": "You mentioned feeling nauseous. Have you vomited or kept anything in that you couldn't pass?"
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "Patient",
+      "utterance": "No vomiting. Just discomfort and feeling quite queasy."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "EMT",
+      "utterance": "So no headache or dizziness was experienced either? Just chest discomfort is the focal concern right now?"
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "Patient",
+      "utterance": "Correct. No neurological or dizziness symptoms were associated."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "EMT",
+      "utterance": "Any stomach or abdominal discomfort felt? Confined to just the chest symptoms?"
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "Patient",
+      "utterance": "Correct. No other discomfort beyond chest pressure."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "EMT",
+      "utterance": "So no abdominal pain has been reported? Just stick with chest symptoms?"
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "Patient",
+      "utterance": "That's correct. No issues in the stomach at all."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "EMT",
+      "utterance": "You're not leaning forward or using any position to ease your breathing, correct? Any tripoding behavior noted?"
+    },
+    {
+      "turn": 49,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "None noted during exam. She's seated normally and not in a snout or forward lean for breathing ease."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Anna, I need to set up some EKG monitoring tools for assessment of cardiac rhythm. I will first apply the 4-lead system for a basic read, then the 12-lead for a more detailed assessment, okay?"
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "4-lead is all set. Now, I'm going to prepare the 12-lead for immediate interpretation once it's ready. That should give a more detailed overview."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The 4-lead shows a sinus rhythm. Let's interpret the 12-lead now."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "EMT",
+      "utterance": "The 12-lead EKG findings show nonspecific T wave abnormalities but no STE or ectopy. Have you been monitoring symptoms related to your cardiomyopathy over the past week at rest or while active?"
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "Patient",
+      "utterance": "The last follow-up, my doctor told me to monitor symptoms and not panic unless it worsened or new issues came up. I have been monitoring that."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Anna, please take this 324 mg aspirin tablet. Dissolve it under your tongue for quicker absorption. It's an emergency precaution we're doing right now."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Let me take a quick blood glucose measurement for this."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Her blood sugar is a little low but it's not concerning enough for intervention with current stable condition. We will monitor while on scene."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "I will place IV access into her left arm per standing instructions in case further meds are needed."
+    },
+    {
+      "turn": 59,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Anna, based on her symptoms, EKG readings, and history, we are following protocol 2-1 for suspected cardiac-related chest pain according to field protocols."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "EKG is rechecked-rhythm remains sinus with low QRS voltage in chest leads and no elevated signs at this time."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Let's take a second round of vitals-pulse is down to 69, breathing remains at 16. Still stable for transport."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse ox has dropped slightly to 95%, it's acceptable and stable for now."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is 107 over 70 now. Small drop but remains within safe thresholds-no cause for significant intervention here."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We were told you had concerns about diversions at other hospitals. You wanted to go to MRMC, right?"
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "Yes, I'd prefer MRMC-so let's get moving once all is ready."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Partner, let's move her onto the stretcher slowly using the stand and pivot technique. Be aware of stability and secure properly."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She is now secured-rails and straps locked. IV and EKG lines are safe, and no pulling is expected during transport."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Just double-checked-EKG is still stable, pulse 69, and pulse ox at 95%. Everything is within acceptable parameters for transport."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "pre_departure",
+      "role": "EMT",
+      "utterance": "Just confirming vitals and stability once more. She remains within normal range. We are clear to transport-per protocol plan."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_destination",
+      "role": "EMT",
+      "utterance": "Anna has been assessed, treated, and prepared for transport to Room 29 at MRMC. Our ePCR will be with her during the handover."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_destination",
+      "role": "Partner",
+      "utterance": "IV is running and medications administered include 324 mg ASA under supervision. All protocols were followed, no deviations with full consent obtained."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_destination",
+      "role": "EMT",
+      "utterance": "She has a medical history of cardiomyopathy and a previous event a week earlier leading to a diagnosis of coronary artery disease, no intervention at that time."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_destination",
+      "role": "Partner",
+      "utterance": "Per ePCR, no STE or ectopy found. She remains stable. ASA was administered as part of standard protocol and fully documented for hospital review."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "During transport, EKG has also been reviewed again and remains in sinus rhythm-no change in findings."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Just for a final check, is your pain still at a 3 on a scale of 10 and still the same deep pressure?"
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Yes. Soreness remains unchanged. Still a three. No elevation or decrease, same persistent pressure feel."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Still the same quality-no radiation elsewhere or any sharp or burning? That pattern is similar to your symptoms last week."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Exactly the same. Pressure is behind the sternum, persistent, and unchanging. Still only in that central spot."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Partner",
+      "utterance": "Any changes at all recently? New complications or side effects?"
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "Not at all. Just the original symptoms, no changes in anything during this time."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "arrival_at_hospital",
+      "role": "Partner",
+      "utterance": "Confirmed arrival at MRMC with all patient vitals and supplies handed over to the hospital team for process handover."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "arrival_at_hospital",
+      "role": "EMT",
+      "utterance": "We transferred full protocols, medication details, and EKG findings. ED staff has been informed of her condition for continued care."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "arrival_at_hospital",
+      "role": "Partner",
+      "utterance": "All IV and EKG systems are functioning. The hospital team is prepared to continue her evaluation and management from this point."
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "EMT",
+      "utterance": "No sign of acute hypoxia observed during assessment. All breaths were unlabored with no unusual signs of distress."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_review",
+      "role": "EMT",
+      "utterance": "No indication of tachypnea or any signs of worsening in her breathing or respiratory effort based on earlier assessment and transport."
+    },
+    {
+      "turn": 86,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Based on the chief complaint and stable vitals, maintained protocol 2-1. No field deviation necessary."
+    },
+    {
+      "turn": 87,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen of 95% is stable-no need for additional supplementation at this time."
+    },
+    {
+      "turn": 88,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate of 16 remains. Normal and unlabored. No further action required."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_destination",
+      "role": "Partner",
+      "utterance": "We recommend immediate assessment upon arrival at the ED due to her history of cardiomyopathy and past cardiac event a week ago."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_destination",
+      "role": "EMT",
+      "utterance": "All EKG reports, medications delivered, and procedure documentation are with the patient for ED use. No further reperfusion or field diagnostics were given."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "secure_patient",
+      "role": "Partner",
+      "utterance": "IV remains patent, and all equipment check. I will double-check the securement before finalizing transport."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "redo_interventions",
+      "role": "EMT",
+      "utterance": "All procedures are on standby if needed. IV is in place and functioning. No interventions required at this stage."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "secure_patient",
+      "role": "Partner",
+      "utterance": "Movement positions are safe, and all systems are ready for a smooth transfer to the hospital for follow-up and further care."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "secure_patient",
+      "role": "Partner",
+      "utterance": "IV in place and functioning. Patient in stable and safe posture for transport-no immobilization required."
+    },
+    {
+      "turn": 95,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "No new findings noted and EKG readings remain stable. No protocol changes necessary post-reassessment."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_destination",
+      "role": "EMT",
+      "utterance": "ED is ready for patient reception. They will assume all future protocols and treatments under their own care."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_destination",
+      "role": "Partner",
+      "utterance": "I feel confident she's well-prepared for transport. All documentation and orders are in place for safe transition to next team."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "secure_patient",
+      "role": "Partner",
+      "utterance": "Secureed in transport without issues and everything is set. Patient is ready to be handed off to [COMPANY_NAME]."
+    }
+  ]
+}

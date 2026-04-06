@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002539",
+  "protocol": [
+    "medical - altered mental status (protocol 3 - 15)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 4, city of [CITY], a report of a fall with unconscious patient."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Jason and this is my partner Emily. We are EMTs from Rescue Squad 4. I understand it was a fall. Can you tell us what's going on?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "Yes. The patient is a 59-year-old male who fell from his wheelchair. He was being helped up a ramp when he suddenly lost balance, fell, and then didn't wake up."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Does he respond to any stimuli? Do you try talking to him, tapping him gently?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Bystander",
+      "utterance": "No. We've tried that a few times, but he didn't move and he's not opening his eyes."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Alright. Based on this, the patient is unresponsive. We're going to follow a spinal protocol because of the fall mechanism and unresponsiveness."
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is not compromised at this time - patent and maintainable without obstruction."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "I'm observing his breathing rate and depth, but due to unresponsiveness, I cannot determine chest rise or symmetry."
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 14 per minute."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse oximetry shows 89%. His oxygen saturation is low at this time."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is detected at 82 beats per minute and regular."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 151/130 mmHg. That is elevated."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose level is 77 mg/dL. This is within normal range."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is showing sinus rhythm."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Peripheral pulses are intact, but I cannot assess skin temperature or color at this time due to the patient being unresponsive."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "You mentioned the patient fell from a wheelchair. Can you tell me if he had a history of diabetes or other medical conditions?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "Yes. He has insulin-dependent diabetes. I don't know anything else about his past history."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "I see. Could you share his name for documentation purposes? Are there any known allergies we should be aware of?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "His name is Mr. Thompson. I don't know if he has allergies. He's lived alone recently."
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "EMT",
+      "utterance": "Since he's unresponsive, I'm skipping the pain assessment as it can't be performed right now."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Eyes are unreactive. Pupils are equal and bilateral, measured at 3mm."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No signs of trauma to the head or neck on visual inspection. GCS assessment indicates a low score of 3 (1 for eye, 1 for verbal, 1 for motor), indicating altered mental status."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "MS - full spinal restriction of motion is in place. IV access is established in the left arm using 18G."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "4-lead EKG monitoring is ongoing for cardiac assessment."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "12-lead EKG has been obtained for further interpretation and documentation."
+    },
+    {
+      "turn": 26,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Based on his altered mental status and a history of diabetes, we are following protocol 3-15 for medical emergencies."
+    },
+    {
+      "turn": 27,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Let me recheck the patient's vitals for trending and placement safety."
+    },
+    {
+      "turn": 28,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse remains at 82 beats per minute and regular."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiratory rate is now 15 per minute."
+    },
+    {
+      "turn": 30,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is 135/80 now and glucose is 0."
+    },
+    {
+      "turn": 31,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse ox is at 99% now."
+    },
+    {
+      "turn": 32,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "EKG continues to show sinus rhythm."
+    },
+    {
+      "turn": 33,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Based on his history and current condition, we are transporting to [COMPANY_NAME], a trauma center with a hot-line."
+    },
+    {
+      "turn": 34,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We are securing the patient for transport now. Backboard and stretcher are in place."
+    },
+    {
+      "turn": 35,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Let's take the final set of vitals before we load."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is now at 138 beats per minute."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 19 per minute. Blood pressure is 125/67 and glucose is 108."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse oximetry is 99%. EKG still in sinus rhythm."
+    },
+    {
+      "turn": 39,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is ready to be loaded onto the stretcher."
+    },
+    {
+      "turn": 40,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is safely secured and the stretcher has been fully fastened."
+    },
+    {
+      "turn": 41,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "This is Jason from Rescue Squad 4. Handing over Mr. Thompson, a 59-year-old male with a fall and unconsciousness call. GCS is at 3."
+    },
+    {
+      "turn": 42,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Vital signs: BLOOD PRESSURE initially at 151/130, now at 125/67. Pulse elevated from 82 to 138. Oximetry improved to 99%. Glucose initially unreadable, now at 108."
+    },
+    {
+      "turn": 43,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Medical history includes insulin-dependent diabetes. No allergies or medications are known."
+    },
+    {
+      "turn": 44,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Transport destination is [COMPANY_NAME], a trauma center. IV is in place and spinal precautions underway."
+    },
+    {
+      "turn": 45,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "No pain interventions were given as the patient is unresponsive."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "The patient is now en route to [COMPANY_NAME] under spinal precautions and continuous monitoring."
+    },
+    {
+      "turn": 47,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "The patient was found unresponsive following a fall from his wheelchair. No subjective pain reported."
+    },
+    {
+      "turn": 48,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "He is classified as 'unresponsive' per AVPU."
+    },
+    {
+      "turn": 49,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "No motor response on stimulus or command."
+    },
+    {
+      "turn": 50,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "No eye opening upon examination."
+    },
+    {
+      "turn": 51,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "No verbal response observed after multiple verbal attempts."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No gross signs of bruising, petechiae, or rashes at this time. Skin color appears normal."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No palpable lymphadenopathy or observable neck masses."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "No thoracic or lung abnormalities evident."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Abdomen flat with no tenderness or palpable masses noted."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "No unsupinated extremities, visible deformities, or vertebral instability visible."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "No rectal bleeding or urinary abnormalities found."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "EMT",
+      "utterance": "No immediate signs of airway obstruction or nasal bleeding."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Checking breathing rate again. Breathing is not described as shallow in EPCR but may be shallowness due to unresponsiveness."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "No medications have been administered in the field at this point."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "IV remains open and on standby. Awaiting final transport confirmation."
+    },
+    {
+      "turn": 62,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We will continue following protocol 3-15 for the en route phase."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "No additional interventions were performed beyond spinal immobilization."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "No pain assessment was conducted as patient is unresponsive."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "No additional information was obtained. Continued documentation on altered mental status and diabetes history."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transport destination is [COMPANY_NAME] confirmed."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All restraints and equipment are in place for transport."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Final blood pressure reading before transport: 125/67."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate remains at 19 breaths per minute."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse ox is still at 99%."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Final pulse is at 138 beats per minute."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose level is 108 mg/dL."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is now ready for transport and secured."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transport is en route to [COMPANY_NAME] as planned."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Vital signs current and ready for transport."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient and equipment secured and transport en route."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "Partner",
+      "utterance": "Transport is proceeding under protocol 3-15 and ongoing monitoring is in place."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Spinal precautions and current status will be communicated upon arrival."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Monitoring systems are active and stable."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Final vitals will be conveyed upon arrival and confirming stability."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "GCS remains 3. No airway or breathing compromise noted."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Transport is stable with no active interventions."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "12-lead EKG and IV are in place and functioning."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Clinical decision made to transport patient to [COMPANY_NAME] for trauma evaluation."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Equipment verified stable and secure."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Destination to [COMPANY_NAME] confirmed."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Final check for transport loading."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient loaded safely with no complications observed."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All transport protocols executed successfully."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Patient is en route to [COMPANY_NAME] as designated."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Backboard fixation straps verified and secure."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient placed in transport position safely."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Patient's condition remains stable during transport."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All monitoring and support systems confirmed active."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Estimated time of arrival at [COMPANY_NAME] will be communicated upon stabilization."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Spinal precautions and medical status maintained and updated during en route."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "Partner",
+      "utterance": "Final confirmation of vitals for arrival documentation."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "Protocol 3-15 and IV status reported to transport team."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "Partner",
+      "utterance": "Altered mental status and GCS score included in handoff."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "communicator_handoff",
+      "role": "EMT",
+      "utterance": "No medications administered during the transport."
+    }
+  ]
+}

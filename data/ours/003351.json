@@ -1,0 +1,779 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003351",
+  "protocol": [
+    "medical - altered mental status (protocol 3 - 15)",
+    "general - cardiac arrest (protocol 2 - 7)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3 respond to a residence in [CITY] for an unresponsive adult with possible fainting or near-fainting."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Laura, an EMT with the city rescue team. What happened to the patient?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She's been unresponsive for about 20 minutes. We found her lying on the bed with foaming at the mouth."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "She didn't respond to pain, name, or other stimuli, correct?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Bystander",
+      "utterance": "She was found lying still with no response at all."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "Did she make any sounds or groans when you tried to stimulate her?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Bystander",
+      "utterance": "No, she didn't respond at all. No sound."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Did she move any part of her body when you touched her?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Bystander",
+      "utterance": "No, she was completely unresponsive. No movement."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "We're going to check her airway now."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "I'm using a BVM via mask to assist ventilation."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "She's breathing at a rate of 8 breaths per minute."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Her oxygen saturation is 74. That's critically low."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "I'm assisting with breathing using a bag-valve mask."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Interventions",
+      "micro_intent": "oxygen_administration",
+      "role": "EMT",
+      "utterance": "Giving her high-flow oxygen at 15 liters per minute via re-breather mask."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "hypotension",
+      "role": "Partner",
+      "utterance": "Blood pressure is 0/0-confirming profound hypotension."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "hypoglycemia",
+      "role": "Partner",
+      "utterance": "Initial blood glucose could not be obtained on the meter."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "She has a pulse of 64 right now."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is detectable but we do not have equipment for pacing."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Skin appears normal with sores and scars."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE",
+      "role": "Paramedic",
+      "utterance": "From what you know, was she acting her usual self an hour ago?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE",
+      "role": "Bystander",
+      "utterance": "Yes, she seemed fine before this. Then suddenly became unresponsive."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE",
+      "role": "Paramedic",
+      "utterance": "Any known medications or prior illness before this event?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE",
+      "role": "Bystander",
+      "utterance": "We don't know much. The family has trouble recalling details clearly."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "poor_histories",
+      "role": "Paramedic",
+      "utterance": "Is there a language barrier or limited fluency preventing more information?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "poor_histories",
+      "role": "Bystander",
+      "utterance": "Yes. Communication is limited due to language difficulties."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "She continues to breathe about 8 times per minute. Ventilation ongoing."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation now at 82-still critically low."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Beginning four-lead ECG monitoring now."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG initially showed artifact but appears to be asystole-no electrical heart activity."
+    },
+    {
+      "turn": 31,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "We still need to maintain the airway for respiratory distress."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "She is maintaining an 8 breath rate but is not improving."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "No detectable pulse with asystole confirmed-heart has stopped."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is flatline-no recovery in heart function."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate remains at 8-no signs of cardiac arrhythmia/dysrhythmia."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Latest glucose is 168. No hypoglycemia detected."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "hypotension",
+      "role": "Partner",
+      "utterance": "We're still managing undetectable blood pressure and asystole."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Starting IV access on an extremity vein. Normal saline infusion at kvo to maintain fluids."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is now 10 with assisted ventilation in progress."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 remains at 82. No improvement noted."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Administering epinephrine via IV now."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "cpr_manual",
+      "role": "EMT",
+      "utterance": "Initiating manual CPR now."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Still flatline on EKG. No response after epinephrine."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is now 10 with assisted ventilation in progress."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "bvm_via_tube",
+      "role": "Paramedic",
+      "utterance": "Switching to BVM via tube for improved airway support."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Inserting a King LT airway now for better airway management."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG continues to show no electrical activity."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "She's breathing at about 10 breaths per minute through assisted ventilation."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 at 69-increasing concentration with oxygen mask."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "renal_condition",
+      "role": "Partner",
+      "utterance": "She has stage 5 kidney disease. Last renal treatment was Saturday."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pulmonary_edema",
+      "role": "Partner",
+      "utterance": "Considering acute pulmonary edema given recent onset findings."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Scars and sores on the skin consistent with chronic conditions."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "gerd_reflux",
+      "role": "Partner",
+      "utterance": "Patient has a history of GERD managed with omeprazole."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "resp_distress",
+      "role": "Partner",
+      "utterance": "Patient is having respiratory distress-acute onset noted in progress."
+    },
+    {
+      "turn": 55,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Following the altered mental status and cardiac arrest protocols."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "normal_saline",
+      "role": "Partner",
+      "utterance": "Normal saline infusion is now running at maintenance rate."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Second dose of epinephrine now given. Still in asystole."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Flatline continues. Epinephrine isn't producing a response."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Applying continuous monitoring. Changes, if any, will be recorded now."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "hypoglycemia",
+      "role": "Partner",
+      "utterance": "Glucose still at 168-no evidence of hypoglycemia."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Making all preparations to secure the patient for transport."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Stretcher is now ready and safely locked in place."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transporting to [COMPANY_NAME], as directed by protocol."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "Okay, is there any reason not to go to [CITY]?"
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Yes, it's the closest appropriate facility for her conditions, including renal care."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Conditions unchanged - no improvement in vitals from last check."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Did she show any signs of pain or discomfort prior to this event?"
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Bystander",
+      "utterance": "No pain at all before this. Suddenly lost consciousness."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Artifact corrected once more. EKG remains in flatline."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher is now in the unit and the transport has started."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "AutoPulse CPR in use for ongoing support during transit."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "continuous_monitoring",
+      "role": "Partner",
+      "utterance": "Continuous monitoring active, no development in vitals."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 at 69-limited oxygenation remains a concern."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Artifact cleared again-EKG still flatline. No sign of recovery."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "ED is aware of hypoxia, asystole, and stage 5 renal disease prior to arrival."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate of 10 via the King LT. Still no signs of improvement."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "Epinephrine administered again. Status remains asystole."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "All treatments are ongoing according to protocol. Final status being reported."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We are securing her with five safety straps to the stretcher for safe transport."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "All transport safety measures active for safe handoff to ED."
+    },
+    {
+      "turn": 81,
+      "topic": "Primary Assessment",
+      "micro_intent": "cpr_manual",
+      "role": "Partner",
+      "utterance": "Manual CPR is ongoing to support cardiac function."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Interventions",
+      "micro_intent": "poor_histories",
+      "role": "Paramedic",
+      "utterance": "Please keep assisting in translating for the family-communication is difficult."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Artifact corrected once more. No cardiac rhythm detected."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "redo_interventions",
+      "role": "EMT",
+      "utterance": "Administering third dose of epinephrine now."
+    },
+    {
+      "turn": 85,
+      "topic": "History of Present Illness",
+      "micro_intent": "poor_histories",
+      "role": "Partner",
+      "utterance": "Family is unable to provide more history due to language limitations."
+    },
+    {
+      "turn": 86,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG remains asystole-no change after medication."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Patient is ready for transport to [COMPANY_NAME] ED now."
+    },
+    {
+      "turn": 88,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Starting continuous monitoring now."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "[COMPANY_NAME] is the best hospital for this situation."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Transport initiated with all monitor leads and IV secure."
+    },
+    {
+      "turn": 91,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate maintained via assisted ventilation."
+    },
+    {
+      "turn": 92,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains at 69."
+    },
+    {
+      "turn": 93,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Artifact corrected one last time-still no electrical activity."
+    },
+    {
+      "turn": 94,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Ventilation ongoing at 10 per minute with BVM via tube."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "No changes observed in vital signs or status."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "ED has been informed of treatment and current status."
+    },
+    {
+      "turn": 97,
+      "topic": "History of Present Illness",
+      "micro_intent": "poor_histories",
+      "role": "Paramedic",
+      "utterance": "Family members unable to provide any further information."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Stretcher locked. Transport is safe to continue."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Oxygen and IV lines taped and secured."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Communication with receiving hospital complete."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We are heading to [COMPANY_NAME] now."
+    },
+    {
+      "turn": 102,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Final EKG shows no improvement despite actions."
+    },
+    {
+      "turn": 103,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "No patient response to BVM via tube ventilation."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Transport team aware of critical conditions and protocol followed."
+    },
+    {
+      "turn": 105,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Same low oxygen saturation tracked during transit."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "ED stand-by for critical patient with no signs of return of spontaneous circulation."
+    },
+    {
+      "turn": 107,
+      "topic": "Reassessments",
+      "micro_intent": "redo_interventions",
+      "role": "Partner",
+      "utterance": "No additional medications or procedures required at this time."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Handoff to ED will begin upon hospital arrival."
+    },
+    {
+      "turn": 109,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "No further action was effective per protocol."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Summary of all interventions has been transmitted."
+    }
+  ]
+}

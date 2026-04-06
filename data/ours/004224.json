@@ -1,0 +1,638 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004224",
+  "protocol": [
+    "medical - nausea/vomiting (protocol 3 - 9)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch unit 3 to the residence for reports of abdominal pain."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT. What made you call 911 today, ma'am?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I have stomach pain all over. It's sharp and crampy, like a 10 out of 10."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "oriented",
+      "role": "EMT",
+      "utterance": "Can you tell me your name and where you are now?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "oriented",
+      "role": "Patient",
+      "utterance": "My name is Lena, and I'm in [CITY]."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "oriented",
+      "role": "EMT",
+      "utterance": "Do you know what day it is and why you called 911?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "oriented",
+      "role": "Patient",
+      "utterance": "Wednesday. I called because of all-over stomach pain. It started yesterday afternoon at work."
+    },
+    {
+      "turn": 8,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "I'm going to take your blood pressure now, please sit still."
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 108 over 69. Now I'll check your glucose."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Your glucose is 189. Are you comfortable lying back so I can check your oxygen saturation?"
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is 97-this is good. Are you having any trouble with your breathing?"
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Your chest movements look normal and regular. Any dizziness or shortness of breath?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Breathing is okay. I did throw up once and had some nausea and diarrhea."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "My radial pulse is 104, strong and regular. Any chest pain or lightheadedness?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Patient",
+      "utterance": "No chest pain or dizziness. Just some chills."
+    },
+    {
+      "turn": 16,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Can you tell me a bit more about the nature of your pain today? 17. History of Present Illness; S.A.M.P.L.E.: signs and symptoms; EMT: Any other symptoms like fever, blood in vomit, or blood in your stool or urine? 18. History of Present Illness; S.A.M.P.L.E.: signs and symptoms; Patient: No blood, no fever. Just chills off and on most of the day."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Do you have any long-term medical conditions we should know about?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have GERD-nothing else medically."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Can I have your age and gender for our records?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Patient",
+      "utterance": "Thirty-five and female. That's in my emergency file too. 23. Pain Assessment; O.P.Q.R.S.T.: onset; EMT: When did your pain first start? 24. Pain Assessment; O.P.Q.R.S.T.: onset; Patient: Around 3:00 PM yesterday, while I was at work."
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "How would you describe your pain?"
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Patient",
+      "utterance": "Sharp and crampy for sure. It's all over my belly."
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "On a scale from 1 to 10, how severe is the pain right now? 28. Pain Assessment; O.P.Q.R.S.T.: severity; Patient: It's a solid 10. It hasn't gone down anywhere on my stomach."
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Is the pain moving anywhere else, like to your back or sides? 30. Pain Assessment; O.P.Q.R.S.T.: radiation; Patient: No, it's centered right here, no movement."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Your skin looks normal and feels fine-warm and dry."
+    },
+    {
+      "turn": 26,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "airway",
+      "role": "EMT",
+      "utterance": "Your airway is patent. You're speaking clearly and staying alert."
+    },
+    {
+      "turn": 27,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "oriented",
+      "role": "EMT",
+      "utterance": "You're oriented to time, place, person, and event-well done."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "Any issues with your urine, such as pain or frequency?"
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Patient",
+      "utterance": "Nothing there. Same with stool, nothing bloody. Just threw up once with green."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Your abdomen is soft and not tender when I gently press it."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "gcs",
+      "role": "EMT",
+      "utterance": "You're fully alert. Your GCS score is 15."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG shows a normal rhythm. Let me check your O2 and pulse again."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing rate is 14, and depth looks fine."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your heart rate remains at 104. Strong and regular."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We are going to attach a 4-lead EKG to monitor your heartbeat."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We placed the 4-lead EKG. You might feel some pressure but shouldn't be uncomfortable."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV access has been established in your left arm with a 20g IV and flushed with saline."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "We have given you 4mg of IV Zofran to help with the nausea."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Your IV included a 10 mL saline flush before and after the Zofran to protect the line."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "You've received 100 mL of normal saline through your IV to help keep you hydrated."
+    },
+    {
+      "turn": 41,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We are following the protocol for nausea and vomiting. Treatments are in effect."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Your heart rate has gone down to 78. Feels more comfortable now?"
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Patient",
+      "utterance": "A bit better. Still feel shaky, but pain is a little less."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Your oxygen is up to 98. Vitals are definitely trending better."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure now is 112 over 63."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing rate has increased to 16, with normal depth and rhythm."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Let me do another quick EKG check."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "EKG remains stable with a normal sinus rhythm."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Would you be comfortable being taken to [COMPANY_NAME] for further evaluation?"
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "[COMPANY_NAME] is fine. I'm okay with that."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll transport you non-emergent using the left AC IV line. You'll be safe and well-secured."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is secured using a 5-point harness. We're ready."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We're on the way to the emergency department. It'll be about 15 minutes."
+    },
+    {
+      "turn": 54,
+      "topic": "Handoff",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is taken to bed 22 and our full report has been shared with hospital staff."
+    },
+    {
+      "turn": 55,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "Partner",
+      "utterance": "TO callsign [COMPANY_NAME] receiving patient for follow-up abdominal pain protocoled for nausea and vomiting."
+    },
+    {
+      "turn": 56,
+      "topic": "Entrance",
+      "micro_intent": "introduction",
+      "role": "Partner",
+      "utterance": "I am your transport crew. Everything is secure and stable."
+    },
+    {
+      "turn": 57,
+      "topic": "Handoff",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Final check of vitals-BP 112/63, 16 breaths, and a strong 78."
+    },
+    {
+      "turn": 58,
+      "topic": "Handoff",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "IV line is patent, 20g in left AC with 100 mL of normal saline given so far."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Remember 4mg Zofran administered via IV with 10 mL saline flush both before and after."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "retake_gcs",
+      "role": "EMT",
+      "utterance": "Patient is GCS 15 and has been alert the whole time during transport."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Patient is sitting with 5-point harness, currently very stable."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Patient's oxygen is 98%. Everything stays well within normal and safe ranges."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "Road conditions look good, and the ride should be smooth for our patient."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "Noticing patient's signs and symptoms are unchanged since the last assessment."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "EKG throughout transport remained in normal sinus rhythm with no changes."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "Glucose is normal, no signs of instability or deterioration."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "The left arm remains well-secured with no signs of IV infiltrations or discomfort."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Our patient has a confirmed medical history only of GERD nothing more complex, and no allergies."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Patient is 35, female, with full autonomy and cooperation on arrival and throughout EMS package."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "We had no incidents during transport. All rounds of reassessment are within tolerances."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "Historically, patient reported no prior medications in use and no emergency issues aside from GERD."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "exit_to_protocol",
+      "role": "Partner",
+      "utterance": "TOD in protocol 3-9, nausea-and vomiting car for [COMPANY_NAME] delivery."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "Partner",
+      "utterance": "All entries here from EPCR are fully accounted and transcribed from initial arrival to final handoff."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "EMT",
+      "utterance": "Transport mission non-emergent, no significant interventions beyond those already done."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "Partner",
+      "utterance": "All blood products, medications, lables, and delivery dimensions accurate up to point of transfer."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "EMT",
+      "utterance": "No residual risks from VPRO-IV fluid feeding clear, flow unobstructed during entire travel session."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "Complete care bundle followed at on-site and en rout with complete PPE worn by crew."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "EMT",
+      "utterance": "Final vital signs recorded and verified with last electronic record at destination."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "Partner",
+      "utterance": "We are now presenting patient for intake in good alignment and condition."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "EMT",
+      "utterance": "Patient is conscious, oriented 4/4 per GCS, and currently demonstrating no distress as expected."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "Movement well-controlled, and IV not compromised during curvy trip of transport ambu to hospital."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "EMT",
+      "utterance": "EKG and all baseline checks stable during initial, regular, and final assessment times."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "Partner",
+      "utterance": "Patient loadout complete and intact, including all personal belongings and hospital note."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "Partner",
+      "utterance": "Bring our phone and water bottle into the ED while the rest should be stocked in our system."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "EMT",
+      "utterance": "We have no interruptions in care and responsibility formally transferred to [COMPANY_NAME]."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "Partner",
+      "utterance": "Assignment finalized by both [COMPANY_NAME] and capitated by our final paper copy completion today."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "EMT",
+      "utterance": "Final checks completed at 11:27 as per documentation with only no further actions required."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "EMT",
+      "utterance": "We know GPS shows arrival before 11:27 as scheduled with full transparency now official."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "reassessment",
+      "role": "Partner",
+      "utterance": "All timestamps, product names, and total liquid quantity correctly labeled per protocol."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Thank you for receiving Lena on our behalf. All details ready for [COMPANY_NAME] admission team."
+    }
+  ]
+}

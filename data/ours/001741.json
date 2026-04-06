@@ -1,0 +1,548 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001741",
+  "protocol": [
+    "general - behavioral/patient restraint (protocol 3 - 4)",
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for breathing problems on East Broad Street, [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She's been having trouble breathing, some chest pain, and acting anxious for about 30 minutes."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She was at [COMPANY_NAME] this morning; they thought it was just anxiety again."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, can you open your eyes for me?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "What's your name?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "My names Sarah..."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Sarah, can you squeeze my finger tight?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Ugh, fine..."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "And before we continue, just want to clarify - you're awake, right now, and able to answer questions about your situation."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "Yes, I think. I'm not too sure I'm in the right headspace."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Where are we right now?"
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "I think I'm still in [CITY]."
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Do you know what date it is on the calendar?"
+    },
+    {
+      "turn": 15,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "It's November 7th I think, maybe 8th."
+    },
+    {
+      "turn": 16,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Are you aware that 911 was called on account of your chest pain and shortness of breath?"
+    },
+    {
+      "turn": 17,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "For me... I guess. I've been having chest pain again."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "How long have you been having trouble breathing?"
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "I don't know... maybe 30 minutes?"
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Strong radial pulse. Skin is pink and warm."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Blood pressure is 146 over 96."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is 98 on room air."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 86."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is 110."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "We'll be doing a cardiac monitor check now."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're placing ECG leads to check for arrhythmias."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Sinus rhythm with some PVCs."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Can you tell me if you have nausea, vomiting, dizziness, or fever with the chest pain?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No... but I feel like my chest is painful when I breathe in deeply."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "She was groaning earlier."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergic_reactions",
+      "role": "EMT",
+      "utterance": "Do you have any allergies to medications?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergic_reactions",
+      "role": "Patient",
+      "utterance": "I'm allergic to baclofen."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Can you tell me what medications you take on a regular basis?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "My doctor gives me diltiazem and lisinopril for my heart and blood pressure."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Partner",
+      "utterance": "What about inhalers or something for your lungs?"
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "Yes, I use albuterol and another pill-hydroxyzine."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "medical_history",
+      "role": "EMT",
+      "utterance": "Any medical problems in your past?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "medical_history",
+      "role": "Patient",
+      "utterance": "I had a stroke a few years back, and I have COPD."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "medical_history",
+      "role": "Partner",
+      "utterance": "What about cholesterol?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "medical_history",
+      "role": "Patient",
+      "utterance": "Yeah, high cholesterol... and high blood pressure."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up",
+      "role": "EMT",
+      "utterance": "Was there anything that seemed to trigger the chest pain?"
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up",
+      "role": "Patient",
+      "utterance": "I'm not sure. I just felt unwell suddenly."
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up",
+      "role": "Bystander",
+      "utterance": "I found her in bed lying on her left side, groaning."
+    },
+    {
+      "turn": 44,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does the pain move to your arms, back, or jaw?"
+    },
+    {
+      "turn": 45,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "Nope. It just stays right here."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I just need to look over your skin quickly."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin is warm and dry, no signs of rashes or bruises."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "physical_exam",
+      "role": "Partner",
+      "utterance": "Breath sounds are clear in both lungs."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "physical_exam",
+      "role": "Partner",
+      "utterance": "Equal chest movement. No signs of work of breathing observed."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Partner",
+      "utterance": "You are A&Ox4-awake, alert, and oriented to person, place, time, and situation."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "physical_exam",
+      "role": "EMT",
+      "utterance": "The patient denies leg swelling or abdominal pain, so no immediate concerns for DVT or gastrointestinal issues."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 74 now."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 144 over 101."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_resp",
+      "role": "Partner",
+      "utterance": "Respirations are steady at 20."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is now 99."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_ekg",
+      "role": "Partner",
+      "utterance": "Cardiac monitor is now showing a normal sinus rhythm."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_ekg",
+      "role": "Partner",
+      "utterance": "No ST-segment elevation noted at this time."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose_check",
+      "role": "Partner",
+      "utterance": "Blood sugar is showing as zero."
+    },
+    {
+      "turn": 59,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "There was some marijuana found at the scene, but she wouldn't tell us if she had used recently."
+    },
+    {
+      "turn": 60,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Have you had a fever or chills at all?"
+    },
+    {
+      "turn": 61,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No, I haven't had a fever."
+    },
+    {
+      "turn": 62,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_applicable",
+      "role": "EMT",
+      "utterance": "Given the chest pain and history of hypertension, protocol 2-1 is appropriate for suspected cardiac monitoring."
+    },
+    {
+      "turn": 63,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_applicable",
+      "role": "Partner",
+      "utterance": "Protocol 3-4 also applied for behavioral/patient restraint due to non-compliance and attitude."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Pulse is now 73 and stable."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Blood pressure is 138 over 92."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Temperature remains 98.6 in the ear."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Interventions",
+      "micro_intent": "procedure_12_lead_ecg",
+      "role": "EMT",
+      "utterance": "We are now performing a 12-lead ECG for a more thorough cardiac assessment."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "destination_chooser",
+      "role": "EMT",
+      "utterance": "[COMPANY_NAME] is the closest facility with an ER. Would you prefer this hospital?"
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "destination_chooser",
+      "role": "Patient",
+      "utterance": "Take me to [COMPANY_NAME]."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "securing",
+      "role": "Partner",
+      "utterance": "We're assisting you to the stretcher. You'll feel a moment of pressure."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "securing",
+      "role": "EMT",
+      "utterance": "You're now moving. We'll keep you comfortable during transport."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "securing",
+      "role": "Partner",
+      "utterance": "Ready for transport. Cold trip with no lights. En route to [COMPANY_NAME]."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "in_person_report",
+      "role": "EMT",
+      "utterance": "The case is non-urgent. Minimal distress. Transport was cold with no lights. Was on 4-lead then 12-lead ECG, stable throughout."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "in_person_report",
+      "role": "Partner",
+      "utterance": "RN signature obtained in lieu of a patient signature at the ER due to the patient's refusal for personal reasons."
+    },
+    {
+      "turn": 75,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_applicable",
+      "role": "EMT",
+      "utterance": "The patient is A&Ox4 per assessments throughout the call."
+    },
+    {
+      "turn": 76,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_applicable",
+      "role": "Partner",
+      "utterance": "Cardiac considerations and patient behavior were managed effectively under protocols 2-1 and 3-4."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "securing",
+      "role": "EMT",
+      "utterance": "Patient is correctly secured and transported effectively without incident."
+    }
+  ]
+}

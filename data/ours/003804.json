@@ -1,0 +1,785 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003804",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a cardiac arrest at 3200 Maple Ave with RFD on scene."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "medic",
+      "utterance": "Hi, I'm EMT Joe with partner Sarah. What led to the 911 call?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I was struggling to breathe. My brother called the ambulance."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "arousable",
+      "role": "medic",
+      "utterance": "Ipin, if you can hear me, squeeze my finger."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Partner",
+      "utterance": "UNRESPONSIVE. Head moves slightly at times."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "medic",
+      "utterance": "No motor response beyond minimal head movement."
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "medic",
+      "utterance": "RFD is using BVM, but let me check the airway manually."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "SHALLOW RESPIRATIONS AT ONLY 6 PER MINUTE."
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "PATIENT IS NOT BREATHING EFFECTIVELY WITHOUT RFD_ASSISTANCE."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "medic",
+      "utterance": "Now assessing pulse and skin for circulation."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "PULSE IS AT 132 - FAST AND STRONG."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BLOOD PRESSURE IS 163 OVER 124."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SATURATION IS 96% ON ROOM AIR."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "BLOOD GLUCOSE LEVEL IS 118 mg/dL."
+    },
+    {
+      "turn": 15,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "SKIN APPEARS UNMARKED AND WITHOUT BURNS."
+    },
+    {
+      "turn": 16,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "PUPILS ARE 1 MM, PINPOINT AND NOT REACTIVE."
+    },
+    {
+      "turn": 17,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "medic",
+      "utterance": "No signs of airway obstruction."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "medic",
+      "utterance": "12-LEAD EKG IS REQUIRED. Let's obtain one."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG SHOWS SINUS TACHYCARDIA AND ABNORMAL Q WAVES IN V1/V2."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "signs_and_symptoms; medic",
+      "utterance": "Ipin, can you tell us when you started feeling this way?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "signs_and_symptoms; Patient",
+      "utterance": "I was okay at first, then woke up gasping for air."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "allergies; Partner",
+      "utterance": "ALLERGIES TO MEDICATIONS?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "allergies; Patient",
+      "utterance": "No known drug allergies."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "medications; medic",
+      "utterance": "What medications do you take regularly?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "medications; Patient",
+      "utterance": "An EpiPen and sometimes Benadryl for hives."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "pertinent_past_medical_history; Partner",
+      "utterance": "ANY MEDICAL HISTORY OR SURGICAL EVENTS?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "pertinent_past_medical_history; Patient",
+      "utterance": "None that I remember."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "last_oral_intake; medic",
+      "utterance": "When was your last meal or drink?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "last_oral_intake; Patient",
+      "utterance": "Sometime late last night before I went to bed."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "events_leading_up_to_event; medic",
+      "utterance": "What happened after you went to sleep?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "events_leading_up_to_event; Patient",
+      "utterance": "I woke up outside, not sure how I got there."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "SUCCESSFUL IV START IN LEFT ARM."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "medic",
+      "utterance": "Administering 0.25 mg Narcan IV as part of overdose protocol."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "IV FLUSHED WITH 10 CC SALINE."
+    },
+    {
+      "turn": 35,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "medic",
+      "utterance": "INITIATED PROTOCOL 7-1 FOR SUSPECTED OPIOID OVERDOSE."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "PULSE DROPPED TO 127; RESPIRATIONS NOW AT 15."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "OXYGEN SATURATION REMAINS AT 98% ON NASAL CANNULA."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "BLOOD PRESSURE 150 OVER 117 - STILL ELEVATED."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "capnography",
+      "role": "medic",
+      "utterance": "STARTING CAPNOGRAPHY FOR CONTINUOUS MONITORING."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "medic",
+      "utterance": "Ipin, do you know your name?"
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "Patient",
+      "utterance": "I am Ipin. Am I at a hospital?"
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "medic",
+      "utterance": "Did you pass out before this?"
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "Patient",
+      "utterance": "I think I did. I don't remember anything before that."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "Partner",
+      "utterance": "OXYGEN CONTINUES AT 4 LITERS NASAL CANNULA."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "Partner",
+      "utterance": "SATURATION IS 98 - STILL STABLE."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "BLOOD SUGAR IS ZERO."
+    },
+    {
+      "turn": 47,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "events_leading_up_to_event; medic",
+      "utterance": "Are you sure you didn't take narcotics?"
+    },
+    {
+      "turn": 48,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "events_leading_up_to_event; Patient",
+      "utterance": "I didn't. Someone might have given me something."
+    },
+    {
+      "turn": 49,
+      "topic": "Primary Assessment",
+      "micro_intent": "monitor_for_recidivism",
+      "role": "medic",
+      "utterance": "BVM REMOVED, NOW ON NASAL OXYGEN."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Interventions",
+      "micro_intent": "bvm",
+      "role": "Partner",
+      "utterance": "BVM DISCONTINUED, NOW ON 4L NASAL OXYGEN."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "medic",
+      "utterance": "Ipin will be taken to [CITY] Memorial Center."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "COT LOCKED, RAILS RAISED. Patient secured."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "PULSE 104, BP 160 OVER 99. Improvement observed."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "medic",
+      "utterance": "Are you still feeling better?"
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "Patient",
+      "utterance": "I feel much better now. I didn't take heroin or anything."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "PATIENT IS AWAKE AND COOPERATIVE DURING TRANSPORT."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "Prepare stretcher and ensure all equipment is ready."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "medic",
+      "utterance": "Any ongoing pain or breathing issues?"
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "status_alteration",
+      "role": "Patient",
+      "utterance": "No pain, breathing is okay now."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "IV LINE REMAINS SECURE AND FUNCTIONAL."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "Patient alert and oriented."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "ED BED IS READY AND STAFF IS PAGED."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "VS: PULSE 104, BLOOD PRESSURE 160/99."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "NARCAN ADMINISTERED, OPIOID REVERSAL IN EFFECT."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "PATIENT'S BROTHER WILL MEET HER AT HOSPITAL."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "OXYGEN SATURATION IS 97% - WITHIN NORMAL RANGE."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO INCIDENT OR DETERIORATION DURING TRANSFER."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "TRANSFER TO ED BED IS SMOOTH, RAILS SECURED."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "TRANSFER UNEVENTFUL. No issues encountered."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "HANDOVER TO RN IN ROOM 20 COMPLETED."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "Patient unable to provide insurance. Only her signature obtained."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "PCR SUBMITTED AND SIGNED BY PATIENT."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "Vehicle cleared and all equipment offloaded."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "COMMUNICATION WITH HOSPITAL CONFIRMED."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "VS - PULSE 104, OXYGEN 97%."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "Patient's family will meet her in ED. Everything is in place."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NAME AND ID VERIFIED - NO ERRORS."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "NO REACTIONS TO MEDICATIONS OR PROCEDURES."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "MEDICATIONS GIVEN ACCORDING TO PROTOCOL."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "PCR COMPLETED AND SIGNED PER PROTOCOL."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "PATIENT STABLE THROUGHOUT TRANSPORT."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "TRANSFERRED WITHOUT INJURY OR INCIDENT."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "HOSPITAL HANDOVER CONFIRMED."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "PRE-TRANSFER CHECKS COMPLETED."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "NARCAN FUNCTIONED AS EXPECTED."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "EKG STABLE, NO SIGNIFICANT CHANGES."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "IV IS STILL IN PLACE AND FUNCTIONING."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO WORSENING OBSERVED."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "EQUIPMENT AND MEDICATIONS WERE ALL DEPLOYED."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO ISSUES OR COMPLICATIONS POST-ARRIVAL."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "ALL PAPERWORK COMPLETED AND FILED."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "VITALS AND BLOOD TESTING RETURNED NORMAL RESULTS."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "NO FURTHER INTERVENTIONS NEEDED AT THIS TIME."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO SIGNS OF ACUTE HEART PROBLEMS."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "HOSPITAL CLINICAL STAFF TAKEN OVER."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "RAILUP AND BED SAFE."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "PATIENT HANDED OFF TO MEDICAL TEAM."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO BLEEDING OR INJURIES OBSERVED."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "PATIENT IS alert AND STABLE DURING HANDOFF."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO CARDIAC ARREST DURING RIDE."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "HANDED TO ED STAFF AT 8:45pm."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "ALL PAPERS ON FILE IN HOSPITAL."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "LEFT THE SCENE WITH CONFIDENCE."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO REPORTED FRACTURES OR INJURIES."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "PATIENT MOVED FOR FURTHER EVALUATION."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO HOSPITAL-ACQUIRED INFECTIONS NOTED."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "RN ON SITE FOR PATIENT HANDOVER."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "TRANSFERRED TO MEDICAL TEAM WITHOUT DELAY."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "PATIENT NOW IN CHIROPRACTIC FLOW."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "NO CONSULTING ISSUES OBSERVED."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "Safe and organized evacuation and transport."
+    }
+  ]
+}

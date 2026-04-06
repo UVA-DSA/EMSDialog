@@ -1,0 +1,884 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004309",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)",
+    "medical - hypotension/shock (nontrauma) (protocol 3 - 13)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a breathing problem at 76-year-old female patient."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Megan, an EMT with the rescue squad. Can you tell me what's going on?"
+    },
+    {
+      "turn": 3,
+      "topic": "Introduction",
+      "micro_intent": "call_type",
+      "role": "dispatcher",
+      "utterance": "Call type is breathing problems, 76-year-old female."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "It really hurts on the right side of my chest and I can't breathe well."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, what's your name? What day is today?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "confusion",
+      "role": "EMT",
+      "utterance": "That's okay. I'm here to help. Can I do a quick check?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "baseline_confusion",
+      "role": "Bystander",
+      "utterance": "Her baseline is confused due to dementia. Don't be alarmed."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Her eyes are open, but she's not tracking light consistently."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Partner",
+      "utterance": "She seems to understand us but responds slowly."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Her hand responses are limited, but she moves when asked."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is clear and unobstructed. We'll keep it that way."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "I'm okay with whatever-it hurts too much to worry."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "You're doing fine. We'll make sure you don't struggle."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "She's breathing regularly at 16 per minute, no use of accessory muscles."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Radial pulse is strong and regular. Hands and feet are cool, but per her wife, this is her normal baseline."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "When did the chest pain and trouble breathing start?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_events_leading_up_to_event",
+      "role": "Bystander",
+      "utterance": "She woke me up 30 minutes ago. She was sitting on the bed holding her chest."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_past_medical_history",
+      "role": "EMT",
+      "utterance": "She has dementia and was seen with a fall two days ago. Correct?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medications",
+      "role": "Bystander",
+      "utterance": "She takes Plavix, Coreg, and Senna Lax."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Her name is Sandra and she's been through a lot in her life."
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_onset",
+      "role": "EMT",
+      "utterance": "Your chest pain, when did you first notice it?"
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_severity",
+      "role": "EMT",
+      "utterance": "On a scale of 1 to 10, with 10 being the worst, how bad is the pain?"
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_radiation",
+      "role": "EMT",
+      "utterance": "Does the pain move to your back or belly at all?"
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_provocation",
+      "role": "EMT",
+      "utterance": "Does it get worse when you take a deep breath in?"
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam_temperature",
+      "role": "EMT",
+      "utterance": "Limbs: normal skin color, dry. Hands and feet cool-wife says it's her baseline."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam_hemorrhage",
+      "role": "EMT",
+      "utterance": "No outward signs of nasal or oral bleeding."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam_breath_sounds",
+      "role": "EMT",
+      "utterance": "Let me listen to your chest. Take a deep breath."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam_breath_sounds",
+      "role": "EMT",
+      "utterance": "Right lower lobe breaths are very faint, with expiratory rhonchi elsewhere."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is at 77, steady and strong."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration is 16-looks normal for now."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 97 over 60."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 95%."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "No reading on the glucometer."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "I need to hook you up to a cardiac monitor."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "The 4-lead shows some pacer activity and otherwise a stable rhythm."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "We'll start an IV in your left arm-it may tingle slightly."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "First 12-lead ECG is normal with a pacer-no STEMI signs."
+    },
+    {
+      "turn": 38,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "We'll follow respiratory and hypotension protocols."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 69 now-with some slowing down."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "BP is at 63 over 50. SpO2 is now 73-indicating need for supplemental oxygen."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "EMT",
+      "utterance": "Starting 15LPM of O2 via NRB-this should help breathing."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "Partner",
+      "utterance": "SpO2 is still 73. Let's keep monitoring closely."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_give_medications",
+      "role": "EMT",
+      "utterance": "O2 at 15LPM via NRB-make sure the mask is tight."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is at 60. BP is 76 over 51. SpO2 is 69."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "Partner",
+      "utterance": "Let me check the BP and radial pulse again for accuracy."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is still at 69-oxygen must stay on."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "EMT",
+      "utterance": "Second 12-lead was done. Rhythm is stable-same as before."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "Partner",
+      "utterance": "Both leads showed a consistent pacer and sinus rhythm-no issues."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now at 80 with respiration at 20-slightly better."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "BP is 69 over 39-concerning hypotension, but O2 helped."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "SpO2 improved to 94-positive sign with O2."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 66 now and stable."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Breathing has slowed-down to 14 per minute."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "BP improved to 94 over 57-marginally better."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is at 84-still trending better with oxygen."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "secondary_assessment_exp_rhonchi",
+      "role": "EMT",
+      "utterance": "Same expiratory rhonchi in non-right lobe areas."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_sample_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "She's still experiencing bad right side pain but breathing seems easier."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Need to transfer her to the stretcher safely. RFD, assist please."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Ensure restraints and position for comfort."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "She insists on [COMPANY_NAME]. I'll call and confirm with the ER."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "hospital_contact",
+      "role": "EMT",
+      "utterance": "[COMPANY_NAME], Unit 3 has a 76-year-old with chest pain, hypotension. Severe shortness of breath."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Rollator has been safely secured for transfer."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "arriving_at_hospital",
+      "role": "EMT",
+      "utterance": "Sandra is being moved to ED6. We've alerted the hospital."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "Severe right-side chest pain, breathing difficulty. Fluid improved BP."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "Partner",
+      "utterance": "IV and fluid bolus worked well. Breathing is steadier now."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "Partner",
+      "utterance": "O2 at 15LPM via NRB-mask in place and secured."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "300mL NS given. 12-lead showed stable pacer strip and a good rhythm."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "She is alert but her baseline is confusion due to her dementia."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transfer is secure with RFD support and NRB in place."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Hands and feet are cool-wife says this is her typical baseline."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No breathing distress since putting on O2-breathing is steady."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "baseline_confusion_handoff",
+      "role": "EMT",
+      "utterance": "Confusion is baseline due to dementia-no acute neurological changes."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "cyanosis_handoff",
+      "role": "EMT",
+      "utterance": "Her hands showed bluish tint prior to oxygen, per wife, this is her baseline."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She has both a pacemaker and defibrillator in place."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "ER has been updated via radio en route."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "Paramedic",
+      "utterance": "Patient turned over at [COMPANY_NAME] ED6 for care."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "EMT",
+      "utterance": "All ready. She's now with the ED staff."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "Paramedic",
+      "utterance": "ER will reassess 12-lead again if needed."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 100% now-target reached under 15LPM."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_give_medications",
+      "role": "EMT",
+      "utterance": "No additional meds required-fluid bolus met protocol."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "Paramedic",
+      "utterance": "Final stop for IV and ECG at the hospital-stable again."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 68-very stable and consistent."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Breathing is at 20 per minute-stayed steady."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "BP at 114 over 61-closer to baseline."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "EMT",
+      "utterance": "Final ECG shows same stable rhythm-no STEMI yet."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_sample_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Still experiencing pain, but breathing seems controlled."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam_foreign_body",
+      "role": "EMT",
+      "utterance": "No foreign objects in her ears or nose-no hearing loss reported."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam_pulses",
+      "role": "EMT",
+      "utterance": "Pulses are similar on both sides-radial is strong and regular."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam_shape",
+      "role": "EMT",
+      "utterance": "Abdomen is flat, soft, with no visible distension or masses."
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam_stools",
+      "role": "Partner",
+      "utterance": "No visual signs of bowel bleeding-bowels sound normal."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam_deformity",
+      "role": "EMT",
+      "utterance": "No deformities noted. IV on her left arm."
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam_color",
+      "role": "Partner",
+      "utterance": "No means to directly assess urinal or stool color."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam_neck",
+      "role": "EMT",
+      "utterance": "No signs of prominent neck veins noted."
+    },
+    {
+      "turn": 94,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam_pupils",
+      "role": "EMT",
+      "utterance": "Pupils are equal and reactive. No acute change."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam_memory",
+      "role": "Partner",
+      "utterance": "Memory is consistent with her dementia baseline."
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam_purpura",
+      "role": "Partner",
+      "utterance": "No rashes, bites, or hives observed."
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam_coherence",
+      "role": "EMT",
+      "utterance": "Skin turgor not tested-no signs of dehydration."
+    },
+    {
+      "turn": 98,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam_congestion",
+      "role": "Partner",
+      "utterance": "No nasal congestion noted."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All critical findings were communicated during transport."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "Patient has a pacemaker and defibrillator-no issues seen."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "Blood glucose didn't register-no issue noted otherwise."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "SpO2 is stable at 100% with ongoing oxygen."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No limb swelling or asymmetry detected."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Position during transport was for comfort and safety."
+    },
+    {
+      "turn": 105,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_give_medications",
+      "role": "EMT",
+      "utterance": "No meds needed-protocol satisfied with fluids."
+    },
+    {
+      "turn": 106,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "Paramedic",
+      "utterance": "ECG monitoring ongoing-rhythm stayed stable."
+    },
+    {
+      "turn": 107,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "SpO2 remains stable between 95-100%."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "No transport complications observed."
+    },
+    {
+      "turn": 109,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_opqrst_onset",
+      "role": "EMT",
+      "utterance": "Pain remains severe and localized to the right side."
+    },
+    {
+      "turn": 110,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_opqrst_severity",
+      "role": "EMT",
+      "utterance": "Still a rating of 10/10-no change despite care."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No blood or stool found during transport."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "EMT",
+      "utterance": "Latest vitals: SpO2 100, BP 114/61."
+    },
+    {
+      "turn": 113,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "Partner",
+      "utterance": "Pacer and defibrillator in place, no deployment."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "EMT",
+      "utterance": "Vital signs at last check: 100 SpO2, 114/61 BP."
+    },
+    {
+      "turn": 115,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "Handoff complete with stable vital signs and no acute risk."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "No emergency ED interventions needed at this time."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "Care continues at the hospital per spouse's request."
+    },
+    {
+      "turn": 118,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "EMT",
+      "utterance": "Oxygen remains effective-SpO2 readings consistent."
+    },
+    {
+      "turn": 119,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_give_medications",
+      "role": "Partner",
+      "utterance": "No meds-protocol not requiring additional."
+    },
+    {
+      "turn": 120,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions_take_procedures",
+      "role": "EMT",
+      "utterance": "All hangings stable based on final readings."
+    },
+    {
+      "turn": 121,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "Patient brought and secured at the trolley-handoff done."
+    },
+    {
+      "turn": 122,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "Last check showed pacer rhythm-no changes in readings."
+    },
+    {
+      "turn": 123,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "EMT",
+      "utterance": "Fluid bolus was sufficient. No further fluids needed."
+    },
+    {
+      "turn": 124,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "Stable oxygen readings with no fluctuations."
+    },
+    {
+      "turn": 125,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "Reassessment confirmed no emergencies-ready for ED care."
+    }
+  ]
+}

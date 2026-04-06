@@ -1,0 +1,813 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002573",
+  "protocol": [
+    "medical - stroke/tia (protocol 3 - 5)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Hospital alert for stroke. Unit 3 respond to suspected CVA in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, this is Jordan with Emergency Services. What brought you to call 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "My right leg feels weak and I have trouble feeling that side."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Mr. Miller, tell me your name and the date today."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "David Miller, and today is May 1st."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Can you tell me where we are right now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "We're in [CITY]."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "What did you do yesterday before today?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "I had lunch at my home."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Give me a summary of what just happened."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Waited outside when my right side suddenly went numb."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Can you answer yes or no for me as I check your breathing?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Yes, and I can take deep breaths fine."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_respiration",
+      "role": "Partner",
+      "utterance": "Breathing is at 18 per minute, unlabored, and regular."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_respiration",
+      "role": "Partner",
+      "utterance": "No signs of increased chest movement or work of breathing."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Pulse is regular and strong, around 85 beats per minute."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Are you having chest pain, shortness of breath, or abdominal pain?"
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Patient",
+      "utterance": "No, I'm not having any chest or abdominal discomfort."
+    },
+    {
+      "turn": 19,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 160. That's in the normal range."
+    },
+    {
+      "turn": 20,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 146 over 95 mmHg."
+    },
+    {
+      "turn": 21,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration rate is 18, regular, and unlabored."
+    },
+    {
+      "turn": 22,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse remains at 85, regular and strong."
+    },
+    {
+      "turn": 23,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is stable at 95% on room air."
+    },
+    {
+      "turn": 24,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus rhythm, no ectopy or ST elevation."
+    },
+    {
+      "turn": 25,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "When did the numbness and weakness begin?"
+    },
+    {
+      "turn": 26,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Sudden onset about 30 minutes ago."
+    },
+    {
+      "turn": 27,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Any headache, dizziness, vomiting, or vision changes?"
+    },
+    {
+      "turn": 28,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No headaches, dizziness, or vision changes."
+    },
+    {
+      "turn": 29,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Have you had prior strokes or neurological issues?"
+    },
+    {
+      "turn": 30,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "He had a stroke two years ago that impacted the left side."
+    },
+    {
+      "turn": 31,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Tell me your full name and age."
+    },
+    {
+      "turn": 32,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Patient",
+      "utterance": "David Miller, 55 years old."
+    },
+    {
+      "turn": 33,
+      "topic": "Pain_Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "On a 0 to 10 scale, how severe is your numbness and weakness?"
+    },
+    {
+      "turn": 34,
+      "topic": "Pain_Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "I'd rate it a zero, no pain-just numbness and right leg weakness."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Any rashes, bruises, or skin discoloration?"
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "No, my skin looks normal, no complaints."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Any facial drooping or speech issues? Any headache?"
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "No drooping or headache. No trouble speaking."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "May I check your pupils with the light?"
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "Yes, go ahead."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Pupils are 3 mm, equal, and reactive."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Let me check your memory. What's the name of this hospital?"
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "I don't know, but I remember May is the fifth month."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "EMT",
+      "utterance": "Any nasal or ear drainage? Throat pain or swelling?"
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "Patient",
+      "utterance": "No drainage, no pain or swelling anywhere."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "Can you stretch both arms out?"
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "Yes, I can stretch both arms."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "Can you show me a good grip with your hands?"
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "Equal grip on both hands."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "Any back pain or stiffness? Any redness or rash on the back?"
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "No back pain, stiffness, or rash."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "Right leg is weaker. Can you lift it slowly?"
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "I can lift it, but it's weak on the right side."
+    },
+    {
+      "turn": 54,
+      "topic": "Take_Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We're placing a bilateral 18 gauge IV in your antecubital veins."
+    },
+    {
+      "turn": 55,
+      "topic": "Take_Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Mr. Miller, how does the IV feel?"
+    },
+    {
+      "turn": 56,
+      "topic": "Take_Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Patient",
+      "utterance": "It feels fine."
+    },
+    {
+      "turn": 57,
+      "topic": "Take_Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "The IV is in place for rapid access should you need intervention."
+    },
+    {
+      "turn": 58,
+      "topic": "Exit_to_Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Given the right-sided weakness and no focal deficits, we're following the stroke/TIA protocol."
+    },
+    {
+      "turn": 59,
+      "topic": "Exit_to_Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Transport to a stroke center is appropriate for this patient."
+    },
+    {
+      "turn": 60,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "reasess_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure remains stable at 146 over 95."
+    },
+    {
+      "turn": 61,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "reasess_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse stays at 85 and regular."
+    },
+    {
+      "turn": 62,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "reasess_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood glucose is still 160 and normal."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Has the numbness or weakness changed since our arrival?"
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Still numb on the right side, but no change."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Any new symptoms like chest pain or nausea?"
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "No new complaints, feeling the same as before."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transferring you to [COMPANY_NAME], a certified stroke center."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Mr. Miller, are you comfortable being placed on the stretcher now?"
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Yes, I'm ready."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is now secured on the stretcher using safety straps."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "puts_transfer",
+      "role": "EMT",
+      "utterance": "ED, this is Unit 1. 55-year-old male with sudden right leg weakness and intact neuro status."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "puts_transfer",
+      "role": "Partner",
+      "utterance": "No speech or facial deficits, prior left-sided stroke."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "puts_transfer",
+      "role": "EMT",
+      "utterance": "Current GCS is 15, BP 146/95, regular pulse and EKG."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "puts_transfer",
+      "role": "Partner",
+      "utterance": "Transport estimated at 18 minutes. Condition stable."
+    },
+    {
+      "turn": 75,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "You have a full medical history of strokes. Correct?"
+    },
+    {
+      "turn": 76,
+      "topic": "History_of_Present_Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "Yes, left side weakness after that stroke."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No signs of speech deficits or facial asymmetry."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "You have intact grip strength. Correct?"
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "Yes, equal grip strength on both sides."
+    },
+    {
+      "turn": 80,
+      "topic": "Primary_Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "You are alert and oriented to time, place, person, and situation. Any difficulty breathing?"
+    },
+    {
+      "turn": 81,
+      "topic": "Primary_Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, I breathe fine."
+    },
+    {
+      "turn": 82,
+      "topic": "Take_Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "12-Lead ECG is being obtained for baseline data."
+    },
+    {
+      "turn": 83,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12-lead ECG shows sinus rhythm with no STE or ectopy."
+    },
+    {
+      "turn": 84,
+      "topic": "Take_Vital_Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Non-specific T-wave abnormalities noted for a 40+ male, no STE."
+    },
+    {
+      "turn": 85,
+      "topic": "Responsibility Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "You are alert and oriented, no speech deficits or hypoglycemia."
+    },
+    {
+      "turn": 86,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "No obvious speech deficits or facial drooping noted."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Partner",
+      "utterance": "Right leg sensory deficit remains, with no motor function change."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All IV lines and monitoring devices remain in place and functional."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient secured and all protocols confirmed safe for transport."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "puts_transfer",
+      "role": "EMT",
+      "utterance": "Stroke alert being sent to the executing unit, expect on-scene 18 minutes."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient ready for transport to specific stroke facility."
+    },
+    {
+      "turn": 92,
+      "topic": "Exit_to_Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Medical Stroke/TIA protocol followed throughout the assessment."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "No changes in condition or appearance during transport."
+    },
+    {
+      "turn": 94,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "Partner",
+      "utterance": "No signs of trauma, swelling, or drainage in ears or nose."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Breath sounds are clear and equal in both lungs."
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Heart sounds are normal with no extra sounds."
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "Abdomen is soft, non-tender with normal bowel sounds."
+    },
+    {
+      "turn": 98,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Partner",
+      "utterance": "No signs of urgency, frequency, or altered urine."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient aware, cooperative through loading and transport."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All crew members verified safe emergency transport with monitoring."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "reasess_vital_signs",
+      "role": "Partner",
+      "utterance": "BP still within safe range at 146/95 before transport."
+    },
+    {
+      "turn": 102,
+      "topic": "Reassessments",
+      "micro_intent": "reasess_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen levels steady at 95% during all stages."
+    },
+    {
+      "turn": 103,
+      "topic": "Reassessments",
+      "micro_intent": "reasess_vital_signs",
+      "role": "Partner",
+      "utterance": "Glucose levels consistent, no hypoglycemia."
+    },
+    {
+      "turn": 104,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "No signs of guarding, rigidity, or intra-abdominal pain."
+    },
+    {
+      "turn": 105,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Partner",
+      "utterance": "No signs of rectal bleeding or altered urine appearance."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Ambulance unit en route [COMPANY_NAME] system. No change in condition."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Priority response time remains within protocol for stroke alerts."
+    },
+    {
+      "turn": 108,
+      "topic": "Exit_to_Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Stroke alert transferred per medical protocol 3-5."
+    },
+    {
+      "turn": 109,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "No additional info to confirm for neuro assessment."
+    },
+    {
+      "turn": 110,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Memory recall and orientation remain normal."
+    },
+    {
+      "turn": 111,
+      "topic": "Secondary_Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "No signs of dysphagia or swallowing challenges."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient aware, cooperative through loading and transport."
+    },
+    {
+      "turn": 113,
+      "topic": "Handoff",
+      "micro_intent": "puts_transfer",
+      "role": "EMT",
+      "utterance": "All appropriate interventions and assessments completed before handoff."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "No incidents on scene or in transport; destination appropriate."
+    },
+    {
+      "turn": 115,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All crew members verified safe emergency transport with monitoring."
+    }
+  ]
+}

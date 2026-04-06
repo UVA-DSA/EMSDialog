@@ -1,0 +1,722 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003460",
+  "protocol": [
+    "medical - abdominal pain (protocol 3 - 2)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a fall with potential blood loss."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT. What happened here?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He fell in the bathroom earlier, then refused transport."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Is the patient conscious and speaking clearly?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "Mr. Robert, can you tell me your name, today's date, where you are, and what happened?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "Patient",
+      "utterance": "My name is Robert. Today is August 13th, 2019. I'm at home, and I fell."
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "breathing",
+      "role": "EMT",
+      "utterance": "Respiratory rate is 36. Fast but not labored. No cyanosis or accessory muscle use."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "circulation",
+      "role": "Partner",
+      "utterance": "Pulse is 91 and regular. Skin is warm, dry, and normal in color."
+    },
+    {
+      "turn": 9,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_s",
+      "role": "Partner",
+      "utterance": "When did the pain in your upper left side first appear?"
+    },
+    {
+      "turn": 10,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_s",
+      "role": "Patient",
+      "utterance": "It started last night-it's been getting worse all day."
+    },
+    {
+      "turn": 11,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_p",
+      "role": "Partner",
+      "utterance": "Do you have any long-term medical conditions?"
+    },
+    {
+      "turn": 12,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_p",
+      "role": "Patient",
+      "utterance": "I have high blood pressure, prostate cancer, and Parkinson's."
+    },
+    {
+      "turn": 13,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_m",
+      "role": "Partner",
+      "utterance": "Are you able to tell us what medications you're on?"
+    },
+    {
+      "turn": 14,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_m",
+      "role": "Patient",
+      "utterance": "I don't remember. I can't find my medications or medical cards."
+    },
+    {
+      "turn": 15,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent_exam",
+      "role": "EMT",
+      "utterance": "Your HEENT looks normal. No signs of trauma or fluid drainage."
+    },
+    {
+      "turn": 16,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is normal in color, dry, and warm. No jaundice or bleeding."
+    },
+    {
+      "turn": 17,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "EMT",
+      "utterance": "Chest appears normal with symmetrical expansion and no deformity."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "Abdomen is soft, tender in the upper left quadrant."
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "Partner",
+      "utterance": "Pelvis is stable with no signs of tenderness or instability."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "peripheral_pulses",
+      "role": "Partner",
+      "utterance": "Peripheral pulses are strong and comparable bilaterally."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "range_of_motion",
+      "role": "Partner",
+      "utterance": "Your limbs show full range of motion with good strength."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 107/74 initially, then 90/66."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 86 then 85. Regular in rhythm."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 36 then slightly decreased to 34. Still elevated."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation at 96% on room air."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose first read 229 then 0-possibly a device error."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_4_lead_monitoring",
+      "role": "Partner",
+      "utterance": "We've started 4-lead ECG monitoring."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_4_lead_monitoring",
+      "role": "Partner",
+      "utterance": "The second 4-lead ECG also shows sinus rhythm."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_12_lead_obtained",
+      "role": "Partner",
+      "utterance": "A 12-lead ECG is completed now."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_12_lead_obtained",
+      "role": "Partner",
+      "utterance": "Shows right atrial enlargement and possible LVH."
+    },
+    {
+      "turn": 31,
+      "topic": "Transport",
+      "micro_intent": "refusal_transport",
+      "role": "EMT",
+      "utterance": "Initially refused transport, your daughter convinced you. Consent given now?"
+    },
+    {
+      "turn": 32,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Mr. Robert is now placed securely on the stretcher."
+    },
+    {
+      "turn": 33,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport will be slow to avoid any additional discomfort."
+    },
+    {
+      "turn": 34,
+      "topic": "Handoff",
+      "micro_intent": "patient_handed_to_er_nurse",
+      "role": "EMT",
+      "utterance": "Mr. Robert, 82-year-old male, reported GI bleeding after a fall."
+    },
+    {
+      "turn": 35,
+      "topic": "Handoff",
+      "micro_intent": "patient_handed_to_er_nurse",
+      "role": "EMT",
+      "utterance": "Wakes up on own, responds appropriately to questions, normal skin."
+    },
+    {
+      "turn": 36,
+      "topic": "Handoff",
+      "micro_intent": "patient_handed_to_er_nurse",
+      "role": "Partner",
+      "utterance": "Blood tracking in hallway to the bathroom-bright red noted."
+    },
+    {
+      "turn": 37,
+      "topic": "Handoff",
+      "micro_intent": "patient_handed_to_er_nurse",
+      "role": "EMT",
+      "utterance": "Foley catheter present with clear, yellow urine in the bag."
+    },
+    {
+      "turn": 38,
+      "topic": "Handoff",
+      "micro_intent": "patient_handed_to_er_nurse",
+      "role": "Partner",
+      "utterance": "12-lead showed ST/T wave changes and right atrial abnormalities."
+    },
+    {
+      "turn": 39,
+      "topic": "Handoff",
+      "micro_intent": "patient_handed_to_er_nurse",
+      "role": "EMT",
+      "utterance": "History includes hypertension, prostate cancer, and Parkinson's."
+    },
+    {
+      "turn": 40,
+      "topic": "Handoff",
+      "micro_intent": "patient_handed_to_er_nurse",
+      "role": "Partner",
+      "utterance": "Medications unknown-no cards or prescriptions found."
+    },
+    {
+      "turn": 41,
+      "topic": "Handoff",
+      "micro_intent": "transport_destination",
+      "role": "EMT",
+      "utterance": "We are transporting the patient to [COMPANY_NAME] in [CITY]."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neuro_exam",
+      "role": "EMT",
+      "utterance": "No nuchal rigidity or signs of visual or auditory deficits noted."
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_e",
+      "role": "Partner",
+      "utterance": "Have you had any changes in bowel color or movement?"
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_e",
+      "role": "Patient",
+      "utterance": "Passed bright red blood. No black, tarry stools."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No rashes, bites, wounds, or lesions observed on skin."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "EMT",
+      "utterance": "Chest movements are symmetric. No trauma signs."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Partner",
+      "utterance": "No deformities or wounds noted on extremities."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "strength_exam",
+      "role": "Partner",
+      "utterance": "Upper and lower extremities have good strength."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "reflex_exam",
+      "role": "EMT",
+      "utterance": "Reflex testing not performed due to Parkinson's reported."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "sensory_exam",
+      "role": "Partner",
+      "utterance": "No numbness or loss of sensation in extremities."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent_exam",
+      "role": "EMT",
+      "utterance": "Pupils equal and reactive bilaterally."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Mr. Robert is alert and oriented to time, place."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "No rigidity or masses found in abdomen."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "EMT",
+      "utterance": "Pelvis is stable with no tenderness or crepitus."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "Partner",
+      "utterance": "Breath sounds clear in all lung fields."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neck_exam",
+      "role": "Partner",
+      "utterance": "No JVD or swollen lymph nodes in neck."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "throat_exam",
+      "role": "EMT",
+      "utterance": "No swelling or airway compromise evident."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_exam",
+      "role": "EMT",
+      "utterance": "No discharge or hearing loss in ears."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "nose_exam",
+      "role": "Partner",
+      "utterance": "No obstruction or bloody nose noted."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "general_appearance",
+      "role": "EMT",
+      "utterance": "Alert and dressed, but showing overall weakness."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "general_exam",
+      "role": "Partner",
+      "utterance": "No signs of acute distress apart from abdominal."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus rhythm with minimal ST-T wave changes."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "No acute MI or bundle branch blocks on rhythm strip."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "equipment_check",
+      "role": "Partner",
+      "utterance": "All transport gear is functioning and secured."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "positioning",
+      "role": "EMT",
+      "utterance": "Semi-Fowler's position to aid breathing and conserve energy."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "weight_transfer",
+      "role": "Partner",
+      "utterance": "Transfers were done by EMS and fire department."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "behavioral_monitoring",
+      "role": "EMT",
+      "utterance": "Mr. Robert compliant and cooperative during transfer."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "oxygen_delivery",
+      "role": "Partner",
+      "utterance": "Requires no supplemental oxygen at this time."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "immobilization_check",
+      "role": "Partner",
+      "utterance": "No immobilization performed-no spine injury signs."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "ambient_conditions",
+      "role": "Partner",
+      "utterance": "Transport environment is quiet and kept normal."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "protocol_used",
+      "role": "EMT",
+      "utterance": "Transport was done via protocol 3-2-medical abdominal pain."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "welcome_back",
+      "role": "EMT",
+      "utterance": "Mr. Robert, how are you now as we go through reassessment?"
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "chief_complaint",
+      "role": "Partner",
+      "utterance": "Any change in your left upper quadrant pain or other symptoms?"
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "chief_complaint",
+      "role": "Patient",
+      "utterance": "Pain remains sharp in upper left side, no new issues."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "breathing",
+      "role": "Partner",
+      "utterance": "Respiratory rate still at 34-elevated but not labored."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "circulation",
+      "role": "Partner",
+      "utterance": "Pulse is 85, BP 90/66. Slightly lower than prior."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "skin",
+      "role": "EMT",
+      "utterance": "Skin appearance is unchanged-still warm and dry."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "eyes",
+      "role": "Partner",
+      "utterance": "Normal eye contact and response to voice."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "neurological",
+      "role": "Partner",
+      "utterance": "No signs of neurological changes or stroke."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "motion",
+      "role": "EMT",
+      "utterance": "No unexpected movement or discomfort from patient."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "verbal_response",
+      "role": "Partner",
+      "utterance": "Clear and coherent in responses."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "motor_function",
+      "role": "Partner",
+      "utterance": "All limbs move without issue."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose tests still show 0-likely due to faulty device."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "vital_summary",
+      "role": "Partner",
+      "utterance": "No concerning vitals, all are safely within range."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "emotional_condition",
+      "role": "EMT",
+      "utterance": "Mr. Robert is now relaxed and shows no mental distress."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "pain_level",
+      "role": "Partner",
+      "utterance": "You still report mild abdominal pain at 5 out of 10."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "pain_localization",
+      "role": "Partner",
+      "utterance": "Still localized to the left upper quadrant."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "pain_character",
+      "role": "Partner",
+      "utterance": "Sharp, no change in description from before."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "pain_duration",
+      "role": "Partner",
+      "utterance": "Pain has been present since yesterday."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "pain_triggers",
+      "role": "EMT",
+      "utterance": "No known triggers or ways to relieve this at the moment."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "pain_history",
+      "role": "Partner",
+      "utterance": "No prior occurrences like this noted to us."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "pain_exam",
+      "role": "Partner",
+      "utterance": "No motion exacerbates the tenderness in the upper left."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "reorientation",
+      "role": "Partner",
+      "utterance": "Mr. Robert remains clearlyoriented."
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "re-rationale",
+      "role": "EMT",
+      "utterance": "Pain pattern has not changed and is stable currently."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "posterior_exam",
+      "role": "Partner",
+      "utterance": "No instability or pain found in the back."
+    },
+    {
+      "turn": 96,
+      "topic": "Take Interventions",
+      "micro_intent": "clear_airway",
+      "role": "Partner",
+      "utterance": "Airway remains clear with no signs of blockage."
+    },
+    {
+      "turn": 97,
+      "topic": "Take Interventions",
+      "micro_intent": "cervical_spine",
+      "role": "EMT",
+      "utterance": "Spine is normal with no signs of damage."
+    },
+    {
+      "turn": 98,
+      "topic": "Take Interventions",
+      "micro_intent": "immobilization",
+      "role": "Partner",
+      "utterance": "No immobilization done-no signs to indicate it."
+    },
+    {
+      "turn": 99,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_access",
+      "role": "Partner",
+      "utterance": "No IV started in field, no need noted."
+    },
+    {
+      "turn": 100,
+      "topic": "Take Interventions",
+      "micro_intent": "medication",
+      "role": "Partner",
+      "utterance": "No field medication administered-prescription/consent absent."
+    },
+    {
+      "turn": 101,
+      "topic": "Take Interventions",
+      "micro_intent": "emotional_support",
+      "role": "EMT",
+      "utterance": "Emotional support was offered and accepted."
+    },
+    {
+      "turn": 102,
+      "topic": "Take Interventions",
+      "micro_intent": "field_reassessment",
+      "role": "Partner",
+      "utterance": "Reassessments confirm our field impressions."
+    }
+  ]
+}

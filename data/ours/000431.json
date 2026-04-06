@@ -1,0 +1,729 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000431",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for breathing problems at --Address Redacted--, Apt # E."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I just can't catch my breath. It's been getting progressively worse."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Let's test your responsiveness. Can you tell me your name? When is your birthday? What county are we in? Do you know why you called 911?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "My name is Rachel. I was born in 1960. We're in [CITY]. Because I couldn't breathe and thought I was getting ready to pass out."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "That's good. You are alert and oriented. Can you tell me your name again?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Rachel. Definitely Rachel. I am sure of that."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is clear and you're maintaining it well. Can you take a deep breath for me?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "I'm trying, but I can't take a deep breath. It feels like something's in my chest."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 24 per minute."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "I hear slight wheezing in both lungs. Are you currently on any oxygen therapy?"
+    },
+    {
+      "turn": 12,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth",
+      "role": "Patient",
+      "utterance": "Yes, I have a home concentrator and have been on 6 L of oxygen since this morning."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse rate is 112 beats per minute."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Your skin is warm and dry. Are you on any medications to manage your condition?"
+    },
+    {
+      "turn": 15,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "I take Xanax, Claritin, Xarelto, Toprol, Phenergan, and a few others."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is reading at 96%."
+    },
+    {
+      "turn": 17,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "EMT",
+      "utterance": "You mentioned chest pain. When did it start and how did it feel?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_call",
+      "role": "Patient",
+      "utterance": "It started around 5 in the morning. It's been about an 8 out of 10 and hasn't gone away."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 122 over 76."
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "Does the pain get better or worse with breathing or movement?"
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "location",
+      "role": "Patient",
+      "utterance": "It's right of the sternum. It's sharp and doesn't spread."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin is pink, warm, and dry with no distress."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "gcs",
+      "role": "Partner",
+      "utterance": "Glasgow Coma Scale is 15-Eye 4, Verbal 5, Motor 6. Fully alert."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Interventions",
+      "micro_intent": "ask_permission",
+      "role": "EMT",
+      "utterance": "We're going to apply a 4-lead ECG. It's standard for shortness of breath. Okay with you?"
+    },
+    {
+      "turn": 25,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Applying 4-lead ECG now."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is at 186 mg/dL."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Now performing the 12-lead ECG."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus tachycardia with a short QT and some T wave changes."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Clubbing in fingertips from long-term COPD noted."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_history",
+      "role": "EMT",
+      "utterance": "Your chart shows COPD, CHF, and stroke with hemiplegia. You also have depression, anxiety, and bipolar disorder. With all that, is your COPD acting up now?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_history",
+      "role": "Patient",
+      "utterance": "That's right. I've had COPD for years. Other than that, it's been a tough health journey."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "sample_medication",
+      "role": "EMT",
+      "utterance": "You're on several medications. Can you tell me what you take for COPD specifically?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I have daily nebulizer treatments. I take atorvastatin, metoprolol, alprazolam, lisinopril, aspirin, risperidone, amitriptyline, Xarelto, Claritin, and Phenergan."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "sample_medication_follow",
+      "role": "EMT",
+      "utterance": "Thank you. You've had a nebulizer earlier today-did you feel better after?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_call",
+      "role": "Patient",
+      "utterance": "A little, but not for long. I still couldn't really breathe well."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 22, pulse is 97 now."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "BP at 108 over 73. Oxygen saturation at 97%."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "End-tidal CO2 measured at 57 mmHg."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "How was the chest pain after starting oxygen and our other care?"
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "A bit better, maybe a 6 now on the 10 scale."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll take you to [COMPANY_NAME]. Can you stand slowly and follow my directions for the transfer?"
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "That's fine. I can do it."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll switch to the ambulance oxygen setup but keep the same 6 L flow. You should feel the same. Good?"
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Securing you on the stair chair now. Moving in slowly."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "reassessments",
+      "role": "Partner",
+      "utterance": "Respirations stay at 22. Pulse is stable at 97."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "pain_assessment",
+      "role": "EMT",
+      "utterance": "How is the chest pain now compared to earlier today?"
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "It's still at about a 6, but not much worse or better."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "reassessments",
+      "role": "Partner",
+      "utterance": "Glucose reading shows 0 - may be a machine issue. No new care steps needed."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All movement okay. No problems with strength, balance, or sensation. You handled transfers well."
+    },
+    {
+      "turn": 50,
+      "topic": "Handoff",
+      "micro_intent": "rendezvous",
+      "role": "Partner",
+      "utterance": "Calling ahead to [COMPANY_NAME] for room 13."
+    },
+    {
+      "turn": 51,
+      "topic": "Handoff",
+      "micro_intent": "rendezvous",
+      "role": "EMT",
+      "utterance": "Preparing to transfer a 53-year-old female with breathing difficulty and chest pain at 6/10. On 6 L oxygen, sinus tach on EKG."
+    },
+    {
+      "turn": 52,
+      "topic": "Handoff",
+      "micro_intent": "closing_remarks",
+      "role": "EMT",
+      "utterance": "Everyone out-Call closed."
+    },
+    {
+      "turn": 53,
+      "topic": "Handoff",
+      "micro_intent": "complete",
+      "role": "Partner",
+      "utterance": "Delivered to the hospital. Room 13, patient alert and awake."
+    },
+    {
+      "turn": 54,
+      "topic": "Handoff",
+      "micro_intent": "complete",
+      "role": "Partner",
+      "utterance": "Given full report to ED nurses. Room updated in system."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "ekg_followup",
+      "role": "Partner",
+      "utterance": "EKG rechecked-no new findings. Normal rhythm during transit."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose_reassurance",
+      "role": "Partner",
+      "utterance": "Glucose still at 0 on second check. I'll record it as per protocol."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "no_new_findings",
+      "role": "EMT",
+      "utterance": "No stroke signs or mobility changes observed during transport. No new pain or worsening."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "no_new_findings",
+      "role": "EMT",
+      "utterance": "Alert, aware, able to follow all directions. No signs of sudden condition change."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "protocol_follow",
+      "role": "EMT",
+      "utterance": "Per protocol, we did oxygen support and EKG. No acute cardiac issues seen."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG unchanged from start. No new arrhythmia or acute issues found."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "No other procedures needed. All steps taken as per protocol 3-11."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "room_information",
+      "role": "EMT",
+      "utterance": "They'll receive you in room 13 at the hospital. All setup is ready."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Cot secured for transport with 5 tie-downs. All is ready to move."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "final_check",
+      "role": "Partner",
+      "utterance": "Locked and all systems-ready to move now."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "launch_call_move",
+      "role": "Partner",
+      "utterance": "Ready, rolling out smoothly now."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "complete",
+      "role": "Partner",
+      "utterance": "Nurses are ready in room 13. Box lowered, rails up, transfer staged."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "complete",
+      "role": "EMT",
+      "utterance": "Alex and partner-patient is ready for ED team."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "complete",
+      "role": "Partner",
+      "utterance": "Full report given. Room 13 in system."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "ekg_followup",
+      "role": "Partner",
+      "utterance": "EKG stable and no changes reported. All systems stable in transit."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "final_status_call",
+      "role": "Partner",
+      "utterance": "Her last report was pain at 6-it still hasn't changed much."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "final",
+      "role": "EMT",
+      "utterance": "No transport problems. No runbacks or recalls. All procedures complete."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "follow_up",
+      "role": "EMT",
+      "utterance": "Paperwork is done via text call. No other calls in process."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "overall_status",
+      "role": "EMT",
+      "utterance": "EMT-level services fully provided. No back status needed."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "twofold",
+      "role": "Partner",
+      "utterance": "No missing reports or followups. No alerts triggered."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "all_capitalized",
+      "role": "Partner",
+      "utterance": "Data fully uploaded."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "finalization",
+      "role": "EMT",
+      "utterance": "Call 27 complete and ready to move on."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "closing_remarks",
+      "role": "EMT",
+      "utterance": "Call is now done."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "wrapup",
+      "role": "Partner",
+      "utterance": "Smooth transport, no issues to report."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "complete",
+      "role": "EMT",
+      "utterance": "Patient sign-off completed. Nothing further to do."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "final",
+      "role": "Partner",
+      "utterance": "Wrap done. All good to go back to station."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "pause",
+      "role": "EMT",
+      "utterance": "No calls coming in at this time. Standby status set."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "return_home",
+      "role": "Partner",
+      "utterance": "Unit is ready to return to base."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "final_step",
+      "role": "EMT",
+      "utterance": "Call confirmed as safe and complete. All data parked."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "complete",
+      "role": "Partner",
+      "utterance": "Nothing outstanding. Move to base active."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "closing_remarks",
+      "role": "Partner",
+      "utterance": "Call off the board. All messages removed."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "back_off",
+      "role": "EMT",
+      "utterance": "Data disconnected. Unit ready for next."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "end",
+      "role": "Partner",
+      "utterance": "Call number 27 off the board."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "complete",
+      "role": "EMT",
+      "utterance": "Notes completed and reports moved."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "return_base",
+      "role": "Partner",
+      "utterance": "Back to base station now."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "return_base",
+      "role": "EMT",
+      "utterance": "Scanning in, status set to off."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "final",
+      "role": "Partner",
+      "utterance": "No more calls or steps. All clear."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "final",
+      "role": "EMT",
+      "utterance": "All in compliance and ready."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "final",
+      "role": "Partner",
+      "utterance": "Grid offline, no steps."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "complete",
+      "role": "Partner",
+      "utterance": "Ready for next dispatch."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "complete",
+      "role": "EMT",
+      "utterance": "All completed safely. No extra logging."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "end",
+      "role": "Partner",
+      "utterance": "Lights out. Unit clear."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "complete",
+      "role": "EMT",
+      "utterance": "All completed and given."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "ekg_followup",
+      "role": "Partner",
+      "utterance": "EKG reviewed and still stable in transit."
+    },
+    {
+      "turn": 99,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "You noted no known drug or food allergies. Is that correct?"
+    },
+    {
+      "turn": 100,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "Correct. I have no note of any allergies."
+    },
+    {
+      "turn": 101,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "No new findings in EKG throughout care and transport."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No signs of added symptoms. Chest pain not worsening. No new areas."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "complete",
+      "role": "Partner",
+      "utterance": "Call full cycle done for this transport."
+    }
+  ]
+}

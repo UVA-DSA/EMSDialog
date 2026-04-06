@@ -1,0 +1,848 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001740",
+  "protocol": [
+    "medical - nausea/vomiting (protocol 3 - 9)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for unconsciousness at 603 --Address Redacted-- in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I feel sick with nausea, vomiting, a hoarse voice, and some neck pain."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, can you open your eyes for me?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Yes, I can."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Can you tell me your name? What county are we in?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "My name is Cindy. We're in [CITY]."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Are you having any trouble speaking clearly or breathing?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_clearance",
+      "role": "Patient",
+      "utterance": "I have some hoarseness, but am breathing fine."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "sounds_of_obstruction",
+      "role": "Partner",
+      "utterance": "Can I hear any strange sounds in your airway that suggest obstruction?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "sounds_of_obstruction",
+      "role": "Patient",
+      "utterance": "I don't believe so. It's more of a hoarse voice."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "preferred_posture_to_maintain_airway",
+      "role": "Partner",
+      "utterance": "For right now, just lay flat unless it becomes uncomfortable."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_patent",
+      "role": "Partner",
+      "utterance": "I can hear no obstruction suggesting airway is clear."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Cindy, your breath sounds are clear and equal. Are you feeling any shortness of breath right now?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "I can see your skin is pale, but it's warm and dry. You also have a strong radial pulse in your wrist."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Can you give me a timeline of how you started to feel this way?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I had lunch with my kids, ate a hot dog, then came back and started feeling hoarse. I generally felt unwell and threw up."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Do you have any significant medical history that I should know about?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I have a history of leukemia, anemia, and I'm undergoing chemotherapy."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Are you allergic to anything?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I have an allergy to penicillin."
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "OPQRST",
+      "role": "EMT",
+      "utterance": "On a scale of 0-10, how bad is that neck pain you're feeling right now?"
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "OPQRST",
+      "role": "Patient",
+      "utterance": "It's about a 2 out of 10."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is at 100."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing rate is steady at 16."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 100 over 70."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "I can't get a glucose reading at the moment."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is currently at 0% due to equipment limitations."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "We're placing you on the cardiac monitor now to check for irregular heart rhythms."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The monitor shows a regular heart rate with no ST elevation or other abnormalities."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "I'm now applying the four-lead ECG. It's just to monitor your heart rhythm so we can keep an eye on it."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "The four-lead is complete. Next, we'll do a 12-lead ECG for more detail."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse has increased to 114."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Let me check again. Your glucose is 125."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is now 110 over 80."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is now 98%."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Your EKG shows sinus rhythm with tachycardia."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "EMT",
+      "utterance": "Cindy, can you tell me the date today?"
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "Patient",
+      "utterance": "It's November 7th, 2020."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "EMT",
+      "utterance": "What city and state are we in?"
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "Patient",
+      "utterance": "We're in [CITY], [STATE]."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "EMT",
+      "utterance": "Can you tell me what you were doing before you started feeling ill?"
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "Patient",
+      "utterance": "I was resting in bed after lunch. I had a hot dog earlier."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "EMT",
+      "utterance": "Why did you call 911 today?"
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "Patient",
+      "utterance": "I felt unwell with nausea, vomiting, a hoarse voice, and some neck pain."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status_aox4",
+      "role": "EMT",
+      "utterance": "Very good. You are fully alert and oriented to time, person, place, and situation. Your GCS is 15."
+    },
+    {
+      "turn": 47,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Cindy, based on your complaints and vitals, it seems like we're addressing a medical issue involving nausea, vomiting, and some vital changes."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Your pulse is now down to 70."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 107 over 67 now."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Your SpO2 remains at 99%."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Ma'am, we would have started fluids and given Zofran, but you declined that treatment. Is that correct?"
+    },
+    {
+      "turn": 52,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Patient",
+      "utterance": "Yes. I prefer to wait until the hospital to access my port."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Ma'am, as requested, we will take you to [COMPANY_NAME] Medicine for further care."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We need to move you to the stair chair for easier transport. It may feel a bit strange, but we'll go quickly."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You are now secured on the chair. We will use the elevator to get you down."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You are safely secured on the stretcher now and we're ready for transport."
+    },
+    {
+      "turn": 57,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "Ma'am, we're at the hospital now. We'll hand you over to the care team."
+    },
+    {
+      "turn": 58,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "No fluids or IV medications were administered. Her chief complaint was nausea and vomiting, and she declined pre-hospital treatment."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "A 12-lead EKG showed no acute cardiac changes."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "She is undergoing chemotherapy for leukemia, has anemia, and is allergic to penicillin."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "She is alert and oriented to person, place, time, and event with a GCS of 15."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "Her SpO2 was initially not accessible."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "She reports neck pain at 2 out of 10 with no chest pain, shortness of breath, or altered mental status."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "Patient",
+      "utterance": "I'll sign the consent forms now."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "Thank you for your cooperation, Cindy. We hope you get better soon."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "Best wishes to you while in the emergency room."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll head back for a stretcher exchange after call clearance."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_onset",
+      "role": "EMT",
+      "utterance": "When did your neck pain first start?"
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_onset",
+      "role": "Patient",
+      "utterance": "It started right after I noticed my hoarse voice in the afternoon."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_provocation",
+      "role": "EMT",
+      "utterance": "Does your neck pain get worse with any particular movement or activity?"
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_provocation",
+      "role": "Patient",
+      "utterance": "No, it comes and goes without specific triggers."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_quality",
+      "role": "EMT",
+      "utterance": "What word would you use to describe the feeling the pain gives you?"
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_quality",
+      "role": "Patient",
+      "utterance": "It feels generally sore, like a dull, persistent ache."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_radiation",
+      "role": "EMT",
+      "utterance": "Does the pain spread anywhere else in your body?"
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_radiation",
+      "role": "Patient",
+      "utterance": "It stays at the neck. I haven't felt it anywhere else."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "You said it's a 2 out of 10, has it changed over time?"
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_severity",
+      "role": "Patient",
+      "utterance": "No, it's still pretty constant and manageable."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_time",
+      "role": "EMT",
+      "utterance": "Approximately what time did this begin?"
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment_time",
+      "role": "Patient",
+      "utterance": "It began at about 2:00 today."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_signs_symptoms",
+      "role": "EMT",
+      "utterance": "Are there any additional symptoms you haven't mentioned yet today?"
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_signs_symptoms",
+      "role": "Patient",
+      "utterance": "I don't think so. I tried to get up after vomiting, but I felt very weak."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_allergies",
+      "role": "EMT",
+      "utterance": "Is there any other medications or substances you might be allergic to?"
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_allergies",
+      "role": "Patient",
+      "utterance": "I only mentioned penicillin before-I don't believe there are others."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_med",
+      "role": "EMT",
+      "utterance": "Did you take any medications before calling 911?"
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_med",
+      "role": "Patient",
+      "utterance": "I wasn't able to take anything. I just felt too weak and unwell."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_past_med",
+      "role": "EMT",
+      "utterance": "Any surgeries or other chronic issues we should know about?"
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_past_med",
+      "role": "Patient",
+      "utterance": "I've never had surgery, aside from a port placement for chemo treatment."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_last_oral_intake",
+      "role": "EMT",
+      "utterance": "When did you last eat or drink anything?"
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had lunch around 12:30, which included a hot dog and some chips."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_events_leading_to_call",
+      "role": "EMT",
+      "utterance": "Describe the events that led to calling 911 in more detail."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_events_leading_to_call",
+      "role": "Patient",
+      "utterance": "I started feeling unwell, had a hoarse voice, vomited, and my neck began aching. I thought it was something serious, so I called."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_patient_personal_info",
+      "role": "EMT",
+      "utterance": "I should clarify some of your personal details if I haven't already."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness_patient_personal_info",
+      "role": "Patient",
+      "utterance": "My name is Cindy. I was born in November 1975 and live alone in this building."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The chair is moving smoothly. Let's get you from the chair to the stretcher now."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You are now safely on the stretcher and ready to head to the ambulance."
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam_rashes",
+      "role": "Partner",
+      "utterance": "Is there anything unusual about your skin or complexion?"
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam_rashes",
+      "role": "Patient",
+      "utterance": "Just some paleness from being sick and undergoing treatment."
+    },
+    {
+      "turn": 98,
+      "topic": "Secondary Assessment",
+      "micro_intent": "visual_skin_check",
+      "role": "Partner",
+      "utterance": "Let me check for any obvious rashes or injuries."
+    },
+    {
+      "turn": 99,
+      "topic": "Secondary Assessment",
+      "micro_intent": "visual_skin_check",
+      "role": "Partner",
+      "utterance": "There are no rashes, bruises, or suspicious skin findings noted."
+    },
+    {
+      "turn": 100,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Let's check your head and neck for any swelling or discomfort."
+    },
+    {
+      "turn": 101,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "I feel some tenderness in my neck, but no swelling."
+    },
+    {
+      "turn": 102,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Are you experiencing any numbness or balance issues?"
+    },
+    {
+      "turn": 103,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "I don't have any numbness or balance problems."
+    },
+    {
+      "turn": 104,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "I'll feel your neck for any masses or lymph node swelling."
+    },
+    {
+      "turn": 105,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "No notable masses or swollen lymph nodes found."
+    },
+    {
+      "turn": 106,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Partner",
+      "utterance": "How is the movement of your arms and legs?"
+    },
+    {
+      "turn": 107,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Patient",
+      "utterance": "I still feel weak, but I can move both extremities."
+    },
+    {
+      "turn": 108,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Partner",
+      "utterance": "I'll feel for pulses in your arms and legs as well."
+    },
+    {
+      "turn": 109,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Partner",
+      "utterance": "You have good peripheral pulses in both your arms and legs."
+    },
+    {
+      "turn": 110,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "Partner",
+      "utterance": "I need to quickly check your back and side for any pain or tenderness."
+    },
+    {
+      "turn": 111,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "Partner",
+      "utterance": "No pain or swelling is noted in your back or flank area."
+    },
+    {
+      "turn": 112,
+      "topic": "Exit to Protocol",
+      "micro_intent": "transport_protocol",
+      "role": "EMT",
+      "utterance": "Based on GT, everything seems stable for transport."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We will now load you into the ambulance gently."
+    },
+    {
+      "turn": 114,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "The patient is conscious and alert on arrival and refuses all pre-hospital interventions due to port access concerns."
+    },
+    {
+      "turn": 115,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "Her EKG is clear per 12-lead, and no acute issues are found on physical exam."
+    },
+    {
+      "turn": 116,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "She will remain alert during transport and in the hospital but may feel more fatigued due to her medical condition."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "It seems the elevators won't fit our stretcher, so we'll need to use the stair chair again for hospital entry."
+    },
+    {
+      "turn": 118,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The hospital bed required a second transfer via stretcher from the chair."
+    },
+    {
+      "turn": 119,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "EMT",
+      "utterance": "We will give a detailed verbal report upon arrival to your care team so they can review your condition and history thoroughly."
+    },
+    {
+      "turn": 120,
+      "topic": "Handoff",
+      "micro_intent": "deliver_handoff",
+      "role": "Patient",
+      "utterance": "I feel much more stable now. Thank you for your careful care."
+    }
+  ]
+}

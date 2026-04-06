@@ -1,0 +1,988 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002215",
+  "protocol": [
+    "medical - seizure (protocol 3 - 12)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit [UNIQUE_IDENTIFIER] for convulsions/seizure in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hi, I'm Jason, a paramedic with [UNIQUE_IDENTIFIER]. How long ago did the seizure occur?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "It happened just a few minutes ago. My uncle was on the couch when he began shaking."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Can you tell me your name and where you are?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "His eyes are partially open, but not actively responding."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "He is not responding verbally."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "He remains motionless with no active limb movement post-event."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Airway is patent, and I can see no obstruction."
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are at 20 and regular."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 115 and strong."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 144 over 83."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "Skin is warm, pink, and dry with no abnormalities."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Chest movement is symmetrical with clear bilateral breath sounds."
+    },
+    {
+      "turn": 14,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "No tracheal deviation observed. Head, neck, and eyes show no trauma."
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Paramedic",
+      "utterance": "Can you tell me about his medical history?"
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Bystander",
+      "utterance": "He has a history of seizures. Last one was three months ago."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Paramedic",
+      "utterance": "What medications does he take?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Bystander",
+      "utterance": "He takes Kappra. He said he ran out of Topamax last month."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Paramedic",
+      "utterance": "Are there any other medications he uses?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Bystander",
+      "utterance": "He uses Albuterol."
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Paramedic",
+      "utterance": "On a scale of 0 to 10, how would you rate your pain now?"
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Skin shows no injuries or marks."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "ECG shows sinus rhythm with 4-lead monitoring."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio",
+      "role": "Paramedic",
+      "utterance": "Chest sounds are clear and equal bilaterally."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back",
+      "role": "Paramedic",
+      "utterance": "Peripheral pulses are strong and equal."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "No glucose detected on blood sugar strip."
+    },
+    {
+      "turn": 27,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Medic Partner",
+      "utterance": "Following Seizure Protocol 3-12 based on history and presentation."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Placing 18G IV in left upper extremity for access."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respirations are now 22, pulse 110, and BP 146 over 73."
+    },
+    {
+      "turn": 30,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 98%."
+    },
+    {
+      "turn": 31,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is 107, BP is 156 over 78, and SpO2 is 91."
+    },
+    {
+      "turn": 32,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is 107, BP is 152 over 80, and respirations are 21."
+    },
+    {
+      "turn": 33,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "What hospital would you prefer?"
+    },
+    {
+      "turn": 34,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "[COMPANY_NAME] is nearby. Let's go there."
+    },
+    {
+      "turn": 35,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "We'll transfer him via stair chair for movement."
+    },
+    {
+      "turn": 36,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is now on the stretcher with a 5-point harness."
+    },
+    {
+      "turn": 37,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All IV lines and gear are secured for transport safety."
+    },
+    {
+      "turn": 38,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Continuous monitoring will occur during transportation."
+    },
+    {
+      "turn": 39,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "ED nurse, taking over care of a 35-year-old with seizure history."
+    },
+    {
+      "turn": 40,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Alert but disoriented on scene."
+    },
+    {
+      "turn": 41,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "IV started. No medications given on scene."
+    },
+    {
+      "turn": 42,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Transported on stretcher with harness intact."
+    },
+    {
+      "turn": 43,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Last seizure was 30 seconds to a minute. Currently not on Topamax."
+    },
+    {
+      "turn": 44,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "SpO2 dropped to 91 initially but not improved on scene."
+    },
+    {
+      "turn": 45,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Alert on arrival, GCS was 11."
+    },
+    {
+      "turn": 46,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Pupils were not specified for clarity."
+    },
+    {
+      "turn": 47,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Peripheral pulses remain strong and equal."
+    },
+    {
+      "turn": 48,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Current medication includes Albuterol."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 100% at the first assessment using pulse oximetry."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neuro",
+      "role": "Paramedic",
+      "utterance": "GCS is 11 upon arrival: Eye = 4, Verbal = 1, Motor = 6."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "4-lead ECG monitoring has been initiated."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "SpO2 readings and EKG status will be continuously monitored en route."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Currently using wheels and seat belt system for transport."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No signs of life threat found on scene."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Skin turgor is normal with no signs of dehydration."
+    },
+    {
+      "turn": 56,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_clearance",
+      "role": "Paramedic",
+      "utterance": "Airway remains patent, no signs of obstruction detected."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Paramedic",
+      "utterance": "Later during reassessment, respirations dropped to 19 but remained regular."
+    },
+    {
+      "turn": 58,
+      "topic": "Primary Assessment",
+      "micro_intent": "work_of_breathing",
+      "role": "Paramedic",
+      "utterance": "Work of breathing is within normal range."
+    },
+    {
+      "turn": 59,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin_appearance",
+      "role": "Paramedic",
+      "utterance": "Skin color is pink, no mention of pallor or cyanosis observed."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "ECG settings and IV patency are rechecked."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic",
+      "utterance": "No pain reported by patient due to altered mental status."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_present_illness",
+      "role": "Paramedic",
+      "utterance": "Patient is taking Kappra and has Epilepsy in medical history."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "sample",
+      "role": "Bystander",
+      "utterance": "He was disoriented upon first contact."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Paramedic",
+      "utterance": "He experienced shaking and disorientation shortly before we arrived."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "collect_patient_info",
+      "role": "Paramedic",
+      "utterance": "Patient is a 35-year-old male found unresponsive on the couch."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "collect_patient_info",
+      "role": "Partner",
+      "utterance": "No known drug or food allergies reported."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Interventions",
+      "micro_intent": "do_not_give_medications",
+      "role": "Paramedic",
+      "utterance": "No medications administered on scene."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Stretcher is being transferred to ED using sliding system."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We're maintaining a 5-point harness during transfer."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Patient is being transferred smoothly to the ED bed."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Patient condition is stable for continued management."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Destination is confirmed to be [COMPANY_NAME]."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All teammates are securing gear now."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Gear is being inspected for transport readiness."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All lines and stress points are in readiness."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All surfaces and transport equipment status are confirmed."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "IV bag is properly attached and remains stationary."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "ECG and SpO2 systems remain functioning correctly."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Continuous monitoring systems are ready for transport."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All patient identifiers are correct and up to date."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No issues identified with secured pathways."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Ready for controlled and smooth movement."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Transport harness remains fully fastened."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "No signs of distress during positioning."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Harness support is connecting wheels with stretcher."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Stretcher height is adjusted to hospital bed levels."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Transfer plan is communicated with ED staff."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "ED has confirmed readiness upon arrival."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher movement is being initiated now."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Stretcher is being moved in the direction of transfer point."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher level is maintained at all points."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient is experiencing no added movement force."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Rollers are slowing upon arrival level."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Handover is now in process at hospital side."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "ED nurse is ready to receive patient."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Paperwork is being handed over to hospital staff."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Transfer is now documented completely."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Patient condition remains stable with IV assistance."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Full monitoring system transfers with patient."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "All transfers will be noted in hospital system."
+    },
+    {
+      "turn": 101,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "ED nurse is accepting full care of the patient."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No complications were observed during transport."
+    },
+    {
+      "turn": 103,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Equipment removal is fully authorized by ED."
+    },
+    {
+      "turn": 104,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No change in condition has been observed."
+    },
+    {
+      "turn": 105,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Final transfer has been verbally confirmed."
+    },
+    {
+      "turn": 106,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "All tags and documentation are completed."
+    },
+    {
+      "turn": 107,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Patient is now under hospital care."
+    },
+    {
+      "turn": 108,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "All queries sent to hospital management team."
+    },
+    {
+      "turn": 109,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Handover term completed at ED entrance area."
+    },
+    {
+      "turn": 110,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No signs of emesis or breaching during transport."
+    },
+    {
+      "turn": 111,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "No critical conditions arose during this shift."
+    },
+    {
+      "turn": 112,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "All actions taken follow initial protocol."
+    },
+    {
+      "turn": 113,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Patient is now assigned for post-transport care."
+    },
+    {
+      "turn": 114,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Documentation is complete for this case."
+    },
+    {
+      "turn": 115,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Patient is entering into hospital record system."
+    },
+    {
+      "turn": 116,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No discrepancies reported in transport phase."
+    },
+    {
+      "turn": 117,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "All units remain intact at transfer point."
+    },
+    {
+      "turn": 118,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Patient is under observation in ED now."
+    },
+    {
+      "turn": 119,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Final status recorded and timestamped."
+    },
+    {
+      "turn": 120,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No compromise in safety witnessed during transfer."
+    },
+    {
+      "turn": 121,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "All logs were handed over to hospital archive."
+    },
+    {
+      "turn": 122,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No more action required from our site."
+    },
+    {
+      "turn": 123,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Call sign is finalized and checked."
+    },
+    {
+      "turn": 124,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Patient remains alert and cooperating now."
+    },
+    {
+      "turn": 125,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "All transfer conditions are fully met."
+    },
+    {
+      "turn": 126,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "ED has fully accepted care of patient."
+    },
+    {
+      "turn": 127,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "No escalation needed at this time."
+    },
+    {
+      "turn": 128,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Transport is ended under standard pace."
+    },
+    {
+      "turn": 129,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "No issues remain unfixed or active."
+    },
+    {
+      "turn": 130,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "Paper trail reflects all proper actions."
+    },
+    {
+      "turn": 131,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Patient is now medicated under ED direction."
+    },
+    {
+      "turn": 132,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No new interventions are being considered."
+    },
+    {
+      "turn": 133,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "All systems and lines remain active."
+    },
+    {
+      "turn": 134,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "ED nurse is trained on patient status."
+    },
+    {
+      "turn": 135,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Patient is now stabilized and recumbent."
+    },
+    {
+      "turn": 136,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No discrepancies with initial documentation."
+    },
+    {
+      "turn": 137,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Patient is released from our care."
+    },
+    {
+      "turn": 138,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "ED nurse has been trained on condition."
+    },
+    {
+      "turn": 139,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Partner",
+      "utterance": "Paper documents being archived for review."
+    },
+    {
+      "turn": 140,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "Paramedic",
+      "utterance": "No medical procedures pending at our stage."
+    }
+  ]
+}

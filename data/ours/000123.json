@@ -1,0 +1,988 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000123",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for heart problems/AICD at the ACC in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, my name is Alex, and I'm an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been having chest pain since yesterday, and my primary care clinic sent me over here to [COMPANY_NAME]."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "call_type",
+      "role": "EMT",
+      "utterance": "Got it. May I check how long the chest discomfort has been ongoing?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "It's been going on since about 3:00 PM yesterday. It's really bothering me, and I couldn't ignore it anymore."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you open your eyes normally when I ask you to?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "What is the date today, and where are we?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "Patient",
+      "utterance": "It's the 21st of January. I believe we are in the ACC."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "Partner",
+      "utterance": "GCS is 15-eye 4, verbal 5, motor 6. Patient is alert and oriented x4."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Are you in any current distress, like trouble breathing or speaking?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, I'm sitting upright here, but it's really hard to focus on anything with the pain."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Good. Your airway is clear and patent while you are upright. Do you have trouble breathing now?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Just a little bit earlier-maybe due to the pain."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations are steady at 12. Bilateral breath sounds are clear and equal."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Got it. Your respiration rate is 12, which is within normal limits."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Radial pulse is 76, strong and regular. Skin is normal in color, feels warm and dry."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up",
+      "role": "EMT",
+      "utterance": "Can you describe what you were doing when the chest pain first started?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up",
+      "role": "Patient",
+      "utterance": "I was sitting at my desk at work, and I haven't done anything particularly strenuous over the last 48 hours. Thought it was my back at first."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pert_past_med_hist",
+      "role": "EMT",
+      "utterance": "Got it. Can you tell me if you take any medications regularly, and do you have any history of medical conditions?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "Patient",
+      "utterance": "Pantoprazole, some vitamin B6, cyanocobalamin, and rivaroxaban. I've had a history of DVT but no previous chest pain with that."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - past_med_hist",
+      "role": "EMT",
+      "utterance": "What about any other relevant medical history or surgeries?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - past_med_hist",
+      "role": "Patient",
+      "utterance": "I have a history of anemia."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "EMT",
+      "utterance": "Any allergies to medications or other substances?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "Patient",
+      "utterance": "I'm allergic to morphine sulfate with mild reactions."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_intake",
+      "role": "EMT",
+      "utterance": "When did you eat or drink last time?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_intake",
+      "role": "Patient",
+      "utterance": "I had some small food at my office around noon today, I think."
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "EMT",
+      "utterance": "When did you first notice the chest pain?"
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "I noticed it when I was sitting at my desk yesterday. It never really went away."
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does the pain spread or travel to anywhere else, like your arms or neck?"
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "No, it stays right here. It's fairly constant and sharp."
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, how would you rate the pain right now?"
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "A 9. It feels sharp, like a knife going through the middle of my chest."
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "EMT",
+      "utterance": "Does anything make the pain worse or better?"
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "Patient",
+      "utterance": "Not that I've noticed. It just stays the same all day."
+    },
+    {
+      "turn": 35,
+      "topic": "Pain Assessment",
+      "micro_intent": "no_short_of_breath",
+      "role": "EMT",
+      "utterance": "Are you short of breath now, or was it earlier?"
+    },
+    {
+      "turn": 36,
+      "topic": "Pain Assessment",
+      "micro_intent": "no_short_of_breath",
+      "role": "Patient",
+      "utterance": "Not really now. Earlier, maybe I thought I was."
+    },
+    {
+      "turn": 37,
+      "topic": "Pain Assessment",
+      "micro_intent": "nausea",
+      "role": "Partner",
+      "utterance": "Any nausea or vomiting?"
+    },
+    {
+      "turn": 38,
+      "topic": "Pain Assessment",
+      "micro_intent": "nausea",
+      "role": "Patient",
+      "utterance": "No, I'm not feeling that at all."
+    },
+    {
+      "turn": 39,
+      "topic": "Pain Assessment",
+      "micro_intent": "vomited",
+      "role": "Partner",
+      "utterance": "Have you vomited at all since the pain started?"
+    },
+    {
+      "turn": 40,
+      "topic": "Pain Assessment",
+      "micro_intent": "vomited",
+      "role": "Patient",
+      "utterance": "No, I haven't vomited."
+    },
+    {
+      "turn": 41,
+      "topic": "Pain Assessment",
+      "micro_intent": "dizzy",
+      "role": "EMT",
+      "utterance": "Have you felt dizzy or lightheaded since the pain started?"
+    },
+    {
+      "turn": 42,
+      "topic": "Pain Assessment",
+      "micro_intent": "dizzy",
+      "role": "Patient",
+      "utterance": "No, never felt that."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "vomited",
+      "role": "EMT",
+      "utterance": "That's good. You haven't mentioned any vomiting or blood in your stool?"
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "vomited",
+      "role": "Patient",
+      "utterance": "No, just the pain in the chest."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_assessment_heart_lungs",
+      "role": "Partner",
+      "utterance": "Your lung sounds are clear. Everything on both sides sounds normal."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "We tried to place an IV in your arm but were not able to. Any unusual numbness or pain there?"
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "Not from the arm. Just chest pain. No numbness in my legs or arms."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse-76, regular."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations-12, normal in depth."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood Pressure-159 over 83."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Spo2-100%."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood Glucose-135 mg/dL."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG-sinus rhythm, no ST segment abnormalities seen on 4-lead monitor."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're going to attach you for a 4 lead EKG now."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "CV - EKG - 4 lead monitoring performed."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "It's also part of the protocol to give you aspirin to help reduce cardiac risk."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "ASA 324 mg oral administered now."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're now going to do a 12-lead EKG for more detailed assessment."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "CV - EKG - 12 lead obtained successfully."
+    },
+    {
+      "turn": 60,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We are following protocol 2-1 for chest pain with suspected cardiac causes."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse now 65. Respirations-17. Blood Pressure-158 over 84. Spo2-99%. EKG still shows sinus rhythm."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "bgl",
+      "role": "Partner",
+      "utterance": "Blood glucose is undetectable now."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We'll be transporting you non-emergently to [COMPANY_NAME] for further evaluation. Is that acceptable?"
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Securing you on the stretcher using a five-point harness now."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "preparation_for_transport",
+      "role": "EMT",
+      "utterance": "You are now ready for transport. We'll be with you until the emergency staff接手."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "hand_over",
+      "role": "Partner",
+      "utterance": "Patient condition did not substantially change during transport. Transport was non-emergent."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "hand_over",
+      "role": "EMT",
+      "utterance": "No worsening of symptoms or significant changes. No additional interventions given."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "hand_over",
+      "role": "EMT",
+      "utterance": "We are placing you on bed 21 and giving a full report to staff RN."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "You're now in their care. Is there anything else you want to share about your symptoms?"
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Patient",
+      "utterance": "The pain is still there. Thank you for the care."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "I appreciate your trust. Let the nurses know there was a partial IV start in your extremity vein, the attempt was on the arm or leg."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Part of the care also involved aspirin for suspected AICD issues, and the 12-lead ECG was performed."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "He had a history of DVT and anemia. His medications include pantoprazole, Xarelto, vitamin B6, and cyanocobalamin."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No known recent changes in mental status."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "We have your baseline vitals recorded, no significant deviations during our time on scene."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No additional interventions required."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "The patient remained complaint of sharp chest pain, but pain did not radiate or come with vomiting, dizziness, or significant shortness of breath."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Patient denied nausea and dizziness during the whole interaction."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Blood glucose level taken at 135 initially and undetectable on second reading."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "IV start attempted in left forearm but unsuccessful."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "ASA administered per protocol for AICD and chest pain protocol 2-1."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "4-lead and 12-lead EKGs both done and showed no ST segment abnormalities, sinus rhythm."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No change in mental status during initial and reassessment."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "EMT team ensured all baseline data was documented and interpreted."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Patient transported non-emergent to [COMPANY_NAME] for continued evaluation."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Transport was smooth, patient remained stable throughout."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No new interventions or emergent symptoms during transport."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Aspirin, EKGs and documentation are part of standard protocol for cardiac chest pain."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Patient is alert, oriented, and in no apparent distress."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Last food intake reported as around noon at office, no unusual sour or acidic stomach symptoms."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No allergic reactions to medications or beverages during care."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No known lightheadedness, though pain was severe enough to prompt direct care."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Was not short of breath at time of transport."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Initial and reassessment pulse steady, active and palpable, no drop-off from baseline."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Skin remains warm, dry, and normal throughout checkups."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Patient did not report cough or respiratory symptoms in consultation beyond chest discomfort."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No depression or side effects of medications mentioned recently."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "History of DVT noted, no surgical complications or reoccurrence."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No recent falls or illnesses that may have exacerbated chest symptoms."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Anemia and DVT history may have been evaluated at initial or primary care."
+    },
+    {
+      "turn": 101,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Medication list complete and cited-no indications of missed therapies."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No patient interventions, beyond education, was needed."
+    },
+    {
+      "turn": 103,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Patient coordinates well with care team and was willing to receive EKG monitoring and education."
+    },
+    {
+      "turn": 104,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No resistance to emergency care seen at all."
+    },
+    {
+      "turn": 105,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "EMT team used verbal confirmation and body language to ensure patient understanding."
+    },
+    {
+      "turn": 106,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Pain remained constant rather than waxing or waning."
+    },
+    {
+      "turn": 107,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Patient condition good enough for non-emergent transport but remains a priority patient for ED intake."
+    },
+    {
+      "turn": 108,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No repeat checks for IV site or circulation needed during transport."
+    },
+    {
+      "turn": 109,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "All baseline vital signs consistent with prior measures and no history of hypotension or hypoglycemia."
+    },
+    {
+      "turn": 110,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "All initial findings were fully reported to the clinical team upon exit."
+    },
+    {
+      "turn": 111,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Asymptomatic beyond chest pain; no shifts in demeanor or comfort during care."
+    },
+    {
+      "turn": 112,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Patient remains unresponsive to manipulations of comparable arm or leg beyond IV site."
+    },
+    {
+      "turn": 113,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Was not endorsing abdominal pain or digestive distress."
+    },
+    {
+      "turn": 114,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Blood pressure consistent with young adult male with no current stroke or renal pathologies evident."
+    },
+    {
+      "turn": 115,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No rashes or visible signs of PV teeth or gum disease, no heme-positive secretions noted."
+    },
+    {
+      "turn": 116,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "GCS remained at 15 per EMT team interpretation and recheck."
+    },
+    {
+      "turn": 117,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No abnormal vital signs, equal and symmetrical breath sounds upon primary and secondary check."
+    },
+    {
+      "turn": 118,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Colorimetric and hemodynamic stability preserved throughout resuscitation."
+    },
+    {
+      "turn": 119,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Patient maintained spontaneous respirations with supportive monitoring tools available."
+    },
+    {
+      "turn": 120,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No neurological deficits or sudden shifts post-intervention."
+    },
+    {
+      "turn": 121,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No chest movement discrepancies or unequal expansion seen during breathing check."
+    },
+    {
+      "turn": 122,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Patient's posturing distinctly non-hypoxic and suggests comfort while mildly distressed."
+    },
+    {
+      "turn": 123,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No obstructive or stridorous breathing evident on primary or following assessment."
+    },
+    {
+      "turn": 124,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Siting of past DVT addressed and reviewed during critical NP samples."
+    },
+    {
+      "turn": 125,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Past anemia and current B vitamins intact and balanced from context of information."
+    },
+    {
+      "turn": 126,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No stomach or renal pain contributing to patient's movement."
+    },
+    {
+      "turn": 127,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Conscious during all phases of resuscitation and communicated clearly."
+    },
+    {
+      "turn": 128,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Patient had no difficulty swallowing or speaking during entire encounter."
+    },
+    {
+      "turn": 129,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No visual or auditory complaints, eye function normal during orientation checks."
+    },
+    {
+      "turn": 130,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No musculoskeletal strains or chest injuries reported in initial work history chart."
+    },
+    {
+      "turn": 131,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "No documentation of incident or trauma to explain onset of pain per history review."
+    },
+    {
+      "turn": 132,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Final patient status as alerted and cooperating due to EMT team's consistent follow-up and communication."
+    },
+    {
+      "turn": 133,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "All interventions and assessments done in a timely manner and well documented."
+    },
+    {
+      "turn": 134,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No limb ischemia or cyanosis, bleeding, or paresthesia reported from IV location."
+    },
+    {
+      "turn": 135,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Skin found unbroken, showing no signs of shock, infection, or allergic response."
+    },
+    {
+      "turn": 136,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No statistical deviations from prior EH baseline during time period of field response."
+    },
+    {
+      "turn": 137,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Care team followed all aspects of EMSP management, from ground to hospital."
+    },
+    {
+      "turn": 138,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Documentation complete and correctly associated with correct field protocols."
+    },
+    {
+      "turn": 139,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "Patient ready for hospital intake with all data passed over properly per standing protocol."
+    },
+    {
+      "turn": 140,
+      "topic": "Handoff",
+      "micro_intent": "hand_off_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "No unknown or unresolved issues during field dosing or monitoring changes."
+    }
+  ]
+}

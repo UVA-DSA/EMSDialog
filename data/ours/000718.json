@@ -1,0 +1,813 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000718",
+  "protocol": [
+    "general - cardiac arrest (protocol 2 - 7)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 2 en route for unconscious patient at --Address Redacted-- Apt #1977."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Jamal, an EMS crew chief with our rescue squad. What led you to call 911 tonight?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "It's my mother. She collapsed in the bathtub. I rushed in, but she didn't respond."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Can you hear me? Can you open your eyes? (No response.)"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Medic",
+      "utterance": "Eyes are not opening. GCS component eye is 1."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Medic",
+      "utterance": "No verbal response. GCS component verbal is 1."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Medic",
+      "utterance": "She doesn't move, even with palpation and gentle pressure. GCS component motor is 1. Total GCS is 3."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "Medic",
+      "utterance": "Airway appears patent. Partner, can you suction or note any obstruction?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "Partner",
+      "utterance": "There's some emesis near the airway which I cleared with suction. No obstruction noted."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Medic",
+      "utterance": "No spontaneous breathing. Partner, did you auscultate any breath sounds?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "Absent breath sounds on exam. Patient is apneic with no lung sounds."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Medic",
+      "utterance": "Respiratory rate is 20 breaths per minute with assisted BVM breathing."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Medic",
+      "utterance": "No palpable radial pulse. Partner, check for carotid."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Partner",
+      "utterance": "No carotid pulse. Skin is wet, but color appears normal."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Initial pulse is 0. Now assisted, but no palpable peripheral pulses."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration initially at 0 but improved with assist to 20."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is undetectable manually."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 0 on initial assessment."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Monitor shows asystole."
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst",
+      "role": "Medic",
+      "utterance": "No pain expressed. Pain is currently at 0 level."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Medic",
+      "utterance": "Bystander, can you confirm your mother's age and your name?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "She is 50. My name is Angela."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_of_present_illness",
+      "role": "Medic",
+      "utterance": "How long was she already this way when you arrived?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "I came in and she was already down. Possible sudden collapse."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_of_present_illness",
+      "role": "Medic",
+      "utterance": "Understood. You mentioned drug use history."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "Yes, she has a past history but I don't know if she used tonight."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "Skin is wet, presumed from the water in the bathtub, no bruising observed."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Pupils are about 3 mm, fixed and non-reactive. No neck rigidity observed."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Medic",
+      "utterance": "Symmetrical chest movements not observed, no deformities noted."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Initiating manual CPR. Two-person compressions to maintain depth."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Using two-provider technique due to her size and the bathtub difficulty."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "She is now on the floor. Using some pieces of clothing to assist in securing the extraction."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "BVM breaths at 20 per minute. Continuation of assisted breathing."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Placing ECG leads. Continuous monitoring shows asystolic rhythm."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Initiating a King LT airway for advanced airway management."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Confirming King LT with ETCO₂."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Switching to Autopulse device for sustained compressions."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Medic",
+      "utterance": "Administering 1mg epinephrine via intraosseous line at 00:30."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Epinephrine given, returned to manual compressions."
+    },
+    {
+      "turn": 40,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Following protocol 2-7 for cardiac arrest as per EMS standing orders."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Rhythm remains asystolic. No improvement with first epinephrine."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "At 00:35, delivered epinephrine again. Still no return of spontaneous breathing or circulation."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Point-of-care glucose strips failed. Attempting another intraosseous line."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Attempted second IO at 00:28 and succeeded."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Administered second dose of naloxone at 2mg to cover possible opioid involvement."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Still asystolic. Three doses of epinephrine with no rhythm return."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose via second IO at 00:40 confirms low or undetectable."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Bystander, do you know where your mother prefers to be taken?"
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "[COMPANY_NAME] is her hospital of choice."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Secure her to the stretcher. Ensure mechanism is locked before movement."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Secure and locked. Ready for transport."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Loading onto ambulance. Continuous monitoring and airway secured en route to [COMPANY_NAME]."
+    },
+    {
+      "turn": 53,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "Partner",
+      "utterance": "Airway remains patent during transfer."
+    },
+    {
+      "turn": 54,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "Still no spontaneous breathing. Breath sounds remain absent on both sides."
+    },
+    {
+      "turn": 55,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Partner",
+      "utterance": "Peripheral pulses continue to be absent. Skin remains wet with no signs of pooling or paleness."
+    },
+    {
+      "turn": 56,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She looked like she was near fainting before collapsing."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No signs of rashes, moles, or visible birthmarks observed during airway positioning."
+    },
+    {
+      "turn": 58,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Medic",
+      "utterance": "No voluntary movement observed in any limb during examination."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Head appears normal in shape. No signs of trauma or deformity."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Medic",
+      "utterance": "No visible obstruction, drainage, or deformities noted."
+    },
+    {
+      "turn": 61,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "Partner",
+      "utterance": "Airway is secured with King LT."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Medic",
+      "utterance": "Administering epinephrine at 00:40. Confirming IV line access."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG confirms continued asystole."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Medic",
+      "utterance": "No gross motor movement. No deformities, angulation, or compromise to the extremities noted."
+    },
+    {
+      "turn": 65,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_of_present_illness",
+      "role": "Medic",
+      "utterance": "Bystander, did she show any signs like confusion or near-fainting before this?"
+    },
+    {
+      "turn": 66,
+      "topic": "History of Present Illness",
+      "micro_intent": "history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "Yes, I think she looked like she was going to faint before collapsing."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Medic",
+      "utterance": "Breath sounds not heard bilaterally, regardless of positioning."
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin turgor appears abnormal due to wetness from the bath. Unable to determine temperature."
+    },
+    {
+      "turn": 69,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "No response to painful stimulus. Motor response remains GCS 1."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Partner, we need to continue with compressions and monitor rhythm."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Partner",
+      "utterance": "No obvious rectal bleeding, no visible urination or normal stools."
+    },
+    {
+      "turn": 72,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "Medic",
+      "utterance": "Confirming King LT position with capnography is stable."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Scheduled fluids and oxygen via BVM are being maintained."
+    },
+    {
+      "turn": 74,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "Breathing remains at 20 via assisted BVM. No signs of self-respiration."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Neck veins are flat, no signs of jugular venous distension."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ still at 0 with assisted breathing."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Medic",
+      "utterance": "Glucose in the second IO line was attempted to confirm, but results are still pending."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No signs of petechia or purpura after moving patient to different surface."
+    },
+    {
+      "turn": 79,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Patient remains in unresponsive state with no opening of eyes to stimulus."
+    },
+    {
+      "turn": 80,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Still flatline on EKG, no improvement detected."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Medic",
+      "utterance": "No visible obstruction or foreign body in airway post-repositioning."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Second IO line confirmed stable and functioning for medication administration."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Medic",
+      "utterance": "No signs of trauma to chest or deformity in cardio thoracic system."
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Head circumference and shape are normal, no signs of swelling or bruising."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "No bite marks, stings, or rashes identified on body during movement to stretcher."
+    },
+    {
+      "turn": 86,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Medic",
+      "utterance": "No peripheral pulse present. Radial and carotid remain absent."
+    },
+    {
+      "turn": 87,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Administered naloxone at 00:36 via IO line. No known response yet."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Medic",
+      "utterance": "No signs of tenderness, rigidity, or guarding upon light palpation."
+    },
+    {
+      "turn": 89,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Preparing epinephrine for next round of medication protocol."
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Medic",
+      "utterance": "No pelvic issues reported, no signs of trauma to reproductive organs."
+    },
+    {
+      "turn": 91,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Rhythm unchanged. Still in asystole."
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Medic",
+      "utterance": "No swelling or damage to the vertebral column or back noted."
+    },
+    {
+      "turn": 93,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Continuing compressions at 100-120 per minute. Need less resistance to improve depth."
+    },
+    {
+      "turn": 94,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Partner",
+      "utterance": "No signs of epistaxis or drainage from the mouth and nose."
+    },
+    {
+      "turn": 95,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Bidirectional communication in progress with fire for expedited access to patient."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Patient is now safely on transports. No new interventions during transfer."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "EMS2 on scene. Keeping patient at [COMPANY_NAME] as per daughter's request."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Transport is clear and personnel are en route."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Medic",
+      "utterance": "Reviewing interventions timeline and dosage of medications given so far."
+    },
+    {
+      "turn": 100,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "She had history of drug abuse, but I can't verify last time or night of usage."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "Partner",
+      "utterance": "No response to pain stimulus observed."
+    },
+    {
+      "turn": 102,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_onset",
+      "role": "Medic",
+      "utterance": "Patient was quietly sitting before collapse. No screams or pain observed."
+    },
+    {
+      "turn": 103,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_quality",
+      "role": "Partner",
+      "utterance": "No pain behaviors, facial expressions, or grimacing observed."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Alive but in no condition to provide consent for treatment or transport."
+    },
+    {
+      "turn": 105,
+      "topic": "Reassessments",
+      "micro_intent": "redo_vital_signs",
+      "role": "Partner",
+      "utterance": "Still no spontaneous breaths, pulse remains absent."
+    },
+    {
+      "turn": 106,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Continuing compression with autopulse device. Need in place of fatigue."
+    },
+    {
+      "turn": 107,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "No signs of orbital swelling, jaw swelling or signs of asphyxia."
+    },
+    {
+      "turn": 108,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No signs of hives or generalized rash seen during transport."
+    },
+    {
+      "turn": 109,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Medic",
+      "utterance": "No blood or unusual body fluids from perineal or anal regions."
+    },
+    {
+      "turn": 110,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "No visible signs of medullary concussion or neural deficits observed."
+    },
+    {
+      "turn": 111,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Medic",
+      "utterance": "Tongue is not swollen, and mouth cavity is free from obstructions."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "All secondary assessments completed. No further steps before transport."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All equipment fully secured. Ready for transport to [COMPANY_NAME]."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Cease compressions during transport. Continue assisted breathing and monitoring."
+    },
+    {
+      "turn": 115,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Confirming flatline again at 00:40 per record."
+    }
+  ]
+}

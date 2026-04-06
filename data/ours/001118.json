@@ -1,0 +1,785 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001118",
+  "protocol": [
+    "injury - general trauma management (protocol 4 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a traffic incident at Ninth and Broad. Male bicyclist struck by a vehicle. No altered mental status reported."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hello, my name is Justin, I'm a Paramedic with the rescue squad. What was it that made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I got hit by a car while riding my bike and I hurt my leg. It hurts really bad."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "call_type_traffic_transportation_incident",
+      "role": "Bystander",
+      "utterance": "He stopped at the corner and as he started to pedal, the pickup truck hit him from behind."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Paramedic",
+      "utterance": "Can you tell me your name?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "Sure, I'm Mike."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Paramedic",
+      "utterance": "Good. What county are we in?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "[CITY] County."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Paramedic",
+      "utterance": "That's good. What day is today?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "Uhm... Thursday?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Paramedic",
+      "utterance": "That's close enough. Can you tell me what happened?"
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "alert",
+      "role": "Paramedic",
+      "utterance": "Great. You seem alert."
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Partner",
+      "utterance": "Eye opening is spontaneous and both pupils are open."
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "You're answering our questions. That's good."
+    },
+    {
+      "turn": 15,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "Motor response appears intact. He's responding appropriately to touch."
+    },
+    {
+      "turn": 16,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "Paramedic",
+      "utterance": "You appear alert and oriented in all four categories: person, place, time, and event."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Your airway is clear. I'm going to briefly test it, okay?"
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Okay."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Airway is patent and not obstructed at this time."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "You seem to be breathing normally now."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations are stable at 18 per minute. Breath sounds are clear and equal bilaterally."
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "No signs of distress, and breathing effort is non-labored."
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is 95 and strong. Blood pressure is 201 over 95."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "Your skin is warm and dry. No open bleeding, right?"
+    },
+    {
+      "turn": 25,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Patient",
+      "utterance": "Right, no heavy bleeding. Just some scrapes."
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "tachycardia",
+      "role": "Partner",
+      "utterance": "Slight tachycardia observed. The pulse increased slightly to 96 later."
+    },
+    {
+      "turn": 27,
+      "topic": "Primary Assessment",
+      "micro_intent": "hypertension",
+      "role": "Paramedic",
+      "utterance": "Your blood pressure is elevated, but there's no severe issue identified."
+    },
+    {
+      "turn": 28,
+      "topic": "Primary Assessment",
+      "micro_intent": "vision_changes",
+      "role": "Paramedic",
+      "utterance": "Have you noticed any changes in your vision or double images?"
+    },
+    {
+      "turn": 29,
+      "topic": "Primary Assessment",
+      "micro_intent": "vision_changes",
+      "role": "Patient",
+      "utterance": "Nope, I can see fine."
+    },
+    {
+      "turn": 30,
+      "topic": "Primary Assessment",
+      "micro_intent": "headache",
+      "role": "Paramedic",
+      "utterance": "Any headache or pressure in your head?"
+    },
+    {
+      "turn": 31,
+      "topic": "Primary Assessment",
+      "micro_intent": "headache",
+      "role": "Patient",
+      "utterance": "No headache, no dizziness. Head feels fine."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Where do you feel the most pain right now?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It's mainly on my left leg and up my thigh."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Is there pain in any other areas?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Just small scrapes on my right arm and elbow and a little on my upper leg."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___medications",
+      "role": "Paramedic",
+      "utterance": "Are you on any regular medications?"
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___medications",
+      "role": "Patient",
+      "utterance": "No, I don't take anything regularly."
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___allergies",
+      "role": "Paramedic",
+      "utterance": "Do you have any allergies?"
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___allergies",
+      "role": "Patient",
+      "utterance": "I'm allergic to sulfa, so watch out with meds."
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___pertinent_past_medical_history",
+      "role": "Paramedic",
+      "utterance": "What medical issues have you had in the past?"
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "No major health issues. Nothing significant."
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___last_oral_intake",
+      "role": "Paramedic",
+      "utterance": "When was the last time you ate something?"
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e___last_oral_intake",
+      "role": "Patient",
+      "utterance": "Maybe around lunchtime, I was out riding so not sure."
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Partner",
+      "utterance": "Tell us what you remember from the incident."
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Patient",
+      "utterance": "I was starting to pedal from a stop. The truck was going pretty fast and out of nowhere hits me."
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Paramedic",
+      "utterance": "What did the driver do after the crash?"
+    },
+    {
+      "turn": 47,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_the_event",
+      "role": "Bystander",
+      "utterance": "The driver said he was on the phone, but stayed by the truck."
+    },
+    {
+      "turn": 48,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___onset",
+      "role": "Paramedic",
+      "utterance": "On a scale of 0 to 10, how bad is the pain now?"
+    },
+    {
+      "turn": 49,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___onset",
+      "role": "Patient",
+      "utterance": "I'd say about an 8."
+    },
+    {
+      "turn": 50,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___provocation",
+      "role": "Paramedic",
+      "utterance": "What seems to make the pain worse?"
+    },
+    {
+      "turn": 51,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___provocation",
+      "role": "Patient",
+      "utterance": "Even light touch makes it worse."
+    },
+    {
+      "turn": 52,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___quality",
+      "role": "Paramedic",
+      "utterance": "How would you describe the pain?"
+    },
+    {
+      "turn": 53,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___quality",
+      "role": "Patient",
+      "utterance": "Sharp and throbbing."
+    },
+    {
+      "turn": 54,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___radiation",
+      "role": "Paramedic",
+      "utterance": "Does the pain move or stay in place?"
+    },
+    {
+      "turn": 55,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___radiation",
+      "role": "Patient",
+      "utterance": "It stays right in my calf and up to the knee."
+    },
+    {
+      "turn": 56,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___time",
+      "role": "Paramedic",
+      "utterance": "When did you first notice the pain?"
+    },
+    {
+      "turn": 57,
+      "topic": "Pain Assessment",
+      "micro_intent": "o_p_q_r_s_t___time",
+      "role": "Patient",
+      "utterance": "Right after the impact. It's been pretty constant since."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam___presence_of_bruises_abrasions_lacerations",
+      "role": "Paramedic",
+      "utterance": "You have scratches on your right arm and left leg-something we'll take note of."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam___gross_visual_examination",
+      "role": "Paramedic",
+      "utterance": "There's no obvious swelling or deformity to your head or neck."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam___gross_visual_examination",
+      "role": "Partner",
+      "utterance": "Helmet is intact and no visible signs of head trauma. Pupils equal and reactive."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fracture",
+      "role": "Paramedic",
+      "utterance": "You mention the leg pain is intense. Do you have trouble using it?"
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fracture",
+      "role": "Patient",
+      "utterance": "Nope. I can't put any weight on it. Very painful."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam___gross_motor_and_sensory_function",
+      "role": "Paramedic",
+      "utterance": "Can you feel my touch on both hands and feet?"
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam___gross_motor_and_sensory_function",
+      "role": "Patient",
+      "utterance": "Yes, I do. Both sides feel normal."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam___gross_motor_and_sensory_function",
+      "role": "Paramedic",
+      "utterance": "Can you move your toes and fingers to the best of your ability?"
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam___gross_motor_and_sensory_function",
+      "role": "Patient",
+      "utterance": "I can, but the left leg is too painful."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "spinal_immobilization",
+      "role": "Partner",
+      "utterance": "We're not doing full spinal immobilization at this time, but we're limiting movement as much as possible."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 201 over 95."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 95 and strong."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 18 and stable."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 98% on room air."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows normal sinus rhythm."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose measured at 88. We'll check again to track."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Vital Signs",
+      "micro_intent": "gcs",
+      "role": "Paramedic",
+      "utterance": "Glasgow Coma Scale is 15, which means you're alert and oriented."
+    },
+    {
+      "turn": 75,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "We're going to administer fentanyl for pain. Quick shot coming up."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "You might feel a slight burning sensation, but the meds will help reduce pain."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Vital signs after meds: pulse is 96, and BP slightly lowered to 175 over 102."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Fentanyl administered-100 mcg. It can also cause nausea-do you feel unwell?"
+    },
+    {
+      "turn": 79,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Patient",
+      "utterance": "Yeah, I'm starting to feel a bit nauseous."
+    },
+    {
+      "turn": 80,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "We'll give you some Zofran to address the nausea. It should settle soon."
+    },
+    {
+      "turn": 81,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "We're setting up a cardiac monitor now-just need to place a few pads."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Got the pads in place and adjusting leads now."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "EKG shows normal sinus rhythm with the monitor."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "4 lead EKG set-readings are coming in normal."
+    },
+    {
+      "turn": 85,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "We are following the Injury - General Trauma Management Protocol. Condition remains stable."
+    },
+    {
+      "turn": 86,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "No signs of critical compromise. Moving forward with assessment and treatment."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs___spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation now at 94%."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs___bp",
+      "role": "Partner",
+      "utterance": "Blood pressure at 175/102-mild drop remains but stable."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs___pulse",
+      "role": "Partner",
+      "utterance": "Heart rate up to 96."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs___resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate still at 18."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "You still have pain in the left leg. Would you like more medication?"
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Patient",
+      "utterance": "If that's okay. I'd like to be more comfortable."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___onset",
+      "role": "Paramedic",
+      "utterance": "On a scale of 0 to 10, how bad is the pain now?"
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___onset",
+      "role": "Patient",
+      "utterance": "Still 8, maybe 7 now. A bit better."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___provocation",
+      "role": "Paramedic",
+      "utterance": "What seems to aggravate it the most?"
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___provocation",
+      "role": "Patient",
+      "utterance": "Any movement or pressure-especially on the lower leg."
+    },
+    {
+      "turn": 97,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___quality",
+      "role": "Paramedic",
+      "utterance": "What type of pain is it now?"
+    },
+    {
+      "turn": 98,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___quality",
+      "role": "Patient",
+      "utterance": "Less sharp but still throbbing."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___radiation",
+      "role": "Paramedic",
+      "utterance": "Does the pain stay in the same spot or move?"
+    },
+    {
+      "turn": 100,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___radiation",
+      "role": "Patient",
+      "utterance": "Exactly, stays in the leg and thigh."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment___time",
+      "role": "Paramedic",
+      "utterance": "It's definitely improving from before the medications."
+    },
+    {
+      "turn": 102,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness___signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Is the leg getting better with treatment?"
+    },
+    {
+      "turn": 103,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness___signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Not much better. I'm still not walking on it."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "We were heading to [COMPANY_NAME], but there are protestors. We'll now take you to [COMPANY_NAME]."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Scoop Stretcher was used to move you with care. The injured leg is supported."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You are secure and being monitored closely during transport."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Doors are sealed and I will make the transmission now."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Ready to roll. Vitals are steady."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Ambulance is en route to [COMPANY_NAME]. You are stable."
+    },
+    {
+      "turn": 110,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs___spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains at 94%."
+    },
+    {
+      "turn": 111,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs___bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is at 175/102, no major drop at this time."
+    }
+  ]
+}

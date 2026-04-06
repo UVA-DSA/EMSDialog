@@ -1,0 +1,526 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003267",
+  "protocol": [
+    "general - cardiac arrest (protocol 2 - 7)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 4 responding for a reported cardiac arrest in the city of [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Brian. We've been dispatched for a reported cardiac arrest at --Address Redacted-. Could you confirm the patient's current status?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Firefighter",
+      "utterance": "We responded to a cardiac arrest call. The patient was found unresponsive in bed by facility staff who initiated CPR and BVM ventilations."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Is the patient currently being resuscitated with manual compressions and ventilations?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Firefighter",
+      "utterance": "Yes. They used an AED but it did not recommend shocks. The patient is pulseless and apneic."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Firefighters, is the patient responding to any verbal or painful stimuli?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Firefighter",
+      "utterance": "No response to verbal or physical stimuli. GCS is 3."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Are you ready to take over airway management? We'll need a direct laryngoscope and ETT."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Firefighter",
+      "utterance": "Handing over BVM. McGrath scope is ready for use."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Visualizing vocal cords. ETT inserted to 23cm at the lips. Capnography showing good waveform."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Bilateral breath sounds confirmed. ETT is secured with tube holder and x-collar."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respiratory rate observed at 12 per minute using ETT. Capnography remains stable during ventilations."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "No pulse detected manually. EKG reveals regular electrical activity with no palpable pulses. PEA suspected."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Let's prepare for IO access to support medication administration. Please document baseline vitals."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_pulse",
+      "role": "Partner",
+      "utterance": "No pulse detected. Preparing for non-invasive systolic assessment with manual effort unlikely to yield results."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_rr",
+      "role": "Partner",
+      "utterance": "Respiration rate is 12/min via ventilations from ETT. No spontaneous efforts observed."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_blood_pressure",
+      "role": "Partner",
+      "utterance": "No systolic or diastolic pressure reported. Blood pressure is 0/0."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose could not be obtained. CPR initiated before testing was feasible-documented in EPCR as 0."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is not measurable at this stage, recorded per EPCR as 0."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_ekg",
+      "role": "Partner",
+      "utterance": "EKG rhythm currently noted as asystolic per monitor findings. No organized rhythm identified at this moment."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Do we have a confirmed medical history for the patient prior to arrest?."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Partner",
+      "utterance": "Medical history available: CV-Primary hypertension. No additional illness detailed in documentation."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Any known allergies or medications contributing to presentation?."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Partner",
+      "utterance": "No listed allergies or current medications. Unable to confirm at this time per staff report in EPCR."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_call",
+      "role": "EMT",
+      "utterance": "What precipitated this event according to staff or documentation?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_call",
+      "role": "Firefighter",
+      "utterance": "Reported unresponsive by facility staff around 22:27. No previous complaints on file related to arrest timeline."
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "Given current unresponsiveness, can we assume no pain specific to this event at this time?."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Firefighter",
+      "utterance": "Yes. Pain level is noted as 0, consistent with unresponsive state in EPCR documentation."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "What skin findings, if any, were noted by responders upon arrival?."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Firefighter",
+      "utterance": "Slightly pale and cool. No definitive death signs like trismus or dependent lividity observed according to EPCR."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "other_exams",
+      "role": "EMT",
+      "utterance": "Any trauma or abnormalities in head, neck, or torso noted in assessment?."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "other_exams",
+      "role": "Firefighter",
+      "utterance": "No evidence of trauma, bite marks, or lacerations in body per documentation from EPCR."
+    },
+    {
+      "turn": 33,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Given asystole and PEA findings, we initiate protocol 2-7: cardiac arrest, per standard of care in EPCR documentation."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "IO access established in right humerus. First dose of epinephrine administered at 22:35 per EPCR."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedure",
+      "role": "EMT",
+      "utterance": "AutoPulse CPR device applied. Mechanical compressions initiated after manual hands-off event noted at 22:32 in EPCR."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Firefighter",
+      "utterance": "Second epinephrine dose given via IO at 22:41. No physical or vasopressor response observed at this time, per EPCR."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse notes still 0; resp rate at 12. EKG remains asystolic. No ROSC, as documented in EPCR and confirmed in charting."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Mechanical CPR rate 120/min consistently. Maintaining waveform capnography with ventilations going smoothly at current rpm."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Second epinephrine dose shows no immediate response in physiology with EKG flat. Pulse remains non-palpable."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Normal capnography detected at 12/min. No loss of waveform detected in any segment of transport."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Would you confirm [COMPANY_NAME] as the most appropriate receiving facility for this patient's presentation?."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Firefighter",
+      "utterance": "Confirmed. Closest facility suitable for continued resuscitation and care. Suggested at time of refractive hand-off."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Mechanical CPR still active on assigned stretcher. Patient is fully secured for transport per EPCR note at time of hand-off."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Firefighter",
+      "utterance": "Capnography is stable throughout transport with no reductions in waveform. Ventilations per order."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport has commenced at 22:38 EPCR time. PEA rhythm noted throughout en route without improvement."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains at zero; EKG rhythm remains asystolic backbone of arrest as recorded in EPCR."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Epinephrine dose number three prepped at 22:53, ready for intraosseous administration per protocol 2-7."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Firefighter",
+      "utterance": "No spontaneous cardiac rhythms detected through interpretation of EKG at time of final dose."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Defibrillator preparation initiated. No rhythm changes detected. Patient remains pulseless."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Any changes in status of IO or ETT?."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Firefighter",
+      "utterance": "IO remains in place. Airway secure with capnography wave maintained at 12/min. No compromise reported en route."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "ALS care remains full to transport phase per Protocol 2-7. Current machine mechanical CPR continues accurately until ED hand-off."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Firefighter",
+      "utterance": "Confirmed: ALS care completed in transit. No anticipated cardiac activity predicted upon ED arrival."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient transported as pulseless and apneic at all points. ROSC not noted in EPCR per protocol adherence."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Firefighter",
+      "utterance": "DNR mentioned upon intake but no documentation available. ED was pre-notified of possible but no legal copy present at time of intake."
+    },
+    {
+      "turn": 56,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "Patient is 95F, found supine and unresponsive at time of first responder arrival with no palpable pulse or spontaneous breaths."
+    },
+    {
+      "turn": 57,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "Initial actions: BVM taken to field ventilation and then transition to ETT by EMS. AutoPulse inserted for continuous compressions at time of hand-off."
+    },
+    {
+      "turn": 58,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "IO placed in right humeral, two epinephrine doses given. Supported via capnography over waveform for duration of transport."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "No return of spontaneous circulation documented in field. Patient continued PEA on cardiac monitor and remained pulseless en route to facility."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Firefighter",
+      "utterance": "DNR status mentioned but not documented. All EMS actions were consistent with ROSP as per agreed protocol."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Partner",
+      "utterance": "All medications given via intraosseous access. Capnography was continually confirmed. Final tube secure done with x-collar."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "Firefighters aid maintained compressions until mechsystolic systems were activated. ETT remained confirmed all through transport route."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Firefighter",
+      "utterance": "ED aware, bed prepared at room 30. AutoPulse detached on arrival. All steps followed with no complications during transport."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "Arrived as deceased at 22:53 according to EPCR -all care had been provided within standard."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Firefighter",
+      "utterance": "Patient confirmed as deceased upon arrival per EPCR documentation. All interventions fully supported as per field directive and protocols."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Partner",
+      "utterance": "All patients' belongings or documentation in-hand. No signs of trauma or spillage at arrival. No unusual findings at transport end."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "No allergies, medications, or current intake on file that would affect transport or hospital disposition recorded as of arrival."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Partner",
+      "utterance": "Primary hypertension only in medical history. All field visits and care steps followed per circumstance with full adherence to guidelines."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "No prior complaints reported contrary to distress parameters as of admission. No extraneous event or history at narrator's perception."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Firefighter",
+      "utterance": "Pt arrived as deceased and immediately under facility care. All equipment on note site. Patients were fully prepped and documented in NPCs."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "DNR status was not able to be verified at scene. Staff were advised accordingly and no coercion was used to continue resuscitation."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Partner",
+      "utterance": "All hand-off logs and EPCRs updated. Standard care followed in agreement with state and facility regulations."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "EMT",
+      "utterance": "Equipment sanitized and transported for facility review before end of shift. All documentation and patient care reports ready for check-in on site."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "summarize_care",
+      "role": "Partner",
+      "utterance": "All field documentation and patient data reviewed. Units and logs are updated. Transport was a complete and stable experience."
+    }
+  ]
+}

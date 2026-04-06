@@ -1,0 +1,765 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001015",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)",
+    "injury - general trauma management (protocol 4 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for convulsions/seizure at --Address Redacted--."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. We heard you've had a medical emergency. Can we get a word from the patient?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "The patient is unresponsive and appeared to be in a state of overdose."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Do you hear me? Can you respond at all?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "No eye movement observed."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "There is no verbal response."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "No response to painful stimulation. GCS is 3."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Is the airway patent?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Bystander",
+      "utterance": "Firefighters assisted with airway using BVM."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Breathing rate is approximately 12, but with snoring sounds."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Skin is cool and clammy, with a strong and rapid pulse."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 114 and strong."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations at 12 per minute, with snoring."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 107/66."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is 188."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 100% on BVM."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus tachycardia."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "Syringes and heroin were in the car."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "Car struck median at low speed; no high-speed impact."
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Paramedic",
+      "utterance": "On a scale from 0 to 10, can you rate any pain you're feeling?"
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Bystander",
+      "utterance": "Not applicable. Patient is unresponsive and not verbalizing pain."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Skin is pale, cool, and clammy."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest",
+      "role": "Paramedic",
+      "utterance": "Chest is stable with no paradoxical movements."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "Pupils are pinpoint. Any neck pain or trauma?"
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Paramedic",
+      "utterance": "Abdomen is soft, non-tender, and non-distended."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "Paramedic",
+      "utterance": "Pelvis appears stable with no abnormal movement."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "lower_extremities_exam",
+      "role": "Paramedic",
+      "utterance": "No deformities or trauma to lower extremities observed."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "Paramedic",
+      "utterance": "No abnormalities or deformities in the back noted."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_positives",
+      "role": "Bystander",
+      "utterance": "Syringes and heroin were in the car. Opioid overdose likely."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_negatives",
+      "role": "Bystander",
+      "utterance": "No pain, vomiting, or trauma reported at this stage."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Paramedic",
+      "utterance": "Any current medications you're taking?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Bystander",
+      "utterance": "She is not on any medications."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Paramedic",
+      "utterance": "Any medical history or allergies?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "None reported."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Paramedic",
+      "utterance": "When was the last time she had food or drink?"
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Bystander",
+      "utterance": "Unknown, but she might have skipped dinner."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "Bystander",
+      "utterance": "She drove home after using heroin."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "upper_extremities_exam",
+      "role": "Paramedic",
+      "utterance": "Track marks are noted on the left hand."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse has increased to 134 now."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration rate increased to about 18."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is now 123/79."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is now 0."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG still shows sinus tachycardia without arrhythmias."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Starting four-lead ECG monitoring. Okay?"
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "ECG monitoring is initiated."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "IV is now being started in the left arm."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Naloxone IV is the next step. Consent?"
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Consent obtained from family member potentially present."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "0.75 mg of Naloxone has been administered with confirmation by two providers."
+    },
+    {
+      "turn": 50,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_emergency_protocol",
+      "role": "Medics",
+      "utterance": "Handling an opioid overdose. Protocol 7-1 will be followed."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse now at around 114."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiration rate remains stable."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "Any further treatment needed at this point?"
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "We will reassess oxygen saturation while continuing ECG monitoring."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Partner",
+      "utterance": "Continuing no presence of pain."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "No new findings in past history or medications."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "pertinent_negatives",
+      "role": "Paramedic",
+      "utterance": "She is not experiencing pain, bleeding, or trauma."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "pertinent_positives",
+      "role": "Bystander",
+      "utterance": "Pertinent positives: heroin use, pinpoint pupils, snoring respirations observed."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "She now responds to basic commands and opens her eyes."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG continues to show sinus tachycardia."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "Is she fit for transport to her home?"
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "Yes, the patient insists on being taken home by her mother."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She is prepared for extrication and secured onto the stretcher."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "She refuses transport to the hospital and insists on going home."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Her respirations are now normal and adequate on their own."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Circulation is strong and stable with no compromise."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "She is extricated with full precautions in place."
+    },
+    {
+      "turn": 68,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_positives",
+      "role": "Bystander",
+      "utterance": "She admitted to heroin use following relapse."
+    },
+    {
+      "turn": 69,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_history",
+      "role": "Bystander",
+      "utterance": "She has a prior history of opioid addiction and was clean for over a year."
+    },
+    {
+      "turn": 70,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "She is speaking clearly and answering basic questions now."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "pertinent_negatives",
+      "role": "Paramedic",
+      "utterance": "No chest or abdominal discomfort reported after waking up."
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "oxygen",
+      "role": "Paramedic",
+      "utterance": "BVM provided noticeable oxygen improvement prior to EMS arrival."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "Airway and vitals remain stable following naloxone."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Sinus tach remains stable with no rhythm change."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Safe extrication, no incident involving sharps or substances reported."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "She is now inside the ambulance and securely fastened."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "She is alert and coherent during transport setup."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "Reiterates intent to go home despite hospital advice."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All procedures completed and transport is initialized."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Partner",
+      "utterance": "Pain not a factor in this case."
+    },
+    {
+      "turn": 81,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Paramedic",
+      "utterance": "Can you confirm her age and weight?"
+    },
+    {
+      "turn": 82,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "She is 26 years old and weighs 91 kg."
+    },
+    {
+      "turn": 83,
+      "topic": "Primary Assessment",
+      "micro_intent": "Preferred posture to maintain airway",
+      "role": "Paramedic",
+      "utterance": "Neutral position is being maintained."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "correlate_with_interventions",
+      "role": "Partner",
+      "utterance": "She is breathing independently with a clear airway."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "etco2",
+      "role": "Partner",
+      "utterance": "ET CO2 is being monitored as part of ongoing assessment."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains consistent."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Continuous EKG monitoring is ongoing."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Safe handling of patient."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "She is fully fit for in-transit condition."
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No active bleeding or trauma on skin."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "Pulse and venous status remain strong and stable."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Home transport signed, refusal documented."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "Partner",
+      "utterance": "No injuries noted to facial, ear, or oral areas."
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "monitor_vitals",
+      "role": "Partner",
+      "utterance": "BP consistent with earlier data."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "EMS ambulance is en route with ongoing vital monitoring."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Patient and family coordinator aware, coordination complete."
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "No change in status observed in the abdomen."
+    },
+    {
+      "turn": 98,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Current status remains stable."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Ongoing monitoring shows no complication risk."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Estimated travel time is around 13 minutes with no critical delay."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "exit_to_protocol",
+      "role": "Paramedic",
+      "utterance": "All findings documented under protocol 7-1."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "Home destination confirmed and signed documentation available."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Ambulance en route, monitored and ready."
+    },
+    {
+      "turn": 104,
+      "topic": "Reassessments",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "All interventions documented and preparation for handoff complete."
+    },
+    {
+      "turn": 105,
+      "topic": "Reassessments",
+      "micro_intent": "a_ox4",
+      "role": "Paramedic",
+      "utterance": "She is now alert and oriented-assessing person, place, time, and situation (A&Ox4)."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Local authorities and family are informed for final activities."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All transport safety steps executed, patient remains stable."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All items securely handled and transport conditions current."
+    }
+  ]
+}

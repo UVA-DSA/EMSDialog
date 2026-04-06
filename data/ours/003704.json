@@ -1,0 +1,841 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003704",
+  "protocol": [
+    "general - cardiac arrest (protocol 2 - 7)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for a suspected gunshot wound in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "medic",
+      "utterance": "Hi, I'm Liam, and this is Jasmine. We're EMTs here to help. What happened?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "bystander",
+      "utterance": "He was shot in the head. I heard a gunshot about ten minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "medic",
+      "utterance": "Assessing GCS. Eyes open? Verbal response? Motor response?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "medic",
+      "utterance": "Eyes are closed, no spontaneous eye opening observed."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "medic",
+      "utterance": "No verbal sounds or speech from the patient."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "medic",
+      "utterance": "No movement in response to pain or touch."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "medic",
+      "utterance": "Airway is obstructed with blood from the head wound. No breathing observed."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "medic",
+      "utterance": "Patient is apneic. Respiratory rate is 0."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "medic",
+      "utterance": "No pulse palpable at carotid or femoral."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "partner",
+      "utterance": "SpO2 is 56% by pulse oximeter."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "partner",
+      "utterance": "Respiratory rate is 0."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "partner",
+      "utterance": "No pulse at radial or carotid."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "partner",
+      "utterance": "Blood pressure is undetectable. It's reading 0 over 0."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "partner",
+      "utterance": "Blood glucose is undetectable as well, reading zero."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "partner",
+      "utterance": "EKG is powering on now. Let me check."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "partner",
+      "utterance": "EKG shows PEA, no organized rhythm."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "partner",
+      "utterance": "Skin is warm, dry, and has normal coloration except for blood in hair."
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "partner",
+      "utterance": "Large blood pool at the back of his head, blood in eyes, ears, nose, and mouth."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio_exam",
+      "role": "partner",
+      "utterance": "No chest trauma noted. Heart sounds absent."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "partner",
+      "utterance": "Bleeding appears active, coming from posterior head, with unclotted and clotted blood mixing."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "medic",
+      "utterance": "Any estimate on patient's age or known medical history?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "bystander",
+      "utterance": "Looks to be late 20s. No known information available."
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "medic",
+      "utterance": "Any signs of pain or movement?"
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "bystander",
+      "utterance": "None. He's unresponsive, no reaction to stimuli."
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "obvious_death",
+      "role": "medic",
+      "utterance": "I'm seeing major head injury with wound. Compatible with trauma, no signs of life."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "document_penetrating_wound",
+      "role": "medic",
+      "utterance": "Head wound consistent with penetrating injury, likely due to gunshot."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "medic",
+      "utterance": "Initiating CPR at 100-120 compressions per protocol."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "Compressions initiating, BVM due to airway obstruction from blood."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "Ventilations struggling, airway blocked by freely draining blood."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "Ready to place 4-lead monitoring and recheck rhythm."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "4-lead ECG applied, rhythm is still PEA."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "Resuming compressions. No improvement in signs of circulation."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "partner",
+      "utterance": "Monitor shows PEA without discernible electrical activity."
+    },
+    {
+      "turn": 35,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "medic",
+      "utterance": "Per protocol 2-7, penetrating injury with PEA, no pulse, no sustained circulation."
+    },
+    {
+      "turn": 36,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "medic",
+      "utterance": "Our efforts appear to be increasing blood flow from wound. Ending compressions."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Rechecking pulse, respiration, and rhythm as per protocol."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "ekg",
+      "role": "partner",
+      "utterance": "Line still PEA, transitioning to idioventricular around 20 bpm."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "SpO2 remains at 56%. No improvement."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Pulse unchanged, still absent."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Respiratory rate still reads zero."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Blood pressure still zero over zero."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "No signs of ROSC. EKG is unremarkable in rhythm."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "medic",
+      "utterance": "Request confirmed, pronouncing patient on scene as per [COMPANY_NAME] directives."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "Body to remain uncovered based on [COMPANY_NAME] orders."
+    },
+    {
+      "turn": 46,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "Deceased, penetrating head injury, no signs of life even with resuscitation."
+    },
+    {
+      "turn": 47,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "partner",
+      "utterance": "Procedures terminated under protocol. Body became unresponsive during scene."
+    },
+    {
+      "turn": 48,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "Per ePCR, pt fell to idioventricular PEA and was deemed incompatible with life."
+    },
+    {
+      "turn": 49,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "partner",
+      "utterance": "[CITY] firefighter initiated CPR before EMS arrived; We followed along per protocol."
+    },
+    {
+      "turn": 50,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "medic",
+      "utterance": "Any identification on the patient or clues about identity?"
+    },
+    {
+      "turn": 51,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "bystander",
+      "utterance": "No jacket, no wallet. He just appeared on the street from what I saw."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "partner",
+      "utterance": "Considering the wound, we should classify the trauma as gunshot."
+    },
+    {
+      "turn": 53,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "medic",
+      "utterance": "Airway remains non-compliant with BVM due to freely draining blood from wound."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "partner",
+      "utterance": "Blood also noted on face and within ears. No signs of puncture wounds elsewhere."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "partner",
+      "utterance": "Per ePCR, glucose levels are zero. No hypoglycemia to consider."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "Per protocol and indications, no medication administered due to no signs of life."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "medic",
+      "utterance": "No medical history obtainable. Patient was unresponsive at all times."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_assessment",
+      "role": "partner",
+      "utterance": "No deformities or chest wall fractures identified during inspection."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "partner",
+      "utterance": "Records unfilled, no readings obtainable due to patient status."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio_exam",
+      "role": "partner",
+      "utterance": "No need for thoracic auscultation. No signs of cardiac activity."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_procedure",
+      "role": "partner",
+      "utterance": "BVM continued as per protocol. Airway remains obstructed with draining blood."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "partner",
+      "utterance": "Remainder of body shows no injuries besides the head trauma."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "partner",
+      "utterance": "Small blood stain at center of chest due to EMS compressions."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "medic",
+      "utterance": "No pain evident. Patent paths like motor and sensory unresponsive."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Verifying all vital signs a final time per ePCR."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "partner",
+      "utterance": "Blood pressure 0/0, spo2 56, glucose 0."
+    },
+    {
+      "turn": 67,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "medic",
+      "utterance": "Per [COMPANY_NAME] directive and protocol 2-7, resuscitation is terminated."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "partner",
+      "utterance": "Pain O.Q.R.S.T. not applicable-patient unresponsive and non-verbal."
+    },
+    {
+      "turn": 69,
+      "topic": "Exit to Protocol",
+      "micro_intent": "exit",
+      "role": "medic",
+      "utterance": "Pronounced deceased at 02:22."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "pronouncement_complete",
+      "role": "medic",
+      "utterance": "Body remains under RFD monitoring."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "No movement of the body after pronouncement."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "Confirming all ePCR fields filled."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "partner",
+      "utterance": "No known allergies, meds, or medical history obtained."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "Per protocol, no drugs were given."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "medic",
+      "utterance": "Direct cause of trauma is head wound."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "redo_vital_signs",
+      "role": "partner",
+      "utterance": "Respiration, pulse, BP, SpO2 unchanged."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "redo_secondary_assessment",
+      "role": "partner",
+      "utterance": "Head wound is main injury on scene."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "pronouncement_complete",
+      "role": "medic",
+      "utterance": "Per ePCR, all findings are consistent with this."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "Final patient disposition noted."
+    },
+    {
+      "turn": 80,
+      "topic": "Exit to Protocol",
+      "micro_intent": "exit",
+      "role": "medic",
+      "utterance": "Per ePCR, no reversal of findings. Patient pronounced unresponsive."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "No indications for transport, based on [COMPANY_NAME] request."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "partner",
+      "utterance": "Nothing to document here. No alive found."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "partner",
+      "utterance": "Per ePCR, [CITY] firefighter gave initial CPR efforts."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "partner",
+      "utterance": "4-lead ECG stayed on for process details."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "[COMPANY_NAME] directs body left uncovered."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "partner",
+      "utterance": "Last known activity: unresponsive in street with penetrating head injury."
+    },
+    {
+      "turn": 87,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "bystander",
+      "utterance": "He was in the middle of the street when I heard a gunshot."
+    },
+    {
+      "turn": 88,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "medic",
+      "utterance": "Any last meal or drink observed?"
+    },
+    {
+      "turn": 89,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "bystander",
+      "utterance": "No, he was just lying there. No evidence of recent intake."
+    },
+    {
+      "turn": 90,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "medic",
+      "utterance": "Any prior indications of pain or injury?"
+    },
+    {
+      "turn": 91,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "partner",
+      "utterance": "None apparent per initial street scene report."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "partner",
+      "utterance": "No observable pain descriptors-patient non-verbal and unresponsive."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "redos",
+      "role": "partner",
+      "utterance": "Completed all repeated checks as per protocol."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "All documentation aligned with ePCR and per findings."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "partner",
+      "utterance": "Example: 02:17 manual CPR performed after 1 attempt."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "Patient was found, assessed, started on protocol 2-7."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "location",
+      "role": "partner",
+      "utterance": "Scene confirmed last for 30 minutes before emergency response call."
+    },
+    {
+      "turn": 98,
+      "topic": "History of Present Illness",
+      "micro_intent": "pert_past_medical_history",
+      "role": "medic",
+      "utterance": "Any history of head trauma or neurological disease?"
+    },
+    {
+      "turn": 99,
+      "topic": "History of Present Illness",
+      "micro_intent": "pert_past_medical_history",
+      "role": "partner",
+      "utterance": "No indication available."
+    },
+    {
+      "turn": 100,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "medic",
+      "utterance": "No known meds administered or carried."
+    },
+    {
+      "turn": 101,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "medic",
+      "utterance": "No allergic reactions observed or reported."
+    },
+    {
+      "turn": 102,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio_exam",
+      "role": "partner",
+      "utterance": "Head wound is main exam point. No chest injury identified."
+    },
+    {
+      "turn": 103,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "partner",
+      "utterance": "Blood draining from ears, nose, and eyes-consistent with penetrating trauma."
+    },
+    {
+      "turn": 104,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "partner",
+      "utterance": "No visible blood in clothing or groin region."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "pronouncement_complete",
+      "role": "partner",
+      "utterance": "Body was inspected, but no signs of trauma or injury elsewhere."
+    },
+    {
+      "turn": 106,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "partner",
+      "utterance": "BVM continued per protocol; airway found occluded with freely draining blood."
+    },
+    {
+      "turn": 107,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "partner",
+      "utterance": "EKG remains at idioventricular PEA, no improvement in rhythm."
+    },
+    {
+      "turn": 108,
+      "topic": "Reassessments",
+      "micro_intent": "redos",
+      "role": "medic",
+      "utterance": "Completing all final checks as per protocol."
+    },
+    {
+      "turn": 109,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "partner",
+      "utterance": "No interventions able to reverse the patient's status."
+    },
+    {
+      "turn": 110,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "Scene secured by [COMPANY_NAME] after EMS protocol completed."
+    },
+    {
+      "turn": 111,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "partner",
+      "utterance": "Blood in hair and cheeks, consistent with penetrating head wound."
+    },
+    {
+      "turn": 112,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "partner",
+      "utterance": "Blood glucose of 0, as per ePCR, consistent with a patient in arrest."
+    },
+    {
+      "turn": 113,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "bystander",
+      "utterance": "He was alone. Gunshot sounded from nearby."
+    },
+    {
+      "turn": 114,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "medic",
+      "utterance": "Final check on ekg confirmed PEA at 0222."
+    },
+    {
+      "turn": 115,
+      "topic": "Transport",
+      "micro_intent": "pronouncement_complete",
+      "role": "medic",
+      "utterance": "Body not moved. [COMPANY_NAME] marks custody from this point forward."
+    },
+    {
+      "turn": 116,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "partner",
+      "utterance": "Final ePCR logged and approved by protocol."
+    },
+    {
+      "turn": 117,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "partner",
+      "utterance": "Repeat BP reads 0/0. No vascular integrity signs present."
+    },
+    {
+      "turn": 118,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Confirming body is not moved per [COMPANY_NAME] instruction."
+    },
+    {
+      "turn": 119,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_RPD",
+      "role": "medic",
+      "utterance": "Final review: protocol followed, no transport given and no reversals."
+    }
+  ]
+}

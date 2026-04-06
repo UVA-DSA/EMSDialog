@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003883",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for chest pain in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex with the rescue squad. What brought you to call 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've had chest and stomach pain for about two hours. It's really sharp in my stomach and tight in my chest."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "My name is Jennifer, or Jen."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "place",
+      "role": "Medic",
+      "utterance": "What city do we have here?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "place",
+      "role": "Patient",
+      "utterance": "I'm in [CITY]."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "time",
+      "role": "Medic",
+      "utterance": "What day is today?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "time",
+      "role": "Patient",
+      "utterance": "It's October 8th."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Medic",
+      "utterance": "Please squeeze my fingers to show me you can."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": ""
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Ms. Jen, let me count your breaths."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen level is at 98%."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 82, strong and consistent."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 118 over 58."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "We couldn't get a glucose reading. No blood sugar tested on scene."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "We're going to check your heart's rhythm now."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "You look like you're breathing okay."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "Would you say your breathing is normal?"
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "It's unlabored."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Your pulse is strong, breathing is 16, and skin looks fine-you're not pale or diaphoretic."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Tell me about the pain again."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It's a stabbing pain in my lower left belly, a little into the right side, and tight in my chest."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. pertinent_past_medical_history",
+      "role": "Medic",
+      "utterance": "What medical conditions do you have?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have Crohn's and I have a history of Major Depression, Bipolar Disorder, and Anxiety."
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. onset",
+      "role": "Medic",
+      "utterance": "When did the pain start?"
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. onset",
+      "role": "Patient",
+      "utterance": "It started about two hours ago."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. quality",
+      "role": "Medic",
+      "utterance": "Can you describe the type of pain?"
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. quality",
+      "role": "Patient",
+      "utterance": "Stabbing, mostly in the lower left area."
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. radiation",
+      "role": "Medic",
+      "utterance": "Does it go anywhere else?"
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. radiation",
+      "role": "Patient",
+      "utterance": "Some into the right side."
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. severity",
+      "role": "Medic",
+      "utterance": "How bad is it on a scale from 0 to 10?"
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. severity",
+      "role": "Patient",
+      "utterance": "A 10. It's very bad."
+    },
+    {
+      "turn": 34,
+      "topic": "Primary Assessment",
+      "micro_intent": "denied_dizziness",
+      "role": "Medic",
+      "utterance": "Any dizziness or lightheadedness?"
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "denied_dizziness",
+      "role": "Patient",
+      "utterance": "No."
+    },
+    {
+      "turn": 36,
+      "topic": "Primary Assessment",
+      "micro_intent": "denied_headache",
+      "role": "Medic",
+      "utterance": "Headache this evening?"
+    },
+    {
+      "turn": 37,
+      "topic": "Primary Assessment",
+      "micro_intent": "denied_headache",
+      "role": "Patient",
+      "utterance": "No, no headaches."
+    },
+    {
+      "turn": 38,
+      "topic": "Primary Assessment",
+      "micro_intent": "denied_shortness_of_breath",
+      "role": "Medic",
+      "utterance": "Any shortness of breath with the pain?"
+    },
+    {
+      "turn": 39,
+      "topic": "Primary Assessment",
+      "micro_intent": "denied_shortness_of_breath",
+      "role": "Patient",
+      "utterance": "No, not really."
+    },
+    {
+      "turn": 40,
+      "topic": "Primary Assessment",
+      "micro_intent": "denied_vomiting",
+      "role": "Medic",
+      "utterance": "How about any vomiting?"
+    },
+    {
+      "turn": 41,
+      "topic": "Primary Assessment",
+      "micro_intent": "denied_vomiting",
+      "role": "Patient",
+      "utterance": "A couple of times, no blood in it though."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "location_of_gcs_15",
+      "role": "Partner",
+      "utterance": "Your GCS is 15."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "no_ste",
+      "role": "Partner",
+      "utterance": "The EKG shows no ST-elevation."
+    },
+    {
+      "turn": 44,
+      "topic": "Primary Assessment",
+      "micro_intent": "weakness",
+      "role": "Medic",
+      "utterance": "Any weakness with the pain?"
+    },
+    {
+      "turn": 45,
+      "topic": "Primary Assessment",
+      "micro_intent": "weakness",
+      "role": "Patient",
+      "utterance": "A little, but I can still move okay."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam_location",
+      "role": "Medic",
+      "utterance": "Pain is in your lower left quadrant with some in the right lower part as well."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "nonspecific_t_wave_abnormality",
+      "role": "Partner",
+      "utterance": "12-lead shows nonspecific T wave abnormality and no ectopy."
+    },
+    {
+      "turn": 48,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Have you noticed blood in your stool or anything?"
+    },
+    {
+      "turn": 49,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, I noticed slight GI bleeding earlier."
+    },
+    {
+      "turn": 50,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Also, how do you feel about nausea?"
+    },
+    {
+      "turn": 51,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I had some nausea and it led to vomiting earlier."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Placing a 4-lead monitor now."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Now taking a 12-lead EKG."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "We're about to give you aspirin for heart-related purposes."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Medic",
+      "utterance": "Here is 324 mg of aspirin."
+    },
+    {
+      "turn": 56,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Medic",
+      "utterance": "Proceeding with the chest pain protocol, protocol 2-1."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Let's check vitals again. Pulse first."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is 86."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Breathing is still 16, unlabored."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 121 over 70."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen remains at 98%."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "We'll take you to [COMPANY_NAME]."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Can you walk with us to the ambulance?"
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Yeah, I can try."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Easy does it. Let's help you sit down."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Okay, trying now."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Here we go, up and under the stretcher."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Secured in all directions."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_ED",
+      "role": "Medic",
+      "utterance": "Arriving at [COMPANY_NAME] with a 48-year-old female with acute abdominal pain and non-specific T wave changes."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_ED",
+      "role": "Medic",
+      "utterance": "Vitals are stable, 324 mg aspirin administered, and 12-lead EKG taken on scene."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_ED",
+      "role": "Medic",
+      "utterance": "No STE found, EKG otherwise normal. GCS remains 15."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_ED",
+      "role": "Medic",
+      "utterance": "She has a history of Crohn's, as well as Major Depression, Bipolar Disorder, and Anxiety."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_ED",
+      "role": "Medic",
+      "utterance": "She reported pain in the LLQ and some in the RLQ with slight GI bleeding noted earlier."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_ED",
+      "role": "Medic",
+      "utterance": "No signs of pallor or diaphoresis. She also denied dizziness, headache, and shortness of breath."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_ED",
+      "role": "Medic",
+      "utterance": "All interventions have been documented."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_ED",
+      "role": "ED Staff",
+      "utterance": "No, we're ready for transfer."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "destination_confirm",
+      "role": "Medic",
+      "utterance": "You're going to [COMPANY_NAME], agree?"
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "destination_confirm",
+      "role": "Patient",
+      "utterance": "Yeah, okay with me."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "final_secure",
+      "role": "Medic",
+      "utterance": "Let's load you in, we are good to go."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "final_secure",
+      "role": "Partner",
+      "utterance": "All right, her oxygenation and breathing are stable."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "final_secure",
+      "role": "Medic",
+      "utterance": "Preparing for transport now."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "No further medications or procedures were needed."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Medic",
+      "utterance": "Let's check your pain again now."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Patient",
+      "utterance": "It's still a 10 out of 10, still in my lower left area with some into the right side."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "How about your skin? Any rashes or strange skin changes?"
+    },
+    {
+      "turn": 86,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "No, I'm fine there."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Let me check your eyes and pupils."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "You got a 4 for eyes-open independently, then a 5 for verbal, and 6 for motor overall."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Medic",
+      "utterance": "What about your mouth or throat-any burning or dryness?"
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Patient",
+      "utterance": "No, I don't think so."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Medic",
+      "utterance": "Breath sounds are clear bilaterally."
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Medic",
+      "utterance": "We'll assess your stomach more closely."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Medic",
+      "utterance": "Seems soft, but you've described lower belly pain mainly."
+    },
+    {
+      "turn": 94,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Medic",
+      "utterance": "Any issues with your legs, back, or arms?"
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "No, I can still move them."
+    },
+    {
+      "turn": 96,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. past_medical_history",
+      "role": "Medic",
+      "utterance": "Any other recent illnesses?"
+    },
+    {
+      "turn": 97,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. last_oral_intake",
+      "role": "Medic",
+      "utterance": "When was the last time you ate or had fluids?"
+    },
+    {
+      "turn": 98,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. last_oral_intake",
+      "role": "Patient",
+      "utterance": "Not sure... maybe 3 or 4 hours ago."
+    },
+    {
+      "turn": 99,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spO2",
+      "role": "Partner",
+      "utterance": "Spo2 is consistently at 98 throughout."
+    },
+    {
+      "turn": 100,
+      "topic": "Take Interventions",
+      "micro_intent": "no_procedures_performed",
+      "role": "Partner",
+      "utterance": "No interventions needed after initial care."
+    }
+  ]
+}

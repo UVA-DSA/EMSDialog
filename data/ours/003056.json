@@ -1,0 +1,739 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003056",
+  "protocol": [
+    "medical - abdominal pain (protocol 3 - 2)",
+    "medical - supraventricular tachycardia (including atrial fibrillation) medical - tachycardia medical - ventricular tachycardia with a pulse (protocol 2 - 8)",
+    "ob/gyn - pre-term labor (pre-term labor) (protocol 6 - 12)",
+    "general - pain control (protocol 3 - 10)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for potential pregnancy concern, possible miscarriage at 25-year-old female reporting flank pain and vaginal bleeding."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex with the rescue squad. Can you tell us what brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I have severe left flank pain, vaginal bleeding, and I think I might be having a miscarriage."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "assess_mental_status",
+      "role": "EMT",
+      "utterance": "What is your name? Where are we today?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "assess_mental_status",
+      "role": "Patient",
+      "utterance": "My name is Jane. We're in [CITY]."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Your eyes are open and focused. Let's test how you respond to questions and commands."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "I can hear you and I can follow your questions."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you grasp my fingers and then release them when I say?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": ""
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is open, and you are breathing without assistance."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_clearance",
+      "role": "Partner",
+      "utterance": "Airway is patent and unobstructed. Patient is self-maintaining."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Let me assess your breathing pattern. Are you having any trouble breathing?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "resp_rate_and_depth",
+      "role": "EMT",
+      "utterance": "Respirations are 18, even, and of normal depth."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "cyanosis",
+      "role": "Partner",
+      "utterance": "No cyanosis observed in lips, hands, or nail beds."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "work_of_breathing",
+      "role": "EMT",
+      "utterance": "No signs of labored breathing, use of accessory muscles, or retractions."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "breath_sounds_bilateral",
+      "role": "Partner",
+      "utterance": "Bilateral breath sounds clear without adventitious sounds."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "asymmetric_chest",
+      "role": "EMT",
+      "utterance": "Chest expansion is symmetrical during respiration."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Let me take your pulse now. Does that feel okay?"
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "pulse_rate_quality",
+      "role": "Partner",
+      "utterance": "Pulse is 123, strong, and regular."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin_color",
+      "role": "EMT",
+      "utterance": "Your skin is pink with no evidence of pallor or jaundice (per ePCR)."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin_temperature",
+      "role": "Partner",
+      "utterance": "Skin appears warm and dry. No abnormal coolness or mottling found."
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "peripheral_pulses",
+      "role": "EMT",
+      "utterance": "All peripheral pulses strong and equal."
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "I'll take your blood pressure now."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 122 over 93."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Can you describe your symptoms in your own words?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_symptoms",
+      "role": "Patient",
+      "utterance": "I've had pelvic cramps moving to my left flank, and I noticed blood during bathroom visits."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Any known allergies to medications or substances?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "No allergies to medications or other substances."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Are you on any medications currently?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "No, I'm not taking any medications."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "med_history",
+      "role": "Partner",
+      "utterance": "You've had a normal pregnancy before; no complications from that?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "med_history",
+      "role": "Patient",
+      "utterance": "No, my prior pregnancy was uneventful."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "When did you last eat or drink something?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had dinner around 6 PM and haven't eaten much since."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "event_lead_up",
+      "role": "EMT",
+      "utterance": "Can you walk me through what happened today?"
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "event_lead_up",
+      "role": "Patient",
+      "utterance": "Around noon, I noticed blood when I urinated and passed a clot. That scared me and I called 911."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_menstrual",
+      "role": "Partner",
+      "utterance": "Can you tell me about your last menstrual cycle?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_menstrual",
+      "role": "Patient",
+      "utterance": "It was early April. I had unprotected sex and took an ovulation test that I now think may have been misinterpreted."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "ovulation_test",
+      "role": "EMT",
+      "utterance": "The test was positive, but you thought it meant pregnancy. When did you take it?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "ovulation_test",
+      "role": "Patient",
+      "utterance": "About a month ago. I was told it means pregnancy if it's positive, but I now realize that may not be accurate."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "foreign_body",
+      "role": "Partner",
+      "utterance": "You mentioned a concern about a foreign body. Tell us more."
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "foreign_body",
+      "role": "Patient",
+      "utterance": "I'm unsure if the blood is from the urethra or vagina, but I'm concerned about a possible blockage."
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "dark_urine",
+      "role": "EMT",
+      "utterance": "You've had difficulty urinating. Tell me about the color and how often."
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "dark_urine",
+      "role": "Patient",
+      "utterance": "It's dark and has a strong, bad smell. I've only gone a few times today."
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "urination_pain",
+      "role": "Partner",
+      "utterance": "Does urination cause pain or discomfort?"
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "urination_pain",
+      "role": "Patient",
+      "utterance": "Yes, it hurts when I urinate."
+    },
+    {
+      "turn": 47,
+      "topic": "History of Present Illness",
+      "micro_intent": "vaginal_bleeding",
+      "role": "EMT",
+      "utterance": "How much vaginal bleeding have you experienced?"
+    },
+    {
+      "turn": 48,
+      "topic": "History of Present Illness",
+      "micro_intent": "vaginal_bleeding",
+      "role": "Patient",
+      "utterance": "It's light, but I noticed it on the toilet tissue."
+    },
+    {
+      "turn": 49,
+      "topic": "History of Present Illness",
+      "micro_intent": "flank_pain",
+      "role": "Partner",
+      "utterance": "Tell me more about the flank pain. What does it feel like?"
+    },
+    {
+      "turn": 50,
+      "topic": "History of Present Illness",
+      "micro_intent": "flank_pain",
+      "role": "Patient",
+      "utterance": "Sharp, intermittent, and it gets worse with movement."
+    },
+    {
+      "turn": 51,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "EMT",
+      "utterance": "When did the pain first begin today?"
+    },
+    {
+      "turn": 52,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "Around 12 PM."
+    },
+    {
+      "turn": 53,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "Partner",
+      "utterance": "What seems to make the pain worse or better?"
+    },
+    {
+      "turn": 54,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "Patient",
+      "utterance": "Movement makes it worse. Sitting still helps a bit."
+    },
+    {
+      "turn": 55,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "How would you describe the pain? Is it sharp, dull, or burning?"
+    },
+    {
+      "turn": 56,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Patient",
+      "utterance": "Sharp and cramping at times."
+    },
+    {
+      "turn": 57,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Partner",
+      "utterance": "Has the pain moved from its original location?"
+    },
+    {
+      "turn": 58,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "It started in my pelvis and is now focused on my left flank."
+    },
+    {
+      "turn": 59,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "On a scale of 1 to 10, with 10 being the worst, how bad is the pain now?"
+    },
+    {
+      "turn": 60,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "About a 7."
+    },
+    {
+      "turn": 61,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Partner",
+      "utterance": "Is the pain constant or does it come and go?"
+    },
+    {
+      "turn": 62,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Patient",
+      "utterance": "It comes and goes, with flare-ups making it worse."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I'm now going to perform a skin examination."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_color",
+      "role": "Partner",
+      "utterance": "No jaundice or pallor. Skin color is appropriate as noted in documentation."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Your head and neck appear normal. Any neck pain?"
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "No neck pain or stiffness."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "eyes_pupils",
+      "role": "Partner",
+      "utterance": "Pupils are equal, round, and reactive."
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_mouth_throat_exam",
+      "role": "EMT",
+      "utterance": "No drainage, foreign bodies, or sores observed in ears, nose, or throat."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs",
+      "role": "Partner",
+      "utterance": "Let me listen to your lungs."
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "EMT",
+      "utterance": "Bilateral breath sounds are clear and symmetrical."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heart_sounds",
+      "role": "Partner",
+      "utterance": "Heart sounds are regular. No murmur or irregularities heard."
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Let me check your abdomen. Any pain or tenderness?"
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_shape_size",
+      "role": "Partner",
+      "utterance": "Abdomen is soft, not distended. No visible masses."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_bowel_sounds",
+      "role": "EMT",
+      "utterance": "Bowel sounds are not assessed due to the focus on reproductive and gynecological symptoms."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "Partner",
+      "utterance": "Pelvis is not tender or unstable during examination."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary",
+      "role": "EMT",
+      "utterance": "Vaginal bleeding is noted. No rectal bleeding."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "no_uterus_mass_tenderness",
+      "role": "Partner",
+      "utterance": "No signs of palpable masses or tenderness in the genital area."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "EMT",
+      "utterance": "Let's check your limbs and sensation."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_sensation",
+      "role": "Partner",
+      "utterance": "Sensation is intact. You can feel light touch in all extremities."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_motor",
+      "role": "EMT",
+      "utterance": "Full range of motion in all limbs with no reported difficulty or pain."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "peripheral_pulses",
+      "role": "Partner",
+      "utterance": "Pulses in all four extremities are strong and equal."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Your pulse is now 118, regular and strong."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are now 17 per minute."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Blood pressure is 116 over 76 now."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose was recorded at 102 earlier. We do not have a repeat value during transport."
+    },
+    {
+      "turn": 86,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "Blood oxygen level is currently 96%."
+    },
+    {
+      "turn": 87,
+      "topic": "Take Vital Signs",
+      "micro_intent": "gcs",
+      "role": "Partner",
+      "utterance": "Glasgow Coma Scale is 15-oriented and alert to person, place, time, and event."
+    },
+    {
+      "turn": 88,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Let me run a new EKG. Results include sinus tachycardia and premature ventricular contractions."
+    },
+    {
+      "turn": 89,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Artifact noted on EKG, but rhythm remains stable overall."
+    },
+    {
+      "turn": 90,
+      "topic": "Take Interventions",
+      "micro_intent": "cardiac_monitoring",
+      "role": "EMT",
+      "utterance": "Setting up a continuous cardiac monitor to track your heart."
+    },
+    {
+      "turn": 91,
+      "topic": "Take Interventions",
+      "micro_intent": "ekg_lead_monitoring",
+      "role": "Partner",
+      "utterance": "4-lead EKG monitoring is in place and online."
+    },
+    {
+      "turn": 92,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start_extremity",
+      "role": "EMT",
+      "utterance": "We are placing a peripheral IV in your arm for fluids."
+    },
+    {
+      "turn": 93,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start_extremity",
+      "role": "Partner",
+      "utterance": "IV placed in left antecubital vein in one attempt and working well."
+    },
+    {
+      "turn": 94,
+      "topic": "Take Interventions",
+      "micro_intent": "fluid_administration",
+      "role": "EMT",
+      "utterance": "We are giving you 600 mL of normal saline to help with hydration."
+    },
+    {
+      "turn": 95,
+      "topic": "Take Interventions",
+      "micro_intent": "ekg_outside",
+      "role": "Partner",
+      "utterance": "EKG shows sinus tach, premature ventricular contractions, and some minor artifact."
+    },
+    {
+      "turn": 96,
+      "topic": "Take Interventions",
+      "micro_intent": "ekg_artifact",
+      "role": "EMT",
+      "utterance": "Artifact is still present but does not appear to affect the overall rhythm."
+    },
+    {
+      "turn": 97,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_medical_abdominal_pain",
+      "role": "Partner",
+      "utterance": "Unit 3 is following protocol 3-2 (medical abdominal pain) and protocol 6-12 (pre-term labor)."
+    },
+    {
+      "turn": 98,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_ventricular_tach",
+      "role": "EMT",
+      "utterance": "Noting protocol 2-8 for ventricular tachycardia with a pulse."
+    },
+    {
+      "turn": 99,
+      "topic": "Exit to Protocol",
+      "micro_intent": "protocol_safety",
+      "role": "Partner",
+      "utterance": "Complete pre-transport preparation and ensuring full reporting for ED."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "EMT",
+      "utterance": "You are being taken to [COMPANY_NAME] for further care and evaluation today."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "stretcher_secured",
+      "role": "Partner",
+      "utterance": "Stretcher is now safely secured in the ambulance with all five straps in place."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "pre_transport_check",
+      "role": "EMT",
+      "utterance": "You are safe and stable for transport. IV line and cardiac monitor remain functional."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "direct_transport",
+      "role": "Patient",
+      "utterance": "Is the ride going to be smooth? I'm a bit concerned about the pain from movement."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "secure_transport",
+      "role": "Partner",
+      "utterance": "Movement is already minimized, and you will remain safe during transport."
+    }
+  ]
+}

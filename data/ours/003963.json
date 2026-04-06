@@ -1,0 +1,694 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003963",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for breathing difficulties at a residential location in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I have chest pain and I'm having a hard time breathing."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "It started about ten minutes ago and just hasn't let up."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "You mentioned chest pain. Can you explain it like you would to a friend?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "It hurts every time I breathe."
+    },
+    {
+      "turn": 7,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up_to_the_event",
+      "role": "Patient",
+      "utterance": "I already used my albuterol, but it didn't help."
+    },
+    {
+      "turn": 8,
+      "topic": "Pain Assessment",
+      "micro_intent": "intensity",
+      "role": "EMT",
+      "utterance": "On a scale from 1 to 10, how bad is the pain right now?"
+    },
+    {
+      "turn": 9,
+      "topic": "Pain Assessment",
+      "micro_intent": "intensity",
+      "role": "Patient",
+      "utterance": "It's a 10."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is elevated at 142 beats per minute."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 28 breaths per minute."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 107 over 61."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is at 94%, so we must keep you on oxygen."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "I need to check your blood sugar now. Can I have the side of your finger?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_assessment",
+      "role": "EMT",
+      "utterance": "Airway remains patent, and the patient is using accessory muscles to breathe."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "lung_sound_assessment",
+      "role": "Partner",
+      "utterance": "Along with rapid breathing, I can hear wheezing bilaterally."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Interventions",
+      "micro_intent": "initiate_procedure - cv_ecg_4_lead_monitoring",
+      "role": "Partner",
+      "utterance": "Initiating 4-lead ECG monitoring to check heart activity."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG shows sinus tachycardia-heart rate is fast and steady."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Interventions",
+      "micro_intent": "initiate_procedure - iv_start",
+      "role": "Partner",
+      "utterance": "I'm establishing intravenous access in the left forearm for medication."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is warm and dry with no signs of pallor."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "assessment_interventions",
+      "role": "EMT",
+      "utterance": "Would you be okay with some medication to assist with your breathing?"
+    },
+    {
+      "turn": 22,
+      "topic": "Take Interventions",
+      "micro_intent": "initiate_medication - albuterol_atrovent",
+      "role": "Partner",
+      "utterance": "Administering a combined albuterol and ipratropium nebulizer. This should open your airways and help you breathe better."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Are you able to recall today's date and your location?"
+    },
+    {
+      "turn": 24,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Can you walk over to the stretcher with my assistance?"
+    },
+    {
+      "turn": 25,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Yes, I should be able to."
+    },
+    {
+      "turn": 26,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She is secured on the stretcher and receiving 4 liters of oxygen. She's not in immediate distress but is still showing respiratory strain."
+    },
+    {
+      "turn": 27,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Based on your EKG findings, including possible inferior infarct and ischemia, [COMPANY_NAME] is the best care decision at this time."
+    },
+    {
+      "turn": 28,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 125 beats per minute, down from 142."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 24 breaths per minute."
+    },
+    {
+      "turn": 30,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is lower at 98 over 53."
+    },
+    {
+      "turn": 31,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "SpO2 has improved to 99% since we increased the oxygen flow."
+    },
+    {
+      "turn": 32,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - ekg",
+      "role": "Partner",
+      "utterance": "The rhythm is sinus tachycardia-heart is beating fast but regular."
+    },
+    {
+      "turn": 33,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions - give_medications",
+      "role": "EMT",
+      "utterance": "The combined albuterol and atrovent nebulizer is helping and the patient reports improvement."
+    },
+    {
+      "turn": 34,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions - give_medications",
+      "role": "Patient",
+      "utterance": "Yes, I feel a big difference since the treatment-thank you."
+    },
+    {
+      "turn": 35,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions - take_procedures",
+      "role": "Partner",
+      "utterance": "We've repeated the 12-lead EKG following protocol for further evaluation of heart activity."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "ambulation_status",
+      "role": "EMT",
+      "utterance": "Patient was able to ambulate with assistance onto the stretcher and is now positioned securely."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "exit_to_protocol",
+      "role": "EMT",
+      "utterance": "Emergency care and transport protocol is in place based on the EKG findings and clinical status."
+    },
+    {
+      "turn": 38,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She's sitting up and doing well for now."
+    },
+    {
+      "turn": 39,
+      "topic": "Handoff",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "We're transporting her to [COMPANY_NAME] in [CITY]."
+    },
+    {
+      "turn": 40,
+      "topic": "Handoff",
+      "micro_intent": "transfer_to_facility",
+      "role": "Partner",
+      "utterance": "Up ahead, transferring a 62-year-old female with COPD exacerbation, chest pain, and possible anterior ischemia per 12-lead EKG."
+    },
+    {
+      "turn": 41,
+      "topic": "Handoff",
+      "micro_intent": "triage",
+      "role": "Partner",
+      "utterance": "The patient was triaged on arrival at the hospital, but no beds were immediately available."
+    },
+    {
+      "turn": 42,
+      "topic": "Handoff",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Transfer destination at [COMPANY_NAME] remains unchanged."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "exit_to_protocol",
+      "role": "EMT",
+      "utterance": "Patient status consistent with medical protocol and transport deemed appropriate."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She was loaded safely onto the cot of the ambulance and is currently stable per most recent vitals."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG was updated again, consistent with prior findings-sinus tach."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We will continue 4-liter oxygen per medical plan."
+    },
+    {
+      "turn": 47,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "EMT",
+      "utterance": "Physician has been looped in and a report has been completed upon hospital arrival."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "She remains alert, oriented, and engaged in our conversation."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is stable enough for transport and no additional life threats are present."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Interpretation from the 12-lead shows signs of anterior ischemia and inferior changes."
+    },
+    {
+      "turn": 51,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "EMT",
+      "utterance": "You were always compliant with maintenance medications, right?"
+    },
+    {
+      "turn": 52,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "Patient",
+      "utterance": "Yes, I usually take albuterol, lisinopril, carvedilol, and prednisone."
+    },
+    {
+      "turn": 53,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "EMT",
+      "utterance": "Any known drug allergies we should know about?"
+    },
+    {
+      "turn": 54,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "Patient",
+      "utterance": "No known drug allergies."
+    },
+    {
+      "turn": 55,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Your past medical history includes COPD, hypertension, and CHF-correct?"
+    },
+    {
+      "turn": 56,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Yes, COPD for years, always had high blood pressure, and CHF after heart failure."
+    },
+    {
+      "turn": 57,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_oral_intake",
+      "role": "EMT",
+      "utterance": "What was your last meal and when did you have it?"
+    },
+    {
+      "turn": 58,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_oral_intake",
+      "role": "Patient",
+      "utterance": "It was about six hours ago, fish and rice with tea."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She's adjusting well to the environment and monitoring."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No signs of pain exacerbation or increased respiratory distress. Oxygen remains on 4 liters."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions - take_procedures",
+      "role": "Partner",
+      "utterance": "Second EKG was completed after medication and is consistent with findings."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "[COMPANY_NAME] is the ultimate destination as per base protocol and provider input."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll proceed to transfer, but monitored closely throughout ride."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She will likely be transferred to a bed once opening becomes available at the facility."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Preparations are completed! Advocate for early assignment."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Pulse check reads 124 BPM."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - resp",
+      "role": "Partner",
+      "utterance": "23 RPM on second tally."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Looks like stabilization continues per better airway response."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Current pathway forward is critical but transport is now routine."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Notes are expedited and hospital contact is ongoing."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions - take_procedures",
+      "role": "Partner",
+      "utterance": "Reran 12-lead-findings still consistent."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions - give_medications",
+      "role": "Partner",
+      "utterance": "Tried to repeat albuterol but observed no significant need."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Comfort is increasing as time passes and vitals behave predictably."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Pre-hospital plan confirmed and execution hits expected outcomes."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No life-threatening issues on board and document integrity verified."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Let's maintain 4L O2 until further notice."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No decompensation in site. Patient likely transported under surveillance."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Recommend hospital team check for subtle signs; our PQRST showed anterior concerns."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Good to go ahead. Keep on low dose oxygen and monitored trends."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "Partner",
+      "utterance": "Direct care to the care of hospital staff at hospital."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "No changes in patient status or transfer plans are pending."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions - give_medications",
+      "role": "EMT",
+      "utterance": "No immediate reversal agents are needed per last 30 minutes of process."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions - give_medications",
+      "role": "Partner",
+      "utterance": "No IV therapy changes are planned for now."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "Partner",
+      "utterance": "Communication to be completed at point of face-to-face interface."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All bags packed and secured in ambulance for full containment."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Assets for use will be documented and zeroed on intake."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Break down completed and report generated in CAD system."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Documenting destination and time of release now."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "EMT",
+      "utterance": "All prehospital care formally over-full transfer complete."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is safe, unobserved deterioration, and stable."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "Partner",
+      "utterance": "No interventions needed for the next segment."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Back to base and any closure needs handled."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "State of readiness returned and patent judgment assessed."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "Partner",
+      "utterance": "All links are closed in this clinical handoff."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "EPT moved successfully and safely."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Safe breach completed. All details foreseen."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Complex care model met and transfer executed."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient arrived at destination with stable status."
+    }
+  ]
+}

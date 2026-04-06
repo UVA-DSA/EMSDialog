@@ -1,0 +1,722 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000323",
+  "protocol": [
+    "medical - st elevation myocardial infarction (acs/ami) (protocol 2 - 2)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for breathing problems at an address in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Alex, an EMT. What made you call 911 tonight?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Severe back pain with shortness of breath starting about six days ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Good morning. Are you awake and able to talk?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Yes."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Medic",
+      "utterance": "You're alert and aware. Can you follow my finger with your eyes?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Yes, I can follow it."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Medic",
+      "utterance": "Can you squeeze my hand with your left?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "(responds with a firm squeeze)"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "Airway is open and clear with no signs of blockage."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_respiration",
+      "role": "Partner",
+      "utterance": "Breathing not labored, regular and depth normal."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "My respiratory rate is 16 per minute."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_respiration",
+      "role": "Medic",
+      "utterance": "I'll place this finger clip to see your oxygen saturation."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 86. Try to keep breathing normally."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is strong and rapid."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "At 159 beats per minute."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Skin is warm, dry, and normally colored. Let me check your blood pressure."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 131 over 94."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "abc",
+      "role": "Medic",
+      "utterance": "ABCs are stable. I need to set up a cardiac monitor now."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Attaching a four-lead monitor. Rhythm shows sinus tach and lateral ischemia."
+    },
+    {
+      "turn": 21,
+      "topic": "GCS",
+      "micro_intent": "gcs",
+      "role": "Medic",
+      "utterance": "Your GCS score is 15. Eye 4, Verbal 5, Motor 6."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_symptoms",
+      "role": "Medic",
+      "utterance": "Tell me more about this pain and how long you've had it."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_symptoms",
+      "role": "Patient",
+      "utterance": "I took some antibiotics, but nothing helped. I also have fever and chills."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_symptoms",
+      "role": "Medic",
+      "utterance": "Does breathing deeply worsen the shortness of breath?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, it definitely makes it worse."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_symptoms",
+      "role": "Medic",
+      "utterance": "Any dizziness or changes in vision?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_symptoms",
+      "role": "Patient",
+      "utterance": "No dizziness or vision issues."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_onset",
+      "role": "Medic",
+      "utterance": "When did the back discomfort begin for you?"
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_onset",
+      "role": "Patient",
+      "utterance": "It started about six days ago."
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_provocation",
+      "role": "Medic",
+      "utterance": "What seems to aggravate the pain?"
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_provocation",
+      "role": "Patient",
+      "utterance": "Breathing or moving really worsens it."
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_quality",
+      "role": "Medic",
+      "utterance": "How would you best describe the nature of the pain?"
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_quality",
+      "role": "Patient",
+      "utterance": "It feels like a burning in the lower back area."
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_radiation",
+      "role": "Medic",
+      "utterance": "Does the pain move? Into your neck or arms?"
+    },
+    {
+      "turn": 35,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_radiation",
+      "role": "Patient",
+      "utterance": "It sometimes goes to my neck, but not the arms."
+    },
+    {
+      "turn": 36,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_severity",
+      "role": "Medic",
+      "utterance": "On a 0 to 10 scale, how large is the pain?"
+    },
+    {
+      "turn": 37,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_severity",
+      "role": "Patient",
+      "utterance": "It's a 10 for me."
+    },
+    {
+      "turn": 38,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_time",
+      "role": "Medic",
+      "utterance": "Has the pain increased or decreased over time?"
+    },
+    {
+      "turn": 39,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_time",
+      "role": "Patient",
+      "utterance": "It has definitely gotten worse today."
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medication",
+      "role": "Medic",
+      "utterance": "Any medications you take regularly?"
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medication",
+      "role": "Patient",
+      "utterance": "I take Catapres on a daily basis."
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medication",
+      "role": "Partner",
+      "utterance": "No known drug allergies."
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_past_medical_history",
+      "role": "Medic",
+      "utterance": "What other medical conditions do you have?"
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have primary hypertension and hepatitis C."
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_last_oral_intake",
+      "role": "Medic",
+      "utterance": "When was the last time you ate or drank?"
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_last_oral_intake",
+      "role": "Patient",
+      "utterance": "I haven't eaten or drunk much due to the ongoing pain."
+    },
+    {
+      "turn": 47,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_events_leading",
+      "role": "Medic",
+      "utterance": "Any recreational drug use recently?"
+    },
+    {
+      "turn": 48,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_events_leading",
+      "role": "Patient",
+      "utterance": "I took some heroin this morning."
+    },
+    {
+      "turn": 49,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_events_leading",
+      "role": "Medic",
+      "utterance": "Meth use or alcohol use?"
+    },
+    {
+      "turn": 50,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_events_leading",
+      "role": "Patient",
+      "utterance": "No meth. No alcohol either."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No rashes, bruises, or skin breaks found. Skin appears normal."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "Any parts of your body not bothered at all?"
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "Everything is sensitive."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Pupils equal and reactive, mental status is clear."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Can you tell me where you are now?"
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "I'm at home, feeling the pain."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Lungs are clear, breath sounds equal bilaterally."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Placing the 12-lead ECG now."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_12_lead_obtained",
+      "role": "Partner",
+      "utterance": "12-lead ECG placed successfully in one attempt."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Initial reading shows STEMI changes in V4-V6."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_12_lead_obtained",
+      "role": "Medic",
+      "utterance": "A second 12-lead shows lateral ischemia and sinus tach."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Medic",
+      "utterance": "Any issues in your stomach area?"
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Patient",
+      "utterance": "No stomach pain, but I get burning during urination."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Medic",
+      "utterance": "How long has the urinary discomfort existed?"
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Patient",
+      "utterance": "A few days so far."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_vagal_maneuver",
+      "role": "Medic",
+      "utterance": "Trying a vagal maneuver. Place your thumb in your mouth and bear down."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_vagal_maneuver",
+      "role": "Patient",
+      "utterance": "(attempts maneuver)"
+    },
+    {
+      "turn": 68,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_vagal_maneuver",
+      "role": "Partner",
+      "utterance": "Attempted and unsuccessful. Let's try another time."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_vagal_maneuver",
+      "role": "Medic",
+      "utterance": "Re-attempting, still no change."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_extremity_vein",
+      "role": "Partner",
+      "utterance": "Now I'm attempting an 18G IV in your arm."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_extremity_vein",
+      "role": "Patient",
+      "utterance": "Okay, proceed."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_extremity_vein",
+      "role": "Partner",
+      "utterance": "IV attempt unsuccessful."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Interventions",
+      "micro_intent": "aspirin_administered",
+      "role": "Medic",
+      "utterance": "I am now giving 324 mg of Aspirin."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Interventions",
+      "micro_intent": "aspirin_administered",
+      "role": "Partner",
+      "utterance": "This is four 81 mg tablets taken as one dose."
+    },
+    {
+      "turn": 75,
+      "topic": "Exit to Protocol",
+      "micro_intent": "acs_ami",
+      "role": "Medic",
+      "utterance": "EKG changes suggest STEMI; entering ACS/AMI protocol."
+    },
+    {
+      "turn": 76,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Final reading shows sinus tach and no further STEMI changes."
+    },
+    {
+      "turn": 77,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Medic",
+      "utterance": "Transporting for emergency evaluation."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Re-checking vital signs now."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse increased to 163 per minute."
+    },
+    {
+      "turn": 80,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate at 14 per minute."
+    },
+    {
+      "turn": 81,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure at 149 over 112."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is now sinus tach with no STEMI findings."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose measured at 0. We will continue monitoring."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Medic",
+      "utterance": "Still pain at 10/10, movement causes discomfort."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_present_illness",
+      "role": "Medic",
+      "utterance": "Any new symptoms lately?"
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_present_illness",
+      "role": "Patient",
+      "utterance": "No, discomfort still feels the same."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Where would you prefer for emergency care?"
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "[COMPANY_NAME]."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Ready to assist you onto the stretcher."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Scoot forward slowly please."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "(moves slowly)"
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Securing you in five-point restraints now."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Helping you into the ambulance, you'll be safe en route."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Fasten seatbelts for comfort during transport."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "All set. We're heading to the ED now."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stay still and relax on your way."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Arrived at hospital. Transfer of patient to the ED team is ready."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Condition and steps followed all per protocol. No rhythm changes."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Aspirin administered. BP 133 over 90 now with SpO₂ 99."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Transmission of full care and details complete for your team."
+    },
+    {
+      "turn": 101,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Available if further info or help is needed."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "ER Nurse",
+      "utterance": "We've taken over care of the patient. Thank you for your efforts."
+    }
+  ]
+}

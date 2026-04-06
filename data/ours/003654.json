@@ -1,0 +1,792 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003654",
+  "protocol": [
+    "medical - seizure (protocol 3 - 12)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "_DISPATCH: Unit 3, respond to McDonald's on 9th and Moseley for a patient with possible seizure. She is ambulatory."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, my name is Casey, and I'm an EMT with the rescue squad. What caused you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I feel like I am going to have a seizure again. I felt shaky at work, and my left hand was numb."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you tell me your name and your birthday?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "orientation",
+      "role": "EMT",
+      "utterance": "What city are we in right now?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "orientation",
+      "role": "EMT",
+      "utterance": "What is today's date and time approximately?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "orientation",
+      "role": "EMT",
+      "utterance": "Can you describe what happened today that led you to call 911?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Were you able to keep your eyes open when you came into this area?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "When I asked about your symptoms, did you answer clearly?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "When you were asked to open your hands, did you respond without being told again?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "You were able to move without needing repetition."
+    },
+    {
+      "turn": 12,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Have you had this type of symptom before? Any medical conditions or prior episodes?"
+    },
+    {
+      "turn": 13,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Patient",
+      "utterance": "I have a \"hole in my heart\" and had seizures as a child. I haven't had one since, but felt like I was going to today at work."
+    },
+    {
+      "turn": 14,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Do you have any known allergies to medications or other substances?"
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "Yes, I have an allergy to amoxicillin. I was told before and had a bad reaction."
+    },
+    {
+      "turn": 16,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, how would you rate your symptoms of shakiness and numbness in your left hand?"
+    },
+    {
+      "turn": 17,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "Zero-I don't have pain-but I am very shaky."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Are you having any trouble breathing or speaking?"
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Please stay still as I check your breathing."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Let me feel your pulse to check for regularity and strength."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I will now look for signs of rashes, bruises, or bite marks on your skin."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "I'm checking for signs of swelling or stiffness in your neck."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Can you open and close your jaw for me to assess movement?"
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "You appear alert with no signs of neck swelling or stiffness."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "EMT",
+      "utterance": "Your nose and ears look normal. Any pain or drainage?"
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "EMT",
+      "utterance": "Your mouth is normal with no ulcers or sores."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "I'll place pads on your chest for a quick look at your heart rhythm."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Your pulse was 78 initially and has now dropped to 66. It is regular."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Your respiratory rate was 11 then increased to 28-still okay."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Your blood pressure was 164 over 71 and now is 132 over 74."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Your initial blood sugar was 108 mg/dL, then read zero. The second may not be accurate."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "Your oxygen saturation was 99% and now is at 98%-still fine."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "ECG shows a right bundle branch block with a widened QRS. I'll run a 12-lead."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Your initial respiratory rate was 11. No distress noted."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Let me now perform a 12-lead EKG to confirm findings. It'll take a moment."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "I'll place you on ECG monitoring. It should help us watch your heart. Do you agree?"
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_exams_complete",
+      "role": "EMT",
+      "utterance": "Skin, head, neck, ears, and thorax exams show everything normal and within limits."
+    },
+    {
+      "turn": 38,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "After reviewing your situation, we'll follow the medical-seizure protocol and continue monitoring during transport."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "EMT",
+      "utterance": "Your pulse is steady at 66. Would you like to answer more questions while we check?"
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "EMT",
+      "utterance": "Your breathing is at 28 and not evident of distress or difficulty."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "EMT",
+      "utterance": "Blood pressure is still 132 over 74, elevated but not alarmingly so."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "EMT",
+      "utterance": "Oxygen saturation remains at 98. Let me check the EKG once more."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "EMT",
+      "utterance": "12-lead shows a right bundle branch block with no ST-segment changes or other abnormalities."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "EMT",
+      "utterance": "Sinus rhythm found with a bundle branch block-otherwise heart looks stable."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_onset",
+      "role": "EMT",
+      "utterance": "You mentioned the numbness and shakiness. Have you had other symptoms to report?"
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_provocation",
+      "role": "EMT",
+      "utterance": "Does the numbness worsen with movement or certain positions?"
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_quality",
+      "role": "EMT",
+      "utterance": "Is it like pins and needles or a complete lack of feeling in your left hand?"
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_radiation",
+      "role": "EMT",
+      "utterance": "Does the feeling stay in your hand or move up your arm or neck?"
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "Even with a zero pain rating, does the numbness cause anxiety or discomfort?"
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_time",
+      "role": "EMT",
+      "utterance": "How long had your symptoms existed before you called 911?"
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "You're managing your blood pressure with labetalol. How do you take it, and is it working well?"
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_allergies",
+      "role": "EMT",
+      "utterance": "Were there other allergies or medications we need to note?"
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_medications",
+      "role": "EMT",
+      "utterance": "You're not on seizure medications due to lack of insurance. Any other treatment gaps?"
+    },
+    {
+      "turn": 54,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "No active airway signs, and you are able to speak clearly and continuously."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_medical_history",
+      "role": "EMT",
+      "utterance": "You had seizures as a child. Any family history or known heart history with that?"
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_last_oral_intake",
+      "role": "EMT",
+      "utterance": "What was your last meal or drink before symptoms started?"
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_events_leading_up_to_the_event",
+      "role": "EMT",
+      "utterance": "You mentioned it happened at work. Was anything like stress or a specific task involved?"
+    },
+    {
+      "turn": 58,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're avoiding an IV for now given reports you are hard to start. It'll be attempted at the hospital."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We will head to [COMPANY_NAME] Emergency Department 28 for continuing care."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Please stay still when we move you into the ambulance."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No signs of recent injuries, burns, or rashes on your body."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "I'll now check for signs of injury or deformity in your arms and legs."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "No deformities or swelling found on your arms and legs-strength appears normal."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "The numbness in your left hand doesn't seem to be related to physical limb changes."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Let me quickly assess your abdomen for tenderness or pain."
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Your belly is flat, without pain or rigidity-normal bowel sounds heard."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "The EKG currently reads a right bundle branch block-no other changes."
+    },
+    {
+      "turn": 68,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "orientation",
+      "role": "EMT",
+      "utterance": "Just to confirm-do you know where you are and why you are here right now?"
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "You are alert and oriented to person, place, time, and event (A&Ox4)."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Glasgow Coma Scale of 15-full consciousness."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Securing you on the cot for safe transfer to the ambulance."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "IV access is deferred at this time-will be attempted at the hospital."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're not currently experiencing chest pain or discomfort."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "[COMPANY_NAME] has experience with unusual heart rhythms and is well-suited for you."
+    },
+    {
+      "turn": 75,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "You are breathing shallow but equal on both sides without signs of trouble."
+    },
+    {
+      "turn": 76,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Limbs are warm and no cyanosis detected."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "Rechecking, oxygen remains at 98%-no change in reading."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Oxygen and pulse readings remain consistent with no fluctuation."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_onset",
+      "role": "EMT",
+      "utterance": "You started symptoms at work. When exactly, and how sudden was it?"
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "These symptoms seem more mental-was that your impression as well?"
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_allergies",
+      "role": "EMT",
+      "utterance": "Tell me again what kind of reaction you had to amoxicillin in the past?"
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_medical_history",
+      "role": "EMT",
+      "utterance": "How long ago your seizure and what was the diagnosis back then?"
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll do a final check of vitals during transition into the ambulance."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Let me get latest blood pressure readings one more time."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Pulse went from 66 to 68 now-still normal."
+    },
+    {
+      "turn": 86,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Zero might not be right. Could it be an issue with the finger position or dryness?"
+    },
+    {
+      "turn": 87,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Your breathing went from 28 to 26-still okay. Any increase in labor or discomfort?"
+    },
+    {
+      "turn": 88,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "EKG has stayed consistent with initial and second recordings."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_quality",
+      "role": "EMT",
+      "utterance": "You reported numbness-any heat, cold, or weakness with it?"
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_time",
+      "role": "EMT",
+      "utterance": "Was the numbness constant or came and went since it began?"
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_last_oral_intake",
+      "role": "EMT",
+      "utterance": "Would breakfast be your normal period for eating, and did you eat today?"
+    },
+    {
+      "turn": 92,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "Glasgow",
+      "role": "EMT",
+      "utterance": "Just checking your Glasgow score-you score a 15, showing you are A&Ox4."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin turgor is normal and no jaundice. Temperature appears normal and not hot."
+    },
+    {
+      "turn": 94,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is patent and maintains itself naturally with no need for support."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let me know immediately if you feel anything uncomfortable while we transfer."
+    },
+    {
+      "turn": 96,
+      "topic": "Exit to Protocol",
+      "micro_intent": "retake_protocol",
+      "role": "EMT",
+      "utterance": "We continue on protocol 3-12 for seizure with ECG monitoring. ED is aware."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "I'll secure your head now. Feel free to ask for any comfort needed."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All patches and monitoring are ready for travel with no loose equipment."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Please remain upright until the vehicle stops so we can move safely."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "I have you secured and you may now lie back on the cot."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let me check your restraints and that your oxygen is still running fine."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You look comfortable and I'll begin the transport now."
+    },
+    {
+      "turn": 103,
+      "topic": "Reassessments",
+      "micro_intent": "redo_interventions",
+      "role": "EMT",
+      "utterance": "IV access will be completed at the hospital under their protocol."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All ECG actions passed to receiving nurse-update given in handoff."
+    },
+    {
+      "turn": 105,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "How do you prefer to be contacted by hospital for any further follow-up?"
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Doors are open now and I'll start the transfer while still observing for any changes."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We're arriving and will be offloading soon. Stable condition."
+    },
+    {
+      "turn": 108,
+      "topic": "Reassessments",
+      "micro_intent": "redo_interventions",
+      "role": "EMT",
+      "utterance": "No IV repeated. Pressure dressings remain and handed over to hospital."
+    },
+    {
+      "turn": 109,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Anyone expecting you at the hospital? Shall we contact a family member?"
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Got you safely over. Wait for ED before anyone assists you further."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Handing off all findings and care during transport to nurse and doctor."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All steps have been shared with receiving physician and nurse at ED."
+    }
+  ]
+}

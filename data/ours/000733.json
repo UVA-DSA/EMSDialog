@@ -1,0 +1,526 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000733",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding to a non-traumatic chest pain call in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "medic",
+      "utterance": "Hello, I'm Jason, an EMS medic with rescue services. What 911 call brought you out tonight?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "patient",
+      "utterance": "I'm having chest pain which started in my feet and moved upward."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "medic",
+      "utterance": "Can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "medic",
+      "utterance": "What city are we in?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "patient",
+      "utterance": "[CITY], [STATE]."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "medic",
+      "utterance": "What year is today?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "patient",
+      "utterance": "This is 2020."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "medic",
+      "utterance": "What caused the pain you're feeling now?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "patient",
+      "utterance": "The pain began in my feet and then moved up to my chest."
+    },
+    {
+      "turn": 11,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "medic",
+      "utterance": "On a scale from 0 to 10, how severe is the pain you're experiencing?"
+    },
+    {
+      "turn": 12,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "patient",
+      "utterance": "Around a 2."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "medic",
+      "utterance": "Are you having any trouble speaking or breathing?"
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "patient",
+      "utterance": "No, I'm speaking normally and breathing easily."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "partner",
+      "utterance": "Respirations are at 16 per minute, normal and unlabored."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "partner",
+      "utterance": "Oxygen saturation is 99 percent on room air."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "medic",
+      "utterance": "Are you experiencing any wheezing or difficulty breathing?"
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "patient",
+      "utterance": "I'm not wheezing, but I do have a productive cough with yellow mucus."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "partner",
+      "utterance": "Pulse is 85, strong and regular."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "medic",
+      "utterance": "Any discomfort in your chest or other symptoms?"
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "patient",
+      "utterance": "My skin looks normal, and I feel no pallor or moisture changes."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "partner",
+      "utterance": "Blood pressure is 174 over 117."
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "medic",
+      "utterance": "Your pulse remains strong and your skin is not diaphoretic."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "partner",
+      "utterance": "Blood pressure is 174 over 90 now, with pulse up to 95."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "partner",
+      "utterance": "Glucose levels are undetectable with the handheld meter."
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "medic",
+      "utterance": "You're alert and oriented to person, place, time, and event-AOx4."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_signs_symptoms",
+      "role": "medic",
+      "utterance": "When did you first notice the pain, and how has it changed?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_signs_symptoms",
+      "role": "patient",
+      "utterance": "It began around noon and has gotten worse throughout the night."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_allergies",
+      "role": "medic",
+      "utterance": "Are you allergic to any medications or other substances?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_allergies",
+      "role": "patient",
+      "utterance": "No known drug allergies."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_med",
+      "role": "medic",
+      "utterance": "What medications are you currently using to manage your health?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_med",
+      "role": "patient",
+      "utterance": "I take medications for high blood pressure and seizures."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_events",
+      "role": "medic",
+      "utterance": "Did anything unusual happen that might explain these symptoms?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_events",
+      "role": "patient",
+      "utterance": "I had a cough for about a week. It didn't go away with treatment on the 2nd."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_covid",
+      "role": "medic",
+      "utterance": "Are you having fever, a dry cough, or chills?"
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_covid",
+      "role": "patient",
+      "utterance": "I don't have fever or chills. Just chest pain and cough with yellow mucus."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "symptom",
+      "role": "medic",
+      "utterance": "Would you say you generally feel unwell or have any malaise?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "symptom",
+      "role": "patient",
+      "utterance": "Yes, I've not been feeling right recently."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "partner",
+      "utterance": "EKG rhythm is normal for now, let's review."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "medic",
+      "utterance": "Any new symptoms or changes since arrival?"
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "patient",
+      "utterance": "No new symptoms, only the pain and cough."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "medic",
+      "utterance": "Does the pain move up from your feet when you walk?"
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "patient",
+      "utterance": "Yes, it shoots from my feet up to my chest."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "partner",
+      "utterance": "Respirations increased to 18 per minute, still unlabored."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "partner",
+      "utterance": "Updated EKG shows a sinus rhythm with no ST elevation or other ectopy."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "partner",
+      "utterance": "Pulse now reads 95 beats per minute."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "give_med",
+      "role": "partner",
+      "utterance": "I'm giving you an oral dose of 324 mg aspirin as per protocol for chest pain."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "ecg_monitor",
+      "role": "medic",
+      "utterance": "We are applying pads for heart rhythm monitoring."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Interventions",
+      "micro_intent": "ecg_4_lead_monitoring",
+      "role": "partner",
+      "utterance": "Applying four ECG leads now per protocol to monitor heart rhythms."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Interventions",
+      "micro_intent": "ecg_12_lead",
+      "role": "partner",
+      "utterance": "12-lead ECG is complete. Results indicate a standard sinus rhythm with no ST elevation."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "partner",
+      "utterance": "Measuring temp now-98.2, no fever or tachycardia."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "partner",
+      "utterance": "Pulse is 95, BP 174/90-same from previous readings."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "medic",
+      "utterance": "Which hospital do you want to be taken to?"
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "patient",
+      "utterance": "[COMPANY_NAME] please."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "partner",
+      "utterance": "Securing the patient with a stand-and-pivot move on the stretcher."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "partner",
+      "utterance": "During transport, pain remains at 2, stable vitals so far."
+    },
+    {
+      "turn": 57,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_med",
+      "role": "medic",
+      "utterance": "What medications do you take for your conditions?"
+    },
+    {
+      "turn": 58,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_med",
+      "role": "patient",
+      "utterance": "I'm on keppra, lisinopril, metoprolol, amlodipine, oxcarbazepine, and phenytoin."
+    },
+    {
+      "turn": 59,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_med",
+      "role": "medic",
+      "utterance": "Are you also on prednisone by any chance?"
+    },
+    {
+      "turn": 60,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE_med",
+      "role": "patient",
+      "utterance": "Correct, I take it for inflammation."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "medic",
+      "utterance": "Ready to lift and proceed. Moving you now with precaution."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "exit_scene",
+      "role": "partner",
+      "utterance": "Vehicle is en route to [CITY] from the scene at 00:53."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "partner",
+      "utterance": "No new changes in vitals or symptoms during transport."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "partner",
+      "utterance": "Still monitoring vitals, vitals appear consistent thus far."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "handoff_preparation",
+      "role": "medic",
+      "utterance": "Male, 54, 127 kg, GCS 15, A&Ox4, normal skin turgor reported."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "handoff_preparation",
+      "role": "partner",
+      "utterance": "Summary of vitals and procedures being passed on to the ED team."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "partner",
+      "utterance": "BP still 174/90, SpO2 99, with no signs of distress."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "medic",
+      "utterance": "Patient vitals are stable with normal pulse and respiratory rate."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "partner",
+      "utterance": "At 00:51, still no signs of respiratory distress or tripoding postures."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "medic",
+      "utterance": "Receiving facility has been notified-emergency care is now in progress."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "partner",
+      "utterance": "Arrived at [CITY]. ED is ready for transfer."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "reassurance",
+      "role": "medic",
+      "utterance": "Any concerns or questions as your care continues?"
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "reassurance",
+      "role": "patient",
+      "utterance": "No, I just want to thank you for your help."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Interventions",
+      "micro_intent": "exit_scene",
+      "role": "patient",
+      "utterance": "I feel more comfortable now, thank you for everything."
+    }
+  ]
+}

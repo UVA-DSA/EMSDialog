@@ -1,0 +1,709 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001863",
+  "protocol": [
+    "ob/gyn - pre-term labor (pre-term labor) (protocol 6 - 12)",
+    "medical - hypotension/shock (nontrauma) (protocol 3 - 13)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hi, I'm Tyler, an EMT. What made you call 911 today?"
+    },
+    {
+      "turn": 2,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I'm having heavy vaginal bleeding and abdominal cramps since this morning. I feel very weak."
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Paramedic",
+      "utterance": "How long have you been experiencing this?"
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Paramedic",
+      "utterance": "You mentioned cramps and bleeding. Is there anything else you want to share before we dig deeper into your symptoms?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Let me check your alertness. Can you tell me your name, the date, and where you are right now?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is Rachel. Today is December 2nd, and I'm in my car in [CITY]."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Great, and do you know why you called 911 today?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Because I felt too weak to drive myself to the hospital."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "Paramedic",
+      "utterance": "Your GCS is 15 - you're fully alert and oriented. I don't see confusion or any issues with your mental status."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Your airway is clear and patent. You don't appear to have any signs of obstruction."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "I can see your chest rising and falling equally. Your breathing rate is 16 breaths per minute, which is normal."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "Your eyes are responding well; they track and follow me, and you seem to be attentive."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Your pulse is strong, but your blood pressure is lower than average at 92 over 63. That's consistent with your fast heart rate of 100."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Let me confirm that. Your pulse is 100, and it's relatively regular."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "respirations",
+      "role": "Paramedic",
+      "utterance": "Continuing on, you're breathing at 16 per minute and evenly. That's comfortable and within normal limits."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure taken is 92 over 63. That does show some mild hypotension."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "We're running a quick read on your oxygen levels. You're at 100% on room air, so that's reassuring."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "I'm placing the EKG leads now. Your heart rhythm is showing sinus tachycardia initially, which matches your rapid pulse."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_skin",
+      "role": "Paramedic",
+      "utterance": "Your skin is pale and a bit ashen, but it's dry and warm. I don't see any edema or swelling. There is ongoing vaginal bleeding."
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Paramedic",
+      "utterance": "How would you rate your pain right now on a scale from 1 to 10?"
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "A six."
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Paramedic",
+      "utterance": "When did the pain start? Has it changed in intensity or location throughout the day?"
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Patient",
+      "utterance": "It began this morning and got worse around noon."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Can you describe the cramping or the bleeding a bit more? Did it feel sharp, throbbing?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "The pain is more of a constant pressure, not sharp. It comes and goes sometimes."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Paramedic",
+      "utterance": "This is your fifth pregnancy, right? How far along are you?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Yes, I'm about eight weeks along. No previous issues or complications."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Paramedic",
+      "utterance": "Are you currently taking any medications or have any known allergies?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "No medications and no allergies."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "Paramedic",
+      "utterance": "When the symptoms worsened, what did you do or feel like doing next?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "Patient",
+      "utterance": "I tried to drive to the hospital, but I felt so weak and dizzy I had to pull over and call 911."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Did you feel drowsy or lightheaded at all before or during your trip?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, very dizzy, and I didn't feel I was going to make it. I was real tired and scared."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Our skin exam doesn't show any rashes, bruises, or scars. I don't see any skin turgor changes or swelling."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "Paramedic",
+      "utterance": "I'll quickly check your head and neck. Your pupils are reactive, and I don't see any signs of strain or stiffness. You mentioned dizziness - is there a point it gets worse?"
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "e_n_m_t_exam",
+      "role": "Partner",
+      "utterance": "Looking at your ears, nose, and throat, I don't see any drainage or obstructions."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thoraci_pulmonary_auscultation",
+      "role": "Paramedic",
+      "utterance": "Taking a listen to your lungs, they are clear with no wheezing or crackles."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdominal_exam",
+      "role": "Partner",
+      "utterance": "I'm gently palpating your abdomen. You have some cramping and tenderness but no masses or distension."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Paramedic",
+      "utterance": "Persistent vaginal bleeding is noted. No signs of foul discharge or clots are being reported at the moment."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "Partner",
+      "utterance": "Your extremities look unremarkable. No swelling or deformity observed."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse has dropped to 91 now but is still tachycardic."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure continues to hover at 89 over 62, still slightly low."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen level is at 98%, but still within safe parameters."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Your rhythm is now normal sinus, per the EKG we just ran."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Paramedic",
+      "utterance": "We've remeasured and saw a 100% reading next - great improvement."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "We're applying 4-lead ECG monitoring for continuous heart rhythm assessment."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We're also setting up an 18-gauge IV line in your left arm for normal saline to help with circulation."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "IV started successfully with one attempt. I've already begun giving warm fluid solution."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Earlier, the EKG read tachycardia, but we've confirmed now it's in normal rhythm."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your heart is now working at 98 beats per minute."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "The blood pressure measurement is now 86 over 65."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You're stable for now, and the IV is secure."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "We're preparing to move you into the ambulance. You'll be safe for the trip."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I'm feeling lightheaded, but the cramping hasn't gotten worse."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "That lightheaded feeling and fatigue are common after blood loss. We'll keep an eye on your vitals."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We've radioed [COMPANY_NAME] - they're expecting you and will be waiting."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic",
+      "utterance": "Your pulse has improved to 88 now."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 90 over 64 - that's a good trend."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Paramedic",
+      "utterance": "Oxygen is at 100% now, excellent. We've already given you 300 mL of fluids. That should help support better circulation."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The IV continues without any issues. We are stopping the flow once your systolic reaches 90."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Out now, EKG continues in normal sinus rhythm."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We've loaded you and are beginning the cold transport. Vital signs and IV are under control."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "You're doing well for now. We'll communicate regularly."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "We'll give an IV report as soon as you're settled in the hospital."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Other procedures will follow as you get clinical level care from ER staff."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Final pulse reading just before arrival is 98."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure is at 93 over 63 now."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation stays at 100% on board."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Final EKG continues confirming a stable sinus rhythm."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Ambulance is now at ER entrance. Handover is imminent."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "You're on track for delivery to the emergency department at [CITY]. They've been informed about all your vitals, EKG, and bleeding."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "You look a bit tired now, but you're stable. We'll keep you supported on the way in."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You'll see OB/GYN and imaging next, and the ER is prepared for your arrival."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "We stopped IV flow at 300mL when systolic reached 90. IV is ready for ER to restart if needed."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "The IV site is clean and undisturbed. ER will pick up from there."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "The patient shows signs consistent with protocol OB/GYN - pre-term labor (protocol 6-12) and Medical - Hypotension/Shock (Nontrauma) (protocol 3-13)."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "Initial vitals were 92/63, heart rate of 100, and sinus tachycardia."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "300 mL of normal saline have improved blood pressure and oxygenation."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "IV was stopped at 90 systolic, and ongoing vitals are stable with A&Ox4 status."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "Informed consent was signed, and all treatments were provided with full documentation on file."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "Patient will be delivered directly to the emergency department as per protocol."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "Vital signs and EKG were logged every few minutes en route and showed no major deterioration."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "Final temperature was 97.1, with no signs of fever or chills."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "Blood glucose was not obtained due to no relevant oral intake since symptoms began."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "No medications were administered during transport. Full care and handoff are in place."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "All vitals remained within monitored guidelines throughout the transfer, including 4-lead EKG monitoring."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "Continuous communication with the patient and rapid response time led to a safe and stable transfer."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "EMS complied with [CITY] and standard protocol requirements."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "No complications occurred during transport, and EKG, IV, and vitals were maintained."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "Ongoing condition remains consistent. IV and fluid assessment at the time of arrival were reported."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "She expressed feeling drowsy and dizzy since the onset of symptoms, which is aligned with her condition."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "At one point her oxygen read 99% en route - now back up to 100%."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "Transfer fulfilled per hospital and EMS policies with full transparency and professional care."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "The patient was kept alert, oriented, and in good condition for the ER to continue her care."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "We did not encounter any issues of safety or technical challenges throughout transport."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "The EMS teams communicated effectively with dispatch, ER, and the patient. Supported the transfer without need for an emergency code."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "Vital monitoring and patient updates were consistent with best practices in managing this type of condition."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Paramedic",
+      "utterance": "The transfer to the ER is complete. Thanks again for your trust, Rachel."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "handover_report",
+      "role": "Partner",
+      "utterance": "Support team will stand by for your recovery update."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "EMS teams are returning to service following a safe and successful patient transfer."
+    }
+  ]
+}

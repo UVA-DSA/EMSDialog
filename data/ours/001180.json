@@ -1,0 +1,722 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001180",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 with a STEMI alert for a 55-year-old female at [CITY] Address Redacted, Apt. 214."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Alex with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I have crushing chest pain and weakness. It started about an hour ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Does the pain radiate to your back or arms at all?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Yes, it travels to my back. It's constant and an 8 out of 10."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Maria, can you tell me your name again for us?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I'm Maria."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "What city are we in right now?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "We're in [CITY]."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Maria, what caused you to call emergency services?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I was lying down, and I suddenly felt like I was having a heart attack."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Airway is patent, no signs of blockage."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations are 18 and non-labored."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 94%."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Let me take your pulse and blood pressure now."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Let's check your blood pressure. Is that okay?"
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Patient",
+      "utterance": "Please do it."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 84 over 57."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "How does your skin feel to you-warm or cold?"
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Patient",
+      "utterance": "It feels warm."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is 82."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is at 154."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Has anything like this happened before, Maria?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "No, this is the first episode of any chest pain like this."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Do you have any heart history or major surgeries?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I don't know of any. I've always been healthy."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Can I examine your skin now?"
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "Sure."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin is warm, dry, and normal-no rashes or bruising noted."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils are equal and reactive, about 4 mm."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No swelling or droop in your face noted."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Let me check your abdomen for tenderness or bloating. Is that okay?"
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "Abdomen is soft and non-tender. Bowel sounds are present."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is still 94%."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Maria, we are placing you on a cardiac monitor for better monitoring."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Patient",
+      "utterance": "Okay."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "12-lead EKG complete. Results show possible STEMI in the anterior wall."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Let me start an IV in your right arm now. Can you roll up your sleeve?"
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "IV is in place; now administering 324 mg of aspirin."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 73 over 44-this is hypotensive."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Glucose cannot be read-machine is indicating an error."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiratory rate is still 18, oxygen saturation at 95%."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "critical_presentation",
+      "role": "Partner",
+      "utterance": "We're considering you critical for transport, even though there are no immediate life threats noted."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "ed_contact",
+      "role": "EMT",
+      "utterance": "ED contact has been initiated-[COMPANY_NAME] is aware and receiving our STEMI alert."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Maria, we'll be transporting you emergently to [COMPANY_NAME]. Is that okay?"
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll transfer you to the stretcher now and bring you to the ambulance."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You'll be safely secured in the ambulance for the emergency transport."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "Partner",
+      "utterance": "Now starting our urgent transfer to the hospital."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "critical_presentation",
+      "role": "EMT",
+      "utterance": "We're giving you 100 mL of normal saline intravenously now due to low blood pressure."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "No additional medical history or medications can be obtained at this time-patient is too critical."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "ed_contact",
+      "role": "EMT",
+      "utterance": "ED is aware of your condition and that we are en route with a critical patient."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "Partner",
+      "utterance": "Maria is now secured in the ambulance with IV fluids and continuous monitoring."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "ed_contact",
+      "role": "EMT",
+      "utterance": "[COMPANY_NAME] has confirmed readiness-STEMI alert status active."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "Partner",
+      "utterance": "Emergency transport initiated with red lights and sirens."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient and all equipment are ready-no delay expected."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "Partner",
+      "utterance": "Currently en route to the hospital with continuous monitoring and IV fluids running."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "critical_presentation",
+      "role": "EMT",
+      "utterance": "Maria is alert and oriented, but vital signs are low and continue to be monitored."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "Partner",
+      "utterance": "Patient care turnover is being prepared."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "EMT",
+      "utterance": "En route with no incident-vitals remain observed."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All gear secured-patient stable."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All interventions and vitals reviewed-transport without major incident."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Recheck vitals-still hypotensive, no change in respiratory status or pain level."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "EMT",
+      "utterance": "No further drops in vital signs noted."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "critical_presentation",
+      "role": "EMT",
+      "utterance": "Maria remains aox4 with constant pain and alertness; critical care ongoing."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "Partner",
+      "utterance": "Red siren still active-we're close to the ER now."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "patient_care_turnover",
+      "role": "EMT",
+      "utterance": "Handover documents completed and handed to receiving team."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "EMT",
+      "utterance": "Updates provided en route-STEMI status unchanged for receiving ED."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Recheck vitals-still low BP, but no new issues progressing."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Glucose machine error remains-no other changes in condition."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "ed_contact",
+      "role": "Partner",
+      "utterance": "Additional ED contact reiterated pre-handover for clarity."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient now safely in the ambulance with IV fluids in progress."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "Partner",
+      "utterance": "En route with continuous monitoring."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "ed_contact",
+      "role": "EMT",
+      "utterance": "ED team in [COMPANY_NAME] is expecting a patient with an active STEMI and en route."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "patient_care_turnover",
+      "role": "EMT",
+      "utterance": "Patient signature is waived due to distress-completed with crew and hospital personnel."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "patient_care_turnover",
+      "role": "Partner",
+      "utterance": "Supervisor confirmed patient's condition and was satisfied with the handover."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Rechecking SpO2-still at 95%."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure remains low at 73/44."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is stable at 18."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate has remained steady at 82."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Still no new changes to the skin since last check."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "EMT",
+      "utterance": "Let me recheck your breathing sounds."
+    },
+    {
+      "turn": 82,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "Partner",
+      "utterance": "Even expansion on both sides-no new sounds identified."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "EMT",
+      "utterance": "We'll continue to keep an eye on your breathing."
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Partner",
+      "utterance": "Peripheral pulses remain present and strong."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "EMT",
+      "utterance": "Extremities appear neurologically intact."
+    },
+    {
+      "turn": 86,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "Abdomen is still soft, with no new findings."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils again PERRL-no decline in neurological status."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Neck remains free of tenderness or nodularity."
+    },
+    {
+      "turn": 89,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Another 12-lead EKG was completed-results remain consistent."
+    },
+    {
+      "turn": 90,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "No additional medications are indicated at this time."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "No changes-vitals remain stable."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "EMT",
+      "utterance": "Arriving at [COMPANY_NAME] now-red lights on and heading towards the ER entrance."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Applying transport restraints for safe patient arrival."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "patient_care_turnover",
+      "role": "EMT",
+      "utterance": "Contacting ED team for specific updates if needed."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "patient_care_turnover",
+      "role": "Partner",
+      "utterance": "ED is expecting a STEMI alert for this patient."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "EMT",
+      "utterance": "Ground transport successful with no in-route incidents."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "patient_care_turnover",
+      "role": "EMT",
+      "utterance": "Patient has been smoothly handed over-units are readying for post-call."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Hospital bed 10 is prepared for ED-R floor entry."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "patient_care_turnover",
+      "role": "EMT",
+      "utterance": "EMS stretcher to hospital bed transfer was done using a sheet draw."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "patient_care_turnover",
+      "role": "Partner",
+      "utterance": "Ongoing care has been transferred to the ED team at the bedside."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "emergent_transport",
+      "role": "EMT",
+      "utterance": "Unit is now cleared to return and prepare for next call."
+    },
+    {
+      "turn": 102,
+      "topic": "Reassessments",
+      "micro_intent": "critical_presentation",
+      "role": "Partner",
+      "utterance": "Despite no major life threats, this presentation merits emergency transportation due to STEMI findings."
+    }
+  ]
+}

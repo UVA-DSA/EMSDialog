@@ -1,0 +1,380 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003518",
+  "protocol": [
+    "medical - altered mental status (protocol 3 - 15)",
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 2 for an unknown problem/person down at the foot of the steps in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Mark, an EMT with the rescue squad. We're responding to a person down call - can you tell us what's happening here?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He's here, unresponsive, with very slow breathing. We called when we found him like this, maybe 5 minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Sir, can you hear me? Can you open your eyes for me?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "Eyes remain closed. No eye opening despite verbal stimuli."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "No verbal response. Motor response cannot be assessed at this time."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "The patient is unresponsive, consistent with a Glasgow Coma Scale of 3, as reported by field staff prior to our arrival."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "The airway is patent following a jaw-thrust maneuver by first responders for sonorous respirations."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Respiratory rate initially was 6 to 8 per minute, and assisted breathing via BVM was initiated due to inadequate respiration."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "The radial pulse is strong and present initially, though initial BP could not be obtained."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 90 beats per minute, firm and regular during the initial assessment."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate starts at 6 to 8 RPM and later improves to 13 RPM after BVM ventilation."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Initial blood pressure readings were unobtainable but later recorded at 115/72 mmHg after Narcan administration."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Initial blood glucose was unobtainable but was later measured at 107 mg/dL following assisted breathing."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "BVM ventilation at 15 LPM with a mask was initiated to assist breathing, and capnography was placed to monitor end-tidal CO2."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is initially at 99%, later dropping to 98% post Narcan, with no hypoxia observed."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "A 26 Fr nasopharyngeal airway was inserted in the right nostril after lubrication to assist breathing."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "A 4-lead EKG was placed and showed normal sinus rhythm."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start_extremity_vein",
+      "role": "Paramedic",
+      "utterance": "A 18-gauge IV was placed in the left antecubital fossa with a saline lock for medication access."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "After Narcan administration, the patient regains some responsiveness and follows verbal commands to a degree."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Interventions",
+      "micro_intent": "behavior_restraint_applied",
+      "role": "Paramedic",
+      "utterance": "The patient was physically restrained with cravats to ensure safety for EMS and the patient before Narcan administration."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_info",
+      "role": "EMT",
+      "utterance": "Personal information will be collected once the patient is more alert following Narcan."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_info",
+      "role": "EMT",
+      "utterance": "The patient later admitted heroin use and reported Celexa use for depression."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._medications",
+      "role": "Paramedic",
+      "utterance": "What medications are you currently taking?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._medications",
+      "role": "Patient",
+      "utterance": "I take Celexa for depression."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._allergies",
+      "role": "EMT",
+      "utterance": "Do you have any known drug or environmental allergies?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._allergies",
+      "role": "Patient",
+      "utterance": "No known allergies."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._last_oral_intake",
+      "role": "EMT",
+      "utterance": "When was your last food or drink?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had dinner a few hours ago, maybe a salad-nothing else."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._past_medical_history",
+      "role": "EMT",
+      "utterance": "Tell me about any other medical conditions or history?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._past_medical_history",
+      "role": "Patient",
+      "utterance": "I have a diagnosis of major depression-nothing else."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "The skin is warm and diaphoretic with no cyanosis."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils are pinpoint and reactive, consistent with opioid overdose findings."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "Gross motor and sensory function in all extremities appears intact based on documentation."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Reassessed oxygen saturation remains at 98% with 2 LPM nasal cannula."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows stable sinus rhythm; second 12-lead tracing was within normal range."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_give_medications",
+      "role": "Paramedic",
+      "utterance": "0.25 mg of Narcan was administered IVP following dual verification."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "The patient vomited twice post-Narcan, and we repositioned him to assist with drainage."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose was temporarily unattainable post-vomiting but successfully measured later."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Oxygen at 2 LPM via nasal prongs is continued for supplemental support."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Positioning was adjusted to ensure proper 12-lead EKG electrode placement."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The second 12-lead tracing at 1:45:32 shows a normal sinus rhythm from baseline findings."
+    },
+    {
+      "turn": 43,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "EMS protocols followed include 3-15 for altered mental status and 7-1 for opioid overdose."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Let's reassess the patient's vitals before preparation for transport."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "The pulse has stabilized to 83 BPM and remains normal."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiration is now at 12 RPM with no signs of distress."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure remains at 114/73 with no new changes in vital signs."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "[COMPANY_NAME] is selected for evaluation and monitoring due to opioid overdose risks."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let me verify that the Reeves stretcher with 5-point restraints is ready for patient movement."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The patient was safely transferred to the RAA stretcher and is secured for transport."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All monitoring devices remain active en route and hospital has been informed."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "ED24 bed has been pre-arranged for arrival as per the ePCR."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All interventions are documented and ready for handover upon arrival at the hospital."
+    }
+  ]
+}

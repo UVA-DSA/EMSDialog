@@ -1,0 +1,618 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004047",
+  "protocol": [
+    "airway - failed (protocol 3 - 16)",
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a chest pain call located on --Address Redacted-- in Apartment 1803."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm EMT Alex. What led you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been having trouble breathing and chest pain since Thursday, and it's gotten much worse."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Marla, can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is Marla."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AOT4",
+      "role": "EMT",
+      "utterance": "Are you aware of your surroundings-location, time, and reason for calling 911?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AOT4",
+      "role": "Patient",
+      "utterance": "I know I'm in [CITY], today is the 3rd, and I called because I can't breathe and have chest pain."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Can you open your eyes for me?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Yes, I can."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Can you state the current month and date?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "November, 3rd."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "I'm going to touch my finger with my right hand."
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Okay."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Airway is patent with no signs of obstruction."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "breathing",
+      "role": "EMT",
+      "utterance": "I'll be listening to your breath sounds. Does that sound okay to you?"
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "breathing",
+      "role": "Patient",
+      "utterance": "Go ahead."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "breathing",
+      "role": "Paramedic",
+      "utterance": "Listening now-there's some wheezing in both upper and lower lung fields."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "rate_and_depth",
+      "role": "Paramedic",
+      "utterance": "Breathing appears shallow but steady."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "rate_and_depth",
+      "role": "Paramedic",
+      "utterance": "Your breathing is about 16 per minute."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "work_of_breathing",
+      "role": "Partner",
+      "utterance": "You don't seem to be working hard for it right now."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "bilateral_breath_sounds",
+      "role": "Partner",
+      "utterance": "Wheezing is more pronounced in the bases bilaterally."
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "circulation",
+      "role": "EMT",
+      "utterance": "I'll check your pulse now."
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "pulse_rate",
+      "role": "Partner",
+      "utterance": "Pulse is 119-rapid but strong."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "pulse_rate",
+      "role": "Paramedic",
+      "utterance": "Radial pulse is present and 119 beats per minute."
+    },
+    {
+      "turn": 25,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin",
+      "role": "EMT",
+      "utterance": "Your skin looks normal, warm, dry, and intact. No abnormal coloring."
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin",
+      "role": "Partner",
+      "utterance": "No visible rashes or discoloration."
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, how bad is the pain in your chest?"
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "It's extremely bad-9 out of 10."
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does the pain go anywhere else on your body?"
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "It's central and radiates to both armpits."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "When did your trouble breathing start today?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Around 2 p.m., but it's gotten worse each day since Thursday."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "What is your past medical history?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I was diagnosed with lung cancer a week ago."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "current_medication",
+      "role": "EMT",
+      "utterance": "Are you taking any medications currently?"
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "current_medication",
+      "role": "Patient",
+      "utterance": "Yes, tramadol."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Do you have any known drug allergies?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "No known drug allergies."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Are you having pain while breathing deeply?"
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "Yes, especially in the center."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Taking your blood pressure now."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "161 over 75-elevated systolic, diastolic okay."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "I'll now read your oxygen saturation."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 95%, which is normal."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "I'm ready to connect you to the cardiac monitor."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg_lead_four",
+      "role": "Partner",
+      "utterance": "Rhythm is sinus tachycardia at 112 beats per minute."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "I'll check your blood glucose."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Blood glucose is not reading-possible meter incompatibility."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg_lead_twelve",
+      "role": "Paramedic",
+      "utterance": "12-lead EKG shows sinus tach with no acute ST changes or signs of blockage."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pms",
+      "role": "EMT",
+      "utterance": "Can you squeeze my fingers with all your fingers in both hands?"
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pms",
+      "role": "Patient",
+      "utterance": "I can try."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pms",
+      "role": "Partner",
+      "utterance": "All extremities show full motor function and strength symmetry."
+    },
+    {
+      "turn": 53,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Based on vitals and symptoms, I'm declaring the chest pain with possible cardiac etiology protocol 2-1."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "I'm going to administer a nebulizer to help clear your lungs."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Providing nebulizer therapy with albuterol and ipratropium at 8 LPM flow."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "circulation",
+      "role": "Partner",
+      "utterance": "Skin remains intact and warm with strong pulsals."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "I'll attempt peripheral IV access now."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "I'll check your pulse and breathing again now."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Current pulse is 114, breathing 16 per minute."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is 161 over 66. Diastolic slightly decreased."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood glucose again unreadable. No need to try again."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "You seem slightly better with the nebulizer."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "IV access in the left arm failed. Second attempt in the right forearm successful."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "[COMPANY_NAME] looks like a good option. Are you okay with that?"
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "Yes, [COMPANY_NAME] is fine."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll transfer you to the stretcher now. Try to stay still as we move you."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You're awakened and assisted. Now secured on the stretcher."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Transfer into ambulance now. You'll be safe."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "We are en route to [COMPANY_NAME]. Receiving team should expect a 51yo F with chest pain and breathing difficulty."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Partner",
+      "utterance": "Initial vitals 161/75, pulse 119, respiration 16, SpO2 95. Current vitals 161/66, pulse 114."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Partner",
+      "utterance": "EKG shows continuing sinus tach at 112 on 12-lead. No acute cardiac signs."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "Airway remains patent and patient is alert with full orientation (AOx4)."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "GCS 15 noted on scene-no changes. PMS equal and intact in all four extremities."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Partner",
+      "utterance": "Initial airway protocol failed (protocol 3-16). Chest pain protocol follows (protocol 2-1)."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "One IV in right forearm. Nebulizer administered for wheezing."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Partner",
+      "utterance": "Patient has recent lung cancer diagnosis and is on tramadol. No known allergies."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Med",
+      "utterance": "4-lead EKG continues to show sinus tach-no new findings compared to initial 12-lead."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "Respiratory wheezing much improved after treatment with bronchodilators."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Partner",
+      "utterance": "Transamination without any incident. All paperwork complete."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "Estimated arrival time is about 15-20 minutes. Continue to focus on respiratory support."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Partner",
+      "utterance": "No equipment was used during airway assessment-protocol utilized."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "Receiving team should reassess vital signs and respiratory status at arrival."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "The clinical impression remains acute respiratory distress-likely COPD exacerbation in lung cancer context."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Partner",
+      "utterance": "Document this encounter and update the medical team at [COMPANY_NAME] upon arrival."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "EMT",
+      "utterance": "All forms and documentation are complete for the receiving hospital's team."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Med",
+      "utterance": "Marla remained stable throughout the exam, transport, and intervention phases."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "information_transferred",
+      "role": "Partner",
+      "utterance": "She was cooperative and able to assist with transfers as needed."
+    }
+  ]
+}

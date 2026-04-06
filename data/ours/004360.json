@@ -1,0 +1,666 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004360",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond to Breathing Problems at 900 E Broad St, Apt # 315, [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Jordan, an EMT for Central Rescue. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've had trouble breathing for the last three days. It's getting much worse now."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu_eyes",
+      "role": "EMT",
+      "utterance": "Could you tell me your name and what day it is today?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu_eyes",
+      "role": "Patient",
+      "utterance": "James… Thursday… I think."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu_verbal",
+      "role": "EMT",
+      "utterance": "Can you tell me the name of this place?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu_motor",
+      "role": "Patient",
+      "utterance": "This is my apartment. I live on the third floor."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Your airway is open. Do you feel like anything is blocking your breathing?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, but it feels heavy. Like I can't get enough air out properly."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "I notice you have a prolonged expiratory phase. That means your breaths take longer to push air out."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "How is your breathing right now-fast, shallow, or deep?"
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "It's deep, but I hear wheezing in both lungs."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "asymmetric_chest_motions",
+      "role": "EMT",
+      "utterance": "There's mild retraction, and you appear to be breathing with more effort. Any chest asymmetry?"
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "work_of_breathing",
+      "role": "Partner",
+      "utterance": "Yes, mild retraction is visible. The effort of breathing is definitely increased."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "oxygen_saturation_measured",
+      "role": "EMT",
+      "utterance": "Pulse ox is 93% on room air. That's below normal, so we need to address this."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Pulse is 95, blood pressure 119 over 75. Your heartbeat is strong and regular."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Initial pulse is 95 beats per minute."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is at 20 per minute, which is on the higher side."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 119/75, and you feel warm."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is 100 currently. No signs of low blood sugar."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 93, so you'll benefit from extra oxygen."
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "pain_severity",
+      "role": "EMT",
+      "utterance": "On a scale of 1 to 10, with 10 being the worst, how would you rate your difficulty breathing?"
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "pain_severity",
+      "role": "Patient",
+      "utterance": "I am at 10 right now-I can't get comfortable with each breath."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_symptoms",
+      "role": "EMT",
+      "utterance": "Let's talk more about your symptoms. Have you had swelling or chest pressure?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_symptoms",
+      "role": "Patient",
+      "utterance": "No swelling, no chest pressure, just breathlessness and a harsh, non-productive cough."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Tell us about your medical history. You mentioned COPD and bee venom allergies earlier. Is that correct?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "Yes, I have COPD and had a severe allergic reaction to a bee sting once."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "What medications are you currently taking at home?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "I take Albuterol regularly, but my home nebulizer has been broken so I haven't been getting treatment."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "When was the last time you had something to eat or drink?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had soup and tea about four hours ago."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading",
+      "role": "EMT",
+      "utterance": "What happened before you called 911?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading",
+      "role": "Patient",
+      "utterance": "I was in here smoking and realized I couldn't take a full breath. The room is full of smoke."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I observe venous stasis on your lower legs but no redness or infection noted."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No skin rashes or evidence of active infection."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils are equal and reactive-alert and oriented."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "Partner",
+      "utterance": "No nasal or oral secretions. Are you coughing up any mucus?"
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "EMT",
+      "utterance": "Your lungs are wheezing-more so on the left with a pronounced pleural rub."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "Partner",
+      "utterance": "Rhonchi are present in both lungs, with diminished breath sounds on the right side."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "We'll give you a Duoneb treatment-an albuterol and Atrovent combination-via nebulizer."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "We're also providing oxygen at 6 liters alongside the treatment."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "An IV is being placed in your left hand to administer medication."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "apply_ems_protocol",
+      "role": "EMT",
+      "utterance": "Based on your condition, we're following the standard COPD exacerbation protocol."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "A 4-lead ECG is now being placed to monitor your heart. You're in sinus rhythm."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "EMT",
+      "utterance": "Pulse has dropped slightly to 94, and your blood pressure is 114 over 91 now."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "SpO2 has improved to 98, and you're breathing more comfortably now."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "The Duoneb reservoir flew off, so we're starting a second nebulizer to complete the full dose."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Patient",
+      "utterance": "I feel better already. I can speak in full sentences now."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Minutes after the second nebulizer, your breathing is much more comfortable."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "We flushed your IV with saline after the Dexamethasone and are monitoring closely."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "How would you rate your breathing difficulty now? Scale is still 1 to 10."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "pain_assessment_severity",
+      "role": "Patient",
+      "utterance": "It's maybe a 3 now. I've got steady breath and am resting better."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We're en route to [COMPANY_NAME], where they'll continue your care."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You will stay in semi-Fowler's position for transport. You're fully secured."
+    },
+    {
+      "turn": 55,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_info",
+      "role": "Partner",
+      "utterance": "His Medicaid was not with him upon arrival. However, he was alert and able to sign for himself."
+    },
+    {
+      "turn": 56,
+      "topic": "Handoff",
+      "micro_intent": "arrival_handoff",
+      "role": "EMT",
+      "utterance": "He was moved from the stretcher directly onto the ED bed using the bedsheet method."
+    },
+    {
+      "turn": 57,
+      "topic": "Handoff",
+      "micro_intent": "final_notes",
+      "role": "EMT",
+      "utterance": "The patient's walker has been left by his bedside as a personal item."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "EMT",
+      "utterance": "Your glucose is now reading 0, but your breathing and oxygen levels remain stable."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "The full dose of Duoneb along with the corticosteroid appears to be working."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "During transport, you verbally confirmed breathing comfort."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "We've double-checked that the IV is patent throughout the treatment."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your skin condition is stable and continuously monitored."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "reevaluation_status",
+      "role": "Partner",
+      "utterance": "The patient was handed off in stable condition with ongoing improvement noted."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "Initial pain level was described as 10, now reduced to 3 with full verbalization."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "patient_signature",
+      "role": "Partner",
+      "utterance": "The patient was lucid and signed for himself. No confusion or delirium was observed."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Since the nebulizer treatment was safely completed, we begin the final phase of movement."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "Dexamethasone was flushed with saline to ensure full delivery and IV patency."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "I'll relay the EMT status to ED to prepare for your arrival."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_info",
+      "role": "EMT",
+      "utterance": "We'll leave his best medical opinion and history on the transfer form as reference."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You were moved comfortably, and we have full communication with the ED crew ahead."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_info",
+      "role": "Partner",
+      "utterance": "No patient identifiers were left at the site. Transport is complete."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "The second nebulizer allowed full medication dose, with respiratory improvement confirmed."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "reevaluation_status",
+      "role": "Partner",
+      "utterance": "No complications occurred during transport. Final reassessment status was stable and improving."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "final_notes",
+      "role": "Partner",
+      "utterance": "The EKG remained in sinus rhythm with occasional PVC throughout transport."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We will monitor oxygen saturation until time of arrival."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "reevaluation_status",
+      "role": "EMT",
+      "utterance": "Blood pressure remained within safe parameters and steady."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The patient's breathing effort was minimal and comfortable during transport."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "final_notes",
+      "role": "Partner",
+      "utterance": "Breathing was sustained with no signs of deterioration during the entire transport."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "IV therapy and EKG monitor remained in place with no IV infiltration noted."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "It was a straightforward transfer with only one incident of a spilled nebulizer dose."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "reevaluation_status",
+      "role": "Partner",
+      "utterance": "No new symptoms or signs were discovered during the transfer."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "Patient showed verbal comfort and was assessed as progressing well in transport."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "The IV arm was placed safely on the transfer bed with no pressure harm."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "All feedback confirmed comfort during breathing while in transit."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "final_notes",
+      "role": "Partner",
+      "utterance": "Proper O2 and EKG monitoring occurred during transport and ED arrival."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Final position at ED was safe in bed, with the patient ready for next step in care."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "reevaluation_status",
+      "role": "Partner",
+      "utterance": "Patient was stable, and transport calls confirmed appropriate care en route."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The stretcher and medical equipment were safely retrieved after arrival."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "No complications or changes in patient assessment were found during or after transport."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "final_notes",
+      "role": "Partner",
+      "utterance": "Medical team at [COMPANY_NAME] were aware of patient influx with prior communication."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "No IV complications and no medication issues occurred during transport."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "He was delivered without incident and with proper follow-up with ED."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "reevaluate_vital_signs",
+      "role": "Partner",
+      "utterance": "Vitals remained stable throughout transport and at final handover."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All patient items, aside from the walker, were left as is for family contact."
+    }
+  ]
+}

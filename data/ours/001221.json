@@ -1,0 +1,548 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001221",
+  "protocol": [
+    "medical - supraventricular tachycardia (including atrial fibrillation) medical - tachycardia medical - ventricular tachycardia with a pulse (protocol 2 - 8)",
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for breathing problems at --Address Redacted--."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been having chest pain and shortness of breath for about an hour now."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you tell me the current year, month, and day?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "2020, July, the 25th."
+    },
+    {
+      "turn": 6,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "Mr. Smith, I'm going to check your airway, breathing, and pulse now."
+    },
+    {
+      "turn": 7,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, how bad is your chest pain right now?"
+    },
+    {
+      "turn": 8,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "EMT",
+      "utterance": "When did the chest pain start exactly?"
+    },
+    {
+      "turn": 9,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "EMT",
+      "utterance": "Does anything make it better or worse, like movement or breathing?"
+    },
+    {
+      "turn": 10,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "Can you describe the type of pain-like sharp, dull, or aching?"
+    },
+    {
+      "turn": 11,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does the pain go anywhere else, such as your arm or jaw?"
+    },
+    {
+      "turn": 12,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pertinent_negatives",
+      "role": "EMT",
+      "utterance": "Are you dizzy, coughing, or having any nausea?"
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "And what time do you think it is right now?"
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Around 4:10 p.m."
+    },
+    {
+      "turn": 15,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Okay, so you're alert and oriented to time, place, person, and situation-A&Ox4. That's good."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "Let's continue with your airway assessment. Your airway appears patent. Do you have any difficulty breathing or unusual sounds in your throat?"
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "Your breathing looks adequate. I'll auscultate your lungs. Is that okay with you?"
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "Your breath sounds are clear and equal bilaterally."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Now, checking your circulation. Your radial pulse is irregular."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 170 and irregular with occasional extra beats, known as ectopy."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 20, unlabored and regular."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 117/75. Heart rate is high but blood pressure is stable."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 98%. That's good."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 82. It's within the normal range."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "You're currently in Atrial Fibrillation with Rapid Ventricular Response and frequent premature ventricular contractions."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_symptoms",
+      "role": "EMT",
+      "utterance": "You mentioned the chest pain started suddenly. You also feel lightheaded. How bad is the lightheadedness?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "You are allergic to amiodarone and rocephin-understood. We are using metoprolol instead."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Your regular medications are metoprolol, cardizem, and xarelto."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_pmi",
+      "role": "EMT",
+      "utterance": "You had an aortic valve replacement, CABG, previous MI, and a pacemaker implanted-correct?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "intake",
+      "role": "EMT",
+      "utterance": "When was the last time you had something to eat or drink?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "events",
+      "role": "EMT",
+      "utterance": "What were you doing when the symptoms started?"
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "EMT",
+      "utterance": "About how long has the pain been going on now?"
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "tremors",
+      "role": "Medic",
+      "utterance": "Your hands are trembling. You mentioned detoxing from alcohol and haven't had a drink since yesterday-is that right?"
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "No pale skin or pallor observed."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "Medic",
+      "utterance": "Your pupils are equal and reactive. No signs of facial droop or slurred speech."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "Medic",
+      "utterance": "No discharge from ears or nose."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "Medic",
+      "utterance": "Listening to your breath sounds to check for any wheezing or additional sounds."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heart_exam",
+      "role": "Medic",
+      "utterance": "No irregular heart sounds heard just now."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Medic",
+      "utterance": "Let me check your abdomen. There doesn't appear to be any discomfort or guarding."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Medic",
+      "utterance": "No blood in your urine or urgency reported."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "Medic",
+      "utterance": "Your legs and arms seem to be showing normal use and strength."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "temperature",
+      "role": "EMT",
+      "utterance": "Temperature is 98.2° in the ear. No fever reported."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 went to 99% briefly earlier."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We'll place you on a cardiac monitor. Is that okay with you?"
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "A 4-lead ECG was just placed to monitor and stabilize you."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "A 12-lead ECG was just obtained. It shows atrial fibrillation with rapid ventricular response and multiple premature contractions."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "We're about to give you one dose of 324mg chewable aspirin. That's okay with you?"
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "A 20 Gauge IV has been started in the hand successfully."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "You had episodes of supraventricular tachycardia along with the atrial fibrillation."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "vital_signs",
+      "role": "EMT",
+      "utterance": "Your pulse is still at 170, blood pressure 117/75, and oxygen at 98%."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "medical_history",
+      "role": "EMT",
+      "utterance": "I see you have significant cardiac history-valve replacement, bypass surgery, previous MI, and current pacemaker-correct?"
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "medical_history",
+      "role": "EMT",
+      "utterance": "You've also been diagnosed with atrial fibrillation and supraventricular tachycardia-yes?"
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "report_lightheadness",
+      "role": "EMT",
+      "utterance": "You mentioned lightheadedness with your chest pain. How is that now?"
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pertinent_negatives",
+      "role": "EMT",
+      "utterance": "Do you have any numbness or weakness on one side? Or do you have any slurred speech or facial drooping?"
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "protocol_confirmation",
+      "role": "EMT",
+      "utterance": "Just reconfirming your history includes atrial fibrillation, a pacemaker, and previous heart surgery."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Interventions",
+      "micro_intent": "drug_allergies",
+      "role": "Partner",
+      "utterance": "Thanks for informing us about your amiodarone and rocephin allergy-we're using metoprolol instead."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "dehydration",
+      "role": "Medic",
+      "utterance": "You also mentioned not drinking much water today. That can contribute to the irregular heartbeat and lightheaded feeling-is that correct?"
+    },
+    {
+      "turn": 58,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "You will receive 2.5mg of metoprolol via IV to help slow your heart rate."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "EMT",
+      "utterance": "Let's recheck your vitals now. Pulse is 119; BP is 101/73; oxygen is 100%."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "glucose_zero",
+      "role": "EMT",
+      "utterance": "Your blood glucose remains at 0, but you haven't eaten today. We will keep that in mind."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "spO2_99",
+      "role": "EMT",
+      "utterance": "Earlier, it was 99% but has now stabilized at 100%."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "report_sharp_pain",
+      "role": "EMT",
+      "utterance": "The pain is still sharp and localized with no spreading."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "no_st_elevation",
+      "role": "EMT",
+      "utterance": "No signs of ST-elevation MI, but we're closely monitoring."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "redo_hpi",
+      "role": "EMT",
+      "utterance": "You don't have any confusion or trouble with your balance or coordination."
+    },
+    {
+      "turn": 65,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We've followed the tachycardia and chest pain protocol including IV fluids and metoprolol, authorized by medical control."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Mr. Smith, you're now on the stretcher. You're secure for transport."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Transporting you directly to [COMPANY_NAME] cardiovascular services."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Your pulse is now 119; blood pressure 101/73; oxygen remains at 100%."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "Metoprolol was successfully administered."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain",
+      "role": "EMT",
+      "utterance": "The pain is still sharp with no change in sensation."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 117/80."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 remains at 100%."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Metoprolol 2.5mg was successfully administered with improvement noted."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "You're showing positive response to the treatment. Let's continue to monitor."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You're secure and ready for transport now."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "in_person",
+      "role": "EMT",
+      "utterance": "Contacting the [COMPANY_NAME] staff for an update on our arrival."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "in_person",
+      "role": "EMT",
+      "utterance": "Handoff to ER complete. We are now en route."
+    }
+  ]
+}

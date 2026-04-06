@@ -1,0 +1,526 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002563",
+  "protocol": [
+    "medical - hypotension/shock (nontrauma) (protocol 3 - 13)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a sick person at --Address Redacted-- in the city of [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi ma'am, I'm Alex and I'm an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I'm feeling very weak and dizzy. It happened a few minutes ago while sitting outside."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "I see you're awake. Let me assess how alert you are now."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "I need you to tell me your full name and the day of the week."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you raise your right arm for me? How about both arms together?"
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is clear and there's no sign of obstruction or unusual posture."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "You're breathing regularly. Does it feel comfortable for you?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "I'd like to take your pulse and check your blood pressure now."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Let me take your blood pressure. It's 72 over 43."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 58, with a regular rhythm."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing rate is 16 per minute and seems unlabored."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "I'll now put a clip on your finger to measure your oxygen saturation."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "I need to check your blood sugar. It is currently 136."
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "identify_secondary_complaints",
+      "role": "EMT",
+      "utterance": "Are you experiencing any abdominal pain or discomfort?"
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "identify_allergies",
+      "role": "EMT",
+      "utterance": "Do you have any known allergies to medications or food?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "identify_medication_use",
+      "role": "EMT",
+      "utterance": "Are you currently taking any medications for chronic or recent conditions?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "identify_medical_history",
+      "role": "EMT",
+      "utterance": "Have you ever had conditions like heart disease or diabetes?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "diet",
+      "role": "EMT",
+      "utterance": "Have you been eating and drinking regularly over the past couple of days?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "event_cause",
+      "role": "EMT",
+      "utterance": "Did anything specific happen before you started feeling weak and dizzy?"
+    },
+    {
+      "turn": 21,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Your level of responsiveness is normal. Your Glasgow Coma Scale is 15, I'll note that."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I don't see any rashes, bruises, scars, or signs of a bite on your skin."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Let me examine your neck gently for any lymph nodes or tenderness."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "EMT",
+      "utterance": "I'll now check your mouth and throat for signs of obstruction or discomfort."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "I'm going to listen to your heart and lungs with a stethoscope."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Interventions",
+      "micro_intent": "initiate_fluids",
+      "role": "Partner",
+      "utterance": "We are starting an IV and giving fluids to help improve your blood pressure."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ecg",
+      "role": "Partner",
+      "utterance": "I'm placing these pads to check your heart rhythm."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ecg",
+      "role": "Partner",
+      "utterance": "The heart rhythm is a normal sinus rhythm. No concerning findings at this time."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Let me retake your blood pressure now. It improved to 87 over 57."
+    },
+    {
+      "turn": 30,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation dropped slightly to 88, but your other vitals are stable."
+    },
+    {
+      "turn": 31,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "The last blood pressure measurement is 92 over 56. Your readings are trending up."
+    },
+    {
+      "turn": 32,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We're following the Medical - Hypotension/Shock (Nontrauma) protocol per standing orders."
+    },
+    {
+      "turn": 33,
+      "topic": "Transport",
+      "micro_intent": "destination_plan",
+      "role": "EMT",
+      "utterance": "You've requested transport to [COMPANY_NAME]. That remains the destination."
+    },
+    {
+      "turn": 34,
+      "topic": "Transport",
+      "micro_intent": "moving_patient",
+      "role": "Partner",
+      "utterance": "Let's move you to the stretcher. Can you stand as best as you can?"
+    },
+    {
+      "turn": 35,
+      "topic": "Transport",
+      "micro_intent": "secure_patient",
+      "role": "EMT",
+      "utterance": "You're now secured on the stretcher with straps and the rails have been lowered."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "I'm going to gently feel your abdomen for any tenderness or masses."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Patient",
+      "utterance": "I've had constipation and abdominal pain for several days."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "Have you had any blood in your stools or changes in urination?"
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Our earlier reading showed a blood sugar of 136. That was around the time of your initial symptoms."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "update_overall_status",
+      "role": "EMT",
+      "utterance": "Your vitals are trending upward. You're showing some improvement."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "en_route",
+      "role": "EMT",
+      "utterance": "The transport to [COMPANY_NAME] is starting now."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "check_comfort",
+      "role": "EMT",
+      "utterance": "How do you feel right now? Any new symptoms or concerns?"
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "assess_fluids",
+      "role": "Partner",
+      "utterance": "The fluids are continuing and you're not receiving any additional medications at this time."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ecg_concluded",
+      "role": "Partner",
+      "utterance": "The ECG results are normal for a female in her 80s, nothing concerning found."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "ongoing_monitoring",
+      "role": "EMT",
+      "utterance": "I'll continue to monitor your vitals, especially blood pressure and heart rate."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "secure_patient",
+      "role": "Partner",
+      "utterance": "You're secured on the stretcher, and the rails are in place for transport."
+    },
+    {
+      "turn": 47,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_info",
+      "role": "EMT",
+      "utterance": "For documentation, can you share your full name and age?"
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "gather_secondary_complaints",
+      "role": "EMT",
+      "utterance": "Your constipation could be contributing to the low blood pressure you're experiencing."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "transporting",
+      "role": "EMT",
+      "utterance": "The ride to the hospital will take about fifteen minutes. Let me know if you need anything."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "reassess_vital_signs",
+      "role": "Partner",
+      "utterance": "I will continue routine check-ups on your blood pressure and oxygen levels."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "vitals",
+      "role": "Partner",
+      "utterance": "Your most recent readings are 92 over 56 blood pressure and heart rate of 58."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "EMT",
+      "utterance": "Let me check your extremities for signs of reduced sensation or injury."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Partner",
+      "utterance": "Peripheral pulses are weak but present. No deformities noted."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "EMT",
+      "utterance": "I'll now look at your back for any signs of pain or discomfort. Press any areas?"
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "en_route",
+      "role": "EMT",
+      "utterance": "You appear more stable, so the move to the hospital should be smooth."
+    },
+    {
+      "turn": 56,
+      "topic": "Handoff",
+      "micro_intent": "update_hospital_staff",
+      "role": "Partner",
+      "utterance": "The hospital is aware of the fluids we've started and the improvement in your vitals."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "collect_history",
+      "role": "EMT",
+      "utterance": "Your low blood pressure seems likely due to a hypovolemic issue, possibly from constipation."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "update_complaints",
+      "role": "EMT",
+      "utterance": "Your main issues are weakness, dizziness, and discomfort from prolonged constipation."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "en_route",
+      "role": "EMT",
+      "utterance": "We're still en route and will keep monitoring your condition. Let us know if needed."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "notify_hospital",
+      "role": "Partner",
+      "utterance": "The hospital staff have been notified and are prepared to receive you on arrival."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "ongoing_vitals",
+      "role": "Partner",
+      "utterance": "The last oxygen saturation reading is 99% - remaining in the normal range."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "final_handoff",
+      "role": "EMT",
+      "utterance": "We're arriving at [COMPANY_NAME] now and will transfer you to the emergency staff."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "final_handoff",
+      "role": "Partner",
+      "utterance": "The nurse will take over. I've provided a report of our care so far."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "complete_report",
+      "role": "Partner",
+      "utterance": "I've given a complete care report to emergency staff and remain with you."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "wrap_up",
+      "role": "EMT",
+      "utterance": "All documentation about your care has been completed and shared with the hospital team."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "vitals_report",
+      "role": "Partner",
+      "utterance": "Vital readings have remained stable throughout the care and transport."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "conclusion",
+      "role": "EMT",
+      "utterance": "The care has been fully handed over to the hospital medical team."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "post_transfer",
+      "role": "Partner",
+      "utterance": "The hospital team now has access to your full medical record."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "after_care",
+      "role": "EMT",
+      "utterance": "If not already scheduled, make sure to follow up with your primary care physician."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "admission",
+      "role": "Partner",
+      "utterance": "The hospital will assess your condition and determine what additional care you need."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "follow_up",
+      "role": "EMT",
+      "utterance": "Please speak to the hospital staff about arranging follow-up care once discharged."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "onboarding",
+      "role": "Partner",
+      "utterance": "Your care team is aware of the possible link between constipation and your symptoms."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "hospital_handoff",
+      "role": "Partner",
+      "utterance": "We'll remain with you until the hospital takes over your care."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "handoff_complete",
+      "role": "EMT",
+      "utterance": "Emergency care is fully transitioned to the hospital staff now."
+    }
+  ]
+}

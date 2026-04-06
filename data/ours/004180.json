@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004180",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond for shortness of breath in [CITY]."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Good afternoon, sir. I'm Alex with EMS. What brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been having shortness of breath for three days, and it got worse this morning when I tried to go down the stairs."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "You seem alert and oriented. Can you tell me your name and where you are?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "aox4",
+      "role": "Partner",
+      "utterance": "Mr. Johnson, what is today's date, and can you tell me where you are again?"
+    },
+    {
+      "turn": 6,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_clearance",
+      "role": "EMT",
+      "utterance": "Airway is clear. You mentioned being upright. Are you more comfortable like this?"
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "rate_and_depth",
+      "role": "Partner",
+      "utterance": "Breathing is 18 breaths per minute. You can speak between breaths. Are you experiencing any chest discomfort?"
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "pulse_rate",
+      "role": "EMT",
+      "utterance": "Radial pulse is strong and regular bilaterally. Any unusual sensations or dizziness?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin_appearance",
+      "role": "Partner",
+      "utterance": "Skin is warm, dry, with normal color. Cap refill is less than 2 seconds. Any rashes or swelling?"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "presence_breath_sounds",
+      "role": "EMT",
+      "utterance": "Breath sounds are bilateral, with some wheezing and rales. Any cough or sputum production?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "orthopnea",
+      "role": "EMT",
+      "utterance": "You mention shortness of breath when moving. Do you find it easier to breathe when sitting upright?"
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ in room air is 80%. I'll put you on 3 LPM oxygen via nasal cannula now."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "jvd",
+      "role": "Partner",
+      "utterance": "No jugular venous distension observed at the moment. Neck is symmetrical."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "abdominal_tenderness",
+      "role": "EMT",
+      "utterance": "No signs of abdominal pain or tenderness at this time. Any issues in your stomach or lower chest?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "loc",
+      "role": "Partner",
+      "utterance": "GCS is 15. You appear calm and cooperative. Any confusion or difficulty remembering?"
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "medical_history",
+      "role": "Partner",
+      "utterance": "Your history includes hypertension, CHF, old MI, and an AICD. Any other known conditions?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Partner",
+      "utterance": "You're currently taking blood thinners and several others. You say you've been complying with regimens."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "productive_cough",
+      "role": "EMT",
+      "utterance": "You mentioned a productive cough with white sputum and worsening this morning."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Initial pulse is 91, slightly elevated."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate remains at 18."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 145 over 91."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 92% with current support."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is 113. Blood sugar appears stable."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2_2",
+      "role": "Partner",
+      "utterance": "With oxygen on, your saturation has improved to 98%."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp_2",
+      "role": "Partner",
+      "utterance": "Recheck shows respirations at 36 now. Working a bit harder."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp_2",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 147 over 92."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is not measurable but no hypoglycemic symptoms are reported."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "nasal_cannula",
+      "role": "Partner",
+      "utterance": "I've set up nasal cannula at 3 LPM to support your oxygen needs."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "ecg_4_lead",
+      "role": "Partner",
+      "utterance": "Placed you on 4-lead monitoring for ongoing rhythm analysis."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "ecg_12_lead",
+      "role": "Partner",
+      "utterance": "12-lead ECG was taken and showed a possible fascicular block and LAE."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start_extremity_vein_arm_or_leg",
+      "role": "Partner",
+      "utterance": "We attempted IV access in left AC with 20G, then in your right hand with 20G, but no success."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "aox4",
+      "role": "Partner",
+      "utterance": "Reassessed GCS: 15. Fully alert, responding appropriately."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "perrl",
+      "role": "Partner",
+      "utterance": "Pupils equal, round, reactive, 3mm in size."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "duoneb",
+      "role": "Partner",
+      "utterance": "Administering Duoneb with 5 mg Albuterol and 0.5 mg Ipratropium via neb mask with 8 LPM air flow."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "etco2",
+      "role": "Partner",
+      "utterance": "Continuous etCO₂ monitoring is now active."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "After Duoneb, your oxygen saturation is maintained at 100%."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "gcs",
+      "role": "EMT",
+      "utterance": "No change in responsiveness: still GCS 15."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "ekg_new",
+      "role": "Partner",
+      "utterance": "12-lead ECG re-run shows sinus rhythm. No acute ST changes noted."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "improvement_feedback",
+      "role": "Partner",
+      "utterance": "You stated you felt some improvement after the nebulizer treatment. Any worsening symptoms?"
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "pain_0",
+      "role": "Partner",
+      "utterance": "Throughout the evaluation, you reported no additional pain beyond shortness of breath."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "final_vitals",
+      "role": "Partner",
+      "utterance": "Final vitals: pulse 92, BP 147/88, 28 respirations. Stable and trending toward improvement."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdominal_check",
+      "role": "EMT",
+      "utterance": "No signs of tenderness, rigidity, or masses in your abdomen."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_wall_exam",
+      "role": "Partner",
+      "utterance": "Chest wall is symmetrical with no deformities or tenderness. Expansion is equal bilaterally."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremity_exam",
+      "role": "EMT",
+      "utterance": "No swelling or edema in your extremities. Movement and strength are normal."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "securing",
+      "role": "Partner",
+      "utterance": "You will be secured in Fowler's position with lap and shoulder restraints for transport."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "Partner",
+      "utterance": "Destination is [COMPANY_NAME], chest pain room 12 for evaluation."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "aox4",
+      "role": "Partner",
+      "utterance": "Rechecking alertness: name, location, time?"
+    },
+    {
+      "turn": 48,
+      "topic": "Primary Assessment",
+      "micro_intent": "work_of_breathing",
+      "role": "Partner",
+      "utterance": "You still appear to have some work of breathing, but no immediate distress."
+    },
+    {
+      "turn": 49,
+      "topic": "Primary Assessment",
+      "micro_intent": "falls",
+      "role": "Partner",
+      "utterance": "Inquiries show no history or signs of recent falls."
+    },
+    {
+      "turn": 50,
+      "topic": "Primary Assessment",
+      "micro_intent": "jvd",
+      "role": "Partner",
+      "utterance": "We check again for jugular distention and find none."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdominal_check",
+      "role": "Partner",
+      "utterance": "Still no abdominal pain or rigidity detected."
+    },
+    {
+      "turn": 52,
+      "topic": "Primary Assessment",
+      "micro_intent": "pain",
+      "role": "Partner",
+      "utterance": "No pain reported in the assessment for chest or abdomen."
+    },
+    {
+      "turn": 53,
+      "topic": "Primary Assessment",
+      "micro_intent": "abdominal_pain",
+      "role": "Partner",
+      "utterance": "Still no pain or discomfort in the stomach area."
+    },
+    {
+      "turn": 54,
+      "topic": "Primary Assessment",
+      "micro_intent": "loss_of_consciousness",
+      "role": "Partner",
+      "utterance": "No recent loss of consciousness or dizziness."
+    },
+    {
+      "turn": 55,
+      "topic": "Primary Assessment",
+      "micro_intent": "chills",
+      "role": "Partner",
+      "utterance": "No chills or fever reported in the history."
+    },
+    {
+      "turn": 56,
+      "topic": "Primary Assessment",
+      "micro_intent": "headache",
+      "role": "Partner",
+      "utterance": "You don't report any headache or visual changes."
+    },
+    {
+      "turn": 57,
+      "topic": "Primary Assessment",
+      "micro_intent": "mildly_widened_qrs",
+      "role": "Partner",
+      "utterance": "12-lead showed mild widening of the QRS, consistent with a fascicular block."
+    },
+    {
+      "turn": 58,
+      "topic": "Primary Assessment",
+      "micro_intent": "orthopnea",
+      "role": "Partner",
+      "utterance": "You describe orthopnea, meaning you prefer to stay upright due to breathing difficulty."
+    },
+    {
+      "turn": 59,
+      "topic": "Primary Assessment",
+      "micro_intent": "trauma",
+      "role": "Partner",
+      "utterance": "No signs of trauma or recent falls."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "protocol",
+      "role": "Partner",
+      "utterance": "Managed using Protocol 3-11: Respiratory Distress-COPD/Reactive Airway."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement",
+      "role": "Partner",
+      "utterance": "We have you secured for transport in a seated position for safe transfer."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "place",
+      "role": "Partner",
+      "utterance": "Hospital destination reconfirmed: [COMPANY_NAME], Emergency Department."
+    },
+    {
+      "turn": 63,
+      "topic": "Chief Complaint",
+      "micro_intent": "update",
+      "role": "Partner",
+      "utterance": "Updated assessment: shortness of breath worsened this morning with no chest pain."
+    },
+    {
+      "turn": 64,
+      "topic": "Primary Assessment",
+      "micro_intent": "los",
+      "role": "Partner",
+      "utterance": "No sign of recent trauma, loss of consciousness, or unconscious secondary events."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "respirations",
+      "role": "Partner",
+      "utterance": "Breathing at 28 per minute after treatment remains in the tachypneic range."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Interventions",
+      "micro_intent": "pre_hospital",
+      "role": "Partner",
+      "utterance": "Oxygen and nebulizer were administered as per the COPD/Respiratory Distress protocol."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "position",
+      "role": "Partner",
+      "utterance": "Positioning is critical for symptom control, so we ensure you stay in the Fowler's position."
+    },
+    {
+      "turn": 68,
+      "topic": "Primary Assessment",
+      "micro_intent": "locus_so",
+      "role": "Partner",
+      "utterance": "No signs of head trauma or neurological deficit observed."
+    },
+    {
+      "turn": 69,
+      "topic": "Primary Assessment",
+      "micro_intent": "abrupt_worsening",
+      "role": "Partner",
+      "utterance": "You described an abrupt worsening in breathlessness this morning when walking, consistent with orthopnea."
+    },
+    {
+      "turn": 70,
+      "topic": "Protocol",
+      "micro_intent": "patient_status",
+      "role": "Partner",
+      "utterance": "Still stable and responsive, no signs of acute cardiac or pulmonary event."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "oxygen",
+      "role": "Partner",
+      "utterance": "Current saturation is 100%, which is excellent with the treatment."
+    },
+    {
+      "turn": 72,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "wake_up",
+      "role": "Partner",
+      "utterance": "Let me check: Mr. Johnson, can you squeeze my hand? Awareness is still present."
+    },
+    {
+      "turn": 73,
+      "topic": "Primary Assessment",
+      "micro_intent": "no_cardiac_arrest",
+      "role": "Partner",
+      "utterance": "Patient shows full responsiveness throughout. No cardiac arrest event today."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "Partner",
+      "utterance": "Head and neck are normal, no swelling or trauma. Pupils reactive bilaterally."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "protocol_used",
+      "role": "EMT",
+      "utterance": "Our care is guided by Protocol 3-11: Respiratory Distress for this patient."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "final_check",
+      "role": "Partner",
+      "utterance": "All monitoring and lines are in place. Still stable for the trip to the hospital."
+    },
+    {
+      "turn": 77,
+      "topic": "Protocol",
+      "micro_intent": "medical_history_check",
+      "role": "Partner",
+      "utterance": "Medical history confirms: HTN, old MI, CHF, and AICD."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "df_curve",
+      "role": "Partner",
+      "utterance": "No signs of infection or additional clinical concern beyond respiratory distress."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement",
+      "role": "Partner",
+      "utterance": "Patient's condition is consistent for transport while maintaining current supportive care."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin remains normal with no unusual rashes or discolorations."
+    },
+    {
+      "turn": 81,
+      "topic": "Primary Assessment",
+      "micro_intent": "absence_hypoxia",
+      "role": "Partner",
+      "utterance": "No hypoxia detected throughout. Oxygen support is effective."
+    },
+    {
+      "turn": 82,
+      "topic": "Primary Assessment",
+      "micro_intent": "iv_attempts",
+      "role": "Partner",
+      "utterance": "Attempts for IV placement made: left AC and right hand, twice each-still not successful."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "documentation",
+      "role": "Partner",
+      "utterance": "Notes are complete, including medications, EKG changes, and interventions."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "recheck",
+      "role": "Partner",
+      "utterance": "Rechecked pulse, BP, respirations. All stable prior to moving to the unit."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "final_vit_signs",
+      "role": "Partner",
+      "utterance": "Final vitals before departure-pulse 92, BP 147/88, respirations 28, SpO2 100."
+    },
+    {
+      "turn": 86,
+      "topic": "Take Interventions",
+      "micro_intent": "successful",
+      "role": "EMT",
+      "utterance": "Successful in administering Duoneb and providing adequate oxygen support."
+    },
+    {
+      "turn": 87,
+      "topic": "Take Interventions",
+      "micro_intent": "confirmation",
+      "role": "EMT",
+      "utterance": "EKG monitoring shows improvement in rhythm: no acute event detected."
+    },
+    {
+      "turn": 88,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "breathing",
+      "role": "Partner",
+      "utterance": "Still able to take in full breaths and talk between words."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "final_check",
+      "role": "Partner",
+      "utterance": "Final exam shows no new findings-everything stays consistent."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "completion",
+      "role": "Partner",
+      "utterance": "All checks completed. Movement assisted and safety verified."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "final_notes",
+      "role": "EMT",
+      "utterance": "Did not experience worsening pain, CPR, or need for extra interventions."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "final_words",
+      "role": "Partner",
+      "utterance": "Take these vitals and our reports to the nurses. Any more questions?"
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "signs_green",
+      "role": "EMT",
+      "utterance": "Patient status: green for transport. All systems normal with supportive care."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "ready",
+      "role": "Partner",
+      "utterance": "Ambulance is prepared for departure, patient is ready for transfer."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "departure",
+      "role": "Partner",
+      "utterance": "Transport initiated to [COMPANY_NAME]-ongoing monitoring in-transit."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "confirmation",
+      "role": "Partner",
+      "utterance": "Time marked: 10:59 AM. Movement initiated. All systems normal for travel."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "reposition",
+      "role": "Partner",
+      "utterance": "Repositioning for comfort and continued oxygen delivery during transport."
+    },
+    {
+      "turn": 98,
+      "topic": "Protocol",
+      "micro_intent": "review",
+      "role": "EMT",
+      "utterance": "Reviewing actions: all in line with trained outcomes and assigned protocols."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "essentials",
+      "role": "Partner",
+      "utterance": "Essentials rechecked-stable to move and arrive."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "final_comments",
+      "role": "Partner",
+      "utterance": "Transfer complete all set for ED placement."
+    }
+  ]
+}
