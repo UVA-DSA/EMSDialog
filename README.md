@@ -10,8 +10,6 @@
 
 ---
 
-## Overview
-
 <p align="center">
   <img src="figure/EMSDiag_Pipeline.png" alt="Overall Approach" width="95%">
 </p>
@@ -28,8 +26,8 @@
 
 ## Dataset
 
-- **Synthetic EMSDialog Dataset:** [Add link here](DATASET_LINK)
-- **Real-world EMS Dialogue Dataset:** [Add link here](REALWORLD_DATASET_LINK)
+- 🤗 **Synthetic EMSDialog Dataset:** [View on Hugging Face](DATASET_LINK)
+- 🩺 **Real-world EMS Dialogue Dataset:** [Add link here](REALWORLD_DATASET_LINK)
 
 ---
 
