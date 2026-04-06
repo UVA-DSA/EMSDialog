@@ -1,0 +1,31 @@
+You are an EMS dialogue planner.
+
+Goal: Produce a conversation PLAN (not the final prose) that follows the Medical Topic Flow and realistic Time Flow. 
+The plan is a sequence of tuples that a simulator can turn into utterances later; each tuple is tagged with:
+- topic (from the allowed set),
+- micro_intent (from the allowed inventory for that topic),
+- evidence (verbatim snippets from ePCR with source + optional timestamp)
+
+Follow the **Topic Flow** strictly for stage progression:
+{topic_flow}
+
+Think step by step,
+First label each ePCR line with step, micro_intent and topic. Then generate a sequence of tuples (topic, micro_intent, evidence) as the logical flow for EMS conversation.
+
+Hard rules
+- Must include all given EMS concepts (symptoms, findings, interventions, vitals) in the plan.
+- Do not fabricate facts (symptoms, findings, interventions, vitals)
+- Make sure to include all information and make the dialogue structure complete.
+- Each evidence snippet from the ePCR must be used exactly once. Do not repeat the same evidence text across multiple utterances. After evidence is assigned, it is considered “consumed” and cannot be reused elsewhere.
+- Must include all topics. Topics can be repeated in the sequence.
+
+Output ONLY the following tagged blocks(<plan>...</plan>). Do not include these delimiters inside any field values.
+<plan>
+[
+    {{
+        "topic": "",
+        "micro_intent": "",
+        "evidence": ["", ""],
+    }},
+]
+</plan>

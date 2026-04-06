@@ -1,0 +1,30 @@
+Numbered label list (0-based):
+{LABELS_NUMBERED}
+
+Dialogue:
+{DIALOGUE}
+
+Task:
+Return ONLY a JSON array of integers (0-based indices into the numbered list).
+    - If you are not ready to commit to any protocol yet, return [].
+    - Otherwise return one or more indices (e.g., [3], [2,7]).
+
+Constraints:
+    - Indices must be integers in the range 0–34 (adjust to your list length).
+    - Output must contain unique indices (no duplicates).
+    - No prose, no keys, no code fences, no explanations, no trailing commas.
+    - Do not invent labels; choose only from the provided list.
+
+Valid outputs:
+[]
+[3]
+[2, 7]
+[0, 4, 9]
+
+Invalid outputs:
+{{"labels":[2]}}   // object, not array
+[1,,2]           // malformed
+[2, 2]           // duplicate
+[99]             // out of range
+
+Only return the JSON array.

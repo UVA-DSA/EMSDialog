@@ -1,0 +1,94 @@
+You task is to think step by step and then generate a realistic EMS multi-person conversation grounded only in the provided ePCR. The number of utterance should be at least 60-80 sentences. 1 sentences per turn, 5-30 words.
+
+- Output hygiene: 
+  • Return ONLY one block: <dialogue> … </dialogue>.  
+  • Inside the tag, output a JSON array of objects with keys {"role","utterance"}.  
+  • No code fences or extra tags. Do NOT place the literal tag strings inside any utterance.
+
+Here is a real EMS conversation example
+[
+  {"role": "Medic", "utterance": "Good morning, sir. My name's Andrew. I'm a paramedic with the Western Al Rescue Squad. What seems to be going on today?"},
+  {"role": "Patient", "utterance": "Um, my my chest really hurts and I'm having some trouble catching my breath."},
+  {"role": "Medic", "utterance": "Okay. Well, do you mind if we take a look at you real quick?"},
+  {"role": "Patient", "utterance": "No, please do."},
+  {"role": "Medic", "utterance": "All right. I'm feeling a radial pulse."},
+  {"role": "Medic", "utterance": "My partner here, Chad, is going to get the 12-lead on you, okay?"},
+  {"role": "Medic Partner", "utterance": "Gotcha. Just gonna be some stickers on your chest and arms and legs here."},
+  {"role": "Medic Partner", "utterance": "Are you able to take your shirt off for us?"},
+  {"role": "Patient", "utterance": "Can I just pull it up?"},
+  {"role": "Medic Partner", "utterance": "Sure, that's fine."},
+  {"role": "Medic Partner", "utterance": "Let's get limb leads first."},
+  {"role": "Medic Partner", "utterance": "Give them a little bit of room for"},
+  {"role": "Medic Partner", "utterance": "You just want them on the wrists? Is that fine?"},
+  {"role": "Medic", "utterance": "Um, yeah, that's fine. Just do it on like the the meaty part of the wrist there."},
+  {"role": "Medic", "utterance": "So tell me a little bit more about this chest pain. When did it start?"},
+  {"role": "Patient", "utterance": "Like 30 minutes ago, maybe. I was just sitting here and then it started hurting all of a sudden."},
+  {"role": "Medic", "utterance": "Okay, you weren't doing anything special when it happened?"},
+  {"role": "Patient", "utterance": "Mm-hmm. Nope, just sitting down."},
+  {"role": "Medic Partner", "utterance": "Okay, these are gonna go on your arms."},
+  {"role": "Medic", "utterance": "Where exactly in your chest is it hurting?"},
+  {"role": "Patient", "utterance": "Right over here."},
+  {"role": "Medic", "utterance": "In the middle?"},
+  {"role": "Patient", "utterance": "In the middle, yeah."},
+  {"role": "Medic", "utterance": "Okay."},
+  {"role": "Medic Partner", "utterance": "Okay, this one's gonna go same spot on your other arm here."},
+  {"role": "Medic", "utterance": "On a scale of 0 to 10, 10 being the worst pain you ever had in your life, what would you describe this pain as?"},
+  {"role": "Patient", "utterance": "Maybe an eight."},
+  {"role": "Medic", "utterance": "An eight out of 10?"},
+  {"role": "Medic", "utterance": "And does it go anywhere else?"},
+  {"role": "Patient", "utterance": "Goes down this arm."},
+  {"role": "Medic", "utterance": "Radiates down your left arm?"},
+  {"role": "Medic Partner", "utterance": "Okay, this one's just gonna go on your calf here."},
+  {"role": "Medic", "utterance": "I'm going to put this on your arm here, okay?"},
+  {"role": "Patient", "utterance": "Okay."},
+  {"role": "Medic Partner", "utterance": "And this one's gonna go on this calf here."},
+  {"role": "Medic", "utterance": "We're gonna get your blood pressure real quick."},
+  {"role": "Patient", "utterance": "Okay."},
+  {"role": "Medic Partner", "utterance": "Grab those."},
+  {"role": "Medic Partner", "utterance": "Alright, these are just gonna go on your chest here."},
+  {"role": "Medic Partner", "utterance": "Let's see if I can find the right one."},
+  {"role": "Medic", "utterance": "Have you ever had anything like this before happen to you, sir?"},
+  {"role": "Patient", "utterance": "Uh, I've had chest pain in the past. They put some stents in my heart a while ago."},
+  {"role": "Medic", "utterance": "Okay, so you've had a previous heart attack?"},
+  {"role": "Patient", "utterance": "I I think so."},
+  {"role": "Medic", "utterance": "Okay."},
+  {"role": "Medic", "utterance": "Do you take aspirin on a daily basis?"},
+  {"role": "Patient", "utterance": "Uh, I don't know what meds I take."},
+  {"role": "Medic", "utterance": "Okay."},
+  {"role": "Medic", "utterance": "I'm going to have you take some aspirin right now. Aspirin is just a medication to help keep your blood from clotting further, okay?"},
+  {"role": "Patient", "utterance": "Okay."},
+  {"role": "Medic", "utterance": "Go ahead and chew these four tablets for me."},
+  {"role": "Medic", "utterance": "324 milligrams of aspirin is in."},
+  {"role": "Medic Partner", "utterance": "Get these untangled."},
+  {"role": "Medic", "utterance": "All right, I see that our pulse, or our heart rate is 100."},
+  {"role": "Medic", "utterance": "It appears irregular on the monitor."},
+  {"role": "Medic", "utterance": "Respirations are 28."},
+  {"role": "Medic", "utterance": "Our blood pressure is 98 over 50."},
+  {"role": "Medic", "utterance": "Our SPO2 is 89% on room air."},
+  {"role": "Medic", "utterance": "I'm going to get a quick blood glucose on you, okay?"},
+  {"role": "Patient", "utterance": "Okay."},
+  {"role": "Medic", "utterance": "Blood glucose is 87."},
+  {"role": "Medic", "utterance": "His GCS is 15."},
+  {"role": "Medic Partner", "utterance": "So you're just gonna go up and under here."},
+  {"role": "Medic", "utterance": "Good sir, how old are you?"},
+  {"role": "Patient", "utterance": "70."},
+  {"role": "Medic Partner", "utterance": "Alright, 12 lead's on and connected."},
+  {"role": "Medic", "utterance": "Do me a favor and sit nice and still, okay?"},
+  {"role": "Patient", "utterance": "Okay."},
+  {"role": "Medic", "utterance": "The machine's gonna take a quick picture of your heart."},
+  {"role": "Medic", "utterance": "While this is printing out, we're going to go ahead and get you prepared for transport, okay?"},
+  {"role": "Patient", "utterance": "Okay, sounds good."},
+  {"role": "Medic", "utterance": "Let this print."},
+  {"role": "Medic", "utterance": "All right, I see that our ECG reads, appears to be a sinus rhythm with frequent PVCs. I see ST elevation in leads 2, 3, and AVF, AVF, excuse me. This looks like a, um, inferior STEMI."},
+  {"role": "Medic", "utterance": "We're going to go ahead and get you to the hospital, okay?"},
+  {"role": "Patient", "utterance": "Okay."}
+]
+
+Formatting (STRICT):
+Return ONLY the following blocks. No extra text, no code fences.
+<dialogue>
+[
+  {"role":"","utterance":""},
+  {"role":"","utterance":""}
+]
+</dialogue>

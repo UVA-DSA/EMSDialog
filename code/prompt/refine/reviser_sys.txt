@@ -1,0 +1,169 @@
+Your task is to edit conversation based on ONLY critiques. Do not edit or rewrite the whole conversation but just edit problematic utterances. The number of utterance should be at least 100-150 english-ONLY sentences. 1 sentences per turn, 5-30 words. Your conversations must follow the topic flow of a conversation.  
+
+Hierarchical Definition of Topic Flow
+Topic
+ - Micro-Intent
+    * step
+
+0. Dispatch
+    - radio dispatch
+1. Introduction
+    - introduction
+2. Chief Complaint
+    - identify primary complaint
+3. Responsiveness Exam
+    - AVPU
+    - eye opening
+    - verbal response
+    - motor response 
+4. Primary Assessment
+    - check airway
+        * Airway clearance
+        * Airway: Patent, maintainable, un-maintainable
+        * Preferred posture to maintain airway
+        * Sounds of obstruction
+    - check breathing
+        * Rate and depth of respirations
+        * Cyanosis
+        * Position of the trachea
+        * Work of breathing
+        * Flaring of nostrils
+        * Presence of bilateral breath sounds
+        * Presence of adventitious breath sounds
+        * Asymmetric chest movements
+        * Oxygen saturation measured with pulse oximetry
+    - check circulation
+        * Pulse rate and quality
+        * Skin appearance: Color
+        * Peripheral pulses
+        * Skin temperature
+        * Urinary output
+        * Blood Pressure
+5. History of Present Illness
+    - S.A.M.P.L.E.
+      * signs and symptoms
+      * allergies
+      * medications
+      * pertinent past medical history
+      * last oral intake
+      * events leading up to the event
+    - collect patient personal information
+6. Pain Assessment
+    - O.P.Q.R.S.T.
+      * onset
+      * provocation
+      * quality
+      * radiation
+      * severity
+      * time
+7. Secondary Assessment
+    - skin exam
+        * Presence of petechia, purpura, abrasions,
+        * bruises, scars, or birthmarks
+        * Bite / Sting marks
+        * Rashes
+        * Abnormal skin turgor
+        * Temperature
+        * Color: Jaundice, pallor, etc.
+    - head and neck exam
+        * Pupillary reflex / Size of pupils
+        * Gross visual examination
+        * Abnormal extra-ocular movements
+        * Assessment of mental status / Short & Long
+        * term memory assessment
+        * Neck veins
+        * Swallowing difficulties
+        * Nuchal rigidity
+        * Presence of lymphadenopathy or neck masses
+        * Scars
+    - ears, nose, mouth and throat exam
+        * Hemorrhage
+        * Drainage
+        * Sunken eyes
+        * Gross assessment of the hearing
+        * Obstruction
+        * Foreign body
+    - thorax/lungs/cardio exam
+        * Breath sounds
+        * Heart Sounds
+        * Peripheral vs. Central Pulse Comparison
+        * Scars
+    - abdomen exam
+        * Shape and size
+        * Bowel sounds
+        * Tenderness / Rigidity / Guarding
+        * Masses (i.e., suprapubic masses)
+        * Pelvic tenderness, crepitus, or instability
+        * Scars
+    - genitourinary exam
+        * Rectal bleeding 
+        * Color of urine 
+        * Frequency / Urgency of urination
+        * Stools – Normal / Color
+    - extremities and back exam
+        * Gross motor and sensory function
+        * Peripheral pulses 
+        * Lack of use of an extremity 
+        * Deformity, angulation 
+        * Wounds, abrasions
+        * Vertebral column, flank, buttocks
+8. Take Vital Signs
+    - pulse
+    - resp
+    - bp
+    - glucose
+    - spo2
+    - ekg
+9. Take Interventions
+    - give medications
+    - take procedures
+10. Exit to Protocol:
+    - decide ems protocol
+11. Reassessments:
+    - retake vital signs
+        * pulse
+        * resp
+        * bp
+        * glucose
+        * spo2
+        * ekg
+    - retake interventions 
+        * give medications
+        * take procedures
+    - redo pain assessment
+        * onset
+        * provocation
+        * quality
+        * radiation
+        * severity
+        * time
+    - redo history of present illness
+      * signs and symptoms
+      * allergies
+      * medications
+      * pertinent past medical history
+      * last oral intake
+      * events leading up to the event
+    * collect patient personal information
+12. Transport
+    - destination decision
+    - movement secured
+
+
+Hard Constraints
+- Groundedness: Use ONLY facts from the EPCR. Do not fabricate findings, medications, vital signs that are not in ePCR.
+- Faithfulness: Revise partial problematic dialogue based on critiques. Do not edit or rewrite the whole conversation but just edit problematic utterances.
+- Naturalness: Make the conversation more natural and not like AI-generated.
+
+You must return the edited dialogue only (no prose), in the same schema as the original output:
+  • Return ONLY one block: <dialogue> … </dialogue>.  
+  • Inside the tag, output newline-delimited lines, each line must matching the pattern: <turn>. <topic>; <micro_intent>; <role>: <utterance>. One role only per line (no trailing (role2) or extra speakers inside the utterance)
+  • No code fences or extra tags. Do NOT place the literal tag strings inside any utterance.
+
+Output format (strict)
+<dialogue>
+1. Dispatch; radio_dispatch; dispatcher: Dispatch to Unit 3 responding for chest pain.
+2. Introduction; introduction; EMT: Hi, I’m Alex, an EMT with the rescue squad. What made you call 911 today?
+3. Chief Complaint; identify_primary_complaint; Patient: Uh, chest pain and shortness of breath, started about 30 minutes ago.
+4. Take Vital Signs; bp; Partner: Ma’am, we’re going to take your blood pressure now.
+</dialogue>

@@ -1,0 +1,399 @@
+Your task is to edit and improve the conversation to make it more realistic. The number of utterance should be at least 100-150 english-ONLY sentences. 1 sentences per turn, 5-30 words. Your conversations must follow the topic flow of a conversation.  
+
+Hierarchical Definition of Topic Flow
+Topic
+ - Micro-Intent
+    * step
+
+0. Dispatch
+    - radio dispatch
+1. Introduction
+    - introduction
+2. Chief Complaint
+    - identify primary complaint
+3. Responsiveness Exam
+    - AVPU
+    - eye opening
+    - verbal response
+    - motor response 
+4. Primary Assessment
+    - check airway
+        * Airway clearance
+        * Airway: Patent, maintainable, un-maintainable
+        * Preferred posture to maintain airway
+        * Sounds of obstruction
+    - check breathing
+        * Rate and depth of respirations
+        * Cyanosis
+        * Position of the trachea
+        * Work of breathing
+        * Flaring of nostrils
+        * Presence of bilateral breath sounds
+        * Presence of adventitious breath sounds
+        * Asymmetric chest movements
+        * Oxygen saturation measured with pulse oximetry
+    - check circulation
+        * Pulse rate and quality
+        * Skin appearance: Color
+        * Peripheral pulses
+        * Skin temperature
+        * Urinary output
+        * Blood Pressure
+5. History of Present Illness
+    - S.A.M.P.L.E.
+      * signs and symptoms
+      * allergies
+      * medications
+      * pertinent past medical history
+      * last oral intake
+      * events leading up to the event
+    - collect patient personal information
+6. Pain Assessment
+    - O.P.Q.R.S.T.
+      * onset
+      * provocation
+      * quality
+      * radiation
+      * severity
+      * time
+7. Secondary Assessment
+    - skin exam
+        * Presence of petechia, purpura, abrasions,
+        * bruises, scars, or birthmarks
+        * Bite / Sting marks
+        * Rashes
+        * Abnormal skin turgor
+        * Temperature
+        * Color: Jaundice, pallor, etc.
+    - head and neck exam
+        * Pupillary reflex / Size of pupils
+        * Gross visual examination
+        * Abnormal extra-ocular movements
+        * Assessment of mental status / Short & Long
+        * term memory assessment
+        * Neck veins
+        * Swallowing difficulties
+        * Nuchal rigidity
+        * Presence of lymphadenopathy or neck masses
+        * Scars
+    - ears, nose, mouth and throat exam
+        * Hemorrhage
+        * Drainage
+        * Sunken eyes
+        * Gross assessment of the hearing
+        * Obstruction
+        * Foreign body
+    - thorax/lungs/cardio exam
+        * Breath sounds
+        * Heart Sounds
+        * Peripheral vs. Central Pulse Comparison
+        * Scars
+    - abdomen exam
+        * Shape and size
+        * Bowel sounds
+        * Tenderness / Rigidity / Guarding
+        * Masses (i.e., suprapubic masses)
+        * Pelvic tenderness, crepitus, or instability
+        * Scars
+    - genitourinary exam
+        * Rectal bleeding 
+        * Color of urine 
+        * Frequency / Urgency of urination
+        * Stools – Normal / Color
+    - extremities and back exam
+        * Gross motor and sensory function
+        * Peripheral pulses 
+        * Lack of use of an extremity 
+        * Deformity, angulation 
+        * Wounds, abrasions
+        * Vertebral column, flank, buttocks
+8. Take Vital Signs
+    - pulse
+    - resp
+    - bp
+    - glucose
+    - spo2
+    - ekg
+9. Take Interventions
+    - give medications
+    - take procedures
+10. Exit to Protocol:
+    - decide ems protocol
+11. Reassessments:
+    - retake vital signs
+        * pulse
+        * resp
+        * bp
+        * glucose
+        * spo2
+        * ekg
+    - retake interventions 
+        * give medications
+        * take procedures
+    - redo pain assessment
+        * onset
+        * provocation
+        * quality
+        * radiation
+        * severity
+        * time
+    - redo history of present illness
+      * signs and symptoms
+      * allergies
+      * medications
+      * pertinent past medical history
+      * last oral intake
+      * events leading up to the event
+    * collect patient personal information
+12. Transport
+    - destination decision
+    - movement secured
+
+The logical sequence is as follows,
+{topic_flow}
+
+Suggestions to improve the conversation
+- Must inlcude "Exit to Protocol" topic once —unless the ePCR explicitly lists multiple applicable protocols, in which case include multiple Exit to Protocol turns (different named protocols, brief rationale).
+- Every turn must have the topic string from the inventory.
+- Must include all given EMS concepts.
+- Make the conversation coherent and realistic. Do not list evidences in every utterance, but convert evidence to realistic conversations.
+- Expand the conversation and revise any errors. For example, incorrect roles; wrong names of patient. 
+- Your conversation should also include all Key Symptoms of patient in the ePCR. Do not fabricate vitals, times, meds, or findings.
+- The common symptoms and common medical history should be told by Patient or Bystander. Patient or Bystander must interact with Medic/Medic Partner when they ask questions. Medics must ask one clear, concrete question per turn, 12–30 words long, using neutral “what/when/where/how” phrasing (no leading guesses or one-word prompts).
+- Bystanders and Patient will not to provide any information unless being asked by Medics. Bystanders or Patient can only provide basic chief complaint at first. Main medic will do primary assessment/HPI/pain assessment, diagnosis, partner-medic will help take vitals, give medications. They will ask one question per turn/report one vital per turn. Medics don't know anything about patient, but can only will ask neutral, non-leading phrasing (What/How/Where/When, e.g.: "Can you tell me your medical history?"). Avoid specific guesses in the questions (e.g., "Do you have hypertension?", "Are you allergic to latex?", "When did she last took her ibuprofen"). Partner may report vitals or give brief procedural statements in non-question turns. Partner should deliver all vitals (turn by turn) in separate turns that may be interleaved with other dialogue (e.g., questions, instructions), not necessarily back-to-back. Avoid batching more than one in one turn.
+- Bystand or Patient should respond directly to the medic’s most recent question; do not switch topics. AVPU questions must be answered by patient if conscious. If unsure, say “I’m not sure / I don’t know” rather than guessing.
+- Don't repeat the same information (symptoms, vital signs) in long paragraphs. The medics should talk more (15-30 words).
+- The discussion Treatments and Vitals Signs must strictly follow the timestamp. But each utterance does not include words of timestamp.
+- Patient and Bystander must not say any highly specialized terms, medical terminology or medical dosage. They can only describe limited common symptoms.
+- Multiple roles (patient, bystanders, medic, medic partner) can involve in the conversation. Medic and medic partner should have specific names. Improvise on names. Patient must be involved in the conversation duing assessment and interaction. Bystander might be the person to describe the situation or complement more information for the patient's History of Present Illness.
+- Dispatcher will tell the medics the call type problem and the location. Dispatcher knows nothing about HPI and details about patient.
+- Medics will have lots of verbal interactions with patients/bystanders, for example politely asking for consents (Can we..., do you mind...), testing awareness, introduction as follows
+    -- Medics will introduce themselves and say something like, "Hi, my name is xxx and I'm an EMT with the rescue squad. What made you call 911 today?".
+    -- Instead of directly reporting the patient's Glasgow Coma Scale/Score (GCS) and AVPU, Medics would ask the patient questions to test if they are oriented to person, place and time. Here is more info on that: The "alert and oriented x4" (A&Ox4) assessment is a way to evaluate a person's level of awareness by asking them four questions about their person, place, time, and situation: - Person: What is your name? When is your birthday? - Place: What county are we in? - Time: What is the date? - Situation: What happened today?.
+    -- When doing primary assessment (airway, breathing, circulation), medics will start with asking an consent like "We're going to do a couple of things all at once, okay?" or "do you mind if we take a look at you real quick?"
+    -- When first taking vital signs medics will ask for consents like "Hi ma'am we are going to take your blood pressure."
+    -- When first checking someone's pupils, medics will ask for consents like "Ma'am we are going to shine this light in your eyes to check your pupils"
+    -- When first measuring the patient blood glucose, medics will say some reminders like "Ma'am we are going to check your blood sugar. You are going to feel a pinch in 1, 2, 3."
+    -- When first listening lung sounds and doing an abdominal exam, medics will ask for consents like "Hi Mr. Smith, I am going to listen to your lungs....Can you take a deep breath for me."
+    -- Before transporting the patient to the hospital, medics would ask for consents like "What hospital does the patient want to go to?".
+    -- When doing pain assessment (O.P.Q.R.S.T.), medics will ask something like "On a scale of 0 to 10, 10 being the worst pain you ever had in your life, what would you describe this pain as?", and follow-up questions like "Radiates down your xxx?"
+    -- When doing S.A.M.P.L.E, medics ask questions about "Signs and Symptoms, Allergies, Medications, Pertinent past medical history, Last oral intake, Events leading up to the event"
+    -- Patients can have many modal particles (e.g. hmm, yes, okay) to increase verbal interaction. Patient may not know lots of medical terms.
+- Match behavior to ePCR mental status. Combative patients respond irritably/defensively; anxious sound worried; intoxicated may be slurred; calm patients are polite.
+- State changes: If ePCR shows improvement/deterioration, reflect it in-line (e.g., Partner notes “now responsive to voice,” then patient gives minimal replies; or patient becomes silent). Do not contradict earlier state (e.g., unconscious patients cannot talk).
+
+
+Here is a real EMS conversation example
+Example 1
+1. Introduction; introduction; Medic: Good morning, sir. My name's Andrew. I'm a paramedic with the Western Al Rescue Squad. What seems to be going on today?
+2. Chief Complaint; identify_primary_complaint; Patient: Um, my my chest really hurts and I'm having some trouble catching my breath.
+3. Responsiveness Exam; AVPU; Medic: Do you know where we are?
+4. Responsiveness Exam; AVPU; Patient: We are in the West Albemare
+5. Responsiveness Exam; AVPU; Medic: Which day is it today?
+6. Responsiveness Exam; AVPU; Patient: it's Tuesday
+7. Primary Assessment; check_airway; Medic: Okay. Well, do you mind if we take a look at you real quick?
+8. Primary Assessment; check_airway; Patient: No, please do.
+9. Primary Assessment; check_circulation; Medic: All right. I'm feeling a radial pulse.
+10. Take Vital Signs; ekg; Medic: My partner here, Chad, is going to get the 12-lead on you, okay?
+11. Take Vital Signs; ekg; Medic Partner: Gotcha. Just gonna be some stickers on your chest and arms and legs here.
+12. Take Vital Signs; ekg; Medic Partner: Are you able to take your shirt off for us?
+13. Take Vital Signs; ekg; Patient: Can I just pull it up?
+14. Take Vital Signs; ekg; Medic Partner: Sure, that's fine.
+15. Take Vital Signs; ekg; Medic Partner: Let's get limb leads first.
+16. Take Vital Signs; ekg; Medic Partner: Give them a little bit of room for
+17. Take Vital Signs; ekg; Medic Partner: You just want them on the wrists? Is that fine?
+18. Take Vital Signs; ekg; Medic: Um, yeah, that's fine. Just do it on like the the meaty part of the wrist there.
+19. Pain Assessment; opqrst_onset; Medic: So tell me a little bit more about this chest pain. When did it start?
+20. Pain Assessment; opqrst_onset; Patient: Like 30 minutes ago, maybe. I was just sitting here and then it started hurting all of a sudden.
+21. Pain Assessment; opqrst_provocation; Medic: Okay, you weren't doing anything special when it happened?
+22. Pain Assessment; opqrst_provocation; Patient: Mm-hmm. Nope, just sitting down.
+23. Take Vital Signs; ekg; Medic Partner: Okay, these are gonna go on your arms.
+24. Pain Assessment; opqrst_radiation; Medic: Where exactly in your chest is it hurting?
+25. Pain Assessment; opqrst_radiation; Patient: Right over here.
+26. Pain Assessment; opqrst_radiation; Medic: In the middle?
+27. Pain Assessment; opqrst_radiation; Patient: In the middle, yeah.
+28. Pain Assessment; opqrst_quality; Medic: Okay.
+29. Take Vital Signs; ekg; Medic Partner: Okay, this one's gonna go same spot on your other arm here.
+30. Pain Assessment; opqrst_severity; Medic: On a scale of 0 to 10, 10 being the worst pain you ever had in your life, what would you describe this pain as?
+31. Pain Assessment; opqrst_severity; Patient: Maybe an eight.
+32. Pain Assessment; opqrst_severity; Medic: An eight out of 10?
+33. Pain Assessment; opqrst_radiation; Medic: And does it go anywhere else?
+34. Pain Assessment; opqrst_radiation; Patient: Goes down this arm.
+35. Pain Assessment; opqrst_radiation; Medic: Radiates down your left arm?
+36. Take Vital Signs; ekg; Medic Partner: Okay, this one's just gonna go on your calf here.
+37. Take Vital Signs; bp; Medic: I'm going to put this on your arm here, okay?
+38. Take Vital Signs; bp; Patient: Okay.
+39. Take Vital Signs; ekg; Medic Partner: And this one's gonna go on this calf here.
+40. Take Vital Signs; bp; Medic: We're gonna get your blood pressure real quick.
+41. Take Vital Signs; bp; Patient: Okay.
+42. Take Vital Signs; ekg; Medic Partner: Grab those.
+43. Take Vital Signs; ekg; Medic Partner: Alright, these are just gonna go on your chest here.
+44. Take Vital Signs; ekg; Medic Partner: Let's see if I can find the right one.
+45. History of Present Illness; sample_past_medical_history; Medic: Have you ever had anything like this before happen to you, sir?
+46. History of Present Illness; sample_past_medical_history; Patient: Uh, I've had chest pain in the past. They put some stents in my heart a while ago.
+47. History of Present Illness; sample_past_medical_history; Medic: Okay, so you've had a previous heart attack?
+48. History of Present Illness; sample_past_medical_history; Patient: I I think so.
+49. History of Present Illness; sample_past_medical_history; Medic: Okay.
+50. History of Present Illness; sample_medications; Medic: Do you take aspirin on a daily basis?
+51. History of Present Illness; sample_medications; Patient: Uh, I don't know what meds I take.
+52. History of Present Illness; sample_medications; Medic: Okay.
+53. Take Interventions; give_medications; Medic: I'm going to have you take some aspirin right now. Aspirin is just a medication to help keep your blood from clotting further, okay?
+54. Take Interventions; give_medications; Patient: Okay.
+55. Take Interventions; give_medications; Medic: Go ahead and chew these four tablets for me.
+56. Take Interventions; give_medications; Medic: 324 milligrams of aspirin is in.
+57. Take Vital Signs; ekg; Medic Partner: Get these untangled.
+58. Take Vital Signs; pulse; Medic: All right, I see that our pulse, or our heart rate is 100.
+59. Take Vital Signs; ekg; Medic: It appears irregular on the monitor.
+60. Take Vital Signs; resp; Medic: Respirations are 28.
+61. Take Vital Signs; bp; Medic: Our blood pressure is 98 over 50.
+62. Take Vital Signs; spo2; Medic: Our SPO2 is 89% on room air.
+63. Take Vital Signs; glucose; Medic: I'm going to get a quick blood glucose on you, okay?
+64. Take Vital Signs; glucose; Patient: Okay.
+65. Take Vital Signs; glucose; Medic: Blood glucose is 87.
+66. Take Vital Signs; ekg; Medic Partner: So you're just gonna go up and under here.
+67. History of Present Illness; collect_patient_personal_information; Medic: Good sir, how old are you?
+68. History of Present Illness; collect_patient_personal_information; Patient: 70.
+69. Take Vital Signs; ekg; Medic Partner: Alright, 12 lead's on and connected.
+70. Take Vital Signs; ekg; Medic: Do me a favor and sit nice and still, okay?
+71. Take Vital Signs; ekg; Patient: Okay.
+72. Take Vital Signs; ekg; Medic: The machine's gonna take a quick picture of your heart.
+73. Transport; movement_secured; Medic: While this is printing out, we're going to go ahead and get you prepared for transport, okay?
+74. Transport; movement_secured; Patient: Okay, sounds good.
+75. Take Vital Signs; ekg; Medic: Let this print.
+76. Exit to Protocol; decide_ems_protocol; Medic: All right, I see that our ECG reads, appears to be a sinus rhythm with frequent PVCs. I see ST elevation in leads 2, 3, and AVF, AVF, excuse me. This looks like a, um, inferior STEMI.
+77. Transport; destination_decision; Medic: We're going to go ahead and get you to the hospital, okay?
+78. Transport; movement_secured; Patient: Okay.
+
+Example 2
+1. Introduction; introduction; Medic: Hello Rescue Squad.
+2. Introduction; introduction; Medic: Hi ma'am.
+3. Introduction; introduction; Medic: My name's Jim.
+4. Introduction; introduction; Medic Partner: And I'm Ryan.
+5. Introduction; introduction; Patient: How you doing?
+6. Chief Complaint; identify_primary_complaint; Patient: Not too good.
+7. Responsiveness Exam; AVPU; Medic Partner: She's not really answering appropriately.
+8. Responsiveness Exam; introduction; Medic: Okay.
+9. Responsiveness Exam; sample_signs_and_symptoms; Medic: Are you feeling okay?
+10. Responsiveness Exam; sample_signs_and_symptoms; Patient: My head.
+11. Responsiveness Exam; AVPU; Medic: Can you nod your head?
+12. Responsiveness Exam; AVPU; Medic: Your head?
+13. Responsiveness Exam; sample_signs_and_symptoms; Medic: It's not your head's hurting?
+14. Responsiveness; Responsiveness; Medic: Okay.
+15. Primary Assessment; check_airway; Medic: Well, we're going to do a couple of things to check you out, all right?
+16. Primary Assessment; check breathing; Medic Partner: Her pulse is regular and strong.
+17. Primary Assessment; check breathing; Medic: Good.
+18. History of Present Illness; sample_events; Medic: How long ago did this start happening?
+19. History of Present Illness; sample_events; Patient: I don't know.
+20. History of Present Illness; sample_events; Medic: You don't know?
+21. History of Present Illness; sample_events; Medic: Oh, okay.
+22. Responsiveness Exam; AVPU; Medic: Can you say a sentence for me?
+23. Responsiveness Exam; AVPU; Medic: Say the sentence, you cannot teach an old dog new tricks.
+24. Responsiveness Exam; AVPU; Patient: You you can't teach this.
+25. Responsiveness Exam; AVPU; Medic: Okay.
+26. Responsiveness Exam; AVPU; Medic: Okay.
+27. Responsiveness Exam; AVPU; Medic: I know there's so much going on right now.
+28. Primary Assessment; check_breathing; Medic: We're going to do a couple of things all at once, okay?
+29. Take Vital Signs; ekg; Medic: We're going to get an EKG on you.
+30. Take Vital Signs; glucose; Medic: We are going to check your blood sugar.
+31. Take Vital Signs; glucose; Medic: So we're going to do a whole bunch of things all at once.
+32. Take Vital Signs; bp; Medic Partner: I'm going to get your blood pressure over here.
+33. History of Present Illness; sample_events; Medic: Are you the one that called 911?
+34. History of Present Illness; sample_events; Patient: I don't know.
+35. History of Present Illness; sample_events; Medic: You don't know? Okay.
+36. History of Present Illness; sample_events; Medic: Did this happen a little while ago or a long while ago?
+37. History of Present Illness; sample_events; Patient: A little while ago.
+38. History of Present Illness; sample_events; Medic: Did you wake up like this?
+39. History of Present Illness; sample_events; Patient: Yes.
+40. History of Present Illness; sample_events; Medic: Okay.
+41. History of Present Illness; sample_events; Medic: All right.
+42. History of Present Illness; sample_past_medical_history; Medic: Do you have any kind of medical history, like heart problems, breathing problems?
+43. History of Present Illness; sample_past_medical_history; Patient: Asthma.
+44. History of Present Illness; sample_past_medical_history; Medic: You have asthma?
+45. History of Present Illness; sample_past_medical_history; Medic: Okay.
+46. Take Vital Signs; bp; Medic Partner: 210 over 160.
+47. Take Vital Signs; bp; Medic: Oh, dear.
+48. History of Present Illness; sample_past_medical_history; Medic: Do you have a history of high blood pressure?
+49. History of Present Illness; sample_past_medical_history; Patient: No.
+50. Take Vital Signs; bp; Medic: That's like 210 over
+51. Take Vital Signs; bp; Medic Partner: 160.
+52. History of Present Illness; sample_past_medical_history; Medic: 160? Okay.
+53. History of Present Illness; sample_past_medical_history; Medic: No history of high blood pressure?
+54. History of Present Illness; sample_events; Medic: Have you done any travel recently, airplane rides, long drives?
+55. History of Present Illness; sample_events; Patient: No.
+56. History of Present Illness; sample_events; Medic: No? Okay.
+57. Take Vital Signs; glucose; Medic: We're going to do a little assessment here.
+58. Take Vital Signs; glucose; Medic: I'm going to do an assessment of your blood sugar.
+59. Take Vital Signs; glucose; Medic: And while you're getting that ready, do me a favor.
+60. Take Vital Signs; glucose; Medic: Take your hands, right?
+61. Take Vital Signs; glucose; Medic: Hold your hands up.
+62. Take Vital Signs; glucose; Medic: Close your eyes.
+63. Take Vital Signs; glucose; Medic: I want you to kind of let your arms go.
+64. Take Vital Signs; glucose; Medic: Hold your arms straight, okay?
+65. Take Vital Signs; glucose; Medic: We'll do it one more time.
+66. Take Vital Signs; glucose; Medic: Okay.
+67. Take Vital Signs; glucose; Medic: And open your eyes up.
+68. Secondary Assessment; check_eyes; Medic: Let me just check your pupils.
+69. Secondary Assessment; check_eyes; Medic Partner: Quick poke, one, two, three.
+70. Secondary Assessment; check_eyes; Medic: Okay.
+71. Secondary Assessment; neurologic_exam; Medic: And is positive on the BEFAST.
+72. Secondary Assessment; introdneurologic_examuction; Medic Partner: Okay.
+73. Take Vital Signs; glucose; Medic Partner: Glucose 110.
+74. Take Vital Signs; glucose; Medic: Accu-Chek 110.
+75. Take Vital Signs; glucose; Medic: Okay.
+76. Take Vital Signs; pulse; Medic: And actually, what was that pulse rate you got?
+77. Take Vital Signs; pulse; Medic Partner: Uh...
+78. Take Vital Signs; pulse; Medic Partner: And her heart rate is currently 98.
+79. Take Vital Signs; spo2; Medic Partner: SPO2 96.
+80. Take Vital Signs; spo2; Medic: Okay.
+81. Take Vital Signs; spo2; Medic: Well,
+82. Take Vital Signs; spo2; Medic: there's a couple of things going on.
+83. Pain Assessment; opqrst_severity; Medic: You said your headache hurts pretty bad?
+84. Pain Assessment; opqrst_severity; Patient: Yes.
+85. Pain Assessment; opqrst_radiation; Medic: And it hurts over on that side?
+86. Pain Assessment; opqrst_radiation; Medic: Okay.
+87. History of Present Illness; sample_events; Medic: And this all just started.
+88. History of Present Illness; sample_events; Medic: You don't know when it started, but maybe a little bit ago?
+89. History of Present Illness; sample_allergies; Medic: Are you allergic to anything?
+90. History of Present Illness; sample_allergies; Patient: Sulfa.
+91. History of Present Illness; sample_allergies; Medic: Sulfa?
+92. History of Present Illness; sample_allergies; Patient: Okay.
+93. History of Present Illness; sample_allergies; Medic: We're going to do a couple of new things.
+94. History of Present Illness; sample_allergies; Medic Partner: Couple of new things, yeah.
+95. History of Present Illness; sample_allergies; Medic: A couple of things all at the same time.
+96. Transport; movement_secured; Medic: So we're going to get you onto the stretcher, and we're going to take you to the hospital.
+97. Take Vital Signs; ekg; Medic: We're going to do an EKG, and take a look at your heart rhythm.
+98. History of Present Illness; sample_past_medical_history; Medic: Have you had a TIA before?
+99. History of Present Illness; sample_past_medical_history; Patient: No.
+100. History of Present Illness; sample_past_medical_history; Medic: No? Okay.
+101. Transport; movement_secured; Medic: Well, we can talk while we get you onto the stretcher here.
+102. Transport; movement_secured; Medic: Just come and plant your backside right there.
+103. Transport; movement_secured; Medic: There you go.
+104. Transport; movement_secured; Medic: Now, turn your back to me and put your legs up.
+105. Transport; movement_secured; Medic: All right.
+106. Reassessment; check_legs; Medic: If you put your legs up, we can see if she has any control over her legs.
+107. Reassessment; check_legs; Medic Partner: She could at least stand on her own with some help.
+108. Reassessment; check_legs; Medic: All right.
+109. Reassessment; check_head; Medic: If you could try to clench your teeth, or give me a big smile.
+110. Reassessment; check_head; Medic: See if you can smile.
+111. Reassessment; check_head; Medic: All right.
+112. Reassessment; check_head; Medic: Okay.
+113. Reassessment; check_head; Medic: Let me come around the side.
+114. Transport; movement_secured; Medic: Those lights going out, that's me.
+115. Transport; movement_secured; Medic: I'm setting the ambulance back up.
+116. Take Interventions; take_procedures; Medic: We're going to get an IV started.
+117. Transport; destination_decision; Medic: We're going to go Priority 1, lights and sirens, to Virginia Beach General.
+118. Take Vital Signs; ekg; Medic: I'll see if I have time to put a 12-lead on, and we will notify the hospital quickly.
+119. Reassessment; neurologic_exam; Medic: She had an asymmetrical smile, unable to speak, right eye less responsive, unequal gait observed.
+120. Exit to Protocol; decide_ems_protocol; Medic: Activating Stroke or TIA protocol due to BEFAST positive, aphasia, severe hypertension, and glucose 110.
+121. Transport; destination_decision; Medic: Let's go priority to Beach General, and I'm going to call it in.
+122. Transport; destination_decision; Medic Partner: Okay.
+
+
+Formatting (STRICT):
+Return ONLY the following blocks (<dialogue>...</dialogue>). Each line must matching the pattern: <turn>. <topic>; <micro_intent>; <role>: <utterance>. One role only per line (no trailing (role2) or extra speakers inside the utterance). No extra text, no code fences.
+<dialogue>
+1. Dispatch; radio_dispatch; dispatcher: Dispatch to Unit 3 responding for chest pain.
+2. Introduction; introduction; EMT: Hi, I’m Alex, an EMT with the rescue squad. What made you call 911 today?
+3. Chief Complaint; identify_primary_complaint; Patient: Uh, chest pain and shortness of breath, started about 30 minutes ago.
+4. Take Vital Signs; bp; Partner: Ma’am, we’re going to take your blood pressure now.
+</dialogue>

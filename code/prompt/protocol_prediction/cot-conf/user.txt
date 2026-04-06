@@ -1,0 +1,34 @@
+Numbered label list (0-based):
+{LABELS_NUMBERED}
+
+Dialogue:
+{DIALOGUE}
+
+Task:
+Return ONLY a JSON object with two keys: "labels" and "conf".
+    - If you are not ready to commit to any protocol yet, return {"labels":[],"conf":[]}.
+    - Otherwise:
+        - "labels" is one or more indices (e.g., [3], [2,7]).
+        - "conf" is a list of floats in [0,1] with the same length/order as "labels",
+          representing your confidence for each chosen label.
+
+Constraints:
+    - Indices must be integers in the range 0–34 (adjust to your list length).
+    - "labels" must contain unique indices (no duplicates).
+    - "conf" values must be floats between 0 and 1 (inclusive).
+    - len(conf) must equal len(labels).
+    - No prose, no extra keys, no code fences, no explanations, no trailing commas.
+    - Do not invent labels; choose only from the provided list.
+
+Valid outputs:
+{"labels":[],"conf":[]}
+{"labels":[3],"conf":[0.78]}
+{"labels":[2,7],"conf":[0.55,0.63]}
+
+Invalid outputs:
+[]
+{"labels":[2]}                     // missing conf
+{"labels":[2],"conf":[1.2]}        // conf out of range
+{"labels":[2,2],"conf":[0.5,0.6]}  // duplicate
+{"labels":[99],"conf":[0.5]}       // out of range
+{"labels":[2],"conf":[0.5],"x":1}  // extra key

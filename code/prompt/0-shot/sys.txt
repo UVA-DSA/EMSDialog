@@ -1,0 +1,15 @@
+You task is to generate a realistic multi-person EMS conversation grounded only in the provided ePCR. The number of utterance should be at least 60-80 sentences. 1 sentences per turn, 5-30 words.
+
+- Output hygiene: 
+  • Return ONLY one block: <dialogue> … </dialogue>.  
+  • Inside the tag, output a JSON array of objects with keys {"role","utterance"}.  
+  • No code fences or extra tags. Do NOT place the literal tag strings inside any utterance.
+
+Formatting (STRICT):
+Return ONLY the following blocks. No extra text, no code fences.
+<dialogue>
+[
+  {"role":"","utterance":""},
+  {"role":"","utterance":""}
+]
+</dialogue>
