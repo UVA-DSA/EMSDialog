@@ -335,36 +335,34 @@
 
 <!-- Overview -->
 <section class="section teaser">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <h2 class="title is-3">Overview</h2>
 
-    <div class="columns is-vcentered is-variable is-4">
-      <div class="column is-7">
+    <div class="columns is-variable is-5 is-vcentered">
+      <div class="column is-5">
         <figure class="image">
           <img
             src="static/images/EMSDiag_intro.drawio.png"
-            alt="Illustration of conversational diagnosis prediction in emergency medical settings"
+            alt="Qwen3-series model performance on conversational diagnosis prediction for cardiac arrest scenario"
             loading="lazy"
             class="teaser-img"
           />
-          <figcaption class="has-text-grey is-size-6 has-text-justified mt-3">
-            <b>Figure 1.</b>
-            Conversational diagnosis prediction aims to infer a patient’s likely condition during clinical conversations and make early yet reliable diagnostic decisions for time-critical care. Unlike traditional EHR-based diagnosis prediction, this task requires reasoning over incomplete streaming conversational evidence, updating predictions turn by turn, and deciding when to commit versus defer. Off-the-shelf zero-shot LLMs often make premature, overconfident predictions and exhibit unstable outputs as new evidence arrives.
+          <figcaption class="has-text-grey is-size-6 has-text-centered mt-3">
+            <b>Figure 1.</b> Qwen3-series model performance on conversational diagnosis prediction for cardiac arrest scenario.
           </figcaption>
         </figure>
       </div>
 
-      <div class="column is-5">
+      <div class="column is-7">
         <figure class="image">
           <img
             src="static/images/table1.png"
-            alt="Comparison of EMSDialog with existing medical dialogue datasets"
+            alt="Related works comparison of EMSDialog with existing medical dialogue datasets"
             loading="lazy"
             class="table-img"
           />
-          <figcaption class="has-text-grey is-size-6 has-text-justified mt-3">
-            <b>Table 1.</b>
-            Comparison of EMSDialog with existing medical dialogue datasets.
+          <figcaption class="has-text-grey is-size-6 has-text-centered mt-3">
+            <b>Related Works.</b> Comparison of EMSDialog with existing medical dialogue datasets.
           </figcaption>
         </figure>
       </div>
@@ -372,7 +370,11 @@
 
     <div class="content has-text-justified mt-5">
       <p>
-        Training and evaluating models for conversational diagnosis prediction requires realistic medical conversation data paired with diagnosis annotations. In real clinical practice, however, medical conversations are often inherently multi-party: information is elicited, relayed, and verified across speakers with different roles, responsibilities, and access to context. Emergency Medical Services (EMS) is a representative example of this setting, where medics coordinate with partners and dispatch while interacting with patients and bystanders, each contributing distinct evidence throughout the encounter.
+        Conversational diagnosis prediction aims to infer a patient’s likely condition during clinical conversations and make early yet reliable diagnostic decisions for time-critical care. Unlike traditional EHR-based diagnosis prediction, this task requires reasoning over incomplete streaming conversational evidence, updating predictions turn by turn, and deciding when to commit versus defer.
+      </p>
+
+      <p>
+        Training and evaluating models for this task requires realistic medical conversation data paired with diagnosis annotations. In real clinical practice, however, medical conversations are often inherently multi-party: information is elicited, relayed, and verified across speakers with different roles, responsibilities, and access to context. Emergency Medical Services (EMS) is a representative example of this setting, where medics coordinate with partners and dispatch while interacting with patients and bystanders, each contributing distinct evidence throughout the encounter.
       </p>
 
       <p>
