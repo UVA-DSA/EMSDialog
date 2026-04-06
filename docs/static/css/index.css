@@ -340,7 +340,6 @@ body {
   line-height: 1.4;
 }
 
-
 .result-item-side-by-side {
   display: flex;
   gap: 28px;
@@ -349,14 +348,34 @@ body {
   flex-wrap: wrap;
 }
 
-.result-half {
-  flex: 1 1 48%;
-  max-width: 48%;
+.result-left {
+  flex: 1 1 60%;
+  max-width: 60%;
+  margin: 0;
+}
+
+.result-right {
+  flex: 1 1 34%;
+  max-width: 34%;
+  margin: 0;
+}
+
+.table4-img {
+  width: 88%;
+  max-width: 88%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-  .result-half {
+  .result-left,
+  .result-right {
     flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .table4-img {
+    width: 100%;
     max-width: 100%;
   }
 }
