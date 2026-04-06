@@ -16,11 +16,11 @@
 
 ## Contributions
 
-1. We propose a scalable, EHR-grounded, multi agent pipeline for synthetic multi-party dialogue generation, ensuring realism and factuality via independent rule-based concept and topic-flow checkers and an iterative critique-and-refine loop.
+1. We propose a *scalable, EHR-grounded, multi agent pipeline for synthetic multi-party dialogue generation*, ensuring realism and factuality via independent **rule-based** concept and topic-flow checkers and an **iterative critique-and-refine loop**.
 
-2. We introduce EMSDialog, an EMS-specific synthetic dataset of 4,414 realistic multi-party conversations, generated based on a real-world ePCR dataset and annotated with 43 diagnoses, turn level speaker roles and topics. Human expert and LLM-based evaluations show strong quality at both utterance level (realism, safety, role accuracy, groundedness) and conversation level (logical flow, factuality, diversity). 
+2. We introduce **EMSDialog**, an EMS-specific synthetic dataset of 4,414 realistic multi-party conversations, generated based on a real-world ePCR dataset and annotated with 43 diagnoses, turn level speaker roles and topics. Human expert and LLM-based evaluations show strong quality at both utterance level (realism, safety, role accuracy, groundedness) and conversation level (logical flow, factuality, diversity). 
 
-3. We demonstrate the downstream utility of EMSDialog by training models of different sizes for conversational diagnosis prediction and evaluating them on real-world EMS conversations. Experiments show that EMSDialog-augmented training improves prediction accuracy, timeliness, and stability, and combining synthetic with real data yields the strongest overall performance. 
+3. We demonstrate the downstream utility of EMSDialog by training models of different sizes for **conversational diagnosis prediction** and evaluating them on real-world EMS conversations. Experiments show that EMSDialog-augmented training improves prediction accuracy, timeliness, and stability, and combining synthetic with real data yields the strongest overall performance. 
 
 ---
 
@@ -53,4 +53,12 @@ cd ./code/bash
 ```bash
 cd ./code/bash
 ./dynamic_train_4b_ours.sh
+```
+
+---
+
+## Citation
+
+If you find this work useful, please consider citing our paper.
+```bibtex
 ```
