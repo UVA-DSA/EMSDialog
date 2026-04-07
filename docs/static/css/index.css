@@ -346,7 +346,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: nowrap;
-  margin-top: 68px;   /* 拉开和 Table 3 的距离 */
+  padding-top: 56px !important;
 }
 
 .result-left,
@@ -356,40 +356,15 @@ body {
   margin: 0;
 }
 
-.side-by-side-img {
+.result-right {
+  transform: translateY(28px);
+}
+
+.table4-img {
   width: 100%;
   max-width: 100%;
   display: block;
   margin: 0 auto;
-}
-
-/* 让 Table 4 整体往下移一点 */
-.result-right {
-  margin-top: 18px;
-}
-
-@media (max-width: 768px) {
-  .result-item-side-by-side {
-    flex-wrap: wrap;
-    margin-top: 24px;
-  }
-
-  .result-left,
-  .result-right {
-    max-width: 100%;
-    flex: 0 0 100%;
-  }
-
-  .result-right {
-    margin-top: 0;
-  }
-  
-  .table4-img {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  margin: 18px auto 0 auto;
-}
 }
 
 /* Pagination and Misc Improvements */
