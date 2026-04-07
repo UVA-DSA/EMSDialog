@@ -430,7 +430,7 @@
         <strong>Figure 3.</strong>
         <strong>EMSDialog synthetic dialogue generation pipeline.</strong>
         Starting from an input ePCR, our pipeline first extracts key medical concepts and structured clinical features. 
-        The core of the framework is a set of independent <strong>checkers</strong> that explicitly verify 
+        The core of the framework is a set of independent <strong>Checkers</strong> that explicitly verify 
         <em>concept coverage</em>, <em>topic-flow validity</em>, and <em>dialogue style</em>. 
         These checkers provide structured feedback to three LLM agents: a <strong>Planner</strong>, which proposes a topic-guided dialogue plan grounded in ePCR evidence; a <strong>Generator</strong>, which produces an initial multi-party dialogue draft; and a <strong>Refiner</strong>, which improves coherence, realism, and natural phrasing while preserving factual grounding. 
         The Planner and Generator are repeatedly revised until all hard constraints from the concept and topic-flow checkers are satisfied, while the Refiner further improves stylistic quality based on checker feedback. 
