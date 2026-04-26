@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001458",
+  "protocol": [
+    "medical - stroke/tia (protocol 3 - 5)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 1, respond to 2454 Alderson Drive, a female patient in her 50s reporting a stroke."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Med1",
+      "utterance": "Hi, I'm Rachel, an EMT. My partner is Carlos. Can you tell us what brought you to the hospital today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Uhh, I have the worst headache ever, and I can't talk all that well."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Med1",
+      "utterance": "Of course. I can hear that you're having a hard time speaking. Can you tell me your name for the record?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Janet, J-A-N-E-T, that's my name."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Med1",
+      "utterance": "And how old are you, Janet? What city are we in?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "I'm fifty-five. We're in Richmond, Virginia."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Med1",
+      "utterance": "Okay, if I say \"touch your nose,\" can you do that for me?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "nods head toward nose but speaks slowly* Right... here."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Med1",
+      "utterance": "Okay Janet, can you open your mouth as wide as you can and say \"ahh?\""
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "attempts slowly* Aaah..."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Med1",
+      "utterance": "Thank you. I feel your tongue doesn't seem to be obstructed. Any difficulty breathing?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, no."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Med1",
+      "utterance": "Cool, thank you. Could I get your consent to take your blood pressure and pulse now?"
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Ma'am, we're going to check your blood pressure now."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your current blood pressure is 156 over 96."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 64 beats per minute."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "And your breathing is calm and steady at 20 breaths per minute."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen level is 100% right now."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs and symptoms",
+      "role": "Med1",
+      "utterance": "Okay, Janet. You said you have the worst headache you've ever had. What else are you experiencing?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. signs and symptoms",
+      "role": "Patient",
+      "utterance": "Yes... I can barely talk, and I feel a little lightheaded."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. events leading up to the event",
+      "role": "Med1",
+      "utterance": "When did this head pain get worse?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. events leading up to the event",
+      "role": "Patient",
+      "utterance": "It got worse during my dialysis appointment a little while ago."
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. quality",
+      "role": "Med1",
+      "utterance": "And how would you describe that headache? Sharp, dull, throbbing, or something else?"
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. quality",
+      "role": "Patient",
+      "utterance": "Uhhh… I can't really describe it, just the worst I've ever felt."
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. radiation",
+      "role": "Med1",
+      "utterance": "And does it go anywhere else - like your neck, shoulders, or eyes?"
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. radiation",
+      "role": "Patient",
+      "utterance": "No, it's only in my head."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. severity",
+      "role": "Med1",
+      "utterance": "If 10 is the worst pain you can imagine, how bad is this headache for you?"
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. severity",
+      "role": "Patient",
+      "utterance": "10."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. pertinent past medical history",
+      "role": "Med1",
+      "utterance": "Do you have any chronic medical conditions or ongoing treatments we should be aware of?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. pertinent past medical history",
+      "role": "Patient",
+      "utterance": "I have high blood pressure and dialysis disease. I've had a DVT before."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. medications",
+      "role": "Med1",
+      "utterance": "What medications are you currently taking, Janet?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. medications",
+      "role": "Patient",
+      "utterance": "Lisinopril and Tylenol mostly."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. allergies",
+      "role": "Med1",
+      "utterance": "And Janet, do you have any known allergies to food or medications?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. allergies",
+      "role": "Patient",
+      "utterance": "No, nothing at all."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Med1",
+      "utterance": "Alright, I'm going to take a listen to your chest for a quick second."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Med1",
+      "utterance": "Your chest is moving normally, with equal rise and fall. How is your breathing now?"
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Patient",
+      "utterance": "Still the same."
+    },
+    {
+      "turn": 39,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Med1",
+      "utterance": "Your skin looks warm and pink. How's the feeling in your fingers and toes?"
+    },
+    {
+      "turn": 40,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Patient",
+      "utterance": "Okay... I think."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremity_and_back_exam",
+      "role": "Med1",
+      "utterance": "That's good. Let me just see if I can find a strong pulse in your foot. Here we go."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremity_and_back_exam",
+      "role": "Partner",
+      "utterance": "Pulses in both lower extremities are strong and regular."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Med1",
+      "utterance": "Both of your pupils are opening, they look equally sized and reactive to light. No neck stiffness or pain."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Ma'am, I need to check your blood sugar now. You might feel a small pinch in 1…2…3."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Your blood sugar level is 116 mg/dL."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Med1",
+      "utterance": "We'll need to attach a cardiac monitor for monitoring."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "4-lead monitoring is on now. Rhythm is still sinus for now."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Skin Exam",
+      "role": "Med1",
+      "utterance": "I notice that you have warm, pink, and dry skin. Any rashes or bruises on your body?"
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Skin Exam",
+      "role": "Patient",
+      "utterance": "No, nothing like that."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Skin Exam",
+      "role": "Med1",
+      "utterance": "No signs of petechiae, purpura, or bite marks either."
+    },
+    {
+      "turn": 51,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Med1",
+      "utterance": "I'm going to check your coordination more by asking you to do an arm drift test, if you can."
+    },
+    {
+      "turn": 52,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Med1",
+      "utterance": "Let's try the arm drift test. Raise both arms up to the sides and try to keep them there."
+    },
+    {
+      "turn": 53,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "struggles slightly but keeps arms up"
+    },
+    {
+      "turn": 54,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Med1",
+      "utterance": "Nice. Now, can you blink both eyes without closing them fully?"
+    },
+    {
+      "turn": 55,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "blinks slowly"
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is up... showing first-degree AV block and left bundle branch block."
+    },
+    {
+      "turn": 57,
+      "topic": "Primary Assessment",
+      "micro_intent": "other",
+      "role": "Med1",
+      "utterance": "Can you tell us about any problems with your speech today? You said it's difficult."
+    },
+    {
+      "turn": 58,
+      "topic": "Primary Assessment",
+      "micro_intent": "other",
+      "role": "Patient",
+      "utterance": "I... can't... say... much. Words don't come out right."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Med1",
+      "utterance": "We're going to go ahead and start an IV as per protocol."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "18-gauge IV has been successfully placed in the left arm."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Med1",
+      "utterance": "Just a confirmation on your breathing again. Take another deep breath for me, if you can."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Patient",
+      "utterance": "deep breath"
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Med1",
+      "utterance": "Clear lung sounds - no wheezing or crackles were heard."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Med1",
+      "utterance": "Next, I need to do a 12-lead ECG for specialized evaluation."
+    },
+    {
+      "turn": 65,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "12-lead obtained. Interpretation: sinus rhythm, first-degree AV block and left bundle branch block."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Let me recheck your BP - it's 184 over 91 now."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is 64 still. Breathing rate is 20. SpO2 is 99%."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG update is sinus rhythm with no new changes."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "other",
+      "role": "Med1",
+      "utterance": "I want to inform you we noticed some significant word-finding difficulties and slow speech. What kind of challenges do you face with speaking?"
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "other",
+      "role": "Patient",
+      "utterance": "I understand the words, but saying them - it's so... hard. Slowed down everything."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "other",
+      "role": "Med1",
+      "utterance": "This is consistent with reported dysphasia. We'll account for that in your transport care plan."
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "other",
+      "role": "Med1",
+      "utterance": "During the assessment, there is no visible facial droop or delayed arm drift. Significant dysphasia is noted."
+    },
+    {
+      "turn": 73,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Med1",
+      "utterance": "We're following the medical stroke/tia protocol. We'll transport to a hospital with a dedicated stroke team regardless of mild neurological findings."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Med1",
+      "utterance": "We'll be taking you to Johnston Willis Hospital; they have a dedicated stroke team."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Janet, we're ready to move you now. Please listen for my voice."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Med1",
+      "utterance": "Carlos, confirm the 5-point harness is on and the stretcher is secure."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All set. Harness is secured."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Med1",
+      "utterance": "Janet, get ready to be moved into the ambulance now."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Med1",
+      "utterance": "We'll lower the stretcher gently into the ambulance."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher is secured. Ready to move forward."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Med1",
+      "utterance": "ED, we have a 55-year-old woman with possible stroke. She's experiencing a 10/10 headache and dysphasia. History includes hypertension and ESRD."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Partner",
+      "utterance": "Vital signs stable but EKG findings are abnormal showing left axis deviation and left bundle branch block."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Med1",
+      "utterance": "IV started, monitoring applied. ETA is eight minutes. Prepared for rapid stroke evaluation."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Partner",
+      "utterance": "GCS is 15, SpO2 is 99% on room air."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Med1",
+      "utterance": "Current meds are lisinopril and Tylenol, no known allergies."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Partner",
+      "utterance": "Speech is slow but spontaneous. No facial droop, but dysphasia was noted."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Med1",
+      "utterance": "Patient is ready for ED evaluation. We are beginning transport now."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Med1",
+      "utterance": "We're moving the patient to the ED's stretcher with a sheet lift for safe transfer."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Partner",
+      "utterance": "She's secured and comfortable now for hospital intake."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "summarize_patient_status_and_care",
+      "role": "Med1",
+      "utterance": "Handing over care now to the ED nurse. All monitoring and documentation transferred."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Let's make sure the IV is still secure and the four-lead is on."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Med1",
+      "utterance": "All monitoring is on, no new interventions needed at this time. Vital signs remain stable."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Med1",
+      "utterance": "Can you let us know if your headache changed in the last few minutes?"
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Patient",
+      "utterance": "It's still a 10."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Med1",
+      "utterance": "And is it the same location or anywhere else?"
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Patient",
+      "utterance": "Same. Just in my head."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Med1",
+      "utterance": "Partner, confirm that we're clear for final move into the ED."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher locked and patient secured. Safe for final transfer."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Med1",
+      "utterance": "ED bed is ready. We are initiating sheet lift transfer now."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Sheet lift complete. Patient is on ED bed. All transfers verified."
+    }
+  ]
+}

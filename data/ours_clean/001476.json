@@ -1,0 +1,736 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001476",
+  "protocol": [
+    "medical - diabetic - hypoglycemia (protocol 3 - 8)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 4 responding for suspected hypoglycemia at a nursing facility in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "medic",
+      "utterance": "Hi, I'm Brandon, an EMS Paramedic with the Rescue Squad. What happened to make you call 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "Actually, the patient is a 94-year-old male who was found unresponsive in his room. He has non-insulin dependent diabetes and his blood sugar has been low since around 7 PM."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Paramedic Partner",
+      "utterance": "Okay, chief complaint is altered mental status due to hypoglycemia."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Mr. Smith, can you open your eyes for me?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "Mr. Smith, please tell me your name."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic Partner",
+      "utterance": "Eyes open to verbal stimulus. Eye opening score is 3 out of 4."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic Partner",
+      "utterance": "Verbal score is 4 - patient is quiet and appears confused."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "Squeeze my fingers if you can."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic Partner",
+      "utterance": "Motor score is 6 - patient follows commands."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Airway is patent and clear, no obstruction noted."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Breathing is spontaneous, regular, and adequate."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic Partner",
+      "utterance": "Pulse is 106 BPM."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Respirations are 18 per minute, unlabored."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Paramedic Partner",
+      "utterance": "Pulse oximeter shows 100% saturation on room air."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "Circulation is normal with no bleeding noted. Skin is pink, warm, and dry with poor turgor."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic Partner",
+      "utterance": "Blood pressure is 109 over 70 mmHg."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic Partner",
+      "utterance": "Blood glucose is 30 mg/dL, severely low."
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent",
+      "role": "Paramedic",
+      "utterance": "Head exam shows a chronic concave area on the forehead, about the size of a baseball. No acute changes observed."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Chest is symmetric with no deformities or tracheal deviation. Breathing does not appear labored."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pelvis_exam",
+      "role": "Paramedic",
+      "utterance": "No deformities or signs of instability in the pelvis noted."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Paramedic",
+      "utterance": "Abdomen is flat, no tenderness or rigidity present."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Paramedic",
+      "utterance": "No deformities, wounds, or asymmetries in extremities. Movement is limited likely due to chronic conditions."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "Paramedic",
+      "utterance": "No abnormalities found on the back or flanks."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_exam",
+      "role": "Paramedic Partner",
+      "utterance": "Acute change in mental status observed. GCS of 13. Patient is lethargic and non-verbal."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic Partner",
+      "utterance": "4-lead ECG shows sinus tachycardia."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic Partner",
+      "utterance": "IV access is established in the left hand by peripheral IV."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "administer_dextrose",
+      "role": "Paramedic",
+      "utterance": "175 mL of Dextrose 10% is administered via IV."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "admin_medication",
+      "role": "Paramedic Partner",
+      "utterance": "Glucagon was previously given in three 1 mg doses, with no improvement prior to our arrival."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic",
+      "utterance": "Blood sugar is now 109 mg/dL. Mentation has improved."
+    },
+    {
+      "turn": 31,
+      "topic": "Reassessments",
+      "micro_intent": "redo_secondary_assessment",
+      "role": "Paramedic Partner",
+      "utterance": "Skin remains warm and dry with poor turgor. Mental status shows chronic altered awareness, now more alert."
+    },
+    {
+      "turn": 32,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic",
+      "utterance": "The patient does not express pain at this time."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic",
+      "utterance": "Current pulse is elevated to 115 BPM."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure is now 120/76 mmHg."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Paramedic",
+      "utterance": "SpO2 remains at 100% on room air."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "vital_signs",
+      "role": "Paramedic Partner",
+      "utterance": "Blood sugar remains at 109 mg/dL. Mentation is further improving."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "vital_signs",
+      "role": "Paramedic Partner",
+      "utterance": "Pulse has slightly decreased to 109 BPM."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "vital_signs",
+      "role": "Paramedic Partner",
+      "utterance": "Blood pressure is 117/70 mmHg."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "vital_signs",
+      "role": "Paramedic Partner",
+      "utterance": "SpO2 slightly decreased to 99% but still within normal range."
+    },
+    {
+      "turn": 40,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "Patient is being transported to St. Mary's Hospital per nursing staff request."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient is now secured on the stretcher via a sheet pull."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "position_of_comfort",
+      "role": "Paramedic Partner",
+      "utterance": "Patient is in a semi-Fowler's position for comfort."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient is safely placed on the stretcher and ready for transport."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic Partner",
+      "utterance": "We are en route to St. Mary's Hospital."
+    },
+    {
+      "turn": 45,
+      "topic": "Handoff",
+      "micro_intent": "report_patient_condition",
+      "role": "Paramedic Partner",
+      "utterance": "Handoff report will be transferred to the nurses in ED Room 14 at the hospital."
+    },
+    {
+      "turn": 46,
+      "topic": "Handoff",
+      "micro_intent": "nurse_confirmation",
+      "role": "RN",
+      "utterance": "Thanks for the report. We expect an alert but disoriented patient with resolved hypoglycemia."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent",
+      "role": "Paramedic",
+      "utterance": "No swelling or discoloration observed in the head."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "No tracheal deviation or signs of labored breathing."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic Partner",
+      "utterance": "Breath sounds are present bilaterally."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_exam",
+      "role": "Paramedic",
+      "utterance": "On follow-up, GCS improves to 14 - patient is now more alert and disoriented."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic",
+      "utterance": "BG remains at 109 mg/dL."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "redo_secondary_assessment",
+      "role": "Paramedic Partner",
+      "utterance": "Skin turgor is still poor but overall intact without signs of infection or pressure sores."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Paramedic",
+      "utterance": "No edema in the extremities. Peripheral pulses are present."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Recheck EKG still shows sinus tachycardia, no new changes noted."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic Partner",
+      "utterance": "No JVD observed on direct observation."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "vital_signs",
+      "role": "Paramedic Partner",
+      "utterance": "BP is 117/70 mmHg, stable. No acute changes noted."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic Partner",
+      "utterance": "Recheck respirations are 18, normal depth and rate."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Paramedic Partner",
+      "utterance": "SpO2 is currently 99%, acceptable on room air."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_exam",
+      "role": "Paramedic Partner",
+      "utterance": "Patient remains alert and with disoriented mental status."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent",
+      "role": "Paramedic",
+      "utterance": "No head lacerations or trauma. Concave area on forehead is chronic and unchanged."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Paramedic",
+      "utterance": "No focal neurologic deficits in extremities noted, movement is chronically limited."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_exam",
+      "role": "Paramedic Partner",
+      "utterance": "Speech is quiet but purposeful."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent",
+      "role": "Paramedic",
+      "utterance": "Pupils are reactive to light and symmetric in size."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "Paramedic Partner",
+      "utterance": "No signs of crepitus or bony deformities over the vertebral column."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient is safely transferred to hospital bed with sheet pull by ED staff."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "EMS provides clear narrative to admitting nurse on arrival to ED Room 14."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic Partner",
+      "utterance": "All nursing staff notes and prior interventions were referenced accurately."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Final EKG before handover was normal sinus tachycardia."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic Partner",
+      "utterance": "Final pulse before transfer was 109 BPM."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Final blood pressure prior to transfer was 117/70 mmHg."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "report_patient_condition",
+      "role": "Paramedic Partner",
+      "utterance": "All monitoring devices were removed prior to handoff and per protocol."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "nurse_confirmation",
+      "role": "RN",
+      "utterance": "Patient is expected with resolved hypoglycemia including normal glucose level."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_exam",
+      "role": "Paramedic",
+      "utterance": "No focal neurological deficits noted upon physical assessment."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "redo_secondary_assessment",
+      "role": "Paramedic Partner",
+      "utterance": "Patient revealed history of gout, but no joint swelling present now."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic",
+      "utterance": "No reports of chest pain or discomfort during transfers."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic Partner",
+      "utterance": "Glucose is 109 mg/dL."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_exam",
+      "role": "Paramedic",
+      "utterance": "No signs of acute stroke or perceptual deficits reported."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent",
+      "role": "Paramedic Partner",
+      "utterance": "No head ocular signs reported; visual findings normal."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Paramedic",
+      "utterance": "No organomegaly or suprapubic mass, all normal."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic Partner",
+      "utterance": "No signs of pulmonary involvement or distress."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient was registered in ED Room 14 and then transferred to hospital bed."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "position_of_comfort",
+      "role": "Paramedic Partner",
+      "utterance": "Movement to the bed was performed with sheet pull technique."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "nurse_confirmation",
+      "role": "RN",
+      "utterance": "All positives from paramedics were confirmed and patient is now out of danger."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "redo_secondary_assessment",
+      "role": "Paramedic",
+      "utterance": "Re-examination of skin turgor shows skin still poor with no acute signs of dehydration."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic Partner",
+      "utterance": "Patient remains pain-free with a score of 0 per all assessments."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_present_illness",
+      "role": "Paramedic",
+      "utterance": "History includes non-insulin dependent diabetes, severe gout, and dementia."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Ongoing breathing remains within normal limits."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_exam",
+      "role": "Paramedic",
+      "utterance": "Timeline of mental status change consistent with nursing notes over the last 30 minutes."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "Paramedic Partner",
+      "utterance": "No signs of rib fractures or trauma noted."
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "Paramedic",
+      "utterance": "No deformities or signs of recent trauma noted on assessment."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heent",
+      "role": "Paramedic",
+      "utterance": "Exam focuses on known chronic area without recent changes or swelling."
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Paramedic Partner",
+      "utterance": "Patient's extremity use is chronically limited but not showing any acute decline."
+    },
+    {
+      "turn": 93,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Consistent normal blood pressure readings in upper 110 mmHg range."
+    },
+    {
+      "turn": 94,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic Partner",
+      "utterance": "Pulse has returned from tachycardia to near normal."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdominal_exam",
+      "role": "Paramedic",
+      "utterance": "No signs of guarding or rebound tenderness."
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Clear breath sounds and normal heart rate indicate stable cardiorespiratory function."
+    },
+    {
+      "turn": 97,
+      "topic": "Reassessments",
+      "micro_intent": "redo_secondary_assessment",
+      "role": "Paramedic Partner",
+      "utterance": "No new findings noted after transport."
+    },
+    {
+      "turn": 98,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_present_illness",
+      "role": "Paramedic",
+      "utterance": "All medications including metformin and Omeprazole were correctly noted."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic",
+      "utterance": "No pain reported during transport or hospitalization."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Final securing completed with no patient movement reported."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic Partner",
+      "utterance": "Destination decision confirmed at approximately 23:22."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "report_patient_condition",
+      "role": "Paramedic",
+      "utterance": "EKG and glucose remaining stable for clear handoff."
+    },
+    {
+      "turn": 103,
+      "topic": "Handoff",
+      "micro_intent": "nurse_confirmation",
+      "role": "RN",
+      "utterance": "Patient is now under nursing care in ED Room 14, no emergent issues noted."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "position_of_comfort",
+      "role": "Paramedic Partner",
+      "utterance": "Patient position during transport was suitable with no reports of discomfort."
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004081",
+  "protocol": [
+    "medical - diabetic - hyperglycemia (protocol 3 - 7)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 2 responding for unconscious patient at --Address Redacted-- in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi ma'am, I'm Megan, an EMT. I see RFD is already on scene. Can you tell me what happened here today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "I checked on him like always, and he was on the bed, not moving. I couldn't wake him up and thought he might have fainted or nearly fainted. I called 911 right away."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Let's assess his responsiveness. Mr. Smith, can you hear me?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Partner",
+      "utterance": "No response. He's not speaking."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "No motor response either. He's completely unresponsive."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Partner",
+      "utterance": "His eyes are open but not following commands. Pupils are equal and reactive-PERRL. No indication of trauma."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "GCS is 3-eyes 1, verbal 1, motor 1. He's not responsive in any category."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "He's breathing deeply with a regular pattern-Kussmaul respirations. Chest rises equally on both sides. Is he breathing the same now as when you found him?"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Bystander",
+      "utterance": "Yes, he was like that when I found him. I didn't see any changes."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is elevated at 106. Blood pressure is undetectable. His skin is pale, diaphoretic, and warm."
+    },
+    {
+      "turn": 12,
+      "topic": "Pain Assessment",
+      "micro_intent": "o",
+      "role": "EMT",
+      "utterance": "Has he shown any signs of pain since you found him?"
+    },
+    {
+      "turn": 13,
+      "topic": "Pain Assessment",
+      "micro_intent": "o",
+      "role": "Bystander",
+      "utterance": "No. There were no signs of pain present when I found him."
+    },
+    {
+      "turn": 14,
+      "topic": "Secondary Assessment",
+      "micro_intent": "malaise",
+      "role": "EMT",
+      "utterance": "He appears weak and overall sick, likely due to his medical history and current state."
+    },
+    {
+      "turn": 15,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is intact but pale, sweaty, and warm to the touch."
+    },
+    {
+      "turn": 16,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "Partner",
+      "utterance": "Ears, nose, and throat are clear. No obstruction or drainage."
+    },
+    {
+      "turn": 17,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Normal breath sounds bilaterally. No abnormal respiratory noises."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "Limbs appear free of deformities. Pulses are present."
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "Noticed incontinence on the bed. No blood or pelvic trauma."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is elevated, currently at 106 beats per minute."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 8-deep but regular."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is currently undetectable-rechecking shortly."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation at 72%-urgent oxygen support is needed."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose reading is 600 mg/dL-extremely high."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Interventions",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Based on vitals and history, we're managing as per diabetic hyperglycemia protocol."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "I'll start an IV. Winkey, can you assist with finding a usable vein?"
+    },
+    {
+      "turn": 27,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Found a 20g line in the right arm-placed and secure."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Starting normal saline fluid bolus now."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Setting up a 4-lead ECG for continuous cardiac monitoring."
+    },
+    {
+      "turn": 30,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Rechecking vitals-respiratory rate is now 10."
+    },
+    {
+      "turn": 31,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is at 110-still elevated."
+    },
+    {
+      "turn": 32,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure now 92/36-improving slightly but still low."
+    },
+    {
+      "turn": 33,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen saturation increased to 87%-better but low."
+    },
+    {
+      "turn": 34,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood glucose remains at 600-no change from initial reading."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Moving to 12-lead ECG for a comprehensive cardiac evaluation."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Setting up capnography for end-tidal CO2 monitoring."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Starting assisted ventilation at 10 breaths/min with BVM and O2 at 15 LPM."
+    },
+    {
+      "turn": 38,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is prepped for movement. Semi-Fowler's position."
+    },
+    {
+      "turn": 39,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll now transfer him onto the stretcher with RFD support."
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medication_history",
+      "role": "Bystander",
+      "utterance": "He is insulin-dependent diabetic with a history of hypertension and dementia."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medication_history",
+      "role": "EMT",
+      "utterance": "He takes lisinopril, metformin, amlodipine, and other oral medications for his conditions."
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medication_history",
+      "role": "Partner",
+      "utterance": "Also on famotidine and trazodone for digestion and sleep."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12-lead in progress. No acute cardiac changes yet."
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_info",
+      "role": "EMT",
+      "utterance": "Next of kin has been identified as daughter-in-law, but there is no DNR at home."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher is secure and ready for transport."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "4-lead EKG is also active for backup monitoring."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "4-lead EKG rechecked-no acute abnormalities."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Vitals are now: pulse 110, respiratory rate 10, BP 92/36, and O2 87%."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Switching ECG leads now for a full set for the hospital."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "RFD is helping carry him into the ambulance for ventilation during transport."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient secured on stretcher in semi-Fowler's position."
+    },
+    {
+      "turn": 52,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "ED has been contacted and is ready. Vitals are slightly improved, still low."
+    },
+    {
+      "turn": 53,
+      "topic": "Handoff",
+      "micro_intent": "sample_medication_history",
+      "role": "EMT",
+      "utterance": "He is also on sertraline and atorvastatin for depression and cholesterol."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient loaded and RFD is assisting with transport."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood sugar remains at 600-no change recorded."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar assessed only once at 11:04-no further testing required."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Maintaining BVM at 10/min with O2 at 15 LPM to maintain saturation."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "A firefighter is with the patient and monitoring BVM during en route."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "IV is open and flowing normally-15 mL bolus delivered."
+    },
+    {
+      "turn": 60,
+      "topic": "History of Present Illness",
+      "micro_intent": "eliciting_one_off_symptoms",
+      "role": "EMT",
+      "utterance": "No signs of trauma or prior injury-recently found on bed unresponsive."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "Abdomen is flat and no abnormalities noted."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils are PERRL with no indication of trauma. No head deformities."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is in a stable position during transport."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "Capnography reading stable at 40 mmHg."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Oxygen remains at 15 LPM via BVM-saturation improved."
+    },
+    {
+      "turn": 66,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_info",
+      "role": "EMT",
+      "utterance": "Next of kin has been detailed. Hospital will receive full info."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Transporting in 5 minutes-stretcher locked safely."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "Incontinence observed, but no visible blood."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin remains intact-no cuts, burns, or abrasions."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "EMT",
+      "utterance": "IV confirmed open with bolus delivered."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "No pressors given in the field."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Hospital has been alerted and the report is shared both in person and by phone."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient manually moved into the ambulance by RFD."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "RFD will secure the area and exit the ambulance at the hospital."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient safely placed for transport-no risk of tip."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Chippenham is designated as the primary hospital."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "He will be transferred onto the ED bed using a draw sheet."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "Daughter-in-law is on scene and verified insurance coverage."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No incidents occurred during transport."
+    },
+    {
+      "turn": 80,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_info",
+      "role": "Partner",
+      "utterance": "Daughter-in-law signed next of kin for the hospital."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "Anticipating NG feeding or blood work."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Hospital is aware of hospice considerations."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "RFD withdraws at ED arrival."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transporting per protocol for critical care."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "ED team standing by."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "Report completed and shared with ED."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Full documentation complete upon arrival."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Transferring care to hospital now."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_procedures",
+      "role": "Partner",
+      "utterance": "Final EKG confirmed-no in-field cardiac changes."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "All interventions and medications confirmed to ED team."
+    }
+  ]
+}

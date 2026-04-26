@@ -1,0 +1,603 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002360",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 2 for chest pain at 15th and Main."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Greetings, I'm Aiden, an EMT with the rescue squad. What brought you to call 911 tonight?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I'm having severe chest pain that feels crushed and radiates to my back."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Partner",
+      "utterance": "Sir, can you tell us your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Medic",
+      "utterance": "Eyes are present, but we are focusing on responsiveness overall."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Medic",
+      "utterance": "You're answering questions directly and appropriately."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "Gripping and letting go normally. Motor response is within expected range."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "You're keeping your airway open and clear on your own."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations are 24 breaths a minute, and not labored at this time."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Pulse is 82. Skin is warm, dry, pale-and shows no critical circulatory abnormality."
+    },
+    {
+      "turn": 11,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "When did the discomfort first start?"
+    },
+    {
+      "turn": 12,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Started in the morning, but it's worse now in the evening."
+    },
+    {
+      "turn": 13,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Is there a part of your back that feels particularly significant?"
+    },
+    {
+      "turn": 14,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Pain radiates to my back and feels like heavy pressure on my chest."
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "You mentioned nausea with the pain. Has it been continuous?"
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, nausea has been with me since the pain started."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Medic",
+      "utterance": "What prescriptions or over-the-counter medications are you using?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I'm on Xarelto, Cordarone, Norvasc, Microzide, Prinivil, and metformin."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Medic",
+      "utterance": "Any significant heart events or diagnoses?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have hyperlipidemia, hypertension, type 2 diabetes, and atrial fibrillation."
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Medic",
+      "utterance": "When did the pain notably increase?"
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "Worse overall in the day and really spiked after 7 PM."
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "provoke",
+      "role": "Medic",
+      "utterance": "Does the discomfort vary with physical activity or rest?"
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "provoke",
+      "role": "Patient",
+      "utterance": "Doesn't change. It's constant whether I move or sit still."
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Medic",
+      "utterance": "How would you set that chest sensation as described?"
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Patient",
+      "utterance": "Like a crushing sensation that I can't shake, and I feel it in the back too."
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Medic",
+      "utterance": "Trigonum or other areas like arms or jaw? Just the back?"
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "No, only the chest and spine specifically."
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Medic",
+      "utterance": "On a 10-point scale of pain, how severe would you say it is?"
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "10-the worst I can imagine, honestly."
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Medic",
+      "utterance": "Has it worsened gradually or all at once recently?"
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Patient",
+      "utterance": "Gradually the whole day and then it really spiked after sunset."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "Skin is free of rashes, sores, or injuries on initial glance."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Pupils equal, round, and reactive. Neck is clear, no mass or jugular distension."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "You're oriented and understand clearly what we're asking."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Partner",
+      "utterance": "No signs of nasal obstruction or oral foreign body."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Chest wall is normal, breath sounds okay bilaterally."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "I'm ready to attach you to the cardiac monitor now."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "The EKG shows A-fib. Have you had this before, after the shocks?"
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "The Cordarone I've been on seems to not help this episode at all."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Medic",
+      "utterance": "Oxygen saturation is 95%. No signs of hypoxia immediately."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Initiate a 4-lead ECG, followed by a 12-lead as soon as possible."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "blood_pressure",
+      "role": "Partner",
+      "utterance": "Blood pressure measured as 128 over 92 per initial assessment data."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate remains 24, with no distress or accessory muscle use."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 82. That still aligns with the A-fib presence."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Per first documented results, glucose is 130. No signs of low sugar."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Going in with the IV now. You're okay with this?"
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV site is in the left arm via 20-gauge. Normal saline already running."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Medic",
+      "utterance": "Giving nitroglycerin sublingually for chest pain-per standing protocol."
+    },
+    {
+      "turn": 50,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Medic",
+      "utterance": "Following protocol 2-1 for suspected cardiac chest pain due to A-fib and symptoms."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Latest data from PCR, at 19:42, BP drops to 95 over 49."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen saturation rises to 99% with supplemental at 2L via nasal cannula."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Medic",
+      "utterance": "Managing with fentanyl at 100 mcg per IV route to handle pain as recorded."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Medic",
+      "utterance": "Those fentanyl doses continue as written with IV monitoring."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse now at 92 as well for 19:42. Within safe thresholds."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Medic",
+      "utterance": "That 200 mL saline bolus was completed between 19:36 and 19:48 per documentation."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Transporting to VCU Health-for their same medical records and continuing IV."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "That's right. My care continuity needs to be there."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Don't move during transfer. Let's keep it smooth to the stretcher."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Your breathing seems stable, but be aware my support is just now in place."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Pain remains steady. Just nervous. That's understanding."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Setting you at semi-Fowler's for ease of breathing with IV in place."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All five-point restraints active now for patient safety en route."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Secondary restraints ready as well per transit policy each time."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Latest vitals at 19:52 show BP 116/81 and SpO2 at 97% as documented."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Patient reports ongoing back and chest discomfort and a stable rhythm."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Two fentanyl doses without reported improvement. Still complains of heaviness."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "ER transfer by stretcher and five-point restraints per custom protocols and documentation."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "The EKG shows a posterior wall infarct at V2 that handover later confirmed."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Monitor kept active during transport and handed directly at ER handover."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Per C-9 form and written notes, no meaningful change had happened in glucose or EKG readings."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "All leads in place with restraints still fully working as noted in the PCB entry."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Final transfer completed to ER bed, as described in VCU ER log and PCR."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "En route at semi-Fowler's with IV, not above, five-point restraints on board."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "By PCR at 20:06, SpO2 was 98% with maintained, stable rhythm."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Medic",
+      "utterance": "Final check at 20:06: pulse 71, BP 115/77, SpO2 at 98."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Medic",
+      "utterance": "Administered additional fentanyl at 20:10. No缓解 as per PCR summary."
+    },
+    {
+      "turn": 78,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Any associated discomfort in the abdominal area such as cramping?"
+    },
+    {
+      "turn": 79,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Nausea yes-but not cramps or gas. Just relating to the main pain."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Later at 19:52, the pulse was 88 with BP at 116 over 81 as tracked."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Patient had an existing A-fib rhythm-no cardiac arrest during our care as confirmed."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "All supplies and documentation handed by ER nursing upon bed transfer and team briefing."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Patient positioned in semi-Fowler's for spotting stability from the rig to ER."
+    },
+    {
+      "turn": 84,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "We should note that the patient is showing tachypnea-24 breaths per minute."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Additional measurements show consistent rates as per PCR with stable breathing."
+    }
+  ]
+}

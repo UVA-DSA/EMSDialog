@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001057",
+  "protocol": [
+    "medical - altered mental status (protocol 3 - 15)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 6 responding for an unconscious 95-year-old female."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Tyler, an EMT with the rescue squad. What brought you to call 911 this morning?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "My aunt is not responsive. She was alert earlier, but now she's completely unresponsive and breathing heavily."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you tell me your name? Open your eyes if you can."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "No response observed, but slight arm movement with painful stimuli."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "Eyes are slightly open, not following commands. Pupils are equal and round at 2mm."
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is patent and clear. No signs of obstruction or secretions."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Breathing is rapid and deep with accessory muscle use. Equal breath sounds bilaterally."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "No wheezing or crackles. Oxygen saturation is low at 90% on room air, which is concerning."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 23 per minute with increased work of breathing observed."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 90% on room air, so we need to correct that immediately."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Skin is warm, dry, and pale with poor turgor and dry mucous membranes. No active bleeding noted."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 123, and it is irregularly irregular. Classic signs of atrial fibrillation with RVR here."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 104 over 59. Hypotensive for her age and history of hypertension."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 167. No active hypoglycemia at this time."
+    },
+    {
+      "turn": 16,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Dry skin, no rashes, bruises, scars, or discoloration noticed. No signs of trauma or pressure points."
+    },
+    {
+      "turn": 17,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Eyes are minimally reactive. Pupils are 2mm and equal. No nasal discharge or facial trauma observed. Neck is without rigidity or deformity."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "Paramedic",
+      "utterance": "Dry and pale mucous membranes. No nasal obstruction or trauma to the airway noted. No bite/sting marks observed in the oral cavity."
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Breathing is equal with no signs of chest trauma. Chest rise and fall are symmetric. Breath sounds clear bilaterally. Clear and crackle-free thorax."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Abdomen is soft, non-tender. No rigidity or guarding present. Bowel sounds normal. No masses or distention observed."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "Positive pedal pulses bilaterally. No deformity or angulation observed in extremities. Vertebral column and back appear intact with no signs of tenderness or instability."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Tell me what happened to her before 911 was called. Has she shown similar symptoms before this event?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "She had brief periods of near-fainting earlier, but now she's fully unresponsive and breathing heavily. No prior event like this that I'm aware of."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Are you a family member or close relative familiar with her history? That'd help a lot with her current pathophysiology assessment."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "I am her niece. She has a history of hypertension, atrial fibrillation, and a prior intracerebral hemorrhage about a year ago. No prior cardiac arrest or infarct mentioned in that time."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "What medications does she take every day? I need to check for interactions or side effects contributing to altered mental status."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "She takes Lisinopril, Eliquis, Sertraline, Amlodipine, and Pravastatin daily. Never had side effects or issues with any of them before now."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Any recent injuries, falls, fevers, chills, cough, or abdominal pain? I need to rule out trauma or infection in this context."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "No injuries, no fever or chills. She didn't complain of anything last night when I spoke to her. Breathing was fine, appetite and mood were normal from what I could tell."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "What's the timeline-when was her last meal or fluid intake? Any worsening of symptoms since then?."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "She had a full breakfast and took all of her medications this morning. I gave her water when I arrived around 11:30. She was alert then but then collapsed within 20 minutes or so into unresponsiveness with heavy breathing."
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Paramedic",
+      "utterance": "Are you aware of any pain she has experienced in the past 24 hours before this event?."
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Bystander",
+      "utterance": "She has never mentioned any pain to me. She's been in good shape aside from routine hypertension and blood thinner use. This is the first time she's shown severe distress like this, as far as I know."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "I'm going to start her on 2 liters of oxygen via nasal cannula to help improve her oxygen saturation. That should help with her work of breathing too."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "give_medications",
+      "role": "Bystander",
+      "utterance": "Yes. She can tolerate that. I'll make sure it's secure for that time."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ improved to 96% with oxygen being administered. That's a good early response from the treatment we gave."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "I'll be placing the cardiac monitor and getting a 4-lead EKG started in a moment to clear for arrhythmias or infarct before transport decisions.."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "I'll set the cardiac monitor, then take a 12-lead if that's needed for further field impressions.."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG shows atrial fibrillation with rapid ventricular rate initially. No obvious ST changes for anterolateral infarct right now, but we're watching it closely during transport and interventions.."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "12-lead confirms evidence of a prior inferior infarct, LVH, and possible digitalis effect from her heart medications. The rhythm now seems more variable, with premature atrial contractions present on repeat checks.."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "I'll start an IV in the left antecubital now and give her 650 ml of normal saline for hydration and stability before arranging transport to the ED.."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Administered 650 ml of normal saline IV. Should help with circulation and blood pressure response. Let me know if I need to check and refill in mid-transport.."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Her pulse has increased to 141. That's sinus tach or sinusoidal fib if not stabilized by her meds.."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations remain at 22 with oxygen use. Breathing still looks like mildly increased work but improved compared to earlier states of tachypnea before O2."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Her blood pressure is now at 123 over 81. Trending upwards with the fluids we gave and consistent with her baseline history of hypertension.."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose has remained at 167. No significant drop or spike yet, so likely not MS related in her hypoglycemic state."
+    },
+    {
+      "turn": 47,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "This patient fits Protocol 3-15 for altered mental status. She doesn't have critical signs yet for ROSC planning. Transport is safe but needs a planned hospital handoff once she arrives.."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Rechecking pulse, respiration, and cap refill to make sure we don't miss progression of arrhythmias en route to the ED."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Capillary refill less than 2 seconds. No signs of hypoperfusion observed yet, but staying alert for hemodynamic instability while she stabilizes on IV fluids and O2.."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "SpO₂ is at 97% now with continued O2 at 2 L. Trending up, no need to increase until she hits airway compromise thresholds for sedation."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Her heart rate has dropped to 102, and SpO₂ is 97. With IV fluids and the EKG normalization in part, regular reassessments are critical for any rhythm or perfusion dropoff.."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure has improved now to 128 over 69. She's trending in the right direction after our sustained interventions so far today.."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "GCS is 7 (E2, V1, M4). We note some improvement after receiving oxygen and fluids. Still needs monitoring per protocol for neuro stability.."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "She continues on IV fluids and hasn't shown any signs of deterioration. No chest pain found, so early signs for MI are low for this elderly cohort right now, though prior infarct is a complicating risk.."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We're transporting her to St. Mary's Hospital in Richmond for assessment and definite cardiology review, as we suspect underlying ischemic event and arrhythmia issues together.."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "That's familiar ground for her. They have the blood thinners and experience with her atrial fib case. It will make handover easy for the team in the ED.."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "We'll transport her on the stretcher in a semi-Fowler's position via a reeve's sleeve for comfort and security.."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "IV placement in good position. Oxygen and monitor are maintained and ready to go.."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is 97. Her SpO₂ remains at 96. IV stay still in her left antecubital and gravity drip running stably at 20 drips/min as directed for initial flow.."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Her blood pressure is at 132 over 69. Good response for her medical group. Keep reevaluating every few minutes till we arrive.."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "She's now secured in a semi-Fowler's position. All straps and anchor lines are tight, with shoulder and lap belts in a double-check to reduce risks in transport."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Equipment is in place-IV in left arm, oxygen on 2L via NC, and monitor running with cardiac and etcO2 support.."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Her pulse stays at 97, SpO₂ at 96, with no sudden influx of chest pain or cardio collapse as we line up the transport plan.."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "She has improved to 132 over 67 for BP. That's likely the best we can do in field-now ED will handle interventions like ticagrelor or invasive support.."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "She is stable and set for transport. Let's just give one final check of the IV, O2, and EKG before deciding on transport time.."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Yes, all systems are good. Restraints are tightened and the monitor shows steady rhymic beats now, no atrial fib signs en route.."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Bystander",
+      "utterance": "Thank you. You've done an amazing job. She's in very capable care now from where I am at this time.."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're most welcome. We'll keep her protected en route and update you while on the trip to the hospital for further evaluation.."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "I'll stay close by during transport to monitor IV and breathing signs. Let me know if she shows any breathing issues, hypotension, or EKG drops again while we're moving.."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Rechecking O2 and EKG once we start moving to make sure nothing shifts mid-ride before ED arrival.."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "I'll be right beside her. Keep me posted on any small changes you notice, so we can adjust treatment if needed en route.。"
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Her vitals remain stable. Nothing significant to add or re-evaluate now and not going down in system.."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "EKG is in sinus rhythm now with reasonable regularity and no ongoing premature atrial contractions from before.."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "IV and O₂ lines are secured. System checks are in excellent order.."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "I'll call ahead to St. Mary's with the full pre-arrival report and patient condition now.."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "The ED will be ready to receive her upon arrival with all given history, lab notes, and prior interventions.."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She is in the stretcher and moving as planned. All equipment and documents are ready for the handoff and ED arrival no later than five minutes after pickup decision.."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Bystander",
+      "utterance": "You did so well. She's in the best place she can be in with your help and hands.."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Thanks for being here and supporting her. We will make sure she's safe during the whole trip with this detailed monitoring.."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "SpO₂ finishes at 100%, full saturation. Everything is working-ready for the next leg.."
+    },
+    {
+      "turn": 81,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Her blood pressure before transport is 137 over 65. That's the best from this field-ED can reassess for any further need.."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Bystander",
+      "utterance": "She had some near-fainting events prior to the hemorrhage. But this is the first of the truly serious, unconscious events I have seen her go through.."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Note includes the prior intracerebral hemorrhage and possible ischemic events from the 12-lead. She is at risk for new CVA, so keep it top of mind in ED for early treatment.."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Her vitals and SpO₂ are read as normal and stabilized well for en route transport.."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "Nothing further will be done for a few minutes before transport. Keep monitoring en route till ED.."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Final check of IV, O₂, and EKG-everything clear, anchored, and ready to move for arrival at targeted care.."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Bystander",
+      "utterance": "All good. Take care and safety on the journey.."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We're good to go. Thanks again for being here with me. We all look forward to seeing her healthy after this process.."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "GCS improved to 9 (E3, V1, M5). Signs of brain response after IV hydration and support.."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "No cyanosis or low oxygen signs on the ride. All signs are improved through expected protocol following.。"
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She shows sinus rhythm now with full correction of rhythm issues. Nothing remarkable on the last full sweep.."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "Nothing to add or give at this point before ED arrival. No further interventions needed.."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "IV and O₂ have remained stable. Still safe in transport care as per baseline history and prior interventions.."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient has no reported pain on arrival and no prior chronic pain reported in history. This is the first event of distress in the prolonged record.."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Her early breathing issues improved with O₂ and full saturation, but her pulse irregularity did respond to fluids.."
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Her final checks on stabilization include respiratory rate at 21 and steady pulse of 86.."
+    },
+    {
+      "turn": 97,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "No changes from transport or mid-ride. She's stable in all measurable respects.."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "The patient is well-managed and ready for the ED with documentation and transfer complete.."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She has been fully transferred and is in good condition for ED receiving.."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Bystander",
+      "utterance": "Thank you for all your hard work. She received the best possible care with your help today.."
+    }
+  ]
+}

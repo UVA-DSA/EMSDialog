@@ -1,0 +1,995 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004046",
+  "protocol": [
+    "medical - seizure (protocol 3 - 12)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a possible seizure at 1234 Maple Street."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi ma'am, my name is May. Could you or someone with you describe what happened today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "The patient began to have a seizure. He put his hands out, fell forward, and started shaking."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Paramedic",
+      "utterance": "Did the seizure end before we arrived, and how was he after the event?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "Yes, the seizure ended, but he hasn't fully come around yet. He's not speaking."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "Eye is open, but he is unresponsive. Pupils are about 2mm bilaterally and reactive to light."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "He's not speaking and does not respond to verbal commands."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Partner",
+      "utterance": "GCS motor score is 3."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Airway is patent."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 93, strong and regular."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 11, normal depth."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 124 over 80."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 96%."
+    },
+    {
+      "turn": 14,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is warm, dry, and normal in color."
+    },
+    {
+      "turn": 15,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils are reactive to light and equal in size."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Does he have a history of seizures or other conditions?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "Yes, he has a history of seizures and a stroke. He takes blood thinners for the stroke."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "What medications is he currently taking?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Bystander",
+      "utterance": "Amiodarone, Xarelto, metoprolol, aspirin, and latanoprost."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Has he had any changes in medication recently?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Bystander",
+      "utterance": "No changes that I know of."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Has he been diagnosed with any other conditions?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "Yes, he has primary hypertension."
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, how would you rate his pain?"
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Bystander",
+      "utterance": "Zero-he wasn't in pain during the seizure, and now he just looks groggy."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're going to apply 2L of oxygen via nasal cannula."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We initiated 4-lead ECG monitoring."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is 101 mg/dL."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG results show sinus rhythm."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "12-lead ECG taken; showed no ST segment abnormalities, but possible subendocardial injury with first-degree AV block."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "EMT",
+      "utterance": "Initial IV start was attempted in the left forearm but was unsuccessful."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Second pulse reading is 118-elevated."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 17 with no signs of distress."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 151 over 89."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 97%."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Rhythm is still sinus without further EKG changes."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "etco2",
+      "role": "Partner",
+      "utterance": "ETCO₂ reading is 32 with square waveform."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is now measuring at 0 mg/dL."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "EMT",
+      "utterance": "A second IV start is established in the right hand for medication administration."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Administering 5 mg of midazolam via IV per protocol."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse drops to 98."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 16."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 101 over 58."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ remains stable at 96%."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG results: sinus rhythm at 98 BPM, normal."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose still measuring at 0 mg/dL."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Paramedic",
+      "utterance": "Back and spine appear normal, no deformity or stepoff noted."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Paramedic",
+      "utterance": "Extremities intact, PMS function is intact."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "stroke_scale",
+      "role": "EMT",
+      "utterance": "Stroke scale was attempted but was not conclusive."
+    },
+    {
+      "turn": 50,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "We'll proceed via the medical-seizure protocol."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We'll transport to Henrico Doctors' Forest Campus."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is loaded and secured with a 5-point harness."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is at 16 per minute, regular in pattern."
+    },
+    {
+      "turn": 54,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Bert sounds equal and normal."
+    },
+    {
+      "turn": 55,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "Capillary refill less than 2 seconds, no peripheral cyanosis."
+    },
+    {
+      "turn": 56,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "When was the last time he had food or fluids?"
+    },
+    {
+      "turn": 57,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Bystander",
+      "utterance": "Not sure, but he hasn't eaten today."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Head and neck appear normal with no lacerations or deformities."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "EMT",
+      "utterance": "Chest wall is stable, symmetric rise and fall, no signs of trauma."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Paramedic",
+      "utterance": "Abdomen is soft, non-tender, no guarding or masses."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "4-lead EKG monitoring is ongoing."
+    },
+    {
+      "turn": 62,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Preferred posture for airway is upright, no signs of airway obstruction."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Administered 10 mL saline flush after midazolam administration."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No bruises, petechiae, or temperature abnormalities noted."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Paramedic",
+      "utterance": "Pelvis is stable, no signs of crepitus or instability."
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "Paramedic",
+      "utterance": "No drainage, obstruction, or foreign body in ears, nose, or mouth."
+    },
+    {
+      "turn": 67,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Does he have any known allergies?"
+    },
+    {
+      "turn": 68,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Bystander",
+      "utterance": "None that he or others are aware of."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Patient is not oriented at this time due to the postictal state."
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "EMT",
+      "utterance": "The seizure lasted approximately 4 and a half minutes and was tonic-clonic in nature."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is at 16 per minute, regular in pattern."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG continues to show sinus rhythm, no acute changes now."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Still measuring 0 mg/dL, planning to reassess in transport."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No signs of jaundice or abnormal skin turgor."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Paramedic",
+      "utterance": "No detectable deformity or swelling in extremities."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "EMT",
+      "utterance": "There is no reported head trauma or loss of consciousness during the seizure."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Paramedic",
+      "utterance": "Mental status has not changed during transport."
+    },
+    {
+      "turn": 78,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Medical-seizure protocol remains consistent with current assessment."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "destination_anticipated_arrival",
+      "role": "EMT",
+      "utterance": "Anticipated arrival at receiving hospital in 12 minutes."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is secured on the stretcher and ready for transport."
+    },
+    {
+      "turn": 81,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Bystander",
+      "utterance": "Patient was walking, put his hands out, fell, and had a visible seizure."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure in transport is stable at 101/58."
+    },
+    {
+      "turn": 83,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Airway still patent and maintained with no intervention required."
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "EMT",
+      "utterance": "He has a history of seizures, with the last one over a year ago."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Patient is 78 years old, with documented history of hypertension and stroke."
+    },
+    {
+      "turn": 86,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "No active signs of bleeding or trauma to the head and neck area."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "No signs of gross hematuria or concern for rectal bleeding."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "vital_signs_compared",
+      "role": "Partner",
+      "utterance": "Vital signs are trending back toward baseline during transport."
+    },
+    {
+      "turn": 89,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Midazolam well-tolerated, with improvement in patient's state observed."
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No rashes, bites, or other visible skin abnormalities noted."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "With the postictal state, cognitive testing not viable at this time."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Rechecked all harnesses; patient remains securely positioned for transport."
+    },
+    {
+      "turn": 93,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Continuing per medical-seizure protocol as no emergencies arose."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "Destination unchanged, Henrico Doctors' Forest Campus remains appropriate."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "full_report_given",
+      "role": "EMT",
+      "utterance": "Full written report completed and delivered to receiving hospital staff."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "transport_begin",
+      "role": "Partner",
+      "utterance": "Transporting to hospital now, with continuous ECG and SpO₂ monitoring."
+    },
+    {
+      "turn": 97,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "He is on a full anticoagulant regime for his stroke history."
+    },
+    {
+      "turn": 98,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "All skin findings within normal limits for age and condition."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "destination_anticipated_arrival",
+      "role": "Partner",
+      "utterance": "Anticipated arrival at receiving hospital in 12 minutes."
+    },
+    {
+      "turn": 100,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "Full range of motion and sensation intact in all extremities."
+    },
+    {
+      "turn": 101,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Airway remains open during entire transport period."
+    },
+    {
+      "turn": 102,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "Partner",
+      "utterance": "No signs of abnormal chest movement or distress."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Upon arrival, will assist with offloading and patient transfer."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "patient_condition",
+      "role": "Partner",
+      "utterance": "Patient condition is stable for transport without anticipated deterioration."
+    },
+    {
+      "turn": 105,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "No last oral intake identified, location of last meal unknown."
+    },
+    {
+      "turn": 106,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose remains undetectable; hypoglycemia is unlikely given age and meds."
+    },
+    {
+      "turn": 107,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Patient's last known well state is pre-seizure at about 30 minutes ago."
+    },
+    {
+      "turn": 108,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Mental status not quantifiable now; awaiting full return of consciousness."
+    },
+    {
+      "turn": 109,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Dosing and timing of all current medications are consistent."
+    },
+    {
+      "turn": 110,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_history",
+      "role": "Paramedic",
+      "utterance": "Patient has no known history of cardiac irregularities aside from hypertension."
+    },
+    {
+      "turn": 111,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Sinus rhythm persisted during the vital signs check, no cardiac arrest signs."
+    },
+    {
+      "turn": 112,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Repeat BG remains at zero; hypoglycemia considered unlikely given age and meds."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Making frequent checks to ensure no shifting during transport."
+    },
+    {
+      "turn": 114,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "No abnormalities noted on repeat skin observation."
+    },
+    {
+      "turn": 115,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Head and neck unchanged; no worsening symptoms."
+    },
+    {
+      "turn": 116,
+      "topic": "Secondary Assessment",
+      "micro_intent": "vital_signs",
+      "role": "Partner",
+      "utterance": "Overall stability aligns with the medical-seizure protocol continuation."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "destination_anticipated_arrival",
+      "role": "Paramedic",
+      "utterance": "Arriving at hospital in approximately ten minutes."
+    },
+    {
+      "turn": 118,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Final pulse check at 98-lower than previous surge-stable level now."
+    },
+    {
+      "turn": 119,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure remains at 101/58 during final check."
+    },
+    {
+      "turn": 120,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ final reading at 96%-showing potential for gradual improvement."
+    },
+    {
+      "turn": 121,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "EMT",
+      "utterance": "No signs of injury from the fall, no spinal worries reported."
+    },
+    {
+      "turn": 122,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Bystanders confirmed patient did not hit his head upon impact."
+    },
+    {
+      "turn": 123,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration rate of 16 per minute-normal, consistent with pattern."
+    },
+    {
+      "turn": 124,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Patient orally interviewed not feasible due to postictal status."
+    },
+    {
+      "turn": 125,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Partner",
+      "utterance": "Mental status to be reassessed post-transport and depending on patient's recovery."
+    },
+    {
+      "turn": 126,
+      "topic": "Transport",
+      "micro_intent": "final_destination_check",
+      "role": "EMT",
+      "utterance": "All preparations confirmed; destination unchanged."
+    },
+    {
+      "turn": 127,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_interpretation",
+      "role": "EMT",
+      "utterance": "All notes documented and will be provided to hospital staff upon arrival."
+    },
+    {
+      "turn": 128,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Unable to reassess glucose at this point."
+    },
+    {
+      "turn": 129,
+      "topic": "Handoff",
+      "micro_intent": "handing_over_patient",
+      "role": "EMT",
+      "utterance": "Patient will be handed over shortly after arrival."
+    },
+    {
+      "turn": 130,
+      "topic": "Transport",
+      "micro_intent": "final_procedure_review",
+      "role": "Paramedic",
+      "utterance": "All procedures per protocol executed; awaiting final clearance."
+    },
+    {
+      "turn": 131,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "No changes since last 4-lead review; patient stable."
+    },
+    {
+      "turn": 132,
+      "topic": "Secondary Assessment",
+      "micro_intent": "physical_findingsdocumentation",
+      "role": "Paramedic",
+      "utterance": "All physical findings are documented on patient sheet."
+    },
+    {
+      "turn": 133,
+      "topic": "Secondary Assessment",
+      "micro_intent": "final_documentation",
+      "role": "EMT",
+      "utterance": "Final physical findings sheet complete and well-organized."
+    },
+    {
+      "turn": 134,
+      "topic": "Transport",
+      "micro_intent": "final_status",
+      "role": "EMT",
+      "utterance": "Transport en route, continuous monitor trending stable."
+    },
+    {
+      "turn": 135,
+      "topic": "Handoff",
+      "micro_intent": "full_report_given",
+      "role": "EMT",
+      "utterance": "Full report will be given on arrival, per hospital protocol."
+    },
+    {
+      "turn": 136,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_documentation",
+      "role": "EMT",
+      "utterance": "Pertinent findings and patient history well presented on board."
+    },
+    {
+      "turn": 137,
+      "topic": "Transport",
+      "micro_intent": "airway_no_intervention",
+      "role": "Paramedic",
+      "utterance": "Airway well-maintained without need for any intubation or assisted breathing."
+    },
+    {
+      "turn": 138,
+      "topic": "Secondary Assessment",
+      "micro_intent": "final_cleanup",
+      "role": "EMT",
+      "utterance": "Equipment and devices set for hospital entry."
+    },
+    {
+      "turn": 139,
+      "topic": "Handoff",
+      "micro_intent": "details_confirmation",
+      "role": "Partner",
+      "utterance": "All notes cross-checked before handover."
+    },
+    {
+      "turn": 140,
+      "topic": "Secondary Assessment",
+      "micro_intent": "handover_notes",
+      "role": "EMT",
+      "utterance": "Additional notes detailing paramedic's findings completed."
+    },
+    {
+      "turn": 141,
+      "topic": "Transport",
+      "micro_intent": "complete",
+      "role": "EMT",
+      "utterance": "Transferred to hospital at 17:03."
+    }
+  ]
+}

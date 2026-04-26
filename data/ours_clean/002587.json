@@ -1,0 +1,681 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002587",
+  "protocol": [
+    "medical - allergic reaction/anaphylaxis (protocol 3 - 3)",
+    "medical - hypotension/shock (nontrauma) (protocol 3 - 13)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for an allergic reaction with possible stings."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello ma'am, I'm EMT Julie. The dispatcher said you came for dizziness-can you tell us what's going on?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I feel really dizzy-I was driving and thought I was low on sugar..."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "My mom called 911. I just got there and found her in the car."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, could you tell us your name, please?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "You are wide awake-we'll note that as full eye opening."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Uh... it's Ellen. I'm 72. I don't really... I think I'm in Richmond..."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Go ahead and squeeze my finger with your right hand for me."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Okay, though it feels a bit weak."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is patent and clear, so we'll keep it open through observation."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Ma'am, we will take your blood pressure-just place this cuff on your arm."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heartbeat is strong-I'll double-check at the wrist."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "We will now use a sensor to count your breathing."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "This device on your finger checks your blood oxygen levels-no issue expected."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "We need a small drop of blood for testing, be ready for a quick pinch."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Your blood sugar reading is 190."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration is 10 breaths each minute."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 97%-all good."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The ECG shows sinus bradycardia."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Your skin is pale and cool with some visible diaphoresis."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "We note visible sweat, but no rash or abnormal color just yet."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "When did the dizziness first hit?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "During my drive-maybe 30 minutes ago. I ate some snacks, but it didn't help."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Are you typically on medications?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "Yes, I take Tenormin for my hypertension."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Any additional medications?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "No, only Tenormin."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "EMT",
+      "utterance": "On a 0 to 10 scale, is the dizziness a 0 now?"
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 84/30-still low, but not dropping."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulsing is at 60 beats per minute."
+    },
+    {
+      "turn": 31,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Let's follow the protocols for allergic reaction and hypotension."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "I'll start an IV to help increase your blood pressure."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV placed without issue."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Now, infusing normal saline for vascular support."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is now 13 per minute."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen is up to 98%."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG remains unchanged, showing bradycardia."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils are equal, reactive, and your trachea remains midline."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "EMT",
+      "utterance": "No signs of airway compromise-airway remains unobstructed."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Breath and heart sounds seem normal through auscultation."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Abdomen is soft without any signs of tenderness."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "Limbs show no trauma, weakness, or irregularities at this point."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV attached to 4-lead ECG as part of ongoing monitoring."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 109/49-that's improved slightly."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 57-still bradycardic."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar remains at 0-no change since last measurement."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Sinus bradycardia continues on EKG tracing."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Giving 50 mg Benadryl IV to manage the rash and some itching you're experiencing."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure reading is now 113/65."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 97%."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Can you tell me the name of the Chippenham Hospital?"
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "Yes, it's Chippenham."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "And today's date is?"
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "May 2, 2019."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "What were you doing right before calling 911?"
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "I was driving and giving a speech."
+    },
+    {
+      "turn": 57,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "EMT",
+      "utterance": "On which part of the body is the itching localized?"
+    },
+    {
+      "turn": 58,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "On my legs and forearms."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing rate is 18."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is recorded at 97%."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12-Lead ECG shows minimal evidence of LVH but no new ST changes."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is undetectable at 0, no concerns at the moment."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We'll be transporting you to Chippenham Hospital-this is the best facility for you."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Ma'am, we'll place you in the semi-Fowler's position to aid breathing and comfort."
+    },
+    {
+      "turn": 65,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Pressure is now 113/65-improving."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Bradycardia continues on EKG, though otherwise stable."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Still at 0, but nothing new in symptoms."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 156/64-up from earlier."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Blood oxygen is now at 99%."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Still reads 0."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiration is now 12 per minute."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is steady at 60 beats."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is now at 20 per minute."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Considering another Benadryl dose due to continued signs."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Does your skin still feel abnormal?"
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "No, I think the rash is clearing."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Can you tell me your name, the date, where you are, and what happened?"
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "It's Ellen. The date is May 2, 2019. I'm in my car in Richmond, en route to Chippenham. I got dizzy and called 911."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 147/57, and it's stable now."
+    },
+    {
+      "turn": 80,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 59, which is slightly lower than before."
+    },
+    {
+      "turn": 81,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is now 100%."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Sugar levels have increased slightly to 225 mg/dl."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Are you still okay with transporting to Chippenham?"
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Ma'am, we'll put you into transport now-using semi-Fowler's again."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "report_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "I need to confirm that there are no other needs before transport."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "report_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "The receiving nurse at Chippenham is Ms. Vanessa Tarbox."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "report_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "We'll attach our documents once we have your MRN."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "report_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "Patient has signed documents and provided her MRN for hospital processing."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "report_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "She's alert and oriented x4 by now and has been placed in semi-Fowlers."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "report_to_hospital_staff",
+      "role": "EMT",
+      "utterance": "She is in ED bed 11 at Chippenham-full report provided."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "report_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "All clinical steps completed and reported to Ms. Tarbox."
+    },
+    {
+      "turn": 92,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is at 20-improved but still elevated."
+    },
+    {
+      "turn": 93,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "At this point, you're alert and oriented to all four elements."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "report_to_hospital_staff",
+      "role": "Partner",
+      "utterance": "All protocols followed. Moving forward with handoff without changes."
+    },
+    {
+      "turn": 95,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "4-Lead ECG has been in use as per protocol throughout treatment."
+    },
+    {
+      "turn": 96,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Final assessment shows pain at 0 and all systems stable."
+    }
+  ]
+}

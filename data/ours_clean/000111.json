@@ -1,0 +1,715 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000111",
+  "protocol": [
+    "medical - supraventricular tachycardia (including atrial fibrillation) medical - tachycardia medical - ventricular tachycardia with a pulse (protocol 2 - 8)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, dispatched for a chest pain priority one to address redacted, Apt 2 in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Uh, chest pain and lightheadedness. It started when I was walking to the store, about 30 minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Can you tell me your name, please?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Karen."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Where are we right now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "I think we're in Richmond."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Medic",
+      "utterance": "Let me ask again-what led you to call 911 today?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "I had chest pain when I came back home. I thought I was going to pass out."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Medic",
+      "utterance": "Partner, let's collect the vitals."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "Your airway is patent and you're breathing normally in rate and depth."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 61 over 43."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "We are placing an oxygen monitor on your finger now."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 70%."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 16 and regular."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Your pulse is strong but very rapid."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 187 beats per minute."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "We'll be doing a fingerstick to check your blood sugar."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is 188 mg/dL."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Where is the chest pain, and what does it feel like?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It is right in the middle of my chest. It feels sharp."
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "OPQRST - severity",
+      "role": "Medic",
+      "utterance": "On a scale from 0 to 10, how severe is the pain?"
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "OPQRST - severity",
+      "role": "Patient",
+      "utterance": "Ten."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - events_leading_to_event",
+      "role": "Medic",
+      "utterance": "When did you first notice the pain?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - events_leading_to_event",
+      "role": "Patient",
+      "utterance": "While I was walking to the store. It's been constant since I came home."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - pertinent_past_medical_history",
+      "role": "Medic",
+      "utterance": "Do you have a history of health conditions we should know about?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have diabetes non-insulin dependent and hypertension."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - medications",
+      "role": "Medic",
+      "utterance": "What medications are you currently taking?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - medications",
+      "role": "Patient",
+      "utterance": "I'm on metformin and Glypizide."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - last_oral_intake",
+      "role": "Medic",
+      "utterance": "What did you eat or drink before noticing the pain?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had some coffee before I left home."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - allergies",
+      "role": "Medic",
+      "utterance": "Are you allergic to any medications?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - allergies",
+      "role": "Patient",
+      "utterance": "I'm allergic to codeine and guaifenesin."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "We'll be applying the EKG leads now-try to stay still."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Current rhythm is supraventricular tachycardia at 188 beats per minute."
+    },
+    {
+      "turn": 36,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Performing continuous EKG monitoring with 4 lead pads placed on your chest per standing order."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "We need to perform a cardioversion."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "Ma'am, we're going to deliver a controlled electric shock to help your heart beat regularly. Is that okay with you?"
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Patient",
+      "utterance": "Yes, that's fine."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Cardioversion successful at 50J. New rhythm is sinus bradycardia."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse now is 66 beats per minute."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 108 over 66."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is now 96%."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Medic",
+      "utterance": "How are you feeling now?"
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "I feel better now, no chest pain or lightheadedness."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Second 12 lead obtained. Rhythm is now sinus, no ST changes."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "We are going to place an IV in your left arm for medication administration."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV access established, left AC, 18G. We flushed it with 10 mL of saline."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Eighth minute vitals: pulse 80, blood pressure 122 over 81, oxygen saturation 97."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Rhythm now shows sinus with a slight arrhythmia-no significant ST segment changes."
+    },
+    {
+      "turn": 51,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Medic",
+      "utterance": "Patient is stable, no ST changes, and no further complaints. Transport can be non-emergent."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Ma'am, we're going to take you to St. Mary's Hospital. Is that okay?"
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Yes. I don't see any other option."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Helper, we need a three-person lift to place her on the Reeves stretcher."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She's secured and will be assigned to bed 20 on arrival."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Partner, keep her vitals updated in 10-minute intervals."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She's stable, no significant changes expected."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Transfer care to the emergency nurse at the ED with the full report once we arrive."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She's secured via a 5-point harness. No issues noted."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Ma'am, let us know if you feel any discomfort during transport."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I'm feeling well actually. I was just scared."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "That's completely normal. It's good you called for help."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She has IV access and is stable. No complaints."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Record all vitals taken, including the final reading before arrival at the ED."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Her mental status is unchanged-GCS is 15."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Give only essential information to the ED team upon arrival to avoid redundancy."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "EKG readings and procedure logs have been completed."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Patient is stable and progressing well during transport."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I just want to know-why was the shock needed?"
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "It was to correct the fast heart rate. You were in a rhythm called supraventricular tachycardia."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Oh okay. It was a startle, but not painful."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "That's normal. The procedure was done safely and effectively."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All signs like diaphoresis and lightheadedness have resolved."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I feel much better, and I no longer have any symptoms."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Good. No further medication is needed. Just relax during the ride."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No further signs of distress noted. Patient remains stable."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Thanks for the help. I really thought I was having a heart attack."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "You did the right thing. It's important to be cautious, and we're glad we could assist."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Final vitals: pulse 74, blood pressure 127 over 81, SpO2 96, no complaints. Stable."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Emergency department is on standby, one patient hospital-bound with no complications."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No drugs administered beyond IV placement, and sugar levels have improved."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Patient stabilization was achieved and maintained during transport."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Smooth ride with no interruptions or changes in vital readings. All clear."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Patient is all set for hospital transfer. No issues expected."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All disclosures and EKG data shared with the ED in advance."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Patient remains in sinus rhythm with no further steps needed."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is alert and informed. She's ready for the ED handoff."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "We're all set to turn over care at the ED doors."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "I'll be right with you on the stretcher the whole way."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Final communication to the ED about the cardioversion, IV, and ECG results."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No additional procedures scheduled. Patient is non-emergent."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Our assessment was thorough and led to timely treatment based on her initial symptoms."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "ED team is aware of the SVT with no ST changes, and she was successfully cardioverted."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "All information has been passed along to the hospital side."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Smoother ride than expected. Her vitals improved and stayed steady."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Based on field progress, no additional steps are required during transport."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She is stable and all set for arrival. No more interventions needed."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "She is alert and retained complete cognitive function throughout transport."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Pulse and blood pressure initially low but have normalized with treatment."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Patient does not require further action while in transit."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Final report ready at the ED entrance with all key points covered."
+    }
+  ]
+}

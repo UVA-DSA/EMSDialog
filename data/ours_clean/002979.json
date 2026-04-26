@@ -1,0 +1,596 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002979",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond to suspected cardiac arrest at a motel. 45-year-old female found unresponsive in the bathroom."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Jaden, an EMT. What happened to bring you to 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She's unconscious. Suspected drug overdose. Found this way 15 minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "She's unresponsive. Let's open the airway and prepare for assisted breathing."
+    },
+    {
+      "turn": 5,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is visually clear. No signs of obstruction or secretions."
+    },
+    {
+      "turn": 6,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic Partner",
+      "utterance": "Agonal respirations-very shallow, about 6 per minute."
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Pulse is 123, strong and regular. Applying assisted ventilations now."
+    },
+    {
+      "turn": 8,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Medic Partner",
+      "utterance": "Pulse is 123, thready but adequate for her condition."
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Medic Partner",
+      "utterance": "Respirations at 6, shallow, requiring manual support for adequate exchange."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Blood pressure is 158/100-no signs of trauma or external bleeding noted."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Medic Partner",
+      "utterance": "Blood glucose is 134-readings appear within normal limits."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Medic Partner",
+      "utterance": "SpO2 is 55% on room air-a critical drop, must assist ventilations immediately."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "EKG shows sinus tachycardia-activating protocol 7-1 for opioid overdose."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Administer naloxone IV immediately-Partner, prepare the 20G line in right forearm."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Medic Partner",
+      "utterance": "Naloxone administered IVP at 00:35, patient shows mild improvement."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "Oxygen saturation improved to 98% with assisted breathing-continue ventilations at 18/min."
+    },
+    {
+      "turn": 17,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Patient is now AOX-4 after naloxone administration-monitor for potential reversal."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Pulse decreased to 99 with improved mentation-showing positive signs of response."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Medic Partner",
+      "utterance": "BP is 134/95-stable readings and no indication of deterioration."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Medic Partner",
+      "utterance": "EKG reverted to sinus rhythm-monitoring remains ongoing."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Tell me about what happened before you became unresponsive."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Patient",
+      "utterance": "I used heroin this evening-last thing I remember was taking it."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Can we take your information? Do you have ID or a phone?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Patient",
+      "utterance": "I don't have ID, no phone, no insurance. I'm homeless, staying at a hotel with friends."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Any pain or discomfort you experienced before losing consciousness?"
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "Just weakness and mild nausea-nothing severe, no pain."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "EMT",
+      "utterance": "Minor abrasion on left forearm with slight bleeding-no head or neck injuries reported."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "Medic Partner",
+      "utterance": "No obstruction noted. Ears, nose, and oropharynx clear of secretion or fluid."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Capillary refill is 2 seconds-indicates good perfusion."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Bilateral breath sounds heard with assisted BVM; currently no stridor or crackles."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic Partner",
+      "utterance": "Skin is warm, dry, no cyanosis. No rash, rash, or bruising observed."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Been thinking about ending your life in the past?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I've overdosed a few times. If I die of OD, I say it would be a good thing-EMS should stop saving me."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "You taking any medications-prescription or over-the-counter?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "No medications-I haven't taken anything."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Are you being treated for your HIV or Hepatitis C?"
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "No treatment for either in a long time."
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "EMT",
+      "utterance": "Any vomiting or diarrhea after using heroin?"
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Patient",
+      "utterance": "Just felt nauseated-no vomiting or diarrhea."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Blood pressure is 134/95-SpO2 still at 98 on assisted O2."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Medic Partner",
+      "utterance": "Breathing at 18, ETCO2 and O2 levels continue to trend well."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Continuing 4-lead ECG monitoring-confirmed and will track per protocol."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "ECG set up at 00:31 confirm stable rhythm-leads are secure."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Pulse now 105, maintained sinus rhythm-BP remains steady at 151/96."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "IV remains secure in forearm-no issues, working with injectable solutions."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Medic Partner",
+      "utterance": "Glucose reading was 134 before naloxone, currently not rechecked."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Still weak but any changes in nausea since you regained awareness?"
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "Feels tired, but no nausea now."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Medic Partner",
+      "utterance": "BP is now 127/68, pulse is still in sinus rhythm."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Medic Partner",
+      "utterance": "No alarms or issues. IV, BVM, and EKG remain functioning normally."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Any abdominal pain or new symptoms as we prepare for transport?"
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "No, just tired and no pain."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic Partner",
+      "utterance": "No lesions or bruising. Skin turgor remains good."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Peripheral pulses remain strong and equal."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No angulation or deformity in any extremities."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic Partner",
+      "utterance": "Humidity is consistent. Keep O2 on."
+    },
+    {
+      "turn": 57,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Remaining on protocol 7-1 for opioid overdose event as per ePCR guidance."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic Partner",
+      "utterance": "We will position her in semi-Fowler's to help with breathing."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Secure restraints placed on the shoulders, lap, and legs."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All restraints and adjustments complete. Ready for non-emergency transport."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Destination set: Retreat Hospital-no anticipated detours."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff_to_er",
+      "role": "EMT",
+      "utterance": "Calling ER-pre-arrival report done for a 45F in semi-Fowler's with IV and O2."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff_to_er",
+      "role": "Medic Partner",
+      "utterance": "She breather via BVM, BP stable at 127/68, EKG sinus, no trauma."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff_to_er",
+      "role": "EMT",
+      "utterance": "Patient denies pain-has HIV and Hepatitis C-no new symptoms, no NVD."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Medic Partner",
+      "utterance": "All current vitals are stable-transport planned without incident."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "O2 at 15 LPM remains on-no alternative airway methods needed."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "BVM, EKG, IV all remain intact with no medical decline noted."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient semi-Fowler's position with all restraints in place-no restrictions."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic Partner",
+      "utterance": "Mentation is alert and breathing independent-passive monitoring in effect."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Ambulatory assistance not required-patient walked to stretcher."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "All EKG readings still in sinus rhythm, no deviation from previous readings."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Medic Partner",
+      "utterance": "SpO2 98-room air saturation maintains stable threshold."
+    },
+    {
+      "turn": 73,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Transport remaining on protocol 7-1 with no medical deviations."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Anticipated 9-minute transport to ER-no delays expected."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff_to_er",
+      "role": "Medic Partner",
+      "utterance": "O2 and BVM to continue in ER-ECG active for transition."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "O2, IV, and EKG stable during transport-no complications or 'flatlined' issues."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Medic Partner",
+      "utterance": "IV line remains secure and no changes in BVM or ECG."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "No further naloxone-patient stable and no signs of relapse."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient stable and semi-Fowler's-no injuries noted, transit smooth."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff_to_er",
+      "role": "EMT",
+      "utterance": "Patient is on stretcher at the door-RN assigned bed 2 and alert."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff_to_er",
+      "role": "Medic Partner",
+      "utterance": "IV and EKG remain active for hospital-handoff complete."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic Partner",
+      "utterance": "No traffic delay, transport smooth, arriving shortly."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff_to_er",
+      "role": "EMT",
+      "utterance": "ER report given-patient alert, no NVD, complete handoff to ER."
+    },
+    {
+      "turn": 84,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Transport completed within protocol bounds-handoff successful."
+    }
+  ]
+}

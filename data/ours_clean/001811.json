@@ -1,0 +1,722 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001811",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for chest pain."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Jordan, and this is my partner, Sam. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been having chest pain and some pins and needles in my left arm for about 30 minutes."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Can you point to the month on my hand here?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Medic",
+      "utterance": "Both eyes are opening spontaneously, equal, and tracking well."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Medic",
+      "utterance": "What is your name and age?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Medic",
+      "utterance": "Barely squeeze this finger for me. Good. And this one?"
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "Medic",
+      "utterance": "Your airway is open and not obstructed. Are you feeling any burning or tightness when breathing?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "Airway clearance",
+      "role": "Partner",
+      "utterance": "No sounds of airway obstruction. Airway remains patent."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "Preferred posture to maintain airway",
+      "role": "Partner",
+      "utterance": "We'll keep you in a semi-upright position for comfort."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Medic",
+      "utterance": "Are you having any trouble breathing or does it feel labored at all?"
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "Rate and depth of respirations",
+      "role": "Partner",
+      "utterance": "Respirations are 16 RPM, even, and unlabored. Oxygen saturation remains at 99%."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "Work of breathing",
+      "role": "Medic",
+      "utterance": "No signs of increased effort or use of accessory muscles."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "Presence of bilateral breath sounds",
+      "role": "Partner",
+      "utterance": "Lungs are clear bilaterally, with equal breath sounds on both sides."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Medic",
+      "utterance": "Let me verify your pulse at your wrist and feel for peripheral pulses."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "Pulse rate and quality",
+      "role": "Partner",
+      "utterance": "Pulse is 92, strong, and equal in both radial pulses. 17. Primary Assessment; Skin appearance: Color; Partner: Skin shows a normal warm tone with no cyanosis."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "Oxygen saturation measured with pulse oximetry",
+      "role": "Partner",
+      "utterance": "SpO2 remains at 99%."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "Mental State / Orientation",
+      "role": "Medic",
+      "utterance": "You pointed easily, so you're alert, oriented, and responding appropriately."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "GCS",
+      "role": "Partner",
+      "utterance": "GCS is 15-alert, oriented, and responding to verbal and tactile stimuli."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "Can you describe in your own words how the chest pain feels right now?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Medic",
+      "utterance": "How intense would you say the chest pain is? 0 means no pain, 10 is the worst possible."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "Around a 6."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Medic",
+      "utterance": "Is it a constant pain, or does it come and go?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "It's ongoing, sometimes feels a bit more noticeable than others."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Medic",
+      "utterance": "Does any activity seem to make it worse or better?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "No real pattern. Doesn't change much with what I'm doing."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Medic",
+      "utterance": "What words would you use to describe the pain: sharp, dull, pressure, burning?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "Like a heavy pressure."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Medic",
+      "utterance": "Does it go anywhere besides your chest? Any radiating sensation?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "It travels up to my neck and left arm."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Partner",
+      "utterance": "Does it go anywhere else like your back or shoulders?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "Any allergies to medications, foods, or latex that we should be aware of?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "No."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "What medications are you currently taking regularly?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I take Lisinopril and Metoprolol daily."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "Any chronic medical issues, surgeries, or devices?"
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "Yes. I had a previous heart attack in early October, had a CABG surgery, and have an implantable defibrillator."
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "Any nausea, vomiting, dizziness, abdominal pain, or fever lately?"
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "No."
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "Any chills, dark or tarry stools, headache, or diarrhea?"
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "No."
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "When did you last have anything to eat or drink?"
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I had dinner about five hours ago."
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "What were you doing just before the chest pain was bad enough to call 911?"
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I was sitting on the couch. It just came on suddenly."
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "Any significant life stress or recent drug use?"
+    },
+    {
+      "turn": 47,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "Some severe personal stress, and I took MDMA over the weekend."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "Medic",
+      "utterance": "Skin shows no lesions, rashes, or unconscious drooping. It's dry."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Medic",
+      "utterance": "Try moving your head from side to side. Does this cause pain?"
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "eyes",
+      "role": "ears, nose, throat; Partner",
+      "utterance": "No nasal or oral discharge. Face is symmetrical."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Medic",
+      "utterance": "I will now place the stethoscope on your chest. That's okay?"
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Partner",
+      "utterance": "Breath sounds are clear and equal bilaterally. No pain with breathing."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "Partner",
+      "utterance": "Arms and legs move well. No soreness in either."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "torso exam",
+      "role": "Medic",
+      "utterance": "Chest wall shows no deformity or tenderness. Abdomen is soft and non-tender with no distention."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "torso exam",
+      "role": "Partner",
+      "utterance": "No rigidity, abnormal masses, or generalized tenderness noted."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 92, regular, and strong."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 16 and regular."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 125 over 84."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains 99%."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows normal sinus rhythm with possible left ventricular strain and atrial enlargement."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "give medications",
+      "role": "Medic",
+      "utterance": "I'm about to administer a 324 mg ASA. May taste chalky at first."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "The fingerstick shows 0 mg/dL. May need venous for a more accurate reading."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "Initiating 4-lead monitoring for ongoing heart rhythm assessment."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "Placing an IV in your left arm for potential fluids or medication."
+    },
+    {
+      "turn": 65,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Medic",
+      "utterance": "Conducting 12-lead EKG for further cardiac evaluation. Secure the straps tightly."
+    },
+    {
+      "turn": 66,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Medic",
+      "utterance": "Following the chest pain-cardiac suspected protocol based on symptoms, history, and EKG."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse increased to 96. Intensity of pain same?"
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Patient",
+      "utterance": "Still about the same. A 6 on the pain scale."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure currently 123 over 85. SpO2 at 98%."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Medic",
+      "utterance": "Let's reassess pain now. On 1 to 10 scale, what's the level?"
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Still a 6. No significant change."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "12-lead EKG repeated. No STE seen, and no significant new findings."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Transport destination is VCU Health Systems for further evaluation."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You'll be secured in a semi-Fowler's position using shoulder and lap belts for safety."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "pre_arrival_report",
+      "role": "Medic",
+      "utterance": "Hospital notified with pre-arrival report, including EKG and vital updates."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Final vitals show pulse of 82, but still strong and regular."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure recorded as 124 over 83."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "Medic",
+      "utterance": "Skin stays dry with no signs of edema or abnormal coloration."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Partner",
+      "utterance": "No evidence of jugular venous distention or visual abnormalities."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears",
+      "role": "nose, mouth and throat exam; Partner",
+      "utterance": "No sores, signs of trauma, or bite marks are observed."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Medic",
+      "utterance": "No abnormal heart sounds or murmurs detected upon recheck."
+    },
+    {
+      "turn": 82,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "Any abdominal pain, back pain, or changes in bowel habits?"
+    },
+    {
+      "turn": 83,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "No, no stomach or back discomfort, normal bowel movement."
+    },
+    {
+      "turn": 84,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "Any falls, trauma, fever, chills, or signs of infection recently?"
+    },
+    {
+      "turn": 85,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "No, no reported illness, fall, or injury."
+    },
+    {
+      "turn": 86,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "Any headaches, visual disturbances, or neck pain?"
+    },
+    {
+      "turn": 87,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "No headaches, vision issues, or neck discomfort noted."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Partner",
+      "utterance": "No unusual findings; extraocular movements are intact and normal."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "Partner",
+      "utterance": "Gait and coordination appear normal in all four limbs."
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Partner",
+      "utterance": "Head shape is normal-no deformities or swelling observed."
+    },
+    {
+      "turn": 91,
+      "topic": "Primary Assessment",
+      "micro_intent": "Pulmonary exam",
+      "role": "Medic",
+      "utterance": "No dyspnea or signs of increased breathing effort detected."
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "torso exam",
+      "role": "Medic",
+      "utterance": "Chest exhibits normal rise and fall with symmetrical movement."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "Medic",
+      "utterance": "Bowel and bladder function reported as normal."
+    },
+    {
+      "turn": 94,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "No neurological issues reported, such as headache or visual disturbances."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "Partner",
+      "utterance": "No localized tenderness or generalized distention of the abdomen detected."
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears",
+      "role": "nose, mouth and throat exam; Medic",
+      "utterance": "No indications of sunken eyes or hearing deficits noted."
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears",
+      "role": "nose, mouth and throat exam; Partner",
+      "utterance": "No signs of hemorrhage, nasal bleeding, or foreign body are present."
+    },
+    {
+      "turn": 98,
+      "topic": "Primary Assessment",
+      "micro_intent": "Mental state",
+      "role": "Partner",
+      "utterance": "Alert, oriented, and fully interactive-aox4/4."
+    },
+    {
+      "turn": 99,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "Partner",
+      "utterance": "Legs show normal coordination and gait-no deformities or angulation."
+    },
+    {
+      "turn": 100,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "No STE or STD noted on the 12-lead EKG."
+    },
+    {
+      "turn": 101,
+      "topic": "Take Interventions",
+      "micro_intent": "give medications",
+      "role": "Partner",
+      "utterance": "Patient has equal strength in all extremities."
+    },
+    {
+      "turn": 102,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Partner",
+      "utterance": "No unexpected and sudden back pain or signs of trauma observed."
+    }
+  ]
+}

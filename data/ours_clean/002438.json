@@ -1,0 +1,723 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002438",
+  "protocol": [
+    "medical - stroke/tia (protocol 3 - 5)",
+    "medical - bradycardia (protocol 2 - 9)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a possible cardiac arrest at --Address Redacted-- in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm EMT Harrison, and this is my partner Paramedic Liza. We understand you're having a medical emergency. Why did you call 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She fainted briefly. A neighbor started CPR. She has a history of high blood pressure."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Olivia, can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "My name is Olivia. I was at a gathering and collapsed for a moment."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Olivia, can you tell me where you are right now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "I'm at home. I don't remember much after I fell."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "Olivia, can you squeeze my finger for me?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": ""
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Olivia, any trouble breathing?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No trouble, just a tight chest."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Partner, check respiration."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Paramedic",
+      "utterance": "Respirations are 16, regular."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Paramedic",
+      "utterance": "Oxygen saturation is 98% on room air."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Olivia, are you hearing any strange breath sounds?"
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "I don't think so. Just the tightness."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Partner, take pulse and blood pressure."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic",
+      "utterance": "Pulse is 52, regular."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure is 98/57 while seated."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Olivia, how are you feeling now?"
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Patient",
+      "utterance": "Sweaty. Diaphoretic."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Olivia, describe the tight feeling in your chest."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Started suddenly. I felt dizzy and fell."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "How long were chest compressions going on before we arrived?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Roughly two minutes. I can't be sure."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "There's a minor abrasion on your head. Can you feel it?"
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "Yes. It's just a small red mark."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Any changes in skin tone or texture?"
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "No, I'm just sweating."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Any neck or back discomfort?"
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "No. I don't feel pain or stiffness."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "We'll check for rashes or swelling momentarily."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Paramedic",
+      "utterance": "You mentioned feeling like going to the bathroom. Do you still feel it?"
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Patient",
+      "utterance": "Yes. Very urgently."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is 131 mg/dl."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus bradycardia with occasional premature ventricular contractions and possible first-degree AV block."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Olivia, any long-term medical conditions?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Hypertension. Under control."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - medications",
+      "role": "EMT",
+      "utterance": "What medications are you taking?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - medications",
+      "role": "Patient",
+      "utterance": "Prinivil and Microzide."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - allergies",
+      "role": "EMT",
+      "utterance": "Any drug allergies?"
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - allergies",
+      "role": "Patient",
+      "utterance": "No."
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - events_leading_up_to_the_event",
+      "role": "EMT",
+      "utterance": "Can you share what led to your collapse?"
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - events_leading_up_to_the_event",
+      "role": "Patient",
+      "utterance": "I was at an event, felt lightheaded, collapsed. A doctor began CPR."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "We're applying 4-lead cardiac monitoring now."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Olivia, we're placing an IV in your arm. It may feel a little pinch."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV inserted in left arm with 20-g catheter-good flow."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Paramedic",
+      "utterance": "Respirations are 12, regular now."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "SpO2 is 93%."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pressure is 126/64, pulse 59."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Has the chest discomfort changed since we started?"
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Patient",
+      "utterance": "Still tight. It hasn't worsened."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neuro_assessment",
+      "role": "Paramedic",
+      "utterance": "Olivia, move your left foot."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neuro_assessment",
+      "role": "Patient",
+      "utterance": ""
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neuro_assessment",
+      "role": "EMT",
+      "utterance": "Now your right foot."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neuro_assessment",
+      "role": "Patient",
+      "utterance": ""
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "css",
+      "role": "Paramedic",
+      "utterance": "For stroke screening, we'll do the Cincinnati Stroke Scale now."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "css",
+      "role": "Paramedic",
+      "utterance": "Close your eyes and squeeze my finger on 1, 2, 3."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "css",
+      "role": "Patient",
+      "utterance": ""
+    },
+    {
+      "turn": 60,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Partner, let's follow the bradycardia and syncope protocols."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "12-lead EKG was reviewed-rhythm remains stable."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Vitals stable: 58 bpm, 134/76 mmHg, SpO2 97%, 14 resp."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Olivia, we're transporting you to St. Mary's Hospital."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Olivia, we'll now secure you to the stretcher."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient is secured using standard restraints."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Liv, we are beginning transport. Move as you feel comfortable."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient en route to St. Mary's."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "Partner",
+      "utterance": "ED team should expect syncope, bradycardia, and active IV."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "Paramedic",
+      "utterance": "Room in 13. No stroke alert needed."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "EMT",
+      "utterance": "Nausea and dizziness reported for ED awareness."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "Partner",
+      "utterance": "Smooth transfer from cot to ED bed via sheet draw."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "RN",
+      "utterance": "In room 13. Did not sign PCR due to distress."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "EMT",
+      "utterance": "No changes reported during transport."
+    },
+    {
+      "turn": 74,
+      "topic": "History of Present Illness",
+      "micro_intent": "pain_assessment - severity",
+      "role": "EMT",
+      "utterance": "On a scale from 0 to 10, how's the tightness in your chest?"
+    },
+    {
+      "turn": 75,
+      "topic": "History of Present Illness",
+      "micro_intent": "pain_assessment - severity",
+      "role": "Patient",
+      "utterance": "Zero. Just tight, not painful."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "css",
+      "role": "EMT",
+      "utterance": "Stroke scale is negative. No focal deficits found."
+    },
+    {
+      "turn": 77,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Field impression is syncope with possible cardiac dysrhythmia."
+    },
+    {
+      "turn": 78,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Continue protocols and shift to hospital for cardiac review."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Paramedic",
+      "utterance": "Take vitals once more. Pulse, blood pressure, respiratory rate."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse remains at 58, BP 134/76, 14 breaths per minute."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Paramedic",
+      "utterance": "SpO2 is up to 97% and glucose remains stable as per last reported."
+    },
+    {
+      "turn": 82,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - last_oral_intake",
+      "role": "EMT",
+      "utterance": "Olivia, when did you last eat or drink?"
+    },
+    {
+      "turn": 83,
+      "topic": "History of Present Illness",
+      "micro_intent": "s_a_m_p_l_e - last_oral_intake",
+      "role": "Patient",
+      "utterance": "Had some tea and water earlier, around 4 PM."
+    },
+    {
+      "turn": 84,
+      "topic": "Primary Assessment",
+      "micro_intent": "gcs",
+      "role": "Paramedic",
+      "utterance": "Glasgow Coma Scale is 15, patient is alert and oriented."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Administering IV fluids as per standing order to maintain stability."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Best neuro/cardiac care can be provided at St. Mary's."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is secured for transport. All straps functional."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Liv, we're ready to wheel you out. Stay with us."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "Partner",
+      "utterance": "No stroke or TIA signs observed. No stroke alert needed."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "Paramedic",
+      "utterance": "Patient asymptomatic aside from dizziness and nausea."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "EMT",
+      "utterance": "All vitals and condition stable throughout transport."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "Paramedic",
+      "utterance": "EKG shows sinus bradycardia and occasional PVC."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "EMT",
+      "utterance": "No interventions required at this point unless protocol updated."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "Partner",
+      "utterance": "Patient remains asymptomatic during handoff and transport in."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "EMT",
+      "utterance": "Full medical history and medications shared with ED staff."
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "IV line checked and running-no complications."
+    },
+    {
+      "turn": 97,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "4-lead EKG monitored continuously in ED."
+    },
+    {
+      "turn": 98,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Vital signs have remained consistent with last report."
+    },
+    {
+      "turn": 99,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Transport complete. All standing protocols followed."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "EMT",
+      "utterance": "Report fully delivered to ED nursing team and physician."
+    },
+    {
+      "turn": 101,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Patient stable for arrival. Nothing additional to do here."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "complete_handoff",
+      "role": "Partner",
+      "utterance": "EMS care was within standard. No incident to report."
+    }
+  ]
+}

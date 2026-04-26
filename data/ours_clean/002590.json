@@ -1,0 +1,575 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002590",
+  "protocol": [
+    "general - cardiac arrest (protocol 2 - 7)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for a reported cardiac arrest at --Address Redacted-- in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, and I'm an EMT with the rescue squad. Can you tell me what happened?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "My father was feeling unwell and then collapsed. He's not responding."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Thank you. We see an unresponsive patient with no pulse. My partner Jordan is placing the patient on a non-rebreather mask at high flow while we clear our space."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you open your eyes for me, sir?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "No eye opening. The patient is unresponsive to all stimuli."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Can you squeeze my hand?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Bystander",
+      "utterance": "No, he hasn't opened his eyes or moved in any way."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Understood. The patient is unresponsive."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "My partner is suctioning the airway to clear significant blood."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "BVM mask and OPA are in place."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "No breathing observed. Patient is apneic."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "No pulse detected. Patient is pulseless and unresponsive."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse remains at 0."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations remain at 0."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 0 over 0."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is at 99%."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Initial EKG result is PEA (pulseless electrical activity)."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is not assessed due to cardiac arrest protocol."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Interventions",
+      "micro_intent": "cpr - manual",
+      "role": "Partner",
+      "utterance": "CPR is beginning now with two-person manual compressions."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Interventions",
+      "micro_intent": "airway - oropharyngeal_insertion",
+      "role": "EMT",
+      "utterance": "Oropharyngeal airway has been inserted."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Interventions",
+      "micro_intent": "resp - assist_ventilation - bvm_via_mask",
+      "role": "Partner",
+      "utterance": "Assisting ventilations with a BVM and mask due to limited access."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Interventions",
+      "micro_intent": "airway - clear/suction",
+      "role": "EMT",
+      "utterance": "Re-suctioning the airway due to blood accumulation."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Do you have any knowledge of a medical history, allergies, or medications?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "I don't have that information. He wasn't taking anything unusual, as far as I recall."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Partner",
+      "utterance": "Last food or drink?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Bystander",
+      "utterance": "Not sure, but he had dinner a few hours ago."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "EMT",
+      "utterance": "Any events leading up to this with any symptoms?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Bystander",
+      "utterance": "He said he wasn't feeling well before he collapsed."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Partner",
+      "utterance": "Thank you for the details. We don't have information on allergies, medications, or medical history."
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "Pain assessment is not applicable as the patient is pulseless and unresponsive."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "GCS is 3. No signs of recent trauma noted."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "The patient has a very distended abdomen."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "There is significant bloody discharge from the nose and mouth. No evidence of trauma causing the bleeding."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "No signs of pupillary response."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "intubation",
+      "role": "EMT",
+      "utterance": "Patient intubated with a 7.5 ETT at 24 cm from the teeth. Verified with epiglottis and vocal cords."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "etco2",
+      "role": "Partner",
+      "utterance": "Capnography confirms correct ETT placement with good readings."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "airway - clear/suction",
+      "role": "EMT",
+      "utterance": "Suctioning the ETT due to blood in the trachea."
+    },
+    {
+      "turn": 39,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Proceeding with the general - cardiac arrest (Protocol 2-7) per standard field procedures."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "First dose of Epinephrine 1:10,000 administered via IO at 1933."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Rhythm remains in PEA with no rhythm changes."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "oxygen",
+      "role": "EMT",
+      "utterance": "Oxygen remains at 25LPM via NRB until airway is more secured."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Second dose of Epinephrine administered now."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "rhythm_change",
+      "role": "EMT",
+      "utterance": "Defibrillator set to 120J. One shock delivered after two team members confirmed V-fib."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Rhythm remains in PEA post-shock."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "amiodarone",
+      "role": "Partner",
+      "utterance": "Third dose of Epinephrine and 300 mg Amiodarone given."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is being transferred to the stretcher and secured for transport."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Interventions were withheld on scene due to limited space and blood pooling around the head, posing an exposure risk to providers."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "etco2",
+      "role": "EMT",
+      "utterance": "Capnography remains good during patient movement to the ambulance."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Interventions",
+      "micro_intent": "autopulse",
+      "role": "Partner",
+      "utterance": "Autopulse CPR activated in the truck due to improved access around the patient."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "EKG still shows PEA during transport."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Interventions",
+      "micro_intent": "clear_suction",
+      "role": "EMT",
+      "utterance": "ETT suctioned again, blood noted post-intubation."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Autopulse CPR adjusted to accommodate the patient's distended abdomen."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Third dose of Epinephrine given. No return of pulse."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "rhythm_change",
+      "role": "Partner",
+      "utterance": "Rhythm changed to V-fib once during transport, shock delivered per protocol."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Rhythm remains in PEA with no spontaneous circulation."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient secured and all interventions controlled for transport."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Arriving at VCU Health Systems. Handing off patient care."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All interventions remain ongoing per protocol."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "ETT and ECG stable, ready for clinical team."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "VCU arrival confirmed."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "ETT secured, no changes in waveform or capnography."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "IO remains in place as previously established."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "4-lead ECG monitoring is in place and remains stable."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The patient's rhythm remains PEA on EKG monitoring."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All pre-arrival preparations complete."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All field records reported to the clinical team."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "ETT functional per capnography."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Chest compressions continued by hospital staff."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All necessary information conveyed to the clinical team."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Autopulse CPR continued post handoff."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No complications during transport."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All transport protocols adhered to."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "IV route prepared at the destination."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No pre-arrival concerns reported."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All personal protective procedures reviewed during transport."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Capnography trends remain stable in the hospital setting."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All medications administered are documented and handed over."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Full responsibility transferred to hospital team."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All systems and interventions stable at handoff."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient ready for hospital treatment and care."
+    }
+  ]
+}

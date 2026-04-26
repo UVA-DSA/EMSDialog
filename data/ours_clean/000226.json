@@ -1,0 +1,666 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000226",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for chest pain at --Address Redacted-- in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, my name is Alex, I'm part of the rescue squad. What led you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been having chest pain, it started around 09:30. It's sharp and goes to my left arm."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Mr. Smith, can you open your eyes for me?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Patient",
+      "utterance": "Yeah, I can open my eyes."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Medic",
+      "utterance": "Good, what is your name?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Patient",
+      "utterance": "My name's John."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Medic",
+      "utterance": "Can you squeeze my finger with your right hand?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Patient",
+      "utterance": "Like this."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Medic",
+      "utterance": "And your left hand, how about now?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Patient",
+      "utterance": "Yeah, my left is weaker than my right."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "Medic",
+      "utterance": "Mr. Smith, we need to examine your airway now. Are you comfortable with this?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Medic",
+      "utterance": "Now, how would you describe your breathing?"
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Patient",
+      "utterance": "It feels normal, no shortness of breath."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "Respirations are at 16 per minute, with regular depth and effort."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Medic",
+      "utterance": "Breathing is equal and regular. Normal breath sounds on the left."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Medic",
+      "utterance": "Partner, right side?"
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "Clear and equal breath sounds on the right side."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "No deformities or abnormalities of the chest wall."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Medic",
+      "utterance": "Let me check your pulse, blood pressure, and skin condition."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 140/94 mmHg."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse rate is 87, and equal on both sides."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is at 97%."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Partner",
+      "utterance": "Radial pulses are strong and regular. Skin is warm, dry, and intact. No deformities or injuries noted."
+    },
+    {
+      "turn": 25,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Medic",
+      "utterance": "Any bleeding or discomfort with movement? How about dizziness?"
+    },
+    {
+      "turn": 26,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Patient",
+      "utterance": "No bleeding, and I'm not dizzy."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs and symptoms",
+      "role": "Medic",
+      "utterance": "Let's talk more about your chest pain. On a scale of 0 to 10, how severe is it?"
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "Patient",
+      "utterance": "Around 5 out of 10."
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - quality",
+      "role": "Medic",
+      "utterance": "Is it sharp, burning, or pressure-like?"
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - quality",
+      "role": "Patient",
+      "utterance": "Sharp."
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - radiation",
+      "role": "Medic",
+      "utterance": "Does it move to other areas, like the left arm or neck?"
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - radiation",
+      "role": "Patient",
+      "utterance": "Yes, definitely to my left arm."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs and symptoms",
+      "role": "Medic",
+      "utterance": "When did the pain first begin?"
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - onset",
+      "role": "Patient",
+      "utterance": "Around 09:30 this morning while walking."
+    },
+    {
+      "turn": 35,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - provocation",
+      "role": "Medic",
+      "utterance": "What makes it better or worse?"
+    },
+    {
+      "turn": 36,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - provocation",
+      "role": "Patient",
+      "utterance": "It doesn't change with activity or resting."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "Medic",
+      "utterance": "Have you experienced similar episodes before?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "Patient",
+      "utterance": "Yes, but not as severe as this one."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "Medic",
+      "utterance": "Are you on any medications?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "Patient",
+      "utterance": "I take Plavix, but I can't remember others."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "Medic",
+      "utterance": "Any history of heart or neurological issues?"
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "Patient",
+      "utterance": "I had a heart attack and a stroke in 2019. I also have a pacemaker."
+    },
+    {
+      "turn": 43,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last oral intake",
+      "role": "Medic",
+      "utterance": "When was your last meal or drink?"
+    },
+    {
+      "turn": 44,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last oral intake",
+      "role": "Patient",
+      "utterance": "I had breakfast right before leaving."
+    },
+    {
+      "turn": 45,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events",
+      "role": "Medic",
+      "utterance": "What were you doing before the pain started?"
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events",
+      "role": "Patient",
+      "utterance": "Just walking down the sidewalk when it hit."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "Medic",
+      "utterance": "Let me take a look at your skin now. How do you feel it?"
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "Partner",
+      "utterance": "Skin is warm and dry with no rashes or injuries. Cap refill is under 2 seconds."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Medic",
+      "utterance": "I need to examine your eyes and neck. Okay?"
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Partner",
+      "utterance": "Pupils are equal and reactive in the left eye. The right eye is unreactive and blind."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Medic",
+      "utterance": "Are you noticed any changes in your vision?"
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Patient",
+      "utterance": "My right eye has been blind since the stroke."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Medic",
+      "utterance": "You have a left facial droop, which you say is your normal condition?"
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Patient",
+      "utterance": "Yes, that's been my situation since the stroke."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Medic",
+      "utterance": "Your mental response seems appropriate for the GCS. You aware of your surroundings?"
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Patient",
+      "utterance": "I am, yes."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Medic",
+      "utterance": "I'll now listen to your lungs. Permission?"
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Patient",
+      "utterance": "Yes, go ahead."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Partner",
+      "utterance": "Breath sounds are even and clear. Chest moves normally."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Medic",
+      "utterance": "Any discomfort when breathing?"
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Patient",
+      "utterance": "Slight tenderness on the left side."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Medic",
+      "utterance": "Is this limited or general across your chest?"
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Patient",
+      "utterance": "It's general discomfort, not pinpoint."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "Partner",
+      "utterance": "Tenderness also noted on the right side."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "Medic",
+      "utterance": "You have weaker grip on the left side. Common with your history?"
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "Patient",
+      "utterance": "Yes, that's normal for me."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental status exam",
+      "role": "Medic",
+      "utterance": "Let's confirm your GCS. What is your name again?"
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental status exam",
+      "role": "Patient",
+      "utterance": "John."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental status exam",
+      "role": "Medic",
+      "utterance": "Where are you now and today's date?"
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental status exam",
+      "role": "Patient",
+      "utterance": "I'm at home. I don't know the exact date."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is 106 mg/dL."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Ready for 4-lead monitor application and EKG. 4-lead applied now."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "4-lead monitor is up. Lights and sound good."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "IV is now set in your left anterior cubital vein."
+    },
+    {
+      "turn": 75,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "You may feel slight pressure. IV is in place."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Interventions",
+      "micro_intent": "give medications",
+      "role": "Medic",
+      "utterance": "We'll now give you some aspirin."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Interventions",
+      "micro_intent": "give medications",
+      "role": "Patient",
+      "utterance": "Okay, I trust you."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Interventions",
+      "micro_intent": "give medications",
+      "role": "Partner",
+      "utterance": "Aspirin 324 mg given orally."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Preparing for first 12-lead EKG. Keep still for a moment."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "Medic",
+      "utterance": "I'll check vitals in a while. Pulse and BP first?"
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "Partner",
+      "utterance": "Pulse is 82, BP is 144/90."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "Partner",
+      "utterance": "First 12-lead shows: abnormal for a 40+ male with inferior infarct, sinus rhythm, and incomplete right bundle branch block."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "Partner",
+      "utterance": "Second 12-lead also complete. Indicates junctional rhythm with axis deviation and T wave changes."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "Partner",
+      "utterance": "SpO2 has increased to 100%. Pulse is now 76 and BP 132/79."
+    },
+    {
+      "turn": 85,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide ems protocol",
+      "role": "Medic",
+      "utterance": "We're following protocol 2-1 for suspected cardiac chest pain."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Medic",
+      "utterance": "Please move onto the stretcher with us. Semi-Fowler's position for transport."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Patient",
+      "utterance": "Alright, let's do it."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Partner",
+      "utterance": "Sternal strap and shoulder harness in place, transport secured."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Medic",
+      "utterance": "Transportation is toward VCU Health Systems where providers are alerted."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Partner",
+      "utterance": "GCS is 15 (E4 V5 M6). Confirming correct documenting."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "59-year-old male with chest pain to left arm. Previous MI, stroke with left-sided deficits, and pacemaker. Aspirin administered, IV in place, and SpO2 at 99%. EKG: incomplete right bundle branch, potential infarct."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "All documentation with notes and EKG fully transferred to ED for Room 6."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "ED Staff",
+      "utterance": "All details provided, thank you."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Patient handed over. Ambulance will now head back."
+    }
+  ]
+}

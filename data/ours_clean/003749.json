@@ -1,0 +1,750 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003749",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for breathing problems at --Address Redacted--, Apt #109 on 2019-09-20."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, my name is Jordan, and I'm an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been struggling to breathe and coughing up some brown phlegm for about a week now."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Ma'am, can you open your eyes for me?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Medic",
+      "utterance": "So you know what's going on and can open your eyes-great."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Medic",
+      "utterance": "Can you tell me what day it is today?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Saturday, I think."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Medic",
+      "utterance": "That's fine. Can you squeeze my fingers for me?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Sure, here."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "Your mouth and nose look clear. Can you speak in full sentences comfortably?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Yeah, I can talk but I just feel like I can't get enough air."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Ma'am, we're going to check your breathing now."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your respiratory rate is 25. That's a bit fast, but not in full distress."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "It sounds like your breathing is wheezy, and there are some crackles in your lungs."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "Let's put on the pulse oximeter to check your oxygen saturation."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your blood oxygen is at 68%. That's low. We're going to give you more oxygen than what you're already using."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "We are going to put on a nasal cannula with 3 liters of oxygen."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 157 over 69. That's a bit elevated but within non-critical range."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Your skin looks normal in color, warm, and dry. I can see a strong pulse at your wrist."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your heart is beating 108 beats a minute - pretty fast."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Let me check your blood sugar quickly. It might be high-can I draw blood now?"
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Patient",
+      "utterance": "Yeah, go ahead."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Okay, your blood sugar is 271 mg/dL. Pretty high, but you mention it's low for you."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "To better help you, can you tell me a bit more? Let's start-what symptoms are you experiencing right now?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I'm having trouble breathing-it feels like a 9 out of 10. Also coughing up brownish phlegm."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "Have you used any breathing treatments or medication for this?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I used my nebulizer a few times today, but nothing helped."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Medic",
+      "utterance": "In terms of this difficulty breathing, how would you describe it? Maybe rate it from 0 to 10."
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "Probably a 9. My back hurts too-it feels like pain from an old injury that acts up when I'm sick."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "We're placing you on a cardiac monitor to check your heart rhythm-this is standard."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Your heart rhythm is sinus tachycardia-characterized by a fast, regular rate."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "We'll do a 4-lead EKG next. Is that acceptable?"
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Patient",
+      "utterance": "Go ahead."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The 4-lead shows sinus tachycardia with marked sinus arrhythmia and a short PR interval."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Medic",
+      "utterance": "I want to give you albuterol and atrovent via a nebulizer to help get your breathing better."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We will start your nebulizer therapy now and make sure your oxygen flows smoothly during the treatment."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "We're going to perform a two-provider cross-check before giving you the medication."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Medic",
+      "utterance": "We have administered 5 mg of albuterol and 0.5 mg of atrovent via nebulizer mask at 8 LPM of oxygen."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals_after_interventions",
+      "role": "Medic",
+      "utterance": "Following protocol 3-11 for respiratory distress with COPD or reactive airway, we're going to reassess after interventions."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "redO_pain_assessment",
+      "role": "Medic",
+      "utterance": "How are you feeling with the nebulizer? Can you rate your shortness of breath now?"
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "redO_pain_assessment",
+      "role": "Patient",
+      "utterance": "A bit better. Still feels heavy, but I can speak full sentences."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals_after_interventions",
+      "role": "Partner",
+      "utterance": "Let me take your vitals again. Your blood oxygen is at 99%-that's a big improvement."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals_after_interventions",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 95 over 43 now. That's lower-everything still feels okay?"
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "redO_pain_assessment",
+      "role": "Medic",
+      "utterance": "Your breathing difficulty is now a 6 on the 10-point scale, right?"
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "redO_pain_assessment",
+      "role": "Patient",
+      "utterance": "Yeah, it's eased up some. Doesn't feel like it's getting worse now."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "I'm going to check your skin now-nothing out of the ordinary, right?"
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "No, it feels normal."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "How are you feeling while we shine this light into your eyes?"
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "Bright, but I can keep my eyes open."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Your mental status is.alert and oriented-could you tell me who you are and where we are?"
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "My name is ... --Name Redacted--... and we're in Apt #109."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "What year is it right now?"
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "2019."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Perfect. You're alert and oriented to person, place, time, and situation-AOx4."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "I'm going to move each of your arms and legs-are you following?"
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "Sure."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "Your range of motion in all extremities is intact, and your gait is stable when moving."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "I need to run a 12-lead EKG-may I place the pads on your chest?"
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "Go ahead."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The 12-lead EKG shows possible evidence of lateral ischemia, marked ST and T wave abnormalities, and signs of subendocardial injury."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "There's also strong evidence of left ventricular hypertrophy with high QRS voltages."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "I will set up an IV line in your arm-this will prepare us for any medication as needed."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is now 141/63. That's within a non-critical range."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We'll keep the IV a saline lock for now. Can you let me clean and access your arm quickly?"
+    },
+    {
+      "turn": 65,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "Now, I'll slowly administer 10 mg of dexamethasone intravenously-this should help with inflammation."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "redO_pain_assessment",
+      "role": "Medic",
+      "utterance": "Great, let's try another nebulizer therapy and reassess afterward."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We will start a second albuterol nebulizer at 8 LPM oxygen. But I noticed half the treatment spilled, so we'll continue with the remainder now."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals_after_interventions",
+      "role": "Partner",
+      "utterance": "Let's take another reading. Your respiratory rate is now 27. Earlier, you had 25 and now it's 20-mild tachypnea but improving overall."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals_after_interventions",
+      "role": "Partner",
+      "utterance": "Your heart rhythm is now a regular sinus rhythm-no signs of arrhythmia for now."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation stays at 99%-good sign of effective treatment."
+    },
+    {
+      "turn": 71,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "Tell me-have you had episodes like this before, and did you go to the emergency room?"
+    },
+    {
+      "turn": 72,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I did, but was told it was just the flu and that I should stop overdoing it."
+    },
+    {
+      "turn": 73,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "I see. Any allergies not already listed? Does that affect asthma risk at all?"
+    },
+    {
+      "turn": 74,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "Seasonal allergies for sure, but no medications I take today are something I'm allergic to. And no, no asthma diagnosis I know of-COPD only."
+    },
+    {
+      "turn": 75,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "I remember you mentioned pain earlier. On a scale of 1 to 10, how much was it?"
+    },
+    {
+      "turn": 76,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "It started at 9 and is now a 6. It was primarily chest, but the back pain is from an old injury that flares up when I'm sick."
+    },
+    {
+      "turn": 77,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Medic",
+      "utterance": "What medications are you currently using, and are you on any new ones lately?"
+    },
+    {
+      "turn": 78,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Patient",
+      "utterance": "I use albuterol, my blood pressure pill, and an insulin shot for diabetes. I also used nebulizers at home today before you came."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_medical_history",
+      "role": "Medic",
+      "utterance": "I see your complex medical history-hypertension, COPD, diabetes-insulin dependent, hyperlipidemia, anxiety, bipolar disorder, and a history of pancreatitis and a past car accident."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_medical_history",
+      "role": "Patient",
+      "utterance": "That about sums it up. My blood pressure pill is also a fluid pill."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_medical_history",
+      "role": "Medic",
+      "utterance": "You mentioned swelling in your feet for the past couple of days-is that something your PCP addressed? That can sometimes indicate fluid retention or heart issues-have you had any symptoms like needing to sit up at night or chest tightness?"
+    },
+    {
+      "turn": 82,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_medical_history",
+      "role": "Patient",
+      "utterance": "My PCP said it may be from the fluid pill. I haven't had chest tightness from fluid buildup overnight, but I have had some difficulty breathing when laying down recently. I think I was told before that it might be from my legs holding fluid-nothing more serious. My doctors never diagnosed me with CHF or pulmonary edema-just swelling. My COPD is worse, definitely, and I think I have obstructive sleep apnea-been on a CPAP on and off. It helps sometimes, but not all the time. Even when I sleep through the night with it, I wake up still fatigued, especially worse when I'm sick now, which is why I went off it recently. I never had asthma or croup in childhood. Definitely wheeze now, more like COPD maybe-exacerbation this time, for sure."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_medical_history",
+      "role": "Medic",
+      "utterance": "You said your pain feels like an old injury-was it from a car accident?"
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_medical_history",
+      "role": "Patient",
+      "utterance": "Yes, about 20 years ago. It's flared up when I get sick."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_medical_history",
+      "role": "Medic",
+      "utterance": "You were using a CPAP in the past-have you been using it recently?"
+    },
+    {
+      "turn": 86,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_medical_history",
+      "role": "Patient",
+      "utterance": "No, I've been on and off with it."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "We've taken all immediate care steps, and I'd like to get you to a hospital now."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Is there a hospital you prefer, or would you like us to take you to the nearest one?"
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "Please take me to Richmond Community Hospital."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "I will assist you with standing and help position you in a position of comfort on the stretcher."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "We will make sure you are as comfortable as possible."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You will be covered with a sheet and stabilized with five point restraints before we load you into the ambulance."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Medic",
+      "utterance": "Your condition is stable, and we've done everything we can. The field impression includes Respiratory-COPD Exacerbation and Infectious-Bronchitis-Acute."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Partner",
+      "utterance": "Our EKGs were unremarkable for STEMI, and your oxygen levels have stabilized quite well."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Medic",
+      "utterance": "We are transporting you cold to increase monitoring at the hospital."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Partner",
+      "utterance": "I will go over all vital signs, our intervention details, and our medications to the hospital team."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Medic",
+      "utterance": "The patient is fully conscious with a GCS of 15 (E4; V5; M6), indicating she is alert and oriented."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Partner",
+      "utterance": "The patient reported a history of anxiety and major depression-important for hospital consideration."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Medic",
+      "utterance": "The patient has known allergies to tramadol, morphine, naltrexone, ibuprofen, and ketorolac."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Partner",
+      "utterance": "The patient reported a history of intubation."
+    },
+    {
+      "turn": 101,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Medic",
+      "utterance": "The patient denies history of pulmonary edema or congestive heart failure."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Medic",
+      "utterance": "And that's our report. Let's roll-be seen soon at the hospital, ma'am."
+    },
+    {
+      "turn": 103,
+      "topic": "Handoff",
+      "micro_intent": "transition_to_receiving_facility",
+      "role": "Medic",
+      "utterance": "We also measured a tympanic temperature of 100.1°F and monitored for end-tidal CO2 at 70-80 mmHg."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Your heart rate is now at 82-this is a decrease compared to earlier."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Your respiratory rate has dropped to 20-still mild tachypnea, but an improvement."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Your extremities are moving without restriction and demonstrate intact range of motion at this time."
+    }
+  ]
+}

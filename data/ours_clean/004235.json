@@ -1,0 +1,743 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004235",
+  "protocol": [
+    "medical - stroke/tia (protocol 3 - 5)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 1 responding for unconscious/fainting/near-fainting at 1234 Smith St, Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Adam with Richmond EMS. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "My mom reported difficulty speaking. She said her tongue felt heavy."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, can you open your eyes for me?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "She opened her eyes. Let's test further."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "What is your name, ma'am?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "M... Marjorie."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Where are we, Marjorie?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Rich... Richmond."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Ma'am, squeeze my fingers as best as you can."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is open and self-maintained. No signs of obstruction."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 16. Breathing is normal in depth and non-labored."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Breathing appears adequate. Skin is warm and dry."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Radial pulse is strong and regular. Blood pressure is 117 over 66."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Pulse is strong. No immediate concerns noted."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 57 beats per minute."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 20 per minute."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is 117 over 66 mmHg."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 266 mg/dL."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 96% on room air."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is in sinus rhythm. No immediate abnormalities."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Marjorie, can you tell us more about the heavy tongue and speaking issues you mentioned?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It started around 21:30 today. It feels heavy and thick, like when you're really tired."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Have you noticed numbness since this began?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No, no numbness."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Do you have any past medical conditions?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have high blood pressure, that's CV - Primary Hypertension."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "EMT",
+      "utterance": "We heard you may have had an issue with your medications?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "Patient",
+      "utterance": "Yes, I think I accidentally took twice my dose of oxycodone and Tylenol. They're for my back."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "EMT",
+      "utterance": "Have you had similar side effects before?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "Patient",
+      "utterance": "No, this is the first time I've felt this strange from them."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "What medications are you on regularly?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I take something called Eliquis for blood thinning."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Are you allergic to anything?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "No, I don't think so."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "call_type_unconscious_fainting_near_fainting",
+      "role": "EMT",
+      "utterance": "You called for near-fainting, but did you actually pass out?"
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "call_type_unconscious_fainting_near_fainting",
+      "role": "Bystander",
+      "utterance": "No, she never actually fainted. She was just very tired."
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "dvt",
+      "role": "EMT",
+      "utterance": "We note a history of DVT. You have an IVC filter placed?"
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "blood_thinner_use",
+      "role": "Bystander",
+      "utterance": "She's been on Eliquis for a while."
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "lung_cancer",
+      "role": "EMT",
+      "utterance": "You mentioned lung cancer. How long has it been since your diagnosis?"
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "radiation_therapy",
+      "role": "Bystander",
+      "utterance": "She recently had a port installed for chemo but hasn't used it yet."
+    },
+    {
+      "turn": 42,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "EMT",
+      "utterance": "When did the tongue heaviness begin?"
+    },
+    {
+      "turn": 43,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "Around 2130."
+    },
+    {
+      "turn": 44,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "How would you describe the feeling in your tongue?"
+    },
+    {
+      "turn": 45,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Patient",
+      "utterance": "It's just heavy and thick, like when I'm extremely tired."
+    },
+    {
+      "turn": 46,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "How would you rate the difficulty with your speech from 0 to 10?"
+    },
+    {
+      "turn": 47,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "I don't feel pain, but maybe a 1 or 2."
+    },
+    {
+      "turn": 48,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "EMT",
+      "utterance": "Has it changed since it began?"
+    },
+    {
+      "turn": 49,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Patient",
+      "utterance": "No, it's stayed the same."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Your skin is normal, warm, and dry. No signs of rash or injury."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "rom",
+      "role": "Partner",
+      "utterance": "Range of motion in all extremities is intact. No deformities visible."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fast_exam",
+      "role": "EMT",
+      "utterance": "Can you raise your arms?"
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fast_exam",
+      "role": "Patient",
+      "utterance": "Yeah, here."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fast_exam",
+      "role": "EMT",
+      "utterance": "Any drooping on one side of your face or trouble smiling?"
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fast_exam",
+      "role": "Patient",
+      "utterance": "I think I'm smiling fine."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fast_exam",
+      "role": "EMT",
+      "utterance": "Can you say, \"you can't teach an old dog new tricks\"?"
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fast_exam",
+      "role": "Patient",
+      "utterance": "You can't teach an old dog new tricks."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fast_exam",
+      "role": "EMT",
+      "utterance": "Your speech is slightly slurred. When did that begin?"
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "fast_exam",
+      "role": "Patient",
+      "utterance": "Around the time the tongue heaviness started."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "cv - ecg - 4 lead monitoring",
+      "role": "EMT",
+      "utterance": "We're placing you on a 4-lead ECG to monitor your heart rhythm."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We're performing a 12-lead EKG. You'll feel some sensors being placed."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "The 12-lead shows some signs of cardiac ischemia, no STEMI noted-suggestive of Wellens syndrome."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "cardiac_monitor",
+      "role": "Partner",
+      "utterance": "You will be placed on a cardiac monitor now."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "aaox4",
+      "role": "EMT",
+      "utterance": "Are you aware of your name, the city, the date, and what's happening right now?"
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "aaox4",
+      "role": "Patient",
+      "utterance": "I am Marjorie, in Richmond, today, and yes, talking to you now."
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "aaox4",
+      "role": "EMT",
+      "utterance": "You're alert and oriented x4-GCS E4, V5, M6."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is up to 79 now."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 85 over 47 mmHg."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is still 97% on room air."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 0 mg/dL. No symptoms of hypoglycemia noted."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Would you be okay with us attempting an IV just in case?"
+    },
+    {
+      "turn": 72,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Patient",
+      "utterance": "If it's necessary, yes."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "20G IV access attempted at left arm. Unfortunately, we couldn't secure access."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Where would you like to be taken?"
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "St. Mary's is fine."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll secure you on a stretcher now. Best if you lie as comfortably as you can."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Using a stairchair to move you down stairs. You're good to go."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Wrapping you in a sheet and blanket now. Loading into ambulance."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're loaded and secured. We're on the way to St. Mary's."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Let's retake vitals now that we've started transport."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 79."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Respirations 16, non-labored."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "Blood pressure has dropped to 85 over 47."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose remains at 0."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "SpO2 remains at 97%."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Partner",
+      "utterance": "EKG unchanged-sinus rhythm with possible ischemia."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Let's recheck your speech and tongue."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_onset",
+      "role": "EMT",
+      "utterance": "When did the problem first appear?"
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_onset",
+      "role": "Patient",
+      "utterance": "Around 2130."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_quality",
+      "role": "EMT",
+      "utterance": "How would you describe it now?"
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_quality",
+      "role": "Patient",
+      "utterance": "Still heavy, no pain."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "Still only a 1 or 2?"
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "Patient",
+      "utterance": "Yes."
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Any new signs or symptoms since we first met?"
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "No, just same heavy tongue and speech."
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "No new numbness or dizziness onset?"
+    },
+    {
+      "turn": 97,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "No."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "take_to_ct",
+      "role": "Partner",
+      "utterance": "You'll go directly to CT upon arrival. We've warned the ED."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "take_to_ct",
+      "role": "Partner",
+      "utterance": "ED staff will likely perform a non-contrast CT for stroke imaging."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over_to_er_nurse",
+      "role": "Partner",
+      "utterance": "ED advised per protocol on arrival. All procedures and vitals as documented."
+    },
+    {
+      "turn": 101,
+      "topic": "Handoff",
+      "micro_intent": "protocol_summary",
+      "role": "Partner",
+      "utterance": "Protocol 3-5 was followed consistently. Blood glucose and EKG trends documented."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All restraints secure. Transport risk low; no transport incidents noted."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "protocol_conclusion",
+      "role": "Partner",
+      "utterance": "C-spine neutral. No immediate threats. All interventions documented."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "ED has accepted patient. Ambulance cleared."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "protocol_conclusion",
+      "role": "Partner",
+      "utterance": "Maria taken safely to St. Mary's for full evaluation."
+    }
+  ]
+}

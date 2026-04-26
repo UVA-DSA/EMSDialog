@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003301",
+  "protocol": [
+    "medical - seizure (protocol 3 - 12)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a cardiac arrest/death reported at a redacted address."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex. Can you tell me what's going on with your patient today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She had a big seizure just a minute ago. Fell from standing."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Let me check her responsiveness. Is she alert, verbalizing, or responding to pain?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "She's not opening her eyes. Checking verbal response."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "No speech. Checking motor response with stimuli."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "She's squeezing in response to pressure. GCS: Eye 2, Verbal 1, Motor 5 for total 8."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway seems patent but there are some oral secretions. Partner, suction is needed now."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Suction in progress. Note some blood-tinged secretions."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Pulse oximeter is at 98 percent. Breathing rate is 24 with regular effort."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Radial pulse is 101 and BP is 164 over 72."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is 101."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 155."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 24. No signs of cyanosis."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 98, stable on room air."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is showing sinus tachycardia."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 164 over 72 mmHg."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Partner, suction again."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Done. Airway is clear now."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg",
+      "role": "Partner",
+      "utterance": "4 lead monitoring applied. Showing sinus rhythm now."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Partner",
+      "utterance": "IV placed into left forearm, 20-gauge. Access is good."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "oxygen_admin",
+      "role": "Partner",
+      "utterance": "4 LPM via nasal cannula for better oxygenation."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 now reads 96."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up",
+      "role": "EMT",
+      "utterance": "What do you know about the timeline of this event?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up",
+      "role": "Bystander",
+      "utterance": "She's been acting strange since 3 AM-vomited and was confused."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_history",
+      "role": "EMT",
+      "utterance": "Chronic medical history?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_history",
+      "role": "Bystander",
+      "utterance": "She had a GSW at 18. Sister denies seizure history."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "What meds is she on?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Bystander",
+      "utterance": "Phenobarbital for seizure disorder."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin is warm, dry, and intact. No rashes."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pupillary_reflex",
+      "role": "Partner",
+      "utterance": "Pupils equal, round, and reactive."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "peripheral_pulses",
+      "role": "Partner",
+      "utterance": "Peripheral pulses strong and equal on all extremities."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax",
+      "role": "Partner",
+      "utterance": "Bilateral breath sounds are clear."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen",
+      "role": "Partner",
+      "utterance": "Abdomen is soft and non-tender."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "Partner",
+      "utterance": "No jugular venous distension. Trachea midline."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "Partner",
+      "utterance": "Tongue has a small laceration. Bleeding under control."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "12_lead_ecg",
+      "role": "EMT",
+      "utterance": "12-lead EKG performed. Shows nonspecific ST/T wave abnormality."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure trending down to 145 over 92."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 78 now."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Rate is 22, breathing unlabored."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 remains at 96."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose reading is 0-likely a device issue."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "reread_procedures",
+      "role": "Partner",
+      "utterance": "IV remains secured. No issues."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Blood pressure is 137/87."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations at 18. SpO2 increased to 97."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse at 85 now."
+    },
+    {
+      "turn": 47,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_protocol",
+      "role": "EMT",
+      "utterance": "On protocol 3-12 for seizure management. Continue current field plan."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "EMT",
+      "utterance": "Transport destination is VCU Medical Center."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "communication_to_hospital",
+      "role": "Partner",
+      "utterance": "ER has been notified via cell phone. They know the identity and condition."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is in semi-Fowler's position. Secure with 5 seat belts."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Scene had delays but she was moved to stretcher quickly."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 135 over 82."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing at 20. SpO2 is 90."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "76, regular."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Still in sinus rhythm, no arrhythmias detected."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose still at 0, likely device issue or no successful draw."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "no_pain",
+      "role": "EMT",
+      "utterance": "No signs of pain-pain assessment: 0."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She's now on the trauma bed in ER and secured."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport complete at 9:52 AM."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities",
+      "role": "Partner",
+      "utterance": "Motor and sensory in all limbs are +PMSx4."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back",
+      "role": "Partner",
+      "utterance": "Back atraumatic on visual inspection."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Stable circulation observed. No acute changes."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing easy, no distress signs."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 at 90-has not improved."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "no_pain",
+      "role": "Partner",
+      "utterance": "No pain reported or observed."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "Handoff information completed and shared with ER."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "Mentioned her head injury from GSW and seizure disorder."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "ER team aware of phenobarbital and treatments."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "Also informed them about the 12-lead EKG findings."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "EMT",
+      "utterance": "Transferred to ER bed 9 via drawer sheet pull. No complications."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "EMT",
+      "utterance": "Care transferred to Jessica Carroll, RN. No incident with transfer."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Peripheral pulses still strong and equal."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Still breathing well. No new distress features."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 remains at 90. Stable."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "no_pain",
+      "role": "Partner",
+      "utterance": "No signs of pain. Pain continues to be 0."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "Final handoff completed in VCU ER."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient safely reached destination with no transport incidents."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "All documentation completed and shared with ER."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "EMT",
+      "utterance": "Confirmed ER team is aware of all findings and preparations."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "ER team noted mild hypotension in later readings."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Airway was suctioned during scene by partner."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "JVD was not noted on exam."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Oropharynx suctioned to manage airway secretions."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "Final vitals and interventions communicated to ER staff."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Sister and 1 RFD with her on board. Both secured."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Movement of patient was smooth and prepared."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient and all staff safe during transport stages."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "standard_handoff",
+      "role": "Partner",
+      "utterance": "No barriers during handover. All documentation is clean."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "call_type",
+      "role": "EMT",
+      "utterance": "Call type recorded as cardiac arrest/death based on initial report."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "cardiac_arrest",
+      "role": "EMT",
+      "utterance": "Patient was initially unresponsive post-seizure but showed improvement."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "death",
+      "role": "EMT",
+      "utterance": "No evidence of death on scene or upon EMS arrival. Vital signs improved over time."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient was treated in suspected severe seizure and never lost pulse."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "no_cardiac_arrest",
+      "role": "Partner",
+      "utterance": "No ROSC was required given maintenance of pulse and stable vitals."
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "no_death",
+      "role": "Partner",
+      "utterance": "Patient remained responsive to verbal and visual stimuli inside ER."
+    },
+    {
+      "turn": 95,
+      "topic": "History of Present Illness",
+      "micro_intent": "call_type",
+      "role": "Partner",
+      "utterance": "Initial call type: cardiac arrest/death-changed to medical (seizure) after scene assessment."
+    },
+    {
+      "turn": 96,
+      "topic": "Reassessments",
+      "micro_intent": "main_assessment",
+      "role": "Partner",
+      "utterance": "Based on PCR, patient was never in cardiac arrest, nor did she die."
+    },
+    {
+      "turn": 97,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Was 155 initially. Subsequent device reads are 0-likely device malfunction."
+    },
+    {
+      "turn": 98,
+      "topic": "Reassessments",
+      "micro_intent": "update",
+      "role": "Partner",
+      "utterance": "Vital trends are trending favorably. Planning transport to VCU ER."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "update",
+      "role": "Partner",
+      "utterance": "Update: No cardiac arrest, only prolonged seizure."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Movement complete with no emergency interventions required after hypotension observation."
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000754",
+  "protocol": [
+    "medical - seizure (protocol 3 - 12)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "M82, you are dispatched for a reported unconscious/fainting/near-fainting at the business on Main Street."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Trevor, an EMT with EMS. What made you call 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He had a grand-mal seizure, hit his head, and is unresponsive."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Is the patient still unconscious?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "Yes, he's unresponsive now."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Let's check his responsiveness. Hey, can you hear me right now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Bystander",
+      "utterance": "He's speaking incoherently."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "His eyes are opening slowly to voice, though not fully."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "Can you tell me your name?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Bystander",
+      "utterance": "He said something, but it wasn't clear."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "Can you squeeze my hand now? Just once."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "He attempted movement but incompletely."
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "He is responsive to verbal stimuli but not fully oriented."
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "GCS is 12-E3, V4, M5."
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Paramedic",
+      "utterance": "How old are you?"
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "He's 25 years old."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Paramedic",
+      "utterance": "Any known history of seizures?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Bystander",
+      "utterance": "No history known; coworkers didn't mention any."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Bystander",
+      "utterance": "He was in the process of working 12-hour shift."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Airway is patent and clear of obstruction."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "MedPartner",
+      "utterance": "Resp rate is 27, no signs of inadequate breathing."
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Skin is pink, warm, and dry with normal turgor."
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "MedPartner",
+      "utterance": "Trachea is straight, no JVD observed."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "MedPartner",
+      "utterance": "Pulse is strong, 96 with BP 134/84."
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Paramedic",
+      "utterance": "On a scale from 0 to 10, how painful is your condition right now?"
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Bystander",
+      "utterance": "He states no pain currently."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "Eyes are reactive and pupils are equal."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "MedPartner",
+      "utterance": "Normocephalic, head inspection shows no trauma."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "MedPartner",
+      "utterance": "No tracheal deviation or lymphadenopathy."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Breath sounds are clear and equal bilaterally."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "No crackles, wheezes, or asymmetry."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Paramedic",
+      "utterance": "No lacerations, deformities, or obvious back injury."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "MedPartner",
+      "utterance": "Pulse is currently 93, down slightly."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "MedPartner",
+      "utterance": "Respirations are now 18 per minute, slower."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "MedPartner",
+      "utterance": "Blood pressure is 110/57 now."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "MedPartner",
+      "utterance": "Oxygen saturation remains at 93%."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "EKG rhythm shows stable sinus with no arrhythmias."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "MedPartner",
+      "utterance": "First glucose reading was 135, but machine failed to read after attempt."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Establishing IV with 18-gauge needle in left arm."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "MedPartner",
+      "utterance": "IV access was achieved successfully in one attempt."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Patient is combative; IM Midazolam 5 mg administered."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "MedPartner",
+      "utterance": "Injection site was left deltoid."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Placing ETCO₂ nasal cannula to assess breathing."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Continuously monitoring on 4-lead ECG with stable rhythm."
+    },
+    {
+      "turn": 45,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Activating Medical Seizure Protocol 3-12 as per standing order."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "MedPartner",
+      "utterance": "Pulse remains steady at 93."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "MedPartner",
+      "utterance": "Respiration still at 18 per minute."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "MedPartner",
+      "utterance": "No hypotension observed, BP is 110/57."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "MedPartner",
+      "utterance": "SpO₂ still at 93%, stable breathing."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Paramedic",
+      "utterance": "EKG remains in normal sinus rhythm."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "What is your hospital preference at this time?"
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "He is from downtown-VCU is the closest."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "VCU Medical Center is the selected destination."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Ready to lift him safely onto the stretcher now."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "MedPartner",
+      "utterance": "We're using a two-person carry; he is now secured."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is seated and secured for movement."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All steps taken under VCU direction without complication."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Ready for transport per protocol."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "VCU Medical Center is selected."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "Arriving at VCU Medical Center; patient with post-ictal state."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "patient_handoff",
+      "role": "MedPartner",
+      "utterance": "All handoff data and history transferred to hospital nursing."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is normal and well-hydrated."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "MedPartner",
+      "utterance": "Heart sounds are normal, no murmur."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "EMT",
+      "utterance": "No airway obstruction noted."
+    },
+    {
+      "turn": 65,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "No use of accessory muscles or signs of cyanosis."
+    },
+    {
+      "turn": 66,
+      "topic": "Chief Complaint",
+      "micro_intent": "events_leading_to_event",
+      "role": "Bystander",
+      "utterance": "His 12-hour shift just ended when this occurred."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Midazolam administered for violent behavior."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "MedPartner",
+      "utterance": "Behavior improved markedly post-admin."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Most recent EKG shows sinus with no new changes."
+    },
+    {
+      "turn": 70,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "MedPartner",
+      "utterance": "No signs of retractions or flaring."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "MedPartner",
+      "utterance": "Controlled descent reported per bystander."
+    },
+    {
+      "turn": 72,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Continuing to ensure airway remains patent."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient seated and secured safely for transport."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All transport protocols followed."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "Transferring a 25-year-old with post-ictal condition."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "patient_handoff",
+      "role": "MedPartner",
+      "utterance": "Patient fully presented and received."
+    },
+    {
+      "turn": 77,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "MedPartner",
+      "utterance": "Patient is less combative post-medication."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "MedPartner",
+      "utterance": "Skin is free of rashes and abrasions."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "No trauma to head or facial structure."
+    },
+    {
+      "turn": 80,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "MedPartner",
+      "utterance": "Initial reading at 97%."
+    },
+    {
+      "turn": 81,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "MedPartner",
+      "utterance": "Event was reported as his first based on description."
+    },
+    {
+      "turn": 82,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "MedPartner",
+      "utterance": "5mg Midazolam given for combativeness."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Movement and care all follow protocol."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "Patient was moved to ED room."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "patient_handoff",
+      "role": "MedPartner",
+      "utterance": "All documentation was transferred safely."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "Triage at Green ED Room 13."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "patient_handoff",
+      "role": "MedPartner",
+      "utterance": "All steps followed on arrival."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Patient was moved per facility protocol."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "patient_handoff",
+      "role": "Paramedic",
+      "utterance": "Complete and incident-free handover."
+    }
+  ]
+}

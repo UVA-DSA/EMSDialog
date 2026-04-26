@@ -1,0 +1,491 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002112",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Richmond Rescue to Unit 3, breathing issue in progress at 1101 Broad Street."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Sandra, an EMT with my partner Mark. What brought you to call 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I can't breathe. It's been an hour and getting worse."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you tell me your name and where we are right now?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is Jennifer. I'm at the front steps of my house in Richmond."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Do you know what day it is and what is happening to you today?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "It's Tuesday, February 27. I think I'm having a severe asthma attack."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "You're using your accessory muscles to breathe. Are you experiencing shortness of breath now?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Yes, it's very hard to breathe, and my inhaler isn't helping at all."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Would you allow me to examine your breath sounds? Please take a couple of deep breaths if you can."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Sure, I'll try."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "I hear diffuse wheezing across all areas, and no signs of obstruction. What is your medical history related to this situation?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "I have severe asthma. My main medication is albuterol through a rescue inhaler."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "I'll now take your blood pressure, pulse, and oxygen level. Everything going okay with you there?"
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 101 beats per minute at the moment."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your respiratory rate is 40 breaths per minute-a bit high for usual values."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 135 over 79 millimeters of mercury, so your cardiovascular system is responding well."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is 89%, which is below normal range-we're going to focus on improving that first."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "We haven't been able to obtain your glucose level, but we may check it if needed based on further monitoring."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG is showing sinus tachycardia, and no signs of cardiac compromise at this time."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Did the symptoms start suddenly, and when did you first feel them?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, it began suddenly about an hour ago while I was in the kitchen area of my house."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up_to_the_event",
+      "role": "EMT",
+      "utterance": "When you were in the kitchen, were you doing anything specific when it started?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up_to_the_event",
+      "role": "Patient",
+      "utterance": "I was cooking, just like I do every day. No changes that I noticed in the environment or activity itself."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up_to_the_event",
+      "role": "EMT",
+      "utterance": "When did you use your albuterol inhaler, and was there any improvement after using it?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events_leading_up_to_the_event",
+      "role": "Patient",
+      "utterance": "I used it about 30 minutes ago, but it hasn't helped at all. It feels like the same level of difficulty."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "I'm going to listen more carefully at your lungs now and check for anything new. Can you assist with deep breaths as I listen?"
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "I'll try my best, just let me know if I can help further."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Still hearing diffuse wheezing throughout. No crackles or focal areas noted during the assessment."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Have you been using the inhaler today? Was there any previous episode earlier than this one?"
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "I had a mild episode this morning, but now it's much worse."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Have you had to be hospitalized before because of an asthma episode?"
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "Yes, once last year after a severe infection."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "check_vitals",
+      "role": "Partner",
+      "utterance": "I'll quickly take another round of vitals to see if we have any progression or stability."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse has dropped to 95 beats per minute now."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are improving, slowing from 40 to 23 breaths per minute now."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is now 127 over 90, so we are seeing a stabilization in that value."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen is now improved to 98%, which is a good positive change from before."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is currently reading in sinus rhythm-no tachycardia now, which is a very positive effect."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "We attempted to obtain your glucose, but it's reading as 0. We'll note that for the sake of documentation."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "We are going to start with an IV insertion to prepare for potential medications, as well as placing you on a monitoring device."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Are you okay with receiving a nebulized dose of albuterol and ipratropium, and a shot of dexamethasone?"
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Patient",
+      "utterance": "Of course, do what you can to help me breathe easier."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "nebulizer_treatment",
+      "role": "Paramedic",
+      "utterance": "Let's begin the treatment. Using a combination of albuterol and ipratropium. Inhale deeply now."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "I'm going to give you a dexamethasone shot in your left deltoid now."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "I'm going to give you the dexamethasone shot now, right in the deltoid area of your arm."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Also inserting an 18-gauge IV in your hand for access to fluids or possible additional medications as needed."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "The IV line is secure and working well, with no signs of it leaking into the surrounding tissue."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Placing a monitoring device for your end-tidal CO2 levels."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Setting up a four-lead EKG monitor. Initial readings reveal nothing concerning for cardiac compromise."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The 12-lead EKG has shown no acute findings. You're within normal limits for a woman your age."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - ekg",
+      "role": "Partner",
+      "utterance": "4-lead EKG continued in sinus rhythm-no signs of arrhythmia or cardiac issues right now."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is now 103, up slightly but still within a safe range."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - resp",
+      "role": "Partner",
+      "utterance": "Your respiratory rate is 24, stable from the previous assessment."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - bp",
+      "role": "Partner",
+      "utterance": "Blood pressure has increased slightly to 159 over 58, and oxygen remains at 98%."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "As before, oxygen levels remain steady at 98%."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Interventions",
+      "micro_intent": "nebulizer_treatment",
+      "role": "Paramedic",
+      "utterance": "We're going to give you another round of albuterol via nebulizer to see if that improves your breathing more."
+    },
+    {
+      "turn": 58,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "We are using Protocol 3-11, aimed specifically at acute asthma exacerbation."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "improvement",
+      "role": "EMT",
+      "utterance": "Have you started feeling any relief after the second round of albuterol?"
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "improvement",
+      "role": "Patient",
+      "utterance": "I feel a little better, but not fully. Breathing is a bit easier, but still problematic."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "pain_assessment",
+      "role": "EMT",
+      "utterance": "I noticed no pain was noted in your complaint-your reported pain level is zero."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "You will need to go for immediate hospital care due to the severity of your asthma exacerbation. We are taking you to Richmond Community Hospital. Do you agree with this plan?"
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "Yes, I want to go now."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We are going to secure you onto the stretcher with full safety straps for the transport."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "I'll start by preparing the stretcher for transport and placing you carefully onto it."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "",
+      "role": "Partner",
+      "utterance": "Patient is secured and ready for transport with all straps in place."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "",
+      "role": "Partner",
+      "utterance": "Richmond Community Hospital, preparing to transport a 39-year-old female with acute asthma exacerbation."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "",
+      "role": "Partner",
+      "utterance": "She is receiving nebulized albuterol and has improved a little, but still experiencing shortness of breath."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All assessments are completed. She is stable, with stable vitals and no signs of new distress."
+    }
+  ]
+}

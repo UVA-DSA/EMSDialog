@@ -1,0 +1,638 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001585",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond to the 7689 Sweeney Rd for a reported seizure."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Emily, an EMT with Richmond Regional Rescue. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I can't breathe. It's been getting worse since I got off work."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, can you tell me your name and the date?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Okay, can you look at my finger? Right, left, up, and down?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Can you tell me when I say \"Richmond\"?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Please raise and lower your hand slowly."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is clear and patent. It's easier with you sitting upright."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "I'm going to listen to your lungs now."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are at 28 per minute. They are labored."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "I'm hearing wheezes at the apex, and no air movement in the bases."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 113 and strong."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Trachea is midline."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 144 over 92."
+    },
+    {
+      "turn": 15,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I don't see any abrasions, rashes, or signs of trauma."
+    },
+    {
+      "turn": 16,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Pupils are equal, round, and reactive to light."
+    },
+    {
+      "turn": 17,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "EMT",
+      "utterance": "Your nose and mouth are clear, and I see the nebulizer at the bedside."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Your chest is intact, with no visible pain or tenderness."
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Your abdomen is soft, with no tenderness."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "You have full use of your extremities without visible trauma."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "signs_and_symptoms; EMT",
+      "utterance": "You mentioned it worsened after work. Can you tell me more about when you first noticed it?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "pertinent_past_medical_history; EMT",
+      "utterance": "You also have a history of seizures, asthma, and migraines-have any of these conditions changed recently?"
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "severity; EMT",
+      "utterance": "On a scale from 0 to 10, where 10 is the worst, how would you rate your shortness of breath?"
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse Oximetry is at 99%-that's good oxygen saturation."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 106."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The ECG shows sinus tachycardia but no new rhythm changes."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Let's begin nebulizer therapy with DuoNeb."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "I'm going to give you Albuterol 5 mg and Atrovent 0.5 mg."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "I will also administer 10 mg of Dexamethasone through your IV line."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "I'm placing an 18 Gauge IV line in your arm for medications and fluids."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We'll apply four-lead ECG monitoring to track your heart rate."
+    },
+    {
+      "turn": 32,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We're following the respiratory distress protocol for asthma exacerbation."
+    },
+    {
+      "turn": 33,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse has dropped to 79, and respirations are at 17 per minute."
+    },
+    {
+      "turn": 34,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 172 over 109."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG still shows sinus tach, but no new rhythm change."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is not registering."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Let's repeat the DuoNeb nebulizer treatment."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Second dose of Albuterol and Atrovent being delivered now."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Pulse Ox now reads 100%, so oxygen is holding."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Please keep the CPAP mask on. We need to maintain stabilization."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "How's the breathing now on the 0 to 10 scale?"
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Earlier I asked about your usual asthma meds-are you currently taking Keppra or any other?"
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We're heading to Chippenham Hospital for specialized respiratory care."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll transfer you absolutely safely into the stretcher. We'll put you in semi-Fowler's position to help with breathing."
+    },
+    {
+      "turn": 45,
+      "topic": "Handoff",
+      "micro_intent": "note_to_nurse",
+      "role": "EMT",
+      "utterance": "A full patient report and our medical notes are with the oncoming nurse."
+    },
+    {
+      "turn": 46,
+      "topic": "Handoff",
+      "micro_intent": "note_to_nurse",
+      "role": "EMT",
+      "utterance": "She is alert, oriented, and interactive. You know who I am and what time it is."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is stable at 100%."
+    },
+    {
+      "turn": 48,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is patent and self-maintained; no signs of obstruction."
+    },
+    {
+      "turn": 49,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "You are alert, oriented, and interactive. You know who I am and what time it is."
+    },
+    {
+      "turn": 50,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "events_leading_up; EMT",
+      "utterance": "What were you doing just before your symptoms began to worsen?"
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "An 18 Gauge IV line has been established with Saline Lock for potential future use."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "temp",
+      "role": "Partner",
+      "utterance": "Temperature is not assessed due to immediate focus on airway and breathing."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Dexamethasone is administered to reduce inflammation in your airways."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing seems less labored, but there is still some wheezing."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Lung sounds are now showing wheezing in all fields, so your treatment is having some effect."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "I've applied the mask for CPAP with 5 cm PEEP to help with oxygen delivery."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Have you been using any home care treatments for this prior to calling 911?"
+    },
+    {
+      "turn": 58,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "allergies; EMT",
+      "utterance": "You mentioned you have no medication allergies, only seasonal allergies."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Partner",
+      "utterance": "The medical team is aware you have asthma, seizures, and migraines."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Your heart rhythm remains sinus tach but there are no signs of deterioration."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Your breathing has improved with rate at 17, pulse at 79, and stable blood pressure."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "No new oxygen requirements are necessary due to stable saturation."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "The IV line is secured and in place for future medication administration if needed."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Your shortness of breath is reported as zero now-do you agree with that?"
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll transport you in the semi Fowler position for maximum comfort and airflow."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We've already contacted Chippenham Hospital ED bed 18 where you will be receiving care."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "note_to_nurse",
+      "role": "EMT",
+      "utterance": "Your medical history includes Epilepsy, Asthma, Migraines, as well as seasonal allergies."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Five straps and raised rails ensure you're stable for transport while in semi-Fowler's position."
+    },
+    {
+      "turn": 69,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "medications; EMT",
+      "utterance": "You're currently taking Albuterol, Atrovent, Keppra, HCTZ, and Dyazide, right?"
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "We've delivered two nebulizer treatments and ensured you're still receiving CPAP support."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "You maintain good saturation and stable vitals."
+    },
+    {
+      "turn": 72,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "medications; EMT",
+      "utterance": "No changes in your use of prescribed medications before this event, correct?"
+    },
+    {
+      "turn": 73,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Dexamethasone was through the IV, which helps your airways stay open."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is steady at 17, though there is still some wheezing at the base."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is secured on stretcher with all care items in order for transport."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "Try not to remove the CPAP mask during transport-it's keeping your airway stable."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "A three-person sheet draw will ensure safe transfer to the hospital bed on arrival."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "note_to_nurse",
+      "role": "Partner",
+      "utterance": "She is medically A&O x4 with no change noted in baseline level of consciousness."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "The IV remains a saline lock and not running at the moment-easily accessible for meds."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Please fasten your hospital transport belt once moved onto the stretcher."
+    },
+    {
+      "turn": 81,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "We will continue to monitor you for any changes in condition during your transport."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "The CPAP mask is remaining secure, and your breathing appears stable."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Passenger bar and safety restraints will be used for stretcher transport to the vehicle."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Partner",
+      "utterance": "You're still reporting zero shortness of breath and feel much more comfortable now."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "note_to_nurse",
+      "role": "Partner",
+      "utterance": "Vital signs have been recorded at 10-minute intervals and remain within normal ranges."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "The staff at Chippenham Hospital is prepared to assist you as soon as we arrive."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Partner",
+      "utterance": "No changes detected in breathing efforts or response to nebulization."
+    },
+    {
+      "turn": 88,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "No new EKG findings indicating deterioration."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No signs of JVD or neck vein distention observed during transport."
+    },
+    {
+      "turn": 90,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "No jugular venous distension noted."
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002842",
+  "protocol": [
+    "medical - hypotension/shock (nontrauma) (protocol 3 - 13)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 1 responding to a call for hemorrhage/lacerations in the city of Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Mike. I'm an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I feel really weak. I found blood on the floor and had no idea where it came from."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is Jane."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Where are you right now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I'm at my house."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "What day is today?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I think it's Friday."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "What happened to you today?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I found blood near my foot and started feeling really weak."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you squeeze my fingers for me?"
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Yes."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is patent and clear. Do you have trouble breathing?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, it feels okay."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Our crew is going to check your breathing now."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 14 per minute and regular."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 99%."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Breathing is present, unlabored, and regular."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Our partner is going to take your radial pulse."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 70 over 34. That's very low."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 76 per minute, weak."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose reads high. It says \"HI\" on the meter."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Can you tell me more about where you saw blood?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Right near my right foot. I noticed a sore on my leg."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Were you aware of any bleeding from the sore?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I wasn't sure until I saw the blood."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "What other symptoms are you having besides weakness and low energy?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I feel really cold, and my skin is kind of pale."
+    },
+    {
+      "turn": 30,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "How do you rate your current state of awareness?"
+    },
+    {
+      "turn": 31,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I'm aware of the situation and can understand you clearly."
+    },
+    {
+      "turn": 32,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "You appear alert, oriented to person, place, time, and situation (A&OX4)."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "I'm going to write your history down. Tell me about your previous health."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have diabetes, anemia, chronic gastritis, and stage 4 kidney disease."
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "EMT",
+      "utterance": "What medications are you currently taking?"
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "Patient",
+      "utterance": "Insulin, Lantus, Omeprazole, Humira, gabapentin, amlodipine, and labetalol."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "EMT",
+      "utterance": "Are you allergic to any medications?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "Patient",
+      "utterance": "I'm allergic to Augmentin."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_oral_intake",
+      "role": "EMT",
+      "utterance": "When was the last time you ate or drank something?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_oral_intake",
+      "role": "Patient",
+      "utterance": "I'm not sure."
+    },
+    {
+      "turn": 41,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "EMT",
+      "utterance": "On a scale from 0 to 10, how bad is your pain right now?"
+    },
+    {
+      "turn": 42,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "Patient",
+      "utterance": "It does not hurt really badly; maybe a 1."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations remain at 14 and unlabored."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 97%."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "The pulse is now 73 and remains weak."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 64 over 34."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is still elevated and reads \"HI.\""
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're going to start an IV and monitor your heart rhythm with an EKG."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "No abnormal findings initially noted on the EKG."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "I see a small sore on your leg. Is there any redness or tenderness around it?"
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "It feels warm when I touch it."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Your skin is pale and cool; I don't see any rashes or bruising."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "We noted the patient's skin is pale and cool, not clammy."
+    },
+    {
+      "turn": 54,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "I was told you have gynecological concerns. Is that correct?"
+    },
+    {
+      "turn": 55,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Yes, I've been experiencing amenorrhea."
+    },
+    {
+      "turn": 56,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "And did you mention anything about bone health?"
+    },
+    {
+      "turn": 57,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Yes, I have osteoporosis."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "proced_opcode",
+      "role": "Partner",
+      "utterance": "We completed a glucose check prior to glucose administration."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Pulse is still 73 and weak."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - resp",
+      "role": "Partner",
+      "utterance": "Breathing is 16, slow and unlabored."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is dropping to 64 over 34."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "Oxygen is still at 97%."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "re_administer_procedure",
+      "role": "EMT",
+      "utterance": "We're going to do a 12-lead EKG for more accurate heart assessment."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12-lead EKG shows a long QT interval and minimal ST depression."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "O₂ saturation dropped slightly to 96%."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Pulse has become 68."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - resp",
+      "role": "Partner",
+      "utterance": "Respiration rate is 14."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - bp",
+      "role": "Partner",
+      "utterance": "BP is 66 over 36."
+    },
+    {
+      "turn": 69,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "I believe she's in hypovolemic shock and needs ongoing monitoring."
+    },
+    {
+      "turn": 70,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Multiple signs and comprehensive record call for protocol 3-13."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We need to transport you to a hospital as quickly and safely as possible."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "I want to go to Memorial Regional."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Please let me help you to the stretcher. I'll move you safely."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "She is secured on the stretcher and comfortable."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - ekg",
+      "role": "Partner",
+      "utterance": "EKG remains sinus rhythm with no worsening."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - resp",
+      "role": "Partner",
+      "utterance": "Breathing is slightly easier at 16."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 69 and remains in sinus rhythm."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation: 98%."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - bp",
+      "role": "Partner",
+      "utterance": "Blood pressure increased slightly to 72 over 43."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We're moving you to the ambulance now. Let's keep you warm and safe."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are currently moving but remain stable."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Thank you for being so gentle."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're welcome. I'll keep you updated and comfortable during the ride."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Monitor shows consistent vitals. No acute deterioration."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Our arrival at the hospital is going to be quick and controlled."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Emergency crew is waiting with a gurney. Let's get you ready."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We're moving you from the stretcher now with care."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "One RN and two assistants are preparing for handoff."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let's lower her to the lowest position for safety."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient's rails are up for additional support."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "I'm bringing the report to the ED RN now."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The ED has confirmed understanding of the situation."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She's now under your care. I'll stay until you confirm."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "No complications during transfer. Condition remains stable."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "describe_observations",
+      "role": "EMT",
+      "utterance": "Medical protocol was successfully followed with timely transport."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "EKG findings are notable but consistent with the documented protocol."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "I will call ahead to the ED for updates on next steps."
+    },
+    {
+      "turn": 98,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Pulse 69, still in sinus rhythm."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "O₂ saturation 98% continues."
+    },
+    {
+      "turn": 100,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - bp",
+      "role": "Partner",
+      "utterance": "BP improved to 72 over 43."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Wound is weeping but does not appear infected at this stage."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Pt insists on cleaning herself before transport."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We've accommodated her request and continue to assess."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Pt covered in feces and blood. Changed into clean gown."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Pt requested to do her prep. She is cooperative and calm."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Let's maintain her familiarity during this move."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Pt is ready for hospital and agreed without resistance."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We need a two-man sheet transfer for safe handling."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "ED received and processed without complications."
+    },
+    {
+      "turn": 110,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains 98%."
+    },
+    {
+      "turn": 111,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "You appear a bit lethargic. Are you still feeling weak?"
+    },
+    {
+      "turn": 112,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I do feel very weak. Not exactly sure why, but my energy is really low."
+    },
+    {
+      "turn": 113,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "Partner",
+      "utterance": "You reported pain is 0, correct?"
+    },
+    {
+      "turn": 114,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "Patient",
+      "utterance": "Yes, I don't feel any pain at all."
+    }
+  ]
+}

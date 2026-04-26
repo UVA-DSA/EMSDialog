@@ -1,0 +1,645 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002468",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 2 for breathing problems at Richmond, 118 Cold Street. Possible respiratory distress."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Kayla, an EMT. This is my partner Miguel. What led you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I started having shortness of breath while in the shower and felt light-headed."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Mr. Smith, can you open your eyes for me?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Good. Can you state your full name?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Brian Smith."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you point to your nose for me?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "(Points slowly) Right there."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "We're checking your airway and breathing. All right?"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Yeah, go ahead."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "You are able to maintain a patent airway on your own."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "I'll check your oxygen saturation now."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 100% on room air."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Breathing appears even and chest movements are equal on both sides."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 17, same on both sides, consistent depth."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "No retractions or wheezing noted."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Lung sounds in all lobes are clear, no abnormalities detected."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "I'm going to check your blood pressure now."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 174 over 111 mmHg."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_pulse",
+      "role": "Partner",
+      "utterance": "Let me check your pulse now."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 60, steady and regular."
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Your skin is warm and dry with strong peripheral pulses."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "What exactly happened in the shower that led to this episode?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "Patient",
+      "utterance": "Right after I turned the water on. I just stood there and then it hit me."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "pert_past_history",
+      "role": "EMT",
+      "utterance": "Have you ever had episodes like this before?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "pert_past_history",
+      "role": "Patient",
+      "utterance": "Once, back in prison, but I can't recall the exact time."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Are you experiencing any chest pain or tightness?"
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "pain_level",
+      "role": "Patient",
+      "utterance": "No, just shortness of breath and dizziness."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "I'll now check your pupils and head for abnormalities."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "No injuries noted. Pupils are equal, round, and reactive-PERRL."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "EMT",
+      "utterance": "Listening to your chest sounds. All lungs are clear."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse has dropped slightly to 57, still regular and strong."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is now 16 per minute with equal effort bilaterally."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 148 over 101."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains at 100%."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Monitor shows sinus bradycardia, no alarm changes."
+    },
+    {
+      "turn": 37,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "According to the protocol for respiratory distress, we'll follow these standing orders."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Applying the 4-lead ECG monitor to assess baseline rhythm."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Partner",
+      "utterance": "Going to start an IV in your left arm for potential meds. Okay?"
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Patient",
+      "utterance": "Sure, go ahead."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Checking your blood sugar. Might feel a slight pinch."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is normal."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse now 56 but still strong and regular."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Any changes in your breathing or dizziness?"
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Patient",
+      "utterance": "Still a bit short of breath, but no other changes."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiratory rate at 20, still no signs of distress."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure stable at 151 over 94."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation at 99%-small decrease but stable."
+    },
+    {
+      "turn": 49,
+      "topic": "Pain Assessment",
+      "micro_intent": "pain_level",
+      "role": "EMT",
+      "utterance": "Any new pain appearing now?"
+    },
+    {
+      "turn": 50,
+      "topic": "Pain Assessment",
+      "micro_intent": "pain_level",
+      "role": "Patient",
+      "utterance": "No pain reported, just more lightheaded."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Repeating ECG for pre-transport baseline."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg",
+      "role": "Partner",
+      "utterance": "Double checking ECG, all still normal."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We're going to Chippenham Hospital for more care."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "Go ahead."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Need you to lie back to secure to stretcher now."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All straps are in place and safety verified."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "take_vital_signs",
+      "role": "Partner",
+      "utterance": "Taking final vitals before transport: 56, 144/97, SpO2 99%."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Moving you now. Please stay with the restraints."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Sounds good."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher secured for transport. Safe checks complete."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Safe for transport, vitals remain stable."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "Handing over to ED: alert, oriented, no pain. Monitoring sinus bradycardia."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "ED has IV access and ECG data. Ready to assume care."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "EMT",
+      "utterance": "Patient no acute distress, awaiting ED protocol."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "Patient is stable, ED ready to take over."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "Stretcher inside ED. Team taking over now."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Monitor currently reads 147/97 mmHg."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse at 62 now."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate back to 17, stable."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 99%."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Sinus bradycardia remains, no changes."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar remains within normal limits."
+    },
+    {
+      "turn": 73,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Completed protocol for respiratory distress. All steps followed."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Transport went without complications."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All documents with ED, handover confirmed."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "EMT",
+      "utterance": "Patient placed in ED bed, care receded."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "EMS portion is complete. ED has full responsibility."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Hospital arrival confirmed."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "ED report finalized. All details on file."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "EMS section closed per hospital protocol."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "ED nurse on file, confirmation pending."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "ED received alert patient with sinus bradycardia."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pain",
+      "role": "Partner",
+      "utterance": "Continued no pain reported from the patient."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now reading 151/100."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate back to 16 per minute."
+    },
+    {
+      "turn": 86,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 at 98%."
+    },
+    {
+      "turn": 87,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Sinus bradycardia ongoing."
+    },
+    {
+      "turn": 88,
+      "topic": "Exit to Protocol",
+      "micro_intent": "exit_ems_protocol",
+      "role": "EMT",
+      "utterance": "All findings consistent with protocol for respiratory distress."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "No issues with transportation."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All patient handover steps completed."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "ED_handover",
+      "role": "EMT",
+      "utterance": "Transport is now completed."
+    }
+  ]
+}

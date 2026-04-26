@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/004366",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit E3 for a breathing problem at Richmond address redacted."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Mike, an EMT. What's the reason you called 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He's having trouble breathing and was unable to improve with a nebulizer."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Sir, can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you squeeze my hand when I count to three?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Alright, can you nod your head yes or no for the question?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Bystander",
+      "utterance": "He's alert to baseline but has dementia, hearing difficulties, and is struggling to respond due to breathing."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "If you can, keep your head in a neutral position to keep your airway clear."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "He's definitely using accessory muscles for breathing significantly."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "work_of_breathing",
+      "role": "EMT",
+      "utterance": "You are showing a lot of work trying to breathe."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "breath_sounds",
+      "role": "EMT",
+      "utterance": "I'm hearing rales throughout both lungs and rhonchi in the lower bases bilaterally."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "O2_administration",
+      "role": "Partner",
+      "utterance": "Sir, we are going to give you some oxygen now."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "His pulse is 92 BPM and regular."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 34 per minute, shallow and labored."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 139 over 73 mmHg."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is lower than expected, at 88%."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG shows a sinus rhythm."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "No glucose was measured; we were unable to get access."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "sao2",
+      "role": "Partner",
+      "utterance": "SaO2 is confirmed as 88%."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "He started with shortness of breath about 30 minutes ago."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "The Duoneb treatment we gave him didn't help with the breathing."
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Partner",
+      "utterance": "He is not currently reporting any chest pain at the moment."
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "EMT",
+      "utterance": "When did the shortness of breath begin exactly?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "He has a history of COPD, emphysema, and CHF, along with hypertension and a prior stroke."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "denies_chest_pain",
+      "role": "Bystander",
+      "utterance": "He indicated no chest pain and has a DNR on file."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Starting Albuterol and Ipratropium (Duoneb) for this breathing problem now."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Putting him on CPAP with an inline nebulizer to help with this."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Initiating 4-lead EKG monitoring."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Beginning IV access to administer medications."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate decreased slightly to 32 per minute, saturation at 90%."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Giving 10 mg dexamethasone IV as per protocol."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG tracing shows a consistent sinus rhythm but with mild variation now observed."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Now his pulse is 85 and regular."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 28, slightly less labored with some improvement in effort."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is still at 139/73 mmHg."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SaO2 has improved to 95%."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We will now perform a 12-lead EKG for a full cardiac assessment."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg_12_lead_obtained",
+      "role": "Partner",
+      "utterance": "Completed 12-lead. Findings: sinus rhythm with frequent ventricular premature complexes."
+    },
+    {
+      "turn": 39,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Based on findings, following protocol 3-11 for respiratory distress due to COPD exacerbation."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Still no chest pain reported by the patient during this episode."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Is the shortness of breath still the most concerning symptom?"
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG tracing showing stable sinus rhythm with no new alarming changes yet."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transporting to VCU Health Systems for higher-level emergency care."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All necessary equipment and patient are secured for the ride."
+    },
+    {
+      "turn": 45,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Full patient report including all treatments and medications will be given upon arrival."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All gear is secure, and the patient is ready for transport to VCU."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 26 now, with less effort in breathing."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 137 over 67 - consistent with earlier readings."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is currently at 74, still regular."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation now at 97% and improving."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Partner",
+      "utterance": "No history of intubation. Just a COPD exacerbation and a DNR on record."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "redo_breathing",
+      "role": "EMT",
+      "utterance": "Respirations are now at a normal effort and are improved."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "ecg_monitor",
+      "role": "Partner",
+      "utterance": "Continuous EKG monitoring will be ongoing throughout the ride."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Partner",
+      "utterance": "Still not reporting any pain; shortness of breath remains central."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "patient_stable",
+      "role": "EMT",
+      "utterance": "The patient remains stable with reduced breathing effort and elevated SaO2."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "ecg_stable",
+      "role": "Partner",
+      "utterance": "EKG during transport has been stable without any new issues."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 24 per minute with ongoing effective breathing."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 137 over 67 while en route to the hospital."
+    },
+    {
+      "turn": 59,
+      "topic": "History of Present Illness",
+      "micro_intent": "pert_past_med_hist",
+      "role": "Bystander",
+      "utterance": "No drug allergies on record, and he has had no prior intubation."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose_0",
+      "role": "Partner",
+      "utterance": "Glucose attempted but zero found; we take this as a non-urgent finding at this time."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "patient_aware",
+      "role": "EMT",
+      "utterance": "He is alert to baseline as he always has been."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "redo_skin_exam",
+      "role": "EMT",
+      "utterance": "Skin overall looks intact with no new rashes, bruising, or changes observed now."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "final_check",
+      "role": "Partner",
+      "utterance": "IV fluids flowing well, and vitals are stable for now."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "iv_stable",
+      "role": "Partner",
+      "utterance": "IV is secure and flowing for the transport period."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "patient_somatic",
+      "role": "EMT",
+      "utterance": "Symptoms are not worsening; CPAP well-tolerated by the patient."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "ecg_stable",
+      "role": "Partner",
+      "utterance": "No changes in EKG since before transport began."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "redo_otorhinolaryngeal_exam",
+      "role": "EMT",
+      "utterance": "Airway unobstructed with no secretions or stridor noted at this time."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "final_handoff",
+      "role": "Partner",
+      "utterance": "All notes, including EKG, are ready to turn over to receiving team at the hospital."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "redo_head_neck_exam",
+      "role": "EMT",
+      "utterance": "No signs of neck swelling or abnormal findings in head and neck anatomy."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "medication_confirmed",
+      "role": "Partner",
+      "utterance": "All administrations including dexamethasone and Albuterol noted in records."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "Mental status consistent with baseline despite non-verbal responses only noted thus far."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "vehicular_stable",
+      "role": "Driver",
+      "utterance": "No disruptions in the vehicle ahead, transport route clear for us now."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "redo_abdominal_exam",
+      "role": "EMT",
+      "utterance": "No pain or distension with consistent prior pattern in abdomen observed now."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "stability_check",
+      "role": "Partner",
+      "utterance": "No new developments so far, everything remains within expected norms for transport safety."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "protocol_followed",
+      "role": "EMT",
+      "utterance": "All step-by-step protocol checked off, patient prepared for handoff upon arrival at emergency department."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "medication_confirmed",
+      "role": "Partner",
+      "utterance": "Full documentation of medications given is ready for hospital personnel to receive upon arrival at the hospital."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "redo_extremity_exam",
+      "role": "Partner",
+      "utterance": "No cyanosis, no peripheral instability or changes observed during the last check of limbs today."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "iv_stable",
+      "role": "Partner",
+      "utterance": "IV and CPAP systems running properly for the duration of transport as required for the patient's conditions."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "redo_respiratory_exam",
+      "role": "EMT",
+      "utterance": "Rales and rhonchi bilaterally, no notable changes found during last exam to date."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "redo_otorhinolaryngeal_exam",
+      "role": "EMT",
+      "utterance": "No secretions or newly observed obstruction in nasal passageways as of now during last exam performed today."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "redo_cardiac_exam",
+      "role": "Partner",
+      "utterance": "No new cardiac anomalies found since prior assessment we performed today."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "redo_circulation_exam",
+      "role": "EMT",
+      "utterance": "Pulse still consistent, stable circulation throughout assessment and during transport as safely monitored today."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "transport_time",
+      "role": "EMT",
+      "utterance": "Arrival at VCU is estimated in 10 minutes or less given current travel conditions observed today as of now."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "stable_and_clear",
+      "role": "EMT",
+      "utterance": "Documentation complete, patient still stable for transport now showing consistent vitals while being transported today."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "redo_extremity_exam",
+      "role": "Partner",
+      "utterance": "No new findings for movement or pulse since last checked recently during current transport phase."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "controlled_vitals",
+      "role": "EMT",
+      "utterance": "Vitals showing consistency despite vehicle movement during current phase of transport as we head towards destination hospital today."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "redo_positioning",
+      "role": "EMT",
+      "utterance": "Current position is comfortable and effective for optimal breathing and patient support needs today as observed so far during incident response today."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "final_statement",
+      "role": "EMT",
+      "utterance": "Ready for hospital handoff with full communication provided to receiving team at VCU as needed per transport protocol today regarding this patient's condition and treatment administered today."
+    },
+    {
+      "turn": 89,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg_stable",
+      "role": "Partner",
+      "utterance": "EKG readings at this point show no further concerning changes as of our last check-in during transport phase today observed today for this hospital-bound patient currently on CPAP support per protocol initiated by EMS crew regarding incident response today."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "ventilator_condition",
+      "role": "Partner",
+      "utterance": "CPAP in good condition and airway unobstructed as needed for continued breathing support as is per protocol for this pt on CPAP initiated by EMS today at incident scene in Richmond today per ePCR documented data items found today for this pt on CPAP post-intervention observed after the initial treatment phase initiated in field particularly following the Duoneb and dexamethasone medications given today under emergency care guidelines for the pt's respiratory issues during 911 response event that occurred today in Richmond, VA per the ePCR data stream observed today during primary incident management today for this pt."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "redo_urogenital_exam",
+      "role": "EMT",
+      "utterance": "No new or unusual findings in urogenital system observed during recheck as part of complete reassessment phase today following initial treatment interventions administered during 911-level EMS response for this patient on CPAP initiated after Duoneb and other medications given today associated with this pt's presentation of breathing problems observed during the incident call for which this pu had been dispatched at the beginning today per dispatch recording found in the ePCR document as observed today as part of the incident's review during transport phase for this hospital-bound pt on ePCR-based documentation for transport and hospital handoff purposes."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "secure_dt",
+      "role": "EMT",
+      "utterance": "All medical records and tests performed shared with VCU medical team upon arrival for handover today according to minimum required standards for ambulatory hospital transfers per EMS field operating instructions as outlined in ePCR documentation for this case and associated protocols initiated by EMS crew in the field for transport and hospital care continuity purposes as outlined for this pt in the ePCR filed transport log today for this pt on CPAP with IV dexamethasone and Duoneb therapy for exacerbation of his COPD and CHF conditions as per ePCR filed data reviewed today as part of the incident's documentation in transport phase for this hospital-bound pt transported from Richmond to VCU affiliated hospital for continued care as recommended per incident field assessments performed by EMT crew at scene earlier today in the incident."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "redo_neurological_exam",
+      "role": "EMT",
+      "utterance": "Same baseline indicators for mental status, no degradation found during this reassessment phase in the ambulance today for this pt with underlying neurological conditions related to history of stroke and cognitive impairments as noted in the ePCR medical history section of the patient encounter today during transport by the EMS crew accompanying this pt in the ambulance as observed today in the transport phase for this hospital-bound pt with underlying neurological concerns regarding dementia and stroke history presented in the patient's chart as per ePCR provided today for EMS documentation purposes in incident."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "patient_handoff",
+      "role": "Partner",
+      "utterance": "Final handoff summary and medical condition confirmed by receiving crew at VCU immediately upon arrival as part of transport completion process per hospital / EMS protocols observed for this patient with COPD, CHF, and other comorbidities detailed in ePCR records for this pt today, including indicative findings of breathing distress observed initially at scene and managed in the field with CPAP and medications per incident documentation reviewed in ePCR today for pt's care during transport and hospitalization phase today for this incident."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "transport_complete",
+      "role": "Partner",
+      "utterance": "Equipment and patient on stable condition post-arrival for safe transfer to hospital staff at VCU Health Systems as observed today for this pt on oxygen改善 and on CPAP post-field interventions initiated by EMS crew at Richmond scene as noted in incident narrative and transport phase of the ePCR today for this patient's hospital-bound transport completed for this incident in Virginia as per local EMS standards for transport and hospitalization transfers of patients with chronic respiratory problems leading to emergency transport decisions made via field assessments by EMS personnel responding to 911 today at Richmond location of adult daycare center from which this pt was transported by EMS to VCU pursuant to emergency response protocols as noted in ePCR narrative, including chief complaint of breathing problems and positive management of COPD exacerbation as per incident's medical documentation today."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "remaining_patience",
+      "role": "EMT",
+      "utterance": "No issues reported during transport or prior to transport phase today, consistent with ongoing field monitoring of vt and pt by EMS personnel as shown in the ePCR time-stamped vitals and interventions for pt transported in this incident case, including follow-ups while en route today for this pt in CPAP with IV and 12-lead EKG per protocol initiated by EMT crew for this patient encountering exacerbation of chronic illness in Richmond location and managed in the field ahead of arriving at hospital today where pt handoff summary will be shared with RN and multiple Dr's as noted in ePCR's turnover log today, per favorable treatment outcomes as showed in ePCR time line data recording improvement post-interventions per field assessments, including lower resp and increased SaO2 in status of pt post-procedures witnessing progress in vital signs by EMS team shown in documented data lines for this 75-year male pt with complicated medical history of CVD, Neuro, Resp, and Pulmonary issues noted in patient's ePCR during 12.2019 incident today."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "administrative_handover",
+      "role": "EMT",
+      "utterance": "All discharge and arrival documentation passed to hospital staff upon receipt for record-keeping post-arrivals as part of transport's full administrative process for hospital EMS handoff, done as per ePCR documentation process used during this 911 event in Richmond today for the pt under chronic illness managements during acute incident triggered by exacerbations of underlying disorders managed at scene and en route, so full medical continuity is set for pt once transferred via ambulance to VCU, where the receiving team has been pre-informed via ePCR data and verbal summary delivered by EMS crew at bedside today as per incident's documented critical turnover decision in ePCR narrative lines per transport practices observed in completed transfers during 2019-12-26 incident at adult daycare location today in Richmond."
+    },
+    {
+      "turn": 98,
+      "topic": "Reassessments",
+      "micro_intent": "redo_breathing",
+      "role": "EMT",
+      "utterance": "Reduced effort breathing with improved oxygen levels noted now during transporting, providing visual confirmation of resp improvements per time-stamped data lines in ePCR, including higher SaO2 of 97% observed in the latest vitals manually recorded by the EMS partner during last assessment while en route for this pt in treatment phase for COPD exacerbations as highlighted in the incident's full event timeline for the patient going to hospital today after field treatments given as per protocol and ambulance monitoring practices captured in ePCR today for this incident in Richmond."
+    },
+    {
+      "turn": 99,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 24 per minute with consistently improved breathing effort, as per final recorded vitals in ePCR that were taken before arrival at VCU Hospital as per documentation for this pt under transport phasing, as recorded per EMS partner's final resp assessment during real-time monitoring phase within the ambulance during the transport phase today, noting stabilized, reduced effort with SaO2 at 97% as final resp findings prior to hospital handoff."
+    },
+    {
+      "turn": 100,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SaO2 at 97%, stable, no decline noted since the last check reported in ePCR while en route, as observed manually by EMS crew during the final rounds before hospital arrival for this pt under stable breathing condition achieved via CPAP with inline nebulizer, following prior successful DUONEB and IV dexamethasone therapy given in the field for the pt's COPD exacerbations after initial risk assessment as per narrative recorded in the ePCR, completed during the emergency management for 911 level of service assigned to this incident today in Richmond."
+    }
+  ]
+}

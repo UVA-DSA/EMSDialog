@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001096",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Greater Richmond 911, Unit 3 respond for a chest pain call."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, this is Jake, an EMT. What brought you to call us today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "My chest feels strange, like my heart is racing. It started about 45 minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Can you tell me your name and today's date, please?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "When I ask you to blink, can you open your eyes without help?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Can you tell me the city we are in right now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you squeeze my fingers one at a time?"
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "We're going to listen to your chest. Just take a few deep breaths."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Are you having any trouble with breathing or unusual sounds?"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is 85 and regular. Heart sounds are within normal limits."
+    },
+    {
+      "turn": 11,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_symptoms",
+      "role": "EMT",
+      "utterance": "Can you tell me more about how the chest pain feels?"
+    },
+    {
+      "turn": 12,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst_severity",
+      "role": "EMT",
+      "utterance": "How would you rate the pain on a scale from 1 to 10?"
+    },
+    {
+      "turn": 13,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst_onset",
+      "role": "EMT",
+      "utterance": "When did you first notice the discomfort?"
+    },
+    {
+      "turn": 14,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst_quality",
+      "role": "EMT",
+      "utterance": "You mentioned you've had something like this before. What was it related to?"
+    },
+    {
+      "turn": 15,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst_radiation",
+      "role": "EMT",
+      "utterance": "Does the pain stay in your chest or move anywhere else?"
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 85 beats per minute."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your breathing is 18 breaths per minute."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 137 over 81."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is 99% on room air."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Initial EKG shows sinus rhythm with no ST elevation."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "It's time to connect you to the cardiac monitor. It might feel a little tingly."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "You mentioned you took aspirin. That's good. Four 81 mg, correct?"
+    },
+    {
+      "turn": 23,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV access established in your right antecubital vein."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "EKG leads were placed and rhythm is stable."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_med",
+      "role": "EMT",
+      "utterance": "What medications are you taking regularly?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_p_history",
+      "role": "EMT",
+      "utterance": "Do you have any medical conditions we should know about?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_last_intake",
+      "role": "EMT",
+      "utterance": "When was the last time you had food or drink?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_event",
+      "role": "EMT",
+      "utterance": "What were you doing when the chest discomfort started?"
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "EMT",
+      "utterance": "You are alert and oriented to person, place, time, purpose. Eyes and neck show no issues."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_cardio",
+      "role": "Partner",
+      "utterance": "4-lead monitoring detected stable rhythm."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_cardio",
+      "role": "Partner",
+      "utterance": "A 12-lead EKG at 02:46 showed possible arm lead reversal."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_cardio",
+      "role": "Partner",
+      "utterance": "Another 12-lead at 03:09 showed nonspecific T wave abnormality."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "re bp",
+      "role": "Partner",
+      "utterance": "Your blood pressure has dropped to 97 over 83."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "re pulse",
+      "role": "Partner",
+      "utterance": "Pulse remains at 84 and is regular."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "re resp",
+      "role": "Partner",
+      "utterance": "Your breathing is now 16 per minute."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "re spo2",
+      "role": "Partner",
+      "utterance": "Oxygen briefly shows 0%, but current reading is 99%."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "rescanning_ekg",
+      "role": "EMT",
+      "utterance": "No acute changes between EKG readings at 02:52 and 03:09."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "EMT",
+      "utterance": "There's a sudden drop in oxygen. Are you feeling short of breath?"
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_bp",
+      "role": "Partner",
+      "utterance": "Your new BP is 119 over 68."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 89 and regular."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_resp",
+      "role": "Partner",
+      "utterance": "Breathing is now 16 per minute."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_spo2",
+      "role": "Partner",
+      "utterance": "Oxygen is up to 99% again."
+    },
+    {
+      "turn": 43,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_protocol",
+      "role": "Paramedic",
+      "utterance": "Based on this, we'll follow protocol 2-1 for suspected cardiac chest pain."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "You wanted MCV but it's on diversion. We will be going to St. Mary's instead."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Would you like help getting onto the stretcher?"
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "I'll make sure you're comfortable and secure during the move."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I can walk if that's okay."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Stretcher rest is safer. I'll assist you gently."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Are you ready for transport?"
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Your personal items and medications will stay with us."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let's get you onto the stretcher now."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Okay."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You were fully conscious and talking clearly the entire time."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Hospital staff will be aware of your condition ahead of time."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You'll be in good hands once you arrive at the hospital."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let me know if you need anything else during the ride."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You had no signs of wheezing or distress during the exam."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You expressed some anxiety but managing well."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your history shows anxiety and major depression."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No cyanosis or bluish discoloration was found."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You appear stable and breathing normally throughout."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Positioning will help keep your symptoms minimal."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We're good to go, and you're stable for transport."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We're set to move on with this transport."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "All equipment is moving with you into the ambulance."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "I'll keep checking on you throughout the trip."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Sounds good."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your breathing is still clear and stable during our prep."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your GCS is 15-alert and oriented to all four parts."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No signs of respiratory compromise found."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are advised to continue any needed treatment after arrival."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Hospital staff are informed about your condition for handover."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are advised to take your medication as instructed."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You gave yourself aspirin before we arrived, right?"
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You had no behavior issues and remained calm."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No changes in respiration or wheezing noted."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your GIRD and anxiety history were recorded."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are being treated according to suspected cardiac protocol."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your right arm IV was well managed."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We are ready for you at the back of the ambulance."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are being carefully placed on the stretcher now."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your glucose was not obtainable at this time."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Earlier blood pressure is higher, now it's a bit lower."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You had no change in circulation during our stay."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Reassure us if you start feeling worse."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your IV will stay in place on the way to the hospital."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your chest discomfort was non-radiating."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You were calm the entire time, even with chest tightness."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No physical signs of stress found during the assessment."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your motor response was solid."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You were alert to time, place, and people."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your verbal response showed awareness and coordination."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your eye opening was full and spontaneous."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All of your signs indicate good survival."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your management will be with hospital staff shortly."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are advised to follow up on your GERD condition."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your medication Xanax is on file for their knowledge."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "No additives were given beyond your own aspirin."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You received early 12-lead EKG for assessment."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're set for transport to your safest option."
+    }
+  ]
+}

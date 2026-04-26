@@ -1,0 +1,722 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003041",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, dispatch for a male with chest pain at the address provided."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hello, I'm John, a paramedic. We received a call about some chest pain. Can you tell me more about it?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "It started while I was walking to the bus stop. It's a dull pain on the right side, about a 6 out of 10."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Can you tell me your name and where you are?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I'm Steve. I'm at home in my chair."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Nice to meet you, Steve. If I count from one to five, can you try to count with me?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "One, two, three, four, five."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Your airway is open, you're breathing on your own. How are you breathing?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "I'm working a little hard for it, but I can catch my breath eventually."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "I notice your breathing is labored. We'll give you some oxygen to help support it."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Non-rebreather mask on at 15 liters per minute."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "Let me check your pulse and feel for peripheral pulses. Your heart rate is steady."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is at 78, strong and regular."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are at 24 per minute."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 146 over 76. That's slightly elevated."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "98 percent oxygen saturation-good number."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar at 140 mg/dL."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Cardiac monitor is on and showing a sinus rhythm."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "Did the pain come on suddenly?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, as I was walking to the bus stop. I take this route every day, but it was really painful today."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Paramedic",
+      "utterance": "What did you do when the pain started?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Patient",
+      "utterance": "I sat down and called 911. I tried not to move or exert myself."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Paramedic",
+      "utterance": "Have you had similar episodes in the past?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Patient",
+      "utterance": "I had the same pain four days ago, but I didn't see a doctor. I thought it would fade."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Paramedic",
+      "utterance": "What are your known medical conditions and medications, Steve?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have diabetes, congestive heart failure, high blood pressure, and a history of colon cancer."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Paramedic",
+      "utterance": "What medications do you take?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I take Coumadin, Lasix, metformin, carvedilol, and potassium."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Paramedic",
+      "utterance": "Have you missed any doses recently?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I haven't had my Lasix in four days. I did take my allopurinol this morning."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Paramedic",
+      "utterance": "What did you eat or drink today?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had breakfast earlier. I can't remember the exact time, but it was several hours ago."
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "O",
+      "role": "Paramedic",
+      "utterance": "Have any of the symptoms improved or changed since it began?"
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "O",
+      "role": "Patient",
+      "utterance": "No, it's been constant ever since it started."
+    },
+    {
+      "turn": 35,
+      "topic": "Pain Assessment",
+      "micro_intent": "P",
+      "role": "Paramedic",
+      "utterance": "Does the pain get worse with activity?"
+    },
+    {
+      "turn": 36,
+      "topic": "Pain Assessment",
+      "micro_intent": "P",
+      "role": "Patient",
+      "utterance": "It gets worse when I sit still or breathe deeply, not really with activity."
+    },
+    {
+      "turn": 37,
+      "topic": "Pain Assessment",
+      "micro_intent": "Q",
+      "role": "Paramedic",
+      "utterance": "How would you describe the pain again?"
+    },
+    {
+      "turn": 38,
+      "topic": "Pain Assessment",
+      "micro_intent": "Q",
+      "role": "Patient",
+      "utterance": "It's a dull ache on the right side. Not sharp or burning."
+    },
+    {
+      "turn": 39,
+      "topic": "Pain Assessment",
+      "micro_intent": "R",
+      "role": "Paramedic",
+      "utterance": "Does the pain go anywhere else?"
+    },
+    {
+      "turn": 40,
+      "topic": "Pain Assessment",
+      "micro_intent": "R",
+      "role": "Patient",
+      "utterance": "No, it's just on the right and doesn't move."
+    },
+    {
+      "turn": 41,
+      "topic": "Pain Assessment",
+      "micro_intent": "S",
+      "role": "Paramedic",
+      "utterance": "On a 1 to 10 scale, where is your pain now?"
+    },
+    {
+      "turn": 42,
+      "topic": "Pain Assessment",
+      "micro_intent": "S",
+      "role": "Patient",
+      "utterance": "Approximately a 6."
+    },
+    {
+      "turn": 43,
+      "topic": "Pain Assessment",
+      "micro_intent": "T",
+      "role": "Paramedic",
+      "utterance": "Has the pain changed in intensity over time?"
+    },
+    {
+      "turn": 44,
+      "topic": "Pain Assessment",
+      "micro_intent": "T",
+      "role": "Patient",
+      "utterance": "It hasn't changed since it began."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Let me take a look at your skin. Any rashes or changes?"
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "No, I don't think so."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Your skin is warm, dry, and intact. No signs of rashes or bruising."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "Your pupils are equal and reactive. PERRLA."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "No swelling or bulges in the neck. You appear stable."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "Paramedic",
+      "utterance": "Your throat and airway appear clear. Because of that, I don't expect any issues with swallowing."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Let me listen to your chest for breathing and heart sounds."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Breath sounds are clear bilaterally."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Paramedic",
+      "utterance": "Let me examine your abdomen. Any pain or discomfort there?"
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Patient",
+      "utterance": "I feel a bit bloated but not in pain."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Paramedic",
+      "utterance": "You have a colostomy in the lower left quadrant. Otherwise, the abdomen is soft, non-tender, and distended."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "Paramedic",
+      "utterance": "Your extremities look fine. I notice some swelling in your hands and legs. Any difficulty moving?"
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "Patient",
+      "utterance": "I can move them fine."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "Paramedic",
+      "utterance": "Pulse sensations appear intact to all four limbs."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "Partner",
+      "utterance": "PMSx4 is intact with no motor or sensory loss. Pulses are present across all four limbs."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "spine_pelvis_exam",
+      "role": "Paramedic",
+      "utterance": "Your back is atraumatic and pelvis stable. I see no signs of injury."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "We are administering aspirin per protocol now to reduce clot formation."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Aspirin 324 mg was given and tolerated well."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Starting an IV in your hand. Will keep having access to fluids during your transport."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV is in your left hand, 20-gauge size. Running smoothly."
+    },
+    {
+      "turn": 65,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Now placing you on the cardiac monitor for a 4-lead assessment."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "4-lead monitoring with sinus rhythm, no acute changes noted."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Prep for a 12-lead EKG is underway. Need to place multiple pads."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "12-lead ready for reading. Interpretation shows sinus rhythm with no acute ST wave change."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is up to 165/83."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 76, still regular."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_resp",
+      "role": "Partner",
+      "utterance": "Your breathing is remaining at 24 per minute."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is at 99 percent on the non-rebreather."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_glucose",
+      "role": "Partner",
+      "utterance": "Still at 0, though that may be equipment. Rechecking is advised if needed."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Vital Signs",
+      "micro_intent": "updated_ekg",
+      "role": "Partner",
+      "utterance": "Rhythm is still sinus with no acute signs of heart attack."
+    },
+    {
+      "turn": 75,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "We suspect a cardiac issue and are following protocol 2-1 for chest pain."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "We will send you to VCU Medical Center for appropriate care based on your conditions."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Let's prep you for secure transport to the ambulance."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "We'll adjust you into a semi-Fowler's position for your safety and breathing."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll switch your oxygen to 2 liters via nasal cannula for transport."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Your rollator and medication bag are going with you."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Paramedic",
+      "utterance": "Let me recheck your pulse."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "It's 76 again-still consistent."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Breathing rate is down to 20 now."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Paramedic",
+      "utterance": "Latest blood pressure reading is 168/72."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Oxygen at 100 percent now, a good enrty."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "EKG still normal, showing stable sinus rhythm."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Glucose is unchanged at 0-device may need another reading during transport."
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "redo_procedures",
+      "role": "Partner",
+      "utterance": "No new procedures or medications are needed at this time."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic",
+      "utterance": "On a 1 to 10 scale, how bad is the pain now?"
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Around 6, maybe a little less."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic",
+      "utterance": "Is the pain staying in the same spot and not spreading?"
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Yes, right side only, still the same."
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Paramedic",
+      "utterance": "Just confirming-You have congestive heart failure and haven't had your Lasix in four days?"
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Patient",
+      "utterance": "Correct, but I did take my morning meds this morning."
+    },
+    {
+      "turn": 95,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "Paramedic",
+      "utterance": "Let me check your responsiveness. You remain fully alert-GCS is 15."
+    },
+    {
+      "turn": 96,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "ca",
+      "role": "Paramedic",
+      "utterance": "You are conscious, alert, oriented to person, place, and time."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "VCU Health Systems are currently expecting us and are on standby via phone."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We will now assist you from the chair to the stretcher using five seatbelts."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "You are now safely positioned in a semi-Fowler's position."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Five seatbelts are in place for security during transport."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "You are clear for spinal concerns-CA+Ox4 is noted in your case."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Please remain still in this position while we transport you safely."
+    }
+  ]
+}

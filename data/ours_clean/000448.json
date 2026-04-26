@@ -1,0 +1,428 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000448",
+  "protocol": [
+    "medical - abdominal pain (protocol 3 - 2)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for an 82-year-old male with chest and right upper quadrant pain."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Alex, an EMT with the rescue squad. What brought you to call 911 tonight?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've had right upper quadrant pain for a few weeks, and it's gotten worse tonight."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Mr. Smith, can you tell me who you are, where you are, and what day today is?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Mr. Smith, you're alert and oriented to person, place, time, and situation. That's reassuring."
+    },
+    {
+      "turn": 6,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Can you tell me about any chronic conditions or medical history?"
+    },
+    {
+      "turn": 7,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_severity",
+      "role": "EMT",
+      "utterance": "On a scale from 1 to 10, how would you rate your pain right now?"
+    },
+    {
+      "turn": 8,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_other_symptoms",
+      "role": "EMT",
+      "utterance": "Have you had nausea, vomiting, or changes in breathing with the pain?"
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_blood_pressure",
+      "role": "Partner",
+      "utterance": "Your blood pressure is 214/167, pulse is 84, and your breathing rate is 26."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_4_lead_monitoring",
+      "role": "EMT",
+      "utterance": "We're placing a 4-lead monitor to assess your heart rhythm."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Interventions",
+      "micro_intent": "cv_ecg_12_lead_obtained",
+      "role": "Partner",
+      "utterance": "A 12-lead EKG has been performed and shows a left bundle branch block."
+    },
+    {
+      "turn": 12,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam_breath_sounds",
+      "role": "EMT",
+      "utterance": "I'm going to listen to your lungs now. Would that hurt?"
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_ekg",
+      "role": "Partner",
+      "utterance": "The EKG is negative for heart attack but shows a left bundle branch block."
+    },
+    {
+      "turn": 14,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam_color",
+      "role": "EMT",
+      "utterance": "You're not pale, diaphoretic, or showing other signs of distress."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_resp_spo2",
+      "role": "Partner",
+      "utterance": "With 3 liters of oxygen, your oxygen saturation is 97%."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "You mentioned RUQ pain and bruising. Have you had similar episodes before?"
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_pulsem",
+      "role": "Partner",
+      "utterance": "Your heart is regular with a pulse of 84 beats per minute."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_glucose",
+      "role": "Partner",
+      "utterance": "The glucose meter didn't provide a reading. Any significant changes in food or fluids today?"
+    },
+    {
+      "turn": 19,
+      "topic": "Take Interventions",
+      "micro_intent": "start_iv",
+      "role": "EMT",
+      "utterance": "We've placed a 20-gauge IV in your left forearm for medications."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "I'm going to give you 50 mcg of Fentanyl to help with the pain."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_medication",
+      "role": "EMT",
+      "utterance": "You take Coumadin, Advair, and Synthroid-anything else?"
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_allergies",
+      "role": "EMT",
+      "utterance": "Are you allergic to any medications, past or present?"
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam_normal",
+      "role": "EMT",
+      "utterance": "Have you noticed any changes in urine, like frequency or color?"
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam_gross_visual",
+      "role": "EMT",
+      "utterance": "No signs of trauma or deformity in your head or neck."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_skin_exam",
+      "role": "EMT",
+      "utterance": "I see some bruising in the left lower quadrant, but no rashes or unusual marks."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_head_and_neck_exam_neck_veins",
+      "role": "EMT",
+      "utterance": "No distension or stiffness in the neck is observed."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam_hemorrhage",
+      "role": "EMT",
+      "utterance": "No bleeding or discharge from the ears, nose, or throat."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam_scar",
+      "role": "EMT",
+      "utterance": "No visible scars in the thoracic or neck area."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam_shape",
+      "role": "EMT",
+      "utterance": "Your abdomen is level and unremarkable, with tenderness noted in the RUQ."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam_bowel_sounds",
+      "role": "EMT",
+      "utterance": "Your bowel sounds are normal and present."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_last_oral_intake",
+      "role": "EMT",
+      "utterance": "What was your last oral intake?"
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam_visual",
+      "role": "EMT",
+      "utterance": "Your throat appears normal with no obstructions noted."
+    },
+    {
+      "turn": 33,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll gently assist you to the stretcher now. Any areas of concern?"
+    },
+    {
+      "turn": 34,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "After the Fentanyl dose, how is the pain now on a scale of 0 to 10?"
+    },
+    {
+      "turn": 35,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "Patient",
+      "utterance": "Better now, it's an 8."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "Let me check again after the second dose-how is the pain now?"
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "Patient",
+      "utterance": "It's gone down to a 3-definitely better now."
+    },
+    {
+      "turn": 38,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You're fully secured and ready for transport."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_blood_pressure",
+      "role": "Partner",
+      "utterance": "Your blood pressure remains the same, though we had a 0/0 that will be confirmed at the hospital."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_resp",
+      "role": "Partner",
+      "utterance": "You're breathing regularly at 26 per minute and reporting that it doesn't feel labored."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_spo2",
+      "role": "Partner",
+      "utterance": "O2 saturation is now at 95% with 3L of supplemental oxygen."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_glucose",
+      "role": "Partner",
+      "utterance": "The glucometer didn't read. The hospital will check this again."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We're heading to Memorial Regional Medical Center, as requested."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're properly secured, and we'll get you there safely."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_events",
+      "role": "EMT",
+      "utterance": "What were you doing just before the pain got worse tonight?"
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_head_and_neck_exam_lymph_nodes",
+      "role": "EMT",
+      "utterance": "No swollen glands or masses noted."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You're all set. Your head and neck were kept neutral during the transfer."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_onset",
+      "role": "EMT",
+      "utterance": "Did the pain start slowly or all at once?"
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_radiation",
+      "role": "EMT",
+      "utterance": "Has the pain spread to other areas or stays in one place?"
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_provoke",
+      "role": "EMT",
+      "utterance": "What seems to make the pain worse or better?"
+    },
+    {
+      "turn": 51,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "The interventions and treatment followed protocol 3-2 for abdominal pain."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The hospital's aware of your condition and progression during transport."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "check_vital_time",
+      "role": "Partner",
+      "utterance": "At 2:50 AM, your vitals were rechecked and remained stable."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_quality",
+      "role": "EMT",
+      "utterance": "Would you describe the pain as sharp, dull, aching, or burning?"
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs_p",
+      "role": "EMT",
+      "utterance": "Pulse was stable and consistent during the transport duration."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Everything is ready for transport. Any more questions before we go?"
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "secondary_head_and_neck_exam_extraocular_motions",
+      "role": "EMT",
+      "utterance": "No abnormal eye movements are seen."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "history_of_present_illness_allergies",
+      "role": "EMT",
+      "utterance": "You only report an allergy to ibuprofen-any others?"
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_past_medical_history",
+      "role": "EMT",
+      "utterance": "We've noted your medical history of COPD, CHF, sleep apnea, GERD, and thyroid issues."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You're ready for the ride. The ER team is prepared for your arrival."
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001673",
+  "protocol": [
+    "medical - stroke/tia (protocol 3 - 5)",
+    "medical - nausea/vomiting (protocol 3 - 9)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for a reported Stroke/CVA at a residence in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Alex, an EMT with the rescue squad. Can you tell me what brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been feeling dizzy and nauseous since around 3:00 PM today after eating. My left arm is numb and swollen."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "And how long has your left arm been numb and swollen?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "It started about the same time. I also threw up and haven't been able to hold down anything since then."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, we're just going to do a quick check to see how you're doing, okay?"
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Airway is patent and clear with no signs of obstruction."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Do you mind if we listen to your chest for a moment to check your breathing?"
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations at 18 and equal, with little to no work of breathing noted."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Let me shine the light here. That's okay, just breathe normally."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Radial pulse is strong and regular, and skin is pink, warm, and dry with no cyanosis noted."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Let's check your blood pressure to get a better sense of your circulation."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 112 over 72."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is 107 and regular."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Regular respirations at 18 per minute."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 96% on room air."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is 124 mg/dL."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Sinus tachycardia on the monitor."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "You mentioned being dizzy and nauseous. What else have you been experiencing?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yeah, I feel bloated and I've been vomiting off and on since the symptoms started."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Do you have any pain besides the numbness in your arm?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No, it's numb and swollen but not painful."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - events_leading_up_to_event",
+      "role": "EMT",
+      "utterance": "Ma'am, can you tell me what you were doing when the symptoms first occurred?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - events_leading_up_to_event",
+      "role": "Patient",
+      "utterance": "I had dinner, then started to feel worse. I think the food might have been a factor."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - last_oral_intake",
+      "role": "EMT",
+      "utterance": "What did you eat for dinner?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had chicken, rice, and cheese. It's what I always eat."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "I see. What medications do you take on a regular basis?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Meclizine and cyclobenzaprine for my vertigo and nerves."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "And what is your medical history?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Vertigo, osteoarthritis, sciatica, and a pinched nerve in my lower back and neck. I had a left eardrum perforated in May."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Do you suffer from anxiety?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, but it's not as bad now that the symptoms have come on."
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "OPQRST - severity",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, how would you rate the sensation in your arm?"
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "OPQRST - severity",
+      "role": "Patient",
+      "utterance": "Zero, it doesn't hurt. It just feels numb and weird."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "I'm going to perform a FAST exam now. Can you smile for me?"
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "(smiles)"
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Now, raise both arms for me."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "(attempts to raise arms, both arm movements are symmetrical)"
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "And finally, can you say, \"The sky is blue\"?"
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "\"The sky is blue.\""
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "EMT",
+      "utterance": "You mentioned your eardrum was perforated. Are you having any new problems in that ear?"
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Patient",
+      "utterance": "No, I'm fine in that ear. It's the arm that's new."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "Are you knowing who you are and where you're at right now?"
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "aox4",
+      "role": "Patient",
+      "utterance": "Yes, I am Laurie, and this is Richmond. It's 2020."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "aox4",
+      "role": "EMT",
+      "utterance": "And can you describe the problem that brought us here?"
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "aox4",
+      "role": "Patient",
+      "utterance": "I had a stroke or something. I got dizzy and threw up."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "Partner",
+      "utterance": "No signs of chest wall tenderness currently being noted per assessment."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "Partner",
+      "utterance": "Bilateral breath sounds are clear; no wheezes or crackles detected."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "Left arm exhibits numbness and mild swelling, no visible deformity."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "No distension or rigidity observed at this time."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "I'm going to place 4-lead monitoring now."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "4-lead monitoring applied."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Monitoring shows sinus tachycardia again as previously noted."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Ma'am, I would like to run a 12-lead ECG for a more complete look at your heart. Is that okay with you?"
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "12-lead ECG placed. Interpretation is sinus tachycardia with left axis deviation."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "EMT",
+      "utterance": "We need to give you some medication for the nausea. It's called Zofran. Is that okay?"
+    },
+    {
+      "turn": 57,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "Zofran 4mg IV administered per standing order."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate increased slightly to 111."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure has slightly decreased to 98 over 72."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Interventions",
+      "micro_intent": "give_procedure",
+      "role": "Partner",
+      "utterance": "Normal saline 250mL started en route for hydration."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG remains within the same interpretation of sinus tachycardia and left axis deviation."
+    },
+    {
+      "turn": 62,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Partner, let's shout out to the hospital to inform them of our findings and what we're bringing in."
+    },
+    {
+      "turn": 63,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Shout out made to ER; findings reported-stroke/TIA protocol 3-5 and nausea/vomiting protocol 3-9 initiated."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Rechecking vitals-pulse at 111, BP 98/72, SpO2 98%."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood sugar is unobtainable at this point."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "VCU Health will be our destination. I will contact them now."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is now ambulated onto the stretcher, seated in a secure position."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Direct phone report to ER nurse with all findings and protocols discussed."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "The patient will ambulate from the stretcher to the ER bed once we arrive. She has signed consent for care and billing."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "IV continues at 15 Gtt/min for hydration. No signs of distress noted."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Zofran has led to mild improvement in her ability to keep fluids down."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Vitals remain stable. Skin still pink and warm, with no signs of distress or cyanosis."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Patient is stable during transport. Arrival at VCU is expected in three minutes."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Restraints applied for transport safety. All procedures and notes sent prior to arrival."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Final in-person report given to RN. All EMS procedures and patient care notes accounted for."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Patient remains stable with treatment ongoing. Unit now available for service."
+    }
+  ]
+}

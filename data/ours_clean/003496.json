@@ -1,0 +1,631 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003496",
+  "protocol": [
+    "spinal motion restriction (protocol 4 - 13)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a fall reported at 3483 East Clay Streets."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Randy, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Uh, I fell while trying to get out of bed. My neck is hurting a bit."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you open your eyes for me, please?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "What is your name?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Janet Martin."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you tell me where you are right now?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I'm in my bedroom."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you squeeze my fingers with both hands?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Sure."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "Partner",
+      "utterance": "Patient is fully alert and oriented to person, place, and time."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Is your throat sore or hard to breathe through?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, breathing is fine."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Patient's chest movement is equal on both sides."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations are unlabored and regular."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is strong and regular on both arms."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Skin is warm, pink, and dry. 18. History of Present Illness; sample:_sign_symptoms; EMT: Can you tell me when the pain in your neck started?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "_sign_symptoms",
+      "role": "Patient",
+      "utterance": "I've been having that pain for a few days now. 20. History of Present Illness; sample:_sign_symptoms; EMT: Can you describe the pain? Is it sharp or dull? 21. History of Present Illness; sample:_sign_symptoms; Patient: It's a dull ache. 22. Pain Assessment; opqrst:_severity; EMT: On a scale from 0 to 10, with 10 being the worst, how bad is your neck pain? 23. Pain Assessment; opqrst:_severity; Patient: It's about a 5. 24. History of Present Illness; sample:_past_medical_history; EMT: Do you have any medical history or pre-existing conditions? 25. History of Present Illness; sample:_past_medical_history; Patient: I have heart failure and a history of falls."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "_allergies",
+      "role": "EMT",
+      "utterance": "Any known drug allergies? 27. History of Present Illness; sample:_allergies; Patient: I don't have any known allergies."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "current_medications",
+      "role": "EMT",
+      "utterance": "What medications are you currently taking? 29. History of Present Illness; sample:_current_medications; Patient: Simvastatin, atenolol, Lasix, and a few others for my thyroid and heart."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "events",
+      "role": "EMT",
+      "utterance": "Can you tell me what happened when you fell? 31. History of Present Illness; sample:_events; Patient: I tried to get up, felt dizzy, and then I fell."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_oriented",
+      "role": "EMT",
+      "utterance": "When you fell, did you lose consciousness?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_events_less",
+      "role": "Patient",
+      "utterance": "No, I was awake the whole time."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Your skin is warm, pink, and dry. No rashes or wounds noted."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No bruising or unusual rashes observed."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_eye_ear_exam",
+      "role": "EMT",
+      "utterance": "Your eyes are PERRL-equal, round, reactive."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "nose_mouth_throat_exam",
+      "role": "EMT",
+      "utterance": "Your nose and mouth are clear with no signs of bleeding."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neck_exam",
+      "role": "Partner",
+      "utterance": "You mentioned pain, but is there any swelling or deformity in your neck?"
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neck_exam",
+      "role": "Patient",
+      "utterance": "No, just the pain."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "dcapbtls",
+      "role": "Partner",
+      "utterance": "No deformities, contusions, abrasions, or penetrating injuries of the neck observed."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "EMT",
+      "utterance": "Your chest moves equally."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "Partner",
+      "utterance": "Chest rise is equal on both sides. Lung sounds are clear in all lobes."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "dcapbtls_chest",
+      "role": "Partner",
+      "utterance": "No deformities, contusions, abrasions, or penetrating injuries of the chest observed."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Your abdomen is soft and non-tender."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "dcapbtls_abdomen",
+      "role": "Partner",
+      "utterance": "No deformities, contusions, abrasions, or penetrating injuries of the abdomen observed."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "EMT",
+      "utterance": "Have you had any pain or discomfort in your back?"
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "Patient",
+      "utterance": "No, just my neck."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "dcapbtls_back",
+      "role": "Partner",
+      "utterance": "No deformities, contusions, abrasions, or penetrating injuries of the back observed."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremity_exam",
+      "role": "EMT",
+      "utterance": "Pulse in your arms and legs is strong and regular."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 70 beats per minute."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Your respiratory rate is 20 breaths per minute."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 109 over 81 millimeters of mercury."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Your blood glucose is 105 milligrams per deciliter."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is 99 percent."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "jvd",
+      "role": "Partner",
+      "utterance": "No jugular vein distention observed."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "cervical_collar",
+      "role": "EMT",
+      "utterance": "Would you allow us to place a cervical collar to stabilize your neck?"
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "consent_collar",
+      "role": "Patient",
+      "utterance": "I guess that is okay."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "cervical_collar_applied",
+      "role": "Partner",
+      "utterance": "Cervical collar applied successfully after one attempt."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is 63 now."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 123 over 61."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is undetectable using the device."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 98 percent."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Interventions",
+      "micro_intent": "ecg_lead_monitor",
+      "role": "EMT",
+      "utterance": "We'll need to send down your heart rhythm using the monitor."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "ecg_lead_listened",
+      "role": "Partner",
+      "utterance": "Four lead EKG is in place and monitoring."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "ekg_12_lead",
+      "role": "Partner",
+      "utterance": "12-lead ECG obtained, findings are normal."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse now is 60."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 129 over 61."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 remains at 99 percent."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "jvd",
+      "role": "Partner",
+      "utterance": "No jugular vein distention or tracheal deviation noted."
+    },
+    {
+      "turn": 60,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_protocol",
+      "role": "EMT",
+      "utterance": "Because of your age and fall with neck pain, we are following the spinal motion restriction protocol."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "decision",
+      "role": "EMT",
+      "utterance": "I'd like to know, which hospital would you prefer for treatment?"
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "decision",
+      "role": "Patient",
+      "utterance": "Wherever you take me is fine."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "decision",
+      "role": "EMT",
+      "utterance": "We'll transport you to St. Mary's Hospital."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "stair_usage",
+      "role": "EMT",
+      "utterance": "We'll be moving you down the stairs on a stair chair and then onto a stretcher."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "wheelchair_transition",
+      "role": "Partner",
+      "utterance": "We'll transfer you to the wheelchair next and give you full support."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_safe",
+      "role": "Partner",
+      "utterance": "All seat belts have been attached to the stretcher."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "secure_patient",
+      "role": "EMT",
+      "utterance": "We have you strapped in with 5-point harness for transport safety."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "communication",
+      "role": "EMT",
+      "utterance": "Keeper, we are en route with the patient to St. Mary's."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "Keeper Radio",
+      "utterance": "St. Mary's is aware and will be prepared."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Partner",
+      "utterance": "EKG is still active and monitoring."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "jvd",
+      "role": "Partner",
+      "utterance": "No jugular vein distention seen."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "iv_attempt",
+      "role": "Partner",
+      "utterance": "IV start attempted in an extremity vein (arm or leg), unsuccessful after one attempt."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "patients_condition",
+      "role": "Partner",
+      "utterance": "Patient is showing no change in character or responsiveness observed."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "ed_handover",
+      "role": "EMT",
+      "utterance": "We're transferring you over to the ED bed using a sheet lift."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "ed_handover",
+      "role": "EMT",
+      "utterance": "We'll hand over your care to the ED nurse upon arrival."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "ed_handover",
+      "role": "EMT",
+      "utterance": "Crossing into St. Mary's. Prepare contact with receiving nurse."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "transfer_complete",
+      "role": "Partner",
+      "utterance": "Transfer to ED bed is complete."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "patient_care_transfer",
+      "role": "Partner",
+      "utterance": "Everything has shifted over to ED care now."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "patient_position",
+      "role": "Partner",
+      "utterance": "Patient was transported to the hospital while on the stretcher in a cold condition, with all seat belts attached."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "exit_scene",
+      "role": "EMT",
+      "utterance": "Ready to load the patient into the ambulance."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "patient_load",
+      "role": "Partner",
+      "utterance": "Patient safely loaded into the ambulance."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "final_check",
+      "role": "Partner",
+      "utterance": "Doing final status check: pulse 60, BP 129/61, SpO2 99, GCS 15."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "basic_status",
+      "role": "EMT",
+      "utterance": "All vital signs are within normal limits; en route to St. Mary's."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "final",
+      "role": "EMT",
+      "utterance": "All on board for St. Mary's heading northbound. Keep an eye on those rear doors."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Vital Signs",
+      "micro_intent": "no_jvd",
+      "role": "Partner",
+      "utterance": "No jugular vein distention or tracheal deviation noted."
+    },
+    {
+      "turn": 86,
+      "topic": "History of Present Illness",
+      "micro_intent": "weakness",
+      "role": "EMT",
+      "utterance": "You mentioned dizziness and a fall-do you also feel any weakness in your limbs or body?"
+    },
+    {
+      "turn": 87,
+      "topic": "History of Present Illness",
+      "micro_intent": "weakness",
+      "role": "Patient",
+      "utterance": "I didn't notice any weakness."
+    },
+    {
+      "turn": 88,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_current_medications",
+      "role": "EMT",
+      "utterance": "You're taking several medications for your heart and thyroid. That includes simvastatin (Vytorin), atenolol (Tenormin), spironolactone (Aldactazide), and carvedilol (Coreg). You also take allopurinol (Aloprim), Lasix, levothyroxine (Synthroid), and lorazepam (Ativan)."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "high_call_volume",
+      "role": "Partner",
+      "utterance": "Unable to print a patient care report due to high call volume."
+    }
+  ]
+}

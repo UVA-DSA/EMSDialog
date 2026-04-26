@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002903",
+  "protocol": [
+    "medical - supraventricular tachycardia (including atrial fibrillation) medical - tachycardia medical - ventricular tachycardia with a pulse (protocol 2 - 8)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, 54-year-old male with chest pain and possible AICD at 610 E Broad St. Dispatching now."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Dan, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Chest pain. It's not going away. I can't catch my breath."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Mr. Smith, can you tell me your name and where we are?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "My name is David Smith. I'm in Richmond."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Good. What day is today?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "It's June 6th."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Your eyes are open. Any trouble keeping them open?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "No, just hurts to take a deep breath."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Squeeze my fingers for me, if you can."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Mr. Smith, your airway appears open. Can you speak?"
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Yes, it's not blocked."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Let's assess your breathing now. Any obstruction or pain?"
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 38, fast and shallow."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Fast breathing noted. Any difficulty doing so?"
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Yes, can't take deep breaths."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "I will now check your pulse. That's okay."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 178, strong and regular."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 130 over 97."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is 63. Need to give oxygen."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Your chest pain, when and where does it occur?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_events",
+      "role": "Patient",
+      "utterance": "Left side, feels tight and heavy."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_history",
+      "role": "EMT",
+      "utterance": "Any history of heart problems or medications?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_history",
+      "role": "Patient",
+      "utterance": "No prior known heart issues."
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_severity",
+      "role": "EMT",
+      "utterance": "How bad is the chest pain on a scale of 0 to 10?"
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "opqrst_severity",
+      "role": "Patient",
+      "utterance": "About 3. Sometimes comes and goes."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "You are diaphoretic. No visible rashes or wounds observed."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Sweat is visible. Skin color is not abnormal."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Eyes are open and responding. No nuchal rigidity observed."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "take_ekg",
+      "role": "Partner",
+      "utterance": "4-lead EKG applied. Shows supraventricular tachycardia and left axis deviation."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "give_oxygen",
+      "role": "EMT",
+      "utterance": "Applying 15 LPM oxygen via NRB. This should improve your SpO₂."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12-lead ECG applied. Reading shows ST depression and abnormal QRS-T axis."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is not below detection limit."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Partner",
+      "utterance": "First IV attempt in an extremity vein unsuccessful. Need another location."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse remains elevated at 178."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Partner",
+      "utterance": "Second IV start also unsuccessful. Tired multiple sites. Proceeding to IM."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "5 mg Versed administered intramuscularly."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate decreased to 15, still shallow."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure 112 over 96."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ at 98. Oxygen application effective."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Second 12-lead EKG indicates a large inferior infarct with posterior extension."
+    },
+    {
+      "turn": 42,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Let's proceed with the supraventricular tachycardia protocol as per guidelines."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Second EKG scan shows evidence of prior infarct and intraventricular conduction delay."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "defibrillation",
+      "role": "Partner",
+      "utterance": "Synchronized cardioversion at 50 J in progress."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Still not in sinus rhythm. Increasing to 100 J."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 15, shallow breathing."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure stable at 112/96."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "SpO₂ at 98, stable."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "How is the chest pain now?"
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Partner",
+      "utterance": "Still 3 on the scale. Chest still tight."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Still having trouble with breath? Any changes?"
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Still short of breath. Heart still beating fast."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Transport destination is VCU Health Systems. Up for another hospital?"
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient secured on the stretcher. Ready when you are."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transfer to VCU trauma bay starting. Hospital notified."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "redo_patient_state",
+      "role": "EMT",
+      "utterance": "Still diaphoretic and tachypneic. Pulse remains elevated."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "4-lead EKG initiated. Rhythm remains unstable."
+    },
+    {
+      "turn": 58,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Airway remains patent with no obstruction."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "4-lead ECG running. Unstable evidenced by irregular rhythm."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Hospital arrival confirmed. Trauma team on standby."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "redo_patient_state",
+      "role": "Partner",
+      "utterance": "Signs stable during the start of transport."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Confirmed R-FD assisting patient down stairs. Am outside."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG result: still SVT with QRS-T axis deviation and compact QRS."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Interventions",
+      "micro_intent": "defibrillation",
+      "role": "EMT",
+      "utterance": "Ramping up energy to 100 J. Prepare for synchronized shock."
+    },
+    {
+      "turn": 65,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Oxygen mask applied. Breathing improved."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG reviewed again. QRS-T abnormal. Posterior infarct detected."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Any new symptoms or worsening concerns?"
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_events",
+      "role": "EMT",
+      "utterance": "When did your chest discomfort start?"
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_events",
+      "role": "Patient",
+      "utterance": "Not long ago. Just came on suddenly."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Partner",
+      "utterance": "An IV line in the leg unsuccessful."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher secured. Initiating transport."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Directing VCU patient transport. All vitals within range."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse still 184, SpO₂ 98. Stable rhythms, for now."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport started, vitals stable. Hospital aware."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "SpO₂ and blood pressure steady since treatment."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Chest pain remains at 3, no indication of worsening."
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_pertinent_history",
+      "role": "EMT",
+      "utterance": "Patient record notes no history, medications, or allergies."
+    },
+    {
+      "turn": 78,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "ECG evidence of anterior axis and possible infarct."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Interpreted no change in findings compared with first EKG."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Hospital team given full patient details. Procedural prep complete."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "GCS is 12 from field assessment. Passed along."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Procedural records are complete and standard of care maintained."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Final EKG read, placed in file."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Handover to emergency team finalized. All protocols followed."
+    },
+    {
+      "turn": 85,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "All parameters stable. SpO₂ and BP are unchanged."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "EM physician now in charge. Field EMS exited at 01:50."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient now receiving emergency care at the trauma center."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Transfer smooth and all documentation submitted."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Pair",
+      "utterance": "EMS monitoring ceased. Hospital team now managing patient."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Paperwork finalized and report submitted for follow-up."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "redo_patient_state",
+      "role": "Partner",
+      "utterance": "Still breathing rapidly but stablized enough for transport."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Clinical instability resolved for now."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient senses the start of emergency evaluations."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Complete CE transfer and medical records in hospital POS."
+    },
+    {
+      "turn": 95,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_history",
+      "role": "EMT",
+      "utterance": "Patient describes diffuse chest pain emerging suddenly."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Trauma team assuming full care at arrival."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Complete handover. No complications recorded."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All field resources released back to service."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "EMS report submitted and case closed."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "EM physician now managing all aspects of patient care."
+    }
+  ]
+}

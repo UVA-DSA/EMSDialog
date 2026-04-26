@@ -1,0 +1,631 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001824",
+  "protocol": [
+    "medical - diabetic - hypoglycemia (protocol 3 - 8)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch for Unit 4, diabetic problem reported at 1st Street, Apt 1."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, and this is my partner Jamie. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He said he was feeling weak for about an hour. He's been lying here since."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Mr. Mark, can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Mark. I know where I am."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Mr. Mark, can you squeeze my hand for me?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "(squeezes hand firmly)"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "You're awake, verbalizing, and moving, Mr. Mark. You're alert and oriented."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Airway is clear and patent. No signs of obstruction."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Breathing is normal, no labored effort. Rate is 18."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Skin is warm and diaphoretic. Peripheral pulses are present. Circulation is intact with no signs of major bleeding."
+    },
+    {
+      "turn": 12,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Mr. Mark, were you experiencing any chest pain or confusion today?"
+    },
+    {
+      "turn": 13,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I take Lantus at night and Humalog before meals. I took both yesterday and today."
+    },
+    {
+      "turn": 14,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Are you allergic to any medications or have any other medical conditions?"
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I only have diabetes. I've never had any other serious condition."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "Tell me about your last meal or snack."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_up_to_event",
+      "role": "Bystander",
+      "utterance": "He said he was feeling weak and just laid down an hour ago."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Is there an emergency contact we can use to verify information?"
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Pupils are equal and reactive. No eye or facial pain reported."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Lung sounds are clear and equal bilaterally. No signs of chest pain or difficulty breathing."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "Abdomen is soft and non-tender. No masses or tenderness."
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "EMT",
+      "utterance": "Movement is intact in all limbs. No deformities or angulation."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 87 and regular."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 18 and unlabored."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 116/78 mmHg."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is 53 mg/dL. That's low - we'll need to treat this."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 98% on room air."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows sinus rhythm."
+    },
+    {
+      "turn": 29,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "Partner",
+      "utterance": "Glasgow Coma Scale is 15: Eye = 4 (opens eyes spontaneously), Verbal = 5 (oriented), Motor = 6 (obeys commands)."
+    },
+    {
+      "turn": 30,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "a_ox4",
+      "role": "Partner",
+      "utterance": "Alert and oriented to person, place, time, and situation."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "I'm going to give you 15 grams of oral glucose. Can you swallow for me?"
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "First IV attempt unsuccessful in an extremity."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Second IV attempt also unsuccessful. We'll focus on oral glucose."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Glucose was administered. Any improvement, Mr. Mark?"
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We're placing you on a four-lead ECG monitor now for baseline."
+    },
+    {
+      "turn": 36,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "This is a protocol for diabetic hypoglycemia."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 65 and regular."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 125/86 mmHg."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is still 100%."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Partner",
+      "utterance": "EKG still shows sinus rhythm. No changes."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_glucose",
+      "role": "Partner",
+      "utterance": "Glucose is not registering. Current treatment is helping."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "No pain reported. Still a sense of fatigue."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_event",
+      "role": "EMT",
+      "utterance": "Any change in food or insulin usage since yesterday?"
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_last",
+      "role": "Patient",
+      "utterance": "No changes in food or insulin. Same as yesterday."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "You want to go to the hospital today, correct?"
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Movement to the ambulance is ready."
+    },
+    {
+      "turn": 47,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "We're transporting a 23-year-old male with hypoglycemia."
+    },
+    {
+      "turn": 48,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Vital signs were stable. No neurological deficits noted."
+    },
+    {
+      "turn": 49,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Oral glucose given and symptoms improved. No IV access obtained."
+    },
+    {
+      "turn": 50,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Condition stable during transport. ECG on continuous monitoring."
+    },
+    {
+      "turn": 51,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Skin is warm and diaphoretic. No chest pain or slurred speech noted."
+    },
+    {
+      "turn": 52,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "No trauma, rashes, or non-diabetic symptoms noted."
+    },
+    {
+      "turn": 53,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "No reported ETOH or drug use. Transport to St. Mary's per request."
+    },
+    {
+      "turn": 54,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Documentation completed. Ready for hospital intake."
+    },
+    {
+      "turn": 55,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Recommend monitoring for hypoglycemic recurrence in hospital."
+    },
+    {
+      "turn": 56,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Mr. Mark remained alert and stable throughout."
+    },
+    {
+      "turn": 57,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "All field interventions consistent with documented protocol."
+    },
+    {
+      "turn": 58,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Ambulatory on arrival at hospital. No complications in transport."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "All medication and history records accurately passed on."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "No exceptions in ED communication or transfers."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Patient's known diabetic condition and treatment noted."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "No ED disposition changes needed based on assessment."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "No additional procedures or interventions performed."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Summary transferred at time of hospital intake."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "All field interventions and status details relayed."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Patient declined glucose treatment at home yesterday."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "No deviations in medical history or recent habits."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "No symptoms of headache, nausea, or vomiting reported."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Patient is transported with full medical narrative."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "No emergency transport measures required during field or en-route."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "Family present and informed throughout."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "No cause for concern noted in patient's state."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "Transported for complete hospital evaluation on patient/family request."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "No injury or trauma found during secondary assessment."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "No movement restrictions or injuries observed."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "Patient moved successfully to stretcher with minimal assistance."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "All instruments and monitoring data accurately recorded."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "Handoff fully complete at hospital ER."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "No missed parameters during transport or at intake."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Navigation and coordination inside hospital proceeded smoothly."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "All criteria defined by protocol were followed."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "No pressure or temperature changes recorded en route."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "Patient left at ER bed in stable, upright position."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "No distress or emergency mileage during transport."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "Patient's movement ability and function consistent with baseline."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "Age and weight profile aligns with medical history."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "Transport non-emergent, timely, and within protocol."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "Partner",
+      "utterance": "All tools and communication instruments passed off properly."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "ems_handoff",
+      "role": "EMT",
+      "utterance": "Ending care after thorough assessment and safe transfer."
+    }
+  ]
+}

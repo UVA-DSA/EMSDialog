@@ -1,0 +1,666 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003503",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a sick person reported with an accidental overdose on blood pressure medications."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex with EMS. What made you decide to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I accidentally took my 8pm dose of blood pressure medication early-amlodipine and carvedilol-and now I feel weak."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "confirm_chief_complaint_details",
+      "role": "Partner",
+      "utterance": "Can you tell me about the moment the weakness started and if you experienced anything else?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "confirm_chief_complaint_details",
+      "role": "Patient",
+      "utterance": "I took both pills right away shortly before calling 911. I don't have chest pain, shortness of breath, or any pain, just weakness and anxiety."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "EMT",
+      "utterance": "Eye opening is 4, verbal response is 5, and motor response is 6. You're fully alert and oriented."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "no_unilateral_weakness",
+      "role": "Partner",
+      "utterance": "No signs of unilateral weakness or motor deficits are present."
+    },
+    {
+      "turn": 8,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 72 and regular."
+    },
+    {
+      "turn": 9,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 18 and unlabored."
+    },
+    {
+      "turn": 10,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 145/65."
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 99% on room air."
+    },
+    {
+      "turn": 12,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose levels are displaying as zero, but there are no symptoms consistent with hypoglycemia."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ecg",
+      "role": "EMT",
+      "utterance": "EKG shows sinus rhythm with regular readings on 4-lead monitoring."
+    },
+    {
+      "turn": 14,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_lead",
+      "role": "Partner",
+      "utterance": "We obtained a 12-lead EKG, which showed sinus rhythm with minimal evidence of left ventricular hypertrophy due to high QRS voltages."
+    },
+    {
+      "turn": 15,
+      "topic": "Secondary Assessment",
+      "micro_intent": "gcs",
+      "role": "EMT",
+      "utterance": "You're fully oriented: eye-4, verbal-5, motor-6, with clear speech and no slurring."
+    },
+    {
+      "turn": 16,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mobility",
+      "role": "Partner",
+      "utterance": "You are ambulatory with a steady gait and can walk using your walker or one person at your side."
+    },
+    {
+      "turn": 17,
+      "topic": "Secondary Assessment",
+      "micro_intent": "comfort",
+      "role": "Partner",
+      "utterance": "We placed you in a position of comfort on the stretcher."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample",
+      "role": "Partner",
+      "utterance": "You take aspirin, buspirone, lisinopril/HCTZ, amlodipine, and carvedilol daily. Your medical history includes hypertension, shoulder repair surgery, and a TAH."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "You're allergic to penicillin and aspirin, which \"make your heart race.\" You're also allergic to chocolate."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "no_complaints",
+      "role": "Partner",
+      "utterance": "You have no complaints of bowel pain or changes."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "caregiver",
+      "role": "EMT",
+      "utterance": "You say your caregiver is providing adequate care at home and you feel safe. You stated they're not related and have a \"weird\" name that you can't recall."
+    },
+    {
+      "turn": 22,
+      "topic": "Transport",
+      "micro_intent": "destination_decide",
+      "role": "EMT",
+      "utterance": "As per your wishes, you will be transported to St. Mary's, your preferred hospital."
+    },
+    {
+      "turn": 23,
+      "topic": "Reassessments",
+      "micro_intent": "reassessed",
+      "role": "Partner",
+      "utterance": "During transport, we rechecked your vitals. Blood pressure is now 124/70, and pulse is 64. EKG remains in normal sinus rhythm."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ecg",
+      "role": "Partner",
+      "utterance": "A second 12-lead EKG showed no changes: normal findings for a 90-year-old female with sinus rhythm."
+    },
+    {
+      "turn": 25,
+      "topic": "Transport",
+      "micro_intent": "protocol_decide",
+      "role": "Partner",
+      "utterance": "We are following medical - overdose/poisoning - opioid (Protocol 7-1)."
+    },
+    {
+      "turn": 26,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Due to ED overcrowding, we used a 2-person sheet drag to transfer you from stretcher to bed."
+    },
+    {
+      "turn": 27,
+      "topic": "Transport",
+      "micro_intent": "turnover_report",
+      "role": "EMT",
+      "utterance": "Turnover report includes your vitals, medications, allergy history, and updates on various caregiver concerns."
+    },
+    {
+      "turn": 28,
+      "topic": "Transport",
+      "micro_intent": "reassessed",
+      "role": "EMT",
+      "utterance": "From initial contact through ED arrival, there were no new symptoms."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "complaint",
+      "role": "EMT",
+      "utterance": "You have no bowel complaints or changes in bowel movement."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "caregiver_concerns",
+      "role": "EMT",
+      "utterance": "The caregiver mentioned concerns about the patient's will and safety at home. She expressed worries about potential conflict."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "respiration",
+      "role": "Partner",
+      "utterance": "No adventitious breath sounds, no asymmetry of chest movements. Work of breathing is normal."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "shortness_of_breath",
+      "role": "EMT",
+      "utterance": "No shortness of breath reported."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pulse_awareness",
+      "role": "Partner",
+      "utterance": "Your pulse is regular, not thready or bounding."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neck",
+      "role": "EMT",
+      "utterance": "No lymphadenopathy or neck masses observed. No nuchal rigidity."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No rashes or bite marks. Skin color is typical with no jaundice."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pupillary",
+      "role": "EMT",
+      "utterance": "Pupils are equal, round, and reactive to light."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extraocular",
+      "role": "Partner",
+      "utterance": "No evidence of extra-ocular movement deficits or visual abnormalities."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ear_nose_mouth",
+      "role": "EMT",
+      "utterance": "No drainage, obstruction, or foreign bodies in the ears, nose, or throat."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "swallow",
+      "role": "Partner",
+      "utterance": "Swallowing is normal with no reported difficulties."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "breath_sound",
+      "role": "EMT",
+      "utterance": "Breath sounds are clear and equal bilaterally."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heart_sound",
+      "role": "Partner",
+      "utterance": "Heart sounds are regular with no arrhythmias detected."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "peripheral_pulses",
+      "role": "EMT",
+      "utterance": "Peripheral pulses are strong and equal."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen",
+      "role": "Partner",
+      "utterance": "Abdomen is soft, non-tender. Bowel sounds present and normal."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back",
+      "role": "EMT",
+      "utterance": "All extremities move normally. No deformities noted."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "reassessed",
+      "role": "EMT",
+      "utterance": "Rechecked your pulse, respiration, and blood pressure-no changes from the previous assessment."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "ecg_recheck",
+      "role": "Partner",
+      "utterance": "EKG remains stable in sinus rhythm."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "respiration_recheck",
+      "role": "Partner",
+      "utterance": "Respirations remain at 18 and unlabored."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "pulse_recheck",
+      "role": "EMT",
+      "utterance": "Pulse is 64 and regular."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "bp_recheck",
+      "role": "Partner",
+      "utterance": "Blood pressure is 124/70."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "spo2_recheck",
+      "role": "Partner",
+      "utterance": "Oxygen saturation still at 99% on room air."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "glucose_recheck",
+      "role": "EMT",
+      "utterance": "Glucose levels still read zero but no hypoglycemic symptoms."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "reassessed",
+      "role": "Partner",
+      "utterance": "Noted no new symptoms or changes in your condition during the trip."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "complaint_change",
+      "role": "EMT",
+      "utterance": "You continue to report no changes in symptoms or overall condition."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "pain",
+      "role": "Partner",
+      "utterance": "No new or worsening pain since our initial evaluation."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "chest_pain",
+      "role": "EMT",
+      "utterance": "No chest pain reported during rechecks."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "shortness_of_breath",
+      "role": "Partner",
+      "utterance": "Still no shortness of breath or other issues."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "orientation",
+      "role": "EMT",
+      "utterance": "You remain fully oriented and engaged during the entire transport."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "ecg_stable",
+      "role": "Partner",
+      "utterance": "EKG has remained stable and shows no acute changes."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement",
+      "role": "Partner",
+      "utterance": "You were slid from stretcher to bed using a 2-person sheet drag."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "handover",
+      "role": "EMT",
+      "utterance": "All documentation, vitals, and care details have been passed to the receiving ED team."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "destination",
+      "role": "EMT",
+      "utterance": "You are now assigned a bed and being slid securely into position."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "no_symptoms",
+      "role": "Partner",
+      "utterance": "No abnormal symptoms observed or reported at destination."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "item_hand",
+      "role": "Partner",
+      "utterance": "All patient belongings have been accounted for and handed over with documentation."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "no_drugs_given",
+      "role": "Partner",
+      "utterance": "No medications or additional treatments were administered during transport."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "improved",
+      "role": "EMT",
+      "utterance": "No improvement or decline noted during contact with the ED."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "containment",
+      "role": "Partner",
+      "utterance": "Patient was made comfortable and maintained position of safety."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "mobility_assist",
+      "role": "EMT",
+      "utterance": "No significant difficulty with patient mobility or assistance."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "absence_symptom",
+      "role": "Partner",
+      "utterance": "Absence of dizziness, or other pertinent symptoms."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "no_exposure",
+      "role": "EMT",
+      "utterance": "Patient had no exposure to environmental toxin or injury."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "no_allergy",
+      "role": "Partner",
+      "utterance": "No adverse allergic reaction noted post-assistance."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "transfer",
+      "role": "Partner",
+      "utterance": "Smooth handover between EMS and ED staff including all documentation."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "no_transport_interruption",
+      "role": "EMT",
+      "utterance": "No delays or interruptions during transport to the ED."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "no_admin_error",
+      "role": "Partner",
+      "utterance": "No medication, IV, or procedural errors reported."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "rx_equipment",
+      "role": "EMT",
+      "utterance": "All equipment and controls were available and functioning during transport."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "patient_variation",
+      "role": "EMT",
+      "utterance": "No variation in patient's normal behavior or condition during trip."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "reassessed",
+      "role": "Partner",
+      "utterance": "Re-assessment of all systems confirmed no new findings."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "emergency_room",
+      "role": "EMT",
+      "utterance": "Patient is being processed and stabilized in emergency department."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "reconfirm",
+      "role": "Partner",
+      "utterance": "Reconfirmed no chest pain, shortness of breath, or worsening anxiety."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "post_arrival",
+      "role": "EMT",
+      "utterance": "Post-arrival, patient remains in normal state and condition."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "vial_transfer",
+      "role": "Partner",
+      "utterance": "No medications administered were transferred with patient."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "no_discomfort",
+      "role": "EMT",
+      "utterance": "No signs of patient discomfort or increased anxiety during arrival."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "ED_handover",
+      "role": "Partner",
+      "utterance": "Handover of all care notes, vitals, and verbal report complete."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "EPCR_done",
+      "role": "Partner",
+      "utterance": "EPCR is complete and sent to relevant databases for filing."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "no_note",
+      "role": "EMT",
+      "utterance": "No unstated or unrecorded patient events found."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "final_vitals",
+      "role": "EMT",
+      "utterance": "Final vitals remain: BP 124/70, pulse 64, RR 18, SpO2 99%."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "EKG_done",
+      "role": "EMT",
+      "utterance": "Final 12-lead EKG performed and recorded for ED review."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "patient_asserts_safety",
+      "role": "EMT",
+      "utterance": "Patient confirms living in a safe environment despite caregiver's worries."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "background_notes",
+      "role": "Partner",
+      "utterance": "Background on face-to-face caregiver conflict shared with ED team."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "patient_explicit",
+      "role": "EMT",
+      "utterance": "Patient affirmed consent for transport and medical care provided."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "no_seizure",
+      "role": "Partner",
+      "utterance": "No evidence of seizure activity during transport."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "stroke_signs_absent",
+      "role": "EMT",
+      "utterance": "No signs of stroke in terms of face, speech, or arm asymmetry."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "transport_end",
+      "role": "Partner",
+      "utterance": "Transport has concluded with successful arrival at designated hospital."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "end_notes",
+      "role": "EMT",
+      "utterance": "All medical notes and data surrounding this transport have been reported."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "complete",
+      "role": "EMT",
+      "utterance": "Patient care and transport complete as per protocol 7-1."
+    }
+  ]
+}

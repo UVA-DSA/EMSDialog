@@ -1,0 +1,743 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001218",
+  "protocol": [
+    "medical - stroke/tia (protocol 3 - 5)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 for a 74-year-old male with altered mental status and multiple falls at 1525 on 7/25 for a sick person call."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hello, I'm Sarah, a paramedic with Rescue Squad 9. What caused you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He has been confused and has fallen multiple times today."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Ma'am, can you tell me if he is alert and responsive?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Bystander",
+      "utterance": "He opens his eyes on his own."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "Does he speak clearly and follow conversation?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Bystander",
+      "utterance": "He speaks, but his responses are confused and sometimes inappropriate."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "Can you ask him to squeeze my finger with his right hand?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Bystander",
+      "utterance": "He can, but his left side seems weak."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "Airway is patent and self-maintained with no obstruction."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Equal bilateral chest rise and fall, no cyanosis noted."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respiration rate is at 16 per minute, unlabored."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Radial pulse is 97, regularly irregular."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "Skin is warm and dry with detectable peripheral pulses."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 97 with a regularly irregular rhythm."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is 16 breaths per minute."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure reading is 138 over 75."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Partner",
+      "utterance": "Patient is a 74-year-old male. Weight is 54 kg."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "Does he take any medications or have allergies?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "He's on Dilantin for seizures and has no known allergies."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "What are his known medical conditions?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "He has a history of esophageal cancer, dementia, and epilepsy."
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Paramedic",
+      "utterance": "Is he showing any signs of discomfort or pain?"
+    },
+    {
+      "turn": 24,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Bystander",
+      "utterance": "No, he doesn't show signs of physical pain."
+    },
+    {
+      "turn": 25,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "Have you noticed any facial droop or speech difficulties?"
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Bystander",
+      "utterance": "Yes, his left side face droops and speech is slurred."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Left arm and leg droop confirmed with significant left-sided weakness."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "Cincinnati Stroke Scale is positive for arm droop and left side weakness."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "Pupils are equal and reactive. No JVD observed."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Paramedic",
+      "utterance": "Oral and nasal cavity appear clear with no signs of obstruction."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "HEENT findings are unremarkable."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Bilateral breath sounds are normal and equal."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 99, excellent oxygenation."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is 134, no hypoglycemia signs."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Let's obtain a baseline EKG to rule out arrhythmias."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "4-lead EKG shows a rhythm of atrial fibrillation."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Atrial fibrillation is confirmed-documented as noted by partner."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "We will attempt IV access to prepare for possible medication administration."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV start attempted near the right AC, but was not successful."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "EKG tracing still confirms atrial fibrillation. Monitor placement maintained."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "No medications administered per protocol until further evaluation."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Breathing is 14 per minute with pulse at 96."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Latest blood pressure reading is 147 over 85."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "SpO2 remains consistent at 98."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Glucose still unreadable and remains at 0-no retesting attempted."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic",
+      "utterance": "No signs of pain observed, consistent with previous findings."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "While family prefers McGuire VA, his needs suggest emergent care, so we're diverting to Johnston Willis ED for stroke evaluation."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "Understood. We agree with the decision for emergency evaluation."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Transporting with lights and sirens for urgent suspected stroke."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Right-side assistance needed, so using draw sheet for safer transfer."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Ascending stairs with controlled movement and side support."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Direct transfer is arranged to ED for rapid processing."
+    },
+    {
+      "turn": 53,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Male, 74, transported for stroke signs with atrial fibrillation."
+    },
+    {
+      "turn": 54,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Initial vitals-138/75, pulse 97, 16 breaths per minute."
+    },
+    {
+      "turn": 55,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "GCS is 14-confused but not disoriented. Neurologically unstable."
+    },
+    {
+      "turn": 56,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Patent airway, adequate breathing. Skin is warm, dry."
+    },
+    {
+      "turn": 57,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "No JVD detected, trachea remains midline."
+    },
+    {
+      "turn": 58,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Both chest fields clear with equal breath sounds."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Alert but disoriented patient per field impression."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "EKG monitoring since 15:54-atrial fibrillation confirmed."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "IV attempt in the right arm was unsuccessful."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Glucose readings are zero and consistent for repeated tests."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "No exhibited signs of pain; on Dilantin."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Relevant medical history includes dementia, seizures, and esophageal cancer."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Stroke indicators-facial droop, arm droop, left-side weakness all present."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Transporting under protocol 3-5 for stroke/TIA."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Final destination is Johnston Willis Hospital."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Family is informed, and full consent granted for emergency transport."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Atrial fibrillation flagged for ED focus on neurological evaluation."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "4-lead EKG applied, confirmed arrhythmia during transport assessment."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "IV access remains attempted; no medications administered due to failed insertion."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Blood glucose readings remain at 0 due to unreadable results."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "No signs of pain or distress despite confusion."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "PEG tube is confirmed-ED was notified."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Patient is alert but disoriented-unstable neurological status."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "SpO2 and pulse stable throughout transport."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "ED was contacted for stroke team readiness upon arrival."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Details of our interventions and up-to-date vitals are relayed."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "ED is prepared, and transport went without incident."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "No changes noted during the journey; all protocols applied."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "All actions taken align with stroke/TIA-scenario protocols."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "PEG tube, cancer, and seizures communicated for ED reference."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Direct transfer from stretcher to bed with minimal delay."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "No intermediate stops made. Direct to Johnston Willis ED."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Stroke team on standby with CT scan readiness."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "All documentation is consistent with field observations."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Patient appears cool, no need for oxygen or warm pack."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Patient remains consistently alert without spontaneous deterioration."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "EKG results and vital signs to be shared immediately post-arrival."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Repeated glucose checks not executed per field findings."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "No hypoglycemia suspected per continued 0 readings."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Full EPCR uninterruptedly completed."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "All actions documented and traceable."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "ED documents anticipated arrival and is aware of key findings."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Patient history and condition covered in handoff."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Discharge to be processed immediately ED."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "All auscultations and interventions summarized for neural team."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Atrial fibrillation and stroke indicators flagged in transfer."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Vital readings acceptable throughout transport."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Handoff complete for transition to ED care."
+    },
+    {
+      "turn": 101,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "ED fully informed and prepared."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "EMS actions traceable to documented procedures."
+    },
+    {
+      "turn": 103,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Informed consent reconfirmed for urgent transport."
+    },
+    {
+      "turn": 104,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "No alterations in patient's condition while in transport."
+    },
+    {
+      "turn": 105,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "All vital signs maintained, no steps missed."
+    }
+  ]
+}

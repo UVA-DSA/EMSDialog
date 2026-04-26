@@ -1,0 +1,526 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002119",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for non-traumatic chest pain."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Uh, chest pressure and discomfort. It's been there for about 30 minutes, but actually started yesterday."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "collect_patient_info",
+      "role": "EMT",
+      "utterance": "Can I have your name and age, please?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "collect_patient_info",
+      "role": "Patient",
+      "utterance": "I'm Mary, 60 years old."
+    },
+    {
+      "turn": 6,
+      "topic": "Chief Complaint",
+      "micro_intent": "collect_patient_info",
+      "role": "EMT",
+      "utterance": "Do you have a history of diabetes, high blood pressure, or vascular issues?"
+    },
+    {
+      "turn": 7,
+      "topic": "Chief Complaint",
+      "micro_intent": "collect_patient_info",
+      "role": "Patient",
+      "utterance": "Yes, I have hypertension, diabetes, and a past history of a vein clot."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "Partner",
+      "utterance": "Ms. Mary, can you tell me your name and where we are?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "Patient",
+      "utterance": "My name is Mary, and we are in my apartment in Virginia."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "Partner",
+      "utterance": "What day is today?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "Patient",
+      "utterance": "I'm not sure of the date, but it's Tuesday."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "Partner",
+      "utterance": "You seem to know your name and place. Can you count down from 5 for me?"
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "Patient",
+      "utterance": "5, 4, 3, 2, 1."
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs",
+      "role": "EMT",
+      "utterance": "You are alert and oriented. Your GCS is 15; you are A&Ox4."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "abc_assessment",
+      "role": "EMT",
+      "utterance": "Are you currently having trouble breathing?"
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "abc_assessment",
+      "role": "Patient",
+      "utterance": "No, just chest pressure. I don't have trouble breathing."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "auscultation",
+      "role": "Partner",
+      "utterance": "Let me check your lungs. May I use my stethoscope?"
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "auscultation",
+      "role": "Patient",
+      "utterance": "Yes, please."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "auscultation",
+      "role": "Partner",
+      "utterance": "I hear some slight expiratory wheezing in the upper left lobe."
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "airway_clearance",
+      "role": "EMT",
+      "utterance": "Your airway is clear and maintainable."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Mary, we will now take your blood pressure."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Initial reading: blood pressure 120 over 66, pulse 56, and oxygen saturation of 95%."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "I'm applying the EKG pads. This will assist with your heart rhythm."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "First EKG shows a normal sinus rhythm."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "What medications are you currently taking, if any?"
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "Januvia, Glucotrol, Prinivil, Norvasc, Neurontin, Toprol, Torsemide, and Aldactazide."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "iv",
+      "role": "Partner",
+      "utterance": "I need to start an IV in your arm now, if that's okay."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "iv",
+      "role": "EMT",
+      "utterance": "IV successfully placed in your left hand with an 18-gauge catheter using aseptic techniques."
+    },
+    {
+      "turn": 29,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Rechecking your vitals now for update."
+    },
+    {
+      "turn": 30,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Pulse is 51, your breathing rate is now 14, and your blood pressure is 109 over 66. SpO2 is 96%."
+    },
+    {
+      "turn": 31,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "EKG reveals bradycardia, no immediate distress."
+    },
+    {
+      "turn": 32,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Final recheck shows pulse 49, respiratory rate 16, and blood pressure 187 over 74. SpO2 is 97%."
+    },
+    {
+      "turn": 33,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "EKG results remain within sinus bradycardia, some T wave changes found."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pain_assessment",
+      "role": "Partner",
+      "utterance": "You said the chest discomfort is 8/10?"
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pain_assessment",
+      "role": "Patient",
+      "utterance": "Yes, 8 out of 10."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pain_assessment",
+      "role": "Partner",
+      "utterance": "Does anything worsen or ease the discomfort?"
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "pain_assessment",
+      "role": "Patient",
+      "utterance": "Nothing seems to help or hurt it. I can't pinpoint any trigger."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "The EKG results suggest left ventricular hypertrophy and potential ischemia."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "patient_summary",
+      "role": "Partner",
+      "utterance": "I will log this progression for the hospital. Alerting about the bradycardia and possible LVH."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is in normal range at this time."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "medical_history",
+      "role": "EMT",
+      "utterance": "You mentioned a history of vein clot. No previous cardiac problems listed."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Currently, no new signs of distress observed. EKG remains consistent with LVH findings."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "load_patient",
+      "role": "Partner",
+      "utterance": "Let's assist you onto the stretcher. I'll bring it to a semi-Fowler's position."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "load_patient",
+      "role": "EMT",
+      "utterance": "You're now secured on the stretcher."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "VCU Health has been notified and is ready for you."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "This is based on the EKG results: signs of LVH and possible ischemia."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "Breathing is stable. Respiratory rate remains at 16."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "No change in discomfort reported. EKG readings consistent."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "No issues with breathing. Vitals are consistent with trend. Ready to transport."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "IV and EKG are stable and functioning."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "Transporting in cold mode with EKG monitoring transmitting for the hospital."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "No changes in GCS. IV is intact and no distress in-transit."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "Patient is alert. Vitals have been transmitted to the receiving nurse."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "VCU receiving team has been informed of EKG findings and clinical condition."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "No new symptoms reported during transport. All vitals consistent."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "Final vitals: P 49, R 16, BP 187/74, SpO2 97%. No incidents noted."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "IV and EKG monitoring completed. No issues noted during trip."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "No emergency during transport. Handover is now ready for the receiving team."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "All interventions were administered as required for the ER team."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "Full handoff to the receiving nurse has been accomplished at VCU Health."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "Patient arrived in stable condition. No changes noted during transport."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "No distress, pain, or confusion reported at handover."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "protocols",
+      "role": "EMT",
+      "utterance": "Followed protocol 2-1. All required steps complete: EKG, IV, and vitals."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "protocols",
+      "role": "Partner",
+      "utterance": "Review completes. Fully adhered to medical chest pain protocol."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "No major changes occurred during transport. Status remains consistent."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "IV line continues to function properly. No noted issues during offload."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "All monitoring ceased on arrival, with no issue during handoff."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "Patient not showing any signs of distress, shock, or hypoperfusion."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "Receiving team accepted patient with no problems reported."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "Breathing, pulse, and blood pressure tracked as planned during transport."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "Hospital updated with last reported vitals for record purposes."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "No interventions required during transport to offload as planned."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "Partner",
+      "utterance": "Handoff concluded. All set for clinic."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "verification",
+      "role": "EMT",
+      "utterance": "Final documentation complete. No pending action required."
+    }
+  ]
+}

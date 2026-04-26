@@ -1,0 +1,638 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003653",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit Delta for a sick person at 2300 Redleaf, Apt # Dialysis Room, Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Sarah, an EMT with the rescue squad. What brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "My grandmother, Clara, she's 97, is in here. She's having serious chest pain and can't catch her breath. It's been going on for a while now."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Has she told you anything about the type of pain or when it started?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She says it's a 10 out of 10 pain focused on her chest, and it's been like this for around 30 minutes now."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Clara, can you open your eyes for me?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Yes."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "What is the current year?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "2019."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Can you tell me your name?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Clara."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Alert and Oriented x3. No deficits noted. Glasgow Coma Scale is 15 (eye = 4, verbal = 5, motor = 6)."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Clara, you're breathing. Could you tell me if you need help with your airway?"
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Not really... it feels chest full, tight. Trouble going in and out."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "We see 5 liters of oxygen pre-applied. Would you like us to remove it briefly to check baseline?"
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Ma'am, we're going to take the oxygen off for a moment to check your SPO2. Is that okay?"
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Okay."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Removing nasal cannula now. SPO2 is 99% room air with no signs of distress observed."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Respiratory rate at 19, even. Ma'am, is it getting harder to breathe or is it the same?"
+    },
+    {
+      "turn": 20,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Same. Equal rise and fall."
+    },
+    {
+      "turn": 21,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Equal chest rise and fall confirmed. No signs of labored breathing."
+    },
+    {
+      "turn": 22,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Any pain when you take a deep breath or cough?"
+    },
+    {
+      "turn": 23,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "No, it's constant, behind the sternum only."
+    },
+    {
+      "turn": 24,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "You're breathing okay right now. Your skin is warm, pink, and dry."
+    },
+    {
+      "turn": 25,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is 83. Strong and regular with normal peripheral pulses. Blood pressure is 138/88."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Clara, I need to know-did the chest pain just come on suddenly or did it develop over time?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It started 30 minutes ago. Same as when I was at Chippenham on Friday. I feel terrible fullness at the center."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "They treated you at Chippenham for the same condition? Did they give you anything?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, same symptoms. Only 0.8 liters of fluid drawn in my dialysis today."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "What medications are you currently taking?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Bystander",
+      "utterance": "She takes Tylenol, Catapres, Benadryl, Albuterol, Synthroid, Lortab, Nitroglycerin, Zofran, and Hydralazine."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Are you on insulin?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "Yes, I'm insulin dependent for diabetes, and I do dialysis."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Are you also on Diphenhydramine and Metoclopramide?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Bystander",
+      "utterance": "Yes, Benadryl and Metoclopramide."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Any prior medical conditions or surgeries I need to be aware of?"
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Hypothyroidism, diabetes, and dialysis. No major surgeries I can recall."
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "EMT",
+      "utterance": "Before the chest pain started, were you resting or doing something like sitting up, walking, or moving?"
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Patient",
+      "utterance": "Just sitting in my dialysis chair. I was on the machine when the chest pain came on 30 minutes ago."
+    },
+    {
+      "turn": 40,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, with 10 being the worst, how would you rate your chest discomfort right now?"
+    },
+    {
+      "turn": 41,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Patient",
+      "utterance": "10. It's pure fullness, right in the center."
+    },
+    {
+      "turn": 42,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does the pain travel to your arms, jaw, or back?"
+    },
+    {
+      "turn": 43,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "No, it stays right in the chest where I am."
+    },
+    {
+      "turn": 44,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "Does changing position or resting help?"
+    },
+    {
+      "turn": 45,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "No, it lingers. Pain is always there."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Let's check your head and neck. Tilt your head up slightly for me, if you can."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "Yes."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Head shows no lacerations or abrasions. No swelling, tracheal deviation, or stiffness noted."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Can you breathe in deep for me while I listen to your lungs and chest?"
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Patient",
+      "utterance": "Sure."
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Chest has equal rise and fall. No wheezes or crackles. All breathing sounds are normal."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "Extremities symmetric, strong peripheral pulses. No deformities or wounds."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 78."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations at 16."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 199/67."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SPO2 is 99%."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose reading is 0-unable to obtain a proper reading."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Getting ready to start 4-lead EKG now."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Clara, we will be placing you on a heart monitor to check how your heart is beating."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "The dialysis team gave you nitroglycerin earlier. When was the last time you received it?"
+    },
+    {
+      "turn": 61,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Patient",
+      "utterance": "Yes. My last dose was at 1350."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Partner, administer 324 mg aspirin to Clara per protocol."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Aspirin loaded and given. Patient took it without issue."
+    },
+    {
+      "turn": 64,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Using protocol for chest pain-cardiac suspected. We will continue monitoring and prepare for transport."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Clara, we are going to check your vitals again now-vital signs are repeated."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse 82, respirations 27, and blood pressure 172/73."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "SPO2 is 98% currently. Patient still not in distress."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Taking another 12-lead EKG for the third time."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Clara, we need your permission to do another EKG for the third time. Is that okay?"
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "Patient",
+      "utterance": "Yes, proceed."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Initial EKG shows possible ST elevation in II, aVF, and III. Artifact present. Possible STEMI noted."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Partner, put her supine and re-perform the EKG for clarity."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Artifact reduced. No STEMI now caught. Monitor shows atrial fibrillation with occasional ventricular premature complexes and aberrant conduction."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Updated reading is no STEMI. Cardiac monitoring ongoing. Ventricular premature complexes observed on prior tracings."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Bystander, where do you want us to transport her?"
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "Chippenham, it's the dialysis center."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient loaded on stretcher with 5-point harness. Are you comfortable being sent to Chippenham?"
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Bystander",
+      "utterance": "Yes, please continue to Chippenham."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Chippenham accepted as destination. Transporting with full protocol in place."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Stretcher secured. All harnesses locked and stable."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She is safely on the stretcher. Transporting with all safety measures taken."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Keeping oxygen off for baseline readings for now."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Partner",
+      "utterance": "Patient is Clara, 97-year-old female-non-allergic. Insulin dependent and on dialysis."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Her diagnosis is chest pain-angina and unspecified respiratory issue."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "12-lead EKG initially showed STEMI, but cleared after artifact reduction."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Partner",
+      "utterance": "Vitals: Pulse 82, Resp 27, BP 172/73, SPO2 98%. Final EKG shows no STEMI."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Atrial fibrillation with occasional ventricular premature complexes and aberrant conduction present."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Partner",
+      "utterance": "Aspirin 324 mg administered. Dialysis team provided two 0.4 mg nitroglycerin prior to arrival."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "No significant trauma, hypoxia, or tachypnea observed on scene."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Partner",
+      "utterance": "Patient transported with stretcher secured and all harnesses locked."
+    }
+  ]
+}

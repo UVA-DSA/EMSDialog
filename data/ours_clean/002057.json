@@ -1,0 +1,526 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002057",
+  "protocol": [
+    "medical - diabetic - hypoglycemia (protocol 3 - 8)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond to the outpatient clinic on Main Street for an unconscious or fainting patient."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex from the rescue squad. Can you tell me what's happening?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She started acting confused this afternoon. We called 911 about 10 minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Has she ever lost consciousness or fainted?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "She is awake but confused. Let's check her level of responsiveness."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Paramedic",
+      "utterance": "She opens her eyes when we speak. What year is it?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Patient",
+      "utterance": "I think... Maybe 2020? Not sure."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Paramedic",
+      "utterance": "Where are you right now?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Patient",
+      "utterance": "At the clinic. I'm her coworker."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Paramedic",
+      "utterance": "Repeat my words: \"Today is Thursday.\""
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Patient",
+      "utterance": "\"Today is Thursday.\""
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Paramedic",
+      "utterance": "Point to the door if you understand."
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Patient",
+      "utterance": "(points toward the door)"
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "EMT",
+      "utterance": "Airway is clear. Let's move to breathing."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "Breathing is 20 per minute, regular, and bilaterally clear."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 97%."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Her blood pressure is 142 over 86."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "EMT",
+      "utterance": "Pulse is 70 and regular. She appears pale and visibly diaphoretic."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose by stick is 45 mg/dL. Very low."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Paramedic",
+      "utterance": "Appears to be answering questions with confusion still."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs and symptoms",
+      "role": "EMT",
+      "utterance": "You said she was confused. Any additional symptoms?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs and symptoms",
+      "role": "Bystander",
+      "utterance": "Yes. But no fainting, only changed mental status."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "EMT",
+      "utterance": "Does she have a history of diabetes or other chronic illness?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "Bystander",
+      "utterance": "Yes, insulin-dependent diabetes."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "EMT",
+      "utterance": "She's on insulin and no other meds or allergies?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "Bystander",
+      "utterance": "Only insulin. No other medications."
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "EMT",
+      "utterance": "She was friendly. Is she in any pain?"
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "Bystander",
+      "utterance": "No pain, just confusion."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is now 30 mg/dL. Continues to drop."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is 16 per minute, regular."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse remains 68 and regular."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 136 over 84."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG strip normal. No signs of cardiac involvement."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "give medications",
+      "role": "EMT",
+      "utterance": "Let's administer 15 grams of glucose orally."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "give medications",
+      "role": "Patient",
+      "utterance": "I took some, but I spit most of it out."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "First IV attempt in right arm-24g needle used."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "Trying left hand now with a 22g cannula for vein access."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Paramedic",
+      "utterance": "Both IV attempts unsuccessful. No access yet."
+    },
+    {
+      "turn": 39,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide ems protocol",
+      "role": "EMT",
+      "utterance": "Per her condition and protocol, we will transport her to Retreat for further evaluation."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "EMT",
+      "utterance": "No additional meds needed due to lack of IV access."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "Retreat Hospital is best for receiving IV glucose therapy."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Miriam, we're helping you lie down on the stretcher now."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "She is now securely loaded and ready for transport."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "We're keeping her warm and prepared for the drive."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Partner",
+      "utterance": "IV will be attempted at the hospital if possible."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "Partner",
+      "utterance": "Glucose remains 30. Still no IV access on scene."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "EMT",
+      "utterance": "Transporting per hypoglycemia protocol."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Paramedic",
+      "utterance": "IV catheter remains cold for hospital use."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Cold catheter ready for potential hospital IV."
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Paramedic",
+      "utterance": "She remains non-fully oriented. We're keeping her stable."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "destination decision",
+      "role": "Paramedic",
+      "utterance": "All prepped and ready for Retreat Hospital transport."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "EMT",
+      "utterance": "No change. Protocol active for transport."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is still 30 at transport start."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "O2 at 99%. Breathing looks fine."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse stable at 68."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP at 136/84, same as before transport."
+    },
+    {
+      "turn": 57,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide ems protocol",
+      "role": "EMT",
+      "utterance": "Still under Protocol 3-8 during transport."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Cold IV placed for hospital use."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "Partner",
+      "utterance": "No additional meds or procedures en route."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Miriam, the hospital is just ahead. We'll get you there soon."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Cold IV line ready for hospital access."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Paramedic",
+      "utterance": "Both arms tried. Hospital IV planned."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Confusion worsened just before 911 call."
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Cold IV on board for hospital use."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake interventions",
+      "role": "EMT",
+      "utterance": "No improved alertness during transport."
+    },
+    {
+      "turn": 66,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Still 30 on scene and in the vehicle."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "Partner",
+      "utterance": "Glucose unchanged. Transport ongoing."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Cold IV ready for hospital insertion."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "No pain reported at any point."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "All vital signs are viable and stable."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake vital signs",
+      "role": "Partner",
+      "utterance": "Most recent check-pulse, breathing, and BP normal."
+    },
+    {
+      "turn": 72,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide ems protocol",
+      "role": "EMT",
+      "utterance": "Hypoglycemia protocol still active."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "No IV achieved here. All transport prep done."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement secured",
+      "role": "EMT",
+      "utterance": "Cold IV ready if hospital needs it."
+    }
+  ]
+}

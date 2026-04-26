@@ -1,0 +1,624 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003054",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 2, respond to 12345 Main St for breathing problems, priority one."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Megan with the rescue squad. What's the main issue that led to the 911 call?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She's been short of breath for two days now. Her nurse called when she started wheezing."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Ma'am, can you tell me your name and where we are?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "I'm Jane. I'm in Richmond."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "Can you squeeze my fingers?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "I can try."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS_threshold",
+      "role": "Paramedic",
+      "utterance": "Great. What day is today?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Today is Saturday."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is open and clear."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "I'm going to take a quick listen to your chest."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "I heard wheezing in both lungs. I'll add some oxygen at 6 liters per minute."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "We're starting 6LPM oxygen now. That's okay with you?"
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "I'm going to check for a pulse now."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Radial pulse is strong and regular."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respirations are regular in depth, but rapid in rate, about 16 per minute."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 108 over 69."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 92%."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 117."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Tell me more about the breathing issues."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "The shortness of breath started two days ago and got worse today."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - events_leading_up",
+      "role": "Paramedic",
+      "utterance": "Anything specific happened before the wheezing began?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - events_leading_up",
+      "role": "Bystander",
+      "utterance": "She had dialysis this morning, they took out three liters. Her nurse noticed she started wheezing during her wound care."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - pertinent_past",
+      "role": "EMT",
+      "utterance": "Have you had any other medical conditions?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - pertinent_past",
+      "role": "Patient",
+      "utterance": "I have mild asthma, diabetes with neuropathy, and end-stage kidney disease."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - medications",
+      "role": "EMT",
+      "utterance": "What medications are you currently using?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - medications",
+      "role": "Patient",
+      "utterance": "Albuterol, Prilosec, Neurontin, aspirin, Lipitor, Mirtazapine, and Ambien."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - allergies",
+      "role": "EMT",
+      "utterance": "Do you have any known allergies or reactions?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - allergies",
+      "role": "Patient",
+      "utterance": "I'm allergic to Reglan."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - last_intake",
+      "role": "EMT",
+      "utterance": "When was the last time you ate or drank?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE - last_intake",
+      "role": "Patient",
+      "utterance": "I had some tea in the morning before dialysis."
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "OPQRST - pain",
+      "role": "EMT",
+      "utterance": "Have you experienced any pain or discomfort recently?"
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "OPQRST - pain",
+      "role": "Patient",
+      "utterance": "No chest pain, but I do feel a little lightheaded."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Skin Exam",
+      "role": "EMT",
+      "utterance": "Let me check your skin and color now."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Skin Exam",
+      "role": "Partner",
+      "utterance": "Skin is warm, dry, and normal in color."
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Head and Neck Exam",
+      "role": "Paramedic",
+      "utterance": "I'd like you to follow my finger with your eyes."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Head and Neck Exam",
+      "role": "Patient",
+      "utterance": "Sure."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Head and Neck Exam",
+      "role": "Paramedic",
+      "utterance": "Pupils are equal, round, and reactive."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Ears",
+      "role": "Nose, Mouth and Throat Exam; EMT",
+      "utterance": "Let me quickly look at your nose and throat."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Ears",
+      "role": "Nose, Mouth and Throat Exam; Partner",
+      "utterance": "No bleeding or other abnormalities noted in the airway or throat."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Thorax/Lungs Cardio",
+      "role": "Paramedic",
+      "utterance": "I'll take another listen to your lungs."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "Thorax/Lungs Cardio",
+      "role": "Partner",
+      "utterance": "The wheezing is still heard bilaterally."
+    },
+    {
+      "turn": 43,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_protocol",
+      "role": "Paramedic",
+      "utterance": "We're proceeding with Respiratory Distress, Protocol 3-11."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "procedures",
+      "role": "EMT",
+      "utterance": "Applying a 4-lead EKG monitor now."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Starting a Duoneb treatment with Albuterol 5mg and Atrovent 0.5mg at 6LPM."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "procedures",
+      "role": "Paramedic",
+      "utterance": "Attempting to start an IV in your left wrist."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "procedures",
+      "role": "Partner",
+      "utterance": "20G IV attempted in left wrist, but unsuccessful."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Beginning another nebulizer dose with Albuterol 5mg."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "repeat_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 92."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "repeat_respiration",
+      "role": "EMT",
+      "utterance": "Breathing steady at 16 per minute."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "repeat_BP",
+      "role": "EMT",
+      "utterance": "Blood pressure is 93 over 60 now."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "repeat_O2",
+      "role": "Partner",
+      "utterance": "O2 saturation is now 99%."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "repeatGlucose",
+      "role": "EMT",
+      "utterance": "Blood glucose remains at 0."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "repeat_medications",
+      "role": "Paramedic",
+      "utterance": "Giving a second Albuterol nebulizer treatment at 6LPM."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "repeat_ekg_lead",
+      "role": "Partner",
+      "utterance": "4-lead EKG shows sinus rhythm again."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Performing a 12-lead EKG to confirm the rhythm."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Updated vitals: Pulse 90, respirations 16, BP 99 over 63, O2 99%, EKG normal."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We're heading to VCU Medical Center. Is that okay?"
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "That's fine."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "sec_to_stretcher",
+      "role": "Paramedic",
+      "utterance": "Securing you to the stretcher using the 5-point harness."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "EMT",
+      "utterance": "Transitioning care to Bed 27 at VCU ED with full report given to the staff."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Partner",
+      "utterance": "Baseline vitals and care details have been conveyed."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Paramedic",
+      "utterance": "IV attempt in left wrist reported and EKG readings transferred."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "EMT",
+      "utterance": "Updated on Duoneb and second nebulizer administered to ED team."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Paramedic",
+      "utterance": "All necessary documentation is ready for Bed 27."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Partner",
+      "utterance": "GCS is 15 and no hypoxia observed during our care."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "EMT",
+      "utterance": "All patient updates and care documentation passed."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Second EKG confirmed sinus rhythm remains."
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Blood glucose remains at 0."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "O2 saturation remains stable at 99%."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Pulse stays steady at 90."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "in-transit_updates",
+      "role": "Partner",
+      "utterance": "Vital signs have been updated for the ED."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "ongoing_monitoring",
+      "role": "EMT",
+      "utterance": "Patient is stable with no new symptoms during transport."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "in-transit_updates",
+      "role": "Paramedic",
+      "utterance": "All vitals have been consistent over the past 20 minutes."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "hospital_arrival",
+      "role": "EMT",
+      "utterance": "HCP, we are transferring to Bed 27 at VCU ED now."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "hospital_arrival",
+      "role": "Partner",
+      "utterance": "Bed is ready at VCU Health as confirmed."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Paramedic",
+      "utterance": "We are placing her into Bed 27 now."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "EMT",
+      "utterance": "Patient data, medications, and condition fully conveyed to the ED team."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Paramedic",
+      "utterance": "All medications are shared with ED team, including Atorvastatin."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Partner",
+      "utterance": "Initial blood glucose of 117 and full intake reported."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Paramedic",
+      "utterance": "Protocol 3-11 utilized and confirmed with ED team."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "hospital_arrival",
+      "role": "Partner",
+      "utterance": "Transfer is finalized for Bed 27."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "EMT",
+      "utterance": "All care details and notes conveyed to ED staff."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Paramedic",
+      "utterance": "Full hand over complete, ED is now responsible."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Partner",
+      "utterance": "All secured, patient comfortable, and ED staff briefed."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Paramedic",
+      "utterance": "Left wrist IV attempt noted."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "EMT",
+      "utterance": "No further treatment done prior to ED care takeover."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "care_turned_over",
+      "role": "Paramedic",
+      "utterance": "All medications and protocols shared with Bed 27 RN."
+    }
+  ]
+}

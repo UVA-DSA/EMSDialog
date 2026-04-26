@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003350",
+  "protocol": [
+    "medical - abdominal pain (protocol 3 - 2)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3 responding for a sick person with abdominal pain and nausea at 111 Broad Street."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Jordan, an EMT. Can you tell me your main issue today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She's been having severe stomach pain with nausea for hours. Seems really uncomfortable."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Ma'am, can you confirm your main issue?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Dolor abdominal, naúseas."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, what is your name?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "María."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "EMT",
+      "utterance": "She appears alert and oriented to person. Where are we?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "Bystander",
+      "utterance": "She knows she's in Richmond."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "EMT",
+      "utterance": "She is oriented to person and place. GCS is 15. She is alert and oriented to all four."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Let's check your breathing. Are you breathing normally?"
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Sí, tranquila. No cólico."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "She is breathing unlabored with no signs of distress. No cyanosis or work of breathing noted."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Ma'am, we'll check your pulse."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 69, regular, and strong."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 16 and unlabored."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "O2 saturation reads 97%."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 159/73."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Applying ECG leads now for heart monitoring."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "4-lead EKG shows sinus rhythm with first-degree AV block."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "We'll check your blood sugar now."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is 144."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Ma'am, when did the pain start?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "It started at 9 PM when she was at home watching TV."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Where is the pain, and what does it feel like?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Bystander",
+      "utterance": "She says it's centralized in the stomach, like pressure, and rated 8/10."
+    },
+    {
+      "turn": 27,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "Does the pain vary in strength or stay steady?"
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Bystander",
+      "utterance": "It remains strong without improvement."
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Does the pain travel anywhere else, like the back or legs?"
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Bystander",
+      "utterance": "She says it sometimes goes into the back and right leg."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Are there signs of bruising, rashes, or previous surgical scars?"
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Bystander",
+      "utterance": "She has a scar on her abdomen near the midline."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Let's listen to your heart and lungs. Can you take a deep breath?"
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Bystander",
+      "utterance": "Breathing is clear on one side but may be diminished on the other."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Breathing sounds are clear bilaterally."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Performing a 12-lead EKG for detailed heart analysis."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12-lead EKG showing LBBB, no STE at this time."
+    },
+    {
+      "turn": 38,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Based on vitals and EKG results, we'll follow protocol 3-2 for abdominal pain with cardiac monitoring."
+    },
+    {
+      "turn": 39,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Ma'am, where would you like to go?"
+    },
+    {
+      "turn": 40,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "She insists on Chippenham Hospital."
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Let's transfer you to the stretcher using a stair chair for safety."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 70, regular."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is 138/66."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Spo2 is 95%."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "Paramedic",
+      "utterance": "We'll start an IV in your left wrist for medication access if needed."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Second blood sugar is 0, likely a technical error due to insufficient sample."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "EMT",
+      "utterance": "How about now, has the pain changed in intensity?"
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Bystander",
+      "utterance": "Pain is still an 8, remains consistent without reduction."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Repeating the 12-lead EKG. Showing LBBB with evidence of LVH."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Rechecking vitals for a final confirmation before transport."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 71, regular."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is 146/89."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Spo2 is 97%."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let's transfer you to the stretcher now."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "Proceeding toward Chippenham Hospital."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Securing you on the stretcher for transport."
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "Double-checking IV placement and EKG readings."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "LBBB remains, no STE, but new signs of long QT interval and LVH."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Still an 8/10, with back and right leg involvement."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Still reporting nausea, no chest pain or diaphoresis."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "She has not shown any acute deterioration in status."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your seatbelt is secure for transport."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "We've reached Chippenham Hospital and are preparing to transfer to ED room 21."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "ED team, we are following protocol 3-2 for abdominal pain and cardiac monitoring."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "Vitals on arrival are 146/89, 71, 97% O₂, pain 8/10."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "12-lead EKG shows LBBB and left ventricular hypertrophy."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "Patient is alert and oriented to all four, GCS 15, no pallor noted."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "IV is in the left wrist, no medications given so far."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "Medical history includes hypertension and a known AAA."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "She has a documented history of primary hypertension and prior myocardial infarction."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "Vitals remained stable during transport."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "First EKG raised concern for STEMI; recent readings exclude STE."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "Initial EKG interpretation suggested anterolateral infarct, but this was not confirmed."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "She is alert, with no chest pain or diaphoresis upon reassessment."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "Early STEMI concern revised; now excluding STE, but LVH and LBBB remain."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "Updated EKG shows prolonged QT interval and high voltage QRS."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "Recommend re-checking blood glucose in the ED due to zero reading earlier."
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "She has a documented hypertension history."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "Bystander, please assist with health details."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "All straps and rails are in place."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "She is in ED room 21."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "First EKG showed STEMI concern, later readings exclude STE."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "Patient is alert and not in distress."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "All baseline procedures completed."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "No acute changes or distress noticed."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "Vitals remain stable."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "ED team, please monitor cardiac enzymes and renal function next."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "Keep IV and vitals under observation."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "Recommend detailed EKG notes due to ongoing LBBB and LVH."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "History of AAA and hypertension noted for ED staff."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "Keep monitoring IV access in the ED."
+    },
+    {
+      "turn": 92,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "I will stay with patient during ED transition."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "Patient is stable and ready for ED care."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "She is alert, oriented, and not in distress."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "Continue IV and EKG monitoring as needed."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "Monitor for any changes in AAA status."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "Notes about AAA included in EPCR."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Partner",
+      "utterance": "Full documentation complete and patient transferred."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "EMT",
+      "utterance": "Final notes submitted and transfer is complete."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "arrive_hosp",
+      "role": "Paramedic",
+      "utterance": "Patient is stable and receiving ongoing care."
+    }
+  ]
+}

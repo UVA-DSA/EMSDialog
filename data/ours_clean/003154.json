@@ -1,0 +1,631 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003154",
+  "protocol": [
+    "medical - abdominal pain (protocol 3 - 2)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3, respond for a call related to acute lower abdominal pain and reported blood in stool."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, my name's Alex, an EMT with the rescue squad. What brought you to call for help today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've had lower abdominal pain with dark red blood in my stool for the past couple of days."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "symptoms",
+      "role": "EMT",
+      "utterance": "Have you noticed other symptoms, such as vomiting or changes in your bowel movements?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "symptoms",
+      "role": "Patient",
+      "utterance": "I vomited once yesterday with diarrhea and blood-tinged stool, but not since."
+    },
+    {
+      "turn": 6,
+      "topic": "Chief Complaint",
+      "micro_intent": "previous_conditions",
+      "role": "EMT",
+      "utterance": "You said you had a similar episode three weeks ago. What was determined back then?"
+    },
+    {
+      "turn": 7,
+      "topic": "Chief Complaint",
+      "micro_intent": "previous_conditions",
+      "role": "Patient",
+      "utterance": "It was a bladder infection at that time."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Are you alert and responsive to questions and stimulation?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "You're opening your eyes completely. Are you responding appropriately now?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "You seem oriented and answering clearly to verbal input."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Please point both hands toward me one at a time and move your head toward me when I nod."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "(Complies with hand and head movement.)"
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "EMT",
+      "utterance": "You are fully alert and oriented with a GCS of 15-eye 4, verbal 5, motor 6."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "I'm checking your airway and confirming there is no obstruction. No issues found so far."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Your breathing is regular at 18 breaths per minute and appears unlabored."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Are you experiencing any cyanosis or unusual sounds during breathing?"
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "No, I haven't noticed those."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "I need to feel your pulse and check for signs of poor perfusion. Can I take your wrist here?"
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is strong at 106, and skin appears flushed but not pale or cyanotic."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is elevated at 171/95. Has this been typical for you?"
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 18 per minute-normal but slightly increased."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse remains at 106 beats per minute."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 173-this is elevated and fits your known diabetic status."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation reading is 96 percent on ambient air."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "4-lead EKG shows sinus tachycardia, no signs of acute MI."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "When did the pain first begin and how is it best described?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It started two days ago as a sharp, deep ache lower in my abdomen."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Have you noticed anything that makes the pain worse or better?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It has been constant; moves don't help and it won't go away."
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Do you have any known allergies to medications or substances?"
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "I don't have any known allergies."
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "What medications are you currently using to manage your health?"
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "Taking Clonidine, famotidine, and metformin on a regular schedule."
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_medical_history",
+      "role": "EMT",
+      "utterance": "Any prior issues you want me to know such as diabetes or high blood pressure?"
+    },
+    {
+      "turn": 35,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_medical_history",
+      "role": "Patient",
+      "utterance": "I have type 2 diabetes, hypertension, and GERD as known issues."
+    },
+    {
+      "turn": 36,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "When was your last meal or fluids before the pain started?"
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Patient",
+      "utterance": "I just had coffee around 3 a.m. the other day."
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading",
+      "role": "EMT",
+      "utterance": "How has the pain changed or progressed since it began?"
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading",
+      "role": "Patient",
+      "utterance": "It stayed about the same, but never went away. It's always there."
+    },
+    {
+      "turn": 40,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "EMT",
+      "utterance": "When exactly did the acute phase of the pain begin?"
+    },
+    {
+      "turn": 41,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "Right around 2 days ago without a clear trigger, I think."
+    },
+    {
+      "turn": 42,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "EMT",
+      "utterance": "Have you noticed anything causing or worsening the pain?"
+    },
+    {
+      "turn": 43,
+      "topic": "Pain Assessment",
+      "micro_intent": "provocation",
+      "role": "Patient",
+      "utterance": "Not really-no position or food makes it any better at any time."
+    },
+    {
+      "turn": 44,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "What words would best describe the type of pain you're feeling?"
+    },
+    {
+      "turn": 45,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Patient",
+      "utterance": "It's a sharp, stabbing pain more than a dull one."
+    },
+    {
+      "turn": 46,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "EMT",
+      "utterance": "Has it traveled or spread to other areas of your body?"
+    },
+    {
+      "turn": 47,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "It stays localized-only in my lower abdomen."
+    },
+    {
+      "turn": 48,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "How severe is it using a 1-10 scale where 10 is the worst?"
+    },
+    {
+      "turn": 49,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "It's at 10, exactly. It never lets up."
+    },
+    {
+      "turn": 50,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "EMT",
+      "utterance": "Has the pain increased, decreased, or remained steady over time?"
+    },
+    {
+      "turn": 51,
+      "topic": "Pain Assessment",
+      "micro_intent": "time",
+      "role": "Patient",
+      "utterance": "It has been consistent throughout-no real change."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I'll now review your skin for signs like rashes or swelling."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "No bruising, scars, or rashes are present, and turgor remains normal."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Temperature from inner right calf feels warm; skin appears reddened under stress."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Next, I'll evaluate your head, eyes, and neck for any issues."
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Are you experiencing any headaches or visual issues right now?"
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "No, just the abdominal pain from before."
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "You've been alert with A&O x 4-time, place, person, and situation."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_exam",
+      "role": "EMT",
+      "utterance": "Your ears, nose, and mouth appear clear with no discharge or blockage."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "No chest signs, but I'll quickly check your heart and lungs."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Bilateral breath sounds are normal with no wheeze or crackles."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Heart rhythm is clear, consistent with the EKG from earlier."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "There's guarding when I press over the lower right area-does that hurt?"
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Patient",
+      "utterance": "Yes, it hurts more in that area, around the lower right region."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Your abdomen has no visible distention and normal bowel sounds."
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "Have you experienced any nausea or vomiting recently?"
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Patient",
+      "utterance": "Some nausea yes, but only one episode of vomiting recently."
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "You have rectal bleeding with dark red stool-describe how often it occurs."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "Patient",
+      "utterance": "Diarrhea comes with the blood about since the pain began."
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "EMT",
+      "utterance": "I'll now check your upper and lower extremities for signs of injury or swelling."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_back_exam",
+      "role": "EMT",
+      "utterance": "No apparent deformities, angulation, or known motor issues on review."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is still elevated at 109 and increasing slightly over time."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "respiratory_rate",
+      "role": "Partner",
+      "utterance": "Your breaths increased to 20 per minute, consistent with stress."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Vital Signs",
+      "micro_intent": "blood_pressure",
+      "role": "Partner",
+      "utterance": "Blood pressure remains high at 174/88, but trending slightly upwards."
+    },
+    {
+      "turn": 75,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose dropped to 0-possibly due to lack of intake and vomiting."
+    },
+    {
+      "turn": 76,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen levels are at 96 percent and slightly improved since earlier baseline."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12-lead EKG reaffirms sinus tach with T wave changes but no cardiac signs."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Given poor access, attempting IV is not possible at this time."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Continuous 4-lead monitoring will help track any rapid changes."
+    },
+    {
+      "turn": 80,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Per your vitals and presentation, Patient is under Protocol 3-2 for abdominal pain."
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Repeat vitals confirm trends-BP 195/77, pulse 112, stable breathing."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Paramedic",
+      "utterance": "Pain remains at 10/10, focused to lower right and unchanging in features."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Paramedic",
+      "utterance": "No new information noted on repeat history review."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "VCU ED has been selected for ED receive and continued management."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "secure_movement",
+      "role": "Partner",
+      "utterance": "Patient has been transferred and secured in semi-Fowler's position for transport."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "cold_transport",
+      "role": "EMT",
+      "utterance": "Patient is being transported in a cold condition due to active GI bleed signs."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "distress",
+      "role": "Partner",
+      "utterance": "She has been in distress since initial contact, with guarding showing persistent pain."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "hematemesis",
+      "role": "Paramedic",
+      "utterance": "Earlier history includes vomiting, a potential sign of GI tract bleeding."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "nausea",
+      "role": "Paramedic",
+      "utterance": "Nausea was reported once and may be related to the ongoing medical condition."
+    }
+  ]
+}

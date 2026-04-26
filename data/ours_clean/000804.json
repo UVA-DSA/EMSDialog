@@ -1,0 +1,806 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000804",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 5 responding for a call of chest pain."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, my name is Monica, and I'm an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I'm having some chest pain. It started about 30 minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Can you tell me your name and the date today?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "EMT",
+      "utterance": "What county are we in? What happened earlier today?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is Jessica, and today is May 20, 2020. We are in Richmond. I was waiting for the bus when I started to feel chest pain."
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "I want to make sure everything's okay. Can you talk and breathe comfortably?"
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "Yes, I can."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Are you having difficulty breathing at the moment?"
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "Not really, though I do feel a bit short of breath."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation_skin_color",
+      "role": "EMT",
+      "utterance": "I see strong, regular pulses. Your breathing is not labored. Your skin is not pale or sweaty."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation_skin_color",
+      "role": "Patient",
+      "utterance": "Correct, that's how it is."
+    },
+    {
+      "turn": 13,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Can you describe the chest pain for me? Where is it exactly?"
+    },
+    {
+      "turn": 14,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It's in the center of my chest and feels like a constant pounding."
+    },
+    {
+      "turn": 15,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "EMT",
+      "utterance": "Is the pain steady or does it come and go?"
+    },
+    {
+      "turn": 16,
+      "topic": "Pain Assessment",
+      "micro_intent": "quality",
+      "role": "Patient",
+      "utterance": "It's constant and hasn't moved."
+    },
+    {
+      "turn": 17,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "If 10 is the worst pain you can imagine, how bad is your pain right now?"
+    },
+    {
+      "turn": 18,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "About an 8."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Can you tell me about your medical history?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have major depression, bipolar disorder, diabetes, asthma, chronic pancreatitis, and chronic gastritis."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_information",
+      "role": "EMT",
+      "utterance": "How old are you?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_information",
+      "role": "Patient",
+      "utterance": "I'm 36."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I noticed you're not pale or sweaty, is that accurate?"
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "That's right, I'm not."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Vital signs: Pulse is 93 beats per minute."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 16 per minute."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 124 over 81."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 98% on room air."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "I'm trying to get a glucose reading, but it remains unobtainable."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Let's begin the ECG monitoring now."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The 12-lead ECG shows sinus rhythm."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "I'll apply the 4-lead monitor as part of our initial cardiac protocol."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're using protocol 2-1 for suspected cardiac chest pain."
+    },
+    {
+      "turn": 34,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_protocol",
+      "role": "EMT",
+      "utterance": "We're following protocol 2-1 for suspected cardiac chest pain."
+    },
+    {
+      "turn": 35,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 99 beats per minute."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is at 127 over 86."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is still 16."
+    },
+    {
+      "turn": 38,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation has increased to 99%."
+    },
+    {
+      "turn": 39,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Partner",
+      "utterance": "ECG: still shows a normal sinus rhythm for an 18-39-year-old female."
+    },
+    {
+      "turn": 40,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Would you prefer to be taken to VCU Health Systems?"
+    },
+    {
+      "turn": 41,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "Yes, I'd like to go there."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We'll move you to the ambulance now for safe transport."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You're safely secured on the stretcher."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are alert and oriented to all four-name, time, place, and person. Is that correct?"
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your breathing is still normal and not labored."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "That's correct, nothing's changed."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "You mentioned a chronic cough that's lasted about a month, right?"
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, it's still there but not worse than before."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Your skin looks normal. No pallor or rashes noticeable."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "That's correct, nothing's changed."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll transport you in a supine position for safety."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're all set. We'll take you to the hospital now."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Let me double-check your ECG for any changes."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Everything is still consistent with normal sinus rhythm."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Your ECG is stable and still showing no concerning changes."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_onset",
+      "role": "EMT",
+      "utterance": "Your chest pain started suddenly. Has any aspect of it changed since then?"
+    },
+    {
+      "turn": 57,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_onset",
+      "role": "Patient",
+      "utterance": "No, it's remained steady and the same."
+    },
+    {
+      "turn": 58,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_provocation",
+      "role": "EMT",
+      "utterance": "Was there any activity or movement that caused the pain to start?"
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_provocation",
+      "role": "Patient",
+      "utterance": "No, I was just waiting for the bus."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_quality",
+      "role": "EMT",
+      "utterance": "The pain still feels like a pounding?"
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_quality",
+      "role": "Patient",
+      "utterance": "Yes, like before."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_radiation",
+      "role": "EMT",
+      "utterance": "Is the pain staying in the center or spreading to other areas?"
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_radiation",
+      "role": "Patient",
+      "utterance": "It's staying right in the middle, not going anywhere."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "EMT",
+      "utterance": "Does it remain at 8 on the pain scale?"
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_severity",
+      "role": "Patient",
+      "utterance": "Still about eight."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_time",
+      "role": "EMT",
+      "utterance": "So it's been about 30 minutes since it started?"
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment_time",
+      "role": "Patient",
+      "utterance": "Yes, that's right."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_collect_patient_information",
+      "role": "EMT",
+      "utterance": "Your weight is listed as 54 kg. Is that correct?"
+    },
+    {
+      "turn": 69,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_collect_patient_information",
+      "role": "Patient",
+      "utterance": "Yes, that's accurate."
+    },
+    {
+      "turn": 70,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_current_medications",
+      "role": "EMT",
+      "utterance": "What medications are you currently taking?"
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_current_medications",
+      "role": "Patient",
+      "utterance": "I take trazodone, Humulin N, Albuterol, Humalog, and paroxetine."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_allergies",
+      "role": "EMT",
+      "utterance": "Do you have any known allergies to medications or foods?"
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_allergies",
+      "role": "Patient",
+      "utterance": "I'm allergic to seafood and shellfish."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "You didn't mention nausea, vomiting, or dizziness. Correct?"
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "That's right, none of those."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "eyes_exam",
+      "role": "EMT",
+      "utterance": "Eyes are clear with no signs of trauma."
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_exam",
+      "role": "EMT",
+      "utterance": "Ears are normal with no visible drainage."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mouth_exam",
+      "role": "EMT",
+      "utterance": "Mouth is normal, no obstruction or sores."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_exam",
+      "role": "EMT",
+      "utterance": "Head and neck are normal with no unusual findings."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest_exam",
+      "role": "EMT",
+      "utterance": "You don't have any chest deformities or noticeable tenderness."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "Your abdomen looks normal and shows no signs of pain."
+    },
+    {
+      "turn": 82,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "EMT",
+      "utterance": "You are alert and oriented to all four-person, place, time, and event. Correct?"
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "Yes, I'm aware and functioning well."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Moving you now with full support."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You are safely seated and secured in the ambulance."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You'll be taken directly to Room 18 at the hospital."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_events_leading_up",
+      "role": "EMT",
+      "utterance": "What were you doing just before the pain began?"
+    },
+    {
+      "turn": 88,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_events_leading_up",
+      "role": "Patient",
+      "utterance": "I was waiting for the bus and it was totally uneventful."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "redo_primary_assessment_check_circulation_skin_color",
+      "role": "EMT",
+      "utterance": "Skin is still normal with no signs of pallor or sweating."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "redo_primary_assessment_check_circulation_skin_color",
+      "role": "Patient",
+      "utterance": "Yes, I'm not sweating at all."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "No new or worsening symptoms reported at this time."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness_signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Correct."
+    },
+    {
+      "turn": 93,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Another attempt for glucose, still no reading."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Any other questions before we get underway?"
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "No, I'm ready to go."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All systems ready for transport."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "handoff_preparation",
+      "role": "EMT",
+      "utterance": "Preparing detailed notes for hospital transfer."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "handoff_preparation",
+      "role": "Partner",
+      "utterance": "Summary notes and documentation complete."
+    },
+    {
+      "turn": 99,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_pulse",
+      "role": "Partner",
+      "utterance": "Pulse is still 99."
+    },
+    {
+      "turn": 100,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is stable at 127/86."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Breathing is still unlabored at 16 per minute."
+    },
+    {
+      "turn": 102,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_spo2",
+      "role": "Partner",
+      "utterance": "O2 saturation remains at 99%."
+    },
+    {
+      "turn": 103,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_ekg",
+      "role": "Partner",
+      "utterance": "ECG still displaying normal rhythm."
+    },
+    {
+      "turn": 104,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "EMT",
+      "utterance": "Patient is en route, and a full report is being handed over."
+    },
+    {
+      "turn": 105,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "Partner",
+      "utterance": "Five minutes from arrival."
+    },
+    {
+      "turn": 106,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "EMT",
+      "utterance": "Hospital care is being coordinated as we approach."
+    },
+    {
+      "turn": 107,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "Partner",
+      "utterance": "No additional interventions required."
+    },
+    {
+      "turn": 108,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "EMT",
+      "utterance": "Rechecking all documents and patient status."
+    },
+    {
+      "turn": 109,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "Partner",
+      "utterance": "All findings match the ground truth."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Metro area travel is smooth and progressing."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "En route with no complications reported."
+    },
+    {
+      "turn": 112,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "EMT",
+      "utterance": "Estimated arrival under normal paramedic guidelines."
+    },
+    {
+      "turn": 113,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "Partner",
+      "utterance": "Patient is resting and vitals still stable."
+    },
+    {
+      "turn": 114,
+      "topic": "Handoff",
+      "micro_intent": "handoff_completion",
+      "role": "EMT",
+      "utterance": "Preparing final report upon arrival."
+    }
+  ]
+}

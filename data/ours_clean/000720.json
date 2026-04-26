@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000720",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 301 for unknown problem/person down near the alley in Southside."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hi, I'm Jordan, a paramedic with the rescue squad. Are you the person who called 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "Yes, I was walking by and saw a young woman unconscious on the ground. I called 911 right away."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She wasn't breathing when I first found her. First responders arrived and began assisted breathing."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Is she opening her eyes? What is her level of consciousness?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Bystander",
+      "utterance": "No signs of eye opening. She doesn't seem alert."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Paramedic",
+      "utterance": "She has pinpoint pupils and is not opening her eyes."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Paramedic",
+      "utterance": "Let me check again. Hey ma'am, can you hear me? Jordan, check for motor response."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "She's not moving to pain or verbal commands. First responders are currently assisting her ventilations via BVM."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Paramedic",
+      "utterance": "She shows snoring respirations-possible airway obstruction. Partner, double-check the BVM is in place."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Confirmed. BVM is assisting her breathing, but it's not clear if it's fully effective at this moment."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Her pulse is present at 96, regular. Skin is warm and pink. Blood pressure is 152 over 87. No signs of distress in circulation at this point."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Pulse is 96 overall-anterior-posterior difference not recorded."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respiratory rate is 12, assisted via BVM."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure is 152 over 87."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "SpO₂ is 99% on assisted BVM ventilations."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "EMT",
+      "utterance": "Glucose is 130. This appears within normal limits."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Let's place her on a four-lead EKG monitor. I'll keep an eye out for cardiac changes."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Monitor is on. I noted it is functioning. No emergent rhythms visible yet."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Based on her respiratory status, I suspect opioid involvement. Administering 0.5 mg naloxone intranasally."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "First dose of naloxone given. I'll stay with the BVM while monitoring response."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Interventions",
+      "micro_intent": "iv_start",
+      "role": "EMT",
+      "utterance": "Attempting IV access at the extremity with an 18-gauge needle."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Paramedic",
+      "utterance": "Respiratory rate increased to 20."
+    },
+    {
+      "turn": 24,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic",
+      "utterance": "Her pulse is now 112, still regular."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure is 126 over 74. A slight decrease compared to initial reading but no signs of hypotension."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "SpO₂ is at 98% now-even with assisted breathing."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic",
+      "utterance": "Glucose is currently not reading-machine may still be processing or the input is not registering."
+    },
+    {
+      "turn": 28,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "EKG now shows sinus tachycardia. No prior changes-still consistent."
+    },
+    {
+      "turn": 29,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Second dose of naloxone administered intranasally, as the patient did not respond significantly to the first dose."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respiratory rate remains stable at 20 with effective assisted ventilation."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic",
+      "utterance": "Pulse remains at 112, still regular."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure at 126 over 74-no change from prior."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "Saturation at 98-even with assisted breathing."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic",
+      "utterance": "Glucose remains not reading-there was no definitive measurement obtained earlier."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Consistent finding of sinus tachycardia. No acute changes detected."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "We will attempt a more deeply placed airway if signs of airway compromise continue during transport."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "No significant EKG changes observed-still showing sinus tachycardia."
+    },
+    {
+      "turn": 38,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Circulation remains stable with strong and regular peripheral pulses. No signs of current distress noted."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Skin is warm, pink, and dry per assessment. No rashes or abnormal turgor."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "No DCAPBTLS in head or neck. Nose is clear; mouth has no obstruction."
+    },
+    {
+      "turn": 41,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth",
+      "role": "EMT",
+      "utterance": "Nasopharyngeal airway is now in place-procedure successful."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "Bilateral breath sounds remain clear and equal with no adventitious sounds."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Paramedic",
+      "utterance": "Peripheral pulses are strong and regular. No deformities or abnormalities found."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "EMT",
+      "utterance": "Respiratory rate is still 20, assisted with BVM."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Paramedic",
+      "utterance": "Pulse remains at 112, still regular."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Paramedic",
+      "utterance": "Blood pressure at 126 over 74-no change from prior."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "EMT",
+      "utterance": "Saturation at 98-even with assisted breathing."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic",
+      "utterance": "Glucose machine is not registering-no further interventions taken at this time."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Consistent finding of sinus tachycardia. No acute changes detected."
+    },
+    {
+      "turn": 50,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Let me reassess her level of consciousness. GCS is 3-no eye opening, no verbal response, no motor response."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Third dose of naloxone administered intranasally per protocol."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Paramedic",
+      "utterance": "Respiratory rate slightly decreased to 18, but BVM remains in place."
+    },
+    {
+      "turn": 53,
+      "topic": "History of Present Illness",
+      "micro_intent": "SAMPLE",
+      "role": "Paramedic",
+      "utterance": "Bystander reports patient was found in a supine position. No known drug allergies or medications taken reported by patient."
+    },
+    {
+      "turn": 54,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "Following standing orders for medical-overdose-poisoning opioid protocol 7-1. No deviations at this time."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "VCU Health Systems is our destination due to proximity and their emergency readiness."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient is on the stretcher now. 5-point harness in place-moving to ambulance."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "transport_details",
+      "role": "Paramedic",
+      "utterance": "Continue assisted ventilation and cardiac monitoring en route. Second dose of naloxone given."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "hospital_contact",
+      "role": "Paramedic",
+      "utterance": "ED at VCU is aware of the patient's status and expected arrival. All monitoring details are prepared for handoff including vital signs and medications."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "transfer_care",
+      "role": "EMT",
+      "utterance": "She's on the stretcher, secured, and will be transferred directly from the stretcher to the ED bed."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "Paramedic",
+      "utterance": "BVM, NPA in place. All medications and interventions were correctly noted and per protocol. GCS remains at 3, and patient is still non-responsive to both verbal and physical stimuli."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "take_vital_signs_pulse",
+      "role": "EMT",
+      "utterance": "Pulse remains at 112, regular-stable during transport."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "take_vital_signs_resp",
+      "role": "EMT",
+      "utterance": "Respiratory rate at 18-still assisted via BVM."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "take_vital_signs_bp",
+      "role": "EMT",
+      "utterance": "Blood pressure is 126 over 74."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "take_vital_signs_spo2",
+      "role": "EMT",
+      "utterance": "SpO₂ remains at 98%-acceptable and stable under assisted ventilations."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "take_vital_signs_ekg",
+      "role": "EMT",
+      "utterance": "EKG continues to show sinus tachycardia-no acute cardiac changes."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "take_vital_signs_glucose",
+      "role": "Paramedic",
+      "utterance": "Glucose remains not reading-no definitive value on machine."
+    },
+    {
+      "turn": 67,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Monitoring tools remain intact and functioning. No new procedural requirements at this time."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Paramedic",
+      "utterance": "No changes or updates from the patient herself via verbal or physical assessment. Patient has no prior medical history or medication use presented to us during assessment."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "transport_details",
+      "role": "Paramedic",
+      "utterance": "All interventions and medications repeated and documented per protocol. Patient remains in stable condition en route to VCU."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All equipment and the patient are secured for transport."
+    },
+    {
+      "turn": 71,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdominal_exam",
+      "role": "EMT",
+      "utterance": "Abdomen remains supine-no evaluation possible at this time."
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Paramedic",
+      "utterance": "Pupils are reactive to light-consistent with prior assessment."
+    },
+    {
+      "turn": 73,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No signs of brain injury-patient remains in a GCS of 3."
+    },
+    {
+      "turn": 74,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Heart sounds are regular. No murmurs noted at this time."
+    },
+    {
+      "turn": 75,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary_exam",
+      "role": "EMT",
+      "utterance": "No visible bleeding or discharge-urinary assessment will be up to ED."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Considered no need to initiate rectal or deep examination due to the setting and patient's unresponsiveness."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "No further naloxone was needed-IV access is attempted for possible medication administration in ED."
+    },
+    {
+      "turn": 78,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Pulse at 112 still recorded-consistent during transport."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "transferral",
+      "role": "EMT",
+      "utterance": "Preparations have been completed-the patient is ready for handoff as we arrive at the ED."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Doors will be closed and patient prepared for secure transfer on arrival."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "hospital_contact",
+      "role": "Paramedic",
+      "utterance": "ED has been given full report-direct transfer from stretcher to ER bed is planned."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "hospital_transfer",
+      "role": "EMT",
+      "utterance": "All procedures are complete and consistent with protocol. Clinical staff have been advised of medication and procedure details."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "Paramedic",
+      "utterance": "The patient remains unresponsive with assisted ventilations. Third naloxone dose is documented."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "EMT",
+      "utterance": "Pre-handoff vitals remain stable: P 112, R 18, BP 126/74, SpO₂ 98%."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "hospital_bound",
+      "role": "Paramedic",
+      "utterance": "All critical interventions are documented, and the patient will remain on monitor and BVM per protocol until hospital transfer."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "transport_summary",
+      "role": "EMT",
+      "utterance": "Transport duration within average-arrived on time with intact and continuous monitoring."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "post_transit_vitals",
+      "role": "Paramedic",
+      "utterance": "Final vitals: P 112, BP 126/74, R 18. No changes noted during transport."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "transport_bound",
+      "role": "EMT",
+      "utterance": "No additional medications administered during trip-all details as previously discussed."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "care_transfer",
+      "role": "Paramedic",
+      "utterance": "Third naloxone dose included in medication log. No complications observed during transport. Patient currently in stable state per review."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "transport_summary",
+      "role": "Paramedic",
+      "utterance": "Patient is non-responsive with assisted breathing and monitored, indicating no further field intervention needed."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "post-transit_summary",
+      "role": "EMT",
+      "utterance": "All pre-hospital interventions per protocol and patient's vitals unchanged during travel."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "destination_confirmation",
+      "role": "Paramedic",
+      "utterance": "VCU confirms receiving a stable 27-year-old female at this time with protocol identified as medical-overdose-poisoning opioid."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "move_complete",
+      "role": "EMT",
+      "utterance": "Patient is now on ED bed. Transfer completed safely without any compromise to her breathing or circulation."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "post-relocation",
+      "role": "Paramedic",
+      "utterance": "She will now stay under ED care. BVM has been noted by hospital staff."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "hospital_transfer_summary",
+      "role": "Paramedic",
+      "utterance": "All related actions to her overdose were documented and consistent with the third dose naloxone. ED is now fully apprised per hospital communication."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "handoffs_complete",
+      "role": "EMT",
+      "utterance": "All interventions complete. Direct handoff to ED done via bed transfer."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "incident_closed",
+      "role": "Paramedic",
+      "utterance": "Patient care transitioned to hospital staff fully as per protocol."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "documentation_complete",
+      "role": "EMT",
+      "utterance": "Documentation complete-no deviations in patient care or missed requirements from field to hospital."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "end_of_call",
+      "role": "Paramedic",
+      "utterance": "This care package is filed and transferred per protocol. Call archived."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "post-transfer",
+      "role": "Paramedic",
+      "utterance": "Hospital communication and condition matching-no discrepancies found."
+    }
+  ]
+}

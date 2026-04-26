@@ -1,0 +1,610 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003958",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "911 to Unit 5 for chest pain and headache."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Taylor, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I'm 50. I've had chest pain and a really bad headache since this afternoon. My vision is getting blurry."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_complaint_modification",
+      "role": "EMT",
+      "utterance": "Earlier we were dispatched for breathing problems, but the call was updated to hemorrhage/lacerations after confirming with RFD about vomiting bright red blood."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Ma'am, can you tell me your name and what the date is today?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is Faith, and I believe today is the 21st of October."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "What city are we in, and are you aware why help is here?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Oh, we're in Richmond. I called because I feel like I'm having an episode with my heart."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Okay, thank you. I want to make sure it's comfortable to answer some more questions."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Medic",
+      "utterance": "Let's check your eyes. I'll turn off the light. Can you open your eyes when I turn it back on?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Yeah, go ahead."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Medic",
+      "utterance": "Open your mouth and say, \"One, two, three.\""
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "One, two, three."
+    },
+    {
+      "turn": 14,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Medic",
+      "utterance": "Please squeeze my fingers tightly and then point to your left and right thumbs when I ask."
+    },
+    {
+      "turn": 15,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Okay, done here."
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Medic",
+      "utterance": "Faith, can you confirm your full name and address?"
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Patient",
+      "utterance": "Faith Green, 2548 South Street."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Are there any other symptoms besides chest and head pain?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No, but I felt dizzy earlier and threw up bright red blood."
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst_severity",
+      "role": "Medic",
+      "utterance": "How severe would you say the chest pain and headache are on a scale from 1-10?"
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "specify_location",
+      "role": "Patient",
+      "utterance": "Both are 10. The headache is at the back of my head."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "When did the vomiting blood happen and when did your chest and head symptoms begin?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I just finished dialysis. The pain began around three today and the blood came up before the end."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_past_medical_history",
+      "role": "Medic",
+      "utterance": "Faith, can you tell me about your medical history?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have kidney failure, I need dialysis, COPD, high blood pressure, heart issues, and a history of stroke."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_allergies",
+      "role": "Medic",
+      "utterance": "Do you have any drug allergies?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_allergies",
+      "role": "Patient",
+      "utterance": "Yes, I'm allergic to Aspirin and Sulfa."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medications",
+      "role": "Medic",
+      "utterance": "What medications are you on a regular basis?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_medications",
+      "role": "Patient",
+      "utterance": "I take quetiapine, hydroxyzine, and blood pressure medications like amlodipine."
+    },
+    {
+      "turn": 30,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Do you have any trouble keeping your airway open or breathing?"
+    },
+    {
+      "turn": 31,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "No, it's fine."
+    },
+    {
+      "turn": 32,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Thank you for cooperating, Faith. We'll work carefully."
+    },
+    {
+      "turn": 33,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "Let's check your breathing now."
+    },
+    {
+      "turn": 34,
+      "topic": "Primary Assessment",
+      "micro_intent": "rate_and_depth_of_respirations",
+      "role": "Partner",
+      "utterance": "Her breathing rate is 20 per minute, regular."
+    },
+    {
+      "turn": 35,
+      "topic": "Primary Assessment",
+      "micro_intent": "oxygen_saturation",
+      "role": "Partner",
+      "utterance": "Her oxygen saturation is at 85%."
+    },
+    {
+      "turn": 36,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Let's check your pulse now."
+    },
+    {
+      "turn": 37,
+      "topic": "Primary Assessment",
+      "micro_intent": "pulse_rate_and_quality",
+      "role": "Partner",
+      "utterance": "Her pulse is 108, strong."
+    },
+    {
+      "turn": 38,
+      "topic": "Primary Assessment",
+      "micro_intent": "blood_pressure",
+      "role": "Partner",
+      "utterance": "Her blood pressure is 184 over 114."
+    },
+    {
+      "turn": 39,
+      "topic": "Primary Assessment",
+      "micro_intent": "skin_appearance_color",
+      "role": "Partner",
+      "utterance": "Skin is warm and dry."
+    },
+    {
+      "turn": 40,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_blood_loss",
+      "role": "Medic",
+      "utterance": "Did you lose a lot of blood with the vomit?"
+    },
+    {
+      "turn": 41,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_blood_loss",
+      "role": "Patient",
+      "utterance": "Not sure, but it was bright red."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "Skin is dry, intact, no visible injuries."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Pupils are equal and reactive."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Trachea is midline, no signs of jugular venous distention."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Medic",
+      "utterance": "Lung sounds are clear bilaterally."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Medic",
+      "utterance": "Abdomen is soft, non-tender, and not distended."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_exam",
+      "role": "Medic",
+      "utterance": "Full movement and strength in all extremities."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back_exam",
+      "role": "Medic",
+      "utterance": "Your back shows no trauma or pain when moved."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Head pain is localized in the occipital region."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "You're CA+OX4, so good capillary refill and oxygenation."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 108 per minute."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 20."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 184/114."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is 128 mg/dL."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 85%."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG shows normal sinus rhythm."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Interventions",
+      "micro_intent": "cv - ecg - 4 lead monitoring",
+      "role": "Partner",
+      "utterance": "I am placing a 4-lead ECG for continuous monitoring."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Interventions",
+      "micro_intent": "cv - ecg - 12 lead obtained",
+      "role": "Partner",
+      "utterance": "12-lead EKG is also being performed per protocol."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure has increased to 226 over 129."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen is now at 97%."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse has dropped to 86."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 204 over 131."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "iv start - extremity vein (arm or leg)",
+      "role": "Partner",
+      "utterance": "Initiating IV access in the left arm."
+    },
+    {
+      "turn": 64,
+      "topic": "Take Interventions",
+      "micro_intent": "iv start - extremity vein (arm or leg)",
+      "role": "Partner",
+      "utterance": "IV is now secure and clear."
+    },
+    {
+      "turn": 65,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is up to 98%."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_1",
+      "role": "Partner",
+      "utterance": "Blood pressure is 226 over 129 again."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_1",
+      "role": "Partner",
+      "utterance": "Respiratory rate still 20, oxygen at 96%."
+    },
+    {
+      "turn": 68,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_1",
+      "role": "Partner",
+      "utterance": "EKG showing sinus rhythm."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Administering 0.4 mg of sublingual nitroglycerin."
+    },
+    {
+      "turn": 70,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "Giving the second 0.4 mg sublingual nitroglycerin."
+    },
+    {
+      "turn": 71,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_2",
+      "role": "Partner",
+      "utterance": "Vital signs are now 200/127 with 84 pulse and oxygen at 96%."
+    },
+    {
+      "turn": 72,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Medic",
+      "utterance": "Still a 10? Any change in pain?"
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "It's still a 10, but I feel better breathing now."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Any new symptoms or lightheadedness?"
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Just the same, except less dizziness now."
+    },
+    {
+      "turn": 76,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_allergies_medication",
+      "role": "Medic",
+      "utterance": "You haven't taken aspirin since the vomit, correct?"
+    },
+    {
+      "turn": 77,
+      "topic": "Reassessments",
+      "micro_intent": "redo_sample_allergies_medication",
+      "role": "Patient",
+      "utterance": "Yes, because of the blood I vomited."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "We are transporting you to Chippenham Hospital per protocol for chest pain with cardiac concerns."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "We need you to assist in sitting and climbing into the ambulance."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Okay, I'm ready."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Securing in semi-Fowler's using five-point seat belts. No resistance to movement."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "I'm Taylor with squad six. Our patient, Faith Green, is a 50-year-old experiencing chest pain, headache, and emesis of bright red blood."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Her baseline vitals were elevated and stable, then spiked after we started IV."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "We gave two doses of nitroglycerin for chest pain, established IV, and transported with a 12-lead ECG."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Patient now vitally stable. Receiving instructions from the ER staff for arrival."
+    },
+    {
+      "turn": 86,
+      "topic": "Handoff",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Full report and documentation have been relayed to the ER triage nurse."
+    }
+  ]
+}

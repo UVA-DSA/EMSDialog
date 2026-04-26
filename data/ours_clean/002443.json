@@ -1,0 +1,512 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002443",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 2 for sick person at --Address Redacted-- in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Mark, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've got chest pain on my left side. It hasn't gone away."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Let me check your responsiveness. Open your eyes, please."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Yeah, I can do that."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "What is your name? Where are you? What is the date today?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "I'm Mark. I'm at the steps outside. Hmm... It's April 14th."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Now, could you squeeze my fingers and wiggle your toes for me?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Sure, done it."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Your airway is open, so no need to adjust anything."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Are you breathing normally or is it difficult?"
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Patient",
+      "utterance": "I'm breathing okay, but the left side feels uncomfortable."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations are 20 per minute, even, and not labored."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Pulse rate is 95-strong and regular."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 104/74. No abnormalities."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 135. That's normal."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is at 95% with ambient air."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "Describe the pain. Is it sharp, burning, or constant?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Just constant pain. It's there all day."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "EMT",
+      "utterance": "Known allergies to medications or other substances?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - allergies",
+      "role": "Patient",
+      "utterance": "None that I'm aware of."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "EMT",
+      "utterance": "What medications do you regularly take?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - medications",
+      "role": "Patient",
+      "utterance": "I don't take any."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Any chronic illnesses or surgeries I should know about?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I had COPD and some heart issues in the past."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_oral_intake",
+      "role": "Partner",
+      "utterance": "Last food or drink?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - last_oral_intake",
+      "role": "Patient",
+      "utterance": "I drank two large beers a few hours ago."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "EMT",
+      "utterance": "On a scale of 0 to 10, where would you rate your pain now?"
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - severity",
+      "role": "Patient",
+      "utterance": "About a 3."
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - alert_oriented",
+      "role": "EMT",
+      "utterance": "You seem clear-headed. Are you aware of what's going on?"
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - alert_oriented",
+      "role": "Patient",
+      "utterance": "Yes, I'm alert and know everything."
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - onset",
+      "role": "EMT",
+      "utterance": "When did the pain first appear?"
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - onset",
+      "role": "Patient",
+      "utterance": "It started today and hasn't subsided."
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - provocation",
+      "role": "EMT",
+      "utterance": "Does any movement or position make it feel worse?"
+    },
+    {
+      "turn": 35,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - provocation",
+      "role": "Patient",
+      "utterance": "It feels the same no matter what I do."
+    },
+    {
+      "turn": 36,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - quality",
+      "role": "EMT",
+      "utterance": "Is it sharp, dull, or squeezing?"
+    },
+    {
+      "turn": 37,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - quality",
+      "role": "Patient",
+      "utterance": "More like a dull ache."
+    },
+    {
+      "turn": 38,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - radiation",
+      "role": "EMT",
+      "utterance": "Does the pain travel anywhere else?"
+    },
+    {
+      "turn": 39,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - radiation",
+      "role": "Patient",
+      "utterance": "I just felt it on my left side."
+    },
+    {
+      "turn": 40,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - time",
+      "role": "EMT",
+      "utterance": "Is it better or worse with rest or moving around?"
+    },
+    {
+      "turn": 41,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. - time",
+      "role": "Patient",
+      "utterance": "It hangs there all the time."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "I'll take a look at your skin for any redness, dryness, or rashes."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin is warm, pink, and dry with no rash or swelling."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_neck_exam",
+      "role": "Partner",
+      "utterance": "Head and neck appear normal. No lumps or swelling."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "EMT",
+      "utterance": "Your breath sounds in all lobes seem clear."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Chest moves equally, and no retractions are present."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "You mentioned lower left pain. Let me examine that area."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "I'm checking for tenderness, rigidity, or guarding."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "Tenderness is present in the left lower quadrant. No guarding or rigidity."
+    },
+    {
+      "turn": 50,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs_15",
+      "role": "EMT",
+      "utterance": "Let's assess your alertness with a quick test. Could you count 5 backward for me?"
+    },
+    {
+      "turn": 51,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs_15",
+      "role": "Patient",
+      "utterance": "Five, four, three, two, one."
+    },
+    {
+      "turn": 52,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "gcs_15",
+      "role": "Partner",
+      "utterance": "He is alert and oriented. Glasgow Coma Scale is 15."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Preparing for a 4-lead ECG now as part of our cardiac protocol."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "EKG result shows sinus rhythm with short PR interval and borderline ST elevation."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Conducting a 12-lead ECG per protocol-will take just a few minutes."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Starting an IV in the left arm-first attempt successful."
+    },
+    {
+      "turn": 57,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "According to protocol 2-1, for suspected cardiac chest pain."
+    },
+    {
+      "turn": 58,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "We'll follow cardiac chest pain protocol given the EKG and symptoms."
+    },
+    {
+      "turn": 59,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Redoing the blood pressure. Reading is now 103/69."
+    },
+    {
+      "turn": 60,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is still steady at 96%."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure improved slightly to 109/75. Pulse remains strong."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "EMT",
+      "utterance": "Is the pain still the same level?"
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Patient",
+      "utterance": "Yes, it's the same."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "EKG reviewed again. Same findings: no new ST elevation or changes."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is 110/73. Pulse slowed to 92."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We will transport you to VCU Health Systems. Any concerns about that?"
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "No problem. Take me there."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let's get you on the stretcher. Seat belts will be used."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Seat belts are secure and IV is protected."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You're now safe in the ambulance. I won't leave you unattended."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "patient_transfer",
+      "role": "EMT",
+      "utterance": "Here's a 56-year-old male with chest pain and alcohol consumption on scene."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "patient_transfer",
+      "role": "Partner",
+      "utterance": "Patient history: COPD and CAD. Vitals stable. Pre-hospital care consistent with protocol."
+    }
+  ]
+}

@@ -1,0 +1,848 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002940",
+  "protocol": [
+    "medical - diabetic - hypoglycemia (protocol 3 - 8)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond for a medical call at 1112 Main Street for a sick person."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Alex, an EMT. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "She's acting confused and seems like there's something wrong with her sugar."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Ma'am, can you tell me your name?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Her eyes are partially open, but not fully."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "She didn't answer, but we heard her speaking slightly."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Paramedic",
+      "utterance": "She can grip my hand but shows left-sided weakness and is slow to respond physically."
+    },
+    {
+      "turn": 8,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Her airway is patent and self-maintained."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Breathing is unlabored and regular, with a slight increase at 16 breaths per minute."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Her blood pressure is 177/78, and she has a palpable, regular pulse at 69 bpm."
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Her respirations remain at 16 and do not show distress."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse remains 69, and there are no irregularities noted."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 93% on room air with no signs of respiratory compromise."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is critically low at 45 mg/dL, suggesting hypoglycemia."
+    },
+    {
+      "turn": 15,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "Does she have a prior medical history that we should know about?"
+    },
+    {
+      "turn": 16,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "She has a history of strokes, diabetes requiring insulin, and high blood pressure."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "What medications does she normally take?."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "She uses insulin, but I'm unsure about others since no medications were available today."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "EMT",
+      "utterance": "Does she have a known medical allergy?."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "None that I'm aware of."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "When was her last meal or drink?"
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "Last meal was breakfast about an hour ago; no snacks since then."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Paramedic",
+      "utterance": "What happened right before you saw her confused and weak?."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E.",
+      "role": "Bystander",
+      "utterance": "I found her in her wheelchair, speaking slowly and unable to perform normal tasks like recall or coordination."
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Paramedic",
+      "utterance": "On a scale of 0 to 10, how much pain do you feel right now?."
+    },
+    {
+      "turn": 26,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T.",
+      "role": "Patient",
+      "utterance": "I don't feel any pain at all."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Paramedic",
+      "utterance": "Her skin has a distinct smell suggesting possible urination leakage."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "She has left-sided weakness consistent with her prior history of CVA. Speech is slow but still understandable."
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_throat_exam",
+      "role": "EMT",
+      "utterance": "No drainage or obstructions in nasal passages or mouth area; hearing appears intact."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Vital Signs",
+      "micro_intent": "take_vitals",
+      "role": "Partner",
+      "utterance": "I'm going to check your vital signs again for reference."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse remains at 69, steady and strong."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations remain at 16 and unlabored."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is confirmed at 177 over 78, consistent with her hypertension history."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose remains dangerously low at 45 mg/dL, indicating hypoglycemia."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is still 93% with no improvement noted at this time."
+    },
+    {
+      "turn": 36,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "We are preparing to follow protocol 3-8 for suspected hypoglycemia due to known diabetes and low sugar."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We're setting up an IV for possible medication administration."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "IV access has been successfully established in the arm after one attempt without complications."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Administering 75 ml dextrose 10% intravenously as per protocol 3-8."
+    },
+    {
+      "turn": 40,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Her pulse has decreased slightly to 63 and is now more stable."
+    },
+    {
+      "turn": 41,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Her respiration rate has increased to 20 breaths per minute."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure has dropped to 154 over 107."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Glucose measurement shows 0 at this time, possibly an error."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen saturation has improved to 98%."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "EKG rhythm is now considered sinus with no signs of dysrhythmia."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let's prepare to move her from the wheelchair to the stretcher now. She currently presents A&OX1."
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "She is now safely on the stretcher and secured for transport."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "VCU Health System has been selected as the destination."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "She now presents at 64 bpm post-dextrose intervention."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respiratory rate has listed down to 16, back to baseline."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure reads 147 over 90."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Glucose is now marginally higher at 81 mg/dL."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is at 94% and continues to improve."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "IV line appears to be functioning properly without incident."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "EMT",
+      "utterance": "4-lead EKG was applied for monitoring."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "EMT",
+      "utterance": "No arrhythmias detected thus far."
+    },
+    {
+      "turn": 57,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Partner",
+      "utterance": "No changes noted in EKG readings during transport."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Her mental status is improving and she now appears more aware."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "backboard_secured",
+      "role": "EMT",
+      "utterance": "She is now secured properly for transport to VCU."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "VCU is the final destination as per medical protocols."
+    },
+    {
+      "turn": 61,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "She is aware of her location now and self-identifies the current date."
+    },
+    {
+      "turn": 62,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Patient",
+      "utterance": "We are in Richmond, and it is June 10th today."
+    },
+    {
+      "turn": 63,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "Can you tell me your name and age?."
+    },
+    {
+      "turn": 64,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Patient",
+      "utterance": "I am 68, and my name is Jennifer."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "dextrose_infusions",
+      "role": "Partner",
+      "utterance": "Dextrose continues to infuse smoothly as before."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Partner",
+      "utterance": "No new arrhythmias or other EKG changes have been observed."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "response_trend",
+      "role": "EMT",
+      "utterance": "She has shown improved mental awareness unlike her initial presentation."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "She is now cognizant and oriented in context of people and locations."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "response_trend",
+      "role": "Partner",
+      "utterance": "Left-side weakness persists but is not a new finding due to her history."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "She remains aware of her name, location, and date en route."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "Left-side weakness is still present consistent with her stroke history."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "EMT",
+      "utterance": "Heart rhythm remains steady with no new changes."
+    },
+    {
+      "turn": 73,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "She has not reported any issues or pain symptoms since the intervention."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "No new issues have emerged since intervention."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "handoff_report_start",
+      "role": "EMT",
+      "utterance": "All treatments are up to date for handover to VCU."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "Documented procedures will deliver context for hospital team to proceed."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "All actions taken are standard and in line with protocol for VCU care."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Partner",
+      "utterance": "Current EKG remains within normal limits during transfer."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "VCU was alerted and prepared for her arrival accordingly."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Readiness confirmed for directly assigning to room 18 in Yellow ER."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "ED was briefed on the patient and earlier actions taken prior to arrival."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Patient's transport was safe with no major incidents reported."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "Vital signs were continuously reviewed during transport."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "Full medical history is available upon arrival including prior events."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "All details were shared with VCU ER for their review and care beginning."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Patient is alert and oriented at arrival."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "Arrival was uneventful and appropriate transition to ED was completed."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "All care details were passed to VCU and full report was completed."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "exit_to_protocol",
+      "role": "Paramedic",
+      "utterance": "Protocol 3-8 has been in full compliance with transport and care."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "Transport care was performed safely and responsibly."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Transition of care is handled effectively and per protocol."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "Patient is now receiving care per VCU hospital plan."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "All previous field records are transferred to hospital upon arrival."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "Patient is documented and handed over fully to VCU ER staff."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "Discharge documentation complies with pre-departure field notes."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "All field records are properly submitted to the receiving hospital."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "Past and current medical records are included in PCR for continuity."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "Patient is now under her hospital's care for further evaluation."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Partner",
+      "utterance": "No new EKG findings arose during transport."
+    },
+    {
+      "turn": 100,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Dextrose remains infusing as expected."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "IV line remains intact with no disruptions."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "destination_reached",
+      "role": "EMT",
+      "utterance": "The patient has now been handed over to the VCU Emergency Department."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Paramedic",
+      "utterance": "Heart rhythm remains stable and normal throughout."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "exit_to_protocol",
+      "role": "EMT",
+      "utterance": "Compliance with protocol confirmed upon arrival."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "Emergency and transport procedures were followed fully."
+    },
+    {
+      "turn": 106,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Partner",
+      "utterance": "No new EKG findings reported or monitored during the care."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "She was transferred smoothly and without any incident."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Partner",
+      "utterance": "No new arrhythmias or issues were detected during final check."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Paramedic",
+      "utterance": "Her cognitive and place awareness has improved post-infusion."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "IV solution remains infusing for potential hospital management."
+    },
+    {
+      "turn": 111,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "VCU nursing and MDs have full access to incident data."
+    },
+    {
+      "turn": 112,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "No changes in breathing or glucose noted during transport."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "She is now under VCU's complete supervision."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "ekg_monitoring",
+      "role": "Partner",
+      "utterance": "No issues with rhythm were seen during full transport cycle."
+    },
+    {
+      "turn": 115,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "IV solution and dextrose remain infusing for continuity."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "EMT",
+      "utterance": "The transfer was executed properly and per protocol."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "No unusual findings are on record for entire care cycle."
+    },
+    {
+      "turn": 118,
+      "topic": "Transport",
+      "micro_intent": "exit_to_protocol",
+      "role": "EMT",
+      "utterance": "Field care and transfer process has been completed."
+    },
+    {
+      "turn": 119,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Paramedic",
+      "utterance": "All protocols were followed and documented per ePCR."
+    },
+    {
+      "turn": 120,
+      "topic": "Transport",
+      "micro_intent": "handoff_report",
+      "role": "Partner",
+      "utterance": "VCU will have available her history for fully informed decisions."
+    }
+  ]
+}

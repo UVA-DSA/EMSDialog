@@ -1,0 +1,708 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/000242",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond for 75-year-old male with chest pain at address in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hello, I'm John from VCU EMS. What made you call 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Paramedic",
+      "utterance": "Can you explain what's going on?"
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I'm having chest pain, started 30 minutes ago."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Can you tell me your name?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is Charles."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "What city are we in?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Richmond, Virginia."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "What is today's date?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "February 7th."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Paramedic",
+      "utterance": "Can you tell me what happened?"
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "Chest pain suddenly appeared, and I stayed in bed."
+    },
+    {
+      "turn": 13,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "GCS",
+      "role": "Partner",
+      "utterance": "GCS is 15."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Paramedic",
+      "utterance": "Breathing is unlabored."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Radial and peripheral pulses are present and strong."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Paramedic",
+      "utterance": "No cyanosis observed."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 157 over 115."
+    },
+    {
+      "turn": 18,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is 158 beats per minute."
+    },
+    {
+      "turn": 19,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 18."
+    },
+    {
+      "turn": 20,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse oximetry is 96% on room air."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Paramedic",
+      "utterance": "Blood glucose is not available at this moment."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is showing supraventricular tachycardia at 158 BPM."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._signs_symptoms",
+      "role": "Paramedic",
+      "utterance": "When did the chest pain start, and can you describe it?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._signs_symptoms",
+      "role": "Patient",
+      "utterance": "It started in the center of my chest about 30 minutes ago."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._medications",
+      "role": "Paramedic",
+      "utterance": "Did you take any medication prior to our arrival?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._medications",
+      "role": "Patient",
+      "utterance": "Took three nitro sprays, it helped a bit."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._medications",
+      "role": "Paramedic",
+      "utterance": "What medications do you currently take?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._medications",
+      "role": "Patient",
+      "utterance": "Clopidogrel, Lasix, Protonix, atorvastatin, tamsulosin, baclofen, isosorbide mononitrate."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._medications",
+      "role": "Partner",
+      "utterance": "Are there any others?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._medications",
+      "role": "Patient",
+      "utterance": "Yes. Also pantoprazole, Fiorinal, which includes aspirin, butalbital, caffeine, and codeine."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._pertinent_past_medical_history",
+      "role": "Paramedic",
+      "utterance": "What chronic conditions have you had?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E._pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "A heart attack before and a diagnosis of leukemia."
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T._onset",
+      "role": "Partner",
+      "utterance": "How severe is your chest pain now?"
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T._onset",
+      "role": "Patient",
+      "utterance": "It's about a 3 out of 10."
+    },
+    {
+      "turn": 35,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T._quality",
+      "role": "Partner",
+      "utterance": "What kind of pain is it?"
+    },
+    {
+      "turn": 36,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T._quality",
+      "role": "Patient",
+      "utterance": "Sharp, centralized with no spread."
+    },
+    {
+      "turn": 37,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T._radiation",
+      "role": "Partner",
+      "utterance": "Is the pain spreading or staying in one spot?"
+    },
+    {
+      "turn": 38,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T._radiation",
+      "role": "Patient",
+      "utterance": "Just in the middle of my chest."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Paramedic",
+      "utterance": "We will place leads for a 4-lead EKG monitoring."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "4-lead EKG monitoring has begun."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG monitoring complete. No EKG artifact."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Now we need to perform a 12-lead EKG."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "12-lead is now complete. See ST depression in V1-V6, II, III, and aVF."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "ST depression was initially noted, likely from rate-induced ischemia."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Paramedic",
+      "utterance": "Repeating 12-lead with posterior electrode placement now."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG with posterior leads show slight ST elevation in V4-6."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Also noticing some minimal change in T waves and abn Q in aVL/V4/V5."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Vitals unchanged thus far. BP 157/115, HR 158, RR 18, SpO2 96%."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Partner",
+      "utterance": "We are now placing a 22-gauge IV in the left hand."
+    },
+    {
+      "turn": 50,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Following Protocol 2-1 for suspected STEMI."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Paramedic",
+      "utterance": "All vitals still within the same range."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "Transporting you to VCU Health Systems as the closest appropriate facility."
+    },
+    {
+      "turn": 53,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Making final preparations to move patient to the stretcher."
+    },
+    {
+      "turn": 54,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Now moving patient to the stretcher and securing with restraints."
+    },
+    {
+      "turn": 55,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Monitoring in progress for vitals and EKG."
+    },
+    {
+      "turn": 56,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Current EKG suggests possible anterior infarct or rate-induced ischemia."
+    },
+    {
+      "turn": 57,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Entering Trauma Bay 9 at VCU Health Systems. STEMI suspected."
+    },
+    {
+      "turn": 58,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Patient is alert and oriented. GCS is 15 (E4, V5, M6)."
+    },
+    {
+      "turn": 59,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "EKG findings include rate-induced ischemia, ST depression in V1-V6 and aVF leads."
+    },
+    {
+      "turn": 60,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Posterior 12-lead suggests slight ST elevation in V4-6 and STT abnormalities."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Findings also included minimal evidence of LVH and high QRS voltages."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Current vitals: BP 157/115, HR 158, RR 18, SpO2 96%, GCS 15."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "No known medication allergies reported."
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Medications currently taken: Clopidogrel, Lasix, Protonix, atorvastatin, tamsulosin, baclofen, isosorbide mononitrate, pantoprazole, and Fiorinal."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Past medical history includes previous MI and a diagnosis of leukemia."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "A 22-gauge IV was placed in the left hand for potential use during care."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "ED physician consulted-no acute rate control administered due to stable condition and short transport time."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Patient has denied nausea, headache, dizziness, vomiting, or abdominal discomfort."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Chest pain severity has remained consistent at 3/10 throughout transport."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "No new medications were administered during transport-only prescribed medications active."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Ongoing monitoring in place due to possible STT changes and posterior STEMI."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Priority given for rapid processing at VCU as STEMI suspected."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Repeat 12-lead at 21:24 confirmed posterior infarct with ST depression in V2/V3."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "In addition, noted abnormal Q waves and STT deviations at arrival."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Reported no last oral intake at this time."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Vital signs have remained stable with minimal variation."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Re-transmitting EKG findings for further review at the receiving facility."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Final EKG confirmed possible anterior and posterior ischemic changes. No pain progression."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "EKG suggests possible subendocardial injury with ST depression across multiple leads."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Blood glucose was not obtained during transport."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Med list will be directly communicated to hospital pharmacy for pre-arrival preparation."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "No point-of-care testing was conducted in the field for cardiac biomarkers."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "No significant physical trauma found during scene assessment."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Skin condition noted as warm and normal color in EKG notes."
+    },
+    {
+      "turn": 85,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "No reported history of cardiac arrest prior."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "No issues with EKG artifacts or device interference."
+    },
+    {
+      "turn": 87,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "ST depression and subendocardial injury noted-consistent abnormal for age."
+    },
+    {
+      "turn": 88,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Patient is alert and oriented per the documentation."
+    },
+    {
+      "turn": 89,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Final EKG narratives align with decision to transport to VCU."
+    },
+    {
+      "turn": 90,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "No activity in left extremity beyond IV access at this time."
+    },
+    {
+      "turn": 91,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Patient remains in supine position per secure transport protocol."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Consistent monitoring during movement and transport."
+    },
+    {
+      "turn": 93,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Patient lies flat on the stretcher as per protocol."
+    },
+    {
+      "turn": 94,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "No recent interruptions due to motion or environmental factors during EKGs."
+    },
+    {
+      "turn": 95,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "No need for adjuvant positioning or emergency repositioning."
+    },
+    {
+      "turn": 96,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "No LED-related issues or monitor glare documented."
+    },
+    {
+      "turn": 97,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains normal at 96%."
+    },
+    {
+      "turn": 98,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Additional STEMI response dispatched for receiving facility support."
+    },
+    {
+      "turn": 99,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Partner",
+      "utterance": "GCS remains 15 throughout all assessments."
+    },
+    {
+      "turn": 100,
+      "topic": "Handoff",
+      "micro_intent": "critical_medical",
+      "role": "Paramedic",
+      "utterance": "Final documentation consistent with current EMS and ED disposition."
+    }
+  ]
+}

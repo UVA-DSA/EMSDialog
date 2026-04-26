@@ -1,0 +1,806 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/001905",
+  "protocol": [
+    "medical - chest pain - cardiac suspected (protocol 2 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "911 Unit, respond to a reported chest pain on 34th and Main, a 49-year-old male."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, I'm Alex, an EMT with the rescue squad. What made you call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I had chest pain about 30 minutes ago, mostly on the left side."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He had a random spell of sharp chest pain all of a sudden. He got nervous and I called 911."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "James, can you open your eyes for me? What is your name?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "My name is James. I'm fine now."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Partner",
+      "utterance": "EYES, reactive."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "EMT",
+      "utterance": "James, can you tell me where we are right now?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "Patient",
+      "utterance": "In Richmond, I think… or is it somewhere else?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "EMT",
+      "utterance": "You're in Richmond, James. This is the emergency medical unit."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "EMT",
+      "utterance": "Raise your hand for me, James. Great job."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "EMT",
+      "utterance": "You're not showing signs of distress, and your chest is rising equally. Something wrong?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "Resp rate is 16, and there are no signs of distress. Chest rises evenly."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Partner",
+      "utterance": "SpO2 at 95 percent. It looks normal."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "Patient",
+      "utterance": "Yeah, I'm healthy for the most part."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "EMT",
+      "utterance": "Radial pulse is strong and regular."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Partner",
+      "utterance": "Skin is warm, dry, and pink. Radial pulse is present."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (signs and symptoms)",
+      "role": "EMT",
+      "utterance": "Can you tell me what kind of pain it was?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (signs and symptoms)",
+      "role": "Patient",
+      "utterance": "Sharp. But it stopped once I touched the same spot again."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (signs and symptoms)",
+      "role": "EMT",
+      "utterance": "Any other symptoms-nausea, dizziness, vomiting?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (signs and symptoms)",
+      "role": "Patient",
+      "utterance": "No, I felt fine after a while."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent past medical history)",
+      "role": "EMT",
+      "utterance": "Any history of heart issues or surgeries, James?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent past medical history)",
+      "role": "Bystander",
+      "utterance": "He had an old heart attack. He has high blood pressure and CAD."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent past medical history)",
+      "role": "EMT",
+      "utterance": "Dr. Marsilia, this is past medical history: CAD, hypertension, MI old."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent past medical history)",
+      "role": "Partner",
+      "utterance": "Also, does he have any other known medical conditions?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent past medical history)",
+      "role": "Bystander",
+      "utterance": "He has epilepsy, chronic depression, and a gastric ulcer with bleeding."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent past medical history)",
+      "role": "Partner",
+      "utterance": "Also, does he have any known allergies or substance use?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (pertinent past medical history)",
+      "role": "Bystander",
+      "utterance": "He's an alcoholic and has a strawberry allergy."
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (onset)",
+      "role": "EMT",
+      "utterance": "When exactly did the chest pain start, James?"
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (onset)",
+      "role": "Bystander",
+      "utterance": "It was just sudden, at 2:30ish."
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (provocation)",
+      "role": "EMT",
+      "utterance": "Was there anything that made the pain worse or better?"
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (provocation)",
+      "role": "Patient",
+      "utterance": "It reproduced with touch. Went away by itself."
+    },
+    {
+      "turn": 33,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (quality)",
+      "role": "EMT",
+      "utterance": "And what word would you use to describe the pain?"
+    },
+    {
+      "turn": 34,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (quality)",
+      "role": "Patient",
+      "utterance": "Sharp."
+    },
+    {
+      "turn": 35,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (severity)",
+      "role": "EMT",
+      "utterance": "Would you say it was a 10 of the worst you've ever had?"
+    },
+    {
+      "turn": 36,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. (severity)",
+      "role": "Patient",
+      "utterance": "Not really, it came and went."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse now is 103. Strong and regular."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 16 and equal. No signs of distress noted."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 166 over 109."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 at 95, in room air."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose was not tested as it was not indicated per protocol at the time."
+    },
+    {
+      "turn": 42,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin exam",
+      "role": "EMT",
+      "utterance": "Skin appears pink, warm, and dry. No rashes or sores identified."
+    },
+    {
+      "turn": 43,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "EMT",
+      "utterance": "Pupils are reactive and equal. Mentally you appear alert and oriented."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Patient",
+      "utterance": "Yeah, I'm fine… I've had worse."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "EMT",
+      "utterance": "With your permission, I'll check your pupils."
+    },
+    {
+      "turn": 46,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Partner",
+      "utterance": "Pupils reactive and equal."
+    },
+    {
+      "turn": 47,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Partner",
+      "utterance": "James, tell me, how are you doing right now mentally?"
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Patient",
+      "utterance": "I'm fine, really. I'm fully oriented."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "EMT",
+      "utterance": "Then we would note that as alert and oriented to person, place, time, and situation-AOx4."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head and neck exam",
+      "role": "Patient",
+      "utterance": "Got it. Good to know what that means."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "EMT",
+      "utterance": "James, we're going to do an EKG now. It's non-invasive, just attaching a few leads."
+    },
+    {
+      "turn": 52,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Patient",
+      "utterance": "Okay. Let's do it."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "First, 4 lead monitoring. Everything looks stable for now."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "take procedures",
+      "role": "Partner",
+      "utterance": "Now we've completed a 12-lead ECG, showing sinus tachycardia."
+    },
+    {
+      "turn": 55,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Protocol 2-1, chest pain with suspected cardiac cause. Vital signs recorded."
+    },
+    {
+      "turn": 56,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "12-lead clear of acute changes like STEMI or dysrhythmias."
+    },
+    {
+      "turn": 57,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Let's discuss with James. He no longer shows acute distress."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "James, do you want to be taken to the hospital for this assessment?"
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "No, I feel fine. I don't want to go."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Bystander",
+      "utterance": "I don't want him to be alone, just in case."
+    },
+    {
+      "turn": 61,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "EMT",
+      "utterance": "James, I need to inform you that refusing transport could be risky if symptoms return."
+    },
+    {
+      "turn": 62,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Patient",
+      "utterance": "I know. I'm staying with my girlfriend and will call if needed."
+    },
+    {
+      "turn": 63,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "EMT",
+      "utterance": "I'll need to document your refusal and inform you of the risks, okay?"
+    },
+    {
+      "turn": 64,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Patient",
+      "utterance": "Fine. Just make sure I get the papers to sign."
+    },
+    {
+      "turn": 65,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Partner",
+      "utterance": "Here's the refusal form. Please read carefully and sign if willing to accept the responsibility."
+    },
+    {
+      "turn": 66,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Patient",
+      "utterance": "Done."
+    },
+    {
+      "turn": 67,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "EMT",
+      "utterance": "Thank you, James. We'll be leaving now. Also, ensure you stay hydrated and rested."
+    },
+    {
+      "turn": 68,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Bystander",
+      "utterance": "Got it. Thanks, medics."
+    },
+    {
+      "turn": 69,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "EMT",
+      "utterance": "You're alert and oriented to four. No acute distress and stable vitals recorded."
+    },
+    {
+      "turn": 70,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Bystander",
+      "utterance": "We'll keep an eye on him. Promise."
+    },
+    {
+      "turn": 71,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Partner",
+      "utterance": "Note that James has a medical history of CAD, MI old, hypertension, epilepsy, depression, and alcohol dependence."
+    },
+    {
+      "turn": 72,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Partner",
+      "utterance": "Environmental allergy: Strawberry."
+    },
+    {
+      "turn": 73,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "EMT",
+      "utterance": "He has no drug allergies reported, but is currently on medications for these conditions."
+    },
+    {
+      "turn": 74,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "EMT",
+      "utterance": "These are recorded in the patient's medical history form for reference."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Bystander",
+      "utterance": "Seems thorough. I appreciate all the detail."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "I've secured the unit for return to base."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All necessary equipment is accounted for, and the patient is safe at home."
+    },
+    {
+      "turn": 78,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio exam",
+      "role": "EMT",
+      "utterance": "Breathing sounds are clear on both sides. Heart sounds regular."
+    },
+    {
+      "turn": 79,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities and back exam",
+      "role": "EMT",
+      "utterance": "Extremities full range of motion. No deformities or wounds seen."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "genitourinary exam",
+      "role": "Partner",
+      "utterance": "No signs of urinary urgency or incontinence noted."
+    },
+    {
+      "turn": 81,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing",
+      "role": "EMT",
+      "utterance": "No adventitious breath sounds heard on auscultation."
+    },
+    {
+      "turn": 82,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation",
+      "role": "Partner",
+      "utterance": "Capillary refill within the normal range."
+    },
+    {
+      "turn": 83,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (last oral intake)",
+      "role": "EMT",
+      "utterance": "When was the last time you had something to eat or drink?"
+    },
+    {
+      "turn": 84,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (last oral intake)",
+      "role": "Patient",
+      "utterance": "Had breakfast around 7 AM. No alcohol after that."
+    },
+    {
+      "turn": 85,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. (events leading up to the event)",
+      "role": "Bystander",
+      "utterance": "Nothing special essentially. He was just at home."
+    },
+    {
+      "turn": 86,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Goals to monitor and check responsiveness again after a short while."
+    },
+    {
+      "turn": 87,
+      "topic": "Reassessments",
+      "micro_intent": "take_interventions",
+      "role": "Partner",
+      "utterance": "Let's finish up ecg monitoring and keep the leads on for a bit in case."
+    },
+    {
+      "turn": 88,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "15:32: 4 lead monitoring. 15:34: 12 lead, again sinus tach. Stable pattern."
+    },
+    {
+      "turn": 89,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "EMT",
+      "utterance": "Rechecking vitals now. No significant changes noted."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Partner",
+      "utterance": "Any return of pain at this time?"
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "No, still all clear. Pain gone as reported before."
+    },
+    {
+      "turn": 92,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "Can we confirm again what led to the emergency call?"
+    },
+    {
+      "turn": 93,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Bystander",
+      "utterance": "It was a random episode. I don't blame him for being nervous."
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "EMT",
+      "utterance": "So, we'll document as per 911 origin due to reproducible chest pain and prior MI."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "EMT",
+      "utterance": "No signs of infection, obstruction, or foreign body."
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam",
+      "role": "Partner",
+      "utterance": "No drainage or hemorrhage noted in oral cavity."
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "No bulges, masses, or lymphadenopathy found on neck inspection."
+    },
+    {
+      "turn": 98,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Swallowing is intact as verified by patient's consumption earlier."
+    },
+    {
+      "turn": 99,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "EMT",
+      "utterance": "No rigidity or tenderness identified during soft exam."
+    },
+    {
+      "turn": 100,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam",
+      "role": "Partner",
+      "utterance": "Bowel sounds normal and diffusely heard without noise."
+    },
+    {
+      "turn": 101,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio_exam",
+      "role": "Partner",
+      "utterance": "Heart sounds normal and consistent with underlying rhythm."
+    },
+    {
+      "turn": 102,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio_exam",
+      "role": "EMT",
+      "utterance": "No signs of edema or uneven movement observed visually."
+    },
+    {
+      "turn": 103,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin turgor is within normal limits. No dryness or excessive moisture."
+    },
+    {
+      "turn": 104,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No bites, rashes, or scars identified during the skin inspection."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Setup is complete for eventual emergency response if a new dispatch is received."
+    },
+    {
+      "turn": 106,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio_exam",
+      "role": "EMT",
+      "utterance": "All lungs clearly auscultated; no wheezes or crackles detected."
+    },
+    {
+      "turn": 107,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "No nuchal rigidity or signs of head trauma noted."
+    },
+    {
+      "turn": 108,
+      "topic": "Reassessments",
+      "micro_intent": "take_interventions",
+      "role": "EMT",
+      "utterance": "Confirming all assessment tools have been documented and signed for later review."
+    },
+    {
+      "turn": 109,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Closing the back and arming the unit. Movement is secure until reactivated."
+    },
+    {
+      "turn": 110,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "All protocols satisfied with no further care or transport initiated."
+    },
+    {
+      "turn": 111,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "EMT",
+      "utterance": "Patient was informed of possible risks, and witnessed refusal in detail."
+    },
+    {
+      "turn": 112,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Partner",
+      "utterance": "Paperwork on file. Patient signed with knowledge and capacity."
+    },
+    {
+      "turn": 113,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "Bystander",
+      "utterance": "I understand the risk, and I'm here for support."
+    },
+    {
+      "turn": 114,
+      "topic": "Handoff",
+      "micro_intent": "refusal_documentation",
+      "role": "EMT",
+      "utterance": "M159 now returning to service for future response."
+    }
+  ]
+}

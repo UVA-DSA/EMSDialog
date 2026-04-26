@@ -1,0 +1,596 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003879",
+  "protocol": [
+    "medical - pulmonary edema/chf (protocol 2 - 3)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 5 for a Breathing Problems call at Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm EMT Alex. What were you doing when you called 911?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Acute shortness of breath and chest pressure, after days of worsening symptoms."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "EMT",
+      "utterance": "Tracey, can you tell me your full name, where you're right now, who I am, and tell me the year?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "a_and_o4",
+      "role": "Patient",
+      "utterance": "I'm Tracey, I'm in Richmond, you're EMT Alex, and this is 2019."
+    },
+    {
+      "turn": 6,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "I see you're on oxygen-is it okay for me to listen to your lungs to get a better idea of what's going on?"
+    },
+    {
+      "turn": 7,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Thanks for letting me try. Can we now check your oxygen saturation to see how well your body is oxygenating?"
+    },
+    {
+      "turn": 8,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Your oxygen saturation is showing as 98%. That's pretty good."
+    },
+    {
+      "turn": 9,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Correct, you are on 5 liters via nasal cannula, which should help."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Tracey, do you mind if I take a pulse and briefly test your blood pressure?"
+    },
+    {
+      "turn": 11,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is 96, which is a bit high but stable."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "You are maintaining a steady breathing rhythm, with oxygen levels in a good range."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "I plan on measuring your blood pressure and checking blood flow in your arms."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is currently 161 over 108."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "I need to do a quick recording of your heart's electrical activity to see if there are any irregularities. This will help confirm our next steps."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "A 4-lead EKG is being placed. It helps us monitor your heart on a continuous basis."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The 12-lead EKG is completed and shows a sinus rhythm with no ST segment changes."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Partner",
+      "utterance": "I saw in your record that you have a history of COPD and CHF. How long has your shortness of breath been going on?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It started off about two weeks ago and has gotten steadily worse for the past three days, my legs have also swollen up."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Partner",
+      "utterance": "You mentioned something about your nurse adjusting your oxygen dosage-let me confirm that."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes. She increased it from 3 to 5 liters, and it helped a little with my breathing."
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "EMT",
+      "utterance": "You also said you are experiencing chest discomfort as well-is that right?"
+    },
+    {
+      "turn": 23,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "Yeah, it definitely is. The pain is at a level nine on the scale."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Partner",
+      "utterance": "Have you noticed if the chest pressure shifts to another part of your body or if it just sits in your chest?"
+    },
+    {
+      "turn": 25,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "It stays centered in the middle of my chest."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_skin",
+      "role": "EMT",
+      "utterance": "It appears your legs are quite swollen, which is a fairly typical sign in CHF given your medical condition and weight."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_skin",
+      "role": "EMT",
+      "utterance": "And just to repeat, you are alert and aware of yourself, your location, the time, and what's going on here. AoX4."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "check_skin",
+      "role": "EMT",
+      "utterance": "Tracey, I need to lift your legs gently for a better look at the swelling-could you help me lift them?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_history",
+      "role": "Partner",
+      "utterance": "Why don't we now discuss some of your other health conditions? What diagnoses have you received from your doctors?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical_history",
+      "role": "Patient",
+      "utterance": "I've had CHF, COPD, atrial fibrillation, high blood pressure, anxiety, and depression."
+    },
+    {
+      "turn": 31,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "EMT",
+      "utterance": "Great, thank you. What medications are you currently taking? Can you take me through the names?"
+    },
+    {
+      "turn": 32,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "I take Furosemide, Amiodarone, Metoprolol, Albuterol, Percocet for pain, Diazepam for anxiety, Citalopram for depression, Gabapentin, Budesonide, Warfarin, and Polyethylene Glycol."
+    },
+    {
+      "turn": 33,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "I noted a few meds there-can you tell me if you're allergic to any of those or have any other allergies?"
+    },
+    {
+      "turn": 34,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Patient",
+      "utterance": "I'm allergic to Lisinopril. Other than that, I have No Known Allergies (NKA)."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "I'm going to start an IV access here to keep a line open in case we need to give medications quickly. Would that be okay with you?"
+    },
+    {
+      "turn": 36,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "The IV was successfully placed in your left arm with a 20-gauge needle and placed on a saline lock for now."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Now, we're going to give you some Aspirin (ASA) and one Nitroglycerin (NTG) tablet to help with your chest pain. Do you agree to this?"
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Your pulse is still at 95 right after the NTG."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure hasn't really changed after the NTG, reading at 167 over 103."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains good at 100% with 6 liters on the nasal cannula."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "The blood glucose is at 118 mg/dL, a normal value. I'll do another quick check to be safe."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is still at 19 breaths per minute. I'll recheck shortly while we continue monitoring you closely."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "There was a small effect on your blood pressure from the NTG, but we'll keep watching and won't do a second dose right now."
+    },
+    {
+      "turn": 44,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Based on what you've described and our findings so far, we're thinking it could be related to CHF and possibly angina. We'll follow emergency protocols accordingly."
+    },
+    {
+      "turn": 45,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "We're following protocol 2-3 as per our standing orders for suspected cardiac and pulmonary issues. I've recorded the administration of ASA and NTG."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We're going to move you onto the stretcher now-can you assist by supporting your legs?"
+    },
+    {
+      "turn": 47,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I can help with that. Please, let's go slow because I've been having trouble with my legs."
+    },
+    {
+      "turn": 48,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We've carefully placed you onto the stretcher and made sure you're secure. Your IV and oxygen are still connected."
+    },
+    {
+      "turn": 49,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "You haven't indicated a preference, but do you have a hospital you'd like us to transport you to?"
+    },
+    {
+      "turn": 50,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "VCU Health is where I would want to be taken."
+    },
+    {
+      "turn": 51,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Got it-VCU Health is our destination. Let's get rolling and be sure you're comfortable."
+    },
+    {
+      "turn": 52,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "During this transport, we'll maintain your 6 liters of oxygen and keep monitoring for any change to your condition."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Before we get moving too far, I'll give vitals another look."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Pulse is still at 95 and BP hasn't changed-it stays at 167 over 103."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Your saturation is now at 100% while on 6 L of oxygen. Lungs can't be heard well due to body structure."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Wait-our second blood glucose reading is 0. Let's verify if that's correct or if the meter might be off."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "A second reading showed the same 0-looks like device-related. Same as first result-no real difference."
+    },
+    {
+      "turn": 58,
+      "topic": "Pain Assessment",
+      "micro_intent": "redo_pain_assessment",
+      "role": "EMT",
+      "utterance": "Just checking-where is your chest pain now on the scale from one to ten?"
+    },
+    {
+      "turn": 59,
+      "topic": "Pain Assessment",
+      "micro_intent": "redo_pain_assessment",
+      "role": "Patient",
+      "utterance": "Same as before, a nine. It still feels sharp and stays in the middle."
+    },
+    {
+      "turn": 60,
+      "topic": "History of Present Illness",
+      "micro_intent": "redo_history_of_present_illness",
+      "role": "Partner",
+      "utterance": "Let's get a final accounting. Tell me, have you had anything to eat or drink in the last 12 hours or so?"
+    },
+    {
+      "turn": 61,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Patient",
+      "utterance": "I haven't had anything for about 12 hours now-I just haven't felt like eating."
+    },
+    {
+      "turn": 62,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Partner",
+      "utterance": "Leading up to your turnout, is there anything that might have changed recently that you think triggered all of this?"
+    },
+    {
+      "turn": 63,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Patient",
+      "utterance": "Not really, but I've had a rough time with fatigue and have stopped doing my regular exercises recently."
+    },
+    {
+      "turn": 64,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "EMT",
+      "utterance": "Let me verify-your nurse increased your oxygen to 5 liters last week because your condition was worsening, right?"
+    },
+    {
+      "turn": 65,
+      "topic": "History of Present Illness",
+      "micro_intent": "events_leading_to_event",
+      "role": "Patient",
+      "utterance": "Yes, she noticed the swelling and shortness of breath and thought that's why oxygen needed to go up."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Just to be 100% clear-no one else has given you any other medications beyond what you were already on."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "No, just the nurse adjusting the oxygen. That's all."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Perfect, so we know exactly what medications you're on-no fear of overlap or duplication."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "And for now, we are continuing on the same oxygen setting that was recommended."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Tracey, we need to place you onto the ambulance stretcher for transport. Can you again assist with your legs?"
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "I can help-just as before, move slowly to avoid stressing it too much."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Your legs have been carefully lifted onto the cot and securely positioned. The IV and oxygen are still in place and working."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We've reached our destination of VCU Health-it's now time to get you inside."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "All documentation has been taken care of and everything is ready for the hospital."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Tracey, we are transporting a 46-year-old female with suspected CHF, possible angina, and signs consistent with pulmonary edema."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "We are gently lowering you onto the hospital bed and securing it like before."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "I feel much better now that I'm being seen. I was really getting worried."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Once at the hospital, the doctors and nurses will take a closer look and continue the care we've started."
+    },
+    {
+      "turn": 79,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_receiving_nurse",
+      "role": "Partner",
+      "utterance": "We've administered Aspirin (ASA) and Nitroglycerin (NTG) for your symptoms and have established IV access. You're NKA."
+    },
+    {
+      "turn": 80,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_receiving_nurse",
+      "role": "Partner",
+      "utterance": "Vital signs upon arrival were 167/103, pulse at 95, and oxygen saturation at 100%."
+    },
+    {
+      "turn": 81,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_receiving_nurse",
+      "role": "Partner",
+      "utterance": "Allergies: you are allergic to Lisinopril and otherwise NKA."
+    },
+    {
+      "turn": 82,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_receiving_nurse",
+      "role": "EMT",
+      "utterance": "You were fully alert, no signs of trauma-we arranged transport with the ER nurse and updated them on the readings."
+    },
+    {
+      "turn": 83,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_receiving_nurse",
+      "role": "EMT",
+      "utterance": "Your respiratory rate was recorded at 12 breaths per minute."
+    },
+    {
+      "turn": 84,
+      "topic": "Handoff",
+      "micro_intent": "handoff_to_receiving_nurse",
+      "role": "EMT",
+      "utterance": "Everything's in order-Tracey, you're in good hands now."
+    }
+  ]
+}

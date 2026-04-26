@@ -1,0 +1,890 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/003628",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Paramedic",
+      "utterance": "Hi, I'm Jordan, an EMT with the rescue squad. What's the main reason you called 911 today?"
+    },
+    {
+      "turn": 2,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I'm short of breath. It's really hard for me to catch my breath."
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Paramedic",
+      "utterance": "Have you experienced any chest pain or other symptoms along with this?"
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "No chest pain, just wheezing."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Paramedic",
+      "utterance": "Can you tell me your name and where you are right now?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "My name is Dawn. I am in Richmond."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Paramedic",
+      "utterance": "Any trouble moving your arms or legs?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "avpu",
+      "role": "Patient",
+      "utterance": "I can move everything just fine. It's breathing that is difficult."
+    },
+    {
+      "turn": 9,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_signs_and_symptoms",
+      "role": "Paramedic",
+      "utterance": "I understand you have COPD. When did your breathing issues start?"
+    },
+    {
+      "turn": 10,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "This has been going on for three days. I haven't had my oxygen in that time."
+    },
+    {
+      "turn": 11,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_medical_history",
+      "role": "Paramedic",
+      "utterance": "We found in your chart that you have schizoaffective disorder, COPD, and high blood pressure. Have you been taking your medications regularly?"
+    },
+    {
+      "turn": 12,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_medical_history",
+      "role": "Patient",
+      "utterance": "I haven't had my albuterol in three days because no one brought me my oxygen."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 160 over 85 right now."
+    },
+    {
+      "turn": 14,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 115, and your breathing is 24 times per minute."
+    },
+    {
+      "turn": 15,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 is 86 on room air, which is low."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Our glucose meter is showing 0, so it might not be working or is too low."
+    },
+    {
+      "turn": 17,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ecg",
+      "role": "Paramedic",
+      "utterance": "The EKG shows sinus tachycardia-your heart rate is elevated."
+    },
+    {
+      "turn": 18,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_status",
+      "role": "Paramedic",
+      "utterance": "Let me check your alertness. Can you tell me your age and the date?"
+    },
+    {
+      "turn": 19,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological_status",
+      "role": "Patient",
+      "utterance": "My name is Dawn. I'm 62 years old."
+    },
+    {
+      "turn": 20,
+      "topic": "Secondary Assessment",
+      "micro_intent": "eye",
+      "role": "Paramedic",
+      "utterance": "Your pupils remain reactive to light."
+    },
+    {
+      "turn": 21,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest",
+      "role": "EMT",
+      "utterance": "Let me listen to your lungs. Are there any two breath sounds that you recognize?"
+    },
+    {
+      "turn": 22,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest",
+      "role": "Patient",
+      "utterance": "I'm wheezing, especially in the upper part of my lungs."
+    },
+    {
+      "turn": 23,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin",
+      "role": "Paramedic",
+      "utterance": "Your skin is warm, pink, and dry."
+    },
+    {
+      "turn": 24,
+      "topic": "Secondary Assessment",
+      "micro_intent": "cardiovascular",
+      "role": "EMT",
+      "utterance": "We are going to attach you to a cardiac monitor now. It will help us monitor your heart activity."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Interventions",
+      "micro_intent": "ecg_4_lead",
+      "role": "EMT",
+      "utterance": "4-lead ECG monitoring is now in place."
+    },
+    {
+      "turn": 26,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_12_lead",
+      "role": "Paramedic",
+      "utterance": "We are also doing a 12-lead ECG to look for signs of heart involvement."
+    },
+    {
+      "turn": 27,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ecg_results",
+      "role": "EMT",
+      "utterance": "The 12-lead showed abnormal signs-possible prior inferior wall heart issue and right axis deviation."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Paramedic",
+      "utterance": "Do you have any pain right now?"
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "No pain at the moment-just breathing difficulties."
+    },
+    {
+      "turn": 30,
+      "topic": "Take Interventions",
+      "micro_intent": "oxygen_nrb",
+      "role": "Paramedic",
+      "utterance": "We'll start you on a non-rebreather mask at 15 liters per minute to help get more oxygen in."
+    },
+    {
+      "turn": 31,
+      "topic": "Take Interventions",
+      "micro_intent": "ekg_monitor",
+      "role": "Partner",
+      "utterance": "We will keep the EKG running continuously to monitor your rhythm."
+    },
+    {
+      "turn": 32,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Your respiratory rate is now 15, blood pressure is 141 over 101, and SpO2 is up to 97."
+    },
+    {
+      "turn": 33,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Heart rate is down to 100-this is better."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Interventions",
+      "micro_intent": "albuterol",
+      "role": "Paramedic",
+      "utterance": "We'll give you an albuterol nebulizer now. It should help open up your airways."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Interventions",
+      "micro_intent": "albuterol",
+      "role": "EMT",
+      "utterance": "You should feel the treatment in a minute or two. It helps with the wheezing."
+    },
+    {
+      "turn": 36,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "SpO2 is at 99, heart rate is 101, and your breathing is 14 now."
+    },
+    {
+      "turn": 37,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Blood pressure is 143 over 87. That's good."
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "recheck_breath",
+      "role": "EMT",
+      "utterance": "I want to recheck your lungs again-is your breathing still tight?"
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "recheck_breath",
+      "role": "Patient",
+      "utterance": "A little better, but I'm still wheezing."
+    },
+    {
+      "turn": 40,
+      "topic": "Secondary Assessment",
+      "micro_intent": "recheck_breath",
+      "role": "EMT",
+      "utterance": "I hear some improvement in the wheezing; that's good."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "check_GCS",
+      "role": "EMT",
+      "utterance": "Your Glasgow Coma Score is 15 (E4V5M6). You are still alert and oriented."
+    },
+    {
+      "turn": 42,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We are ready to assist you from the house to the ambulance. We'll use a stretcher with a 5-point harness."
+    },
+    {
+      "turn": 43,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Since you were already ambulating while on the non-rebreather, we won't need to carry you."
+    },
+    {
+      "turn": 44,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "The stretcher is ready-let's go ahead and have you sit and be secured safely."
+    },
+    {
+      "turn": 45,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Double-checking your vitals and EKG before we depart the scene."
+    },
+    {
+      "turn": 46,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Everything looks stable-ready to transport to the hospital."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "We won't administer any more medication unless the symptoms return."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "You kept on nasal cannula-no further nebulizer is needed at this time."
+    },
+    {
+      "turn": 49,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_last_oral_intake",
+      "role": "Paramedic",
+      "utterance": "When was the last time you had anything to eat or drink?"
+    },
+    {
+      "turn": 50,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_last_oral_intake",
+      "role": "Patient",
+      "utterance": "I had lunch earlier today-pasta and water."
+    },
+    {
+      "turn": 51,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_allergies",
+      "role": "Paramedic",
+      "utterance": "We don't note any known drug allergies in your chart-have you ever had an allergic reaction?"
+    },
+    {
+      "turn": 52,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_allergies",
+      "role": "Patient",
+      "utterance": "No known allergies to medications or foods."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Interventions",
+      "micro_intent": "albuterol",
+      "role": "Paramedic",
+      "utterance": "Since your breathing hasn't fully resolved, we are going to give a second albuterol nebulizer."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Interventions",
+      "micro_intent": "albuterol",
+      "role": "EMT",
+      "utterance": "Please use the nebulizer now. You should feel some relief in a few minutes."
+    },
+    {
+      "turn": 55,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "You are now at SpO2 99, heart rate at 101, and breathing at 14."
+    },
+    {
+      "turn": 56,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Paramedic",
+      "utterance": "BP is 144 over 90-we have a stable set of vitals."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities",
+      "role": "EMT",
+      "utterance": "Let me check your legs and feet. How are they feeling?"
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities",
+      "role": "Patient",
+      "utterance": "I feel fine. No numbness or tingling."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities",
+      "role": "EMT",
+      "utterance": "Peripheral pulses are strong and regular."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back",
+      "role": "Parametric",
+      "utterance": "Any pain in your back or lower extremities?"
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back",
+      "role": "Patient",
+      "utterance": "No, just breathing issues."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "back",
+      "role": "Parametric",
+      "utterance": "No signs of deformity or tenderness while checking your back."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological",
+      "role": "Paramedic",
+      "utterance": "I'm just going to check you again-can you tell me who I am?"
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological",
+      "role": "Patient",
+      "utterance": "Sure, you're an EMT helping me."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological",
+      "role": "Paramedic",
+      "utterance": "Can you describe what the emergency line operator said to you?"
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "neurological",
+      "role": "Patient",
+      "utterance": "They told me to stay calm, use what little oxygen I had, and wait for help."
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "background_check",
+      "role": "EMT",
+      "utterance": "Let me make sure I understand correctly. You have schizoaffective disorder, COPD, and hypertension?"
+    },
+    {
+      "turn": 68,
+      "topic": "Secondary Assessment",
+      "micro_intent": "background_check",
+      "role": "Patient",
+      "utterance": "Yes, all of those."
+    },
+    {
+      "turn": 69,
+      "topic": "Secondary Assessment",
+      "micro_intent": "background_check",
+      "role": "EMT",
+      "utterance": "And you have not been able to take your albuterol in days because your oxygen tanks never arrived."
+    },
+    {
+      "turn": 70,
+      "topic": "Secondary Assessment",
+      "micro_intent": "background_check",
+      "role": "Patient",
+      "utterance": "Correct."
+    },
+    {
+      "turn": 71,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 has remained steady at 99 throughout the last hour."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is still 144 over 90 now."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Let's shift you over to the stretcher inside the ambulance now."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You continue to ambulate, but we'll make sure you are secured as we load you in."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You are doing excellent-we are now ready to load you into the ambulance."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Everything is set. We are transferring you to VCU Health Systems Cold."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "By the way, you will remain seated while secured during transport for safety."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We will monitor you closely and keep the oxygen continuous throughout the ride."
+    },
+    {
+      "turn": 79,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Let me check again before arrival at the hospital. BP is 145 over 91, SpO2 99."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "EMT",
+      "utterance": "Heart rate is 103, and you are breathing at 14."
+    },
+    {
+      "turn": 81,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_pertinent_past",
+      "role": "Paramedic",
+      "utterance": "I see from your record your current medications are Haldol, Cogentin, lasix, lisinopril, and albuterol."
+    },
+    {
+      "turn": 82,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_pertinent_past",
+      "role": "Patient",
+      "utterance": "Correct."
+    },
+    {
+      "turn": 83,
+      "topic": "Take Interventions",
+      "micro_intent": "oxygen",
+      "role": "Paramedic",
+      "utterance": "You'll stay on the nasal cannula at 4 liters, which is manageable for your current condition."
+    },
+    {
+      "turn": 84,
+      "topic": "Take Interventions",
+      "micro_intent": "ekg_monitor",
+      "role": "Partner",
+      "utterance": "Your EKG is still normal sinus rhythm-everything is under control."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin",
+      "role": "EMT",
+      "utterance": "Let me check your skin again. It still looks warm, pink, and dry."
+    },
+    {
+      "turn": 86,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin",
+      "role": "EMT",
+      "utterance": "No signs of rashes or bruising noticed at this time."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin",
+      "role": "Partner",
+      "utterance": "No fluid retention or swelling-good for your heart and lungs now."
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest",
+      "role": "Paramedic",
+      "utterance": "Let me recheck your breathing sounds. It's still wheezy but definitely improved."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "chest",
+      "role": "EMT",
+      "utterance": "That's a major improvement. We will carry the nebulizer through arrival."
+    },
+    {
+      "turn": 90,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "Heart rate is down now to 104. SpO2 is at 99-and breathing is 13."
+    },
+    {
+      "turn": 91,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Paramedic",
+      "utterance": "Blood pressure is down slightly to 142 over 89."
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities",
+      "role": "Paramedic",
+      "utterance": "Let me check your extremity circulation again-pulses remain strong and regular."
+    },
+    {
+      "turn": 93,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities",
+      "role": "Partner",
+      "utterance": "No signs of numbness, tingling, or weakness-so your legs and arms are normal."
+    },
+    {
+      "turn": 94,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "EMT",
+      "utterance": "Let me confirm-everything is stable for arrival."
+    },
+    {
+      "turn": 95,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "Since we gave two doses of albuterol, we will switch back to nasal cannula for now."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "We are en route to VCU Health Systems Cold now."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "They are ready to receive you-ED on scene."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You'll be met there, ready for emergency room assistance."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Secured properly in the stretcher with full monitoring going."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "That's everything. We are near the destination and will wait for your transfer team to contact us."
+    },
+    {
+      "turn": 101,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Partner",
+      "utterance": "One more check. You are at heart rate 105, SpO2 99, breathing 13, and BP is 143 over 90."
+    },
+    {
+      "turn": 102,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "Paramedic",
+      "utterance": "Everything remains stable-this is excellent progress for you."
+    },
+    {
+      "turn": 103,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_events_leading",
+      "role": "EMT",
+      "utterance": "Who noticed the shortness of breath in you earlier?"
+    },
+    {
+      "turn": 104,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_events_leading",
+      "role": "Patient",
+      "utterance": "I noticed it myself-no one else."
+    },
+    {
+      "turn": 105,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_events_leading",
+      "role": "Paramedic",
+      "utterance": "Any other symptoms before you called 911?"
+    },
+    {
+      "turn": 106,
+      "topic": "History of Present Illness",
+      "micro_intent": "sAMPLE_events_leading",
+      "role": "Patient",
+      "utterance": "No, just progressively worse breathing."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "You're doing great, Dawn-just keep breathing slowly and we will be there soon."
+    },
+    {
+      "turn": 108,
+      "topic": "Secondary Assessment",
+      "micro_intent": "recheck_breath",
+      "role": "EMT",
+      "utterance": "Let me check your chest again-still wheezy, but better than in the beginning."
+    },
+    {
+      "turn": 109,
+      "topic": "Secondary Assessment",
+      "micro_intent": "recheck_breath",
+      "role": "EMT",
+      "utterance": "No signs of cyanosis or tracheal deviation-looks stable."
+    },
+    {
+      "turn": 110,
+      "topic": "Take Interventions",
+      "micro_intent": "stop_intervention",
+      "role": "EMT",
+      "utterance": "We won't administer any more medication unless the symptoms return."
+    },
+    {
+      "turn": 111,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "You kept on nasal cannula-no further nebulizer is needed at this time."
+    },
+    {
+      "turn": 112,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Paramedic",
+      "utterance": "That's the plan. You are progressing well."
+    },
+    {
+      "turn": 113,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Guess what-VCU ED is ready to receive you now and someone signed consent."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "They are waiting by the ER bed."
+    },
+    {
+      "turn": 115,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We will use a sheet lift to transfer you safely to the ER bed while secure as always."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "Just keep it calm and easy breathing as the team is preparing."
+    },
+    {
+      "turn": 117,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "You did well staying compliant and cooperative throughout transport."
+    },
+    {
+      "turn": 118,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Smooth and safe-everything transferred securely."
+    },
+    {
+      "turn": 119,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Paramedic",
+      "utterance": "As requested, I have reported to the Chief Clinical Officer about the incident."
+    },
+    {
+      "turn": 120,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "This concludes our time with you-thank you for cooperativity."
+    },
+    {
+      "turn": 121,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vitals",
+      "role": "EMT",
+      "utterance": "Let me do one last vitals check. SpO2 is 99, heart rate at 106, and BP is 144 over 91."
+    },
+    {
+      "turn": 122,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "EMT",
+      "utterance": "We will leave you on nasal cannula here with proper monitoring."
+    },
+    {
+      "turn": 123,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Paramedic",
+      "utterance": "You're on your way into the emergency department. This is smooth sailing."
+    },
+    {
+      "turn": 124,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "They are about to wheel you into the emergency room."
+    },
+    {
+      "turn": 125,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Just to be sure-are you okay to give consent for treatment?"
+    },
+    {
+      "turn": 126,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "Patient",
+      "utterance": "Yes, I gave consent when you first arrived."
+    }
+  ]
+}

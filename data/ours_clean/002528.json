@@ -1,0 +1,701 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002528",
+  "protocol": [
+    "medical - altered mental status (protocol 3 - 15)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond to a Sick Person call at --Address Redacted-- in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hi, this is EMT Alex from the rescue squad. Can you help me understand what's happening?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He is agitated and confused, saying he can't hear or see right and thinks he needs a head scan."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint → ams",
+      "role": "Bystander",
+      "utterance": "He started seeing and hearing strange things earlier and refuses to go to the hospital he was at before."
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Mr. John, can you tell me your name and where you are?"
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I'm John. I think I'm in the office."
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Medic",
+      "utterance": "You're keeping your eyes open. Is anything severe or dark?"
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "No, I can see fine."
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Medic",
+      "utterance": "What is the name of the president?"
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "I don't know. I was born in September."
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Medic",
+      "utterance": "Point to your ear for me, if that's possible."
+    },
+    {
+      "turn": 12,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "I tried, but I'm confused. I dunno if I did it right."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Partner",
+      "utterance": "Airway is clear and unobstructed."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "Breathing seems regular. Where exactly are you right now?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Patient",
+      "utterance": "I think I'm in the back office."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 20. Breathing is otherwise normal."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing → tachypnea",
+      "role": "Partner",
+      "utterance": "Pulse of 100, blood pressure 137/92."
+    },
+    {
+      "turn": 18,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Skin is warm, dry, and otherwise normal-looking."
+    },
+    {
+      "turn": 19,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "SpO₂ is 97%, and peripheral pulses are strong and equal."
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. → pertinent_past_medical_history",
+      "role": "Medic",
+      "utterance": "Any past illnesses or health conditions you want to mention to me?"
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. → pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I had a stroke last summer and a head injury in September, but I didn't get any treatment then."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. → signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Along with the voice problem and headache, what other symptoms are you having?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. → signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I have chest pain, stomach pain, and I'm unable to focus well."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. → signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "How would you describe your chest pain?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. → signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "It's constant and very severe-10 out of 10."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. → last_oral_intake",
+      "role": "Medic",
+      "utterance": "How many drinks did you have today, John?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. → last_oral_intake",
+      "role": "Patient",
+      "utterance": "101 drinks-mostly beer and liquor."
+    },
+    {
+      "turn": 28,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. → severity",
+      "role": "Medic",
+      "utterance": "What seems to make the pain worse?"
+    },
+    {
+      "turn": 29,
+      "topic": "Pain Assessment",
+      "micro_intent": "O.P.Q.R.S.T. → severity",
+      "role": "Patient",
+      "utterance": "I don't know, it just stays steady. I can't make it get better."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No rashes, cuts, or wounds observed."
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Look left and right for me, if you can."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "No, I don't want to-makes me feel strange."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is still 100; remains elevated."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory is 20, consistent with initial."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 137/92."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar again is 112 mg/dL."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is still at 97%. Good saturation."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG still reading sinus tach."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures → cv - ecg - 4_lead_monitoring",
+      "role": "Partner",
+      "utterance": "Reattaching the 4-lead ECG for continuous monitoring."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures → cv - ecg - 4_lead_monitoring",
+      "role": "Patient",
+      "utterance": "Okay."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures → cv - ecg - 12_lead_obtained",
+      "role": "Medic",
+      "utterance": "12-lead being completed now for detailed evaluation."
+    },
+    {
+      "turn": 42,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs",
+      "role": "Medic",
+      "utterance": "Re-examining based on protocol for altered mental status and alcohol intoxication."
+    },
+    {
+      "turn": 43,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs → pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 99, still tachycardic."
+    },
+    {
+      "turn": 44,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs → resp",
+      "role": "Partner",
+      "utterance": "Breathing increased to 24-tachypnea present."
+    },
+    {
+      "turn": 45,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs → bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 147/95-still elevated."
+    },
+    {
+      "turn": 46,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs → glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar reading now is 0-concerning."
+    },
+    {
+      "turn": 47,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs → spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ is at 94-lower now, but not critically low."
+    },
+    {
+      "turn": 48,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs → ekg",
+      "role": "Partner",
+      "utterance": "EKG remains unchanged, showing sinus tachycardia."
+    },
+    {
+      "turn": 49,
+      "topic": "Reassessments",
+      "micro_intent": "aaox1_4",
+      "role": "Medic",
+      "utterance": "John is AAOx1-only aware of his own name."
+    },
+    {
+      "turn": 50,
+      "topic": "Reassessments",
+      "micro_intent": "aaox1_4",
+      "role": "Partner",
+      "utterance": "He is confused with time, place, and people."
+    },
+    {
+      "turn": 51,
+      "topic": "Reassessments",
+      "micro_intent": "ams",
+      "role": "Medic",
+      "utterance": "He is showing signs of altered mental status and drifts in and out."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "tachypnea",
+      "role": "Partner",
+      "utterance": "Increased respiratory rate noted, now at 24-this is tachypneic."
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "ams",
+      "role": "Patient",
+      "utterance": "Who are you? I don't like strangers."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse now at 95."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate has returned to 20."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 134/86."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO₂ reading is still at 94%-same as last."
+    },
+    {
+      "turn": 58,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "We'll assist you onto the stretcher safely now."
+    },
+    {
+      "turn": 59,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "Don't touch me, I don't like strangers."
+    },
+    {
+      "turn": 60,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We'll be gentle and cover you with a blanket."
+    },
+    {
+      "turn": 61,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "You'll be positioned for comfort, and we'll secure you with restraints."
+    },
+    {
+      "turn": 62,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Ready to move him now."
+    },
+    {
+      "turn": 63,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "John, which hospital is your preference?"
+    },
+    {
+      "turn": 64,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Patient",
+      "utterance": "St. Mary's-no VCU."
+    },
+    {
+      "turn": 65,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "We will take you to St. Mary's, per your request."
+    },
+    {
+      "turn": 66,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Hospital has been alerted and is aware of the situation."
+    },
+    {
+      "turn": 67,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "He is combative while being touched and fair so far during transport."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Current vitals: SpO₂ 94%, glucose 0, heart rate decreasing."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "EMS is ensured a stable and safe transport environment."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Reporting a 48-year-old male with altered mental status and a history of untreated head injury."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Medical history includes non-insulin-dependent diabetes as noted on scene."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "No trauma assessed and responded to blink commands as observed."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "He is secured with five-point restraints and moved safely."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Hospital is aware of the potential combative behavior."
+    },
+    {
+      "turn": 75,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Blood sugar remains at 0 with no noticeable improvement."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Continuing cooperation with the hospital for delivery."
+    },
+    {
+      "turn": 77,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "RA stretcher was moved with ED bed assistance from staff."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "ED team is now taking over from here for further care."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "I've handed the patient directly to a nurse there."
+    },
+    {
+      "turn": 80,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "EMS is done-ED is managing from this point on."
+    },
+    {
+      "turn": 81,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "I will make sure he gets good care at the ED."
+    },
+    {
+      "turn": 82,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Five-point restraints in place for safety at handoff."
+    },
+    {
+      "turn": 83,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Patient remains with AMS and SpO₂ level now at 94%."
+    },
+    {
+      "turn": 84,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Events are being reported to ED for documentation now."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Documenting is continuing to ensure a complete report."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Moving on to the next call shortly."
+    },
+    {
+      "turn": 87,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Transferred all relevant data as of now into the system."
+    },
+    {
+      "turn": 88,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "All protocols followed as appropriate during the call."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Initiating next response within the hour."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Thanks to all for a cooperative transfer."
+    },
+    {
+      "turn": 91,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Everything done by protocols established."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Working well to accommodate the patient's needs."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Please contact if any changes, otherwise monitoring."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Slots are open for the next call. One more to go."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Operationally, we're ready for next assignment."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "Travel safe for now-see you next call."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Same to you. Another emergency down."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Medic",
+      "utterance": "To all involved, staying safe until the next one."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Partner",
+      "utterance": "Same safe wishes, peace."
+    }
+  ]
+}

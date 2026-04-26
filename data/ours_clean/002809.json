@@ -1,0 +1,750 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002809",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Unit 3, respond to a 36-year-old male with breathing difficulty at a residence in Richmond."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Mark, an EMT with the emergency team. What brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I've been having a bad asthma attack for about 30 minutes. I ran out of inhaler."
+    },
+    {
+      "turn": 4,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Daniel, can you tell me your name and the current date?"
+    },
+    {
+      "turn": 5,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye opening",
+      "role": "Patient",
+      "utterance": "My name is Daniel. I believe it's May 26th."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal response",
+      "role": "EMT",
+      "utterance": "Can you tell me the city and county where we are now?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor response",
+      "role": "Patient",
+      "utterance": "We are in Richmond, in the city limits."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "You seem alert and oriented. On a scale of 1-15, how would you rate your awareness?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Patient",
+      "utterance": "I rate it a 15, full awareness."
+    },
+    {
+      "turn": 10,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway - Airway clearance",
+      "role": "EMT",
+      "utterance": "Your airway is open and patent. Are you having trouble keeping it clear?"
+    },
+    {
+      "turn": 11,
+      "topic": "Primary Assessment",
+      "micro_intent": "check airway",
+      "role": "EMT",
+      "utterance": "Good, the airway is maintainable. Continue keeping it upright."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing - Rate and depth of respirations",
+      "role": "EMT",
+      "utterance": "Partner, get me a pulse ox and respirations baseline."
+    },
+    {
+      "turn": 13,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Pulse ox reads 97%, but he is breathing fast and in distress."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check breathing - Diminished breath sounds and wheezing",
+      "role": "EMT",
+      "utterance": "There is wheezing present in all lung fields."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check circulation - Pulse rate and quality",
+      "role": "Partner",
+      "utterance": "Let me get an initial pulse reading."
+    },
+    {
+      "turn": 16,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 133, regular and strong."
+    },
+    {
+      "turn": 17,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - signs and symptoms",
+      "role": "EMT",
+      "utterance": "You told the operator he just started noticing the worsening attack. When did you begin using your inhaler?"
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - events leading up to the event",
+      "role": "Patient",
+      "utterance": "All day today. I've used it numerous times, but it's stopped working."
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent past medical history",
+      "role": "EMT",
+      "utterance": "Do you have any known chronic medical conditions that might relate?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "I have moderate asthma and hypertension."
+    },
+    {
+      "turn": 21,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Let me get a baseline blood glucose now."
+    },
+    {
+      "turn": 22,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood sugar is 116-within a safe range."
+    },
+    {
+      "turn": 23,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 167 over 101."
+    },
+    {
+      "turn": 24,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Paramedic",
+      "utterance": "We are following the respiratory distress/asthma protocol 3-11."
+    },
+    {
+      "turn": 25,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "We'll start nebulizer treatment with albuterol and atrovent based on the protocol."
+    },
+    {
+      "turn": 26,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 37 per minute, and he is showing signs of hyperventilation."
+    },
+    {
+      "turn": 27,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is remaining elevated at 167 over 101."
+    },
+    {
+      "turn": 28,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - GCS",
+      "role": "EMT",
+      "utterance": "Can you tell me the year again for orientation?"
+    },
+    {
+      "turn": 29,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - GCS",
+      "role": "Patient",
+      "utterance": "2019."
+    },
+    {
+      "turn": 30,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - GCS",
+      "role": "EMT",
+      "utterance": "Where are you right now?"
+    },
+    {
+      "turn": 31,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - GCS",
+      "role": "Patient",
+      "utterance": "I am at my home in Richmond."
+    },
+    {
+      "turn": 32,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - Pupillary_reflex / Size_of_pupils",
+      "role": "EMT",
+      "utterance": "I need to assess your pupils for response to light."
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - Pupillary_reflex / Size_of_pupils",
+      "role": "Patient",
+      "utterance": "Please proceed."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - Pupillary_reflex / Size_of_pupils",
+      "role": "EMT",
+      "utterance": "Both pupils are equal and reactive to light."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam - Gross_assessment",
+      "role": "EMT",
+      "utterance": "No signs of airway obstruction or bleeding. Continue nebulizing."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose is reading 0. This may be artifact due to tachycardia. Retesting after nebulizer is better."
+    },
+    {
+      "turn": 37,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate has dropped slightly to 34."
+    },
+    {
+      "turn": 38,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is at 139-still elevated but strong."
+    },
+    {
+      "turn": 39,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is now 99 over 64."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Paramedic",
+      "utterance": "Need to start an IV for medication administration and fluids. Any preferred arm or leg?"
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "iv_start",
+      "role": "Partner",
+      "utterance": "IV has been placed in his left AC vein, and a saline lock is in place."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "Paramedic",
+      "utterance": "Administering 10 mg of dexamethasone intramuscularly for inflammation."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Initial EKG reading is normal sinus tachycardia."
+    },
+    {
+      "turn": 44,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam - skin_color/temperature",
+      "role": "EMT",
+      "utterance": "No signs of cyanosis or pallor. Skin is warm."
+    },
+    {
+      "turn": 45,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam - Peripheral_pulses",
+      "role": "Paramedic",
+      "utterance": "Peripheral pulses are equally strong and regular in both arms and legs."
+    },
+    {
+      "turn": 46,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "You mentioned obesity as a noted condition. Does it affect your breathing?"
+    },
+    {
+      "turn": 47,
+      "topic": "History of Present Illness",
+      "micro_intent": "S.A.M.P.L.E. - pertinent_past_medical_history",
+      "role": "Patient",
+      "utterance": "Yes, it definitely makes it harder to breathe when I have asthma flares."
+    },
+    {
+      "turn": 48,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam - skin_color/temperature",
+      "role": "EMT",
+      "utterance": "Skin turgor is normal with no evidence of dehydration or rashes."
+    },
+    {
+      "turn": 49,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - Neck_veins",
+      "role": "EMT",
+      "utterance": "No jugular venous distension or masses palpable in the neck."
+    },
+    {
+      "turn": 50,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - Mental_status",
+      "role": "EMT",
+      "utterance": "Are you experiencing any confusion or trouble with memory?"
+    },
+    {
+      "turn": 51,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - Mental_status",
+      "role": "Patient",
+      "utterance": "I'm thinking clearly and not confused at all."
+    },
+    {
+      "turn": 52,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam - Obstruction",
+      "role": "EMT",
+      "utterance": "No signs of airway obstruction or throat swelling."
+    },
+    {
+      "turn": 53,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio_exam - Breath_sounds",
+      "role": "EMT",
+      "utterance": "Persistent wheezing in all lung fields-no signs of consolidation or crackles."
+    },
+    {
+      "turn": 54,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax/lungs/cardio_exam - Heart_Sounds",
+      "role": "EMT",
+      "utterance": "Heart sounds are regular with no murmurs or extra sounds."
+    },
+    {
+      "turn": 55,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - Swallowing",
+      "role": "EMT",
+      "utterance": "Any problems with swallowing or voice today?"
+    },
+    {
+      "turn": 56,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam - Swallowing",
+      "role": "Patient",
+      "utterance": "No, everything is fine there."
+    },
+    {
+      "turn": 57,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam - Hearing",
+      "role": "EMT",
+      "utterance": "Can you hear me clearly without difficulty?"
+    },
+    {
+      "turn": 58,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam - Hearing",
+      "role": "Patient",
+      "utterance": "Yes, I can hear perfectly well."
+    },
+    {
+      "turn": 59,
+      "topic": "Secondary Assessment",
+      "micro_intent": "ears_nose_mouth_and_throat_exam - Drainage",
+      "role": "EMT",
+      "utterance": "No nasal discharge or sunken eyes present."
+    },
+    {
+      "turn": 60,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam - Shape_and_size",
+      "role": "EMT",
+      "utterance": "Abdomen is flat and non-tenderness to palpation."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam - Bowel_sounds",
+      "role": "EMT",
+      "utterance": "Bowel sounds are not auscultated in this assessment."
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam - Tenderness",
+      "role": "EMT",
+      "utterance": "Any pain in your belly or lower abdomen?"
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdomen_exam - Tenderness",
+      "role": "Patient",
+      "utterance": "No pain in my belly or stomach area."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam - Vertebral_column",
+      "role": "EMT",
+      "utterance": "No pain or abnormal curvature in the spine during exam."
+    },
+    {
+      "turn": 65,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - resp",
+      "role": "Partner",
+      "utterance": "Respiratory rate has stabilized to 26."
+    },
+    {
+      "turn": 66,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is currently at 143-still tachycardic."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "Pulse ox is 95-O2 remains on NRB 15LPM."
+    },
+    {
+      "turn": 68,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose remains at 0-no metabolic compromise."
+    },
+    {
+      "turn": 69,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Second nebulizer treatment is starting for continued bronchodilation."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "We are transporting to VCU for additional care and evaluation."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Ready to assist with patient extrication."
+    },
+    {
+      "turn": 72,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Continuous capnography and 4-lead monitoring remain stable."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "destination_and_transport_position",
+      "role": "EMT",
+      "utterance": "Keeping the patient in semi-Fowler's for transport stability."
+    },
+    {
+      "turn": 74,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medications",
+      "role": "EMT",
+      "utterance": "Third nebulizer treatment is in progress-important for sustained effect."
+    },
+    {
+      "turn": 75,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure remains steady at 124 over 80."
+    },
+    {
+      "turn": 76,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Patient is stable with no new symptoms-ready for VCU transport."
+    },
+    {
+      "turn": 77,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG remained normal throughout the assessment."
+    },
+    {
+      "turn": 78,
+      "topic": "Transport",
+      "micro_intent": "completion",
+      "role": "EMT",
+      "utterance": "Albuterol and dexamethasone have been administered as per protocol."
+    },
+    {
+      "turn": 79,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose remains zero with no alarm signs."
+    },
+    {
+      "turn": 80,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment - severity",
+      "role": "EMT",
+      "utterance": "Do you feel any chest, neck, or back discomfort now?"
+    },
+    {
+      "turn": 81,
+      "topic": "Reassessments",
+      "micro_intent": "redo_pain_assessment - severity",
+      "role": "Patient",
+      "utterance": "No pain or worsening symptoms-things are manageable."
+    },
+    {
+      "turn": 82,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - pulse",
+      "role": "Partner",
+      "utterance": "Heart rate is steady at 142-no acute deterioration."
+    },
+    {
+      "turn": 83,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - resp",
+      "role": "Partner",
+      "utterance": "Still 26 per minute-no signs of increased respiratory effort."
+    },
+    {
+      "turn": 84,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs - spo2",
+      "role": "Partner",
+      "utterance": "Pulse ox is now 96-very slightly decreased but acceptable."
+    },
+    {
+      "turn": 85,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "No signs of acute respiratory failure-handoff is complete."
+    },
+    {
+      "turn": 86,
+      "topic": "Transport",
+      "micro_intent": "completion",
+      "role": "EMT",
+      "utterance": "Albuterol, atrovent, and dexamethasone have been administered appropriately."
+    },
+    {
+      "turn": 87,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "End of transport glucose still reads 0-likely stress artifact."
+    },
+    {
+      "turn": 88,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure remains 124 over 80 as of the final stop."
+    },
+    {
+      "turn": 89,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "MOI has been recorded with no trauma indicators for transport."
+    },
+    {
+      "turn": 90,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "All elements of emergency care have been appropriately and timely managed."
+    },
+    {
+      "turn": 91,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "EMT",
+      "utterance": "Adding lisinopril to the medication history as part of the documented personal medication list."
+    },
+    {
+      "turn": 92,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Final documentation is complete and VCU is prepared to accept the patient for ED treatment."
+    },
+    {
+      "turn": 93,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "All monitoring, IV, and medications are locked and ready for ED handoff."
+    },
+    {
+      "turn": 94,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Patient is no longer in acute distress and is stable for ED care."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "All components of EMS treatment are now complete and documented."
+    },
+    {
+      "turn": 96,
+      "topic": "Transport",
+      "micro_intent": "completion",
+      "role": "EMT",
+      "utterance": "Patient will be transported cold and maintained in semi-Fowler position."
+    },
+    {
+      "turn": 97,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Final check of all interventions completed-handoff to ED is ready."
+    },
+    {
+      "turn": 98,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Transport of this patient is safe per current vital signs and protocol."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "No signs of neurological disturbance or additional injuries detected."
+    },
+    {
+      "turn": 100,
+      "topic": "Exit to Protocol",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Airway remains patent and stable during and after all exams."
+    },
+    {
+      "turn": 101,
+      "topic": "Transport",
+      "micro_intent": "completion",
+      "role": "EMT",
+      "utterance": "Patient will be transported cold and maintained in semi-Fowler position."
+    },
+    {
+      "turn": 102,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "Paramedic",
+      "utterance": "Final check of all interventions completed-handoff to ED is ready."
+    },
+    {
+      "turn": 103,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "Transport of this patient is safe per current vital signs and protocol."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "No signs of neurological disturbance or additional injuries detected."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "completion",
+      "role": "EMT",
+      "utterance": "Patient will be transported cold and maintained in semi-Fowler position."
+    },
+    {
+      "turn": 106,
+      "topic": "Exit to Protocol",
+      "micro_intent": "handoff",
+      "role": "EMT",
+      "utterance": "All components of EMS treatment are now complete and documented."
+    }
+  ]
+}

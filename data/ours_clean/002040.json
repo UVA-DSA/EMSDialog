@@ -1,0 +1,778 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002040",
+  "protocol": [
+    "medical - respiratory distress/asthma/copd/croup/reactive airway (respiratory distress) (protocol 3 - 11)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Medical Unit 3 en route for breathing problems at 24 Mapleswood Drive."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "Medic",
+      "utterance": "Hello, my name is Jordan, I'm a paramedic with Richmond EMS. What brought you to call 911 today?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "I have chest tightness and shortness of breath for over an hour now."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Medic",
+      "utterance": "Alright, do you have any other symptoms like dizziness or nausea?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Patient",
+      "utterance": "Nausea, and sometimes dizziness when I try to stand up."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Medic",
+      "utterance": "Let's check your responsiveness. What is your name?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "My name is Gavin."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Medic",
+      "utterance": "Can you tell me the current county we're in?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "Richmond... Henrico County, I think."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Medic",
+      "utterance": "Are you aware of why you called 911 this morning?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "I woke up with chest tightness and shortness of breath. Thought it would go away."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "Your airway is clear and maintains well. Let me take a closer look at your breathing now."
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "Medic",
+      "utterance": "May I catch a breath sound while I listen?"
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respiratory rate is 30. Breathing is rapid, and the chest movement is equal on both sides."
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "SpO2 measured at 91% using pulse oximetry."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is high at 153 with irregular rhythm. Blood pressure is 158 over 106."
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Medic",
+      "utterance": "Any chest pain? Can you rate it from 0 to 10?"
+    },
+    {
+      "turn": 18,
+      "topic": "Pain Assessment",
+      "micro_intent": "severity",
+      "role": "Patient",
+      "utterance": "Definitely 10 - feels like a heavy pressure across the chest."
+    },
+    {
+      "turn": 19,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Medic",
+      "utterance": "Does it go to your arms, jaw, or back?"
+    },
+    {
+      "turn": 20,
+      "topic": "Pain Assessment",
+      "micro_intent": "radiation",
+      "role": "Patient",
+      "utterance": "Doesn't really spread - stays in the center."
+    },
+    {
+      "turn": 21,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Medic",
+      "utterance": "When did this chest sensation start?"
+    },
+    {
+      "turn": 22,
+      "topic": "Pain Assessment",
+      "micro_intent": "onset",
+      "role": "Patient",
+      "utterance": "About 6 a.m. and just has not gone away."
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Any signs of cough or sputum?"
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Yes, been coughing off and on with yellow and brown sputum."
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Medic",
+      "utterance": "Have you had vomiting or anything like that?"
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "Nausea, yes. Vomited a bit for the past couple weeks."
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Medic",
+      "utterance": "Which medications have you been on?"
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "medications",
+      "role": "Patient",
+      "utterance": "Metoprolol, Albuterol, and Eliquis."
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "non_compliance",
+      "role": "Medic",
+      "utterance": "Have you been consistently taking these?"
+    },
+    {
+      "turn": 30,
+      "topic": "History of Present Illness",
+      "micro_intent": "non_compliance",
+      "role": "Patient",
+      "utterance": "No. I've skipped them, especially in the last two weeks."
+    },
+    {
+      "turn": 31,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Lung sounds reduced in lower lobes. Rhonchi in the upper fields."
+    },
+    {
+      "turn": 32,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 153 and irregular."
+    },
+    {
+      "turn": 33,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are 30 per minute."
+    },
+    {
+      "turn": 34,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 158 over 106."
+    },
+    {
+      "turn": 35,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation is 91%."
+    },
+    {
+      "turn": 36,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Atrial fibrillation found on EKG."
+    },
+    {
+      "turn": 37,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical",
+      "role": "Medic",
+      "utterance": "What is your medical history?"
+    },
+    {
+      "turn": 38,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical",
+      "role": "Patient",
+      "utterance": "COPD, old heart attack, heart failure, and AFib."
+    },
+    {
+      "turn": 39,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical",
+      "role": "Medic",
+      "utterance": "Any surgeries or repeated hospital visits?"
+    },
+    {
+      "turn": 40,
+      "topic": "History of Present Illness",
+      "micro_intent": "past_medical",
+      "role": "Patient",
+      "utterance": "Not recently. Just chronic management stuff."
+    },
+    {
+      "turn": 41,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Medic",
+      "utterance": "When did you take medications last?"
+    },
+    {
+      "turn": 42,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Patient",
+      "utterance": "Two weeks ago at least - stopped taking them."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "Starting normal saline IV on port 2."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "Atrial fibrillation noted again - no change."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "Oxygen started at 2 liters. Pulse ox now up to 92%."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "Atrovent via nebulizer given now."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "Partner",
+      "utterance": "Albuterol 5mg given next. Looks like some breathing improvement."
+    },
+    {
+      "turn": 48,
+      "topic": "Primary Assessment",
+      "micro_intent": "signs_of_improvement",
+      "role": "Medic",
+      "utterance": "You're breathing easier now. How does it feel for you?"
+    },
+    {
+      "turn": 49,
+      "topic": "Primary Assessment",
+      "micro_intent": "signs_of_improvement",
+      "role": "Patient",
+      "utterance": "Better, a bit - thanks."
+    },
+    {
+      "turn": 50,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Respirations are 14 per minute with SpO2 at 92%."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Vital Signs",
+      "micro_intent": "retake_vital_signs",
+      "role": "Partner",
+      "utterance": "Blood pressure is 148 over 93, and pulse is now 94."
+    },
+    {
+      "turn": 52,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Medic",
+      "utterance": "How about that chest tightness now?"
+    },
+    {
+      "turn": 53,
+      "topic": "Reassessments",
+      "micro_intent": "retake_pain_assessment",
+      "role": "Patient",
+      "utterance": "Better, but still about a 9 out of 10."
+    },
+    {
+      "turn": 54,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Atrovent and Albuterol were both effective."
+    },
+    {
+      "turn": 55,
+      "topic": "Exit to Protocol",
+      "micro_intent": "initiate_protocol",
+      "role": "Medic",
+      "utterance": "Following Protocol 3-11 for respiratory distress. All steps in order."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 117 - still irregular."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations down to 26 per minute."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "BP is 137 over 87 now."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "SpO2 now up to 94%."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12 Lead ECG taken - still in atrial fibrillation."
+    },
+    {
+      "turn": 61,
+      "topic": "Secondary Assessment",
+      "micro_intent": "general_exam",
+      "role": "Medic",
+      "utterance": "Any numbness or pain in your arms or legs?"
+    },
+    {
+      "turn": 62,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "No. Movement in all limbs is normal."
+    },
+    {
+      "turn": 63,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "Let me check for any skin changes or discoloration."
+    },
+    {
+      "turn": 64,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "Nothing different. Just maybe a little pale around the lips."
+    },
+    {
+      "turn": 65,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "Medic",
+      "utterance": "Cough is productive with yellow sputum - signs of infection."
+    },
+    {
+      "turn": 66,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdominal_wall_exam",
+      "role": "Medic",
+      "utterance": "You mentioned nausea. Is it painful to touch your belly?"
+    },
+    {
+      "turn": 67,
+      "topic": "Secondary Assessment",
+      "micro_intent": "abdominal_wall_exam",
+      "role": "Patient",
+      "utterance": "Yes. It's sore when I use my stomach or vomit."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Medic",
+      "utterance": "Choosing VCU Medical Center ED G15 for transfer."
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is secure on the stretcher. Position of comfort achieved."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "hand_off",
+      "role": "Medic",
+      "utterance": "ER handoff is ready. All vital info is in the report."
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "hand_off",
+      "role": "Partner",
+      "utterance": "No further changes. Ready for transfer."
+    },
+    {
+      "turn": 72,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "Medic",
+      "utterance": "Additionally, the productivity of your cough and yellow sputum could suggest an infection like influenza."
+    },
+    {
+      "turn": 73,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose is 148."
+    },
+    {
+      "turn": 74,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "All treatments - Albuterol, Atrovent, IV - documented."
+    },
+    {
+      "turn": 75,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Oxygen support working. SpO2 is 94%."
+    },
+    {
+      "turn": 76,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Medic",
+      "utterance": "Moving and feeling well in both arms and legs?"
+    },
+    {
+      "turn": 77,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "Yes, movement and sensation are normal."
+    },
+    {
+      "turn": 78,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "Is the sputum still thick and yellow?"
+    },
+    {
+      "turn": 79,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Yes. Productive cough continues, though breathing is better."
+    },
+    {
+      "turn": 80,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "Medic",
+      "utterance": "Productive cough and yellow sputum indicate lower respiratory infection."
+    },
+    {
+      "turn": 81,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Medic",
+      "utterance": "Can you repeat the names of the medications you take?"
+    },
+    {
+      "turn": 82,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "Metoprolol, Albuterol, and Eliquis."
+    },
+    {
+      "turn": 83,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heart_function",
+      "role": "Medic",
+      "utterance": "How has your heart rhythm felt today?"
+    },
+    {
+      "turn": 84,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heart_function",
+      "role": "Patient",
+      "utterance": "Still irregular - always is, though."
+    },
+    {
+      "turn": 85,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Medic",
+      "utterance": "Any difficulty swallowing or neck discomfort?"
+    },
+    {
+      "turn": 86,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "No neck pain - but dizziness when I move fast."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Medic",
+      "utterance": "Are your legs or back swollen or tender?"
+    },
+    {
+      "turn": 88,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Partner",
+      "utterance": "No swelling or pain observed."
+    },
+    {
+      "turn": 89,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Medic",
+      "utterance": "Any recent rashes or bruising?"
+    },
+    {
+      "turn": 90,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Patient",
+      "utterance": "Nothing new or unusual."
+    },
+    {
+      "turn": 91,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_skin_temperature",
+      "role": "Medic",
+      "utterance": "Are your hands and feet warm?"
+    },
+    {
+      "turn": 92,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_skin_temperature",
+      "role": "Patient",
+      "utterance": "Yes, no cold or blue spots."
+    },
+    {
+      "turn": 93,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_skin_color",
+      "role": "Medic",
+      "utterance": "Any extreme paleness or bluish tint?"
+    },
+    {
+      "turn": 94,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_skin_color",
+      "role": "Patient",
+      "utterance": "Could be a little pale around the mouth."
+    },
+    {
+      "turn": 95,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Medic",
+      "utterance": "You mentioned COPD and AFib. Do you remember the other conditions from earlier?"
+    },
+    {
+      "turn": 96,
+      "topic": "Secondary Assessment",
+      "micro_intent": "mental_status",
+      "role": "Patient",
+      "utterance": "Heart failure, old MI - yes."
+    },
+    {
+      "turn": 97,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Medic",
+      "utterance": "Do you feel any numbness or weakness at all?"
+    },
+    {
+      "turn": 98,
+      "topic": "Secondary Assessment",
+      "micro_intent": "extremities_and_back_exam",
+      "role": "Patient",
+      "utterance": "No numbness or weakness throughout."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Medic",
+      "utterance": "Ready to load for transport. All restraints double-checked."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "hand_off",
+      "role": "Partner",
+      "utterance": "All information passed to ER staff. Take over complete."
+    },
+    {
+      "turn": 101,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_exam",
+      "role": "Medic",
+      "utterance": "Chronic productive cough with thick sputum documented for ER."
+    },
+    {
+      "turn": 102,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Medic",
+      "utterance": "Any changes in breathing seen lately?"
+    },
+    {
+      "turn": 103,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "No major changes. Productive cough continues; breath sounds improving."
+    },
+    {
+      "turn": 104,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heart_function",
+      "role": "Medic",
+      "utterance": "Your normal heart rhythm is always irregular with AFib."
+    },
+    {
+      "turn": 105,
+      "topic": "Secondary Assessment",
+      "micro_intent": "heart_function",
+      "role": "Patient",
+      "utterance": "Yes, that's how it's always been."
+    },
+    {
+      "turn": 106,
+      "topic": "Reassessments",
+      "micro_intent": "stability_check",
+      "role": "Partner",
+      "utterance": "Stabilizing trend in vital signs. No drop in status."
+    },
+    {
+      "turn": 107,
+      "topic": "Transport",
+      "micro_intent": "exit_protocol",
+      "role": "Medic",
+      "utterance": "All protocol steps completed. Ready for transport."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "exit_protocol",
+      "role": "Partner",
+      "utterance": "All documentation updated for transfer."
+    },
+    {
+      "turn": 109,
+      "topic": "Reassessments",
+      "micro_intent": "retake_interventions",
+      "role": "Partner",
+      "utterance": "Albuterol and Atrovent administered as per protocol."
+    },
+    {
+      "turn": 110,
+      "topic": "Reassessments",
+      "micro_intent": "reassurance",
+      "role": "Medic",
+      "utterance": "You are doing well. Charts and vitals will follow."
+    }
+  ]
+}

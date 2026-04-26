@@ -1,0 +1,827 @@
+{
+  "source": "/scratch/zar8jw/Conversation_Generation/log/Qwen/Qwen3-32B/ours/002632",
+  "protocol": [
+    "medical - overdose/poisoning - opioid (protocol 7 - 1)"
+  ],
+  "dialogue": [
+    {
+      "turn": 1,
+      "topic": "Dispatch",
+      "micro_intent": "radio_dispatch",
+      "role": "dispatcher",
+      "utterance": "Dispatch to Unit 3 responding for chest pain at a residence on the west end."
+    },
+    {
+      "turn": 2,
+      "topic": "Introduction",
+      "micro_intent": "introduction",
+      "role": "EMT",
+      "utterance": "Hello, I'm Jordan, an EMT with the rescue squad. We understand you have a chief complaint of chest pain-can we speak with the patient?"
+    },
+    {
+      "turn": 3,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "He was unconscious when I found him, like, thirty minutes ago."
+    },
+    {
+      "turn": 4,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "EMT",
+      "utterance": "Sorry to hear that. Did you call 911 right away or was there a delay?"
+    },
+    {
+      "turn": 5,
+      "topic": "Chief Complaint",
+      "micro_intent": "identify_primary_complaint",
+      "role": "Bystander",
+      "utterance": "I called right after I realized he wasn't waking up."
+    },
+    {
+      "turn": 6,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Sir, can you open your eyes for me? My name is Jordan. What is your name?"
+    },
+    {
+      "turn": 7,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "eye_opening",
+      "role": "Patient",
+      "utterance": "Hmm."
+    },
+    {
+      "turn": 8,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "EMT",
+      "utterance": "Can you tell me where you are?"
+    },
+    {
+      "turn": 9,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Patient",
+      "utterance": "Richmond."
+    },
+    {
+      "turn": 10,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "EMT",
+      "utterance": "Can you squeeze my finger for me?"
+    },
+    {
+      "turn": 11,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "motor_response",
+      "role": "Patient",
+      "utterance": "...Okay."
+    },
+    {
+      "turn": 12,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_airway",
+      "role": "EMT",
+      "utterance": "Sir, we're going to check your airway. You're breathing on your own, is that correct?"
+    },
+    {
+      "turn": 13,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Sir, we are placing an oxygen sensor on your finger for a quick saturation reading."
+    },
+    {
+      "turn": 14,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "Can you tell us if your breathing is comfortable?"
+    },
+    {
+      "turn": 15,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "Respirations are at 14 per minute, shallow but regular."
+    },
+    {
+      "turn": 16,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "EMT",
+      "utterance": "Can you tell us if your legs feel like they're working okay for you?"
+    },
+    {
+      "turn": 17,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_circulation",
+      "role": "Partner",
+      "utterance": "Pulse is 76, strong and regular."
+    },
+    {
+      "turn": 18,
+      "topic": "History of Present Illness",
+      "micro_intent": "collect_patient_personal_information",
+      "role": "EMT",
+      "utterance": "Can you tell us your name and approximate age?"
+    },
+    {
+      "turn": 19,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Partner",
+      "utterance": "Sir, are you experiencing any chest pain or shortness of breath?"
+    },
+    {
+      "turn": 20,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "No real pain."
+    },
+    {
+      "turn": 21,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Patient",
+      "utterance": "I just feel... off."
+    },
+    {
+      "turn": 22,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Do you have any known chronic illnesses or health conditions?"
+    },
+    {
+      "turn": 23,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "He has epilepsy, had a couple of seizures before."
+    },
+    {
+      "turn": 24,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Thank you. What medications do you take regularly?"
+    },
+    {
+      "turn": 25,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Partner",
+      "utterance": "Ibuprofen, Prozac, and something for his seizures."
+    },
+    {
+      "turn": 26,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "EMT",
+      "utterance": "When was the last time you drank or ate anything?"
+    },
+    {
+      "turn": 27,
+      "topic": "History of Present Illness",
+      "micro_intent": "last_oral_intake",
+      "role": "Bystander",
+      "utterance": "He was drinking all night, but not anything else."
+    },
+    {
+      "turn": 28,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "EMT",
+      "utterance": "Do you have any allergies we should know about?"
+    },
+    {
+      "turn": 29,
+      "topic": "History of Present Illness",
+      "micro_intent": "allergies",
+      "role": "Bystander",
+      "utterance": "He's allergic to penicillin."
+    },
+    {
+      "turn": 30,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst_severity",
+      "role": "EMT",
+      "utterance": "On a scale from 0 to 10, with 10 being the worst pain you've ever felt, how would you rate your overall discomfort?"
+    },
+    {
+      "turn": 31,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst_severity",
+      "role": "Patient",
+      "utterance": "Zero, I guess."
+    },
+    {
+      "turn": 32,
+      "topic": "Pain Assessment",
+      "micro_intent": "oqrst_severity",
+      "role": "EMT",
+      "utterance": "No pain at all, got it. Would you say the pain if any has changed or remained the same so far tonight?"
+    },
+    {
+      "turn": 33,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "EMT",
+      "utterance": "Partner, check for any signs of trauma on his body."
+    },
+    {
+      "turn": 34,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "No visible trauma, bruises, or cuts."
+    },
+    {
+      "turn": 35,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Sir, we're going to shine a light in your eyes for a quick check-can we do that?"
+    },
+    {
+      "turn": 36,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Patient",
+      "utterance": "Hmmm."
+    },
+    {
+      "turn": 37,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "EMT",
+      "utterance": "Your pupils are pinpoint but reactive. Would you be okay if I held a pen in front of your nose to check eye movement?"
+    },
+    {
+      "turn": 38,
+      "topic": "Secondary Assessment",
+      "micro_intent": "head_and_neck_exam",
+      "role": "Partner",
+      "utterance": "Eyes are equal and tracking well-he's following the pen."
+    },
+    {
+      "turn": 39,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "His lungs are clear bilaterally."
+    },
+    {
+      "turn": 40,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 76, strong and regular."
+    },
+    {
+      "turn": 41,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Breathing is at 14 per minute."
+    },
+    {
+      "turn": 42,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 108 over 73."
+    },
+    {
+      "turn": 43,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Blood glucose-84 mg/dL."
+    },
+    {
+      "turn": 44,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation remains at 97%."
+    },
+    {
+      "turn": 45,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "EKG is sinus rhythm."
+    },
+    {
+      "turn": 46,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "Partner, let's place a cardiac monitor and check the 4-lead EKG."
+    },
+    {
+      "turn": 47,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "The EKG reading is sinus rhythm."
+    },
+    {
+      "turn": 48,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Great, we've initiated the cardiac monitoring."
+    },
+    {
+      "turn": 49,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Partner, let's insert an IV for access. Left arm or leg preferred?"
+    },
+    {
+      "turn": 50,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "Partner",
+      "utterance": "Left arm, successfully cannulated with an 18G needle-saline lock placed."
+    },
+    {
+      "turn": 51,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "EMT",
+      "utterance": "Sir, we're going to administer naloxone-can you be still for a moment?"
+    },
+    {
+      "turn": 52,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "Partner",
+      "utterance": "12-lead EKG initiated. Heart rhythm is borderline with right axis deviation noted."
+    },
+    {
+      "turn": 53,
+      "topic": "Take Vital Signs",
+      "micro_intent": "ekg",
+      "role": "EMT",
+      "utterance": "Partner, we'll need to monitor any changes in his condition closely following this medication."
+    },
+    {
+      "turn": 54,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations now at 15 per minute."
+    },
+    {
+      "turn": 55,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is now 77."
+    },
+    {
+      "turn": 56,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Blood pressure is 117 over 77 now."
+    },
+    {
+      "turn": 57,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation has dropped to 95%."
+    },
+    {
+      "turn": 58,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "EMT",
+      "utterance": "Administering second dose of naloxone into the IV."
+    },
+    {
+      "turn": 59,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations improved-now at 16 per minute."
+    },
+    {
+      "turn": 60,
+      "topic": "Take Vital Signs",
+      "micro_intent": "pulse",
+      "role": "Partner",
+      "utterance": "Pulse is 75 now."
+    },
+    {
+      "turn": 61,
+      "topic": "Take Vital Signs",
+      "micro_intent": "bp",
+      "role": "Partner",
+      "utterance": "Pressure remains at 118 over 76."
+    },
+    {
+      "turn": 62,
+      "topic": "Take Vital Signs",
+      "micro_intent": "spo2",
+      "role": "Partner",
+      "utterance": "Oxygen saturation continues to decline-94%."
+    },
+    {
+      "turn": 63,
+      "topic": "Take Interventions",
+      "micro_intent": "take_procedures",
+      "role": "EMT",
+      "utterance": "We'll keep the monitor on and titrate as needed. Partner, keep a close watch for any changes and apply additional support if needed."
+    },
+    {
+      "turn": 64,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Partner, we're following protocol 7, overdose/poisoning-opioid protocol."
+    },
+    {
+      "turn": 65,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "Understood. Patient is stable now but will need continuous monitoring."
+    },
+    {
+      "turn": 66,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "EMT",
+      "utterance": "Document today's interventions and medication administration results."
+    },
+    {
+      "turn": 67,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Respirations are at 16 per minute now."
+    },
+    {
+      "turn": 68,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "EMT",
+      "utterance": "Partner, where do we transport the patient now?"
+    },
+    {
+      "turn": 69,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "VCU Health Systems is the destination for this patient."
+    },
+    {
+      "turn": 70,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Sir, we're going to move you onto a Reeves board so we can load you safely onto the stretcher-are you comfortable not moving for the moment?"
+    },
+    {
+      "turn": 71,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Patient",
+      "utterance": "...Sure."
+    },
+    {
+      "turn": 72,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is secured with all straps."
+    },
+    {
+      "turn": 73,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport is in a semi-Fowler's position to VCU Emergency Department."
+    },
+    {
+      "turn": 74,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Patient is ready for transport and currently stable."
+    },
+    {
+      "turn": 75,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "EMT",
+      "utterance": "Partner, confirm readiness to offload at the receiving facility."
+    },
+    {
+      "turn": 76,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "They're ready to receive. Med records look updated and current."
+    },
+    {
+      "turn": 77,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "EMT",
+      "utterance": "Time to transfer care and begin transport to VCU Hospital Cold. Ready?"
+    },
+    {
+      "turn": 78,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "Affirmative. Let's load and go."
+    },
+    {
+      "turn": 79,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Transport is now in progress under cold status. No active warming devices in use."
+    },
+    {
+      "turn": 80,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "Sir, in addition to epilepsy, what else do you have in your past medical history?"
+    },
+    {
+      "turn": 81,
+      "topic": "History of Present Illness",
+      "micro_intent": "pertinent_past_medical_history",
+      "role": "Bystander",
+      "utterance": "He has chronic pancreatitis."
+    },
+    {
+      "turn": 82,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "Sir, can you follow my finger with only your eyes?"
+    },
+    {
+      "turn": 83,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "Partner",
+      "utterance": "GCS is 9-E2V2G5."
+    },
+    {
+      "turn": 84,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "EMT",
+      "utterance": "No signs of cyanosis or work of breathing observed."
+    },
+    {
+      "turn": 85,
+      "topic": "Take Vital Signs",
+      "micro_intent": "resp",
+      "role": "Partner",
+      "utterance": "Respirations are at 15 per minute now."
+    },
+    {
+      "turn": 86,
+      "topic": "Reassessments",
+      "micro_intent": "retake_vital_signs_resp",
+      "role": "Partner",
+      "utterance": "Respirations at 16 per minute."
+    },
+    {
+      "turn": 87,
+      "topic": "Secondary Assessment",
+      "micro_intent": "skin_exam",
+      "role": "Partner",
+      "utterance": "Skin is warm and dry."
+    },
+    {
+      "turn": 88,
+      "topic": "Primary Assessment",
+      "micro_intent": "check_breathing",
+      "role": "Partner",
+      "utterance": "No flaring of the nostrils or reduced breath sounds observed. No abnormal chest movements."
+    },
+    {
+      "turn": 89,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "We noted that he was unconscious. This is consistent with altered mental status."
+    },
+    {
+      "turn": 90,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "AVPU",
+      "role": "EMT",
+      "utterance": "After administering naloxone, his GCS improved to 14-E4V4G6."
+    },
+    {
+      "turn": 91,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Heart sounds are not auscultated differently from the baseline."
+    },
+    {
+      "turn": 92,
+      "topic": "Secondary Assessment",
+      "micro_intent": "thorax_lungs_cardio_exam",
+      "role": "Partner",
+      "utterance": "Rhythm strip shows a borderline heart finding-right axis deviation noted."
+    },
+    {
+      "turn": 93,
+      "topic": "Take Vital Signs",
+      "micro_intent": "glucose",
+      "role": "Partner",
+      "utterance": "Glucose levels are no longer being monitored due to lack of home glucometer."
+    },
+    {
+      "turn": 94,
+      "topic": "Take Interventions",
+      "micro_intent": "give_medication",
+      "role": "EMT",
+      "utterance": "Naloxone dosing will be continued as needed per protocol."
+    },
+    {
+      "turn": 95,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient remains unresponsive but is breathing on his own and has a strong pulse."
+    },
+    {
+      "turn": 96,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "EMT",
+      "utterance": "We should document this as altered mental status without clear pain suspicion."
+    },
+    {
+      "turn": 97,
+      "topic": "History of Present Illness",
+      "micro_intent": "signs_and_symptoms",
+      "role": "Partner",
+      "utterance": "No signs of trauma."
+    },
+    {
+      "turn": 98,
+      "topic": "Exit to Protocol",
+      "micro_intent": "decide_ems_protocol",
+      "role": "Partner",
+      "utterance": "No other interventions seem necessary at this time for the managed opioid protocol."
+    },
+    {
+      "turn": 99,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Patient appears more alert as of the last few minutes."
+    },
+    {
+      "turn": 100,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "We can likely transport with a semi-Fowler's position without incident."
+    },
+    {
+      "turn": 101,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "All strap types double checked and all cross-securing is clear."
+    },
+    {
+      "turn": 102,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "EMT",
+      "utterance": "Transfer process is ready to proceed immediately."
+    },
+    {
+      "turn": 103,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "All patient documentation is current and accurate for transfer."
+    },
+    {
+      "turn": 104,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "Let's move him downstairs now using the stretcher."
+    },
+    {
+      "turn": 105,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "All straps are secondary applied for full stabilization."
+    },
+    {
+      "turn": 106,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "Care will be handed off to hospital staff with full bedside assessment data."
+    },
+    {
+      "turn": 107,
+      "topic": "History of Present Illness",
+      "micro_intent": "sample_pertinent_past_medical_history",
+      "role": "EMT",
+      "utterance": "His past medical history includes seizures and chronic pancreatitis."
+    },
+    {
+      "turn": 108,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "Partner",
+      "utterance": "Respirations are now at 16 per minute."
+    },
+    {
+      "turn": 109,
+      "topic": "Responsiveness Exam",
+      "micro_intent": "verbal_response",
+      "role": "Partner",
+      "utterance": "His verbal responses were somewhat delayed but somewhat reactive overall."
+    },
+    {
+      "turn": 110,
+      "topic": "Transport",
+      "micro_intent": "destination_decision",
+      "role": "Partner",
+      "utterance": "Semi-Fowler's transport confirmed as the safest move for the journey."
+    },
+    {
+      "turn": 111,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "Patient has no known initials for consent. Unconscious at time of arrival."
+    },
+    {
+      "turn": 112,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "He remains unable to sign any intake due to continued AMS."
+    },
+    {
+      "turn": 113,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "Receiving team has been pre-briefed with all current vital signs."
+    },
+    {
+      "turn": 114,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "All wheels are locked-ready for stable movement."
+    },
+    {
+      "turn": 115,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "Partner",
+      "utterance": "All verbal patient instructions will be followed during handoff."
+    },
+    {
+      "turn": 116,
+      "topic": "Transport",
+      "micro_intent": "movement_secured",
+      "role": "EMT",
+      "utterance": "We are operating under a pre-transport checklist which appears complete."
+    },
+    {
+      "turn": 117,
+      "topic": "Handoff",
+      "micro_intent": "receiving_facility_transfer",
+      "role": "EMT",
+      "utterance": "VCU ED is our destination before any alternate decisions are made."
+    }
+  ]
+}
