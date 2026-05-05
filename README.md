@@ -61,4 +61,13 @@ cd ./code/bash
 
 If you find this work useful, please consider citing our paper.
 ```bibtex
+@misc{ge2026emsdialogsyntheticmultipersonemergency,
+      title={EMSDialog: Synthetic Multi-person Emergency Medical Service Dialogue Generation from Electronic Patient Care Reports via Multi-LLM Agents}, 
+      author={Xueren Ge and Sahil Murtaza and Anthony Cortez and Homa Alemzadeh},
+      year={2026},
+      eprint={2604.07549},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.07549}, 
+}
 ```
