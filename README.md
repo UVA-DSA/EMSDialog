@@ -26,8 +26,8 @@
 
 ## Dataset
 
-- 🤗 **Synthetic EMSDialog Dataset:** [View on Hugging Face](DATASET_LINK)
-- 🩺 **Real-world EMS Dialogue Dataset:** [Add link here](REALWORLD_DATASET_LINK)
+- 🤗 **Synthetic EMSDialog Dataset:** [Link](https://github.com/UVA-DSA/EMSDialog/tree/main/data/ours_clean)
+- 🩺 **Real-world EMS Dialogue Dataset:** [Link](https://github.com/UVA-DSA/EMSDialog/tree/main/data/realworld_ems)
 
 ---
 
