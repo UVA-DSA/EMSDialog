@@ -4,7 +4,7 @@
 
 ### 🏛️ Findings of ACL 2026
 
-[🌐 Project](https://uva-dsa.github.io/EMSDialog/) · [📄 Paper](https://arxiv.org/pdf/2604.07549) · [🤗 Dataset](https://github.com/UVA-DSA/EMSDialog/tree/main/data)
+[🌐 Project](https://uva-dsa.github.io/EMSDialog/) · [📄 Paper](https://arxiv.org/pdf/2604.07549) · [🤗 Dataset](https://huggingface.co/datasets/Xueren/EMSDialogue-Datasets)
 
 </div>
 
@@ -26,9 +26,10 @@
 
 ## Dataset
 
-- 🤗 **Synthetic EMSDialog Dataset:** [Link](https://github.com/UVA-DSA/EMSDialog/tree/main/data/ours_clean)
-- 🩺 **Real-world EMS Dialogue Dataset:** [Link](https://github.com/UVA-DSA/EMSDialog/tree/main/data/realworld_ems)
-
+- 🤗 **Synthetic EMSDialog Dataset:** [Link](https://huggingface.co/datasets/Xueren/EMSDialogue-Datasets)
+- 🩺 **Our dataset is also available at** [github repo data](https://github.com/UVA-DSA/EMSDialog/tree/main/data)
+<!-- - 🤗 **Synthetic EMSDialog Dataset:** [Link](https://github.com/UVA-DSA/EMSDialog/tree/main/data/ours_clean) -->
+<!-- - 🩺 **Real-world EMS Dialogue Dataset:** [Link](https://github.com/UVA-DSA/EMSDialog/tree/main/data/realworld_ems) -->
 ---
 
 ## How to Run the Code
