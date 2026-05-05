@@ -4,7 +4,7 @@
 
 ### 🏛️ Findings of ACL 2026
 
-[🌐 Project](https://uva-dsa.github.io/EMSDialog/) · [📄 Paper](PAPER_LINK) · [🤗 Dataset](DATASET_LINK)
+[🌐 Project](https://uva-dsa.github.io/EMSDialog/) · [📄 Paper](https://arxiv.org/pdf/2604.07549) · [🤗 Dataset](https://github.com/UVA-DSA/EMSDialog/tree/main/data)
 
 </div>
 
